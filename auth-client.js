@@ -1,7 +1,6 @@
-/* E-Fathul Qorib — klien login (Clerk + Firebase).
-   Menjaga cookie sesi tetap segar agar middleware Vercel mengizinkan akses:
-   - Clerk    : clerk-js menulis & memperbarui cookie "__session" sendiri.
-   - Firebase : kita menulis cookie "fb_session" berisi ID token, diperbarui saat token berganti. */
+/* E-Fathul Qorib — klien login (Firebase Authentication).
+   Menulis cookie "fb_session" berisi ID token dan memperbaruinya saat token berganti,
+   agar middleware Vercel mengizinkan akses. */
 (function () {
   const C = window.EFQ_AUTH || {};
   const FB_VER = "10.12.2";
@@ -24,25 +23,7 @@
       document.head.appendChild(s);
     });
   }
-  function clerkFrontendApi(pk) {
-    try { return atob(String(pk || "").split("_")[2]).replace(/\$$/, ""); } catch (e) { return ""; }
-  }
-
-  const hasClerk = !!C.clerkPublishableKey;
   const hasFirebase = !!(C.firebase && C.firebase.apiKey && C.firebase.projectId);
-
-  let clerkP = null;
-  function clerk() {
-    if (!hasClerk) return Promise.reject(new Error("Clerk belum dikonfigurasi"));
-    if (!clerkP) {
-      const fapi = clerkFrontendApi(C.clerkPublishableKey);
-      clerkP = loadScript("https://" + fapi + "/npm/@clerk/clerk-js@5/dist/clerk.browser.js", { "data-clerk-publishable-key": C.clerkPublishableKey })
-        .then(function () { return window.Clerk.load({ signInUrl: "/login", afterSignOutUrl: "/login?keluar=1" }); })
-        .then(function () { return window.Clerk; })
-        .catch(function (e) { clerkP = null; throw e; });
-    }
-    return clerkP;
-  }
 
   let fbP = null;
   function firebaseAuth() {
@@ -68,16 +49,6 @@
     return fbP;
   }
 
-  function userFromClerk(c) {
-    const u = c.user;
-    if (!u) return null;
-    return {
-      provider: "clerk",
-      name: u.fullName || u.username || (u.primaryEmailAddress && u.primaryEmailAddress.emailAddress) || "Pengguna",
-      email: (u.primaryEmailAddress && u.primaryEmailAddress.emailAddress) || "",
-      image: u.imageUrl || "",
-    };
-  }
   function userFromFirebase(auth) {
     const u = auth.currentUser;
     if (!u) return null;
@@ -85,16 +56,13 @@
   }
 
   const api = {
-    configured: { clerk: hasClerk, firebase: hasFirebase },
+    configured: { firebase: hasFirebase },
     provider: function () { return store.get("provider"); },
-    clerk: clerk,
     firebaseAuth: firebaseAuth,
 
     /* Sesi aktif (memuat SDK penyedia yang terakhir dipakai). */
     session: function () {
-      const p = api.provider();
-      if (p === "firebase" && hasFirebase) return firebaseAuth().then(userFromFirebase);
-      if (p === "clerk" && hasClerk) return clerk().then(userFromClerk);
+      if (hasFirebase) return firebaseAuth().then(userFromFirebase);
       return Promise.resolve(null);
     },
 
@@ -106,17 +74,10 @@
 
     /* Memaksa token diperbarui (misalnya setelah laptop tidur). */
     refresh: function () {
-      const p = api.provider();
-      if (p === "firebase" && hasFirebase) {
+      if (hasFirebase) {
         return firebaseAuth().then(function (auth) {
           if (!auth.currentUser) return false;
           return auth.currentUser.getIdToken(true).then(function (t) { setCookie(FB_COOKIE, t, 3600); return true; });
-        });
-      }
-      if (p === "clerk" && hasClerk) {
-        return clerk().then(function (c) {
-          if (!c.session) return false;
-          return c.session.getToken({ skipCache: true }).then(function () { return true; });
         });
       }
       return Promise.resolve(false);
@@ -128,8 +89,7 @@
 
     signOut: function () {
       const jobs = [];
-      if (hasFirebase && (fbP || api.provider() === "firebase")) jobs.push(firebaseAuth().then(function (a) { return a.signOut(); }).catch(function () {}));
-      if (hasClerk && (clerkP || api.provider() === "clerk")) jobs.push(clerk().then(function (c) { return c.signOut(); }).catch(function () {}));
+      if (hasFirebase) jobs.push(firebaseAuth().then(function (a) { return a.signOut(); }).catch(function () {}));
       return Promise.all(jobs).then(function () {
         setCookie(FB_COOKIE, "", 0);
         store.set("provider", null);

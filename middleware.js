@@ -1,9 +1,7 @@
 // Vercel Routing Middleware: semua halaman & data kitab hanya untuk pengguna yang sudah login.
-// Sesi diterima dari dua penyedia:
-//   - Clerk    : cookie "__session" (JWT RS256, diperbarui otomatis oleh clerk-js)
-//   - Firebase : cookie "fb_session" (Firebase ID token, diperbarui oleh Firebase SDK)
-// Verifikasi memakai kunci publik (JWKS) masing-masing penyedia, jadi tidak ada kunci rahasia di sini.
-import { CLERK_PUBLISHABLE_KEY, FIREBASE_PROJECT_ID } from "./auth-settings.js";
+// Sesi = cookie "fb_session" berisi Firebase ID token (JWT RS256, diperbarui oleh auth-client.js).
+// Verifikasi memakai kunci publik (JWKS) Google, jadi tidak ada kunci rahasia di sini.
+import { FIREBASE_PROJECT_ID } from "./auth-settings.js";
 
 export const config = {
   matcher: ["/((?!login|auth-config\\.js|auth-client\\.js|favicon\\.ico|robots\\.txt).*)"],
@@ -12,15 +10,6 @@ export const config = {
 const FIREBASE_JWKS = "https://www.googleapis.com/service_accounts/v1/jwk/securetoken@system.gserviceaccount.com";
 const enc = new TextEncoder();
 const jwksCache = new Map();
-
-export function clerkFrontendApi(pk) {
-  try {
-    const part = String(pk || "").split("_")[2];
-    return atob(part).replace(/\$$/, "");
-  } catch {
-    return "";
-  }
-}
 
 function b64uToBytes(s) {
   s = s.replace(/-/g, "+").replace(/_/g, "/");
@@ -82,28 +71,15 @@ function parseCookies(header) {
   return out;
 }
 
-export async function sessionFrom(cookieHeader, settings = { pk: CLERK_PUBLISHABLE_KEY, projectId: FIREBASE_PROJECT_ID, firebaseJwks: FIREBASE_JWKS }) {
-  const cookies = parseCookies(cookieHeader);
-  const fapi = clerkFrontendApi(settings.pk);
-  if (fapi) {
-    const iss = "https://" + fapi;
-    for (const [name, value] of cookies) {
-      if (name !== "__session" && !name.startsWith("__session_")) continue;
-      try {
-        const p = await verifyJwt(value, iss + "/.well-known/jwks.json", (c) => c.iss === iss && !!c.sub);
-        if (p) return { provider: "clerk", sub: p.sub };
-      } catch {}
-    }
-  }
-  if (settings.projectId) {
-    const iss = "https://securetoken.google.com/" + settings.projectId;
-    for (const [name, value] of cookies) {
-      if (name !== "fb_session") continue;
-      try {
-        const p = await verifyJwt(value, settings.firebaseJwks, (c) => c.iss === iss && c.aud === settings.projectId && !!c.sub);
-        if (p) return { provider: "firebase", sub: p.sub };
-      } catch {}
-    }
+export async function sessionFrom(cookieHeader, settings = { projectId: FIREBASE_PROJECT_ID, firebaseJwks: FIREBASE_JWKS }) {
+  if (!settings.projectId) return null;
+  const iss = "https://securetoken.google.com/" + settings.projectId;
+  for (const [name, value] of parseCookies(cookieHeader)) {
+    if (name !== "fb_session") continue;
+    try {
+      const p = await verifyJwt(value, settings.firebaseJwks, (c) => c.iss === iss && c.aud === settings.projectId && !!c.sub);
+      if (p) return { provider: "firebase", sub: p.sub };
+    } catch {}
   }
   return null;
 }

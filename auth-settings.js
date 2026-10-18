@@ -1,3 +1,2 @@
-// Kunci PUBLIK untuk verifikasi sesi di middleware (bukan rahasia). Samakan dengan auth-config.js.
-export const CLERK_PUBLISHABLE_KEY = "pk_test_aW50ZW50LWVncmV0LTk1OTUuY2xlcmsuYWNjb3VudHMuZGV2JA";
+// ID proyek Firebase (publik, bukan rahasia) untuk verifikasi sesi di middleware. Samakan dengan auth-config.js.
 export const FIREBASE_PROJECT_ID = "e-fathul-qoribe-fathul-qorib";
