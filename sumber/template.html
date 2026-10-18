@@ -262,6 +262,19 @@ a{color:inherit}
 .legend{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:6px 12px;font-size:13px}
 .legend span{display:flex;align-items:center;gap:8px;color:var(--ink-2)}
 .legend i{width:22px;height:16px;border-radius:4px;flex:none}
+.appcard{display:grid;grid-template-columns:auto minmax(0,1fr);gap:16px;align-items:start;padding:20px;border:1px solid var(--line);border-radius:18px;background:var(--surface);margin:0 0 28px;box-shadow:var(--shadow)}
+.app-ic img{display:block;width:56px;height:56px;border-radius:14px}
+.app-tx h2{margin:0 0 4px;font-size:18px;letter-spacing:-.01em}
+.app-tx p{margin:0 0 12px;color:var(--ink-2);font-size:14px;max-width:62ch}
+.app-tx .btns{margin-bottom:10px}
+.app-hint{font-size:13.5px!important;margin:0!important;padding:9px 12px;border-radius:10px;background:var(--surface-2)}
+.app-ok{display:inline-flex;align-items:center;gap:6px;height:42px;font-weight:700;font-size:14px;color:var(--accent-ink)}
+.app-ok svg{width:16px;height:16px}
+.app-st svg{width:15px;height:15px;vertical-align:-3px;margin-right:4px;color:var(--accent)}
+.app-st{display:block;margin:0!important;font-size:12.5px!important;color:var(--ink-3)!important}
+.btn.pri-soft{border-color:var(--accent);color:var(--accent-ink)}
+.btn[disabled]{opacity:.7;cursor:progress}
+@media (max-width:560px){.appcard{grid-template-columns:1fr;padding:16px}.app-ic img{width:48px;height:48px}}
 .notice{font-size:12.5px;color:var(--ink-2);border:1px dashed var(--line-2);border-radius:12px;padding:12px 14px;margin-top:20px}
 
 /* ---------- Kartu kata ---------- */

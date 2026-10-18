@@ -4,7 +4,7 @@
 import { FIREBASE_PROJECT_ID } from "./auth-settings.js";
 
 export const config = {
-  matcher: ["/((?!login|auth-config\\.js|auth-client\\.js|favicon\\.ico|robots\\.txt).*)"],
+  matcher: ["/((?!login|auth-config\\.js|auth-client\\.js|sw\\.js|manifest\\.webmanifest|icons/|favicon\\.ico|robots\\.txt).*)"],
 };
 
 const FIREBASE_JWKS = "https://www.googleapis.com/service_accounts/v1/jwk/securetoken@system.gserviceaccount.com";

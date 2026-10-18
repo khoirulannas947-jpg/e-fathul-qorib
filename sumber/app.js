@@ -17,6 +17,8 @@ const IC={
  home:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/></svg>',
  spark:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.8 4.7L18.5 9.5l-4.7 1.8L12 16l-1.8-4.7L5.5 9.5l4.7-1.8z"/><path d="M19 15l.8 2.2L22 18l-2.2.8L19 21l-.8-2.2L16 18l2.2-.8z"/></svg>',
  send:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>',
+ check:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7"/></svg>',
+ dl:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg>',
  arrow:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>'
 };
 const IDX=window.FQINDEX||[];
@@ -224,6 +226,43 @@ function needKitab(kid,msg){
   const r=route;loadKitab(kid).then(()=>{if(route===r&&!q)render()}).catch(()=>{$("#main").innerHTML=failHTML()});
   return true;
 }
+/* ---------- Aplikasi: pasang (PWA) & baca offline ---------- */
+const APP_ON=!!window.EFQAuth&&"serviceWorker" in navigator&&(location.protocol==="https:"||location.hostname==="localhost");
+const isStandalone=()=>matchMedia("(display-mode: standalone)").matches||navigator.standalone===true;
+const isIOS=/iphone|ipad|ipod/i.test(navigator.userAgent)||(navigator.platform==="MacIntel"&&navigator.maxTouchPoints>1);
+let installEvt=null,offInfo={n:null,busy:false,done:0};
+function appCard(){
+  const inst=isStandalone()?`<span class="app-ok">${IC.check}Aplikasi sudah terpasang</span>`
+    :installEvt?`<button class="btn pri" id="installBtn">${IC.dl}Pasang aplikasi</button>`
+    :isIOS?`<p class="app-hint">Di iPhone/iPad: buka di <b>Safari</b>, ketuk tombol <b>Bagikan</b> lalu pilih <b>Tambah ke Layar Utama</b>.</p>`
+    :`<p class="app-hint">Buka menu browser (⋮) lalu pilih <b>Instal aplikasi</b> atau <b>Tambahkan ke layar utama</b>.</p>`;
+  const total=IDX.length,n=offInfo.n;
+  const off=offInfo.busy?`<button class="btn" disabled>${IC.dl}Mengunduh ${offInfo.done}/${total} kitab…</button>`
+    :`<button class="btn${n===total?"":" pri-soft"}" id="offBtn">${IC.dl}${n===total?"Perbarui simpanan offline":"Simpan semua kitab untuk offline"}</button>`;
+  return `<section class="appcard" id="appCard"><div class="app-ic"><img src="/icons/icon-192.png" alt="" width="56" height="56"></div>
+    <div class="app-tx"><h2>Pasang sebagai aplikasi</h2><p>Buka langsung dari layar utama HP atau laptop, tampil layar penuh, dan tetap bisa dibaca tanpa internet setelah kitab disimpan.</p>
+    <div class="btns">${inst}${off}</div>
+    <p class="app-st">${n==null?"Memeriksa simpanan offline…":n===total?`${IC.check}Semua ${total} kitab tersimpan dan bisa dibaca offline.`:`${n} dari ${total} kitab tersimpan offline.`} Tanya AI tetap memerlukan internet.</p></div></section>`;
+}
+function refreshAppCard(){const c=$("#appCard");if(c)c.outerHTML=appCard()}
+async function countOffline(){try{const c=await caches.open("efq-data-v1");const ks=await c.keys();offInfo.n=IDX.filter(k=>ks.some(r=>new URL(r.url,location.href).pathname==="/data/"+k.id+".json")).length}catch(_){offInfo.n=0}refreshAppCard()}
+async function saveOffline(){
+  if(offInfo.busy)return;offInfo.busy=true;offInfo.done=0;refreshAppCard();
+  try{await navigator.serviceWorker.ready;if(!navigator.serviceWorker.controller)await new Promise(r=>{navigator.serviceWorker.addEventListener("controllerchange",r,{once:true});setTimeout(r,6000)})}catch(_){}
+  let fail=0;
+  for(const k of IDX){try{const r=await fetch("data/"+k.id+".json",{credentials:"same-origin",cache:"no-cache"});if(r.status===401&&window.EFQAuth){await EFQAuth.refresh();const r2=await fetch("data/"+k.id+".json",{credentials:"same-origin"});if(!r2.ok)fail++}else if(!r.ok)fail++}catch(_){fail++}offInfo.done++;refreshAppCard()}
+  offInfo.busy=false;await countOffline();if(fail)alertBar(fail+" kitab gagal diunduh. Periksa koneksi lalu coba lagi.");
+}
+function alertBar(t){const c=$("#appCard .app-st");if(c)c.textContent=t}
+if(APP_ON){
+  window.addEventListener("load",()=>{navigator.serviceWorker.register("/sw.js").then(()=>countOffline()).catch(()=>{offInfo.n=0;refreshAppCard()})});
+  window.addEventListener("beforeinstallprompt",e=>{e.preventDefault();installEvt=e;refreshAppCard()});
+  window.addEventListener("appinstalled",()=>{installEvt=null;refreshAppCard()});
+  document.addEventListener("click",async e=>{
+    if(e.target.closest("#installBtn")&&installEvt){const ev=installEvt;installEvt=null;ev.prompt();try{await ev.userChoice}catch(_){}refreshAppCard();return}
+    if(e.target.closest("#offBtn"))saveOffline();
+  });
+}
 function renderHome(){
   const lb=last&&AVAIL.find(b=>b.id===last);
   $("#main").innerHTML=`<div class="wrap">
@@ -234,6 +273,7 @@ function renderHome(){
      <div class="btns">${lb?`<a class="btn pri" href="#${lb.id}" data-go="${lb.id}">${IC.book}Lanjutkan: ${esc(lb.title)}</a><a class="btn" href="#khutbah" data-go="khutbah">Mulai dari awal</a>`:`<a class="btn pri" href="#khutbah" data-go="khutbah">${IC.book}Mulai membaca</a>`}<a class="btn" href="#kitab-thaharah" data-go="kitab-thaharah">${IC.map}Lihat mind map</a></div>
    </div><div class="cal">فَتْحُ الْقَرِيْبِ الْمُجِيْبِ<small>فِيْ شَرْحِ أَلْفَاظِ التَّقْرِيْبِ</small></div></section>
    <div class="stats"><div><b>${IDX.length}</b><span>kitab</span></div><div><b>${BABS.length}</b><span>bab & fasal</span></div><div><b>${fmt(TOT.p)}</b><span>paragraf</span></div><div><b>${fmt(TOT.w)}</b><span>kata bermakna</span></div></div>
+   ${APP_ON?appCard():""}
    <div class="sec-h"><h2>Daftar kitab</h2><span>Urutan sesuai kitab</span></div>
    <div class="kgrid">${IDX.map((k,i)=>{const n=k.babs.reduce((a,b)=>a+b.n,0);return `<div class="kcard"><div class="top-row"><span class="num">${String(i+1).padStart(2,"0")}</span><span class="ar">${k.ar}</span></div>
      <div><h3>${esc(k.title)}</h3><div class="sub">${k.babs.length} bab · ${fmt(n)} paragraf</div></div>

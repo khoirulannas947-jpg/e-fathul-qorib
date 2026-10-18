@@ -93,6 +93,9 @@
       return Promise.all(jobs).then(function () {
         setCookie(FB_COOKIE, "", 0);
         store.set("provider", null);
+        // Hapus simpanan offline kitab di perangkat ini saat keluar.
+        try { if (navigator.serviceWorker && navigator.serviceWorker.controller) navigator.serviceWorker.controller.postMessage("hapus-data"); } catch (e) {}
+        try { if (window.caches) return Promise.all([caches.delete("efq-data-v1"), caches.delete("efq-shell-v1")]).then(function () {}); } catch (e) {}
       });
     },
   };

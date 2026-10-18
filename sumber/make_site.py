@@ -15,6 +15,12 @@ head=f'''<!doctype html>
 <meta name="theme-color" content="#17594a">
 <meta name="robots" content="noindex">
 <link rel="icon" href="{fav}">
+<link rel="manifest" href="/manifest.webmanifest">
+<link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Fathul Qorib">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
 <style>[hidden]{{display:none!important}}:root{{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}}</style>
 <script src="/auth-config.js"></script>
 <script src="/auth-client.js"></script>
