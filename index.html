@@ -542,7 +542,7 @@ const AI_ON=!!window.EFQAuth;
 const CONV={};
 const AI_SUG=[["Jelaskan i'rab","Jelaskan i'rab kalimat-kalimat di paragraf ini langkah demi langkah."],["Untuk pemula","Jelaskan isi paragraf ini dengan bahasa sederhana untuk pemula, beserta contoh sehari-hari."],["Dalil & alasan","Apa dalil atau alasan hukum yang disebut dalam paragraf ini?"],["Poin hafalan","Ringkas paragraf ini menjadi poin-poin penting untuk dihafal."]];
 function aiFmt(t){
-  let h=esc(t).replace(/\*\*([^*\n]+)\*\*/g,"<b>$1</b>");
+  let h=esc(t).replace(/\*\*([^*\n]+)\*\*/g,"<b>$1</b>").replace(/(^|[\s(])\*(?!\s)([^*\n]+?)\*(?=[\s.,;:!?)]|$)/gm,"$1<i>$2</i>");
   h=h.replace(/[\u0600-\u06FF][\u0600-\u06FF\u064B-\u065F\u0670\s]*[\u0600-\u06FF\u064B-\u065F\u0670]|[\u0600-\u06FF]/g,m=>`<bdi class="ar-in">${m}</bdi>`);
   return h.split(/\n\s*\n/).map(blk=>{
     const ls=blk.trim().split("\n");let out="",list=null;
