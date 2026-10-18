@@ -1,0 +1,317 @@
+(function(){
+const K={
+ mb:["Mubtada'","مبتدأ","م","subj"], fa:["Fa'il","فاعل","فا","subj"], nf:["Na'ibul Fa'il","نائب الفاعل","نف","subj"],
+ ii:["Isim Inna / Kana","اسم إنّ/كان","اسم","subj"],
+ kh:["Khabar","خبر","خ","pred"], ki:["Khabar Inna / Kana","خبر إنّ/كان","خبر","pred"], mq:["Maqul Qaul (isi ucapan)","مقول القول","مقول","pred"],
+ mf:["Maf'ul Bih","مفعول به","مف","obj"], mm:["Maf'ul Muthlaq","مفعول مطلق","مط","obj"], ml:["Maf'ul li Ajlih","مفعول لأجله","مل","obj"],
+ zf:["Zharaf (Maf'ul Fih)","ظرف","ظ","obj"], ms:["Mustatsna","مستثنى","مس","obj"], hl:["Hal","حال","حا","obj"], tm:["Tamyiz","تمييز","تم","obj"],
+ na:["Na'at (Sifat)","نعت","نع","tabi"], ma:["Mudhaf Ilaih","مضاف إليه","مض","tabi"], bd:["Badal","بدل","بد","tabi"],
+ ab:["'Athaf Bayan / Tafsir","عطف بيان","عب","tabi"], mt:["Ma'thuf (yang di-'athaf-kan)","معطوف","مع","tabi"], tk:["Taukid","توكيد","تك","tabi"],
+ fi:["Fi'il","فعل","فع","fiil"], jr:["Huruf Jar","حرف جر","ج","harf"], mj:["Majrur","مجرور","مج","majrur"],
+ hr:["Huruf (Ma'ani)","حرف","حر","harf"]
+};
+const LEG=[["subj","Mubtada', Fa'il, Isim"],["pred","Khabar"],["fiil","Fi'il"],["obj","Maf'ul, Hal, Zharaf, Tamyiz"],["tabi","Na'at, Mudhaf Ilaih, 'Athaf, Badal"],["majrur","Majrur"],["harf","Huruf"]];
+const IC={
+ book:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2z"/><path d="M4 21V5"/></svg>',
+ map:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="5" cy="12" r="2.5"/><circle cx="19" cy="5" r="2.5"/><circle cx="19" cy="19" r="2.5"/><path d="M7.5 12h4M11.5 12V5h5M11.5 12v7h5"/></svg>',
+ home:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/></svg>',
+ arrow:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>'
+};
+const IDX=window.FQINDEX||[];
+const BABS=[];IDX.forEach((k,ki)=>k.babs.forEach(b=>BABS.push({...b,k:k.id,kt:k.title,kar:k.ar,ki})));
+const AVAIL=BABS.filter(b=>b.n>0);
+const KD={},LD={};
+const TOT={p:BABS.reduce((a,b)=>a+b.n,0),w:BABS.reduce((a,b)=>a+(b.w||0),0)};
+
+const norm=s=>(s||"").replace(/[ً-ٰ۟ـ«»﴿﴾()،؛:.!?\-]/g,"").replace(/[أإآٱ]/g,"ا").replace(/ى/g,"ي").replace(/ة/g,"ه").toLowerCase().trim();
+const esc=s=>String(s==null?"":s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const fmt=n=>n.toLocaleString("id-ID");
+function parse(p){
+  const words=p.w.split("\n").map(l=>l.trim()).filter(Boolean).map(l=>{const [a,t,k]=l.split("|").map(x=>(x||"").trim());const m=a.startsWith("*");return {a:m?a.slice(1):a,t,k,m}});
+  const irob=(p.i||"").split("\n").map(l=>l.trim()).filter(Boolean).map(l=>{const ix=l.indexOf("::");return {a:l.slice(0,ix).trim(),x:l.slice(ix+2).trim()}});
+  return {...p,words,irob};
+}
+function loadKitab(kid){
+  if(KD[kid])return Promise.resolve(KD[kid]);
+  if(LD[kid])return LD[kid];
+  LD[kid]=fetch("data/"+kid+".json").then(r=>{if(!r.ok)throw new Error(r.status);return r.json()})
+    .then(j=>{const arr=Array.isArray(j)?j:j.p;KD[kid]={paras:arr.map(parse),mm:(j&&j.mm)||{}};return KD[kid]})
+    .catch(e=>{delete LD[kid];throw e});
+  return LD[kid];
+}
+const babParas=b=>(KD[b.k]?KD[b.k].paras.filter(p=>p.bab===b.id):[]);
+
+const $=s=>document.querySelector(s);
+const store={get(k,d){try{const v=localStorage.getItem("efq:"+k);return v==null?d:JSON.parse(v)}catch(e){return d}},set(k,v){try{localStorage.setItem("efq:"+k,JSON.stringify(v))}catch(e){}}};
+const pref={t:store.get("t",true),k:store.get("k",true),size:store.get("size",0),tab:store.get("tab","i"),theme:store.get("theme",null),mz:store.get("mz",1)};
+let route={v:"home"},q="",VIEW=[];
+const last=store.get("bab",null);
+
+/* ---------- Routing (#beranda, #u05, #peta-u05, #kitab-shalat) ---------- */
+function parseHash(h){
+  h=(h||"").replace(/^#/,"");
+  if(!h||h==="beranda")return {v:"home"};
+  if(h.startsWith("peta-")){const b=BABS.find(x=>x.id===h.slice(5));if(b&&b.n)return {v:"map",bab:b.id}}
+  if(h.startsWith("kitab-")){const k=IDX.find(x=>x.id===h.slice(6));if(k)return {v:"kmap",k:k.id}}
+  const b=BABS.find(x=>x.id===h);if(b&&b.n)return {v:"read",bab:b.id};
+  return {v:"home"};
+}
+const hashOf=r=>r.v==="read"?r.bab:r.v==="map"?"peta-"+r.bab:r.v==="kmap"?"kitab-"+r.k:"beranda";
+function go(h,opt){
+  opt=opt||{};
+  const r=parseHash(h);route=r;q="";$("#q").value="";
+  try{history[opt.replace?"replaceState":"pushState"](null,"","#"+hashOf(r))}catch(_){}
+  closeToc();$("#sheet").hidden=true;render(opt);
+}
+window.addEventListener("popstate",()=>{route=parseHash(location.hash);q="";$("#q").value="";render()});
+
+/* ---------- Daftar isi ---------- */
+function curK(){return route.v==="kmap"?route.k:(route.bab?BABS.find(b=>b.id===route.bab).k:null)}
+function toc(){
+  const ck=curK();
+  let h=`<a class="toc-home${route.v==="home"&&!q?" on":""}" href="#beranda" data-go="beranda">${IC.home}Beranda</a><div class="toc-label">17 kitab</div>`;
+  h+=IDX.map((k,i)=>{
+    const n=k.babs.reduce((a,b)=>a+b.n,0);
+    const list=`<a class="kmap${route.v==="kmap"&&route.k===k.id?" on":""}" href="#kitab-${k.id}" data-go="kitab-${k.id}">${IC.map}<span>Mind map kitab</span></a>`+
+      k.babs.map(b=>`<a href="#${b.id}" data-go="${b.id}" class="${route.bab===b.id&&!q?"on":""}"><span>${esc(b.title)}</span><small>${b.n}</small></a>`).join("");
+    return `<details${ck===k.id?" open":""}><summary><span class="n">${i+1}</span><span class="tt">${esc(k.title)}<span class="ar">${k.ar}</span></span><span class="cnt">${k.babs.length} bab</span></summary><div class="lst">${list}</div></details>`;
+  }).join("");
+  $("#toc").innerHTML=h;
+  const on=$("#toc .lst a.on");if(on&&on.scrollIntoView)try{on.scrollIntoView({block:"nearest"})}catch(_){}
+}
+function openToc(){$("#toc").classList.add("open")}
+function closeToc(){$("#toc").classList.remove("open")}
+
+/* ---------- Toolbar ---------- */
+function bar(b,view){
+  const crumb=`<nav class="crumb" aria-label="Lokasi"><a href="#beranda" data-go="beranda">Beranda</a><span>›</span><a href="#kitab-${b.k}" data-go="kitab-${b.k}">${esc(b.kt)}</a><span>›</span><b>${esc(b.title)}</b></nav>`;
+  const seg=`<div class="seg" role="group" aria-label="Tampilan"><button data-go="${b.id}" aria-pressed="${view==="read"}">${IC.book}Bacaan</button><button data-go="peta-${b.id}" aria-pressed="${view==="map"}">${IC.map}Mind map</button></div>`;
+  const ctl=view==="read"?`<div class="ctl"><button class="chip" id="tgT" aria-pressed="${pref.t}">Makna</button><button class="chip" id="tgK" aria-pressed="${pref.k}">Kedudukan</button><span class="fs" role="group" aria-label="Ukuran huruf Arab"><button id="fsMinus" aria-label="Perkecil huruf Arab">A−</button><button id="fsPlus" aria-label="Perbesar huruf Arab">A+</button></span></div>`:"";
+  return `<div class="bar"><div class="bar-in">${crumb}${seg}${ctl}</div><div class="prog"><i id="prog"></i></div></div>`;
+}
+function head(b,extra){
+  const ps=babParas(b),m=ps.filter(p=>p.matan).length;
+  return `<header class="head"><div><div class="eyebrow">Kitab ${b.ki+1} · ${esc(b.kt)}</div><h1>${esc(b.title)}</h1></div><div class="ar-title">${b.ar}</div><p>${esc(b.desc)}</p>
+   <div class="meta-row"><span class="tag">${b.n} paragraf</span><span class="tag">${fmt(b.w||0)} kata</span>${m?`<span class="tag"><i></i>${m} memuat matan</span>`:""}${extra||""}</div></header>`;
+}
+
+/* ---------- Bacaan ---------- */
+function wordHTML(w,vi,wi,hit){
+  const k=K[w.k]||K.hr;
+  return `<button class="w${w.m?" m":""}${hit?" hit":""}" data-v="${vi}" data-w="${wi}"><span class="a">${esc(w.a)}</span><span class="t">${esc(w.t)}</span><span class="k k-${k[3]}" title="${esc(k[0])}">${k[2]}</span></button>`;
+}
+function paraHTML(p,vi,qn,showSrc){
+  const b=BABS.find(x=>x.id===p.bab);const no=babParas(b).indexOf(p)+1;
+  const ws=p.words.map((w,wi)=>wordHTML(w,vi,wi,qn&&(norm(w.a).includes(qn)||(w.t||"").toLowerCase().includes(qn)))).join("");
+  const ir=p.irob.map(r=>`<li><span class="ar">${esc(r.a)}</span><span>${esc(r.x)}</span></li>`).join("");
+  const sy=p.s.split(/\n\s*\n/).map(x=>`<p>${esc(x.trim())}</p>`).join("");
+  const tab=pref.tab;
+  return `<article class="para" id="p-${p.id}">
+   <div class="para-top"><span class="no">${no}</span>${showSrc?`<span class="src"><a href="#${b.id}" data-go="${b.id}" data-para="${p.id}">${esc(b.kt)} · ${esc(b.title)}</a></span>`:`<span class="kind${p.matan?" m":""}"><i></i>${p.matan?"Matan + syarah":"Syarah"}</span>`}
+    <span class="act"><button data-copy="${vi}" title="Salin teks Arab paragraf ini">Salin Arab</button></span></div>
+   <div class="text">${ws}</div>
+   <div class="trans"><b>Terjemah</b>${esc(p.t)}</div>
+   <div class="tabs" role="tablist"><button role="tab" aria-selected="${tab==="i"}" data-tab="i">I'rab</button><button role="tab" aria-selected="${tab==="s"}" data-tab="s">Penjelasan</button><button role="tab" aria-selected="${tab==="x"}" data-tab="x">Tutup</button></div>
+   <div class="pane" data-pane="i"${tab==="i"?"":" hidden"}><ul class="irob">${ir}</ul></div>
+   <div class="pane syarh" data-pane="s"${tab==="s"?"":" hidden"}>${sy}</div>
+  </article>`;
+}
+function pager(b,view){
+  const ai=AVAIL.findIndex(x=>x.id===b.id),pv=AVAIL[ai-1],nx=AVAIL[ai+1],pre=view==="map"?"peta-":"";
+  return `<nav class="pager">${pv?`<a href="#${pre}${pv.id}" data-go="${pre}${pv.id}"><small>Sebelumnya</small><b>${esc(pv.title)}</b></a>`:""}${nx?`<a class="nx" href="#${pre}${nx.id}" data-go="${pre}${nx.id}"><small>Berikutnya</small><b>${esc(nx.title)}</b></a>`:""}</nav>`;
+}
+function applyPrefs(){
+  document.body.classList.toggle("hide-t",!pref.t);document.body.classList.toggle("hide-k",!pref.k);
+  const t=$("#tgT"),k=$("#tgK");if(t)t.setAttribute("aria-pressed",pref.t);if(k)k.setAttribute("aria-pressed",pref.k);
+  document.documentElement.style.setProperty("--ar-size",(window.innerWidth<720?25:30)+pref.size*4+"px");
+  if(pref.theme)document.documentElement.setAttribute("data-theme",pref.theme);else document.documentElement.removeAttribute("data-theme");
+}
+
+/* ---------- Mind map ---------- */
+function parseMM(txt){
+  const root={kids:[]};const st=[{d:-1,n:root}];
+  (txt||"").split("\n").forEach(line=>{
+    if(!line.trim())return;
+    const d=Math.floor(line.match(/^ */)[0].length/2);let s=line.trim(),ref=null;
+    const m=s.match(/\s@(\d+)(?:-(\d+))?$/);if(m){ref=[+m[1],+(m[2]||m[1])];s=s.slice(0,m.index).trim()}
+    const ix=s.indexOf("|");const node={t:ix<0?s:s.slice(0,ix).trim(),ar:ix<0?"":s.slice(ix+1).trim(),ref,kids:[]};
+    while(st.length>1&&st[st.length-1].d>=d)st.pop();
+    st[st.length-1].n.kids.push(node);st.push({d,n:node});
+  });
+  return root.kids;
+}
+function autoMM(b){ // cadangan bila bab belum punya peta: tiap paragraf jadi cabang
+  return babParas(b).map((p,i)=>{const m=(p.t.match(/\(([^)]{3,80})\)/)||[])[1];return {t:m?m.replace(/^./,c=>c.toUpperCase()):p.t.slice(0,70)+"…",ar:"",ref:[i+1,i+1],kids:[]}});
+}
+function mmOf(b){const t=KD[b.k]&&KD[b.k].mm[b.id];return t?parseMM(t):autoMM(b)}
+function mmNode(n,d,bi,bab){
+  const kids=n.kids||[];
+  const refTx=n.ref?`<span class="mref">¶${n.ref[0]}${n.ref[1]!==n.ref[0]?"–"+n.ref[1]:""}</span>`:"";
+  const inner=`${esc(n.t)}${refTx}${n.ar?`<span class="ar">${esc(n.ar)}</span>`:""}`;
+  const target=n.go?` data-go="${n.go}"`:n.ref?` data-jump="${bab}:${n.ref[0]}"`:"";
+  const lab=target?`<button class="mlab"${target} title="${n.go?"Buka mind map bab ini":"Buka paragraf "+n.ref[0]}">${inner}</button>`:`<span class="mlab">${inner}</span>`;
+  const col=d===1?` style="--c:var(--b${bi%6})"`:"";
+  return `<div class="mn d${d}${n.shut?" shut":""}"${col}><div class="ml">${lab}${kids.length?`<button class="mtg" data-mtg aria-expanded="${!n.shut}" aria-label="Lipat atau buka cabang">${kids.length}</button>`:""}</div>${kids.length?`<div class="mk">${kids.map((c,i)=>mmNode(c,d+1,d===0?i:bi,n.bab||bab)).join("")}</div>`:""}</div>`;
+}
+function mmTools(){
+  return `<div class="mm-tools"><button class="chip plain" data-mmall="open">Buka semua</button><button class="chip plain" data-mmall="l1">Ringkas</button>
+   <span class="fs" role="group" aria-label="Perbesar mind map"><button data-mz="-1" aria-label="Perkecil">−</button><button data-mz="1" aria-label="Perbesar">+</button></span>
+   <span class="hint">Klik cabang bertanda ¶ untuk membuka paragrafnya. Klik angka bulat untuk melipat cabang. Geser kanvas untuk menjelajah.</span></div>`;
+}
+function mmCanvas(root){return `<div class="mm-canvas" id="mmc"><div class="mm" style="--mz:${pref.mz}">${mmNode(root,0,0,root.bab)}</div></div>`}
+
+/* ---------- Tampilan ---------- */
+function failHTML(){return `<div class="wrap"><div class="empty">Data kitab ini belum bisa dimuat. Periksa koneksi lalu muat ulang halaman.</div></div>`}
+function needKitab(kid,msg){
+  if(KD[kid])return false;
+  $("#main").innerHTML=`<div class="wrap"><div class="loading">${esc(msg)}</div></div>`;
+  const r=route;loadKitab(kid).then(()=>{if(route===r&&!q)render()}).catch(()=>{$("#main").innerHTML=failHTML()});
+  return true;
+}
+function renderHome(){
+  const lb=last&&AVAIL.find(b=>b.id===last);
+  $("#main").innerHTML=`<div class="wrap">
+   <section class="hero"><div>
+     <div class="eyebrow">Fathul Qarib al-Mujib · Syarah Matan at-Taqrib</div>
+     <h1>Kitab Fathul Qorib, kata demi kata</h1>
+     <p>Matan Abu Syuja' dan syarah Ibnu Qasim al-Ghazzi lengkap: makna dan kedudukan setiap kata, terjemah utuh, i'rab, dan penjelasan per paragraf. Tiap bab punya mind map untuk melihat isinya sekilas.</p>
+     <div class="btns">${lb?`<a class="btn pri" href="#${lb.id}" data-go="${lb.id}">${IC.book}Lanjutkan: ${esc(lb.title)}</a><a class="btn" href="#khutbah" data-go="khutbah">Mulai dari awal</a>`:`<a class="btn pri" href="#khutbah" data-go="khutbah">${IC.book}Mulai membaca</a>`}<a class="btn" href="#kitab-thaharah" data-go="kitab-thaharah">${IC.map}Lihat mind map</a></div>
+   </div><div class="cal">فَتْحُ الْقَرِيْبِ الْمُجِيْبِ<small>فِيْ شَرْحِ أَلْفَاظِ التَّقْرِيْبِ</small></div></section>
+   <div class="stats"><div><b>${IDX.length}</b><span>kitab</span></div><div><b>${BABS.length}</b><span>bab & fasal</span></div><div><b>${fmt(TOT.p)}</b><span>paragraf</span></div><div><b>${fmt(TOT.w)}</b><span>kata bermakna</span></div></div>
+   <div class="sec-h"><h2>Daftar kitab</h2><span>Urutan sesuai kitab</span></div>
+   <div class="kgrid">${IDX.map((k,i)=>{const n=k.babs.reduce((a,b)=>a+b.n,0);return `<div class="kcard"><div class="top-row"><span class="num">${String(i+1).padStart(2,"0")}</span><span class="ar">${k.ar}</span></div>
+     <div><h3>${esc(k.title)}</h3><div class="sub">${k.babs.length} bab · ${fmt(n)} paragraf</div></div>
+     <div class="acts"><a href="#${k.babs[0].id}" data-go="${k.babs[0].id}">Baca</a><a href="#kitab-${k.id}" data-go="kitab-${k.id}">Mind map</a></div></div>`}).join("")}</div>
+   <div class="sec-h"><h2>Cara membaca</h2></div>
+   <div class="howto">
+     <div><h3>Lafadz merah dan hitam</h3><p>Lafadz bertinta <b style="color:var(--matan)">merah</b> adalah matan Abu Syuja'. Lafadz hitam adalah syarah Ibnu Qasim. Di bawah tiap lafadz ada makna Indonesia dan simbol kedudukannya.</p></div>
+     <div><h3>Klik satu kata</h3><p>Kartu detail menampilkan makna, kedudukan lengkap, dan i'rab kata itu. Tombol Makna dan Kedudukan di atas bacaan menyembunyikan baris bantu untuk latihan membaca.</p></div>
+     <div><h3>Warna kedudukan</h3><div class="legend">${LEG.map(([c,l])=>`<span><i class="k-${c}"></i>${l}</span>`).join("")}</div></div>
+   </div>
+   <div class="notice">Teks Arab diambil dari edisi digital Fathul Qorib (OpenITI, salinan Maktabah Syamilah) lalu diberi harakat. Makna, i'rab, penjelasan, dan mind map adalah bantuan belajar. Cocokkan dengan kitab cetak dan bimbingan guru sebelum dijadikan pegangan.</div>
+  </div>`;
+}
+function renderRead(b,opt){
+  if(needKitab(b.k,"Memuat "+b.kt+"…"))return;
+  const ps=babParas(b);VIEW=ps;store.set("bab",b.id);
+  $("#main").innerHTML=bar(b,"read")+`<div class="wrap">${head(b)}${ps.map((p,i)=>paraHTML(p,i)).join("")}${pager(b,"read")}</div>`;
+  applyPrefs();
+  const nx=AVAIL[AVAIL.findIndex(x=>x.id===b.id)+1];if(nx&&!KD[nx.k])loadKitab(nx.k).catch(()=>{});
+  if(opt&&opt.para){const el=document.getElementById("p-"+opt.para);if(el){el.scrollIntoView({block:"start"});el.classList.add("flash")}}
+}
+function renderMap(b){
+  if(needKitab(b.k,"Memuat "+b.kt+"…"))return;
+  const kids=mmOf(b);const auto=!(KD[b.k].mm[b.id]);
+  const cnt=n=>n.kids.reduce((s,c)=>s+1+cnt(c),0);
+  if(kids.reduce((s,c)=>s+1+cnt(c),0)>36)kids.forEach(c=>c.kids.forEach(g=>{if(g.kids.length)g.shut=true}));
+  const root={t:b.title,ar:b.ar,kids,bab:b.id};
+  $("#main").innerHTML=bar(b,"map")+`<div class="wrap">${head(b)}${mmTools()}${mmCanvas(root)}${auto?`<div class="mm-legend">Peta ini disusun otomatis dari paragraf bab.</div>`:""}${pager(b,"map")}</div>`;
+  centerMM();
+}
+function renderKMap(kid){
+  const k=IDX.find(x=>x.id===kid);
+  if(needKitab(kid,"Memuat "+k.title+"…"))return;
+  const babs=BABS.filter(b=>b.k===kid);
+  const root={t:"Kitab "+k.title,ar:k.ar,kids:babs.map(b=>({t:b.title,ar:"",go:"peta-"+b.id,bab:b.id,shut:babs.length>8,kids:mmOf(b).map(n=>({t:n.t,ar:"",ref:n.ref,kids:[]}))}))};
+  const n=babs.reduce((a,b)=>a+b.n,0);
+  $("#main").innerHTML=`<div class="bar"><div class="bar-in"><nav class="crumb"><a href="#beranda" data-go="beranda">Beranda</a><span>›</span><b>Mind map ${esc(k.title)}</b></nav>
+     <div class="seg"><button data-go="${babs[0].id}" aria-pressed="false">${IC.book}Mulai baca</button><button aria-pressed="true">${IC.map}Mind map kitab</button></div></div><div class="prog"><i id="prog"></i></div></div>
+   <div class="wrap"><header class="head"><div><div class="eyebrow">Kitab ${IDX.indexOf(k)+1} dari ${IDX.length}</div><h1>Mind map ${esc(k.title)}</h1></div><div class="ar-title">${k.ar}</div>
+   <p>Gambaran seluruh bab dalam kitab ini beserta pokok bahasannya. Klik nama bab untuk membuka mind map lengkapnya, atau klik pokok bahasan bertanda ¶ untuk langsung membaca paragrafnya.</p>
+   <div class="meta-row"><span class="tag">${babs.length} bab</span><span class="tag">${fmt(n)} paragraf</span></div></header>
+   ${mmTools()}${mmCanvas(root)}</div>`;
+  centerMM();
+}
+function renderSearch(){
+  const qn=norm(q);
+  const need=IDX.filter(k=>!KD[k.id]);
+  if(need.length){
+    $("#main").innerHTML=`<div class="wrap"><div class="loading">Memuat seluruh kitab untuk pencarian…</div></div>`;
+    Promise.all(need.map(k=>loadKitab(k.id))).then(()=>{if(norm(q)===qn)render()}).catch(()=>{$("#main").innerHTML=failHTML()});
+    return;
+  }
+  const all=IDX.flatMap(k=>KD[k.id].paras);
+  const hits=all.filter(p=>p.words.some(w=>norm(w.a).includes(qn)||(w.t||"").toLowerCase().includes(qn))||(p.t||"").toLowerCase().includes(qn));
+  const shown=hits.slice(0,60);VIEW=shown;
+  $("#main").innerHTML=`<div class="bar"><div class="bar-in"><nav class="crumb"><a href="#beranda" data-go="beranda">Beranda</a><span>›</span><b>Pencarian</b></nav><div class="ctl"><button class="chip" id="tgT" aria-pressed="${pref.t}">Makna</button><button class="chip" id="tgK" aria-pressed="${pref.k}">Kedudukan</button></div></div><div class="prog"><i id="prog"></i></div></div>
+   <div class="wrap"><header class="head"><div><div class="eyebrow">Hasil pencarian</div><h1>“${esc(q)}”</h1></div><p>${hits.length?`${fmt(hits.length)} paragraf ditemukan${hits.length>60?". Ditampilkan 60 pertama; perjelas kata kunci untuk mempersempit hasil.":"."}`:""}</p></header>
+   ${shown.length?shown.map((p,i)=>paraHTML(p,i,qn,true)).join(""):`<div class="empty">Tidak ada yang cocok. Coba lafadz tanpa harakat, misalnya <b class="ar">ماء</b>, atau kata Indonesia seperti <b>air</b>.</div>`}</div>`;
+  applyPrefs();
+}
+function render(opt){
+  applyPrefs();toc();
+  const m=$("#main");
+  if(q)renderSearch();
+  else if(route.v==="read")renderRead(BABS.find(b=>b.id===route.bab),opt);
+  else if(route.v==="map")renderMap(BABS.find(b=>b.id===route.bab));
+  else if(route.v==="kmap")renderKMap(route.k);
+  else renderHome();
+  if(!(opt&&opt.para))m.scrollTop=0;
+  onScroll();
+}
+
+/* ---------- Mind map: interaksi ---------- */
+function centerMM(){const c=$("#mmc");if(!c)return;requestAnimationFrame(()=>{c.scrollLeft=0})}
+function mmAll(mode){
+  document.querySelectorAll("#mmc .mn").forEach(n=>{const d=+(n.className.match(/d(\d)/)||[0,0])[1];const sh=mode==="l1"?d>=1:false;n.classList.toggle("shut",sh&&!!n.querySelector(":scope>.mk"));const t=n.querySelector(":scope>.ml>.mtg");if(t)t.setAttribute("aria-expanded",!sh)});
+  centerMM();
+}
+(function pan(){
+  let s=null;
+  document.addEventListener("pointerdown",e=>{const c=e.target.closest("#mmc");if(!c||e.button!==0||e.pointerType==="touch"||e.target.closest("button"))return;s={c,x:e.clientX,y:e.clientY,l:c.scrollLeft,t:c.scrollTop};c.classList.add("drag")});
+  document.addEventListener("pointermove",e=>{if(!s)return;s.c.scrollLeft=s.l-(e.clientX-s.x);s.c.scrollTop=s.t-(e.clientY-s.y)});
+  document.addEventListener("pointerup",()=>{if(s){s.c.classList.remove("drag");s=null}});
+})();
+
+/* ---------- Kartu kata ---------- */
+function showWord(vi,wi,el){
+  document.querySelectorAll(".w.sel").forEach(x=>x.classList.remove("sel"));el.classList.add("sel");
+  const p=VIEW[vi],w=p.words[wi],k=K[w.k]||K.hr;
+  const nw=norm(w.a);const r=p.irob.find(r=>{const na=norm(r.a);return na&&(na===nw||na.split(" ").includes(nw))});
+  $("#sheet").innerHTML=`<button class="x" id="sx" aria-label="Tutup">×</button>
+   <div class="big${w.m?" m":""}">${esc(w.a)}</div>
+   <dl><dt>Makna</dt><dd>${esc(w.t)}</dd><dt>Kedudukan</dt><dd><span class="kb k-${k[3]}">${k[2]}</span>${esc(k[0])} <span class="ar">(${k[1]})</span></dd><dt>Sumber</dt><dd>${w.m?"Lafadz matan (Abu Syuja')":"Lafadz syarah (Ibnu Qasim)"}</dd></dl>
+   ${r?`<div class="note"><b>I'rab:</b> ${esc(r.x)}</div>`:""}`;
+  $("#sheet").hidden=false;$("#sx").onclick=()=>{$("#sheet").hidden=true;el.classList.remove("sel")};
+}
+
+/* ---------- Event ---------- */
+document.addEventListener("click",e=>{
+  const g=e.target.closest("[data-go]");
+  if(g){e.preventDefault();if(g.getAttribute("aria-pressed")==="true"&&!g.dataset.para)return;go(g.dataset.go,{para:g.dataset.para});return;}
+  const j=e.target.closest("[data-jump]");
+  if(j){const [bab,n]=j.dataset.jump.split(":");const b=BABS.find(x=>x.id===bab);const p=babParas(b)[+n-1];go(bab,{para:p&&p.id});return;}
+  const tg=e.target.closest("[data-mtg]");
+  if(tg){const n=tg.closest(".mn");n.classList.toggle("shut");tg.setAttribute("aria-expanded",!n.classList.contains("shut"));return;}
+  const ma=e.target.closest("[data-mmall]");if(ma){mmAll(ma.dataset.mmall);return;}
+  const mz=e.target.closest("[data-mz]");
+  if(mz){pref.mz=Math.min(1.5,Math.max(.7,Math.round((pref.mz+(+mz.dataset.mz)*.1)*10)/10));store.set("mz",pref.mz);const m=$("#mmc .mm");if(m)m.style.setProperty("--mz",pref.mz);return;}
+  const w=e.target.closest(".w");if(w){showWord(+w.dataset.v,+w.dataset.w,w);return;}
+  const cp=e.target.closest("[data-copy]");
+  if(cp){const p=VIEW[+cp.dataset.copy];const tx=p.words.map(x=>x.a).join(" ");const done=()=>{cp.textContent="Tersalin";setTimeout(()=>cp.textContent="Salin Arab",1500)};
+    try{navigator.clipboard.writeText(tx).then(done,()=>{fallbackCopy(tx);done()})}catch(_){fallbackCopy(tx);done()}return;}
+  const t=e.target.closest("[data-tab]");
+  if(t){pref.tab=t.dataset.tab;store.set("tab",pref.tab);const art=t.closest(".para");art.querySelectorAll("[data-tab]").forEach(b=>b.setAttribute("aria-selected",b===t));
+    art.querySelectorAll("[data-pane]").forEach(p=>p.hidden=p.dataset.pane!==t.dataset.tab);return;}
+  if(e.target.closest("#tgT")){pref.t=!pref.t;store.set("t",pref.t);applyPrefs();return}
+  if(e.target.closest("#tgK")){pref.k=!pref.k;store.set("k",pref.k);applyPrefs();return}
+  if(e.target.closest("#fsPlus")){pref.size=Math.min(4,pref.size+1);store.set("size",pref.size);applyPrefs();return}
+  if(e.target.closest("#fsMinus")){pref.size=Math.max(-2,pref.size-1);store.set("size",pref.size);applyPrefs();return}
+  if(e.target.closest("#scrim"))closeToc();
+});
+function fallbackCopy(tx){const ta=document.createElement("textarea");ta.value=tx;document.body.appendChild(ta);ta.select();try{document.execCommand("copy")}catch(_){}ta.remove()}
+$("#menuBtn").onclick=()=>{$("#toc").classList.contains("open")?closeToc():openToc()};
+$("#themeBtn").onclick=()=>{const dark=pref.theme?pref.theme==="dark":matchMedia("(prefers-color-scheme: dark)").matches;pref.theme=dark?"light":"dark";store.set("theme",pref.theme);applyPrefs()};
+let qt;$("#q").addEventListener("input",e=>{clearTimeout(qt);qt=setTimeout(()=>{q=e.target.value.trim();$("#sheet").hidden=true;render()},280)});
+document.addEventListener("keydown",e=>{
+  if(e.key==="Escape"){$("#sheet").hidden=true;closeToc()}
+  if(e.key==="/"&&!/INPUT|TEXTAREA/.test(document.activeElement.tagName)){e.preventDefault();$("#q").focus()}
+});
+function onScroll(){const m=$("#main"),p=$("#prog");if(!p)return;const h=m.scrollHeight-m.clientHeight;p.style.width=(h>0?Math.min(100,m.scrollTop/h*100):0)+"%"}
+$("#main").addEventListener("scroll",onScroll,{passive:true});
+window.addEventListener("resize",applyPrefs);
+
+route=parseHash(location.hash);
+try{history.replaceState(null,"","#"+hashOf(route))}catch(_){}
+render();
+})();
