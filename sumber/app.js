@@ -34,7 +34,11 @@ function parse(p){
 function loadKitab(kid){
   if(KD[kid])return Promise.resolve(KD[kid]);
   if(LD[kid])return LD[kid];
-  LD[kid]=fetch("data/"+kid+".json").then(r=>{if(!r.ok)throw new Error(r.status);return r.json()})
+  const get=()=>fetch("data/"+kid+".json",{credentials:"same-origin"});
+  LD[kid]=get().then(r=>{
+      if(r.status===401&&window.EFQAuth)return EFQAuth.refresh().then(ok=>ok?get():r).then(r2=>{if(r2.status===401){EFQAuth.toLogin();throw new Error("login")}return r2});
+      return r})
+    .then(r=>{if(!r.ok)throw new Error(r.status);return r.json()})
     .then(j=>{const arr=Array.isArray(j)?j:j.p;KD[kid]={paras:arr.map(parse),mm:(j&&j.mm)||{}};return KD[kid]})
     .catch(e=>{delete LD[kid];throw e});
   return LD[kid];
@@ -301,6 +305,19 @@ document.addEventListener("click",e=>{
 });
 function fallbackCopy(tx){const ta=document.createElement("textarea");ta.value=tx;document.body.appendChild(ta);ta.select();try{document.execCommand("copy")}catch(_){}ta.remove()}
 $("#menuBtn").onclick=()=>{$("#toc").classList.contains("open")?closeToc():openToc()};
+/* ---------- Akun (hanya di situs yang memakai login) ---------- */
+if(window.EFQAuth){
+  EFQAuth.session().then(u=>{
+    if(!u)return;
+    $("#userBox").hidden=false;
+    $("#userName").textContent=u.name;$("#userMail").textContent=u.email;$("#userProv").textContent="Masuk lewat "+(u.provider==="clerk"?"Clerk":"Firebase");
+    $("#userInit").textContent=(u.name||"?").trim().charAt(0).toUpperCase();
+    if(u.image){const im=$("#userImg");im.src=u.image;im.hidden=false;$("#userInit").hidden=true;im.onerror=()=>{im.hidden=true;$("#userInit").hidden=false}}
+  }).catch(()=>{});
+  $("#userBtn").onclick=e=>{e.stopPropagation();const m=$("#userMenu");m.hidden=!m.hidden;$("#userBtn").setAttribute("aria-expanded",!m.hidden)};
+  document.addEventListener("click",e=>{if(!e.target.closest("#userBox"))$("#userMenu").hidden=true});
+  $("#logoutBtn").onclick=()=>{$("#logoutBtn").disabled=true;$("#logoutBtn").textContent="Keluar…";EFQAuth.signOut().finally(()=>location.href="/login?keluar=1")};
+}
 $("#themeBtn").onclick=()=>{const dark=pref.theme?pref.theme==="dark":matchMedia("(prefers-color-scheme: dark)").matches;pref.theme=dark?"light":"dark";store.set("theme",pref.theme);applyPrefs()};
 let qt;$("#q").addEventListener("input",e=>{clearTimeout(qt);qt=setTimeout(()=>{q=e.target.value.trim();$("#sheet").hidden=true;render()},280)});
 document.addEventListener("keydown",e=>{

@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Masuk – E-Fathul Qorib</title>
+<meta name="theme-color" content="#17594a">
+<meta name="robots" content="noindex">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2317594a'/%3E%3Ctext x='32' y='44' font-size='36' text-anchor='middle' fill='%23fbf8ef' font-family='serif'%3E%D9%82%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
+<style>
+/* Halaman masuk: satu kartu di tengah lembar "kitab kuning"; dua jalur login (Clerk / Firebase) dipisah garis. */
+:root{
+  --bg:#efeadb;--surface:#fbf8ef;--surface-2:#f3eedf;--ink:#221f18;--ink-2:#5e5745;--ink-3:#8a826c;--line:#ddd4bc;--line-2:#c9bd9c;
+  --accent:#17594a;--accent-ink:#0f4237;--accent-soft:#dbe8df;--on-accent:#fbf8ef;--matan:#a3261b;--danger:#a3261b;--danger-soft:#f6e1dc;
+  --f-ar:"Amiri","Traditional Arabic",serif;--f-ui:"Plus Jakarta Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#12110e;--surface:#1b1915;--surface-2:#221f1a;--ink:#eee6d0;--ink-2:#b4aa90;--ink-3:#857c66;--line:#322d25;--line-2:#4a4336;
+  --accent:#78c4a6;--accent-ink:#a3dcc4;--accent-soft:#1d332c;--on-accent:#0f1a16;--matan:#f08670;--danger:#f08670;--danger-soft:#3a201b;color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#12110e;--surface:#1b1915;--surface-2:#221f1a;--ink:#eee6d0;--ink-2:#b4aa90;--ink-3:#857c66;--line:#322d25;--line-2:#4a4336;
+  --accent:#78c4a6;--accent-ink:#a3dcc4;--accent-soft:#1d332c;--on-accent:#0f1a16;--matan:#f08670;--danger:#f08670;--danger-soft:#3a201b;color-scheme:dark}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html,body{min-height:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.6 var(--f-ui);-webkit-font-smoothing:antialiased;
+  display:grid;place-items:center;padding-block:32px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));
+  background-image:repeating-linear-gradient(0deg,transparent 0 31px,color-mix(in srgb,var(--line) 45%,transparent) 31px 32px)}
+button,input{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.card{width:min(440px,100%);background:var(--surface);border:1px solid var(--line);border-radius:22px;box-shadow:0 1px 2px rgba(60,45,10,.06),0 18px 50px -20px rgba(60,45,10,.35);padding:28px}
+.brand{display:flex;align-items:center;gap:12px}
+.seal{width:46px;height:46px;border-radius:13px;background:var(--accent);color:var(--on-accent);display:grid;place-items:center;font-family:var(--f-ar);font-size:26px;padding-bottom:4px;flex:none}
+.brand b{display:block;font-size:18px;font-weight:800;letter-spacing:-.01em}
+.brand small{color:var(--ink-3);font-size:12.5px}
+.ar{font-family:var(--f-ar);direction:rtl;text-align:center;color:var(--matan);font-size:26px;line-height:1.6;margin:18px 0 4px}
+h1{font-size:22px;line-height:1.25;margin:0 0 4px;letter-spacing:-.02em;text-align:center}
+.lead{color:var(--ink-2);text-align:center;margin:0 0 22px;font-size:14px}
+.btn{width:100%;display:flex;align-items:center;justify-content:center;gap:10px;height:46px;border-radius:12px;border:1px solid var(--line);background:var(--surface);font-weight:700;font-size:14.5px;cursor:pointer}
+.btn:hover{border-color:var(--line-2);background:var(--surface-2)}
+.btn.pri{background:var(--accent);border-color:var(--accent);color:var(--on-accent)}
+.btn.pri:hover{background:var(--accent-ink)}
+.btn[disabled]{opacity:.55;cursor:wait}
+.btn svg{width:18px;height:18px;flex:none}
+.hint{font-size:12.5px;color:var(--ink-3);text-align:center;margin:8px 0 0}
+.or{display:flex;align-items:center;gap:12px;margin:22px 0 16px;color:var(--ink-3);font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase}
+.or::before,.or::after{content:"";flex:1;border-top:1px solid var(--line)}
+form{display:grid;gap:10px;margin-top:12px}
+label{display:grid;gap:4px;font-size:13px;font-weight:600;color:var(--ink-2)}
+input{height:44px;border:1px solid var(--line);border-radius:11px;background:var(--surface-2);padding:0 12px;font-size:15px}
+input:focus{outline:none;border-color:var(--accent);background:var(--surface);box-shadow:0 0 0 3px var(--accent-soft)}
+.row{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;font-size:13px}
+.link{background:none;border:0;padding:0;color:var(--accent-ink);font-weight:650;cursor:pointer;text-decoration:underline;text-underline-offset:3px}
+.msg{margin-top:16px;padding:10px 12px;border-radius:11px;font-size:13.5px;background:var(--accent-soft);color:var(--accent-ink)}
+.msg.err{background:var(--danger-soft);color:var(--danger)}
+.foot{margin-top:20px;padding-top:14px;border-top:1px dashed var(--line);font-size:12px;color:var(--ink-3);text-align:center}
+#clerk-mount{margin-top:4px}
+@media (max-width:420px){.card{padding:22px 18px}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+</style>
+<script>try{var t=localStorage.getItem("efq:theme");if(t)document.documentElement.setAttribute("data-theme",JSON.parse(t))}catch(e){}</script>
+</head>
+<body>
+<main class="card" aria-labelledby="judul">
+  <div class="brand"><span class="seal">ق</span><span><b>E-Fathul Qorib</b><small>Makna per kata · I'rab · Penjelasan · Mind map</small></span></div>
+  <div class="ar">فَتْحُ الْقَرِيْبِ الْمُجِيْبِ</div>
+  <h1 id="judul">Masuk untuk membaca</h1>
+  <p class="lead" id="lead">Pilih salah satu cara masuk di bawah ini.</p>
+
+  <section id="clerkBox">
+    <button class="btn pri" id="clerkBtn" type="button">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><path d="M10 17l5-5-5-5"/><path d="M15 12H3"/></svg>
+      Masuk dengan Clerk
+    </button>
+    <p class="hint">Email atau akun Google, dikelola oleh Clerk.</p>
+    <div id="clerk-mount"></div>
+  </section>
+
+  <div class="or" id="orLine">atau lewat Firebase</div>
+
+  <section id="fbBox">
+    <button class="btn" id="googleBtn" type="button">
+      <svg viewBox="0 0 24 24"><path fill="#EA4335" d="M12 10.2v3.9h5.4c-.2 1.3-1.6 3.8-5.4 3.8-3.2 0-5.9-2.7-5.9-6s2.7-6 5.9-6c1.9 0 3.1.8 3.8 1.5l2.6-2.5C16.8 3.3 14.6 2.3 12 2.3 6.6 2.3 2.3 6.6 2.3 12s4.3 9.7 9.7 9.7c5.6 0 9.3-3.9 9.3-9.5 0-.6-.1-1.1-.2-1.6H12z"/></svg>
+      Masuk dengan Google (Firebase)
+    </button>
+    <form id="emailForm" novalidate>
+      <label for="email">Email<input id="email" type="email" autocomplete="email" required></label>
+      <label for="password">Kata sandi<input id="password" type="password" autocomplete="current-password" minlength="6" required></label>
+      <label for="name" id="nameWrap" hidden>Nama lengkap<input id="name" type="text" autocomplete="name"></label>
+      <button class="btn" id="emailBtn" type="submit">Masuk dengan email</button>
+      <div class="row">
+        <button class="link" type="button" id="modeBtn">Belum punya akun? Daftar</button>
+        <button class="link" type="button" id="resetBtn">Lupa kata sandi?</button>
+      </div>
+    </form>
+  </section>
+
+  <div class="msg" id="msg" role="status" hidden></div>
+  <p class="foot">Teks kitab dari edisi digital Fathul Qorib, diberi harakat. Makna, i'rab, penjelasan, dan mind map adalah alat bantu belajar.</p>
+</main>
+
+<script src="/auth-config.js"></script>
+<script src="/auth-client.js"></script>
+<script>
+(function () {
+  const A = window.EFQAuth;
+  const $ = (s) => document.querySelector(s);
+  const params = new URLSearchParams(location.search);
+  const rawNext = params.get("next") || "/";
+  const next = (rawNext.startsWith("/") && !rawNext.startsWith("//") && !rawNext.startsWith("/login") ? rawNext : "/") + location.hash;
+  let mode = "masuk";
+
+  function say(text, err) { const m = $("#msg"); m.textContent = text; m.className = "msg" + (err ? " err" : ""); m.hidden = !text; }
+  function busy(on) { document.querySelectorAll(".btn").forEach((b) => (b.disabled = on)); }
+  function go() { location.replace(next); }
+
+  const FB_ERR = {
+    "auth/invalid-email": "Format email belum benar.",
+    "auth/missing-password": "Kata sandi belum diisi.",
+    "auth/invalid-credential": "Email atau kata sandi salah.",
+    "auth/wrong-password": "Email atau kata sandi salah.",
+    "auth/user-not-found": "Akun dengan email ini belum terdaftar. Pilih Daftar untuk membuatnya.",
+    "auth/email-already-in-use": "Email ini sudah terdaftar. Silakan masuk.",
+    "auth/weak-password": "Kata sandi minimal 6 karakter.",
+    "auth/popup-closed-by-user": "Jendela login Google ditutup sebelum selesai.",
+    "auth/popup-blocked": "Jendela login diblokir browser. Mengalihkan ke halaman Google…",
+    "auth/unauthorized-domain": "Domain ini belum diizinkan di Firebase Authentication.",
+    "auth/operation-not-allowed": "Metode login ini belum diaktifkan di Firebase.",
+    "auth/too-many-requests": "Terlalu banyak percobaan. Coba lagi beberapa menit lagi.",
+    "auth/network-request-failed": "Koneksi bermasalah. Periksa internet lalu coba lagi.",
+  };
+  const fbMsg = (e) => FB_ERR[e && e.code] || (e && e.message) || "Terjadi kesalahan.";
+
+  async function afterFirebase(user) {
+    await A.setFirebaseCookie(user);
+    A.markSignedIn("firebase");
+    say("Berhasil masuk. Membuka kitab…");
+    go();
+  }
+
+  // Tampilkan hanya jalur yang sudah dikonfigurasi.
+  $("#clerkBox").hidden = !A.configured.clerk;
+  $("#fbBox").hidden = !A.configured.firebase;
+  $("#orLine").hidden = !(A.configured.clerk && A.configured.firebase);
+  if (!A.configured.clerk && !A.configured.firebase) {
+    $("#lead").textContent = "Login belum dikonfigurasi oleh pengelola situs.";
+  }
+
+  // Keluar
+  if (params.has("keluar")) {
+    busy(true);
+    A.signOut().then(() => { busy(false); say("Anda sudah keluar. Sampai jumpa lagi."); history.replaceState(null, "", "/login"); });
+  } else {
+    // Sudah login? langsung lanjut.
+    const p = A.provider();
+    if (p === "firebase" && A.configured.firebase) {
+      A.firebaseAuth().then((auth) => { if (auth.currentUser) afterFirebase(auth.currentUser); }).catch(() => {});
+    } else if (p === "clerk" && A.configured.clerk) {
+      A.clerk().then((c) => { if (c.user && c.session) { c.session.getToken().then(go); } }).catch(() => {});
+    }
+  }
+
+  // Clerk
+  $("#clerkBtn").addEventListener("click", async () => {
+    busy(true); say("Memuat Clerk…");
+    try {
+      const c = await A.clerk();
+      A.markSignedIn("clerk");
+      if (c.user && c.session) { await c.session.getToken(); return go(); }
+      say("");
+      c.addListener(({ user, session }) => { if (user && session) session.getToken().then(go); });
+      c.mountSignIn($("#clerk-mount"), { forceRedirectUrl: location.origin + next, signUpForceRedirectUrl: location.origin + next, routing: "hash" });
+      $("#clerkBtn").hidden = true;
+    } catch (e) {
+      say("Clerk tidak dapat dimuat: " + e.message, true);
+    } finally { busy(false); }
+  });
+
+  // Firebase: Google
+  $("#googleBtn").addEventListener("click", async () => {
+    busy(true); say("");
+    try {
+      const auth = await A.firebaseAuth();
+      const provider = new window.firebase.auth.GoogleAuthProvider();
+      provider.setCustomParameters({ prompt: "select_account" });
+      const res = await auth.signInWithPopup(provider);
+      await afterFirebase(res.user);
+    } catch (e) {
+      say(fbMsg(e), true);
+    } finally { busy(false); }
+  });
+
+  // Firebase: email & kata sandi
+  $("#modeBtn").addEventListener("click", () => {
+    mode = mode === "masuk" ? "daftar" : "masuk";
+    $("#nameWrap").hidden = mode !== "daftar";
+    $("#emailBtn").textContent = mode === "daftar" ? "Daftar dengan email" : "Masuk dengan email";
+    $("#modeBtn").textContent = mode === "daftar" ? "Sudah punya akun? Masuk" : "Belum punya akun? Daftar";
+    $("#password").autocomplete = mode === "daftar" ? "new-password" : "current-password";
+    say("");
+  });
+  $("#emailForm").addEventListener("submit", async (ev) => {
+    ev.preventDefault();
+    const email = $("#email").value.trim(), pass = $("#password").value;
+    if (!email || !pass) return say("Isi email dan kata sandi terlebih dahulu.", true);
+    busy(true); say("");
+    try {
+      const auth = await A.firebaseAuth();
+      let cred;
+      if (mode === "daftar") {
+        cred = await auth.createUserWithEmailAndPassword(email, pass);
+        const nm = $("#name").value.trim();
+        if (nm) await cred.user.updateProfile({ displayName: nm });
+      } else {
+        cred = await auth.signInWithEmailAndPassword(email, pass);
+      }
+      await afterFirebase(cred.user);
+    } catch (e) {
+      say(fbMsg(e), true);
+    } finally { busy(false); }
+  });
+  $("#resetBtn").addEventListener("click", async () => {
+    const email = $("#email").value.trim();
+    if (!email) return say("Tulis email Anda dulu, lalu klik Lupa kata sandi.", true);
+    try {
+      const auth = await A.firebaseAuth();
+      await auth.sendPasswordResetEmail(email);
+      say("Tautan untuk mengatur ulang kata sandi sudah dikirim ke " + email + ".");
+    } catch (e) { say(fbMsg(e), true); }
+  });
+})();
+</script>
+</body>
+</html>

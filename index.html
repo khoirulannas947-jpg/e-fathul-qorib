@@ -5,8 +5,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="description" content="Kitab Fathul Qorib lengkap: makna dan kedudukan per kata, terjemah, i'rab, penjelasan per paragraf, dan mind map tiap bab.">
 <meta name="theme-color" content="#17594a">
+<meta name="robots" content="noindex">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2317594a'/%3E%3Ctext x='32' y='44' font-size='36' text-anchor='middle' fill='%23fbf8ef' font-family='serif'%3E%D9%82%3C/text%3E%3C/svg%3E">
 <style>[hidden]{display:none!important}:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}</style>
+<script src="/auth-config.js"></script>
+<script src="/auth-client.js"></script>
 <title>E-Fathul Qorib</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -292,6 +295,17 @@ button.mlab:hover{outline:2px solid var(--c,var(--accent));outline-offset:1px}
 .d0>.ml>.mtg{display:none}
 .mm-legend{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px;font-size:12.5px;color:var(--ink-3)}
 
+
+/* ---------- Akun ---------- */
+.user{position:relative;flex:none}
+.user-btn{width:38px;height:38px;border-radius:50%;overflow:hidden;border:1px solid var(--line);background:var(--accent-soft);color:var(--accent-ink);font-weight:800;font-size:14px;display:grid;place-items:center}
+.user-btn img{width:100%;height:100%;object-fit:cover}
+.user-menu{position:absolute;right:0;top:46px;z-index:70;width:240px;background:var(--surface);border:1px solid var(--line);border-radius:14px;box-shadow:0 18px 40px -14px rgba(0,0,0,.35);padding:14px;display:grid;gap:2px}
+.user-menu b{font-size:14px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.user-menu small{color:var(--ink-3);font-size:12.5px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.user-menu .prov{justify-self:start;margin:6px 0 10px;font-size:11px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--accent-ink);background:var(--accent-soft);padding:2px 8px;border-radius:999px}
+.user-menu .logout{height:36px;border-radius:10px;border:1px solid var(--line);font-weight:700;font-size:13.5px}
+.user-menu .logout:hover{background:var(--surface-2)}
 /* ---------- Responsif ---------- */
 @media (max-width:980px){
   .shell{grid-template-columns:minmax(0,1fr)}
@@ -354,6 +368,10 @@ button.mlab:hover{outline:2px solid var(--c,var(--accent));outline-offset:1px}
   <a class="brand" href="#beranda" data-go="beranda"><span class="seal">ق</span><span class="brand-tx"><b>E-Fathul Qorib</b><small>Makna per kata · I'rab · Penjelasan · Mind map</small></span></a>
   <label class="search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
     <input id="q" type="search" placeholder="Cari lafadz Arab atau kata Indonesia" aria-label="Cari di seluruh kitab" autocomplete="off"><kbd>/</kbd></label>
+  <div class="user" id="userBox" hidden>
+    <button class="user-btn" id="userBtn" aria-haspopup="true" aria-expanded="false" aria-label="Akun"><img id="userImg" alt="" hidden><span id="userInit"></span></button>
+    <div class="user-menu" id="userMenu" hidden><b id="userName"></b><small id="userMail"></small><span class="prov" id="userProv"></span><button class="logout" id="logoutBtn">Keluar</button></div>
+  </div>
   <button class="icon-btn" id="themeBtn" aria-label="Ganti tema terang/gelap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg></button>
 </div></header>
 <div class="shell">
@@ -402,7 +420,11 @@ function parse(p){
 function loadKitab(kid){
   if(KD[kid])return Promise.resolve(KD[kid]);
   if(LD[kid])return LD[kid];
-  LD[kid]=fetch("data/"+kid+".json").then(r=>{if(!r.ok)throw new Error(r.status);return r.json()})
+  const get=()=>fetch("data/"+kid+".json",{credentials:"same-origin"});
+  LD[kid]=get().then(r=>{
+      if(r.status===401&&window.EFQAuth)return EFQAuth.refresh().then(ok=>ok?get():r).then(r2=>{if(r2.status===401){EFQAuth.toLogin();throw new Error("login")}return r2});
+      return r})
+    .then(r=>{if(!r.ok)throw new Error(r.status);return r.json()})
     .then(j=>{const arr=Array.isArray(j)?j:j.p;KD[kid]={paras:arr.map(parse),mm:(j&&j.mm)||{}};return KD[kid]})
     .catch(e=>{delete LD[kid];throw e});
   return LD[kid];
@@ -669,6 +691,19 @@ document.addEventListener("click",e=>{
 });
 function fallbackCopy(tx){const ta=document.createElement("textarea");ta.value=tx;document.body.appendChild(ta);ta.select();try{document.execCommand("copy")}catch(_){}ta.remove()}
 $("#menuBtn").onclick=()=>{$("#toc").classList.contains("open")?closeToc():openToc()};
+/* ---------- Akun (hanya di situs yang memakai login) ---------- */
+if(window.EFQAuth){
+  EFQAuth.session().then(u=>{
+    if(!u)return;
+    $("#userBox").hidden=false;
+    $("#userName").textContent=u.name;$("#userMail").textContent=u.email;$("#userProv").textContent="Masuk lewat "+(u.provider==="clerk"?"Clerk":"Firebase");
+    $("#userInit").textContent=(u.name||"?").trim().charAt(0).toUpperCase();
+    if(u.image){const im=$("#userImg");im.src=u.image;im.hidden=false;$("#userInit").hidden=true;im.onerror=()=>{im.hidden=true;$("#userInit").hidden=false}}
+  }).catch(()=>{});
+  $("#userBtn").onclick=e=>{e.stopPropagation();const m=$("#userMenu");m.hidden=!m.hidden;$("#userBtn").setAttribute("aria-expanded",!m.hidden)};
+  document.addEventListener("click",e=>{if(!e.target.closest("#userBox"))$("#userMenu").hidden=true});
+  $("#logoutBtn").onclick=()=>{$("#logoutBtn").disabled=true;$("#logoutBtn").textContent="Keluar…";EFQAuth.signOut().finally(()=>location.href="/login?keluar=1")};
+}
 $("#themeBtn").onclick=()=>{const dark=pref.theme?pref.theme==="dark":matchMedia("(prefers-color-scheme: dark)").matches;pref.theme=dark?"light":"dark";store.set("theme",pref.theme);applyPrefs()};
 let qt;$("#q").addEventListener("input",e=>{clearTimeout(qt);qt=setTimeout(()=>{q=e.target.value.trim();$("#sheet").hidden=true;render()},280)});
 document.addEventListener("keydown",e=>{
