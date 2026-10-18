@@ -130,7 +130,15 @@ const AI_SUG=[["Jelaskan i'rab","Jelaskan i'rab kalimat-kalimat di paragraf ini 
 function aiFmt(t){
   let h=esc(t).replace(/\*\*([^*\n]+)\*\*/g,"<b>$1</b>");
   h=h.replace(/[\u0600-\u06FF][\u0600-\u06FF\u064B-\u065F\u0670\s]*[\u0600-\u06FF\u064B-\u065F\u0670]|[\u0600-\u06FF]/g,m=>`<bdi class="ar-in">${m}</bdi>`);
-  return h.split(/\n\s*\n/).map(x=>`<p>${x.trim().replace(/\n/g,"<br>")}</p>`).join("");
+  return h.split(/\n\s*\n/).map(blk=>{
+    const ls=blk.trim().split("\n");let out="",list=null;
+    const flush=()=>{if(list){out+=`<${list.t}>${list.i.map(x=>`<li>${x}</li>`).join("")}</${list.t}>`;list=null}};
+    ls.forEach(l=>{const u=l.match(/^\s*[-•*]\s+(.*)/),o=l.match(/^\s*\d+[.)]\s+(.*)/);const it=u||o;
+      if(it){const t=u?"ul":"ol";if(!list||list.t!==t){flush();list={t,i:[]}}list.i.push(it[1])}
+      else if(list&&/^\s{2,}\S/.test(l)){list.i[list.i.length-1]+="<br>"+l.trim()}
+      else{flush();out+=`<p>${l.trim()}</p>`}});
+    flush();return out;
+  }).join("");
 }
 function aiMsgs(pid){
   const c=CONV[pid]||[];
@@ -145,7 +153,7 @@ function aiPane(p,vi){
     <p class="ai-note">Jawaban AI adalah alat bantu belajar, bukan fatwa. Bila ragu, tanyakan kepada guru.</p>
   </div>`;
 }
-function aiRefresh(art,pid){const log=art.querySelector(".ai-log");if(!log)return;log.innerHTML=aiMsgs(pid);log.scrollTop=log.scrollHeight;const last=log.lastElementChild;if(last&&last.scrollIntoView)try{last.scrollIntoView({block:"nearest",behavior:"smooth"})}catch(_){}}
+function aiRefresh(art,pid){const log=art.querySelector(".ai-log");if(!log)return;log.innerHTML=aiMsgs(pid);const last=log.lastElementChild;if(!last)return;log.scrollTop=Math.max(0,last.offsetTop-log.offsetTop-8);try{art.querySelector(".ai").scrollIntoView({block:"nearest",behavior:"smooth"})}catch(_){}}
 async function aiAsk(form,text){
   const p=VIEW[+form.dataset.ai];if(!p)return;
   const art=form.closest(".para"),ta=form.querySelector("textarea"),btn=form.querySelector("button");
