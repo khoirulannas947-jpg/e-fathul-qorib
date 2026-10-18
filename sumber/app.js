@@ -15,6 +15,8 @@ const IC={
  book:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5a2 2 0 0 1 2-2h13v16H6a2 2 0 0 0-2 2z"/><path d="M4 21V5"/></svg>',
  map:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="5" cy="12" r="2.5"/><circle cx="19" cy="5" r="2.5"/><circle cx="19" cy="19" r="2.5"/><path d="M7.5 12h4M11.5 12V5h5M11.5 12v7h5"/></svg>',
  home:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/></svg>',
+ spark:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.8 4.7L18.5 9.5l-4.7 1.8L12 16l-1.8-4.7L5.5 9.5l4.7-1.8z"/><path d="M19 15l.8 2.2L22 18l-2.2.8L19 21l-.8-2.2L16 18l2.2-.8z"/></svg>',
+ send:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>',
  arrow:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>'
 };
 const IDX=window.FQINDEX||[];
@@ -115,10 +117,52 @@ function paraHTML(p,vi,qn,showSrc){
     <span class="act"><button data-copy="${vi}" title="Salin teks Arab paragraf ini">Salin Arab</button></span></div>
    <div class="text">${ws}</div>
    <div class="trans"><b>Terjemah</b>${esc(p.t)}</div>
-   <div class="tabs" role="tablist"><button role="tab" aria-selected="${tab==="i"}" data-tab="i">I'rab</button><button role="tab" aria-selected="${tab==="s"}" data-tab="s">Penjelasan</button><button role="tab" aria-selected="${tab==="x"}" data-tab="x">Tutup</button></div>
+   <div class="tabs" role="tablist"><button role="tab" aria-selected="${tab==="i"}" data-tab="i">I'rab</button><button role="tab" aria-selected="${tab==="s"}" data-tab="s">Penjelasan</button>${AI_ON?`<button role="tab" aria-selected="false" data-tab="a" class="ai-tab">${IC.spark}Tanya AI</button>`:""}<button role="tab" aria-selected="${tab==="x"}" data-tab="x">Tutup</button></div>
    <div class="pane" data-pane="i"${tab==="i"?"":" hidden"}><ul class="irob">${ir}</ul></div>
    <div class="pane syarh" data-pane="s"${tab==="s"?"":" hidden"}>${sy}</div>
+   ${AI_ON?aiPane(p,vi):""}
   </article>`;
+}
+/* ---------- Tanya AI (per paragraf) ---------- */
+const AI_ON=!!window.EFQAuth;
+const CONV={};
+const AI_SUG=[["Jelaskan i'rab","Jelaskan i'rab kalimat-kalimat di paragraf ini langkah demi langkah."],["Untuk pemula","Jelaskan isi paragraf ini dengan bahasa sederhana untuk pemula, beserta contoh sehari-hari."],["Dalil & alasan","Apa dalil atau alasan hukum yang disebut dalam paragraf ini?"],["Poin hafalan","Ringkas paragraf ini menjadi poin-poin penting untuk dihafal."]];
+function aiFmt(t){
+  let h=esc(t).replace(/\*\*([^*\n]+)\*\*/g,"<b>$1</b>");
+  h=h.replace(/[\u0600-\u06FF][\u0600-\u06FF\u064B-\u065F\u0670\s]*[\u0600-\u06FF\u064B-\u065F\u0670]|[\u0600-\u06FF]/g,m=>`<bdi class="ar-in">${m}</bdi>`);
+  return h.split(/\n\s*\n/).map(x=>`<p>${x.trim().replace(/\n/g,"<br>")}</p>`).join("");
+}
+function aiMsgs(pid){
+  const c=CONV[pid]||[];
+  return c.map(m=>m.role==="user"?`<div class="ai-q">${esc(m.content)}</div>`:m.role==="err"?`<div class="ai-err">${esc(m.content)}</div>`:`<div class="ai-a">${aiFmt(m.content)}</div>`).join("")+(CONV[pid]&&CONV[pid].busy?`<div class="ai-wait"><i></i><i></i><i></i> Ustadz AI sedang menyusun jawaban…</div>`:"");
+}
+function aiPane(p,vi){
+  const has=(CONV[p.id]||[]).length;
+  return `<div class="pane ai" data-pane="a" hidden>
+    <div class="ai-log" aria-live="polite">${has?aiMsgs(p.id):`<p class="ai-hi">${IC.spark}<span>Tanyakan apa saja tentang paragraf ini: makna kata, i'rab, maksud hukum, atau minta penjelasan yang lebih sederhana.</span></p>`}</div>
+    <div class="ai-sug">${AI_SUG.map(s=>`<button type="button" data-ask="${esc(s[1])}">${esc(s[0])}</button>`).join("")}</div>
+    <form class="ai-form" data-ai="${vi}"><textarea rows="1" maxlength="600" placeholder="Tulis pertanyaan tentang paragraf ini…" aria-label="Pertanyaan untuk Tanya AI"></textarea><button type="submit" aria-label="Kirim pertanyaan">${IC.send}</button></form>
+    <p class="ai-note">Jawaban AI adalah alat bantu belajar, bukan fatwa. Bila ragu, tanyakan kepada guru.</p>
+  </div>`;
+}
+function aiRefresh(art,pid){const log=art.querySelector(".ai-log");if(!log)return;log.innerHTML=aiMsgs(pid);log.scrollTop=log.scrollHeight;const last=log.lastElementChild;if(last&&last.scrollIntoView)try{last.scrollIntoView({block:"nearest",behavior:"smooth"})}catch(_){}}
+async function aiAsk(form,text){
+  const p=VIEW[+form.dataset.ai];if(!p)return;
+  const art=form.closest(".para"),ta=form.querySelector("textarea"),btn=form.querySelector("button");
+  text=(text||ta.value).trim();if(!text||(CONV[p.id]&&CONV[p.id].busy))return;
+  const c=CONV[p.id]=CONV[p.id]||[];
+  const riwayat=c.filter(m=>m.role!=="err").slice(-6).map(m=>({role:m.role,content:m.content}));
+  c.push({role:"user",content:text});c.busy=true;ta.value="";ta.style.height="";btn.disabled=true;aiRefresh(art,p.id);
+  const b=BABS.find(x=>x.id===p.bab);
+  const send=()=>fetch("/api/tanya",{method:"POST",credentials:"same-origin",headers:{"content-type":"application/json"},body:JSON.stringify({kitab:b.k,pid:p.id,judul:b.title,q:text,riwayat})});
+  try{
+    let r=await send();
+    if(r.status===401&&window.EFQAuth){const ok=await EFQAuth.refresh();if(ok)r=await send();if(r.status===401){EFQAuth.toLogin();return}}
+    const j=await r.json().catch(()=>({}));
+    if(r.ok&&j.jawab)c.push({role:"assistant",content:j.jawab});
+    else c.push({role:"err",content:j.pesan||"Maaf, terjadi kesalahan. Coba lagi."});
+  }catch(_){c.push({role:"err",content:"Koneksi bermasalah. Periksa internet lalu coba lagi."})}
+  finally{c.busy=false;btn.disabled=false;aiRefresh(art,p.id)}
 }
 function pager(b,view){
   const ai=AVAIL.findIndex(x=>x.id===b.id),pv=AVAIL[ai-1],nx=AVAIL[ai+1],pre=view==="map"?"peta-":"";
@@ -295,7 +339,9 @@ document.addEventListener("click",e=>{
   if(cp){const p=VIEW[+cp.dataset.copy];const tx=p.words.map(x=>x.a).join(" ");const done=()=>{cp.textContent="Tersalin";setTimeout(()=>cp.textContent="Salin Arab",1500)};
     try{navigator.clipboard.writeText(tx).then(done,()=>{fallbackCopy(tx);done()})}catch(_){fallbackCopy(tx);done()}return;}
   const t=e.target.closest("[data-tab]");
-  if(t){pref.tab=t.dataset.tab;store.set("tab",pref.tab);const art=t.closest(".para");art.querySelectorAll("[data-tab]").forEach(b=>b.setAttribute("aria-selected",b===t));
+  const ask=e.target.closest("[data-ask]");
+  if(ask){const f=ask.closest(".pane").querySelector(".ai-form");aiAsk(f,ask.dataset.ask);return;}
+  if(t){if(t.dataset.tab!=="a"){pref.tab=t.dataset.tab;store.set("tab",pref.tab);}const art=t.closest(".para");art.querySelectorAll("[data-tab]").forEach(b=>b.setAttribute("aria-selected",b===t));
     art.querySelectorAll("[data-pane]").forEach(p=>p.hidden=p.dataset.pane!==t.dataset.tab);return;}
   if(e.target.closest("#tgT")){pref.t=!pref.t;store.set("t",pref.t);applyPrefs();return}
   if(e.target.closest("#tgK")){pref.k=!pref.k;store.set("k",pref.k);applyPrefs();return}
@@ -303,6 +349,9 @@ document.addEventListener("click",e=>{
   if(e.target.closest("#fsMinus")){pref.size=Math.max(-2,pref.size-1);store.set("size",pref.size);applyPrefs();return}
   if(e.target.closest("#scrim"))closeToc();
 });
+document.addEventListener("submit",e=>{const f=e.target.closest(".ai-form");if(!f)return;e.preventDefault();aiAsk(f)});
+document.addEventListener("input",e=>{const ta=e.target.closest(".ai-form textarea");if(!ta)return;ta.style.height="";ta.style.height=Math.min(160,ta.scrollHeight)+"px"});
+document.addEventListener("keydown",e=>{const ta=e.target.closest&&e.target.closest(".ai-form textarea");if(ta&&e.key==="Enter"&&!e.shiftKey&&!e.isComposing){e.preventDefault();aiAsk(ta.form)}});
 function fallbackCopy(tx){const ta=document.createElement("textarea");ta.value=tx;document.body.appendChild(ta);ta.select();try{document.execCommand("copy")}catch(_){}ta.remove()}
 $("#menuBtn").onclick=()=>{$("#toc").classList.contains("open")?closeToc():openToc()};
 /* ---------- Akun (hanya di situs yang memakai login) ---------- */
@@ -310,7 +359,7 @@ if(window.EFQAuth){
   EFQAuth.session().then(u=>{
     if(!u)return;
     $("#userBox").hidden=false;
-    $("#userName").textContent=u.name;$("#userMail").textContent=u.email;$("#userProv").textContent="Masuk lewat "+(u.provider==="clerk"?"Clerk":"Firebase");
+    $("#userName").textContent=u.name;$("#userMail").textContent=u.email;$("#userProv").textContent="Masuk dengan akun Firebase";
     $("#userInit").textContent=(u.name||"?").trim().charAt(0).toUpperCase();
     if(u.image){const im=$("#userImg");im.src=u.image;im.hidden=false;$("#userInit").hidden=true;im.onerror=()=>{im.hidden=true;$("#userInit").hidden=false}}
   }).catch(()=>{});

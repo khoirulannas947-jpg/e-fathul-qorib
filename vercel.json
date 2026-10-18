@@ -1,8 +1,38 @@
 {
   "cleanUrls": true,
   "headers": [
-    { "source": "/data/(.*)", "headers": [{ "key": "Cache-Control", "value": "private, max-age=3600" }] },
-    { "source": "/", "headers": [{ "key": "Cache-Control", "value": "private, no-cache" }] },
-    { "source": "/index.html", "headers": [{ "key": "Cache-Control", "value": "private, no-cache" }] }
-  ]
+    {
+      "source": "/data/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "private, max-age=3600"
+        }
+      ]
+    },
+    {
+      "source": "/",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "private, no-cache"
+        }
+      ]
+    },
+    {
+      "source": "/index.html",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "private, no-cache"
+        }
+      ]
+    }
+  ],
+  "functions": {
+    "api/tanya.js": {
+      "includeFiles": "data/**",
+      "maxDuration": 60
+    }
+  }
 }

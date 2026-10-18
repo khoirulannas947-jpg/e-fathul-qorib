@@ -91,7 +91,7 @@ export default async function middleware(request) {
     // Lanjutkan ke file statis (setara next() dari @vercel/functions).
     return new Response(null, { headers: { "x-middleware-next": "1" } });
   }
-  if (url.pathname.startsWith("/data/")) {
+  if (url.pathname.startsWith("/data/") || url.pathname.startsWith("/api/")) {
     return new Response(JSON.stringify({ error: "login_required" }), {
       status: 401,
       headers: { "content-type": "application/json", "cache-control": "no-store" },
