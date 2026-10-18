@@ -127,7 +127,9 @@ export default async function handler(req, res) {
     const jawab = j.choices && j.choices[0] && j.choices[0].message && j.choices[0].message.content;
     if (!jawab) return json(res, 502, { error: "kosong", pesan: "AI tidak memberi jawaban. Coba ulangi pertanyaannya." });
     usage.set(key, n + 1);
-    return json(res, 200, { jawab: jawab.trim(), sisa: DAILY_LIMIT - n - 1 });
+    const u = j.usage || {};
+    console.log("tanya_usage", JSON.stringify({ model: MODEL, in: u.prompt_tokens, out: u.completion_tokens, reasoning: u.completion_tokens_details && u.completion_tokens_details.reasoning_tokens }));
+    return json(res, 200, { jawab: jawab.trim(), sisa: DAILY_LIMIT - n - 1, token: { masuk: u.prompt_tokens, keluar: u.completion_tokens } });
   } catch (e) {
     console.error("tanya", e);
     return json(res, 502, { error: "jaringan", pesan: "Gagal menghubungi layanan AI. Coba lagi." });
