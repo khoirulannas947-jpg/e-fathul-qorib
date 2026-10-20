@@ -27,7 +27,9 @@ head=f'''<!doctype html>
 '''
 open(f'{DST}/index.html','w',encoding='utf-8').write(head+body+'\n</html>\n')
 shutil.rmtree(f'{DST}/data',ignore_errors=True); shutil.copytree(f'{SRC}/out/data',f'{DST}/data')
+k=subprocess.run(['python3','build_kamus.py',f'{SRC}/out/data',f'{DST}/data/kamus.json'],cwd=SRC,capture_output=True,text=True)
+print(k.stdout.strip() or k.stderr[-400:]); assert k.returncode==0
 s=f'{DST}/sumber'; shutil.rmtree(s,ignore_errors=True); os.makedirs(s)
 for d in ['data','mm']: shutil.copytree(f'{SRC}/{d}',f'{s}/{d}')
-for f in ['babs.js','app.js','template.html','build.js','make_site.py']: shutil.copy(f'{SRC}/{f}',s)
+for f in ['babs.js','app.js','template.html','build.js','make_site.py','build_kamus.py']: shutil.copy(f'{SRC}/{f}',s)
 print('situs diperbarui')

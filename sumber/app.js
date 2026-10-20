@@ -19,6 +19,7 @@ const IC={
  send:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>',
  check:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7"/></svg>',
  dl:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg>',
+ dict:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4.5A2.5 2.5 0 0 1 6.5 2H20v17H6.5A2.5 2.5 0 0 0 4 21.5z"/><path d="M4 21.5V4.5"/><path d="M9 7h7M9 11h5"/></svg>',
  arrow:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>'
 };
 const IDX=window.FQINDEX||[];
@@ -59,12 +60,13 @@ const last=store.get("bab",null);
 function parseHash(h){
   h=(h||"").replace(/^#/,"");
   if(!h||h==="beranda")return {v:"home"};
+  if(h==="kamus")return {v:"kamus"};
   if(h.startsWith("peta-")){const b=BABS.find(x=>x.id===h.slice(5));if(b&&b.n)return {v:"map",bab:b.id}}
   if(h.startsWith("kitab-")){const k=IDX.find(x=>x.id===h.slice(6));if(k)return {v:"kmap",k:k.id}}
   const b=BABS.find(x=>x.id===h);if(b&&b.n)return {v:"read",bab:b.id};
   return {v:"home"};
 }
-const hashOf=r=>r.v==="read"?r.bab:r.v==="map"?"peta-"+r.bab:r.v==="kmap"?"kitab-"+r.k:"beranda";
+const hashOf=r=>r.v==="kamus"?"kamus":r.v==="read"?r.bab:r.v==="map"?"peta-"+r.bab:r.v==="kmap"?"kitab-"+r.k:"beranda";
 function go(h,opt){
   opt=opt||{};
   const r=parseHash(h);route=r;q="";$("#q").value="";
@@ -77,7 +79,7 @@ window.addEventListener("popstate",()=>{route=parseHash(location.hash);q="";$("#
 function curK(){return route.v==="kmap"?route.k:(route.bab?BABS.find(b=>b.id===route.bab).k:null)}
 function toc(){
   const ck=curK();
-  let h=`<a class="toc-home${route.v==="home"&&!q?" on":""}" href="#beranda" data-go="beranda">${IC.home}Beranda</a><div class="toc-label">17 kitab</div>`;
+  let h=`<a class="toc-home${route.v==="home"&&!q?" on":""}" href="#beranda" data-go="beranda">${IC.home}Beranda</a><a class="toc-home${route.v==="kamus"&&!q?" on":""}" href="#kamus" data-go="kamus">${IC.dict}Kamus kosakata</a><div class="toc-label">17 kitab</div>`;
   h+=IDX.map((k,i)=>{
     const n=k.babs.reduce((a,b)=>a+b.n,0);
     const list=`<a class="kmap${route.v==="kmap"&&route.k===k.id?" on":""}" href="#kitab-${k.id}" data-go="kitab-${k.id}">${IC.map}<span>Mind map kitab</span></a>`+
@@ -226,6 +228,77 @@ function needKitab(kid,msg){
   const r=route;loadKitab(kid).then(()=>{if(route===r&&!q)render()}).catch(()=>{$("#main").innerHTML=failHTML()});
   return true;
 }
+/* ---------- Kamus kosakata ---------- */
+const HIJ="ابتثجحخدذرزسشصضطظعغفقكلمنهوي".split("");
+const HNORM={"أ":"ا","إ":"ا","آ":"ا","ٱ":"ا","ء":"ا","ؤ":"و","ئ":"ي","ى":"ي","ة":"ه"};
+const JN={i:["Isim","اسم"],f:["Fi'il","فعل"],h:["Huruf","حرف"]};
+const bareAr=s=>(s||"").replace(/[ً-ٰٟـ]/g,"").replace(/[^ء-يٱ]/g,"");
+const kLetter=b=>{const c=HNORM[b[0]]||b[0];return HIJ.includes(c)?c:"ا"};
+let KM=null,KMP=null;const KS={l:"ا",j:"",q:"",open:null};
+function loadKamus(){
+  if(KM)return Promise.resolve(KM);if(KMP)return KMP;
+  const get=()=>fetch("data/kamus.json",{credentials:"same-origin"});
+  KMP=get().then(r=>{if(r.status===401&&window.EFQAuth)return EFQAuth.refresh().then(ok=>ok?get():r).then(r2=>{if(r2.status===401){EFQAuth.toLogin();throw new Error("login")}return r2});return r})
+    .then(r=>{if(!r.ok)throw new Error(r.status);return r.json()})
+    .then(j=>{j.e.forEach((e,i)=>{e.i=i;e.L=kLetter(e.b);e.mx=(e.m||[]).join(" · ").toLowerCase()});const cnt={};j.e.forEach(e=>{cnt[e.L]=(cnt[e.L]||0)+1});j.cnt=cnt;KM=j;return j})
+    .catch(e=>{KMP=null;throw e});
+  return KMP;
+}
+function kamusRows(list){
+  return list.map(e=>`<details class="ke" data-ke="${e.i}"${KS.open===e.i?" open":""}><summary><span class="ke-a">${esc(e.a)}</span><span class="ke-j j-${e.j}">${JN[e.j][0]}</span><span class="ke-m">${esc((e.m||[]).join(" · ")||"—")}</span><span class="ke-n" title="Muncul ${fmt(e.n)} kali dalam kitab">${fmt(e.n)}×</span></summary><div class="ke-body">${KS.open===e.i?kamusBody(e):""}</div></details>`).join("");
+}
+function kamusBody(e){
+  const forms=(e.v||[]).map(v=>`<span class="ar">${esc(v)}</span>`).join("");
+  const refs=(e.r||[]).map(r=>{const b=BABS.find(x=>x.id===r[1]);const v=typeof r[2]==="number"?e.v[r[2]]:r[2];
+    return `<li><span class="ar">${esc(v)}</span><span class="rm">${esc(r[3]||"")}</span>${b?`<a href="#${b.id}" data-go="${b.id}" data-para="${esc(r[0])}">${esc(b.kt)} · ${esc(b.title)}</a>`:""}</li>`}).join("");
+  return `<div class="ke-row"><b>Jenis</b><span>${JN[e.j][0]} <span class="ar">(${JN[e.j][1]})</span></span></div>
+    <div class="ke-row"><b>Makna dalam kitab</b><span>${esc((e.m||[]).join("; ")||"—")}</span></div>
+    <div class="ke-row"><b>Bentuk yang muncul</b><span class="ke-forms">${forms}</span></div>
+    <div class="ke-ex"><b>Contoh pemakaian${e.n>e.r.length?` (${e.r.length} dari ${fmt(e.n)})`:""}</b><ul>${refs}</ul></div>`;
+}
+function kamusList(){
+  if(!KM)return [];
+  let L=KM.e;
+  if(KS.j)L=L.filter(e=>e.j===KS.j);
+  const qq=KS.q.trim();
+  if(qq){const qa=bareAr(qq),ql=qq.toLowerCase();
+    if(qa){const nq=norm(qa);L=L.filter(e=>e.b.includes(qa)||norm(e.b).includes(nq));
+      L=L.slice().sort((a,b)=>((a.b===qa?0:a.b.startsWith(qa)?1:2)-(b.b===qa?0:b.b.startsWith(qa)?1:2))||a.i-b.i)}
+    else{const wre=new RegExp("(^|[^a-z])"+ql.replace(/[.*+?^${}()|[\]\\]/g,"\\$&"));
+      const rank=e=>{const ms=(e.m||[]).map(x=>x.toLowerCase());if(ms[0]===ql)return 0;if(ms.includes(ql))return 1;if(ms.some(x=>x.startsWith(ql+" ")))return 2;if(wre.test(e.mx))return 3;return e.mx.includes(ql)?4:9};
+      L=L.map(e=>[rank(e),e]).filter(x=>x[0]<9).sort((a,b)=>a[0]-b[0]||b[1].n-a[1].n).map(x=>x[1])}
+  }else L=L.filter(e=>e.L===KS.l);
+  return L;
+}
+function kamusResults(){
+  const L=kamusList(),max=KS.q?300:1500,shown=L.slice(0,max);
+  const info=KS.q?`${fmt(L.length)} kosakata cocok${L.length>max?`, ditampilkan ${max} pertama`:""}.`:`Huruf <span class="ar">${KS.l}</span>: ${fmt(L.length)} kosakata${KS.j?" ("+JN[KS.j][0]+")":""}.`;
+  return `<p class="km-info">${info}</p>${shown.length?`<div class="km-list">${kamusRows(shown)}</div>`:`<div class="empty">Tidak ada kosakata yang cocok. Coba tulis tanpa harakat, misalnya <b class="ar">صلاة</b>, atau arti Indonesia seperti <b>shalat</b>.</div>`}`;
+}
+function renderKamus(opt){
+  if(!KM){$("#main").innerHTML=`<div class="wrap"><div class="loading">Memuat kamus…</div></div>`;const r=route;loadKamus().then(()=>{if(route===r&&!q)renderKamus(opt)}).catch(()=>{$("#main").innerHTML=failHTML()});return}
+  if(opt&&opt.kamus!=null){const e=KM.e[opt.kamus];if(e){KS.q="";KS.j="";KS.l=e.L;KS.open=e.i}}
+  const c={i:0,f:0,h:0};KM.e.forEach(e=>c[e.j]++);
+  const letters=HIJ.map(h=>`<button class="km-l${!KS.q&&KS.l===h?" on":""}" data-kl="${h}"${KM.cnt[h]?"":" disabled"} aria-label="Huruf ${h}">${h}</button>`).join("");
+  $("#main").innerHTML=`<div class="bar"><div class="bar-in"><nav class="crumb" aria-label="Lokasi"><a href="#beranda" data-go="beranda">Beranda</a><span>›</span><b>Kamus kosakata</b></nav></div><div class="prog"><i id="prog"></i></div></div>
+   <div class="wrap"><header class="head"><div><div class="eyebrow">Kamus · مُعْجَم</div><h1>Kamus Kosakata Fathul Qorib</h1></div><div class="ar-title">مُعْجَمُ الْأَلْفَاظِ</div>
+    <p>Semua kosakata yang muncul dalam kitab, baik isim, fi'il, maupun huruf, diurutkan menurut abjad hijaiyah. Kata yang diawali <span class="ar">وَ، فَ، بِ، لِ، كَ</span> atau <span class="ar">الْ</span> dikelompokkan ke bentuk dasarnya. Klik kosakata untuk melihat makna, bentuk yang muncul, dan contoh paragrafnya.</p>
+    <div class="meta-row"><span class="tag">${fmt(KM.e.length)} kosakata</span><span class="tag">${fmt(c.i)} isim</span><span class="tag">${fmt(c.f)} fi'il</span><span class="tag">${fmt(c.h)} huruf</span></div></header>
+    <div class="km-tools"><label class="km-q">${'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5"/></svg>'}<input id="kq" type="search" placeholder="Cari kata Arab atau arti Indonesia" value="${esc(KS.q)}" aria-label="Cari di kamus"></label>
+     <div class="seg km-j" role="group" aria-label="Jenis kata">${[["","Semua"],["i","Isim"],["f","Fi'il"],["h","Huruf"]].map(([k,l])=>`<button data-kj="${k}" aria-pressed="${KS.j===k}">${l}</button>`).join("")}</div></div>
+    <nav class="km-letters" aria-label="Abjad hijaiyah">${letters}</nav>
+    <div id="kmRes">${kamusResults()}</div></div>`;
+  const bh=document.querySelector("#main .bar");if(bh)document.documentElement.style.setProperty("--kmtop",(bh.offsetHeight+8)+"px");
+  if(KS.open!=null){const d=document.querySelector(`[data-ke="${KS.open}"]`);if(d)requestAnimationFrame(()=>d.scrollIntoView({block:"center"}))}
+}
+function kamusUpdate(){const r=$("#kmRes");if(r)r.innerHTML=kamusResults();document.querySelectorAll(".km-l").forEach(b=>b.classList.toggle("on",!KS.q&&b.dataset.kl===KS.l));document.querySelectorAll("[data-kj]").forEach(b=>b.setAttribute("aria-pressed",b.dataset.kj===KS.j))}
+document.addEventListener("toggle",e=>{const d=e.target;if(!d.classList||!d.classList.contains("ke")||!d.open)return;const en=KM&&KM.e[+d.dataset.ke];if(!en)return;KS.open=en.i;const b=d.querySelector(".ke-body");if(!b.innerHTML)b.innerHTML=kamusBody(en)},true);
+document.addEventListener("click",e=>{
+  const l=e.target.closest("[data-kl]");if(l){KS.l=l.dataset.kl;KS.q="";KS.open=null;const i=$("#kq");if(i)i.value="";kamusUpdate();$("#main").scrollTop=Math.min($("#main").scrollTop,($(".km-letters")||{offsetTop:0}).offsetTop-60);return}
+  const j=e.target.closest("[data-kj]");if(j){KS.j=j.dataset.kj;KS.open=null;kamusUpdate();return}
+  const k=e.target.closest("[data-kamus]");if(k){const key=k.dataset.kamus;$("#sheet").hidden=true;loadKamus().then(m=>{const i=m.s[key];go("kamus",{kamus:i})}).catch(()=>go("kamus"));return}
+});
+let kqt;document.addEventListener("input",e=>{if(e.target.id!=="kq")return;clearTimeout(kqt);kqt=setTimeout(()=>{KS.q=e.target.value;KS.open=null;kamusUpdate()},200)});
 /* ---------- Aplikasi: pasang (PWA) & baca offline ---------- */
 const APP_ON=!!window.EFQAuth&&"serviceWorker" in navigator&&(location.protocol==="https:"||location.hostname==="localhost");
 const isStandalone=()=>matchMedia("(display-mode: standalone)").matches||navigator.standalone===true;
@@ -251,6 +324,7 @@ async function saveOffline(){
   try{await navigator.serviceWorker.ready;if(!navigator.serviceWorker.controller)await new Promise(r=>{navigator.serviceWorker.addEventListener("controllerchange",r,{once:true});setTimeout(r,6000)})}catch(_){}
   let fail=0;
   for(const k of IDX){try{const r=await fetch("data/"+k.id+".json",{credentials:"same-origin",cache:"no-cache"});if(r.status===401&&window.EFQAuth){await EFQAuth.refresh();const r2=await fetch("data/"+k.id+".json",{credentials:"same-origin"});if(!r2.ok)fail++}else if(!r.ok)fail++}catch(_){fail++}offInfo.done++;refreshAppCard()}
+  try{await fetch("data/kamus.json",{credentials:"same-origin",cache:"no-cache"})}catch(_){}
   offInfo.busy=false;await countOffline();if(fail)alertBar(fail+" kitab gagal diunduh. Periksa koneksi lalu coba lagi.");
 }
 function alertBar(t){const c=$("#appCard .app-st");if(c)c.textContent=t}
@@ -270,7 +344,7 @@ function renderHome(){
      <div class="eyebrow">Fathul Qarib al-Mujib · Syarah Matan at-Taqrib</div>
      <h1>Kitab Fathul Qorib, kata demi kata</h1>
      <p>Matan Abu Syuja' dan syarah Ibnu Qasim al-Ghazzi lengkap: makna dan kedudukan setiap kata, terjemah utuh, i'rab, dan penjelasan per paragraf. Tiap bab punya mind map untuk melihat isinya sekilas.</p>
-     <div class="btns">${lb?`<a class="btn pri" href="#${lb.id}" data-go="${lb.id}">${IC.book}Lanjutkan: ${esc(lb.title)}</a><a class="btn" href="#khutbah" data-go="khutbah">Mulai dari awal</a>`:`<a class="btn pri" href="#khutbah" data-go="khutbah">${IC.book}Mulai membaca</a>`}<a class="btn" href="#kitab-thaharah" data-go="kitab-thaharah">${IC.map}Lihat mind map</a></div>
+     <div class="btns">${lb?`<a class="btn pri" href="#${lb.id}" data-go="${lb.id}">${IC.book}Lanjutkan: ${esc(lb.title)}</a><a class="btn" href="#khutbah" data-go="khutbah">Mulai dari awal</a>`:`<a class="btn pri" href="#khutbah" data-go="khutbah">${IC.book}Mulai membaca</a>`}<a class="btn" href="#kitab-thaharah" data-go="kitab-thaharah">${IC.map}Lihat mind map</a><a class="btn" href="#kamus" data-go="kamus">${IC.dict}Kamus kosakata</a></div>
    </div><div class="cal">فَتْحُ الْقَرِيْبِ الْمُجِيْبِ<small>فِيْ شَرْحِ أَلْفَاظِ التَّقْرِيْبِ</small></div></section>
    <div class="stats"><div><b>${IDX.length}</b><span>kitab</span></div><div><b>${BABS.length}</b><span>bab & fasal</span></div><div><b>${fmt(TOT.p)}</b><span>paragraf</span></div><div><b>${fmt(TOT.w)}</b><span>kata bermakna</span></div></div>
    ${APP_ON?appCard():""}
@@ -341,6 +415,7 @@ function render(opt){
   else if(route.v==="read")renderRead(BABS.find(b=>b.id===route.bab),opt);
   else if(route.v==="map")renderMap(BABS.find(b=>b.id===route.bab));
   else if(route.v==="kmap")renderKMap(route.k);
+  else if(route.v==="kamus")renderKamus(opt);
   else renderHome();
   if(!(opt&&opt.para))m.scrollTop=0;
   onScroll();
@@ -367,7 +442,8 @@ function showWord(vi,wi,el){
   $("#sheet").innerHTML=`<button class="x" id="sx" aria-label="Tutup">×</button>
    <div class="big${w.m?" m":""}">${esc(w.a)}</div>
    <dl><dt>Makna</dt><dd>${esc(w.t)}</dd><dt>Kedudukan</dt><dd><span class="kb k-${k[3]}">${k[2]}</span>${esc(k[0])} <span class="ar">(${k[1]})</span></dd><dt>Sumber</dt><dd>${w.m?"Lafadz matan (Abu Syuja')":"Lafadz syarah (Ibnu Qasim)"}</dd></dl>
-   ${r?`<div class="note"><b>I'rab:</b> ${esc(r.x)}</div>`:""}`;
+   ${r?`<div class="note"><b>I'rab:</b> ${esc(r.x)}</div>`:""}
+   <button class="btn sheet-k" data-kamus="${esc(bareAr(w.a)+"|"+({fi:"f",jr:"h",hr:"h"}[w.k]||"i"))}">${IC.dict}Lihat di kamus</button>`;
   $("#sheet").hidden=false;$("#sx").onclick=()=>{$("#sheet").hidden=true;el.classList.remove("sel")};
 }
 
