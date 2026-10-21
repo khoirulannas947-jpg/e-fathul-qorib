@@ -310,6 +310,7 @@ svg{flex:none}
 .irob{display:grid;margin:0;padding:0;list-style:none}
 .irob li{display:grid;grid-template-columns:minmax(0,1fr);gap:2px;padding:9px 0;border-bottom:1px solid var(--line)}
 .irob li:last-child{border-bottom:0}
+.irob .aut{font-style:normal;font-size:10.5px;font-weight:600;margin-inline-start:8px;padding:1px 7px;border-radius:99px;background:var(--accent-soft);color:var(--accent-ink);vertical-align:2px}.note .aut{font-style:normal;font-size:10.5px;padding:1px 7px;border-radius:99px;background:var(--accent-soft);color:var(--accent-ink)}.irob-note{font-size:12.5px;color:var(--accent-ink);margin:0 0 8px}
 .irob .ar{font-size:21px;text-align:right;line-height:1.8}
 @media (min-width:768px){.irob li{grid-template-columns:minmax(110px,max-content) minmax(0,1fr);gap:4px 18px;align-items:baseline}.irob .ar{order:2}}
 .syarh{line-height:1.8;max-width:70ch}
@@ -554,11 +555,12 @@ const KD={},LD={};
 const TOT={p:BABS.reduce((a,b)=>a+b.n,0),w:BABS.reduce((a,b)=>a+(b.w||0),0)};
 
 const norm=s=>(s||"").replace(/[ً-ٰ۟ـ«»﴿﴾()،؛:.!?\-]/g,"").replace(/[أإآٱ]/g,"ا").replace(/ى/g,"ي").replace(/ة/g,"ه").toLowerCase().trim();
+const core=s=>{s=norm(s);if(s.length>3&&"وف".includes(s[0]))s=s.slice(1);if(s.length>3&&"بلك".includes(s[0]))s=s.slice(1);if(s.length>4&&s.startsWith("ال"))s=s.slice(2);return s};
 const esc=s=>String(s==null?"":s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 const fmt=n=>n.toLocaleString("id-ID");
 function parse(p){
   const words=p.w.split("\n").map(l=>l.trim()).filter(Boolean).map(l=>{const [a,t,k]=l.split("|").map(x=>(x||"").trim());const m=a.startsWith("*");return {a:m?a.slice(1):a,t,k,m}});
-  const irob=(p.i||"").split("\n").map(l=>l.trim()).filter(Boolean).map(l=>{const ix=l.indexOf("::");return {a:l.slice(0,ix).trim(),x:l.slice(ix+2).trim()}});
+  const irob=(p.i||"").split("\n").map(l=>l.trim()).filter(Boolean).map(l=>{const ix=l.indexOf("::");let x=l.slice(ix+2).trim();const au=x[0]==="~";if(au)x=x.slice(1).trim();return {a:l.slice(0,ix).trim(),x,au}});
   return {...p,words,irob};
 }
 function loadKitab(kid){
@@ -672,7 +674,7 @@ function wordHTML(w,vi,wi,hit){
 function paraHTML(p,vi,qn,showSrc){
   const b=BABS.find(x=>x.id===p.bab);const no=babParas(b).indexOf(p)+1;
   const ws=p.words.map((w,wi)=>wordHTML(w,vi,wi,qn&&(norm(w.a).includes(qn)||(w.t||"").toLowerCase().includes(qn)))).join("");
-  const ir=p.irob.map(r=>`<li><span class="ar">${esc(r.a)}</span><span>${esc(r.x)}</span></li>`).join("");
+  const ir=p.irob.map(r=>`<li${r.au?' class="au"':''}><span class="ar">${esc(r.a)}</span><span>${esc(r.x)}${r.au?'<em class="aut">otomatis</em>':''}</span></li>`).join("");
   const sy=p.s.split(/\n\s*\n/).map(x=>`<p>${esc(x.trim())}</p>`).join("");
   const tab=pref.tab, bm=BM.has(p.id);
   return `<article class="para" id="p-${p.id}" data-pi="${vi}">
@@ -681,7 +683,7 @@ function paraHTML(p,vi,qn,showSrc){
    <div class="text">${ws}</div>
    <div class="trans"><b>Terjemah</b>${esc(p.t)}</div>
    <div class="tabs" role="tablist" aria-label="Detail paragraf"><button role="tab" aria-selected="${tab==="i"}" data-tab="i">I'rab</button><button role="tab" aria-selected="${tab==="s"}" data-tab="s">Penjelasan</button>${AI_ON?`<button role="tab" aria-selected="false" data-tab="a" class="ai-tab">${IC.spark}Tanya AI</button>`:""}</div>
-   <div class="pane" data-pane="i"${tab==="i"?"":" hidden"}><ul class="irob">${ir}</ul></div>
+   <div class="pane" data-pane="i"${tab==="i"?"":" hidden"}>${p.irob.some(r=>r.au)?'<p class="irob-note">Baris berlabel <em class="aut">otomatis</em> disusun dari kedudukan kata dan harakat akhirnya. Cocokkan dengan guru atau kitab nahwu.</p>':""}<ul class="irob">${ir}</ul></div>
    <div class="pane syarh" data-pane="s"${tab==="s"?"":" hidden"}>${sy}</div>
    ${AI_ON?aiPane(p,vi):""}
   </article>`;
@@ -1049,11 +1051,11 @@ function mmAll(mode){
 function showWord(vi,wi,el){
   document.querySelectorAll(".w.sel").forEach(x=>x.classList.remove("sel"));el.classList.add("sel");
   const p=VIEW[vi],w=p.words[wi],k=K[w.k]||K.hr;
-  const nw=norm(w.a);const r=p.irob.find(r=>{const na=norm(r.a);return na&&(na===nw||na.split(" ").includes(nw))});
+  const nw=norm(w.a);const r=p.irob.find(r=>{const na=norm(r.a);return na&&(na===nw||na.split(" ").includes(nw))})||p.irob.find(r=>r.a.split(" ").map(core).includes(core(w.a)));
   $("#sheet").innerHTML=`<button class="x" id="sx" aria-label="Tutup">×</button>
    <div class="big${w.m?" m":""}">${esc(w.a)}</div>
    <dl><dt>Makna</dt><dd>${esc(w.t)}</dd><dt>Kedudukan</dt><dd><span class="kb k-${k[3]}">${k[2]}</span>${esc(k[0])} <span class="ar">(${k[1]})</span></dd><dt>Sumber</dt><dd>${w.m?"Lafadz matan (Abu Syuja')":"Lafadz syarah (Ibnu Qasim)"}</dd></dl>
-   ${r?`<div class="note"><b>I'rab:</b> ${esc(r.x)}</div>`:""}
+   ${r?`<div class="note"><b>I'rab:</b> ${esc(r.x)}${r.au?' <em class="aut">otomatis</em>':""}</div>`:""}
    <button class="btn sheet-k" data-kamus="${esc(bareAr(w.a)+"|"+({fi:"f",jr:"h",hr:"h"}[w.k]||"i"))}">${IC.dict}Lihat di kamus</button>`;
   $("#sheet").hidden=false;$("#sx").onclick=()=>{$("#sheet").hidden=true;el.classList.remove("sel")};
 }

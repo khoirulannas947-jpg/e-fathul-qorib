@@ -4,6 +4,8 @@ SRC='/home/claude/efq'; DST='/home/claude/e-fathul-qorib'
 out=subprocess.run(['node','build.js'],cwd=SRC,capture_output=True,text=True).stdout
 print(out[:160])
 assert out.startswith('ok')
+ia=subprocess.run(['python3','irab_auto.py',f'{SRC}/out/data'],cwd=SRC,capture_output=True,text=True)
+print(ia.stdout.strip() or ia.stderr[-400:]); assert ia.returncode==0
 body=open(f'{SRC}/out/index.html',encoding='utf-8').read()
 fav="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230F5132'/%3E%3Ctext x='32' y='44' font-size='36' text-anchor='middle' fill='%23fbf8ef' font-family='serif'%3E%D9%82%3C/text%3E%3C/svg%3E"
 head=f'''<!doctype html>
@@ -31,5 +33,5 @@ k=subprocess.run(['python3','build_kamus.py',f'{SRC}/out/data',f'{DST}/data/kamu
 print(k.stdout.strip() or k.stderr[-400:]); assert k.returncode==0
 s=f'{DST}/sumber'; shutil.rmtree(s,ignore_errors=True); os.makedirs(s)
 for d in ['data','mm']: shutil.copytree(f'{SRC}/{d}',f'{s}/{d}')
-for f in ['babs.js','app.js','template.html','build.js','make_site.py','build_kamus.py']: shutil.copy(f'{SRC}/{f}',s)
+for f in ['babs.js','app.js','template.html','build.js','make_site.py','build_kamus.py','irab_auto.py']: shutil.copy(f'{SRC}/{f}',s)
 print('situs diperbarui')

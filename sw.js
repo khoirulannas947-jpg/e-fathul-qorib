@@ -2,8 +2,8 @@
    - Halaman utama: ambil dari jaringan dulu, kalau offline pakai salinan terakhir.
    - Data kitab (/data/*.json): disimpan setelah dibuka/diunduh, lalu dibaca dari simpanan (diperbarui diam-diam).
    - /api/* (Tanya AI) selalu lewat jaringan. */
-const SHELL = "efq-shell-v1";
-const DATA = "efq-data-v1";
+const SHELL = "efq-shell-v2";
+const DATA = "efq-data-v2";
 const LIB = "efq-lib-v1";
 const KEEP = [SHELL, DATA, LIB];
 const SHELL_URLS = ["/", "/login", "/auth-config.js", "/auth-client.js", "/manifest.webmanifest", "/icons/icon-192.png", "/icons/icon-512.png"];
