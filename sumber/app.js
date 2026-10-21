@@ -29,6 +29,13 @@ const IC={
  copy:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="8.5" y="8.5" width="12" height="12" rx="2"/><path d="M15.5 8.5V5.5a2 2 0 0 0-2-2h-8a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h3"/></svg>',
  trash:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M9.5 7V4.5h5V7M6.5 7l1 13h9l1-13"/></svg>',
  aa:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 19 8 5l5 14M4.8 14h6.4"/><path d="M14.5 10.5a3 3 0 0 1 5.5 1.7V19M20 15.2c-1-.9-5.5-1.3-5.5 1.6 0 2.5 4 2.4 5.5.2"/></svg>',
+ pen:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20l1-4L16.5 4.5a2 2 0 0 1 3 3L8 19z"/><path d="M14.5 6.5l3 3"/></svg>',
+ quiz:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3.5" width="16" height="17" rx="2"/><path d="M8 9h8M8 13h5"/><path d="m8.5 17 1.3 1.3L12 16"/></svg>',
+ shuffle:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7h3.5c5 0 6 10 11 10H21M3 17h3.5c1.6 0 2.8-.9 3.8-2.1M14 9c1-1.2 2.2-2 3.5-2H21"/><path d="m18.5 14.5 2.5 2.5-2.5 2.5M18.5 4.5 21 7l-2.5 2.5"/></svg>',
+ calc:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M8.5 7.5h7M8.5 12h.01M12 12h.01M15.5 12h.01M8.5 16h.01M12 16h.01M15.5 16h.01"/></svg>',
+ scale:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v16M7 20h10M5 7h14"/><path d="M5 7l-3 7a3 3 0 0 0 6 0zM19 7l-3 7a3 3 0 0 0 6 0z"/></svg>',
+ coin:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/><path d="M14.5 9.2c-.6-.8-1.5-1.2-2.6-1.2-1.4 0-2.4.7-2.4 1.8 0 2.5 5 1.2 5 3.8 0 1.2-1.1 2-2.6 2-1.2 0-2.2-.5-2.8-1.4M12 6.5V8M12 16v1.5"/></svg>',
+ drop:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3.5s6 6.2 6 10.5a6 6 0 0 1-12 0C6 9.700 12 3.500 12 3.500z"/></svg>',
  arrow:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>'
 };
 const IDX=window.FQINDEX||[];
@@ -89,13 +96,17 @@ function parseHash(h){
   if(h==="cari")return {v:"cari"};
   if(h==="tersimpan")return {v:"saved"};
   if(h==="daftar")return {v:"daftar"};
+  if(h==="latihan")return {v:"lat"};
+  if(h.startsWith("latihan-")){const s=h.slice(8);return LAT_TYPES.includes(s)?{v:"lat",s}:{v:"lat"}}
+  if(h==="kalkulator")return {v:"kal"};
+  if(h.startsWith("kalkulator-")){const s=h.slice(11);return KAL_TOOLS.includes(s)?{v:"kal",s}:{v:"kal"}}
   if(h.startsWith("daftar-")){const k=IDX.find(x=>x.id===h.slice(7));return {v:"daftar",k:k?k.id:null}}
   if(h.startsWith("peta-")){const b=BABS.find(x=>x.id===h.slice(5));if(b&&b.n)return {v:"map",bab:b.id}}
   if(h.startsWith("kitab-")){const k=IDX.find(x=>x.id===h.slice(6));if(k)return {v:"kmap",k:k.id}}
   const b=BABS.find(x=>x.id===h);if(b&&b.n)return {v:"read",bab:b.id};
   return {v:"home"};
 }
-const hashOf=r=>r.v==="kamus"?"kamus":r.v==="cari"?"cari":r.v==="saved"?"tersimpan":r.v==="daftar"?(r.k?"daftar-"+r.k:"daftar"):r.v==="read"?r.bab:r.v==="map"?"peta-"+r.bab:r.v==="kmap"?"kitab-"+r.k:"beranda";
+const hashOf=r=>r.v==="kamus"?"kamus":r.v==="cari"?"cari":r.v==="saved"?"tersimpan":r.v==="daftar"?(r.k?"daftar-"+r.k:"daftar"):r.v==="read"?r.bab:r.v==="map"?"peta-"+r.bab:r.v==="kmap"?"kitab-"+r.k:r.v==="lat"?(r.s?"latihan-"+r.s:"latihan"):r.v==="kal"?(r.s?"kalkulator-"+r.s:"kalkulator"):"beranda";
 function go(h,opt){
   opt=opt||{};
   const r=parseHash(h);route=r;
@@ -106,7 +117,7 @@ function go(h,opt){
 window.addEventListener("popstate",()=>{route=parseHash(location.hash);$("#sheet").hidden=true;render()});
 
 /* ---------- Navigasi: sidebar (desktop) & bottom nav (HP/tablet) ---------- */
-const NAV=[["beranda","Beranda","home",r=>r.v==="home"],["daftar","Daftar Bab","list",r=>["daftar","read","map","kmap"].includes(r.v)],["cari","Cari","search",r=>r.v==="cari"],["kamus","Kamus","dict",r=>r.v==="kamus"],["tersimpan","Tersimpan","bm",r=>r.v==="saved"]];
+const NAV=[["beranda","Beranda","home",r=>r.v==="home"],["daftar","Daftar Bab","list",r=>["daftar","read","map","kmap"].includes(r.v)],["cari","Cari","search",r=>r.v==="cari"],["kamus","Kamus","dict",r=>r.v==="kamus"],["latihan","Latihan","pen",r=>r.v==="lat"],["kalkulator","Kalkulator","calc",r=>r.v==="kal"],["tersimpan","Tersimpan","bm",r=>r.v==="saved",true]];
 function curK(){return route.v==="kmap"||route.v==="daftar"?route.k:(route.bab?BABS.find(b=>b.id===route.bab).k:null)}
 function toc(){
   const ck=curK();
@@ -118,7 +129,7 @@ function toc(){
   }).join("");
   $("#toc").innerHTML=h;
   const on=$("#toc .lst a.on");if(on&&on.scrollIntoView)try{on.scrollIntoView({block:"nearest"})}catch(_){}
-  $("#bnav").innerHTML=NAV.map(([id,l,ic,on])=>`<a href="#${id}" data-go="${id}" class="${on(route)?"on":""}"${on(route)?' aria-current="page"':""}>${IC[ic]}<span>${l==="Daftar Bab"?"Daftar":l}</span></a>`).join("");
+  $("#bnav").innerHTML=NAV.filter(n=>!n[4]).map(([id,l,ic,on])=>`<a href="#${id}" data-go="${id}" class="${on(route)?"on":""}"${on(route)?' aria-current="page"':""}>${IC[ic]}<span>${l==="Daftar Bab"?"Daftar":l==="Kalkulator"?"Hitung":l}</span></a>`).join("");
 }
 
 /* ---------- Bilah halaman ---------- */
@@ -364,7 +375,7 @@ function appCard(){
     <p class="app-st">${n==null?"Memeriksa simpanan offline…":n===total?`${IC.check}Semua ${total} kitab tersimpan dan bisa dibaca offline.`:`${n} dari ${total} kitab tersimpan offline.`} Tanya AI tetap memerlukan internet.</p></div></section>`;
 }
 function refreshAppCard(){const c=$("#appCard");if(c)c.outerHTML=appCard()}
-async function countOffline(){try{const c=await caches.open("efq-data-v1");const ks=await c.keys();offInfo.n=IDX.filter(k=>ks.some(r=>new URL(r.url,location.href).pathname==="/data/"+k.id+".json")).length}catch(_){offInfo.n=0}refreshAppCard()}
+async function countOffline(){try{const c=await caches.open("efq-data-v2");const ks=await c.keys();offInfo.n=IDX.filter(k=>ks.some(r=>new URL(r.url,location.href).pathname==="/data/"+k.id+".json")).length}catch(_){offInfo.n=0}refreshAppCard()}
 async function saveOffline(){
   if(offInfo.busy)return;offInfo.busy=true;offInfo.done=0;refreshAppCard();
   try{await navigator.serviceWorker.ready;if(!navigator.serviceWorker.controller)await new Promise(r=>{navigator.serviceWorker.addEventListener("controllerchange",r,{once:true});setTimeout(r,6000)})}catch(_){}
@@ -399,6 +410,8 @@ function renderHome(){
    <div class="sec-h"><h2>${cb?"Lanjutkan membaca":"Mulai membaca"}</h2></div>
    ${cont}
    ${recent?`<div class="sec-h"><h2>Riwayat bacaan</h2><a href="#tersimpan" data-go="tersimpan">Lihat semua</a></div><div class="rows">${recent}</div>`:""}
+   <div class="sec-h"><h2>Latihan dan kalkulator</h2></div>
+   <div class="home-tiles">${[["latihan-irab","Latihan i'rab","pen"],["latihan-kuis","Kuis bab","quiz"],["latihan-susun","Susun kalimat","shuffle"],["kalkulator-zakat","Zakat","coin"],["kalkulator-waris","Waris","scale"],["kalkulator-haidh","Haid dan istihadhah","drop"]].map(([h,l,i])=>`<a class="hcard" href="#${h}" data-go="${h}"><span class="hc-ic">${IC[i]}</span><span class="hc-tx"><b>${l}</b></span></a>`).join("")}</div>
    <div class="sec-h"><h2>Daftar kitab</h2><a href="#daftar" data-go="daftar">Semua bab</a></div>
    <div class="kits">${kits}</div>
    ${APP_ON?appCard():""}
@@ -511,6 +524,8 @@ function render(opt){
   else if(route.v==="daftar")renderDaftar(route.k,opt);
   else if(route.v==="cari")renderCari();
   else if(route.v==="saved")renderSaved();
+  else if(route.v==="lat")renderLat(route.s);
+  else if(route.v==="kal")renderKal(route.s);
   else renderHome();
   if(!(opt&&opt.para)&&!(route.v==="daftar"&&route.k))m.scrollTop=0;
   onScroll();
@@ -621,6 +636,7 @@ function onScroll(){const m=$("#main"),p=$("#prog");if(p){const h=m.scrollHeight
 $("#main").addEventListener("scroll",onScroll,{passive:true});
 window.addEventListener("resize",applyPrefs);
 
+/*__FITUR__*/
 route=parseHash(location.hash);
 try{history.replaceState(null,"","#"+hashOf(route))}catch(_){}
 render();

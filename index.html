@@ -96,7 +96,7 @@ svg{flex:none}
 #main{min-height:0;overflow-y:auto;overscroll-behavior:contain;position:relative;scroll-behavior:auto}
 
 /* Bottom navigation (HP & tablet) */
-.bnav{position:relative;z-index:30;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));background:var(--surface);border-top:1px solid var(--line);
+.bnav{position:relative;z-index:30;display:grid;grid-template-columns:repeat(6,minmax(0,1fr));background:var(--surface);border-top:1px solid var(--line);
   padding-bottom:env(safe-area-inset-bottom,0px);padding-left:env(safe-area-inset-left,0px);padding-right:env(safe-area-inset-right,0px)}
 .bnav a{height:var(--bnav-h);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:3px;text-decoration:none;font-size:11.5px;font-weight:600;color:var(--ink-3)}
 .bnav a svg{width:22px;height:22px}
@@ -492,6 +492,138 @@ button.mlab:hover{outline:2px solid var(--c,var(--accent));outline-offset:1px}
   .mm-tools .hint{margin-left:0;flex-basis:100%}
 }
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+/* Latihan dan kalkulator */
+.hcards{display:grid;gap:12px;margin-top:8px}
+.hcard{display:flex;align-items:center;gap:14px;padding:16px;background:var(--surface);border:1px solid var(--line);border-radius:var(--r);text-decoration:none;color:inherit;box-shadow:var(--shadow);transition:border-color .15s}
+.hcard:hover{border-color:var(--accent)}
+.hc-ic{flex:none;width:46px;height:46px;border-radius:12px;background:var(--accent-soft);color:var(--accent);display:grid;place-items:center}
+.hc-ic svg{width:24px;height:24px}
+.hc-tx{flex:1;min-width:0;display:flex;flex-direction:column;gap:3px}
+.hc-tx b{font-size:16px}
+.hc-tx .ar{font-size:18px;line-height:1.5;color:var(--gold-ink)}
+.hc-d{font-size:13px;color:var(--ink-2);line-height:1.55}
+.hc-tx small{font-size:12px;color:var(--ink-3);font-weight:600}
+.hc-go{flex:none;color:var(--ink-3)}
+.hc-go svg{width:18px;height:18px}
+@media (min-width:768px){.hcards{grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}}
+.home-tiles{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+@media (min-width:768px){.home-tiles{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.home-tiles .hcard{padding:12px;gap:10px}
+.home-tiles .hc-ic{width:38px;height:38px}
+.home-tiles .hc-tx b{font-size:14px}
+.home-tiles .hc-go,.home-tiles .hc-d,.home-tiles .hc-tx .ar{display:none}
+
+.lat,.kal{max-width:720px}
+.fld{display:flex;flex-direction:column;gap:6px;margin:14px 0}
+.fld>span:first-child{font-size:13px;font-weight:650;color:var(--ink-2);display:flex;flex-direction:column;gap:1px}
+.fld small{font-weight:500;color:var(--ink-3);font-size:12px}
+.fld select,.fld-in input{width:100%;min-height:46px;padding:0 14px;border-radius:12px;border:1px solid var(--line-2);background:var(--surface);color:var(--ink);font:inherit;font-size:16px}
+.fld-in{position:relative;display:flex;align-items:center}
+.fld-in input{padding-right:58px}
+.fld-in select{width:100%}
+.fld-in i{position:absolute;right:14px;font-style:normal;font-size:13px;color:var(--ink-3);pointer-events:none}
+.fld select:focus,.fld-in input:focus{outline:2px solid var(--accent);outline-offset:1px}
+.lat-set,.kform{padding:18px}
+.lat-set h2,.kf-h{margin:0 0 4px;font-size:15px;font-weight:700}
+.kf-h{margin-top:18px}.kf-h:first-child{margin-top:0}
+.lat-set .seg{display:flex;width:100%}
+.lat-set .seg button{flex:1}
+.kform .rrows,.lat-set .rrows{display:grid;gap:12px;margin:14px 0}
+.kf-note{font-size:12.5px;color:var(--ink-3);line-height:1.65;margin:10px 0 0}
+.lat-top{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin:6px 0 10px}
+.lat-top .chip:last-child{margin-left:auto;cursor:pointer}
+.chip.plain{cursor:default}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0}
+.q{padding:18px;margin-top:14px}
+.q-p{font-weight:700;font-size:15px;line-height:1.5;margin-bottom:12px}
+.q-big{font-size:20px;font-weight:700;line-height:1.4;padding:12px 14px;margin-bottom:12px;background:var(--accent-soft);border-radius:12px;color:var(--accent-ink)}
+.q-ctx{font-size:calc(var(--ar-size) - 2px);line-height:var(--ar-lh);margin-bottom:8px;direction:rtl;text-align:right}
+.q-ctx mark.tgt{background:var(--gold-soft);color:var(--matan);border-bottom:3px solid var(--gold);border-radius:4px;padding:0 4px}
+.q-sub{font-size:13px;color:var(--ink-2);margin:0 0 12px}
+.q-opts{display:grid;gap:8px;margin-top:6px}
+.opt{display:flex;align-items:center;gap:12px;text-align:left;min-height:50px;padding:10px 14px;border:1.5px solid var(--line-2);border-radius:12px;background:var(--surface);font:inherit;font-size:15px;color:var(--ink);cursor:pointer;transition:border-color .12s,background .12s}
+.opt:hover:not(:disabled){border-color:var(--accent);background:var(--accent-soft)}
+.opt-k{flex:none;width:26px;height:26px;border-radius:8px;background:var(--surface-2);display:grid;place-items:center;font-size:12px;font-weight:700;color:var(--ink-2)}
+.opt-t{flex:1;line-height:1.45}
+.opt:disabled{cursor:default}
+.opt.ok{border-color:var(--k-pred);background:color-mix(in srgb,var(--k-pred) 14%,var(--surface))}
+.opt.bad{border-color:var(--danger);background:color-mix(in srgb,var(--danger) 12%,var(--surface))}
+.opt.ok .opt-k{background:var(--k-pred);color:#fff}
+.opt.bad .opt-k{background:var(--danger);color:#fff}
+.q-fb{margin-top:14px;padding:12px 14px;border-radius:12px;font-size:14px;line-height:1.65;border:1px solid var(--line)}
+.q-fb p{margin:4px 0 0}
+.q-fb.ok{background:color-mix(in srgb,var(--k-pred) 10%,var(--surface));border-color:var(--k-pred)}
+.q-fb.bad{background:color-mix(in srgb,var(--danger) 8%,var(--surface));border-color:var(--danger)}
+.q-ans{font-size:calc(var(--ar-size) - 4px);line-height:var(--ar-lh);direction:rtl;text-align:right}
+.q-link{display:inline-block;margin-top:8px;font-size:13px;font-weight:650;color:var(--accent);text-decoration:none}
+.q-link:hover{text-decoration:underline}
+.q .btns{margin-top:14px}
+.s-line{display:flex;flex-wrap:wrap;gap:8px;direction:rtl;min-height:64px;padding:10px;border:2px dashed var(--line-2);border-radius:12px;align-items:center;margin-bottom:12px}
+.s-line.empty{justify-content:center}
+.s-ph{font-family:var(--f-ui);direction:ltr;font-size:13px;color:var(--ink-3)}
+.s-pool{display:flex;flex-wrap:wrap;gap:8px;direction:rtl;margin-bottom:12px;min-height:50px}
+.tile{font-family:var(--f-ar);font-size:calc(var(--ar-size) - 4px);line-height:1.7;padding:2px 14px;border:1.5px solid var(--line-2);border-radius:10px;background:var(--surface-2);color:var(--ink);cursor:pointer;min-height:44px}
+.tile:hover:not(:disabled){border-color:var(--accent)}
+.s-line .tile{background:var(--surface);border-color:var(--accent)}
+.tile.ok{border-color:var(--k-pred);background:color-mix(in srgb,var(--k-pred) 14%,var(--surface))}
+.tile.bad{border-color:var(--danger);background:color-mix(in srgb,var(--danger) 12%,var(--surface))}
+.tile:disabled{cursor:default}
+.result{padding:22px;text-align:center;margin-top:14px}
+.res-score{font-size:46px;font-weight:800;color:var(--accent);line-height:1}
+.res-score span{font-size:20px;color:var(--ink-3);font-weight:600;margin-left:6px}
+.res-pct{font-size:14px;font-weight:700;margin:6px 0 4px}
+.result p{color:var(--ink-2);margin:6px 0}
+.result .chips{justify-content:center}
+.w-list{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.w-list li{padding:12px 14px;background:var(--surface);border:1px solid var(--line);border-radius:12px;display:flex;flex-direction:column;gap:4px;font-size:14px;line-height:1.6}
+.w-ar{font-size:calc(var(--ar-size) - 4px);line-height:var(--ar-lh)}
+.res-btns{margin-top:18px}
+
+/* Kalkulator */
+.ktabs{display:flex;gap:6px;overflow-x:auto;padding:2px 0 10px;scrollbar-width:thin}
+.ktabs button{flex:none;min-height:40px;padding:0 14px;border-radius:999px;border:1px solid var(--line-2);background:var(--surface);font:inherit;font-size:13.5px;font-weight:650;color:var(--ink-2);cursor:pointer;white-space:nowrap}
+.ktabs button[aria-selected="true"],.ktabs button[aria-checked="true"]{background:var(--accent);border-color:var(--accent);color:var(--on-accent)}
+.ktabs.v{flex-direction:column;overflow:visible;padding-bottom:0}
+.ktabs.v button{border-radius:12px;text-align:left;white-space:normal;padding:10px 14px}
+.kres{margin-top:16px}
+.kres-h{padding:16px;text-align:center;color:var(--ink-2);background:var(--surface);border:1px dashed var(--line-2);border-radius:var(--r);margin:0}
+.kres-h.warn{border-style:solid;border-color:var(--gold);background:var(--gold-soft);text-align:left;color:var(--ink)}
+.kres-st{padding:12px 14px;border-radius:12px;margin-bottom:10px;font-size:15px;border:1px solid}
+.kres-st.ok{background:var(--accent-soft);border-color:var(--accent);color:var(--accent-ink)}
+.kres-st.no{background:var(--surface-2);border-color:var(--line-2);color:var(--ink-2)}
+.kres-st.warn{background:var(--gold-soft);border-color:var(--gold);color:var(--ink)}
+.kres-r{display:flex;justify-content:space-between;gap:12px;padding:10px 2px;border-bottom:1px solid var(--line);font-size:14px}
+.kres-r span{color:var(--ink-2)}
+.kres-r b{text-align:right}
+.kres-big{margin:12px 0;padding:14px;background:var(--surface);border:1px solid var(--accent);border-radius:12px}
+.kres-big>span{display:block;font-size:13px;color:var(--ink-2);margin-bottom:4px}
+.kres-big>b{font-size:26px;color:var(--accent)}
+.kres-big ul{margin:0;padding-left:18px;line-height:1.7}
+.kres-or{font-size:12px;text-align:center;color:var(--ink-3);margin:6px 0}
+.wgrp{border:1px solid var(--line);border-radius:12px;margin:0 0 12px;padding:4px 12px 8px}
+.wgrp legend{font-size:12.5px;font-weight:700;color:var(--ink-3);padding:0 6px;text-transform:uppercase;letter-spacing:.04em}
+.wrow{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:7px 0;border-bottom:1px solid var(--line);font-size:14px}
+.wrow:last-child{border-bottom:0}
+.wrow>span:first-child{flex:1;min-width:0;line-height:1.4}
+.ktable{overflow-x:auto;background:var(--surface);border:1px solid var(--line);border-radius:12px}
+.ktable table{width:100%;border-collapse:collapse;font-size:13.5px}
+.ktable th,.ktable td{padding:9px 10px;text-align:left;vertical-align:top}
+.ktable thead th{font-size:12px;color:var(--ink-3);border-bottom:1px solid var(--line-2)}
+.ktable tbody th{font-weight:650}
+.ktable .num{text-align:right;white-space:nowrap}
+.ktable .num small{display:block;color:var(--ink-3);font-weight:500}
+.ktable tr.off th,.ktable tr.off td:not(.num){color:var(--ink-3)}
+.ktable tr.why td{padding:0 10px 10px;font-size:12px;color:var(--ink-3);border-bottom:1px solid var(--line);line-height:1.55}
+.ktable tr.why:last-child td{border-bottom:0}
+.hbar{display:flex;gap:3px;margin:6px 0 12px;border-radius:12px;overflow:hidden;min-height:54px}
+.hb{display:flex;flex-direction:column;align-items:center;justify-content:center;padding:8px 6px;font-size:13px;font-weight:700;min-width:70px;text-align:center}
+.hb small{font-weight:500;font-size:11.5px}
+.hb.haid{background:var(--danger);color:#fff}
+.hb.istihadhah{background:var(--gold-soft);color:var(--gold-ink);border:1px solid var(--gold)}
+@media (max-width:420px){.ktable table{font-size:12.5px}.ktable th,.ktable td{padding:8px 6px}}
+
+@media (min-width:1024px){.only-m{display:none}}
+
 </style>
 
 <div class="app">
@@ -503,6 +635,7 @@ button.mlab:hover{outline:2px solid var(--c,var(--accent));outline-offset:1px}
     <button class="user-btn" id="userBtn" aria-haspopup="true" aria-expanded="false" aria-label="Akun"><img id="userImg" alt="" hidden><span id="userInit"></span></button>
     <div class="user-menu" id="userMenu" hidden><b id="userName"></b><small id="userMail"></small><span class="prov" id="userProv"></span><button class="logout" id="logoutBtn">Keluar</button></div>
   </div>
+  <a class="icon-btn only-m" href="#tersimpan" data-go="tersimpan" aria-label="Tersimpan: penanda dan riwayat"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6.5 3.5h11a1 1 0 0 1 1 1V21l-6.5-4.2L5.5 21V4.5a1 1 0 0 1 1-1z"/></svg></a>
   <button class="icon-btn" id="themeBtn" aria-label="Ganti tema terang/gelap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M20.5 13.2A8.5 8.5 0 1 1 10.8 3.5a6.6 6.6 0 0 0 9.7 9.7z"/></svg></button>
 </div></header>
 <div class="shell">
@@ -546,6 +679,13 @@ const IC={
  copy:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="8.5" y="8.5" width="12" height="12" rx="2"/><path d="M15.5 8.5V5.5a2 2 0 0 0-2-2h-8a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h3"/></svg>',
  trash:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M9.5 7V4.5h5V7M6.5 7l1 13h9l1-13"/></svg>',
  aa:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 19 8 5l5 14M4.8 14h6.4"/><path d="M14.5 10.5a3 3 0 0 1 5.5 1.7V19M20 15.2c-1-.9-5.5-1.3-5.5 1.6 0 2.5 4 2.4 5.5.2"/></svg>',
+ pen:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20l1-4L16.5 4.5a2 2 0 0 1 3 3L8 19z"/><path d="M14.5 6.5l3 3"/></svg>',
+ quiz:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3.5" width="16" height="17" rx="2"/><path d="M8 9h8M8 13h5"/><path d="m8.5 17 1.3 1.3L12 16"/></svg>',
+ shuffle:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7h3.5c5 0 6 10 11 10H21M3 17h3.5c1.6 0 2.8-.9 3.8-2.1M14 9c1-1.2 2.2-2 3.5-2H21"/><path d="m18.5 14.5 2.5 2.5-2.5 2.5M18.5 4.5 21 7l-2.5 2.5"/></svg>',
+ calc:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="3" width="14" height="18" rx="2"/><path d="M8.5 7.5h7M8.5 12h.01M12 12h.01M15.5 12h.01M8.5 16h.01M12 16h.01M15.5 16h.01"/></svg>',
+ scale:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v16M7 20h10M5 7h14"/><path d="M5 7l-3 7a3 3 0 0 0 6 0zM19 7l-3 7a3 3 0 0 0 6 0z"/></svg>',
+ coin:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/><path d="M14.5 9.2c-.6-.8-1.5-1.2-2.6-1.2-1.4 0-2.4.7-2.4 1.8 0 2.5 5 1.2 5 3.8 0 1.2-1.1 2-2.6 2-1.2 0-2.2-.5-2.8-1.4M12 6.5V8M12 16v1.5"/></svg>',
+ drop:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3.5s6 6.2 6 10.5a6 6 0 0 1-12 0C6 9.700 12 3.500 12 3.500z"/></svg>',
  arrow:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>'
 };
 const IDX=window.FQINDEX||[];
@@ -606,13 +746,17 @@ function parseHash(h){
   if(h==="cari")return {v:"cari"};
   if(h==="tersimpan")return {v:"saved"};
   if(h==="daftar")return {v:"daftar"};
+  if(h==="latihan")return {v:"lat"};
+  if(h.startsWith("latihan-")){const s=h.slice(8);return LAT_TYPES.includes(s)?{v:"lat",s}:{v:"lat"}}
+  if(h==="kalkulator")return {v:"kal"};
+  if(h.startsWith("kalkulator-")){const s=h.slice(11);return KAL_TOOLS.includes(s)?{v:"kal",s}:{v:"kal"}}
   if(h.startsWith("daftar-")){const k=IDX.find(x=>x.id===h.slice(7));return {v:"daftar",k:k?k.id:null}}
   if(h.startsWith("peta-")){const b=BABS.find(x=>x.id===h.slice(5));if(b&&b.n)return {v:"map",bab:b.id}}
   if(h.startsWith("kitab-")){const k=IDX.find(x=>x.id===h.slice(6));if(k)return {v:"kmap",k:k.id}}
   const b=BABS.find(x=>x.id===h);if(b&&b.n)return {v:"read",bab:b.id};
   return {v:"home"};
 }
-const hashOf=r=>r.v==="kamus"?"kamus":r.v==="cari"?"cari":r.v==="saved"?"tersimpan":r.v==="daftar"?(r.k?"daftar-"+r.k:"daftar"):r.v==="read"?r.bab:r.v==="map"?"peta-"+r.bab:r.v==="kmap"?"kitab-"+r.k:"beranda";
+const hashOf=r=>r.v==="kamus"?"kamus":r.v==="cari"?"cari":r.v==="saved"?"tersimpan":r.v==="daftar"?(r.k?"daftar-"+r.k:"daftar"):r.v==="read"?r.bab:r.v==="map"?"peta-"+r.bab:r.v==="kmap"?"kitab-"+r.k:r.v==="lat"?(r.s?"latihan-"+r.s:"latihan"):r.v==="kal"?(r.s?"kalkulator-"+r.s:"kalkulator"):"beranda";
 function go(h,opt){
   opt=opt||{};
   const r=parseHash(h);route=r;
@@ -623,7 +767,7 @@ function go(h,opt){
 window.addEventListener("popstate",()=>{route=parseHash(location.hash);$("#sheet").hidden=true;render()});
 
 /* ---------- Navigasi: sidebar (desktop) & bottom nav (HP/tablet) ---------- */
-const NAV=[["beranda","Beranda","home",r=>r.v==="home"],["daftar","Daftar Bab","list",r=>["daftar","read","map","kmap"].includes(r.v)],["cari","Cari","search",r=>r.v==="cari"],["kamus","Kamus","dict",r=>r.v==="kamus"],["tersimpan","Tersimpan","bm",r=>r.v==="saved"]];
+const NAV=[["beranda","Beranda","home",r=>r.v==="home"],["daftar","Daftar Bab","list",r=>["daftar","read","map","kmap"].includes(r.v)],["cari","Cari","search",r=>r.v==="cari"],["kamus","Kamus","dict",r=>r.v==="kamus"],["latihan","Latihan","pen",r=>r.v==="lat"],["kalkulator","Kalkulator","calc",r=>r.v==="kal"],["tersimpan","Tersimpan","bm",r=>r.v==="saved",true]];
 function curK(){return route.v==="kmap"||route.v==="daftar"?route.k:(route.bab?BABS.find(b=>b.id===route.bab).k:null)}
 function toc(){
   const ck=curK();
@@ -635,7 +779,7 @@ function toc(){
   }).join("");
   $("#toc").innerHTML=h;
   const on=$("#toc .lst a.on");if(on&&on.scrollIntoView)try{on.scrollIntoView({block:"nearest"})}catch(_){}
-  $("#bnav").innerHTML=NAV.map(([id,l,ic,on])=>`<a href="#${id}" data-go="${id}" class="${on(route)?"on":""}"${on(route)?' aria-current="page"':""}>${IC[ic]}<span>${l==="Daftar Bab"?"Daftar":l}</span></a>`).join("");
+  $("#bnav").innerHTML=NAV.filter(n=>!n[4]).map(([id,l,ic,on])=>`<a href="#${id}" data-go="${id}" class="${on(route)?"on":""}"${on(route)?' aria-current="page"':""}>${IC[ic]}<span>${l==="Daftar Bab"?"Daftar":l==="Kalkulator"?"Hitung":l}</span></a>`).join("");
 }
 
 /* ---------- Bilah halaman ---------- */
@@ -828,7 +972,7 @@ function kamusList(){
   if(qq){const qa=bareAr(qq),ql=qq.toLowerCase();
     if(qa){const nq=norm(qa);L=L.filter(e=>e.b.includes(qa)||norm(e.b).includes(nq));
       L=L.slice().sort((a,b)=>((a.b===qa?0:a.b.startsWith(qa)?1:2)-(b.b===qa?0:b.b.startsWith(qa)?1:2))||a.i-b.i)}
-    else{const wre=new RegExp("(^|[^a-z])"+ql.replace(/[.*+?^${}()|[\]\\]/g,"\\/*__APP__*/"));
+    else{const wre=new RegExp("(^|[^a-z])"+ql.replace(/[.*+?^${}()|[\]\\]/g,"\\$&"));
       const rank=e=>{const ms=(e.m||[]).map(x=>x.toLowerCase());if(ms[0]===ql)return 0;if(ms.includes(ql))return 1;if(ms.some(x=>x.startsWith(ql+" ")))return 2;if(wre.test(e.mx))return 3;return e.mx.includes(ql)?4:9};
       L=L.map(e=>[rank(e),e]).filter(x=>x[0]<9).sort((a,b)=>a[0]-b[0]||b[1].n-a[1].n).map(x=>x[1])}
   }else L=L.filter(e=>e.L===KS.l);
@@ -881,7 +1025,7 @@ function appCard(){
     <p class="app-st">${n==null?"Memeriksa simpanan offline…":n===total?`${IC.check}Semua ${total} kitab tersimpan dan bisa dibaca offline.`:`${n} dari ${total} kitab tersimpan offline.`} Tanya AI tetap memerlukan internet.</p></div></section>`;
 }
 function refreshAppCard(){const c=$("#appCard");if(c)c.outerHTML=appCard()}
-async function countOffline(){try{const c=await caches.open("efq-data-v1");const ks=await c.keys();offInfo.n=IDX.filter(k=>ks.some(r=>new URL(r.url,location.href).pathname==="/data/"+k.id+".json")).length}catch(_){offInfo.n=0}refreshAppCard()}
+async function countOffline(){try{const c=await caches.open("efq-data-v2");const ks=await c.keys();offInfo.n=IDX.filter(k=>ks.some(r=>new URL(r.url,location.href).pathname==="/data/"+k.id+".json")).length}catch(_){offInfo.n=0}refreshAppCard()}
 async function saveOffline(){
   if(offInfo.busy)return;offInfo.busy=true;offInfo.done=0;refreshAppCard();
   try{await navigator.serviceWorker.ready;if(!navigator.serviceWorker.controller)await new Promise(r=>{navigator.serviceWorker.addEventListener("controllerchange",r,{once:true});setTimeout(r,6000)})}catch(_){}
@@ -916,6 +1060,8 @@ function renderHome(){
    <div class="sec-h"><h2>${cb?"Lanjutkan membaca":"Mulai membaca"}</h2></div>
    ${cont}
    ${recent?`<div class="sec-h"><h2>Riwayat bacaan</h2><a href="#tersimpan" data-go="tersimpan">Lihat semua</a></div><div class="rows">${recent}</div>`:""}
+   <div class="sec-h"><h2>Latihan dan kalkulator</h2></div>
+   <div class="home-tiles">${[["latihan-irab","Latihan i'rab","pen"],["latihan-kuis","Kuis bab","quiz"],["latihan-susun","Susun kalimat","shuffle"],["kalkulator-zakat","Zakat","coin"],["kalkulator-waris","Waris","scale"],["kalkulator-haidh","Haid dan istihadhah","drop"]].map(([h,l,i])=>`<a class="hcard" href="#${h}" data-go="${h}"><span class="hc-ic">${IC[i]}</span><span class="hc-tx"><b>${l}</b></span></a>`).join("")}</div>
    <div class="sec-h"><h2>Daftar kitab</h2><a href="#daftar" data-go="daftar">Semua bab</a></div>
    <div class="kits">${kits}</div>
    ${APP_ON?appCard():""}
@@ -1028,6 +1174,8 @@ function render(opt){
   else if(route.v==="daftar")renderDaftar(route.k,opt);
   else if(route.v==="cari")renderCari();
   else if(route.v==="saved")renderSaved();
+  else if(route.v==="lat")renderLat(route.s);
+  else if(route.v==="kal")renderKal(route.s);
   else renderHome();
   if(!(opt&&opt.para)&&!(route.v==="daftar"&&route.k))m.scrollTop=0;
   onScroll();
@@ -1137,6 +1285,990 @@ function onScroll(){const m=$("#main"),p=$("#prog");if(p){const h=m.scrollHeight
   if(route.v==="read"){clearTimeout(posT);posT=setTimeout(trackPos,350)}}
 $("#main").addEventListener("scroll",onScroll,{passive:true});
 window.addEventListener("resize",applyPrefs);
+
+/* ---- fitur/lib/haidh.js ---- */
+/* Penentuan haid dan istihadhah madzhab Syafi'i. Murni logika (tanpa DOM).
+   Batas masa (haid paling sedikit sehari semalam, paling lama 15 hari, suci paling sedikit 15 hari)
+   tercantum dalam Fathul Qorib bab haid. Pembagian mubtadi'ah/mu'tadah, mumayyizah, dan syarat tamyiz
+   mengikuti kitab-kitab syarah fiqih Syafi'i (Minhajuth Thalibin dan syarahnya, Fathul Mu'in).
+   Satuan hitung: jam. Darah dianggap keluar terus-menerus sejak awal. */
+const HaidhLib=(()=>{
+const JAM=24,MAKS=15*JAM;
+const n0=x=>{x=+x;return isFinite(x)&&x>0?x:0};
+/* inp: {status:"mubtadiah"|"mutadah"|"mutahayyirah", adatHari, tamyiz:bool, kuatHari, lemahHari, hari, jam} */
+function analisis(inp){
+  const status=inp.status||"mubtadiah";
+  const tamyiz=!!inp.tamyiz;
+  const kuat=n0(inp.kuatHari),lemah=n0(inp.lemahHari);
+  const H=tamyiz?Math.round((kuat+lemah)*JAM):Math.round(n0(inp.hari)*JAM+n0(inp.jam));
+  const adat=Math.round(Math.min(15,n0(inp.adatHari))*JAM);
+  const R={status,H,haidJam:0,segmen:[],metode:"",alasan:[],peringatan:[],tak:null,kategori:"",tamyizSah:null};
+  if(H<=0){R.error="Isi lama darah keluar.";return R}
+  if(status==="mutadah"&&!adat){R.error="Isi lama haid yang biasa Anda alami (kebiasaan).";return R}
+  if(tamyiz&&(!kuat||!lemah)){R.error="Isi lama darah kuat dan darah lemah.";return R}
+
+  if(H<JAM){
+    R.kategori="kurang";R.haidJam=0;R.metode="Kurang dari sehari semalam";
+    R.segmen=[{t:"istihadhah",a:0,b:H}];
+    R.alasan.push("Haid paling sedikit sehari semalam (24 jam). Darah yang kurang dari itu bukan haid, melainkan darah istihadhah (darah penyakit).");
+    return R;
+  }
+  if(H<=MAKS){
+    R.kategori="dalam15";R.haidJam=H;R.metode="Seluruhnya haid";
+    R.segmen=[{t:"haid",a:0,b:H}];
+    R.alasan.push("Darah keluar sekurang-kurangnya sehari semalam dan tidak melebihi 15 hari 15 malam, maka seluruhnya dihukumi haid, walaupun lebih lama atau lebih singkat daripada kebiasaannya.");
+    return R;
+  }
+  R.kategori="lebih15";
+  R.alasan.push("Darah keluar melebihi 15 hari 15 malam, maka sebagiannya haid dan sisanya istihadhah. Pembagiannya bergantung pada keadaan perempuan itu.");
+  if(status==="mutahayyirah"){
+    R.tak="Perempuan yang lupa kebiasaan haidnya (mutahayyirah) memiliki rincian hukum khusus yang panjang (ihtiyath pada hari-hari yang diragukan), sehingga belum dihitung kalkulator ini. Tanyakan kepada ustadzah atau ahli fiqih.";
+    return R;
+  }
+  let cond=null;
+  if(tamyiz){
+    const c1=kuat>=1,c2=kuat<=15,c3=lemah>=15;
+    cond={c1,c2,c3};
+    R.tamyizSah=c1&&c2&&c3;
+    if(!R.tamyizSah){
+      const gagal=[];
+      if(!c1)gagal.push("darah kuat kurang dari sehari semalam");
+      if(!c2)gagal.push("darah kuat lebih dari 15 hari");
+      if(!c3)gagal.push("darah lemah kurang dari 15 hari berturut-turut");
+      R.alasan.push("Pembedaan darah (tamyiz) tidak sah karena "+gagal.join(" dan ")+". Syaratnya: darah kuat sekurang-kurangnya sehari semalam dan tidak lebih dari 15 hari, serta darah lemah sekurang-kurangnya 15 hari berturut-turut.");
+    }
+  }
+  if(tamyiz&&R.tamyizSah){
+    R.haidJam=Math.round(kuat*JAM);R.metode="Mengikuti darah kuat (tamyiz)";
+    R.alasan.push("Syarat tamyiz terpenuhi, maka haidnya adalah masa darah kuat (hitam atau merah tua), dan darah lemah adalah istihadhah."+(status==="mutadah"?" Menurut pendapat yang dipegang, pembedaan darah didahulukan daripada kebiasaan.":""));
+  }else if(status==="mutadah"){
+    R.haidJam=Math.min(adat,MAKS);R.metode="Mengikuti kebiasaan (adat)";
+    R.alasan.push("Karena sudah punya kebiasaan dan tidak ada pembedaan darah yang sah, haidnya mengikuti lama kebiasaannya, yaitu "+Math.round(R.haidJam/JAM)+" hari. Sisanya istihadhah.");
+  }else{
+    R.haidJam=JAM;R.metode="Haid paling sedikit (sehari semalam)";
+    R.alasan.push("Perempuan yang baru pertama kali haid (mubtadi'ah) dan tidak bisa membedakan darah dihukumi haid sehari semalam; sisa darah dalam 30 hari itu adalah istihadhah (hukumnya seperti suci).");
+  }
+  R.segmen=[{t:"haid",a:0,b:R.haidJam},{t:"istihadhah",a:R.haidJam,b:H}];
+  return R;
+}
+const api={JAM,MAKS,analisis};
+if(typeof module!=="undefined")module.exports=api;
+return api;
+})();
+
+/* ---- fitur/lib/waris.js ---- */
+/* Mesin hitung waris (faraidh) madzhab Syafi'i, mengacu pada Kitab Faraidh Fathul Qorib.
+   Murni logika (tanpa DOM) supaya bisa diuji di Node.
+   Cakupan: 22 jenis ahli waris, hajb (penghalangan), bagian pasti, 'ashabah (bin-nafsi, bil-ghair, ma'al-ghair),
+   'aul, radd, 'Umariyyatain, Musyarakah, kakek bersama saudara (muqasamah) dan Akdariyyah.
+   Belum dicakup (diberi peringatan): kakek bersama saudara kandung DAN seayah (mu'addah), cucu/keponakan berbeda
+   tingkat, khuntsa, mafqud, janin, dzawil arham, dan budak/pemerdeka. */
+const WarisLib=(()=>{
+const gcd=(a,b)=>b?gcd(b,a%b):Math.abs(a);
+const lcm=(a,b)=>a/gcd(a,b)*b;
+const F=(n,d)=>{d=d==null?1:d;if(d<0){n=-n;d=-d}const g=gcd(n,d)||1;return {n:n/g,d:d/g}};
+const add=(a,b)=>F(a.n*b.d+b.n*a.d,a.d*b.d);
+const sub=(a,b)=>F(a.n*b.d-b.n*a.d,a.d*b.d);
+const mul=(a,b)=>F(a.n*b.n,a.d*b.d);
+const div=(a,b)=>F(a.n*b.d,a.d*b.n);
+const Z=F(0),O=F(1);
+const lt=(a,b)=>a.n*b.d<b.n*a.d, gt=(a,b)=>lt(b,a), eq=(a,b)=>a.n===b.n&&a.d===b.d;
+const sum=a=>a.reduce(add,Z);
+const mx=(...a)=>a.reduce((m,x)=>gt(x,m)?x:m);
+const txt=f=>f.d===1?String(f.n):f.n+"/"+f.d;
+const val=f=>f.n/f.d;
+
+const HEIRS=[
+ ["suami","Suami"],["istri","Istri"],
+ ["anakL","Anak laki-laki"],["anakP","Anak perempuan"],
+ ["cucuL","Cucu laki-laki (dari anak laki-laki)"],["cucuP","Cucu perempuan (dari anak laki-laki)"],
+ ["ayah","Ayah"],["kakek","Kakek (ayah dari ayah)"],
+ ["ibu","Ibu"],["nenekIbu","Nenek dari pihak ibu (ibunya ibu)"],["nenekAyah","Nenek dari pihak ayah (ibunya ayah)"],
+ ["sdrKL","Saudara laki-laki kandung"],["sdrKP","Saudara perempuan kandung"],
+ ["sdrAL","Saudara laki-laki seayah"],["sdrAP","Saudara perempuan seayah"],
+ ["sdrI","Saudara/i seibu (laki-laki atau perempuan)"],
+ ["ponKL","Anak laki-laki dari saudara kandung"],["ponAL","Anak laki-laki dari saudara seayah"],
+ ["pamK","Paman kandung (saudara kandung ayah)"],["pamA","Paman seayah (saudara ayah seayah)"],
+ ["sepK","Anak laki-laki paman kandung"],["sepA","Anak laki-laki paman seayah"]
+];
+const MAX={suami:1,istri:4,ayah:1,kakek:1,ibu:1,nenekIbu:1,nenekAyah:1};
+const LABEL={};HEIRS.forEach(([k,l])=>LABEL[k]=l);
+
+function hitung(input){
+  input=input||{};
+  const h={};
+  HEIRS.forEach(([k])=>{let v=Math.floor(+input[k]||0);if(v<0)v=0;h[k]=Math.min(v,MAX[k]||30)});
+  const R={ok:false,error:null,unsupported:null,rows:[],notes:[],aul:null,radd:null,baitulMal:Z,flags:{},h};
+  const total=HEIRS.reduce((a,[k])=>a+h[k],0);
+  if(!total){R.error="Pilih minimal satu ahli waris.";return R}
+  if(h.suami>0&&h.istri>0){R.error="Suami dan istri tidak mungkin menjadi ahli waris dari pewaris yang sama.";return R}
+
+  /* ---------- Penanda keadaan ---------- */
+  const walad=h.anakL+h.anakP+h.cucuL+h.cucuP>0;           // ada keturunan (anak/cucu dari anak laki-laki)
+  const wL=h.anakL>0||h.cucuL>0;                            // ada keturunan laki-laki
+  const femDesc=!wL&&(h.anakP>0||h.cucuP>0);                // keturunan hanya perempuan
+  const sdrAll=h.sdrKL+h.sdrKP+h.sdrAL+h.sdrAP+h.sdrI;      // semua saudara (termasuk yang terhalang) untuk ibu
+  const kakekAktif=h.kakek>0&&h.ayah===0;
+
+  /* ---------- Hajb hirman (gugur seluruhnya) ---------- */
+  const mahjub={};
+  const setM=(k,why)=>{if(h[k]>0&&!mahjub[k])mahjub[k]=why};
+  const ASH=[
+    {id:"anak",m:"anakL",f:"anakP",label:()=>"anak laki-laki"},
+    {id:"cucu",m:"cucuL",f:"cucuP",label:()=>"cucu laki-laki"},
+    {id:"ayah",m:"ayah",label:()=>"ayah"},
+    {id:"kakek",m:"kakek",label:()=>"kakek"},
+    {id:"sdrK",m:"sdrKL",f:"sdrKP",mal:true,label:()=>h.sdrKL>0?"saudara laki-laki kandung":"saudari kandung yang menjadi 'ashabah bersama anak/cucu perempuan"},
+    {id:"sdrA",m:"sdrAL",f:"sdrAP",mal:true,label:()=>h.sdrAL>0?"saudara laki-laki seayah":"saudari seayah yang menjadi 'ashabah bersama anak/cucu perempuan"},
+    {id:"ponKL",m:"ponKL",label:()=>"anak laki-laki saudara kandung"},
+    {id:"ponAL",m:"ponAL",label:()=>"anak laki-laki saudara seayah"},
+    {id:"pamK",m:"pamK",label:()=>"paman kandung"},
+    {id:"pamA",m:"pamA",label:()=>"paman seayah"},
+    {id:"sepK",m:"sepK",label:()=>"anak laki-laki paman kandung"},
+    {id:"sepA",m:"sepA",label:()=>"anak laki-laki paman seayah"}
+  ];
+  const on=g=>{
+    if(h[g.m]>0&&!mahjub[g.m])return true;
+    if(g.mal&&h[g.f]>0&&!mahjub[g.f]&&femDesc)return true;   // 'ashabah ma'al ghair
+    return false;
+  };
+  let blocker=null;
+  for(const g of ASH){
+    const fixed=g.id==="ayah"||g.id==="kakek";   // ayah tidak pernah gugur; kakek hanya gugur oleh ayah (diatur di bawah)
+    const exempt=blocker&&blocker.id==="kakek"&&(g.id==="sdrK"||g.id==="sdrA"); // kakek tidak menggugurkan saudara (Syafi'i)
+    if(blocker&&!exempt&&!fixed){
+      const why="terhalang "+blocker.label();
+      setM(g.m,why);if(g.f)setM(g.f,why);
+      continue;
+    }
+    if(!blocker&&on(g))blocker=g;
+  }
+  if(h.ayah>0){setM("kakek","terhalang ayah");setM("nenekAyah","terhalang ayah");setM("sdrI","terhalang ayah")}
+  if(kakekAktif)setM("sdrI","terhalang kakek");
+  if(walad)setM("sdrI","terhalang adanya anak/cucu");
+  if(h.ibu>0){setM("nenekIbu","terhalang ibu");setM("nenekAyah","terhalang ibu")}
+  const ashGroup=ASH.find(g=>on(g)&&!mahjub[g.m]&&!(g.id==="kakek"&&!kakekAktif));
+
+  /* ---------- Bagian pasti (furudh) ---------- */
+  const S={}; // k -> {f: Fraction (bagian seluruh kelompok), why, kind}
+  const give=(k,f,why,kind)=>{if(h[k]>0&&!mahjub[k])S[k]={f,why,kind:kind||"fardh"}};
+  const spouseF=h.suami>0?(walad?F(1,4):F(1,2)):h.istri>0?(walad?F(1,8):F(1,4)):Z;
+  if(h.suami>0)give("suami",spouseF,walad?"1/4 karena pewaris meninggalkan anak atau cucu dari anak laki-laki.":"1/2 karena pewaris tidak meninggalkan anak atau cucu dari anak laki-laki.");
+  if(h.istri>0)give("istri",spouseF,(walad?"1/8":"1/4")+(walad?" karena pewaris meninggalkan anak atau cucu dari anak laki-laki":" karena pewaris tidak meninggalkan anak atau cucu dari anak laki-laki")+(h.istri>1?"; dibagi rata untuk semua istri.":"."));
+
+  if(h.ibu>0){
+    const onlyParents=HEIRS.every(([k])=>["suami","istri","ayah","ibu"].includes(k)||h[k]===0);
+    if(h.ayah>0&&onlyParents&&(h.suami>0||h.istri>0)){
+      give("ibu",mul(sub(O,spouseF),F(1,3)),"1/3 dari sisa setelah bagian "+(h.suami>0?"suami":"istri")+" (masalah 'Umariyyatain: pewaris hanya meninggalkan pasangan dan kedua orang tua).");
+      R.flags.umariyyah=true;
+    }else if(walad)give("ibu",F(1,6),"1/6 karena ada anak atau cucu dari anak laki-laki.");
+    else if(sdrAll>=2)give("ibu",F(1,6),"1/6 karena ada dua saudara atau lebih (kandung, seayah, atau seibu), termasuk saudara yang terhalang.");
+    else give("ibu",F(1,3),"1/3 karena tidak ada anak, cucu, atau dua saudara atau lebih.");
+  }
+
+  const sibAktif=["sdrKL","sdrKP","sdrAL","sdrAP"].filter(k=>h[k]>0&&!mahjub[k]);
+  const muq=kakekAktif&&sibAktif.length>0;      // kakek bersama saudara
+  const op=h.ayah>0?"ayah":kakekAktif?"kakek":null;
+  if(op&&!muq){
+    if(wL)give(op,F(1,6),"1/6 karena ada anak atau cucu laki-laki.");
+    else if(femDesc)give(op,F(1,6),"1/6 sebagai bagian pasti karena ada anak/cucu perempuan, lalu mengambil sisa sebagai 'ashabah.");
+  }
+
+  const nenek=["nenekIbu","nenekAyah"].filter(k=>h[k]>0&&!mahjub[k]);
+  nenek.forEach(k=>give(k,F(1,6*nenek.length),nenek.length>1?"1/6 dibagi rata untuk kedua nenek.":"1/6 karena tidak ada ibu."));
+
+  if(h.anakP>0&&h.anakL===0)give("anakP",h.anakP===1?F(1,2):F(2,3),h.anakP===1?"1/2 karena sendirian, tanpa anak laki-laki.":"2/3 dibagi rata karena dua atau lebih, tanpa anak laki-laki.");
+  if(h.cucuP>0&&!mahjub.cucuP&&h.cucuL===0){
+    if(h.anakP===0)give("cucuP",h.cucuP===1?F(1,2):F(2,3),h.cucuP===1?"1/2 karena sendirian, tanpa anak maupun cucu laki-laki.":"2/3 dibagi rata karena dua atau lebih, tanpa anak maupun cucu laki-laki.");
+    else if(h.anakP===1)give("cucuP",F(1,6),"1/6 untuk menyempurnakan 2/3 bersama satu anak perempuan.");
+    else setM("cucuP","terhalang dua anak perempuan yang sudah mengambil 2/3 (tidak ada cucu laki-laki yang menjadikannya 'ashabah)");
+  }
+
+  if(!muq){
+    if(h.sdrKP>0&&!mahjub.sdrKP&&h.sdrKL===0&&!femDesc)give("sdrKP",h.sdrKP===1?F(1,2):F(2,3),h.sdrKP===1?"1/2 karena sendirian, tanpa saudara laki-laki kandung.":"2/3 dibagi rata karena dua atau lebih, tanpa saudara laki-laki kandung.");
+    if(h.sdrAP>0&&!mahjub.sdrAP&&h.sdrAL===0&&!femDesc){
+      if(h.sdrKP>=2)setM("sdrAP","terhalang dua saudari kandung yang sudah mengambil 2/3 (tidak ada saudara laki-laki seayah yang menjadikannya 'ashabah)");
+      else if(h.sdrKP===1)give("sdrAP",F(1,6),"1/6 untuk menyempurnakan 2/3 bersama satu saudari kandung.");
+      else give("sdrAP",h.sdrAP===1?F(1,2):F(2,3),h.sdrAP===1?"1/2 karena sendirian, tanpa saudara laki-laki seayah.":"2/3 dibagi rata karena dua atau lebih, tanpa saudara laki-laki seayah.");
+    }
+  }
+  if(h.sdrI>0&&!mahjub.sdrI)give("sdrI",h.sdrI===1?F(1,6):F(1,3),h.sdrI===1?"1/6 karena sendirian.":"1/3 dibagi rata (laki-laki dan perempuan sama) karena dua orang atau lebih.");
+
+  /* ---------- Kakek bersama saudara (pendapat Zaid bin Tsabit, dipegang Syafi'iyah) ---------- */
+  let special=false; // true bila seluruh harta sudah terbagi di blok ini
+  if(muq){
+    const kd=sibAktif.some(k=>k==="sdrKL"||k==="sdrKP"), ay=sibAktif.some(k=>k==="sdrAL"||k==="sdrAP");
+    if(kd&&ay){R.unsupported="Kakek bersama saudara kandung dan saudara seayah sekaligus (masalah mu'addah) belum dihitung kalkulator ini. Tanyakan kepada ahli faraidh.";return R}
+    const sk=kd?"sdrKL":"sdrAL", sp=kd?"sdrKP":"sdrAP", b=h[sk], s=h[sp];
+    const Fo=sum(["suami","istri","ibu","nenekIbu","nenekAyah","anakP","cucuP"].map(k=>S[k]?S[k].f:Z));
+    const Rm=sub(O,Fo);
+    const onlyAkd=h.suami===1&&h.ibu===1&&b===0&&s===1&&HEIRS.every(([k])=>["suami","ibu","kakek","sdrKP","sdrAP"].includes(k)||h[k]===0);
+    special=true;
+    if(onlyAkd){
+      R.flags.akdariyyah=true;
+      S.suami={f:F(9,27),why:"Masalah Akdariyyah: bagian pasti 1/2 (di-'aul), lalu hasil gabungan kakek dan saudari dibagi 2:1.",kind:"fardh"};
+      S.ibu={f:F(6,27),why:"Masalah Akdariyyah: bagian pasti 1/3 (di-'aul).",kind:"fardh"};
+      S.kakek={f:F(8,27),why:"Masalah Akdariyyah: kakek dan saudari menggabungkan bagian mereka lalu membaginya 2:1.",kind:"muqasamah"};
+      S[sp]={f:F(4,27),why:"Masalah Akdariyyah: mendapat 1/2 lalu digabung dengan bagian kakek dan dibagi 2:1.",kind:"muqasamah"};
+    }else{
+      const U=2+2*b+s;
+      const a=mul(Rm,F(2,U)), t=mul(Rm,F(1,3)), c=F(1,6);
+      if(lt(Rm,c)){
+        S.kakek={f:c,why:"1/6 sebagai bagian pasti karena sisa harta kurang dari 1/6; saudara tidak mendapat bagian.",kind:"fardh"};
+        sibAktif.forEach(k=>{S[k]={f:Z,why:"tidak mendapat bagian karena harta telah habis oleh ahli waris yang memiliki bagian pasti.",kind:"nol"}});
+      }else{
+        const best=mx(a,t,c);
+        const how=eq(best,a)?"muqasamah (berbagi seperti saudara laki-laki, 2 bagian untuk laki-laki dan 1 untuk perempuan)":eq(best,t)?"1/3 dari sisa harta setelah bagian pasti ahli waris lain":"1/6 dari seluruh harta";
+        S.kakek={f:best,why:"Kakek mengambil yang paling besar dari tiga pilihan, yaitu "+how+".",kind:eq(best,c)&&!eq(best,a)&&!eq(best,t)?"fardh":"muqasamah"};
+        const rest=sub(Rm,best), unit=div(rest,F(2*b+s));
+        if(b>0)S[sk]={f:mul(unit,F(2*b)),why:"Sisa setelah bagian kakek dibagi 2:1 antara saudara laki-laki dan perempuan.",kind:"muqasamah"};
+        if(s>0)S[sp]={f:mul(unit,F(s)),why:"Sisa setelah bagian kakek dibagi 2:1 antara saudara laki-laki dan perempuan.",kind:"muqasamah"};
+      }
+    }
+  }
+
+  /* ---------- Sisa harta: 'ashabah ---------- */
+  let sumF=sum(Object.values(S).map(x=>x.f));
+  if(!special){
+    const g=ashGroup;
+    if(g&&eq(sumF,O)&&g.id==="sdrK"&&h.sdrKL>0&&h.sdrI>=2&&S.sdrI){
+      // Musyarakah (Himariyyah): saudara kandung ikut berbagi sepertiga dengan saudara seibu
+      const heads=h.sdrI+h.sdrKL+h.sdrKP, pool=S.sdrI.f, per=div(pool,F(heads));
+      S.sdrI={f:mul(per,F(h.sdrI)),why:"Masalah Musyarakah: sepertiga dibagi rata dengan saudara kandung.",kind:"musyarakah"};
+      S.sdrKL={f:mul(per,F(h.sdrKL)),why:"Masalah Musyarakah: karena bagian pasti telah menghabiskan harta, saudara kandung ikut berbagi sepertiga dengan saudara seibu (sama rata).",kind:"musyarakah"};
+      if(h.sdrKP>0)S.sdrKP={f:mul(per,F(h.sdrKP)),why:"Masalah Musyarakah: ikut berbagi sepertiga bersama saudara seibu (sama rata).",kind:"musyarakah"};
+      R.flags.musyarakah=true;
+    }else{
+      const res=sub(O,sumF);
+      if(g&&gt(res,Z)){
+        const units=(g.f&&h[g.m]>0)?2*h[g.m]+h[g.f]:(g.mal&&h.sdrKL===0&&g.id==="sdrK")?h.sdrKP:(g.mal&&g.id==="sdrA"&&h.sdrAL===0)?h.sdrAP:h[g.m];
+        const per=div(res,F(units));
+        const put=(k,u,why)=>{
+          if(!(h[k]>0)||mahjub[k])return;
+          const part=mul(per,F(u));
+          if(S[k])S[k]={f:add(S[k].f,part),why:S[k].why+" Lalu mengambil sisa sebagai 'ashabah.",kind:"fardh+ashabah"};
+          else S[k]={f:part,why,kind:"ashabah"};
+        };
+        if(g.id==="anak"){put("anakL",2*h.anakL,"Mengambil sisa sebagai 'ashabah; setiap anak laki-laki mendapat dua kali bagian anak perempuan.");put("anakP",h.anakP,"Menjadi 'ashabah bil ghair bersama anak laki-laki (laki-laki 2 : perempuan 1).")}
+        else if(g.id==="cucu"){put("cucuL",2*h.cucuL,"Mengambil sisa sebagai 'ashabah; satu cucu laki-laki mendapat dua kali cucu perempuan.");put("cucuP",h.cucuP,"Menjadi 'ashabah bil ghair bersama cucu laki-laki (laki-laki 2 : perempuan 1).")}
+        else if(g.id==="sdrK"){
+          if(h.sdrKL>0){put("sdrKL",2*h.sdrKL,"Mengambil sisa sebagai 'ashabah.");put("sdrKP",h.sdrKP,"Menjadi 'ashabah bil ghair bersama saudara laki-laki kandung (laki-laki 2 : perempuan 1).")}
+          else put("sdrKP",h.sdrKP,"Menjadi 'ashabah ma'al ghair: mengambil sisa bersama anak/cucu perempuan.");
+        }
+        else if(g.id==="sdrA"){
+          if(h.sdrAL>0){put("sdrAL",2*h.sdrAL,"Mengambil sisa sebagai 'ashabah.");put("sdrAP",h.sdrAP,"Menjadi 'ashabah bil ghair bersama saudara laki-laki seayah (laki-laki 2 : perempuan 1).")}
+          else put("sdrAP",h.sdrAP,"Menjadi 'ashabah ma'al ghair: mengambil sisa bersama anak/cucu perempuan.");
+        }
+        else if(g.id==="ayah"||g.id==="kakek")put(g.m,1,"Mengambil seluruh sisa harta sebagai 'ashabah karena tidak ada anak atau cucu laki-laki.");
+        else put(g.m,h[g.m],"Mengambil sisa sebagai 'ashabah (kerabat laki-laki terdekat yang tidak terhalang).");
+      }
+      sumF=sum(Object.values(S).map(x=>x.f));
+    }
+  }
+  sumF=sum(Object.values(S).map(x=>x.f));
+
+  /* ---------- 'Aul dan Radd ---------- */
+  if(gt(sumF,O)){
+    const keys=Object.keys(S).filter(k=>S[k].f.n>0);
+    const asal=keys.reduce((a,k)=>lcm(a,S[k].f.d),1);
+    const ke=Math.round(val(sumF)*asal);
+    R.aul={dari:asal,ke};
+    keys.forEach(k=>{S[k].f=div(S[k].f,sumF)});
+    sumF=sum(Object.values(S).map(x=>x.f));
+  }else if(lt(sumF,O)){
+    const sisa=sub(O,sumF);
+    const rk=Object.keys(S).filter(k=>k!=="suami"&&k!=="istri"&&S[k].f.n>0&&S[k].kind==="fardh");
+    if(rk.length){
+      const sr=sum(rk.map(k=>S[k].f));
+      rk.forEach(k=>{S[k]={...S[k],f:add(S[k].f,mul(sisa,div(S[k].f,sr))),kind:"fardh+radd"}});
+      R.radd={sisa,kepada:rk};
+    }else{R.baitulMal=sisa}
+    sumF=sum(Object.values(S).map(x=>x.f));
+  }
+
+  /* ---------- Susun hasil ---------- */
+  HEIRS.forEach(([k,label])=>{
+    const n=h[k];if(!n)return;
+    if(mahjub[k]){R.rows.push({k,label,n,status:"mahjub",f:Z,per:Z,why:mahjub[k].charAt(0).toUpperCase()+mahjub[k].slice(1)+"."});return}
+    if(S[k]&&S[k].f.n>0){R.rows.push({k,label,n,status:S[k].kind,f:S[k].f,per:div(S[k].f,F(n)),why:S[k].why});return}
+    R.rows.push({k,label,n,status:"nol",f:Z,per:Z,why:S[k]?S[k].why:"Tidak mendapat bagian karena harta telah habis dibagikan kepada ahli waris yang lebih berhak."});
+  });
+
+  /* ---------- Catatan ---------- */
+  if(R.aul)R.notes.push("Terjadi 'aul: jumlah bagian pasti melebihi harta, sehingga asal masalah "+R.aul.dari+" dinaikkan menjadi "+R.aul.ke+" dan setiap bagian dikurangi seimbang.");
+  if(R.radd)R.notes.push("Terjadi radd: harta masih tersisa dan tidak ada 'ashabah, sehingga sisanya dikembalikan kepada ahli waris yang memiliki bagian pasti selain suami/istri, sesuai perbandingan bagian mereka (pendapat ulama muta'akhkhirin Syafi'iyah). Bila baitul mal dikelola dengan adil, sebagian ulama menyerahkan sisa itu ke baitul mal.");
+  if(gt(R.baitulMal,Z))R.notes.push("Sisa "+txt(R.baitulMal)+" harta tidak memiliki penerima: menurut pokok madzhab menjadi hak baitul mal. Sebagian ulama membolehkan sisa ini dikembalikan kepada suami/istri bila baitul mal tidak dikelola dengan adil. Tanyakan kepada ahli faraidh.");
+  if(R.flags.umariyyah)R.notes.push("Masalah 'Umariyyatain: ibu mendapat sepertiga dari sisa harta setelah bagian suami/istri, bukan sepertiga dari seluruh harta.");
+  if(R.flags.musyarakah)R.notes.push("Masalah Musyarakah (Himariyyah): menurut Syafi'iyah saudara kandung ikut berbagi sepertiga bersama saudara seibu.");
+  if(R.flags.akdariyyah)R.notes.push("Masalah Akdariyyah: asal masalah 6 di-'aul menjadi 9, lalu bagian kakek dan saudari digabung dan dibagi 2:1, sehingga menjadi 27.");
+  if(muq&&!R.flags.akdariyyah)R.notes.push("Kakek bersama saudara: kakek tidak menggugurkan saudara kandung/seayah (pendapat Zaid bin Tsabit). Kakek mengambil yang terbesar dari tiga pilihan: muqasamah, 1/3 sisa, atau 1/6 harta.");
+  if(h.cucuL>0||h.cucuP>0||h.ponKL>0||h.ponAL>0||h.sepK>0||h.sepA>0)R.notes.push("Kalkulator ini menganggap seluruh cucu, keponakan, dan sepupu berada pada satu tingkat yang sama.");
+  R.ok=true;
+  return R;
+}
+const api={hitung,HEIRS,MAX,LABEL,txt,val,F,add,sub,mul,div,eq,lt,gt,Z,O};
+if(typeof module!=="undefined")module.exports=api;
+return api;
+})();
+
+/* ---- fitur/lib/zakat.js ---- */
+/* Hitungan zakat madzhab Syafi'i, mengacu pada Kitab Zakat Fathul Qorib. Murni logika (tanpa DOM).
+   Angka konversi (gram, kilogram) adalah angka yang lazim dipakai; ulama berbeda dalam mengonversi
+   mitsqal, dirham, rithl, dan wasaq ke satuan modern, jadi semua bisa diubah pengguna. */
+const ZakatLib=(()=>{
+const DEF={emasGram:85,perakGram:595,panenKg:653,fitrahKg:2.5};
+const KADAR=0.025;   // seperempat dari sepersepuluh
+const n0=x=>{x=+x;return isFinite(x)&&x>0?x:0};
+
+/* Emas atau perak (bila sudah haul): 20 mitsqal emas, 200 dirham perak, kadar 2,5% */
+function logam(gram,nishab,harga){
+  gram=n0(gram);nishab=n0(nishab);harga=n0(harga);
+  const capai=nishab>0&&gram>=nishab;
+  const zk=capai?gram*KADAR:0;
+  return {gram,nishab,capai,kurang:capai?0:Math.max(0,nishab-gram),zakatGram:zk,zakatRp:harga&&zk?zk*harga:0,harga};
+}
+/* Uang tunai/tabungan: dikiaskan pada emas dan perak; nishab dihitung dari harga emas */
+function uang(jumlah,hargaEmas,nishabGram){
+  jumlah=n0(jumlah);hargaEmas=n0(hargaEmas);nishabGram=n0(nishabGram)||DEF.emasGram;
+  const nishabRp=hargaEmas*nishabGram;
+  const capai=nishabRp>0&&jumlah>=nishabRp;
+  return {jumlah,nishabRp,capai,kurang:capai?0:Math.max(0,nishabRp-jumlah),zakat:capai?jumlah*KADAR:0,perluHarga:!hargaEmas};
+}
+/* Barang dagangan: dinilai pada akhir haul, lalu dizakati 2,5% bila nilainya mencapai nishab */
+function dagang(o){
+  const barang=n0(o.barang),kas=n0(o.kas),piutang=n0(o.piutang),utang=n0(o.utang),kurangi=!!o.kurangiUtang;
+  const total=Math.max(0,barang+kas+piutang-(kurangi?utang:0));
+  const r=uang(total,o.hargaEmas,o.nishabGram);
+  return {...r,barang,kas,piutang,utang,kurangi,total};
+}
+/* Tanaman dan buah: 5 wasaq; 10% (air hujan/sungai), 5% (disiram dengan alat/biaya), 7,5% (sama banyak) */
+const PENGAIRAN={hujan:{k:0.10,t:"Air hujan, sungai, atau mata air (tanpa biaya)"},biaya:{k:0.05,t:"Disiram dengan alat, hewan, atau biaya"},campur:{k:0.075,t:"Campuran, sama banyak"}};
+function tani(hasilKg,jenis,nishabKg){
+  hasilKg=n0(hasilKg);nishabKg=n0(nishabKg)||DEF.panenKg;
+  const p=PENGAIRAN[jenis]||PENGAIRAN.hujan;
+  const capai=hasilKg>=nishabKg;
+  return {hasilKg,nishabKg,capai,kurang:capai?0:Math.max(0,nishabKg-hasilKg),kadar:p.k,zakatKg:capai?hasilKg*p.k:0,pengairan:p.t};
+}
+/* Zakat fitrah: satu sha' makanan pokok per jiwa */
+function fitrah(jiwa,kgPerJiwa,hargaPerKg){
+  jiwa=Math.floor(n0(jiwa));kgPerJiwa=n0(kgPerJiwa)||DEF.fitrahKg;hargaPerKg=n0(hargaPerKg);
+  const kg=jiwa*kgPerJiwa;
+  return {jiwa,kgPerJiwa,kg,harga:hargaPerKg,nilai:hargaPerKg?kg*hargaPerKg:0};
+}
+
+/* ---------- Hewan ternak ---------- */
+const UMUR={
+  jadzaah_dhan:"domba jadza'ah (umur ±1 tahun, masuk tahun ke-2)",tsaniyyah:"kambing tsaniyyah (umur ±2 tahun, masuk tahun ke-3)",
+  makhadh:"bintu makhadh (unta betina ±1 tahun, masuk tahun ke-2)",labun:"bintu labun (unta betina ±2 tahun, masuk tahun ke-3)",
+  hiqqah:"hiqqah (unta ±3 tahun, masuk tahun ke-4)",jadzaah:"jadza'ah (unta ±4 tahun, masuk tahun ke-5)",
+  tabi:"tabi' (sapi ±1 tahun, masuk tahun ke-2)",musinnah:"musinnah (sapi ±2 tahun, masuk tahun ke-3)"
+};
+const KAMBING_T="seekor kambing: domba jadza'ah (±1 tahun, masuk tahun ke-2) atau kambing tsaniyyah (±2 tahun, masuk tahun ke-3)";
+/* Cari kombinasi kelipatan a dan b yang paling banyak menutup jumlah hewan (sisa paling sedikit) */
+function kombinasi(n,a,b){
+  let best=-1,opsi=[];
+  for(let x=0;a*x<=n;x++)for(let y=0;a*x+b*y<=n;y++){
+    const T=a*x+b*y;
+    if(T>best){best=T;opsi=[[x,y]]}else if(T===best)opsi.push([x,y]);
+  }
+  return {tutup:best,sisa:n-best,opsi};
+}
+function ternak(jenis,n){
+  n=Math.floor(n0(n));
+  const R={jenis,n,ada:false,nishab:jenis==="unta"?5:jenis==="sapi"?30:40,opsi:[],catatan:[]};
+  if(n<R.nishab){R.kurang=R.nishab-n;return R}
+  R.ada=true;
+  if(jenis==="kambing"){
+    const j=n<=120?1:n<=200?2:n<=399?3:Math.floor(n/100);
+    R.opsi=[[{j,t:KAMBING_T}]];
+    R.rentang=n<=120?"40–120 ekor":n<=200?"121–200 ekor":n<=399?"201–399 ekor":"400 ekor ke atas: seekor untuk setiap 100 ekor";
+  }else if(jenis==="sapi"){
+    const k=kombinasi(n,30,40);
+    R.opsi=k.opsi.map(([x,y])=>[x?{j:x,t:UMUR.tabi}:null,y?{j:y,t:UMUR.musinnah}:null].filter(Boolean));
+    R.sisa=k.sisa;
+    R.catatan.push("Seekor tabi' untuk setiap 30 ekor, atau seekor musinnah untuk setiap 40 ekor. Bila ada dua cara yang sama-sama pas, pemilik boleh memilih salah satu.");
+  }else{
+    if(n<=120){
+      const t=[[5,9,1,"kambing"],[10,14,2,"kambing"],[15,19,3,"kambing"],[20,24,4,"kambing"],[25,35,1,"makhadh"],[36,45,1,"labun"],[46,60,1,"hiqqah"],[61,75,1,"jadzaah"],[76,90,2,"labun"],[91,120,2,"hiqqah"]];
+      const r=t.find(x=>n>=x[0]&&n<=x[1]);
+      R.opsi=[[{j:r[2],t:r[3]==="kambing"?KAMBING_T:UMUR[r[3]]}]];
+      R.rentang=r[0]+"–"+r[1]+" ekor";
+    }else{
+      const k=kombinasi(n,40,50);
+      R.opsi=k.opsi.map(([x,y])=>[x?{j:x,t:UMUR.labun}:null,y?{j:y,t:UMUR.hiqqah}:null].filter(Boolean));
+      R.sisa=k.sisa;
+      R.catatan.push("Mulai 121 ekor: seekor bintu labun untuk setiap 40 ekor, atau seekor hiqqah untuk setiap 50 ekor, dipilih kombinasi yang paling sedikit menyisakan hewan. Bila ada dua cara yang sama-sama pas, pemilik boleh memilih salah satu.");
+    }
+  }
+  return R;
+}
+const api={DEF,KADAR,PENGAIRAN,logam,uang,dagang,tani,fitrah,ternak,kombinasi};
+if(typeof module!=="undefined")module.exports=api;
+return api;
+})();
+
+/* ---- fitur/fitur/kalkulator.js ---- */
+/* =====================================================================
+   Kalkulator fiqih: zakat, waris (faraidh), haidh dan istihadhah.
+   Logika ada di fitur/lib/*.js (ZakatLib, WarisLib, HaidhLib, bisa diuji di Node);
+   berkas ini hanya tampilan. Memakai helper app.js: $, esc, fmt, IC, pageBar, store.
+   ===================================================================== */
+const KALI={
+  zakat:{t:"Kalkulator Zakat",ar:"حِسَابُ الزَّكَاةِ",ic:"coin",d:"Emas, perak, uang, barang dagangan, hasil tani, fitrah, dan hewan ternak. Nishab dan kadar mengikuti Kitab Zakat Fathul Qorib.",bab:"u33"},
+  waris:{t:"Kalkulator Waris",ar:"حِسَابُ الْفَرَائِضِ",ic:"scale",d:"Pilih ahli waris, lihat bagian masing-masing lengkap dengan alasan, termasuk 'aul, radd, dan hajb.",bab:"u75"},
+  haidh:{t:"Haid dan Istihadhah",ar:"الْحَيْضُ وَالِاسْتِحَاضَةُ",ic:"drop",d:"Tentukan berapa lama darah yang keluar terhitung haid dan mana yang istihadhah, sesuai keadaan perempuan.",bab:"u14"}
+};
+const KAL_TOOLS=["zakat","waris","haidh"];
+const KAL_NOTE="Alat bantu belajar. Untuk kasus nyata, terutama waris dan haid yang rumit, tanyakan kepada ustadz atau ustadzah.";
+const KLS={zt:"emas",wr:{},wrHarta:""};
+const KST={get(){return store.get("kal",{})},set(o){const c=KST.get();store.set("kal",{...c,...o})}};
+
+/* ---------- Pembantu ---------- */
+function numIn(v){
+  let s=String(v==null?"":v).trim().replace(/\s|Rp/gi,"");
+  if(!s)return 0;
+  if(s.includes(".")&&s.includes(","))s=s.replace(/\./g,"").replace(",",".");
+  else if(s.includes(","))s=s.replace(",",".");
+  else if(/^\d{1,3}(\.\d{3})+$/.test(s))s=s.replace(/\./g,"");
+  const n=parseFloat(s);return isFinite(n)&&n>0?n:0;
+}
+const nf=(x,d)=>(+x).toLocaleString("id-ID",{maximumFractionDigits:d==null?2:d});
+const rp=x=>"Rp "+nf(Math.round(x),0);
+const kField=(id,label,val,o)=>{o=o||{};return `<label class="fld"><span>${label}${o.hint?`<small>${o.hint}</small>`:""}</span><span class="fld-in"><input id="${id}" name="${id}" type="text" inputmode="decimal" autocomplete="off" value="${esc(val==null?"":val)}"${o.ph?` placeholder="${esc(o.ph)}"`:""}>${o.unit?`<i>${o.unit}</i>`:""}</span></label>`};
+const kSel=(id,label,opts,cur)=>`<label class="fld"><span>${label}</span><span class="fld-in"><select id="${id}" name="${id}">${opts.map(([v,l])=>`<option value="${v}"${v===cur?" selected":""}>${esc(l)}</option>`).join("")}</select></span></label>`;
+const kSw=(id,label,on)=>`<div class="rrow"><span>${label}</span><button type="button" class="sw" data-ksw="${id}" role="switch" aria-checked="${!!on}" aria-label="${esc(label)}"></button></div>`;
+const kStat=(ok,yes,no)=>`<div class="kres-st ${ok?"ok":"no"}"><b>${ok?yes:no}</b></div>`;
+const kRow=(l,v)=>`<div class="kres-r"><span>${l}</span><b>${v}</b></div>`;
+const kRef=bab=>{const b=BABS.find(x=>x.id===bab);return b&&b.n?`<a class="q-link" href="#${bab}" data-go="${bab}">Baca babnya di kitab: ${esc(b.title)}</a>`:""};
+
+/* ---------- Beranda kalkulator ---------- */
+function renderKalHub(){
+  $("#main").innerHTML=`<div class="wrap"><header class="head"><div class="eyebrow">Kalkulator</div><h1>Kalkulator Fiqih</h1><div class="ar-title">آلَاتُ الْحِسَابِ</div>
+    <p>Hitung langsung hukum yang dibahas dalam kitab. Setiap hasil disertai alasannya, supaya bisa dipakai belajar dan bukan hanya untuk mendapat angka.</p></header>
+    <div class="hcards">${KAL_TOOLS.map(t=>{const i=KALI[t];return `<a class="hcard" href="#kalkulator-${t}" data-go="kalkulator-${t}"><span class="hc-ic">${IC[i.ic]}</span><span class="hc-tx"><b>${i.t}</b><span class="ar">${i.ar}</span><span class="hc-d">${i.d}</span></span><span class="hc-go">${IC.chevR}</span></a>`}).join("")}</div>
+    <p class="foot-note">${KAL_NOTE}</p></div>`;
+}
+function renderKal(sub){
+  if(!sub||!KALI[sub]){renderKalHub();return}
+  const i=KALI[sub];
+  const body=sub==="zakat"?zakatUI():sub==="waris"?warisUI():haidhUI();
+  $("#main").innerHTML=pageBar({back:"kalkulator",backLabel:"Kembali ke kalkulator",sub:"Kalkulator",title:i.t})+`<div class="wrap kal">
+    <header class="head"><div class="eyebrow">Kalkulator</div><h1>${i.t}</h1><div class="ar-title">${i.ar}</div><p>${i.d}</p></header>${body}
+    <p class="foot-note">${KAL_NOTE}</p>${kRef(i.bab)}</div>`;
+  if(sub==="zakat")zakatCalc();else if(sub==="waris")warisCalc();else haidhCalc();
+}
+
+/* ====================== ZAKAT ====================== */
+const ZTABS=[["emas","Emas dan perak"],["uang","Uang"],["dagang","Dagang"],["tani","Hasil tani"],["fitrah","Fitrah"],["ternak","Ternak"]];
+function zakatUI(){
+  const S=KST.get(),t=KLS.zt,D=ZakatLib.DEF;
+  const seg=`<div class="ktabs" role="tablist" aria-label="Jenis zakat">${ZTABS.map(([v,l])=>`<button type="button" role="tab" data-kt="${v}" aria-selected="${v===t}">${l}</button>`).join("")}</div>`;
+  const gold=kField("hargaEmas","Harga emas per gram",S.hargaEmas||"",{unit:"Rp",ph:"Contoh: 1.500.000",hint:"Cek harga hari ini"});
+  const nsb=(id,v,u,h)=>kField(id,"Nishab (bisa diubah)",v,{unit:u,hint:h});
+  let f="";
+  if(t==="emas")f=`${kSel("logam","Jenis logam",[["emas","Emas (nishab 20 mitsqal)"],["perak","Perak (nishab 200 dirham)"]],S.logam||"emas")}
+    ${kField("gram","Berat yang dimiliki",S.gram||"",{unit:"gram",ph:"0"})}
+    ${kField("nishab","Nishab (bisa diubah)",S.nishab||"",{unit:"gram",hint:"Kosongkan untuk "+D.emasGram+" g emas atau "+D.perakGram+" g perak"})}
+    ${kField("harga","Harga per gram (opsional)",S.harga||"",{unit:"Rp",hint:"Untuk melihat nilai rupiahnya"})}
+    <p class="kf-note">Wajib bila sudah mencapai nishab dan dimiliki satu tahun (haul). Kadarnya 2,5%.</p>`;
+  else if(t==="uang")f=`${kField("jumlah","Uang tunai dan tabungan",S.jumlah||"",{unit:"Rp",ph:"0"})}${gold}${nsb("nishab2",S.nishab2||"","gram","Kosongkan untuk "+D.emasGram+" g emas")}
+    <p class="kf-note">Uang dikiaskan pada emas dan perak: nishabnya setara 20 mitsqal emas, haul satu tahun, kadar 2,5%.</p>`;
+  else if(t==="dagang")f=`${kField("barang","Nilai barang dagangan",S.barang||"",{unit:"Rp",ph:"0",hint:"Dinilai dengan harga saat haul"})}
+    ${kField("kas","Uang kas usaha",S.kas||"",{unit:"Rp",ph:"0"})}
+    ${kField("piutang","Piutang yang bisa ditagih",S.piutang||"",{unit:"Rp",ph:"0"})}
+    ${kField("utang","Utang jatuh tempo",S.utang||"",{unit:"Rp",ph:"0"})}
+    <div class="rrows">${kSw("kurangi","Kurangi utang dari harta",!!S.kurangi)}</div>
+    ${gold}${nsb("nishab2",S.nishab2||"","gram","Kosongkan untuk "+D.emasGram+" g emas")}
+    <p class="kf-note">Zakat dagang dihitung pada akhir haul: nilai barang dibandingkan dengan nishab emas, kadar 2,5%. Pengurangan utang diperselisihkan, jadi dibuat pilihan.</p>`;
+  else if(t==="tani")f=`${kField("hasil","Hasil panen",S.hasil||"",{unit:"kg",ph:"0"})}
+    ${kSel("jenis","Cara pengairan",Object.entries(ZakatLib.PENGAIRAN).map(([k,v])=>[k,v.t+" ("+nf(v.k*100,1)+"%)"]),S.jenis||"hujan")}
+    ${kField("nishab3","Nishab (bisa diubah)",S.nishab3||"",{unit:"kg",hint:"Kosongkan untuk "+D.panenKg+" kg (5 wasaq)"})}
+    <p class="kf-note">Wajib saat panen tanpa menunggu haul, bila mencapai 5 wasaq. Untuk padi, nishab umumnya dihitung dalam beras atau gabah; sesuaikan angka nishab dengan keterangan ustadz setempat.</p>`;
+  else if(t==="fitrah")f=`${kField("jiwa","Jumlah jiwa yang ditanggung",S.jiwa||"1",{unit:"orang"})}
+    ${kField("kgJiwa","Takaran per jiwa (1 sha')",S.kgJiwa||"",{unit:"kg",hint:"Kosongkan untuk "+nf(D.fitrahKg)+" kg"})}
+    ${kField("hargaKg","Harga makanan pokok per kg (opsional)",S.hargaKg||"",{unit:"Rp",hint:"Bila dibayar dengan uang"})}
+    <p class="kf-note">Zakat fitrah satu sha' makanan pokok per jiwa. Dalam madzhab Syafi'i dibayar dengan makanan pokok; pembayaran dengan uang adalah pendapat madzhab lain yang dipakai sebagian lembaga zakat.</p>`;
+  else f=`${kSel("ternak","Jenis hewan",[["kambing","Kambing atau domba"],["sapi","Sapi atau kerbau"],["unta","Unta"]],S.ternak||"kambing")}
+    ${kField("ekor","Jumlah hewan",S.ekor||"",{unit:"ekor",ph:"0"})}
+    <p class="kf-note">Hewan harus digembalakan di padang rumput umum (saimah) dan dimiliki satu tahun.</p>`;
+  return `${seg}<form class="card kform" data-kform="zakat" onsubmit="return false">${f}</form><div id="kres" class="kres" aria-live="polite"></div>`;
+}
+function zakatCalc(){
+  const t=KLS.zt,v=id=>{const e=document.getElementById(id);return e?e.value:""},D=ZakatLib.DEF,res=$("#kres");if(!res)return;
+  const save={};["gram","nishab","harga","jumlah","hargaEmas","nishab2","barang","kas","piutang","utang","hasil","nishab3","jiwa","kgJiwa","hargaKg","ekor"].forEach(k=>{const e=document.getElementById(k);if(e)save[k]=e.value});
+  ["logam","jenis","ternak"].forEach(k=>{const e=document.getElementById(k);if(e)save[k]=e.value});
+  KST.set(save);
+  let h="";
+  if(t==="emas"){
+    const lg=v("logam")||"emas",ns=numIn(v("nishab"))||(lg==="emas"?D.emasGram:D.perakGram),r=ZakatLib.logam(numIn(v("gram")),ns,numIn(v("harga")));
+    h=!r.gram?`<p class="kres-h">Isi berat ${lg} yang dimiliki.</p>`:kStat(r.capai,"Wajib zakat","Belum wajib zakat")+kRow("Nishab",nf(ns)+" gram")+kRow("Dimiliki",nf(r.gram)+" gram")+
+      (r.capai?kRow("Zakat (2,5%)",nf(r.zakatGram,3)+" gram")+(r.harga?kRow("Senilai",rp(r.zakatRp)):""):kRow("Kurang dari nishab",nf(r.kurang)+" gram"));
+  }else if(t==="uang"||t==="dagang"){
+    let r;
+    if(t==="uang")r=ZakatLib.uang(numIn(v("jumlah")),numIn(v("hargaEmas")),numIn(v("nishab2")));
+    else r=ZakatLib.dagang({barang:numIn(v("barang")),kas:numIn(v("kas")),piutang:numIn(v("piutang")),utang:numIn(v("utang")),kurangiUtang:(document.querySelector('[data-ksw="kurangi"]')||{}).getAttribute&&document.querySelector('[data-ksw="kurangi"]').getAttribute("aria-checked")==="true",hargaEmas:numIn(v("hargaEmas")),nishabGram:numIn(v("nishab2"))});
+    const jml=t==="uang"?r.jumlah:r.total;
+    if(!jml)h=`<p class="kres-h">Isi jumlah harta.</p>`;
+    else if(r.perluHarga)h=`<p class="kres-h">Isi harga emas per gram agar nishab dalam rupiah bisa dihitung.</p>`;
+    else h=kStat(r.capai,"Wajib zakat","Belum wajib zakat")+(t==="dagang"?kRow("Total harta dagang",rp(jml)):kRow("Harta",rp(jml)))+kRow("Nishab",rp(r.nishabRp))+(r.capai?kRow("Zakat (2,5%)",rp(r.zakat)):kRow("Kurang dari nishab",rp(r.kurang)));
+  }else if(t==="tani"){
+    const r=ZakatLib.tani(numIn(v("hasil")),v("jenis"),numIn(v("nishab3")));
+    h=!r.hasilKg?`<p class="kres-h">Isi hasil panen.</p>`:kStat(r.capai,"Wajib zakat","Belum wajib zakat")+kRow("Nishab",nf(r.nishabKg)+" kg")+kRow("Hasil panen",nf(r.hasilKg)+" kg")+kRow("Kadar",nf(r.kadar*100,1)+"%")+(r.capai?kRow("Zakat",nf(r.zakatKg,2)+" kg"):kRow("Kurang dari nishab",nf(r.kurang)+" kg"));
+  }else if(t==="fitrah"){
+    const r=ZakatLib.fitrah(numIn(v("jiwa")),numIn(v("kgJiwa")),numIn(v("hargaKg")));
+    h=!r.jiwa?`<p class="kres-h">Isi jumlah jiwa.</p>`:kRow("Jumlah jiwa",nf(r.jiwa,0))+kRow("Per jiwa",nf(r.kgPerJiwa)+" kg")+`<div class="kres-big"><span>Total zakat fitrah</span><b>${nf(r.kg)} kg</b></div>`+(r.harga?kRow("Bila dibayar uang",rp(r.nilai)):"");
+  }else{
+    const jn=v("ternak")||"kambing",r=ZakatLib.ternak(jn,numIn(v("ekor")));
+    if(!r.n)h=`<p class="kres-h">Isi jumlah hewan.</p>`;
+    else if(!r.ada)h=kStat(false,"","Belum wajib zakat")+kRow("Nishab",r.nishab+" ekor")+kRow("Kurang",r.kurang+" ekor");
+    else h=kStat(true,"Wajib zakat","")+(r.rentang?kRow("Rentang",r.rentang):"")+`<div class="kres-big"><span>Yang dikeluarkan${r.opsi.length>1?" (pilih salah satu)":""}</span>${r.opsi.map(o=>`<ul>${o.map(x=>`<li><b>${x.j}</b> ${esc(x.t)}</li>`).join("")}</ul>`).join(r.opsi.length>1?"<div class=\"kres-or\">atau</div>":"")}</div>`+(r.sisa?kRow("Sisa hewan yang tidak terhitung",r.sisa+" ekor"):"")+r.catatan.map(c=>`<p class="kf-note">${esc(c)}</p>`).join("");
+  }
+  res.innerHTML=h;
+}
+
+/* ====================== WARIS ====================== */
+const WGROUP=[["Pasangan",["suami","istri"]],["Keturunan",["anakL","anakP","cucuL","cucuP"]],["Orang tua dan kakek-nenek",["ayah","kakek","ibu","nenekIbu","nenekAyah"]],["Saudara",["sdrKL","sdrKP","sdrAL","sdrAP","sdrI"]],["Keponakan, paman, dan sepupu",["ponKL","ponAL","pamK","pamA","sepK","sepA"]]];
+function warisUI(){
+  const L=WarisLib.LABEL;
+  const g=WGROUP.map(([t,ks])=>`<fieldset class="wgrp"><legend>${t}</legend>${ks.map(k=>`<div class="wrow"><span id="wl-${k}">${esc(L[k])}</span><span class="stp" role="group" aria-labelledby="wl-${k}"><button type="button" data-wd="${k}:-1" aria-label="Kurangi ${esc(L[k])}">−</button><output id="wn-${k}">${KLS.wr[k]||0}</output><button type="button" data-wd="${k}:1" aria-label="Tambah ${esc(L[k])}">+</button></span></div>`).join("")}</fieldset>`).join("");
+  return `<form class="card kform" data-kform="waris" onsubmit="return false"><p class="kf-note" style="margin-top:0">Pilih ahli waris yang masih hidup saat pewaris wafat. Utang, wasiat, dan biaya pemakaman dikeluarkan lebih dahulu dari harta.</p>${g}
+    ${kField("harta","Harta waris bersih (opsional)",KLS.wrHarta,{unit:"Rp",hint:"Untuk melihat bagian dalam rupiah"})}
+    <button type="button" class="btn" data-wreset>Kosongkan semua</button></form><div id="kres" class="kres" aria-live="polite"></div>`;
+}
+const WST={fardh:"Bagian pasti",ashabah:"'Ashabah (sisa)",muqasamah:"Muqasamah",musyarakah:"Musyarakah",nol:"Tidak mendapat bagian",mahjub:"Terhalang"};
+function warisCalc(){
+  const res=$("#kres");if(!res)return;
+  KLS.wrHarta=(document.getElementById("harta")||{}).value||"";
+  const R=WarisLib.hitung(KLS.wr);
+  if(R.error){res.innerHTML=Object.values(KLS.wr).some(x=>x>0)?`<p class="kres-h warn">${esc(R.error)}</p>`:`<p class="kres-h">Pilih ahli waris untuk melihat pembagiannya.</p>`;return}
+  if(R.unsupported){res.innerHTML=`<p class="kres-h warn">${esc(R.unsupported)}</p>`;return}
+  const harta=numIn(KLS.wrHarta),W=WarisLib;
+  const pct=f=>nf(W.val(f)*100,2)+"%";
+  const rows=R.rows.map(r=>{const got=r.status!=="mahjub"&&r.status!=="nol";
+    return `<tr class="${got?"":"off"}"><th scope="row">${esc(r.label)}${r.n>1?` <small>(${r.n} orang)</small>`:""}</th><td>${WST[r.status]||r.status}</td><td class="num">${got?`<b>${W.txt(r.f)}</b><small>${pct(r.f)}</small>`:"-"}</td>${harta?`<td class="num">${got?rp(W.val(r.f)*harta)+(r.n>1?`<small>${rp(W.val(r.per)*harta)} per orang</small>`:""):"-"}</td>`:""}</tr><tr class="why"><td colspan="${harta?4:3}">${esc(r.why)}</td></tr>`}).join("");
+  const tot=R.rows.reduce((a,r)=>W.add(a,r.f),W.Z);
+  res.innerHTML=`${R.aul?`<div class="kres-st warn"><b>'Aul: asal masalah ${R.aul.dari} menjadi ${R.aul.ke}</b></div>`:""}${R.radd?`<div class="kres-st warn"><b>Radd: ada sisa yang dikembalikan</b></div>`:""}
+    <div class="ktable"><table><thead><tr><th>Ahli waris</th><th>Status</th><th class="num">Bagian</th>${harta?'<th class="num">Rupiah</th>':""}</tr></thead><tbody>${rows}</tbody></table></div>
+    ${W.gt(R.baitulMal,W.Z)?kRow("Sisa untuk baitul mal",W.txt(R.baitulMal)):""}
+    ${R.notes.map(n=>`<p class="kf-note">${esc(n)}</p>`).join("")}`;
+}
+
+/* ====================== HAIDH ====================== */
+const HS=[["mubtadiah","Baru pertama haid (mubtadi'ah)"],["mutadah","Sudah punya kebiasaan (mu'tadah)"],["mutahayyirah","Lupa kebiasaan (mutahayyirah)"]];
+function haidhUI(){
+  const S=KST.get().hd||{status:"mubtadiah",tamyiz:false};
+  const seg=`<div class="ktabs v" role="radiogroup" aria-label="Keadaan perempuan">${HS.map(([v,l])=>`<button type="button" role="radio" data-hs="${v}" aria-checked="${v===S.status}">${l}</button>`).join("")}</div>`;
+  return `<form class="card kform" data-kform="haidh" onsubmit="return false"><h2 class="kf-h">Keadaan</h2>${seg}
+    <div id="hAdat"${S.status==="mutadah"?"":" hidden"}>${kField("hAdatHari","Kebiasaan haid",S.adatHari||"",{unit:"hari",hint:"Lama haid yang biasa dialami"})}</div>
+    <h2 class="kf-h">Darah yang keluar</h2>
+    <div class="rrows">${kSw("tamyiz","Darahnya bisa dibedakan (kuat dan lemah)",!!S.tamyiz)}</div>
+    <div id="hPlain"${S.tamyiz?" hidden":""}>${kField("hHari","Sudah keluar berapa hari",S.hari||"",{unit:"hari",ph:"0"})}${kField("hJam","Ditambah jam",S.jam||"",{unit:"jam",ph:"0"})}</div>
+    <div id="hTam"${S.tamyiz?"":" hidden"}>${kField("hKuat","Lama darah kuat (hitam atau merah tua)",S.kuat||"",{unit:"hari"})}${kField("hLemah","Lama darah lemah (merah muda atau kuning)",S.lemah||"",{unit:"hari"})}</div>
+    <p class="kf-note">Darah dianggap keluar terus-menerus tanpa putus. Batas haid: paling sedikit sehari semalam, paling lama 15 hari 15 malam.</p></form><div id="kres" class="kres" aria-live="polite"></div>`;
+}
+const fJam=j=>{j=Math.round(j);const d=Math.floor(j/24),h=j%24;return (d?d+" hari":"")+(d&&h?" ":"")+(h?h+" jam":"")||"0"};
+function haidhCalc(){
+  const res=$("#kres");if(!res)return;
+  const g=id=>(document.getElementById(id)||{}).value||"";
+  const on=document.querySelector('[data-ksw="tamyiz"]').getAttribute("aria-checked")==="true";
+  const st=(document.querySelector("[data-hs][aria-checked=true]")||{dataset:{hs:"mubtadiah"}}).dataset.hs;
+  KST.set({hd:{status:st,tamyiz:on,adatHari:g("hAdatHari"),hari:g("hHari"),jam:g("hJam"),kuat:g("hKuat"),lemah:g("hLemah")}});
+  const R=HaidhLib.analisis({status:st,adatHari:numIn(g("hAdatHari")),tamyiz:on,kuatHari:numIn(g("hKuat")),lemahHari:numIn(g("hLemah")),hari:numIn(g("hHari")),jam:numIn(g("hJam"))});
+  if(R.error){res.innerHTML=`<p class="kres-h">${esc(R.error)}</p>`;return}
+  const bar=R.segmen.filter(s=>s.b>s.a).map(s=>`<span class="hb ${s.t}" style="flex:${s.b-s.a}">${s.t==="haid"?"Haid":"Istihadhah"}<small>${fJam(s.b-s.a)}</small></span>`).join("");
+  const kat=R.kategori==="kurang"?"Bukan haid":R.kategori==="dalam15"?"Seluruhnya haid":"Sebagian haid, sisanya istihadhah";
+  res.innerHTML=`<div class="kres-st ${R.haidJam?"ok":"no"}"><b>${kat}</b></div>
+    <div class="hbar" role="img" aria-label="Pembagian darah: ${R.segmen.map(s=>(s.t==="haid"?"haid ":"istihadhah ")+fJam(s.b-s.a)).join(", ")}">${bar||""}</div>
+    ${R.tak?`<p class="kres-h warn">${esc(R.tak)}</p>`:kRow("Haid",fJam(R.haidJam))+kRow("Istihadhah",fJam(R.H-R.haidJam))+kRow("Cara penentuan",esc(R.metode))}
+    ${R.alasan.map(a=>`<p class="kf-note">${esc(a)}</p>`).join("")}
+    ${R.haidJam&&R.kategori!=="kurang"?`<p class="kf-note">Setelah haid berakhir wajib mandi, lalu shalat. Pada hari istihadhah perempuan tetap shalat dan puasa dengan bersuci seperti biasa (membersihkan darah, menyumbat, dan berwudhu setiap akan shalat fardhu).</p>`:""}`;
+}
+
+/* ---------- Interaksi ---------- */
+document.addEventListener("click",e=>{
+  if(route.v!=="kal")return;
+  const t=e.target.closest("[data-kt]");if(t){KLS.zt=t.dataset.kt;renderKal("zakat");return}
+  const sw=e.target.closest("[data-ksw]");if(sw){const on=sw.getAttribute("aria-checked")!=="true";sw.setAttribute("aria-checked",on);
+    if(sw.dataset.ksw==="tamyiz"){$("#hPlain").hidden=on;$("#hTam").hidden=!on;haidhCalc()}else{const s=KST.get();KST.set({kurangi:on});zakatCalc()}return}
+  const hs=e.target.closest("[data-hs]");if(hs){document.querySelectorAll("[data-hs]").forEach(b=>b.setAttribute("aria-checked",b===hs));$("#hAdat").hidden=hs.dataset.hs!=="mutadah";haidhCalc();return}
+  const wd=e.target.closest("[data-wd]");
+  if(wd){const [k,d]=wd.dataset.wd.split(":"),mx=WarisLib.MAX[k]||30;let n=(KLS.wr[k]||0)+(+d);n=Math.max(0,Math.min(mx,n));KLS.wr[k]=n;
+    if(n&&k==="suami")KLS.wr.istri=0;if(n&&k==="istri")KLS.wr.suami=0;
+    ["suami","istri"].forEach(x=>{const o=document.getElementById("wn-"+x);if(o)o.textContent=KLS.wr[x]||0});
+    document.getElementById("wn-"+k).textContent=n;warisCalc();return}
+  if(e.target.closest("[data-wreset]")){KLS.wr={};KLS.wrHarta="";renderKal("waris");return}
+});
+document.addEventListener("input",e=>{
+  if(route.v!=="kal"||!e.target.closest("[data-kform]"))return;
+  const f=e.target.closest("[data-kform]").dataset.kform;
+  if(f==="zakat")zakatCalc();else if(f==="waris")warisCalc();else haidhCalc();
+});
+document.addEventListener("change",e=>{
+  if(route.v!=="kal"||e.target.tagName!=="SELECT")return;
+  if(e.target.closest("[data-kform=zakat]"))zakatCalc();
+});
+
+/* ---- fitur/fitur/latihan.js ---- */
+/* =====================================================================
+   Latihan interaktif: i'rab, kuis bab, susun kalimat.
+   Disisipkan ke dalam app.js (satu lingkup), memakai helper yang sudah ada:
+   $, esc, norm, fmt, IC, K, IDX, BABS, AVAIL, KD, loadKitab, babParas, store, HIST, parseMM, pageBar, bareAr.
+   Progres tersimpan di perangkat: localStorage "efq:lat".
+   ===================================================================== */
+const LAT_TYPES=["irab","kuis","susun"];
+const LATI={
+  irab:{t:"Latihan I'rab",ar:"تَدْرِيْبُ الْإِعْرَابِ",ic:"pen",d:"Satu kata disorot dalam kalimat kitab. Tebak kedudukannya: mubtada', khabar, fa'il, maf'ul, dan seterusnya.",
+    note:"Kunci jawaban hanya diambil dari kata yang i'rabnya ditulis tangan dan cocok dengan kode kedudukannya, bukan dari baris i'rab otomatis."},
+  kuis:{t:"Kuis Bab",ar:"اِخْتِبَارُ الْبَابِ",ic:"quiz",d:"Soal pilihan ganda dari mind map bab (poin, kelompok, dan nomor paragraf) serta arti kata dalam kitab.",
+    note:"Soal disusun otomatis dari mind map dan makna per kata. Bab yang belum punya mind map memakai soal arti kata saja."},
+  susun:{t:"Susun Kalimat",ar:"تَرْتِيْبُ الْجُمَلِ",ic:"shuffle",d:"Kata-kata Arab diacak. Susun kembali menjadi kalimat yang benar untuk melatih tarkib dan hafalan matan.",
+    note:"Ketuk kata untuk menaruhnya di baris jawaban, ketuk lagi untuk mengembalikan. Percobaan pertama yang menentukan skor."}
+};
+const LS={st:null};
+const LST={get(){return store.get("lat",{})},set(v){store.set("lat",v)}};
+const shuf=a=>{for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]]}return a};
+const pick1=a=>a[Math.floor(Math.random()*a.length)];
+function latStat(type,ok,code){
+  const L=LST.get();const s=L[type]=L[type]||{n:0,ok:0,by:{}};
+  s.n++;if(ok)s.ok++;
+  if(code){const b=s.by[code]=s.by[code]||[0,0];b[0]++;if(ok)b[1]++}
+  LST.set(L);
+}
+const QL=c=>({mj:["Majrur (setelah huruf jar)","مجرور"],ma:["Mudhaf Ilaih","مضاف إليه"]}[c]||[(K[c]||K.hr)[0],(K[c]||K.hr)[1]]);
+
+/* ---------- Cakupan bahan ---------- */
+function latScope(){
+  const L=LST.get();let sc=L.sc;
+  if(!sc||(sc.k&&!IDX.some(k=>k.id===sc.k))||(sc.b&&!BABS.some(b=>b.id===sc.b))){
+    const last=(HIST.all()[0]||{}).bab,b=(last&&BABS.find(x=>x.id===last))||AVAIL[0];
+    sc={k:b.k,b:b.id};
+  }
+  return sc;
+}
+const scopeBabs=sc=>sc.b?BABS.filter(b=>b.id===sc.b):sc.k?BABS.filter(b=>b.k===sc.k&&b.n):AVAIL;
+const latOpt=(list,sel)=>list.map(([v,l])=>`<option value="${esc(v)}"${v===sel?" selected":""}>${esc(l)}</option>`).join("");
+
+/* ---------- Pembuat soal: i'rab ---------- */
+const IRK={mb:/mubtada/i,kh:/khabar/i,ki:/khabar/i,fa:/fa'il/i,nf:/na'ib/i,ii:/isim/i,mf:/maf'ul bih/i,mm:/muthlaq/i,ml:/ajlih/i,zf:/zharaf/i,ms:/mustatsna/i,hl:/\bhal\b/i,tm:/tamyiz/i,na:/na'at|sifat/i,ma:/mudhaf/i,bd:/badal/i,ab:/bayan|tafsir/i,mt:/ma'thuf|athaf/i,tk:/taukid/i,mj:/majrur/i};
+const IRC={mb:["kh","fa","ii","nf"],kh:["mb","ki","mf","hl"],fa:["nf","mb","mf","ii"],nf:["fa","mb","mf","ii"],ii:["mb","fa","ki","nf"],ki:["kh","ii","hl","mf"],mf:["fa","hl","tm","mm"],mm:["mf","hl","ml","tm"],ml:["mf","mm","hl","tm"],zf:["mf","hl","tm","mj"],ms:["mf","bd","na","tm"],hl:["mf","tm","na","kh"],tm:["hl","mf","na","mm"],na:["bd","ab","mt","tk"],ma:["mj","na","bd","mt"],bd:["na","ab","mt","tk"],ab:["bd","na","mt","tk"],mt:["bd","na","ab","ma"],tk:["na","bd","ab","mt"],mj:["ma","mf","zf","mt"]};
+function ctxHTML(p,wi,before,after){
+  const from=Math.max(0,wi-before),to=Math.min(p.words.length,wi+after+1);
+  return (from?"… ":"")+p.words.slice(from,to).map((x,j)=>from+j===wi?`<mark class="tgt">${esc(x.a)}</mark>`:esc(x.a)).join(" ")+(to<p.words.length?" …":"");
+}
+function irabPool(paras){
+  const pool=[];
+  paras.forEach(p=>{
+    const rows={},cnt={};
+    p.irob.forEach(r=>{if(!r.au){const k=norm(r.a);(rows[k]=rows[k]||[]).push(r)}});
+    p.words.forEach(w=>{const k=norm(w.a);cnt[k]=(cnt[k]||0)+1});
+    p.words.forEach((w,wi)=>{
+      const rx=IRK[w.k];if(!rx)return;
+      const k=norm(w.a);if(cnt[k]>1||!rows[k]||rows[k].length!==1)return;
+      const r=rows[k][0];
+      if(!rx.test(r.x)||/\s\/\s|\batau\b/i.test(r.x))return;
+      pool.push({p,wi,w,r,code:w.k});
+    });
+  });
+  return pool;
+}
+function irabQ({p,wi,w,r,code}){
+  const ds=shuf(IRC[code].slice()).slice(0,3);
+  const opts=shuf([code,...ds]).map(c=>({c,t:QL(c)[0],ar:QL(c)[1]}));
+  return {type:"irab",code,prompt:"Apa kedudukan kata bergaris dalam kalimat ini?",ctx:ctxHTML(p,wi,7,4),sub:"Makna kata: "+w.t,opts,
+    ans:opts.findIndex(o=>o.c===code),expl:`Jawaban: <b>${esc(QL(code)[0])}</b>. I'rab dalam kitab: ${esc(r.x)}`,link:{bab:p.bab,pid:p.id},ar:w.a};
+}
+function buildIrab(paras,n){
+  const pool=irabPool(paras);if(!pool.length)return [];
+  const L=(LST.get().irab||{}).by||{};
+  const weak=new Set(Object.entries(L).filter(([c,v])=>v[0]>=5&&v[1]/v[0]<.6).map(x=>x[0]));
+  const by={};pool.forEach(x=>(by[x.code]=by[x.code]||[]).push(x));
+  Object.values(by).forEach(shuf);
+  const out=[];
+  while(out.length<n){
+    const codes=Object.keys(by).filter(c=>by[c].length);if(!codes.length)break;
+    const wt=codes.map(c=>Math.sqrt(Math.min(by[c].length,50))*(weak.has(c)?3:1));
+    let r=Math.random()*wt.reduce((a,b)=>a+b,0),ci=0;
+    for(;ci<codes.length-1&&r>wt[ci];ci++)r-=wt[ci];
+    out.push(irabQ(by[codes[ci]].pop()));
+  }
+  return out;
+}
+
+/* ---------- Pembuat soal: kuis bab ---------- */
+const okT=t=>!!t&&t.length>=3&&t.length<=68;
+const descs=(n,out)=>{(n.kids||[]).forEach(k=>{out.push(k);descs(k,out)});return out};
+const refLbl=r=>"Paragraf "+r[0]+(r[1]!==r[0]?"–"+r[1]:"");
+function buildKuis(babs,paras,n){
+  const T={t1:[],t2:[],t3:[],t4:[]};
+  babs.forEach(b=>{
+    const txt=KD[b.k]&&KD[b.k].mm[b.id];if(!txt)return;
+    const ps=babParas(b),top=parseMM(txt),l1=top.filter(x=>okT(x.t));
+    if(l1.length<2)return;
+    const owner=new Map(),count=new Map();
+    l1.forEach((P,pi)=>[P,...descs(P,[])].forEach(x=>{count.set(x.t,(count.get(x.t)||0)+1);const s=owner.get(x.t)||new Set();s.add(pi);owner.set(x.t,s)}));
+    const uniq=x=>okT(x.t)&&count.get(x.t)===1;
+    l1.forEach((P,pi)=>{
+      const kids=P.kids.filter(uniq),all=descs(P,[]).filter(uniq);
+      // T1: poin ini termasuk pembahasan apa?
+      if(l1.length>=4)all.forEach(x=>{
+        const ds=shuf(l1.filter((_,j)=>j!==pi)).slice(0,3);
+        const opts=shuf([P,...ds]).map(o=>({t:o.t,ar:""}));
+        T.t1.push({type:"kuis",prompt:"Poin berikut termasuk dalam pembahasan apa?",ctx:null,big:x.t,opts,ans:opts.findIndex(o=>o.t===P.t),
+          expl:`“${esc(x.t)}” termasuk dalam <b>${esc(P.t)}</b>.`,link:x.ref?{bab:b.id,pid:ps[x.ref[0]-1]&&ps[x.ref[0]-1].id}:(P.ref?{bab:b.id,pid:ps[P.ref[0]-1]&&ps[P.ref[0]-1].id}:null)});
+      });
+      // T2: manakah yang termasuk dalam P?
+      if(kids.length>=1){
+        const mine=new Set(descs(P,[]).map(x=>x.t));
+        const others=l1.filter((_,j)=>j!==pi).flatMap(Q=>Q.kids.filter(uniq)).filter(x=>!mine.has(x.t));
+        const pool=[...new Set(others.map(x=>x.t))];
+        if(pool.length>=3)kids.forEach(x=>{
+          const ds=shuf(pool.slice()).slice(0,3);
+          const opts=shuf([x.t,...ds]).map(t=>({t,ar:""}));
+          T.t2.push({type:"kuis",prompt:"Manakah yang termasuk dalam pembahasan “"+P.t+"”?",ctx:null,opts,ans:opts.findIndex(o=>o.t===x.t),
+            expl:`<b>${esc(x.t)}</b> termasuk dalam “${esc(P.t)}”.`,link:x.ref?{bab:b.id,pid:ps[x.ref[0]-1]&&ps[x.ref[0]-1].id}:null});
+        });
+      }
+    });
+    // T3: poin ini dibahas di paragraf berapa?
+    const nodes=l1.flatMap(P=>[P,...descs(P,[])]).filter(x=>x.ref&&uniq(x)&&ps[x.ref[0]-1]);
+    const labels=nodes.map(x=>({r:x.ref,l:refLbl(x.ref)}));
+    nodes.forEach(x=>{
+      const c=refLbl(x.ref);
+      const ds=[...new Set(labels.filter(y=>y.r[1]<x.ref[0]||y.r[0]>x.ref[1]).map(y=>y.l))].filter(l=>l!==c);
+      if(ds.length<3)return;
+      const opts=shuf([c,...shuf(ds).slice(0,3)]).map(t=>({t,ar:""}));
+      T.t3.push({type:"kuis",prompt:"Poin berikut dibahas di paragraf berapa?",ctx:null,big:x.t,opts,ans:opts.findIndex(o=>o.t===c),
+        expl:`“${esc(x.t)}” dibahas di <b>${esc(c)}</b>.`,link:{bab:b.id,pid:ps[x.ref[0]-1].id}});
+    });
+  });
+  // T4: arti kata
+  const bank=new Map();
+  paras.forEach(p=>p.words.forEach(w=>{if(w.k!=="hr"&&w.k!=="jr"&&w.t&&w.t.length<=36)bank.set(w.t.toLowerCase(),w.t)}));
+  const bankArr=[...bank.values()];
+  if(bankArr.length>=8){
+    const cand=[];
+    paras.forEach(p=>p.words.forEach((w,wi)=>{if(w.k!=="hr"&&w.k!=="jr"&&w.t&&w.t.length<=36&&norm(w.a).length>=3)cand.push({p,w,wi})}));
+    shuf(cand).slice(0,Math.max(n*3,40)).forEach(({p,w,wi})=>{
+      const first=w.t.toLowerCase().split(/\s+/)[0];
+      const ds=shuf(bankArr.slice()).filter(t=>t.toLowerCase()!==w.t.toLowerCase()&&t.toLowerCase().split(/\s+/)[0]!==first).slice(0,3);
+      if(ds.length<3)return;
+      const opts=shuf([w.t,...ds]).map(t=>({t,ar:""}));
+      T.t4.push({type:"kuis",prompt:"Apa arti kata bergaris ini dalam kitab?",ctx:ctxHTML(p,wi,5,3),opts,ans:opts.findIndex(o=>o.t===w.t),
+        expl:`<span class="ar">${esc(w.a)}</span> berarti <b>${esc(w.t)}</b>.`,link:{bab:p.bab,pid:p.id}});
+    });
+  }
+  Object.values(T).forEach(shuf);
+  const wt={t1:.3,t2:.25,t3:.25,t4:.2},out=[];
+  while(out.length<n){
+    const ks=Object.keys(T).filter(k=>T[k].length);if(!ks.length)break;
+    let r=Math.random()*ks.reduce((a,k)=>a+wt[k],0),ki=0;
+    for(;ki<ks.length-1&&r>wt[ks[ki]];ki++)r-=wt[ks[ki]];
+    out.push(T[ks[ki]].pop());
+  }
+  return out;
+}
+
+/* ---------- Pembuat soal: susun kalimat ---------- */
+function buildSusun(paras,n,L){
+  const lv=L.lv||2,[mn,mx]=[[3,5],[5,7],[7,10]][lv-1],matan=!!L.matan,items=[];
+  paras.forEach(p=>{
+    if(matan&&!p.matan)return;
+    let cur=[];
+    p.words.forEach((w,i)=>{
+      cur.push(i);
+      const end=/[،؛:.؟!]$/.test(w.a.trim())||i===p.words.length-1;
+      if((end&&cur.length>=mn)||cur.length>=mx){
+        if(cur.length>=mn&&(!matan||cur.every(j=>p.words[j].m)))items.push({p,idx:cur.slice()});
+        cur=[];
+      }
+    });
+  });
+  const out=[];
+  shuf(items).forEach(it=>{
+    if(out.length>=n)return;
+    const tiles=it.idx.map((j,ord)=>({a:it.p.words[j].a,t:it.p.words[j].t,ord}));
+    if(new Set(tiles.map(t=>t.a)).size<2)return;
+    let order=tiles.map((_,i)=>i),tries=0;
+    do{shuf(order);tries++}while(tries<12&&order.every((v,i)=>tiles[v].a===tiles[i].a));
+    const sh=order.map(i=>tiles[i]);
+    out.push({type:"susun",tiles:sh,correct:tiles.map(t=>t.a),slots:[],tries:0,done:false,hint:false,msg:"",mark:false,
+      link:{bab:it.p.bab,pid:it.p.id},meaning:tiles.map(t=>t.t).join(" · ")});
+  });
+  return out;
+}
+
+/* ---------- Layar: beranda latihan ---------- */
+function renderLatHub(){
+  const L=LST.get(),tot=LAT_TYPES.reduce((a,t)=>a+((L[t]||{}).n||0),0),oks=LAT_TYPES.reduce((a,t)=>a+((L[t]||{}).ok||0),0);
+  const cards=LAT_TYPES.map(t=>{const i=LATI[t],s=L[t]||{n:0,ok:0};
+    return `<a class="hcard" href="#latihan-${t}" data-go="latihan-${t}"><span class="hc-ic">${IC[i.ic]}</span><span class="hc-tx"><b>${i.t}</b><span class="ar">${i.ar}</span><span class="hc-d">${i.d}</span>
+      <small>${s.n?`${fmt(s.n)} soal dijawab · ${Math.round(s.ok/s.n*100)}% benar`:"Belum dicoba"}</small></span><span class="hc-go">${IC.chevR}</span></a>`}).join("");
+  const by=(L.irab||{}).by||{},weak=Object.entries(by).filter(([c,v])=>v[0]>=5).map(([c,v])=>[c,v[1]/v[0],v[0]]).sort((a,b)=>a[1]-b[1]).filter(x=>x[1]<.75).slice(0,4);
+  const wk=weak.length?`<div class="sec-h"><h2>Kedudukan yang perlu diulang</h2></div><div class="chips">${weak.map(([c,r,n])=>`<span class="chip plain">${esc(QL(c)[0])} <b>${Math.round(r*100)}%</b> <small>(${n} soal)</small></span>`).join("")}</div><p class="km-info">Soal latihan i'rab otomatis lebih sering memilih kedudukan ini.</p>`:"";
+  $("#main").innerHTML=`<div class="wrap"><header class="head"><div class="eyebrow">Latihan</div><h1>Latihan Interaktif</h1><div class="ar-title">تَمَارِيْنُ</div>
+    <p>Uji pemahaman setelah membaca. Soal diambil dari kitab yang tersedia di aplikasi ini, jadi selalu sesuai dengan isi bacaan.</p>
+    ${tot?`<div class="meta-row"><span class="tag">${fmt(tot)} soal dijawab</span><span class="tag">${Math.round(oks/tot*100)}% benar</span></div>`:""}</header>
+    <div class="hcards">${cards}</div>${wk}
+    <p class="foot-note">Progres latihan tersimpan di perangkat dan browser ini saja.</p></div>`;
+}
+
+/* ---------- Layar: pengaturan sebelum mulai ---------- */
+function renderLatSetup(type){
+  const L=LST.get(),sc=latScope(),i=LATI[type],n=L.n||10;
+  const kOpt=[["","Semua kitab (memuat 17 file)"],...IDX.map(k=>[k.id,k.title])];
+  const bOpt=[["","Semua bab dalam kitab ini"],...BABS.filter(b=>b.k===sc.k&&b.n).map(b=>[b.id,b.title])];
+  const seg=(attr,vals,cur)=>`<div class="seg" role="group">${vals.map(([v,l])=>`<button type="button" ${attr}="${v}" aria-pressed="${String(cur)===String(v)}">${l}</button>`).join("")}</div>`;
+  const sw=(k,lbl,on)=>`<div class="rrow"><span>${lbl}</span><button type="button" class="sw" data-lssw="${k}" role="switch" aria-checked="${!!on}" aria-label="${esc(lbl)}"></button></div>`;
+  $("#main").innerHTML=pageBar({back:"latihan",backLabel:"Kembali ke latihan",sub:"Latihan",title:i.t})+`<div class="wrap lat">
+    <header class="head"><div class="eyebrow">Latihan</div><h1>${i.t}</h1><div class="ar-title">${i.ar}</div><p>${i.d}</p></header>
+    <section class="card lat-set"><h2>Pilih bahan latihan</h2>
+      <label class="fld"><span>Kitab</span><select id="lsK" data-ls="k">${latOpt(kOpt,sc.k)}</select></label>
+      <label class="fld"${sc.k?"":" hidden"}><span>Bab</span><select id="lsB" data-ls="b">${latOpt(bOpt,sc.b)}</select></label>
+      <div class="fld"><span>Jumlah soal</span>${seg("data-lsn",[[5,5],[10,10],[15,15],[20,20]],n)}</div>
+      ${type==="susun"?`<div class="fld"><span>Panjang kalimat</span>${seg("data-lslv",[[1,"Pendek"],[2,"Sedang"],[3,"Panjang"]],L.lv||2)}</div>
+        <div class="rrows">${sw("matan","Hanya kalimat matan Abu Syuja'",L.matan)}${sw("hk","Tanpa harakat (lebih sulit)",L.hk)}</div>`:""}
+      <div class="btns"><button type="button" class="btn pri" data-lat="start">${IC.arrow}Mulai latihan</button></div>
+    </section>
+    <p class="foot-note">${i.note}</p></div>`;
+}
+
+/* ---------- Layar: sesi soal ---------- */
+function renderLat(sub){
+  if(!sub){renderLatHub();return}
+  if(LS.st&&LS.st.type===sub&&LS.st.active)renderLatSession();else renderLatSetup(sub);
+}
+async function latStart(type){
+  const L=LST.get(),sc=latScope(),n=L.n||10,babs=scopeBabs(sc);
+  $("#main").innerHTML=`<div class="wrap"><div class="loading">Menyiapkan soal…</div></div>`;
+  try{await Promise.all([...new Set(babs.map(b=>b.k))].map(k=>loadKitab(k)))}catch(e){$("#main").innerHTML=failHTML();return}
+  if(route.v!=="lat"||route.s!==type)return;
+  const paras=babs.flatMap(b=>babParas(b));
+  const qs=type==="irab"?buildIrab(paras,n):type==="kuis"?buildKuis(babs,paras,n):buildSusun(paras,n,L);
+  if(!qs.length){
+    $("#main").innerHTML=`<div class="wrap lat"><div class="empty"><p>Bahan di cakupan ini belum cukup untuk membuat soal ${LATI[type].t.toLowerCase()}. Coba pilih cakupan yang lebih luas.</p><div class="btns" style="justify-content:center"><button type="button" class="btn pri" data-lat="setup">Ubah cakupan</button></div></div></div>`;return;
+  }
+  LS.st={type,qs,i:0,score:0,res:[],active:true,done:false,n:qs.length,hk:!!L.hk};
+  renderLatSession();
+}
+function latTop(st){
+  return `<div class="lat-top"><span class="chip plain">Soal <b>${Math.min(st.i+1,st.n)}</b> dari ${st.n}</span><span class="chip plain">Benar <b>${st.score}</b></span><button type="button" class="chip" data-lat="stop">Akhiri</button></div>
+    <div class="pbar" aria-hidden="true"><i style="width:${Math.round(st.res.length/st.n*100)}%"></i></div>`;
+}
+function mcqHTML(q,st){
+  const ans=q.pick!=null,last=st.i+1>=st.n;
+  return `<section class="card q"><div class="q-p">${esc(q.prompt)}</div>${q.big?`<div class="q-big">${esc(q.big)}</div>`:""}${q.ctx?`<div class="q-ctx ar">${q.ctx}</div>`:""}${q.sub?`<div class="q-sub">${esc(q.sub)}</div>`:""}
+    <div class="q-opts" role="group" aria-label="Pilihan jawaban">${q.opts.map((o,i)=>`<button type="button" class="opt${ans?(i===q.ans?" ok":i===q.pick?" bad":""):""}" data-lat="opt" data-i="${i}"${ans?" disabled":""}><span class="opt-k">${i+1}</span><span class="opt-t">${esc(o.t)}${o.ar?` <span class="ar">${esc(o.ar)}</span>`:""}</span></button>`).join("")}</div>
+    ${ans?`<div class="q-fb ${q.pick===q.ans?"ok":"bad"}" role="status"><b>${q.pick===q.ans?"Benar":"Belum tepat"}</b><p>${q.expl}</p>${q.link&&q.link.pid?`<a href="#${q.link.bab}" data-go="${q.link.bab}" data-para="${esc(q.link.pid)}" class="q-link">Buka paragraf di kitab</a>`:""}</div>
+    <div class="btns"><button type="button" class="btn pri" data-lat="next" id="latNext">${last?"Lihat hasil":"Soal berikutnya"}${IC.arrow}</button></div>`:""}</section>`;
+}
+function susunHTML(q,st){
+  const show=a=>st.hk?bareAr(a):a,inLine=new Set(q.slots),last=st.i+1>=st.n;
+  const line=q.slots.map((si,pos)=>{const t=q.tiles[si];const c=q.done||q.mark?(t.a===q.correct[pos]?" ok":" bad"):"";return `<button type="button" class="tile${c}" data-lat="tl" data-i="${si}"${q.done?" disabled":""}>${esc(show(t.a))}</button>`}).join("");
+  const pool=q.tiles.map((t,i)=>inLine.has(i)?"":`<button type="button" class="tile" data-lat="tp" data-i="${i}">${esc(show(t.a))}</button>`).join("");
+  return `<section class="card q susun"><div class="q-p">Susun kata-kata berikut menjadi kalimat yang benar.</div>
+    <div class="s-line ar${q.slots.length?"":" empty"}" aria-label="Baris jawaban">${line||'<span class="s-ph">Ketuk kata di bawah untuk memulai</span>'}</div>
+    <div class="s-pool ar" aria-label="Kata-kata acak">${pool||""}</div>
+    ${q.hint||q.done?`<div class="q-sub">Makna berurutan: ${esc(q.meaning)}</div>`:`<button type="button" class="chip" data-lat="hint">Tampilkan petunjuk makna</button>`}
+    ${q.msg&&!q.done?`<div class="q-fb bad" role="status"><p>${esc(q.msg)}</p></div>`:""}
+    ${q.done?`<div class="q-fb ${q.good?"ok":"bad"}" role="status"><b>${q.good?"Benar":q.rev?"Jawaban yang benar":"Selesai"}</b><p class="ar q-ans">${esc(q.correct.join(" "))}</p>${q.link?`<a href="#${q.link.bab}" data-go="${q.link.bab}" data-para="${esc(q.link.pid)}" class="q-link">Buka paragraf di kitab</a>`:""}</div>
+      <div class="btns"><button type="button" class="btn pri" data-lat="next" id="latNext">${last?"Lihat hasil":"Soal berikutnya"}${IC.arrow}</button></div>`
+    :`<div class="btns"><button type="button" class="btn pri" data-lat="chk"${q.slots.length===q.tiles.length?"":" disabled"}>Periksa</button><button type="button" class="btn" data-lat="clr"${q.slots.length?"":" disabled"}>Kosongkan</button><button type="button" class="btn" data-lat="rev">Lihat jawaban</button></div>`}</section>`;
+}
+function renderLatSession(){
+  const st=LS.st;if(!st){renderLatHub();return}
+  const bar=pageBar({back:"latihan",backLabel:"Kembali ke latihan",sub:"Latihan",title:LATI[st.type].t});
+  if(st.done){$("#main").innerHTML=bar+`<div class="wrap lat">${latResult(st)}</div>`;$("#main").scrollTop=0;return}
+  const q=st.qs[st.i];
+  $("#main").innerHTML=bar+`<div class="wrap lat">${latTop(st)}${q.type==="susun"?susunHTML(q,st):mcqHTML(q,st)}</div>`;
+}
+function latResult(st){
+  const pct=st.res.length?Math.round(st.score/st.res.length*100):0;
+  const msg=pct>=90?"Mumtaz, sangat baik!":pct>=70?"Bagus, terus lanjutkan.":pct>=50?"Cukup. Ulangi bagian yang salah.":"Jangan menyerah. Baca ulang bab lalu coba lagi.";
+  const wrong=st.res.filter(r=>!r.ok);
+  let brk="";
+  if(st.type==="irab"){
+    const by={};st.res.forEach(r=>{const b=by[r.q.code]=by[r.q.code]||[0,0];b[0]++;if(r.ok)b[1]++});
+    brk=`<div class="chips">${Object.entries(by).map(([c,v])=>`<span class="chip plain">${esc(QL(c)[0])} <b>${v[1]}/${v[0]}</b></span>`).join("")}</div>`;
+  }
+  const items=wrong.map(r=>{const q=r.q;
+    const body=q.type==="susun"?`<span class="ar w-ar">${esc(q.correct.join(" "))}</span>`
+      :q.type==="irab"?`<span class="ar w-ar">${esc(q.ar)}</span><span class="w-t">${q.expl}</span>`
+      :`<span class="w-t">${q.big?esc(q.big)+" → ":""}${q.expl}</span>`;
+    return `<li>${body}${q.link&&q.link.pid?`<a href="#${q.link.bab}" data-go="${q.link.bab}" data-para="${esc(q.link.pid)}" class="q-link">Buka paragraf</a>`:""}</li>`}).join("");
+  return `<section class="card result"><div class="res-score"><b>${st.score}</b><span>/ ${st.res.length}</span></div><div class="res-pct">${pct}% benar</div><p>${msg}</p>${brk}</section>
+    ${wrong.length?`<div class="sec-h"><h2>Yang perlu diulang (${wrong.length})</h2></div><ul class="w-list">${items}</ul>`:""}
+    <div class="btns res-btns">${wrong.length?`<button type="button" class="btn pri" data-lat="redo">Ulangi yang salah</button>`:""}<button type="button" class="btn${wrong.length?"":" pri"}" data-lat="setup">Latihan baru</button><a class="btn" href="#latihan" data-go="latihan">Menu latihan</a></div>`;
+}
+function latNext(){
+  const st=LS.st;if(!st)return;
+  if(st.i+1>=st.n){st.done=true;st.active=false}else st.i++;
+  renderLatSession();$("#main").scrollTop=0;
+}
+function latRecord(q,ok){
+  const st=LS.st;st.res.push({ok,q});if(ok)st.score++;
+  latStat(st.type,ok,q.code);
+}
+function latStop(){
+  const st=LS.st;if(!st)return;
+  if(!st.res.length){LS.st=null;renderLatSetup(st.type);return}
+  st.n=st.res.length;st.done=true;st.active=false;renderLatSession();
+}
+function latRedo(){
+  const st=LS.st;if(!st)return;
+  const qs=st.res.filter(r=>!r.ok).map(r=>{const q=r.q;
+    if(q.type==="susun"){const order=q.tiles.map((_,i)=>i);shuf(order);return {...q,tiles:order.map(i=>q.tiles[i]),slots:[],tries:0,done:false,hint:false,msg:"",mark:false,good:false,rev:false}}
+    const c={...q};delete c.pick;return c});
+  LS.st={type:st.type,qs:shuf(qs),i:0,score:0,res:[],active:true,done:false,n:qs.length,hk:st.hk};
+  renderLatSession();$("#main").scrollTop=0;
+}
+function latSusunDone(q,ok){q.done=true;q.good=ok;latRecord(q,ok)}
+function latAct(a,el){
+  const st=LS.st,q=st&&!st.done?st.qs[st.i]:null;
+  if(a==="start"){latStart(route.s);return}
+  if(a==="setup"){const t=st?st.type:route.s;LS.st=null;if(route.s!==t)go("latihan-"+t);else renderLatSetup(t);return}
+  if(a==="stop"){latStop();return}
+  if(a==="next"){latNext();return}
+  if(a==="redo"){latRedo();return}
+  if(!q)return;
+  if(a==="opt"){
+    if(q.pick!=null)return;
+    q.pick=+el.dataset.i;latRecord(q,q.pick===q.ans);renderLatSession();
+    const nb=$("#latNext");if(nb)try{nb.focus({preventScroll:true});nb.scrollIntoView({block:"nearest",behavior:"smooth"})}catch(_){}
+    return;
+  }
+  if(q.type!=="susun"||q.done)return;
+  if(a==="tp"){q.slots.push(+el.dataset.i);q.msg="";q.mark=false}
+  else if(a==="tl"){const i=+el.dataset.i;q.slots=q.slots.filter(x=>x!==i);q.msg="";q.mark=false}
+  else if(a==="clr"){q.slots=[];q.msg="";q.mark=false}
+  else if(a==="hint"){q.hint=true}
+  else if(a==="chk"){
+    if(q.slots.length!==q.tiles.length)return;
+    if(q.slots.every((si,pos)=>q.tiles[si].a===q.correct[pos])){latSusunDone(q,q.tries===0&&!q.rev)}
+    else{q.tries++;q.mark=true;q.msg="Belum tepat. Kata bergaris merah masih salah tempat; ketuk untuk memindahkannya."}
+  }else if(a==="rev"){
+    q.rev=true;q.slots=q.tiles.map((t,i)=>[i,t.ord]).sort((x,y)=>x[1]-y[1]).map(x=>x[0]);latSusunDone(q,false);
+  }
+  renderLatSession();
+  if(q.done){const nb=$("#latNext");if(nb)try{nb.focus({preventScroll:true})}catch(_){}}
+}
+document.addEventListener("click",e=>{
+  const b=e.target.closest("[data-lat]");if(b&&route.v==="lat"){e.preventDefault();latAct(b.dataset.lat,b);return}
+  if(route.v!=="lat")return;
+  const n=e.target.closest("[data-lsn]");if(n){const L=LST.get();L.n=+n.dataset.lsn;LST.set(L);renderLatSetup(route.s);return}
+  const lv=e.target.closest("[data-lslv]");if(lv){const L=LST.get();L.lv=+lv.dataset.lslv;LST.set(L);renderLatSetup(route.s);return}
+  const sw=e.target.closest("[data-lssw]");if(sw){const L=LST.get();L[sw.dataset.lssw]=!L[sw.dataset.lssw];LST.set(L);renderLatSetup(route.s);return}
+});
+document.addEventListener("change",e=>{
+  const s=e.target.closest("[data-ls]");if(!s||route.v!=="lat")return;
+  const L=LST.get(),sc=latScope();
+  if(s.dataset.ls==="k"){sc.k=s.value;sc.b=""}else sc.b=s.value;
+  L.sc=sc;LST.set(L);renderLatSetup(route.s);
+});
+document.addEventListener("keydown",e=>{
+  if(route.v!=="lat"||!LS.st||LS.st.done||e.ctrlKey||e.metaKey||e.altKey||/INPUT|TEXTAREA|SELECT/.test(document.activeElement.tagName))return;
+  const q=LS.st.qs[LS.st.i];if(!q||q.type==="susun"||q.pick!=null)return;
+  const i=+e.key-1;if(i>=0&&i<q.opts.length){e.preventDefault();q.pick=i;latRecord(q,i===q.ans);renderLatSession();const nb=$("#latNext");if(nb)nb.focus({preventScroll:true})}
+});
 
 route=parseHash(location.hash);
 try{history.replaceState(null,"","#"+hashOf(route))}catch(_){}

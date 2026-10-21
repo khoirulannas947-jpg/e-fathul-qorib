@@ -48,8 +48,17 @@ for (const k of kitab) {
   if (ps.length) fs.writeFileSync(path.join(OUT, "data", k.id + ".json"), JSON.stringify({ p: ps, mm }));
 }
 const tpl = fs.readFileSync(path.join(D, "template.html"), "utf8");
-const app = fs.readFileSync(path.join(D, "app.js"), "utf8");
-const html = tpl.replace("/*__DATA__*/", "<script>window.FQINDEX=" + JSON.stringify(index).replace(/</g, "\\u003c") + "</script>").replace("/*__APP__*/", app);
+let app = fs.readFileSync(path.join(D, "app.js"), "utf8");
+// Fitur tambahan (latihan, kalkulator): pustaka murni dulu, lalu tampilan, disisipkan ke dalam lingkup app.js
+const FD = path.join(D, "fitur"); let fiturJs = "", fiturCss = "";
+if (fs.existsSync(FD)) {
+  const rd = d => fs.existsSync(d) ? fs.readdirSync(d).filter(f => f.endsWith(".js")).sort().map(f => "/* ---- fitur/" + path.basename(d) + "/" + f + " ---- */\n" + fs.readFileSync(path.join(d, f), "utf8")).join("\n") : "";
+  fiturJs = rd(path.join(FD, "lib")) + "\n" + rd(FD);
+  if (fs.existsSync(path.join(FD, "fitur.css"))) fiturCss = fs.readFileSync(path.join(FD, "fitur.css"), "utf8");
+}
+app = app.replace("/*__FITUR__*/", () => fiturJs);
+const tplCss = tpl.replace("/*__FITUR_CSS__*/", () => fiturCss);
+const html = tplCss.replace("/*__DATA__*/", () => "<script>window.FQINDEX=" + JSON.stringify(index).replace(/</g, "\\u003c") + "</script>").replace("/*__APP__*/", () => app);
 fs.writeFileSync(path.join(OUT, "index.html"), html);
 const files = fs.readdirSync(path.join(OUT, "data")).map(f => [f, fs.statSync(path.join(OUT, "data", f)).size]);
 console.log(errs ? errs + " MASALAH" : "ok", "| paragraf", paras.length, "| kata", words, "| bab", babs.length, "| mindmap", Object.keys(mms).length, "simpul", mmNodes, "| file", JSON.stringify(files));

@@ -1,6 +1,11 @@
 # Bangun situs Vercel dari sumber: node build.js -> repo e-fathul-qorib (index.html, data/, sumber/)
-import subprocess, shutil, os, glob
-SRC='/home/claude/efq'; DST='/home/claude/e-fathul-qorib'
+import subprocess, shutil, os, glob, tempfile, sys
+# Jalankan dari mana saja: python3 sumber/make_site.py  (hasil ke folder induk 'sumber', atau EFQ_DST bila diisi)
+HERE=os.path.dirname(os.path.abspath(__file__))
+DST=os.environ.get('EFQ_DST') or os.path.dirname(HERE)
+# Bangun di salinan sementara: package.json repo bertipe module, dan folder sumber sendiri akan ditimpa di akhir
+SRC=os.path.join(tempfile.mkdtemp(prefix='efq-'),'sumber')
+shutil.copytree(HERE,SRC,ignore=shutil.ignore_patterns('out','__pycache__','node_modules'))
 out=subprocess.run(['node','build.js'],cwd=SRC,capture_output=True,text=True).stdout
 print(out[:160])
 assert out.startswith('ok')
@@ -32,6 +37,7 @@ shutil.rmtree(f'{DST}/data',ignore_errors=True); shutil.copytree(f'{SRC}/out/dat
 k=subprocess.run(['python3','build_kamus.py',f'{SRC}/out/data',f'{DST}/data/kamus.json'],cwd=SRC,capture_output=True,text=True)
 print(k.stdout.strip() or k.stderr[-400:]); assert k.returncode==0
 s=f'{DST}/sumber'; shutil.rmtree(s,ignore_errors=True); os.makedirs(s)
-for d in ['data','mm']: shutil.copytree(f'{SRC}/{d}',f'{s}/{d}')
+for d in ['data','mm','fitur']: shutil.copytree(f'{SRC}/{d}',f'{s}/{d}')
 for f in ['babs.js','app.js','template.html','build.js','make_site.py','build_kamus.py','irab_auto.py']: shutil.copy(f'{SRC}/{f}',s)
+shutil.rmtree(os.path.dirname(SRC),ignore_errors=True)
 print('situs diperbarui')
