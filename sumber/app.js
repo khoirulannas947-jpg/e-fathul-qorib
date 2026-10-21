@@ -410,8 +410,6 @@ function renderHome(){
    <div class="sec-h"><h2>${cb?"Lanjutkan membaca":"Mulai membaca"}</h2></div>
    ${cont}
    ${recent?`<div class="sec-h"><h2>Riwayat bacaan</h2><a href="#tersimpan" data-go="tersimpan">Lihat semua</a></div><div class="rows">${recent}</div>`:""}
-   <div class="sec-h"><h2>Latihan dan kalkulator</h2></div>
-   <div class="home-tiles">${[["latihan-irab","Latihan i'rab","pen"],["latihan-kuis","Kuis bab","quiz"],["latihan-susun","Susun kalimat","shuffle"],["kalkulator-zakat","Zakat","coin"],["kalkulator-waris","Waris","scale"],["kalkulator-haidh","Haid dan istihadhah","drop"]].map(([h,l,i])=>`<a class="hcard" href="#${h}" data-go="${h}"><span class="hc-ic">${IC[i]}</span><span class="hc-tx"><b>${l}</b></span></a>`).join("")}</div>
    <div class="sec-h"><h2>Daftar kitab</h2><a href="#daftar" data-go="daftar">Semua bab</a></div>
    <div class="kits">${kits}</div>
    ${APP_ON?appCard():""}

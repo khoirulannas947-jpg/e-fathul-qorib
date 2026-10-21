@@ -506,13 +506,6 @@ button.mlab:hover{outline:2px solid var(--c,var(--accent));outline-offset:1px}
 .hc-go{flex:none;color:var(--ink-3)}
 .hc-go svg{width:18px;height:18px}
 @media (min-width:768px){.hcards{grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}}
-.home-tiles{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
-@media (min-width:768px){.home-tiles{grid-template-columns:repeat(3,minmax(0,1fr))}}
-.home-tiles .hcard{padding:12px;gap:10px}
-.home-tiles .hc-ic{width:38px;height:38px}
-.home-tiles .hc-tx b{font-size:14px}
-.home-tiles .hc-go,.home-tiles .hc-d,.home-tiles .hc-tx .ar{display:none}
-
 .lat,.kal{max-width:720px}
 .fld{display:flex;flex-direction:column;gap:6px;margin:14px 0}
 .fld>span:first-child{font-size:13px;font-weight:650;color:var(--ink-2);display:flex;flex-direction:column;gap:1px}
@@ -1060,8 +1053,6 @@ function renderHome(){
    <div class="sec-h"><h2>${cb?"Lanjutkan membaca":"Mulai membaca"}</h2></div>
    ${cont}
    ${recent?`<div class="sec-h"><h2>Riwayat bacaan</h2><a href="#tersimpan" data-go="tersimpan">Lihat semua</a></div><div class="rows">${recent}</div>`:""}
-   <div class="sec-h"><h2>Latihan dan kalkulator</h2></div>
-   <div class="home-tiles">${[["latihan-irab","Latihan i'rab","pen"],["latihan-kuis","Kuis bab","quiz"],["latihan-susun","Susun kalimat","shuffle"],["kalkulator-zakat","Zakat","coin"],["kalkulator-waris","Waris","scale"],["kalkulator-haidh","Haid dan istihadhah","drop"]].map(([h,l,i])=>`<a class="hcard" href="#${h}" data-go="${h}"><span class="hc-ic">${IC[i]}</span><span class="hc-tx"><b>${l}</b></span></a>`).join("")}</div>
    <div class="sec-h"><h2>Daftar kitab</h2><a href="#daftar" data-go="daftar">Semua bab</a></div>
    <div class="kits">${kits}</div>
    ${APP_ON?appCard():""}
