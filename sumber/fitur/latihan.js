@@ -63,7 +63,8 @@ function irabPool(paras){
 function irabQ({p,wi,w,r,code}){
   const ds=shuf(IRC[code].slice()).slice(0,3);
   const opts=shuf([code,...ds]).map(c=>({c,t:QL(c)[0],ar:QL(c)[1]}));
-  return {type:"irab",code,prompt:"Apa kedudukan kata bergaris dalam kalimat ini?",ctx:ctxHTML(p,wi,7,4),sub:"Makna kata: "+w.t,opts,
+  const bb=BABS.find(x=>x.id===p.bab);
+  return {type:"irab",code,where:bb?`${bb.kt} · ${bb.title}`:"",prompt:`Apa kedudukan kata “${w.a.replace(/[،؛:.؟!]+$/,"")}” (yang bergaris) dalam kalimat ini?`,ctx:ctxHTML(p,wi,7,4),sub:"Makna kata: "+w.t,opts,
     ans:opts.findIndex(o=>o.c===code),expl:`Jawaban: <b>${esc(QL(code)[0])}</b>. I'rab dalam kitab: ${esc(r.x)}`,link:{bab:p.bab,pid:p.id},ar:w.a};
 }
 function buildIrab(paras,n){
@@ -84,70 +85,77 @@ function buildIrab(paras,n){
 }
 
 /* ---------- Pembuat soal: kuis bab ---------- */
+/* Setiap soal menyebut bab asalnya, memakai kalimat tanya yang utuh, dan (untuk soal paragraf) menampilkan isi
+   paragrafnya, bukan sekadar nomor. */
 const okT=t=>!!t&&t.length>=3&&t.length<=68;
 const descs=(n,out)=>{(n.kids||[]).forEach(k=>{out.push(k);descs(k,out)});return out};
-const refLbl=r=>"Paragraf "+r[0]+(r[1]!==r[0]?"–"+r[1]:"");
+const cut=(t,n)=>{t=(t||"").replace(/\s+/g," ").trim();if(t.length<=n)return t;const c=t.slice(0,n),i=c.lastIndexOf(" ");return (i>n*.6?c.slice(0,i):c)+"…"};
+const covers=(x,k)=>x.ref&&k>=x.ref[0]&&k<=x.ref[1];
 function buildKuis(babs,paras,n){
   const T={t1:[],t2:[],t3:[],t4:[]};
   babs.forEach(b=>{
     const txt=KD[b.k]&&KD[b.k].mm[b.id];if(!txt)return;
     const ps=babParas(b),top=parseMM(txt),l1=top.filter(x=>okT(x.t));
-    if(l1.length<2)return;
-    const owner=new Map(),count=new Map();
-    l1.forEach((P,pi)=>[P,...descs(P,[])].forEach(x=>{count.set(x.t,(count.get(x.t)||0)+1);const s=owner.get(x.t)||new Set();s.add(pi);owner.set(x.t,s)}));
+    const where=`${b.kt} · ${b.title}`;
+    const pid=k=>ps[k-1]&&ps[k-1].id;
+    const lnk=x=>x&&x.ref&&pid(x.ref[0])?{bab:b.id,pid:pid(x.ref[0])}:null;
+    const all0=l1.flatMap(P=>[P,...descs(P,[])]);
+    const count=new Map();all0.forEach(x=>count.set(x.t,(count.get(x.t)||0)+1));
     const uniq=x=>okT(x.t)&&count.get(x.t)===1;
-    l1.forEach((P,pi)=>{
-      const kids=P.kids.filter(uniq),all=descs(P,[]).filter(uniq);
-      // T1: poin ini termasuk pembahasan apa?
-      if(l1.length>=4)all.forEach(x=>{
+    if(l1.length>=3)l1.forEach((P,pi)=>{
+      const group=l1.length>=4?descs(P,[]).filter(uniq):[];
+      // T1: poin ini masuk kelompok pembahasan mana?
+      group.forEach(x=>{
         const ds=shuf(l1.filter((_,j)=>j!==pi)).slice(0,3);
-        const opts=shuf([P,...ds]).map(o=>({t:o.t,ar:""}));
-        T.t1.push({type:"kuis",prompt:"Poin berikut termasuk dalam pembahasan apa?",ctx:null,big:x.t,opts,ans:opts.findIndex(o=>o.t===P.t),
-          expl:`“${esc(x.t)}” termasuk dalam <b>${esc(P.t)}</b>.`,link:x.ref?{bab:b.id,pid:ps[x.ref[0]-1]&&ps[x.ref[0]-1].id}:(P.ref?{bab:b.id,pid:ps[P.ref[0]-1]&&ps[P.ref[0]-1].id}:null)});
+        if(ds.length<3)return;
+        const opts=shuf([P,...ds]).map(o=>({t:o.t,ar:o.ar||""}));
+        T.t1.push({type:"kuis",where,prompt:`Berdasarkan mind map bab ini, poin “${x.t}” termasuk dalam kelompok pembahasan yang mana?`,opts,ans:opts.findIndex(o=>o.t===P.t),
+          expl:`Poin “${esc(x.t)}” termasuk dalam kelompok <b>${esc(P.t)}</b>.`,link:lnk(x)||lnk(P)});
       });
-      // T2: manakah yang termasuk dalam P?
-      if(kids.length>=1){
-        const mine=new Set(descs(P,[]).map(x=>x.t));
-        const others=l1.filter((_,j)=>j!==pi).flatMap(Q=>Q.kids.filter(uniq)).filter(x=>!mine.has(x.t));
-        const pool=[...new Set(others.map(x=>x.t))];
-        if(pool.length>=3)kids.forEach(x=>{
-          const ds=shuf(pool.slice()).slice(0,3);
-          const opts=shuf([x.t,...ds]).map(t=>({t,ar:""}));
-          T.t2.push({type:"kuis",prompt:"Manakah yang termasuk dalam pembahasan “"+P.t+"”?",ctx:null,opts,ans:opts.findIndex(o=>o.t===x.t),
-            expl:`<b>${esc(x.t)}</b> termasuk dalam “${esc(P.t)}”.`,link:x.ref?{bab:b.id,pid:ps[x.ref[0]-1]&&ps[x.ref[0]-1].id}:null});
-        });
-      }
+      // T2: rincian apa yang termasuk dalam kelompok ini?
+      const kids=P.kids.filter(uniq);
+      const mine=new Set(descs(P,[]).map(x=>x.t));
+      const pool=[...new Set(l1.filter((_,j)=>j!==pi).flatMap(Q=>Q.kids.filter(uniq)).filter(x=>!mine.has(x.t)).map(x=>x.t))];
+      if(okT(P.t)&&pool.length>=3)kids.forEach(x=>{
+        const arOf=new Map(l1.flatMap(Q=>Q.kids).map(k=>[k.t,k.ar||""]));
+        const opts=shuf([x.t,...shuf(pool.slice()).slice(0,3)]).map(t=>({t,ar:arOf.get(t)||""}));
+        T.t2.push({type:"kuis",where,prompt:`Berdasarkan mind map bab ini, manakah yang merupakan rincian dari pembahasan “${P.t}”?`,opts,ans:opts.findIndex(o=>o.t===x.t),
+          expl:`<b>${esc(x.t)}</b> adalah rincian dari “${esc(P.t)}”.`,link:lnk(x)||lnk(P)});
+      });
     });
-    // T3: poin ini dibahas di paragraf berapa?
-    const nodes=l1.flatMap(P=>[P,...descs(P,[])]).filter(x=>x.ref&&uniq(x)&&ps[x.ref[0]-1]);
-    const labels=nodes.map(x=>({r:x.ref,l:refLbl(x.ref)}));
+    // T3: tampilkan isi paragraf, tebak pokok bahasannya
+    const nodes=all0.filter(x=>x.ref&&uniq(x)&&ps[x.ref[0]-1]);
     nodes.forEach(x=>{
-      const c=refLbl(x.ref);
-      const ds=[...new Set(labels.filter(y=>y.r[1]<x.ref[0]||y.r[0]>x.ref[1]).map(y=>y.l))].filter(l=>l!==c);
+      const k=x.ref[0]+Math.floor(Math.random()*(x.ref[1]-x.ref[0]+1)),p=ps[k-1];if(!p||!p.words.length)return;
+      const ds=[...new Set(nodes.filter(y=>!covers(y,k)&&y.t!==x.t).map(y=>y.t))];
       if(ds.length<3)return;
-      const opts=shuf([c,...shuf(ds).slice(0,3)]).map(t=>({t,ar:""}));
-      T.t3.push({type:"kuis",prompt:"Poin berikut dibahas di paragraf berapa?",ctx:null,big:x.t,opts,ans:opts.findIndex(o=>o.t===c),
-        expl:`“${esc(x.t)}” dibahas di <b>${esc(c)}</b>.`,link:{bab:b.id,pid:ps[x.ref[0]-1].id}});
+      const ar=p.words.slice(0,14).map(w=>w.a).join(" ")+(p.words.length>14?" …":"");
+      const opts=shuf([x.t,...shuf(ds).slice(0,3)]).map(t=>({t,ar:""}));
+      T.t3.push({type:"kuis",where,prompt:`Paragraf ke-${k} bab ini berbunyi seperti di bawah. Pokok bahasan apa yang dibahas dalam paragraf tersebut?`,
+        ctxAr:ar,ctxTr:cut(p.t,170),opts,ans:opts.findIndex(o=>o.t===x.t),
+        expl:`Paragraf ke-${k} membahas <b>${esc(x.t)}</b>.`,link:{bab:b.id,pid:p.id}});
     });
   });
   // T4: arti kata
+  const ok4=w=>w.k!=="hr"&&w.k!=="jr"&&w.t&&w.t.length<=36&&norm(w.a).length>=3&&!/^[\s\-–]+$/.test(w.t);
   const bank=new Map();
-  paras.forEach(p=>p.words.forEach(w=>{if(w.k!=="hr"&&w.k!=="jr"&&w.t&&w.t.length<=36)bank.set(w.t.toLowerCase(),w.t)}));
+  paras.forEach(p=>p.words.forEach(w=>{if(ok4(w))bank.set(w.t.toLowerCase(),w.t)}));
   const bankArr=[...bank.values()];
   if(bankArr.length>=8){
     const cand=[];
-    paras.forEach(p=>p.words.forEach((w,wi)=>{if(w.k!=="hr"&&w.k!=="jr"&&w.t&&w.t.length<=36&&norm(w.a).length>=3)cand.push({p,w,wi})}));
+    paras.forEach(p=>p.words.forEach((w,wi)=>{if(ok4(w))cand.push({p,w,wi})}));
     shuf(cand).slice(0,Math.max(n*3,40)).forEach(({p,w,wi})=>{
       const first=w.t.toLowerCase().split(/\s+/)[0];
       const ds=shuf(bankArr.slice()).filter(t=>t.toLowerCase()!==w.t.toLowerCase()&&t.toLowerCase().split(/\s+/)[0]!==first).slice(0,3);
       if(ds.length<3)return;
+      const b=BABS.find(x=>x.id===p.bab);
       const opts=shuf([w.t,...ds]).map(t=>({t,ar:""}));
-      T.t4.push({type:"kuis",prompt:"Apa arti kata bergaris ini dalam kitab?",ctx:ctxHTML(p,wi,5,3),opts,ans:opts.findIndex(o=>o.t===w.t),
+      T.t4.push({type:"kuis",where:b?`${b.kt} · ${b.title}`:"",prompt:`Apa arti kata “${w.a.replace(/[،؛:.؟!]+$/,"")}” (yang bergaris) dalam kalimat ini?`,ctx:ctxHTML(p,wi,5,3),opts,ans:opts.findIndex(o=>o.t===w.t),
         expl:`<span class="ar">${esc(w.a)}</span> berarti <b>${esc(w.t)}</b>.`,link:{bab:p.bab,pid:p.id}});
     });
   }
   Object.values(T).forEach(shuf);
-  const wt={t1:.3,t2:.25,t3:.25,t4:.2},out=[];
+  const wt={t1:.25,t2:.25,t3:.3,t4:.2},out=[];
   while(out.length<n){
     const ks=Object.keys(T).filter(k=>T[k].length);if(!ks.length)break;
     let r=Math.random()*ks.reduce((a,k)=>a+wt[k],0),ki=0;
@@ -158,25 +166,56 @@ function buildKuis(babs,paras,n){
 }
 
 /* ---------- Pembuat soal: susun kalimat ---------- */
+/* Potongan harus utuh: dimulai di awal kalimat atau anak kalimat, dan berakhir pada tanda baca (titik, titik koma,
+   koma). Kalimat yang terlalu panjang dipecah hanya di koma. Potongan yang meragukan (kutipan terbuka tanpa penutup,
+   berakhir titik dua, terlalu pendek) dibuang, bukan dipotong paksa di tengah. */
+const SUSUN_LV={1:[3,7],2:[7,12],3:[12,20]};
+const STRONG=/[.؟!؛][»﴾"\]]*$|[»﴾"]\s*[.؟!؛]$/,WEAK=/[،][»﴾"]*$/,COLON=/:[»﴾"]*$/;
+const balOK=ws=>{const t=ws.join(" ");const c=(x,y)=>(t.split(x).length-1)===(t.split(y).length-1);return c("«","»")&&c("﴿","﴾")&&c("(",")")&&c("[","]")};
+function susunUnits(words,mn,mx){
+  const out=[],n=words.length;let st=0;
+  const endsStrong=i=>STRONG.test(words[i].a.trim());
+  const sentences=[];
+  for(let i=0;i<n;i++)if(endsStrong(i)||i===n-1){sentences.push([st,i]);st=i+1}
+  const push=(a,b,full)=>{const len=b-a+1,ws=words.slice(a,b+1);
+    if(len<mn||len>mx||!balOK(ws))return;
+    const last=ws[ws.length-1].a.trim();if(COLON.test(last))return;
+    if(!/[ء-ي]/.test(ws[0].a))return;
+    out.push([a,b,!!full])};
+  sentences.forEach(([a,b])=>{
+    const len=b-a+1;
+    if(len<=mx){push(a,b,true);return}
+    // kalimat panjang: pecah di koma, gabungkan anak kalimat selama masih muat
+    const cuts=[];for(let i=a;i<b;i++)if(WEAK.test(words[i].a.trim()))cuts.push(i);
+    cuts.push(b);
+    let s0=a;
+    for(let k=0;k<cuts.length;k++){
+      // perpanjang selama gabungan berikutnya masih <= mx
+      let e=cuts[k];
+      while(k+1<cuts.length&&cuts[k+1]-s0+1<=mx){k++;e=cuts[k]}
+      if(e-s0+1>mx){s0=e+1;continue}
+      push(s0,e);s0=e+1;
+    }
+  });
+  return out;
+}
 function buildSusun(paras,n,L){
-  const lv=L.lv||2,[mn,mx]=[[3,5],[5,7],[7,10]][lv-1],matan=!!L.matan,items=[];
+  const lv=L.lv||2,[mn,mx]=SUSUN_LV[lv],matan=!!L.matan,items=[];
   paras.forEach(p=>{
     if(matan&&!p.matan)return;
-    let cur=[];
-    p.words.forEach((w,i)=>{
-      cur.push(i);
-      const end=/[،؛:.؟!]$/.test(w.a.trim())||i===p.words.length-1;
-      if((end&&cur.length>=mn)||cur.length>=mx){
-        if(cur.length>=mn&&(!matan||cur.every(j=>p.words[j].m)))items.push({p,idx:cur.slice()});
-        cur=[];
-      }
+    susunUnits(p.words,mn,mx).forEach(([a,b,full])=>{
+      const idx=[];for(let j=a;j<=b;j++)idx.push(j);
+      if(matan&&!idx.every(j=>p.words[j].m))return;
+      items.push({p,idx,full});
     });
   });
   const out=[];
-  shuf(items).forEach(it=>{
+  // utamakan kalimat utuh; potongan anak kalimat hanya dipakai bila kalimat utuh tidak cukup
+  const ordered=[...shuf(items.filter(i=>i.full)),...shuf(items.filter(i=>!i.full))];
+  ordered.forEach(it=>{
     if(out.length>=n)return;
     const tiles=it.idx.map((j,ord)=>({a:it.p.words[j].a,t:it.p.words[j].t,ord}));
-    if(new Set(tiles.map(t=>t.a)).size<2)return;
+    if(new Set(tiles.map(t=>t.a)).size<tiles.length-1)return;
     let order=tiles.map((_,i)=>i),tries=0;
     do{shuf(order);tries++}while(tries<12&&order.every((v,i)=>tiles[v].a===tiles[i].a));
     const sh=order.map(i=>tiles[i]);
@@ -245,7 +284,7 @@ function latTop(st){
 }
 function mcqHTML(q,st){
   const ans=q.pick!=null,last=st.i+1>=st.n;
-  return `<section class="card q"><div class="q-p">${esc(q.prompt)}</div>${q.big?`<div class="q-big">${esc(q.big)}</div>`:""}${q.ctx?`<div class="q-ctx ar">${q.ctx}</div>`:""}${q.sub?`<div class="q-sub">${esc(q.sub)}</div>`:""}
+  return `<section class="card q">${q.where?`<div class="q-where">${esc(q.where)}</div>`:""}<div class="q-p">${esc(q.prompt)}</div>${q.ctxAr?`<div class="q-ctx ar">${esc(q.ctxAr)}</div><div class="q-sub q-tr">Terjemah: ${esc(q.ctxTr)}</div>`:""}${q.big?`<div class="q-big">${esc(q.big)}</div>`:""}${q.ctx?`<div class="q-ctx ar">${q.ctx}</div>`:""}${q.sub?`<div class="q-sub">${esc(q.sub)}</div>`:""}
     <div class="q-opts" role="group" aria-label="Pilihan jawaban">${q.opts.map((o,i)=>`<button type="button" class="opt${ans?(i===q.ans?" ok":i===q.pick?" bad":""):""}" data-lat="opt" data-i="${i}"${ans?" disabled":""}><span class="opt-k">${i+1}</span><span class="opt-t">${esc(o.t)}${o.ar?` <span class="ar">${esc(o.ar)}</span>`:""}</span></button>`).join("")}</div>
     ${ans?`<div class="q-fb ${q.pick===q.ans?"ok":"bad"}" role="status"><b>${q.pick===q.ans?"Benar":"Belum tepat"}</b><p>${q.expl}</p>${q.link&&q.link.pid?`<a href="#${q.link.bab}" data-go="${q.link.bab}" data-para="${esc(q.link.pid)}" class="q-link">Buka paragraf di kitab</a>`:""}</div>
     <div class="btns"><button type="button" class="btn pri" data-lat="next" id="latNext">${last?"Lihat hasil":"Soal berikutnya"}${IC.arrow}</button></div>`:""}</section>`;

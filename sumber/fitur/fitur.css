@@ -122,3 +122,6 @@
 @media (max-width:420px){.ktable table{font-size:12.5px}.ktable th,.ktable td{padding:8px 6px}}
 
 @media (min-width:1024px){.only-m{display:none}}
+
+.q-where{font-size:12px;font-weight:650;color:var(--gold-ink);margin-bottom:6px}
+.q-tr{margin-top:0;line-height:1.6}
