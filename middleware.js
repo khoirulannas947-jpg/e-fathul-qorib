@@ -78,15 +78,35 @@ export async function sessionFrom(cookieHeader, settings = { projectId: FIREBASE
     if (name !== "fb_session") continue;
     try {
       const p = await verifyJwt(value, settings.firebaseJwks, (c) => c.iss === iss && c.aud === settings.projectId && !!c.sub);
-      if (p) return { provider: "firebase", sub: p.sub };
+      if (p) return { provider: "firebase", sub: p.sub, email: String(p.email || "").toLowerCase(), verified: p.email_verified === true };
     } catch {}
   }
   return null;
 }
 
+// Daftar pengguna yang diizinkan (opsional). Isi environment variable ALLOWED_EMAILS di Vercel,
+// dipisah koma: alamat lengkap ("budi@gmail.com") atau seluruh domain ("@pesantren.sch.id").
+// Kosong/tidak diisi = semua akun yang sudah login diizinkan (perilaku lama).
+// Hanya email yang sudah terverifikasi (mis. login Google) yang dianggap sah, agar tidak bisa dipalsukan saat mendaftar.
+export function isAllowed(session, list = (typeof process !== "undefined" && process.env && process.env.ALLOWED_EMAILS) || "") {
+  const rules = String(list).split(/[,\n;]/).map((x) => x.trim().toLowerCase()).filter(Boolean);
+  if (!rules.length) return true;
+  if (!session || !session.email || !session.verified) return false;
+  return rules.some((r) => (r.startsWith("@") ? session.email.endsWith(r) : session.email === r));
+}
+
 export default async function middleware(request) {
   const url = new URL(request.url);
   const session = await sessionFrom(request.headers.get("cookie"));
+  if (session && !isAllowed(session)) {
+    if (url.pathname.startsWith("/data/") || url.pathname.startsWith("/api/")) {
+      return new Response(JSON.stringify({ error: "tidak_diizinkan" }), {
+        status: 403,
+        headers: { "content-type": "application/json", "cache-control": "no-store" },
+      });
+    }
+    return new Response(null, { status: 302, headers: { location: new URL("/login?denied=1", url).toString(), "cache-control": "no-store" } });
+  }
   if (session) {
     // Lanjutkan ke file statis (setara next() dari @vercel/functions).
     return new Response(null, { headers: { "x-middleware-next": "1" } });

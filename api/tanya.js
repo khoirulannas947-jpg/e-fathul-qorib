@@ -4,13 +4,45 @@
 // - Kunci OpenAI disimpan di Environment Variables Vercel (OPENAI_API_KEY), tidak pernah dikirim ke browser.
 import { readFile } from "node:fs/promises";
 import path from "node:path";
-import { sessionFrom } from "../middleware.js";
+import { sessionFrom, isAllowed } from "../middleware.js";
 
 const MODEL = process.env.OPENAI_MODEL || "gpt-5-mini";
 const DAILY_LIMIT = Number(process.env.TANYA_LIMIT_HARIAN || 30);
 const KITAB_RE = /^[a-z]{2,20}$/;
-const usage = new Map(); // pembatas harian per pengguna (per instance server; batas biaya utama diatur di dashboard OpenAI)
 const cache = new Map();
+
+// Pembatas harian per pengguna. Bila Redis REST (Upstash / Vercel KV) dipasang lewat environment variable,
+// hitungan disimpan permanen dan berlaku di semua instance server; bila tidak, memakai memori (fallback, bisa tereset).
+const REDIS_URL = process.env.KV_REST_API_URL || process.env.UPSTASH_REDIS_REST_URL || "";
+const REDIS_TOKEN = process.env.KV_REST_API_TOKEN || process.env.UPSTASH_REDIS_REST_TOKEN || "";
+const memUsage = new Map();
+
+async function redis(cmds) {
+  const r = await fetch(REDIS_URL.replace(/\/$/, "") + "/pipeline", {
+    method: "POST",
+    headers: { authorization: "Bearer " + REDIS_TOKEN, "content-type": "application/json" },
+    body: JSON.stringify(cmds),
+  });
+  if (!r.ok) throw new Error("redis " + r.status);
+  return r.json();
+}
+// Ambil satu jatah pertanyaan. Mengembalikan jumlah pemakaian setelah diambil.
+async function ambilJatah(key) {
+  if (REDIS_URL && REDIS_TOKEN) {
+    try {
+      const out = await redis([["INCR", key], ["EXPIRE", key, 172800]]);
+      const n = Number(out && out[0] && out[0].result);
+      if (Number.isFinite(n)) return n;
+    } catch (e) { console.error("kuota", e.message); }
+  }
+  const n = (memUsage.get(key) || 0) + 1;
+  memUsage.set(key, n);
+  return n;
+}
+async function kembalikanJatah(key) {
+  if (REDIS_URL && REDIS_TOKEN) { try { await redis([["DECR", key]]); return; } catch {} }
+  memUsage.set(key, Math.max(0, (memUsage.get(key) || 1) - 1));
+}
 
 const KED = {
   mb: "mubtada'", kh: "khabar", fa: "fa'il", nf: "na'ibul fa'il", ii: "isim inna/kana", ki: "khabar inna/kana", mq: "maqul qaul",
@@ -74,6 +106,7 @@ export default async function handler(req, res) {
 
   const sesi = await sessionFrom(req.headers.cookie || "");
   if (!sesi) return json(res, 401, { error: "login_required" });
+  if (!isAllowed(sesi)) return json(res, 403, { error: "tidak_diizinkan", pesan: "Akun ini belum diizinkan memakai fitur ini." });
 
   if (!process.env.OPENAI_API_KEY) {
     return json(res, 503, { error: "belum_aktif", pesan: "Fitur Tanya AI belum diaktifkan oleh pengelola (kunci OpenAI belum dipasang)." });
@@ -86,17 +119,19 @@ export default async function handler(req, res) {
   if (!KITAB_RE.test(kitab) || !pid || !tanya) return json(res, 400, { error: "input", pesan: "Pertanyaan belum lengkap." });
 
   const hari = new Date().toISOString().slice(0, 10);
-  const key = sesi.sub + ":" + hari;
-  const n = usage.get(key) || 0;
-  if (n >= DAILY_LIMIT) return json(res, 429, { error: "batas", pesan: `Batas ${DAILY_LIMIT} pertanyaan per hari sudah tercapai. Silakan lanjut besok.` });
+  const key = "tanya:" + sesi.sub + ":" + hari;
+  // Jatah diambil di muka (sebelum memanggil OpenAI) agar permintaan paralel tidak melewati batas; dikembalikan bila gagal.
+  const n = (await ambilJatah(key)) - 1;
+  if (n >= DAILY_LIMIT) { await kembalikanJatah(key); return json(res, 429, { error: "batas", pesan: `Batas ${DAILY_LIMIT} pertanyaan per hari sudah tercapai. Silakan lanjut besok.` }); }
 
   let p;
   try {
     p = (await loadKitab(kitab)).find((x) => x.id === pid);
   } catch {
+    await kembalikanJatah(key);
     return json(res, 404, { error: "kitab", pesan: "Data kitab tidak ditemukan." });
   }
-  if (!p) return json(res, 404, { error: "paragraf", pesan: "Paragraf tidak ditemukan." });
+  if (!p) { await kembalikanJatah(key); return json(res, 404, { error: "paragraf", pesan: "Paragraf tidak ditemukan." }); }
 
   const riwayat = (Array.isArray(body.riwayat) ? body.riwayat : [])
     .slice(-6)
@@ -122,16 +157,17 @@ export default async function handler(req, res) {
       const pesan = code === "insufficient_quota"
         ? "Saldo OpenAI pengelola habis. Fitur Tanya AI sementara tidak tersedia."
         : "Layanan AI sedang bermasalah. Coba lagi sebentar lagi.";
+      await kembalikanJatah(key);
       return json(res, 502, { error: "ai", pesan });
     }
     const jawab = j.choices && j.choices[0] && j.choices[0].message && j.choices[0].message.content;
-    if (!jawab) return json(res, 502, { error: "kosong", pesan: "AI tidak memberi jawaban. Coba ulangi pertanyaannya." });
-    usage.set(key, n + 1);
+    if (!jawab) { await kembalikanJatah(key); return json(res, 502, { error: "kosong", pesan: "AI tidak memberi jawaban. Coba ulangi pertanyaannya." }); }
     const u = j.usage || {};
     console.log("tanya_usage", JSON.stringify({ model: MODEL, in: u.prompt_tokens, out: u.completion_tokens, reasoning: u.completion_tokens_details && u.completion_tokens_details.reasoning_tokens }));
     return json(res, 200, { jawab: jawab.trim(), sisa: DAILY_LIMIT - n - 1, token: { masuk: u.prompt_tokens, keluar: u.completion_tokens } });
   } catch (e) {
     console.error("tanya", e);
+    await kembalikanJatah(key);
     return json(res, 502, { error: "jaringan", pesan: "Gagal menghubungi layanan AI. Coba lagi." });
   }
 }
