@@ -1,0 +1,665 @@
+{
+"u48": [
+{
+"q": "Apa arti jual beli (bai') secara bahasa?",
+"c": "Menukar sesuatu dengan sesuatu",
+"x": [
+"Memberikan sesuatu tanpa imbalan",
+"Meminjam sesuatu untuk sementara",
+"Menyewakan sesuatu untuk manfaatnya"
+],
+"e": "Jual beli secara bahasa adalah menukar sesuatu dengan sesuatu, mencakup yang bukan harta seperti khamr.",
+"p": 1
+},
+{
+"q": "Mengapa pertukaran 'dengan izin syara'' mengecualikan riba?",
+"c": "Karena riba tidak diizinkan syara'",
+"x": [
+"Karena riba tidak berupa pertukaran",
+"Karena riba tidak berupa benda",
+"Karena riba tidak memakai harga"
+],
+"e": "Dengan 'izin syara'' dikecualikan riba; dengan 'pertukaran' dikecualikan qardh.",
+"p": 2
+},
+{
+"q": "Berapa macam jual beli menurut matan?",
+"c": "Tiga",
+"x": [
+"Dua",
+"Lima",
+"Sepuluh"
+],
+"e": "Jual beli ada tiga macam: benda yang disaksikan, yang disifati dalam tanggungan, dan yang tidak ada serta belum dilihat.",
+"p": 3
+},
+{
+"q": "Macam pertama jual beli adalah...",
+"c": "Menjual benda yang disaksikan (hadir)",
+"x": [
+"Menjual barang yang disifati dalam tanggungan",
+"Menjual benda yang tidak ada",
+"Menjual barang tanpa akad"
+],
+"e": "Pertama: menjual benda yang disaksikan, boleh jika syaratnya terpenuhi.",
+"p": 3
+},
+{
+"q": "Syarat barang yang dijual adalah...",
+"c": "Suci, dapat dimanfaatkan, dapat diserahkan, dan pelakunya berwenang",
+"x": [
+"Mahal dan langka",
+"Baru dan belum dipakai",
+"Berasal dari pasar umum"
+],
+"e": "Barang suci, bermanfaat, dapat diserahkan, dan orang yang berakad berwenang atasnya.",
+"p": 3
+},
+{
+"q": "Apa itu ijab dan qabul dalam jual beli?",
+"c": "Ijab ucapan penjual, qabul ucapan pembeli",
+"x": [
+"Ijab ucapan pembeli, qabul ucapan penjual",
+"Keduanya ucapan penjual",
+"Keduanya ucapan saksi"
+],
+"e": "Ijab seperti ucapan penjual 'aku jual kepadamu'; qabul ucapan pembeli 'aku beli'.",
+"p": 4
+},
+{
+"q": "Macam kedua jual beli dinamakan...",
+"c": "Salam (menjual sesuatu yang disifati dalam tanggungan)",
+"x": [
+"Rahn",
+"Hajr",
+"Shulh"
+],
+"e": "Kedua: menjual sesuatu yang disifati dalam tanggungan, yang dinamakan salam.",
+"p": 5
+},
+{
+"q": "Menjual benda yang tidak ada dan belum dilihat hukumnya?",
+"c": "Tidak boleh (tidak sah)",
+"x": [
+"Boleh",
+"Boleh dengan syarat khiyar",
+"Boleh dengan saksi"
+],
+"e": "Macam ketiga: menjual benda tidak ada dan belum dilihat oleh kedua pihak, tidak sah.",
+"p": 6
+},
+{
+"q": "Apa yang tidak sah dijual?",
+"c": "Benda najis dan benda terkena najis yang tidak bisa disucikan",
+"x": [
+"Benda suci yang bermanfaat",
+"Benda yang dapat dimiliki",
+"Benda yang dapat diserahkan"
+],
+"e": "Tidak sah menjual benda najis atau yang terkena najis seperti khamr, dan minyak yang terkena najis tidak mungkin disucikan.",
+"p": 7
+}
+],
+"u49": [
+{
+"q": "Apa arti riba secara bahasa?",
+"c": "Tambahan",
+"x": [
+"Pengurangan",
+"Pinjaman",
+"Pertukaran"
+],
+"e": "Riba bahasa: tambahan; syara': pertukaran imbalan yang tidak diketahui kesamaannya menurut takaran syara' atau disertai penundaan.",
+"p": 1
+},
+{
+"q": "Riba berlaku pada barang apa saja?",
+"c": "Emas, perak, dan makanan",
+"x": [
+"Pakaian dan rumah",
+"Hewan dan tanah",
+"Semua barang"
+],
+"e": "Riba hanya berlaku pada emas dan perak serta makanan.",
+"p": 1
+},
+{
+"q": "Apa yang dimaksud makanan dalam bab riba?",
+"c": "Yang biasa dimaksudkan untuk dimakan: makanan pokok, buah, atau obat",
+"x": [
+"Hanya makanan pokok",
+"Hanya daging",
+"Hanya buah-buahan"
+],
+"e": "Makanan adalah yang biasanya dimaksudkan untuk dimakan, sebagai makanan pokok, buah, atau obat.",
+"p": 2
+},
+{
+"q": "Syarat menjual emas dengan emas adalah...",
+"c": "Sama (setara), tunai, dan diterima sebelum berpisah",
+"x": [
+"Boleh berbeda timbangan",
+"Boleh ditunda",
+"Boleh tanpa serah terima"
+],
+"e": "Tidak boleh menjual emas dengan emas kecuali sama, tunai (kontan).",
+"p": 2
+},
+{
+"q": "Boleh menjual barang yang dibeli sebelum diterima?",
+"c": "Tidak boleh",
+"x": [
+"Boleh",
+"Boleh kepada penjual pertama",
+"Boleh kepada orang lain"
+],
+"e": "Tidak sah menjual barang yang telah dibeli hingga menerimanya.",
+"p": 3
+},
+{
+"q": "Boleh menjual daging dengan hewan?",
+"c": "Tidak boleh, baik sejenis maupun jenis lain yang dimakan",
+"x": [
+"Boleh",
+"Boleh bila sejenis saja",
+"Boleh bila kambing"
+],
+"e": "Tidak boleh menjual daging dengan hewan, seperti daging kambing dengan kambing atau daging sapi dengan kambing.",
+"p": 4
+},
+{
+"q": "Menjual emas dengan perak diperbolehkan bagaimana?",
+"c": "Boleh dengan kelebihan, tetapi tunai",
+"x": [
+"Harus sama beratnya",
+"Boleh ditunda",
+"Haram"
+],
+"e": "Boleh menjual emas dengan perak dengan kelebihan, tetapi tunai dan diterima sebelum berpisah.",
+"p": 4
+},
+{
+"q": "Menjual makanan dengan makanan sejenis harus bagaimana?",
+"c": "Sama dan tunai",
+"x": [
+"Boleh berlebih",
+"Boleh ditunda",
+"Tanpa syarat"
+],
+"e": "Makanan sejenis hanya sama dan tunai; jenis berbeda boleh dengan kelebihan tetapi tunai.",
+"p": 5
+},
+{
+"q": "Contoh jual beli gharar adalah...",
+"c": "Menjual seorang budak tanpa ditentukan, atau burung yang berada di udara",
+"x": [
+"Menjual barang yang dilihat",
+"Menjual barang tertentu",
+"Menjual dengan harga standar"
+],
+"e": "Gharar seperti menjual budak yang tidak ditentukan atau burung di udara.",
+"p": 6
+}
+],
+"u50": [
+{
+"q": "Apa itu khiyar majelis?",
+"c": "Hak kedua pihak meneruskan atau membatalkan jual beli selama belum berpisah",
+"x": [
+"Hak penjual saja untuk membatalkan",
+"Hak pembeli saja untuk mengembalikan",
+"Hak saksi untuk menolak akad"
+],
+"e": "Kedua pihak memiliki hak khiyar antara meneruskan dan membatalkan selama belum berpisah menurut kebiasaan.",
+"p": 1
+},
+{
+"q": "Jika salah satu memilih tetap lalu yang lain tidak segera memilih, bagaimana?",
+"c": "Gugur hak khiyar yang memilih, tetap bagi yang lain",
+"x": [
+"Gugur hak keduanya",
+"Tetap hak keduanya",
+"Akad batal"
+],
+"e": "Hak khiyar orang yang memilih gugur dan tetap bagi yang lain.",
+"p": 2
+},
+{
+"q": "Berapa maksimal khiyar syarat?",
+"c": "Tiga hari",
+"x": [
+"Satu hari",
+"Sepuluh hari",
+"Tidak terbatas"
+],
+"e": "Jika khiyar melebihi tiga hari, akadnya batal.",
+"p": 3
+},
+{
+"q": "Jika didapati cacat pada barang sebelum serah terima, apa yang boleh dilakukan pembeli?",
+"c": "Mengembalikan barang itu",
+"x": [
+"Menahan tanpa hak",
+"Menjualnya langsung",
+"Membuangnya"
+],
+"e": "Pembeli berhak mengembalikan jika cacat yang mengurangi nilai atau tujuan yang benar.",
+"p": 4
+},
+{
+"q": "Buah yang terpisah dari pohon tidak boleh dijual kecuali...",
+"c": "Setelah tampak kematangannya",
+"x": [
+"Sebelum berbunga",
+"Sebelum terbentuk",
+"Saat masih kuncup"
+],
+"e": "Tidak boleh menjual buah kecuali setelah tampak kematangannya.",
+"p": 5
+},
+{
+"q": "Jika menjual buah sebelum matang, syarat sahnya?",
+"c": "Dengan syarat dipetik",
+"x": [
+"Dengan syarat dibiarkan di pohon",
+"Dengan syarat ditunda",
+"Tanpa syarat"
+],
+"e": "Sebelum tampak matang, tidak sah kecuali dengan syarat dipetik.",
+"p": 6
+},
+{
+"q": "Bolehkah menjual tanaman hijau di tanah?",
+"c": "Hanya dengan syarat dipotong atau dicabut",
+"x": [
+"Boleh tanpa syarat",
+"Tidak boleh sama sekali",
+"Boleh dengan syarat tetap di tanah"
+],
+"e": "Tidak boleh menjual tanaman hijau kecuali dengan syarat dipotong atau dicabut.",
+"p": 7
+},
+{
+"q": "Barang ribawi apa yang boleh dijual sebagiannya dengan sebagian lain dalam keadaan basah?",
+"c": "Susu",
+"x": [
+"Anggur",
+"Kurma",
+"Gandum"
+],
+"e": "Dikecualikan susu: boleh menjual sebagiannya dengan sebagian lain sebelum jadi keju.",
+"p": 9
+}
+],
+"u51": [
+{
+"q": "Apa makna salam secara syara'?",
+"c": "Menjual sesuatu yang disifati dalam tanggungan",
+"x": [
+"Menjual benda yang hadir",
+"Menjual benda tanpa harga",
+"Meminjam benda"
+],
+"e": "Salam adalah menjual sesuatu yang disifati dalam tanggungan, hanya sah dengan ijab dan qabul.",
+"p": 1
+},
+{
+"q": "Salam sah secara kontan maupun bertempo?",
+"c": "Ya, sah keduanya",
+"x": [
+"Hanya kontan",
+"Hanya bertempo",
+"Tidak sah keduanya"
+],
+"e": "Salam sah secara kontan maupun bertempo.",
+"p": 1
+},
+{
+"q": "Syarat pertama barang pesanan salam adalah...",
+"c": "Terukur dengan sifat yang menghilangkan ketidakjelasan",
+"x": [
+"Tidak berupa sifat",
+"Berupa barang langka",
+"Tercampur"
+],
+"e": "Pertama: barang pesanan terukur dengan sifat yang menghilangkan ketidakjelasan.",
+"p": 2
+},
+{
+"q": "Barang pesanan campuran seperti harisah, sahkah?",
+"c": "Tidak sah karena bagian-bagiannya tidak terukur",
+"x": [
+"Sah",
+"Sah jika sedikit",
+"Sah dengan saksi"
+],
+"e": "Tidak sah salam pada barang campuran yang bagian-bagiannya dimaksudkan tetapi tidak terukur seperti harisah dan ma'jun.",
+"p": 3
+},
+{
+"q": "Barang yang dimasak dengan api, apakah sah salam?",
+"c": "Tidak sah jika api mengubahnya; jika api hanya memisahkan kotoran seperti madu, sah",
+"x": [
+"Sah semuanya",
+"Tidak sah semuanya",
+"Sah jika sedikit"
+],
+"e": "Syarat: tidak dimasuki api untuk mengubahnya; api untuk memisahkan kotoran seperti madu, sah.",
+"p": 4
+},
+{
+"q": "Barang salam harus berupa...",
+"c": "Tanggungan, bukan barang tertentu",
+"x": [
+"Barang tertentu",
+"Barang yang hadir",
+"Barang yang mahal"
+],
+"e": "Keempat: barang pesanan bukan barang tertentu tetapi berupa tanggungan.",
+"p": 5
+},
+{
+"q": "Berapa syarat sah salam di tahap berikutnya?",
+"c": "Delapan",
+"x": [
+"Tiga",
+"Lima",
+"Sepuluh"
+],
+"e": "Salam sah dengan delapan syarat.",
+"p": 6
+},
+{
+"q": "Salam pada kain harus menyebutkan apa?",
+"c": "Jenis, macam, panjang, lebar, tebal, tipis, halus, kasarnya",
+"x": [
+"Hanya warna",
+"Hanya merek",
+"Hanya harga"
+],
+"e": "Pada kain disebutkan jenis, macam, panjang, lebar, tebal, tipis, rapat, renggang, halus, kasarnya.",
+"p": 8
+},
+{
+"q": "Syarat kadar barang salam dijelaskan dengan...",
+"c": "Takaran, timbangan, hitungan, atau hasta sesuai barangnya",
+"x": [
+"Perkiraan saja",
+"Tebakan",
+"Tidak perlu dijelaskan"
+],
+"e": "Kadar dengan takaran pada yang ditakar, timbangan, hitungan, dan hasta.",
+"p": 9
+},
+{
+"q": "Jika salam bertempo, apa yang harus disebut?",
+"c": "Waktu jatuh tempo yang jelas",
+"x": [
+"Cukup 'nanti'",
+"Cukup sampai datangnya Zaid",
+"Tidak perlu"
+],
+"e": "Menyebutkan waktu jatuh tempo; menunda sampai datangnya Zaid tidak sah.",
+"p": 10
+},
+{
+"q": "Jika dua pihak berpisah sebelum modal diterima, bagaimana?",
+"c": "Akad batal",
+"x": [
+"Akad sah",
+"Akad sah dengan khiyar",
+"Akad ditunda"
+],
+"e": "Ketujuh: saling menerima di majelis; jika berpisah sebelum modal diterima, batal.",
+"p": 12
+},
+{
+"q": "Apakah salam boleh disertai khiyar syarat?",
+"c": "Tidak, salam langsung berlaku",
+"x": [
+"Ya",
+"Ya hingga tiga hari",
+"Ya bila disepakati"
+],
+"e": "Kedelapan: akad salam langsung berlaku, tidak dimasuki khiyar syarat.",
+"p": 13
+}
+],
+"u52": [
+{
+"q": "Apa arti rahn secara bahasa dan syara'?",
+"c": "Bahasa: tetap; syara': menjadikan benda bernilai harta sebagai jaminan utang",
+"x": [
+"Bahasa: menjual; syara': menyewakan benda",
+"Bahasa: memberi; syara': menghibahkan harta",
+"Bahasa: meminjam; syara': membagi harta"
+],
+"e": "Rahn bahasa: tetap; syara': benda bernilai harta sebagai jaminan atas utang.",
+"p": 1
+},
+{
+"q": "Apa yang boleh digadaikan?",
+"c": "Setiap barang yang boleh dijual, untuk utang yang telah tetap",
+"x": [
+"Hanya barang berharga",
+"Barang yang tidak boleh dijual",
+"Barang yang najis"
+],
+"e": "Setiap barang yang boleh dijual boleh digadaikan untuk utang yang telah tetap dalam tanggungan.",
+"p": 2
+},
+{
+"q": "Gadai atas benda (bukan utang), seperti barang ghashab, sah?",
+"c": "Tidak sah",
+"x": [
+"Sah",
+"Sah jika dengan saksi",
+"Sah setelah serah terima"
+],
+"e": "Dengan kata 'utang', benda yang digadaikan atas benda tidak sah.",
+"p": 2
+},
+{
+"q": "Kapan penggadai boleh menarik kembali?",
+"c": "Selama belum diterima penerima gadai",
+"x": [
+"Kapan saja",
+"Setelah diterima",
+"Tidak boleh"
+],
+"e": "Penggadai boleh menarik selama belum diterima; setelah diterima, gadai mengikat.",
+"p": 3
+},
+{
+"q": "Apakah penerima gadai menanggung barang yang rusak?",
+"c": "Tidak, kecuali jika melampaui batas",
+"x": [
+"Ya selalu",
+"Ya, setengah harga",
+"Tidak, bahkan jika lalai"
+],
+"e": "Gadai amanah; penerima tidak menanggung kecuali melampaui batas.",
+"p": 4
+},
+{
+"q": "Jika penerima gadai menerima sebagian haknya, apakah barang gadai keluar?",
+"c": "Tidak, sampai seluruh hak dilunasi",
+"x": [
+"Ya, sebagiannya",
+"Ya, seluruhnya",
+"Tergantung keinginan"
+],
+"e": "Tidak ada barang gadai yang keluar hingga seluruhnya dilunasi.",
+"p": 5
+}
+],
+"u53": [
+{
+"q": "Apa arti hajr secara bahasa dan syara'?",
+"c": "Bahasa: mencegah; syara': mencegah tasharruf pada harta",
+"x": [
+"Bahasa: menahan; syara': mencegah talak",
+"Bahasa: membatasi; syara': melarang jual beli saja",
+"Bahasa: memberi; syara': memberi harta"
+],
+"e": "Hajr bahasa: mencegah; syara': mencegah tasharruf pada harta, bukan pada selain harta seperti talak.",
+"p": 1
+},
+{
+"q": "Siapa yang dimaksud dengan orang muflis dalam bab hajr?",
+"c": "Orang yang dililit utang dan hartanya tidak cukup melunasinya",
+"x": [
+"Orang yang kaya",
+"Orang yang tidak punya utang",
+"Orang yang suka berhemat"
+],
+"e": "Muflis secara syara' adalah orang yang dililit utang dan hartanya tidak mencukupi untuk melunasi.",
+"p": 2
+},
+{
+"q": "Orang sakit dihajr pada bagian harta berapa?",
+"c": "Pada yang melebihi sepertiga",
+"x": [
+"Seluruh harta",
+"Seperempat",
+"Tidak dihajr"
+],
+"e": "Orang sakit yang dikhawatirkan meninggal dihajr pada yang melebihi sepertiga.",
+"p": 2
+},
+{
+"q": "Tasharruf anak kecil, orang gila, dan safih, sah?",
+"c": "Tidak sah",
+"x": [
+"Sah",
+"Sah dengan izin wali",
+"Sah bila dengan saksi"
+],
+"e": "Tidak sah jual, beli, hibah dari mereka; nikah orang safih sah dengan izin wali.",
+"p": 4
+},
+{
+"q": "Tasharruf orang muflis dalam tanggungannya?",
+"c": "Sah",
+"x": [
+"Tidak sah",
+"Tidak sah sama sekali",
+"Sah hanya jika kontan"
+],
+"e": "Tasharruf muflis sah dalam tanggungannya.",
+"p": 4
+},
+{
+"q": "Tasharruf orang sakit melebihi sepertiga bagaimana?",
+"c": "Ditangguhkan atas izin ahli waris setelah ia meninggal",
+"x": [
+"Batal",
+"Sah penuh",
+"Sah dengan izin dokter"
+],
+"e": "Pada yang melebihi sepertiga ditangguhkan atas izin ahli waris; izin saat masih sakit tidak dianggap.",
+"p": 6
+}
+],
+"u54": [
+{
+"q": "Apa makna shulh?",
+"c": "Akad yang dengannya persengketaan terputus",
+"x": [
+"Akad jual beli",
+"Akad gadai",
+"Akad sewa"
+],
+"e": "Shulh bahasa memutus persengketaan; syara' akad yang dengannya persengketaan terputus.",
+"p": 1
+},
+{
+"q": "Berapa macam perdamaian dalam fasal ini?",
+"c": "Dua: ibra' dan mu'awadhah",
+"x": [
+"Tiga",
+"Satu",
+"Empat"
+],
+"e": "Perdamaian ada dua macam: ibra' dan mu'awadhah.",
+"p": 2
+},
+{
+"q": "Perdamaian ibra' adalah...",
+"c": "Seseorang mencukupkan dari sebagian haknya (piutangnya)",
+"x": [
+"Beralih dari haknya kepada selainnya",
+"Menukar benda dengan benda",
+"Berdamai tanpa pengakuan"
+],
+"e": "Ibra': mencukupkan dengan sebagian dari haknya.",
+"p": 2
+},
+{
+"q": "Bolehkah menggantungkan ibra' pada syarat?",
+"c": "Tidak sah",
+"x": [
+"Sah",
+"Sah dengan saksi",
+"Sah bila syarat jelas"
+],
+"e": "Tidak sah menggantungkan ibra' pada syarat.",
+"p": 3
+},
+{
+"q": "Hukum apa yang berlaku pada perdamaian mu'awadhah?",
+"c": "Hukum jual beli",
+"x": [
+"Hukum hibah",
+"Hukum gadai",
+"Hukum sewa"
+],
+"e": "Berlaku hukum jual beli.",
+"p": 4
+},
+{
+"q": "Berdamai dengan sebagian dari benda yang digugat bagaimana?",
+"c": "Hibah atas sebagian yang ditinggalkan",
+"x": [
+"Jual beli",
+"Sewa",
+"Gadai"
+],
+"e": "Itu hibah atas sebagian yang ditinggalkan; dinamakan shulh hathithah.",
+"p": 5
+},
+{
+"q": "Apa yang dimaksud dengan rausyan dalam bab shulh?",
+"c": "Kayu yang dikeluarkan dari dinding ke udara jalan tembus",
+"x": [
+"Pintu rumah",
+"Tangga",
+"Jendela"
+],
+"e": "Rausyan adalah mengeluarkan kayu dari dinding ke udara jalan tembus.",
+"p": 6
+},
+{
+"q": "Mengeluarkan rausyan di lorong milik bersama bagaimana?",
+"c": "Tidak boleh kecuali dengan izin para pemilik bersama",
+"x": [
+"Boleh",
+"Boleh dengan syarat",
+"Boleh bila tinggi"
+],
+"e": "Tidak boleh di lorong milik bersama kecuali dengan izin pemilik bersama.",
+"p": 8
+},
+{
+"q": "Memajukan pintu di lorong milik bersama boleh atau tidak?",
+"c": "Boleh dimajukan, tidak boleh dimundurkan tanpa izin",
+"x": [
+"Boleh keduanya",
+"Tidak boleh keduanya",
+"Hanya boleh dimundurkan"
+],
+"e": "Boleh memajukan pintu ke arah ujung tembus; memundurkan ke arah buntu kecuali dengan izin.",
+"p": 9
+}
+]
+}
