@@ -40,3 +40,6 @@ Payment gateway nantinya cukup memanggil `berikanAkses(email, hari)` (di `akses-
 ### Batas perangkat & verifikasi email
 - `MAKS_PERANGKAT` — jumlah perangkat maksimum per akun (mis. `2`). Kosong/0 = tanpa batas. Perangkat dikenali dari ID acak di cookie `efq_dev`; perangkat yang tidak dipakai 30 hari dilepas otomatis. Pengguna bisa mengeluarkan perangkat lain sendiri dari halaman `/langganan` (sekali per 24 jam); admin memakai `{"aksi":"reset-perangkat","email":"..."}`.
 - Pendaftaran/login email+sandi kini mewajibkan verifikasi email: tautan verifikasi dikirim otomatis, dan akun baru bisa masuk setelah tautan diklik. Login Google sudah otomatis terverifikasi.
+
+### Sinkronisasi progres antar perangkat
+Riwayat bacaan, penanda, skor latihan, dan data kalkulator disalin ke server (`/api/sinkron`, tersimpan di Redis yang sama) sehingga ikut ke perangkat lain pada akun yang sama. Aturan: per data, yang terakhir diubah menang; saat dua perangkat pertama kali tersambung, penanda dan riwayat digabung. Pengaturan tampilan (tema, ukuran huruf) tetap per perangkat. Tanpa Redis, aplikasi tetap jalan hanya secara lokal. Bila perangkat dipakai akun lain, data lokal akun sebelumnya dikosongkan.

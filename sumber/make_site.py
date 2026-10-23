@@ -31,6 +31,7 @@ head=f'''<!doctype html>
 <style>[hidden]{{display:none!important}}:root{{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}}</style>
 <script src="/auth-config.js"></script>
 <script src="/auth-client.js"></script>
+<script src="/sinkron.js" defer></script>
 '''
 open(f'{DST}/index.html','w',encoding='utf-8').write(head+body+'\n</html>\n')
 shutil.rmtree(f'{DST}/data',ignore_errors=True); shutil.copytree(f'{SRC}/out/data',f'{DST}/data')
