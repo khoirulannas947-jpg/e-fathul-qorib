@@ -1,39 +1,329 @@
 {
-"u109":[
-{"q":"Apa hukum jihad ketika orang kafir berada di negeri mereka sendiri?","c":"Fardhu kifayah","x":["Fardhu 'ain","Sunnah","Mubah"],"e":"Jika kafir di negeri mereka, jihad fardhu kifayah.","p":1},
-{"q":"Apa hukum jihad ketika orang kafir memasuki negeri kaum muslimin?","c":"Fardhu 'ain atas penduduknya","x":["Fardhu kifayah","Sunnah","Makruh"],"e":"Ketika kafir memasuki negeri muslimin, jihad menjadi fardhu 'ain.","p":2},
-{"q":"Berapa syarat wajibnya jihad?","c":"Tujuh","x":["Tiga","Lima","Sepuluh"],"e":"Syarat wajibnya jihad ada tujuh perkara.","p":3},
-{"q":"Siapa yang tidak wajib berjihad karena bukan laki-laki?","c":"Perempuan dan khuntsa musykil","x":["Anak kecil","Orang gila","Orang sakit"],"e":"Syarat kelima: laki-laki; perempuan dan khuntsa tidak wajib.","p":4},
-{"q":"Siapa tawanan kafir yang menjadi budak dengan semata penawanan?","c":"Perempuan dan anak kecil","x":["Laki-laki dewasa merdeka","Semua tawanan","Tidak ada"],"e":"Perempuan dan anak-anak menjadi budak dengan penawanan.","p":5},
-{"q":"Berapa pilihan imam terhadap tawanan laki-laki dewasa merdeka?","c":"Empat: dibunuh, dijadikan budak, dibebaskan, atau tebusan","x":["Dua pilihan","Tiga pilihan","Satu pilihan"],"e":"Imam memilih di antara empat perkara.","p":6},
-{"q":"Apa pedoman imam memilih di antara empat pilihan tersebut?","c":"Kemaslahatan bagi kaum muslimin","x":["Kehendak pribadi","Undian","Kekayaan tawanan"],"e":"Imam melakukan yang mengandung kemaslahatan bagi kaum muslimin.","p":8},
-{"q":"Jika orang kafir masuk Islam sebelum ditawan, apa yang terjaga?","c":"Harta, darah, dan anak kecilnya","x":["Hanya darahnya","Hanya hartanya","Tidak ada"],"e":"Ia menjaga harta, darah, dan anak-anaknya yang kecil.","p":9},
-{"q":"Apakah islamnya suami menjaga istrinya dari dijadikan budak?","c":"Tidak","x":["Ya","Ya, jika hamil","Ya, jika mukmin"],"e":"Islamnya orang kafir tidak menjaga istrinya dari perbudakan.","p":10},
-{"q":"Berapa sebab anak kecil dihukumi Islam?","c":"Tiga","x":["Satu","Dua","Lima"],"e":"Anak kecil dihukumi Islam karena tiga sebab.","p":11}
+"u109": [
+{
+"q": "Apa hukum jihad ketika orang kafir berada di negeri mereka sendiri?",
+"c": "Fardhu kifayah",
+"x": [
+"Fardhu 'ain",
+"Sunnah",
+"Mubah"
 ],
-"u110":[
-{"q":"Siapa yang berhak atas salab?","c":"Pembunuh musuh yang mempertaruhkan dirinya dalam perang","x":["Semua pasukan","Imam","Orang yang melihat saja"],"e":"Pembunuh musuh diberi salabnya jika ia mempertaruhkan dirinya.","p":1},
-{"q":"Apakah yang dimaksud dengan salab dalam peperangan?","c":"Pakaian, senjata, dan kendaraan musuh yang terbunuh","x":["Seperlima ghanimah","Tawanan perang","Tebusan"],"e":"Salab adalah pakaian, sepatu, alat perang, kendaraan yang ia tunggangi dan semisalnya.","p":2},
-{"q":"Apa makna ghanimah?","c":"Harta dari kafir harbi dengan peperangan","x":["Harta tanpa perang","Harta orang muslim","Harta pajak"],"e":"Ghanimah adalah harta yang diperoleh dari kafir harbi dengan peperangan.","p":4},
-{"q":"Berapa bagian ghanimah yang diberikan kepada yang hadir perang?","c":"Empat perlima","x":["Seperlima","Setengah","Sepertiga"],"e":"Ghanimah dibagi lima: empat perlima untuk yang hadir pertempuran.","p":5},
-{"q":"Berapa bagian untuk penunggang kuda?","c":"Tiga bagian: dua untuk kuda dan satu untuk dirinya","x":["Satu bagian","Dua bagian","Lima bagian"],"e":"Penunggang kuda mendapat tiga bagian.","p":6},
-{"q":"Siapa yang diberi radhkh (pemberian sedikit)?","c":"Yang tidak memenuhi lima syarat penuh, seperti budak, anak kecil, dan perempuan","x":["Prajurit penunggang kuda","Imam","Orang kaya"],"e":"Yang kurang syaratnya diberi radhkh.","p":7},
-{"q":"Seperlima ghanimah dibagi berapa bagian?","c":"Lima","x":["Tiga","Empat","Sepuluh"],"e":"Seperlima dibagi lima bagian.","p":9},
-{"q":"Siapa penerima bagian kerabat dekat?","c":"Bani Hasyim dan Bani al-Muththalib","x":["Seluruh Quraisy","Orang miskin","Yatim"],"e":"Bagian kerabat dekat untuk Bani Hasyim dan Bani al-Muththalib.","p":11}
+"e": "Jika kafir di negeri mereka, jihad fardhu kifayah.",
+"p": 1
+},
+{
+"q": "Apa hukum jihad ketika orang kafir memasuki negeri kaum muslimin?",
+"c": "Fardhu 'ain atas penduduknya",
+"x": [
+"Fardhu kifayah atas sebagian penduduknya saja",
+"Sunnah bagi yang mampu dan makruh bagi yang lemah",
+"Makruh karena dapat menimbulkan kerusakan bagi penduduk"
 ],
-"u111":[
-{"q":"Apa makna fai' secara bahasa?","c":"Harta yang kembali kepada kaum muslimin","x":["Harta perang","Harta zakat","Harta warisan"],"e":"Fai' diambil dari fa'a apabila kembali.","p":1},
-{"q":"Berapa bagian seperlima fai' disalurkan kepada lima golongan?","c":"Seperlima","x":["Setengah","Sepertiga","Seluruhnya"],"e":"Seperlima fai' disalurkan kepada lima golongan seperti ghanimah.","p":2},
-{"q":"Kepada siapa empat perlima fai' dibagikan?","c":"Prajurit yang tercatat dalam daftar tentara bergaji","x":["Orang miskin","Kerabat imam","Para pedagang"],"e":"Empat perlima diberikan kepada prajurit yang ditetapkan imam.","p":3}
+"e": "Ketika kafir memasuki negeri muslimin, jihad menjadi fardhu 'ain.",
+"p": 2
+},
+{
+"q": "Berapa syarat wajibnya jihad?",
+"c": "Tujuh",
+"x": [
+"Tiga",
+"Lima",
+"Sepuluh"
 ],
-"u112":[
-{"q":"Apakah yang dimaksud dengan jizyah menurut syara'?","c":"Pungutan yang ditetapkan atas ahli dzimmah","x":["Zakat bagi muslim","Pajak jual beli","Denda perang"],"e":"Jizyah adalah pungutan yang ditetapkan atas ahli dzimmah.","p":1},
-{"q":"Berapa syarat wajib jizyah?","c":"Lima","x":["Dua","Tiga","Tujuh"],"e":"Syarat wajib jizyah ada lima: baligh, berakal, merdeka, laki-laki, ahli kitab.","p":3},
-{"q":"Siapa yang tidak dikenakan jizyah?","c":"Anak kecil, perempuan, dan budak","x":["Laki-laki dewasa","Orang berakal","Ahli kitab merdeka"],"e":"Jizyah tidak atas anak kecil, orang gila, budak, perempuan, dan khuntsa.","p":4},
-{"q":"Siapa yang dikenai jizyah dari segi agama?","c":"Ahli kitab dan yang punya syubhat kitab","x":["Semua kafir","Hanya Majusi","Hanya penyembah berhala"],"e":"Jizyah diakadkan untuk ahli kitab atau yang memiliki syubhat kitab.","p":5},
-{"q":"Berapa jizyah paling sedikit per orang?","c":"Satu dinar setiap tahun","x":["Seratus dinar","Satu dirham","Sepuluh dinar"],"e":"Paling sedikit satu dinar setiap tahun, tidak ada batas maksimal.","p":6},
-{"q":"Berapa perkara yang tercakup dalam akad jizyah?","c":"Empat","x":["Dua","Tiga","Lima"],"e":"Akad jizyah mencakup empat perkara.","p":8},
-{"q":"Apa itu ghiyar?","c":"Mengubah pakaian dengan menjahit sesuatu yang berbeda warna di bahu","x":["Mengikat benang di pinggang","Memotong rambut","Membayar pajak"],"e":"Ghiyar adalah mengubah pakaian dengan menjahit yang berbeda warna.","p":10},
-{"q":"Apa itu zunnar?","c":"Benang tebal yang diikat di pinggang di atas pakaian","x":["Pakaian di bahu","Topi","Sepatu"],"e":"Zunnar adalah benang tebal yang diikatkan di pinggang di atas pakaian.","p":12}
+"e": "Syarat wajibnya jihad ada tujuh perkara.",
+"p": 3
+},
+{
+"q": "Siapa yang tidak wajib berjihad karena bukan laki-laki?",
+"c": "Perempuan dan khuntsa musykil",
+"x": [
+"Anak kecil yang belum mencapai usia baligh",
+"Orang gila yang kehilangan akalnya sepenuhnya",
+"Orang sakit yang tidak mampu berperang dan berkendara"
+],
+"e": "Syarat kelima: laki-laki; perempuan dan khuntsa tidak wajib.",
+"p": 4
+},
+{
+"q": "Siapa tawanan kafir yang menjadi budak dengan semata penawanan?",
+"c": "Perempuan dan anak kecil",
+"x": [
+"Laki-laki dewasa merdeka",
+"Semua tawanan",
+"Tidak ada"
+],
+"e": "Perempuan dan anak-anak menjadi budak dengan penawanan.",
+"p": 5
+},
+{
+"q": "Berapa pilihan imam terhadap tawanan laki-laki dewasa merdeka?",
+"c": "Empat: dibunuh, dijadikan budak, dibebaskan, atau tebusan",
+"x": [
+"Dua pilihan: dibunuh atau dijadikan budak saja",
+"Tiga pilihan: dibunuh, dibebaskan, atau tebusan",
+"Satu pilihan: dibunuh saja tanpa pilihan lain"
+],
+"e": "Imam memilih di antara empat perkara.",
+"p": 6
+},
+{
+"q": "Apa pedoman imam memilih di antara empat pilihan tersebut?",
+"c": "Kemaslahatan bagi kaum muslimin",
+"x": [
+"Kehendak pribadi imam sesuai selera dan perasaannya",
+"Undian yang dilakukan di hadapan seluruh pasukan",
+"Kekayaan tawanan yang mampu menebus dirinya"
+],
+"e": "Imam melakukan yang mengandung kemaslahatan bagi kaum muslimin.",
+"p": 8
+},
+{
+"q": "Jika orang kafir masuk Islam sebelum ditawan, apa yang terjaga?",
+"c": "Harta, darah, dan anak kecilnya",
+"x": [
+"Hanya darahnya saja, adapun hartanya menjadi ghanimah",
+"Hanya hartanya saja, adapun darahnya tidak terjaga",
+"Tidak ada yang terjaga karena Islamnya terlambat"
+],
+"e": "Ia menjaga harta, darah, dan anak-anaknya yang kecil.",
+"p": 9
+},
+{
+"q": "Apakah islamnya suami menjaga istrinya dari dijadikan budak?",
+"c": "Tidak",
+"x": [
+"Ya",
+"Ya, jika hamil",
+"Ya, jika mukmin"
+],
+"e": "Islamnya orang kafir tidak menjaga istrinya dari perbudakan.",
+"p": 10
+},
+{
+"q": "Berapa sebab anak kecil dihukumi Islam?",
+"c": "Tiga",
+"x": [
+"Satu",
+"Dua",
+"Lima"
+],
+"e": "Anak kecil dihukumi Islam karena tiga sebab.",
+"p": 11
+}
+],
+"u110": [
+{
+"q": "Siapa yang berhak atas salab?",
+"c": "Pembunuh musuh yang mempertaruhkan dirinya dalam perang",
+"x": [
+"Semua pasukan yang hadir dalam pertempuran tersebut",
+"Imam atau pemimpin yang memimpin pasukan perang",
+"Orang yang hanya melihat pertempuran tanpa ikut berperang"
+],
+"e": "Pembunuh musuh diberi salabnya jika ia mempertaruhkan dirinya.",
+"p": 1
+},
+{
+"q": "Apakah yang dimaksud dengan salab dalam peperangan?",
+"c": "Pakaian, senjata, dan kendaraan musuh yang terbunuh",
+"x": [
+"Seperlima dari ghanimah yang dibagi kepada lima golongan",
+"Tawanan perang yang menjadi budak setelah ditawan",
+"Tebusan yang dibayarkan untuk membebaskan tawanan"
+],
+"e": "Salab adalah pakaian, sepatu, alat perang, kendaraan yang ia tunggangi dan semisalnya.",
+"p": 2
+},
+{
+"q": "Apa makna ghanimah?",
+"c": "Harta dari kafir harbi dengan peperangan",
+"x": [
+"Harta yang diperoleh tanpa peperangan dari orang kafir",
+"Harta yang diambil dari orang muslim yang berbuat zalim",
+"Harta yang dipungut sebagai pajak dari ahli dzimmah"
+],
+"e": "Ghanimah adalah harta yang diperoleh dari kafir harbi dengan peperangan.",
+"p": 4
+},
+{
+"q": "Berapa bagian ghanimah yang diberikan kepada yang hadir perang?",
+"c": "Empat perlima",
+"x": [
+"Seperlima",
+"Setengah",
+"Sepertiga"
+],
+"e": "Ghanimah dibagi lima: empat perlima untuk yang hadir pertempuran.",
+"p": 5
+},
+{
+"q": "Berapa bagian untuk penunggang kuda?",
+"c": "Tiga bagian: dua untuk kuda dan satu untuk dirinya",
+"x": [
+"Satu bagian untuk dirinya dan kudanya sekaligus",
+"Dua bagian: satu untuk kuda dan satu untuk dirinya",
+"Lima bagian: empat untuk kuda dan satu untuk dirinya"
+],
+"e": "Penunggang kuda mendapat tiga bagian.",
+"p": 6
+},
+{
+"q": "Siapa yang diberi radhkh (pemberian sedikit)?",
+"c": "Yang tidak memenuhi lima syarat penuh, seperti budak, anak kecil, dan perempuan",
+"x": [
+"Prajurit penunggang kuda yang memenuhi semua syarat",
+"Imam yang memimpin pasukan dalam peperangan itu",
+"Orang kaya yang membiayai pasukan dalam peperangan itu"
+],
+"e": "Yang kurang syaratnya diberi radhkh.",
+"p": 7
+},
+{
+"q": "Seperlima ghanimah dibagi berapa bagian?",
+"c": "Lima",
+"x": [
+"Tiga",
+"Empat",
+"Sepuluh"
+],
+"e": "Seperlima dibagi lima bagian.",
+"p": 9
+},
+{
+"q": "Siapa penerima bagian kerabat dekat?",
+"c": "Bani Hasyim dan Bani al-Muththalib",
+"x": [
+"Seluruh suku Quraisy tanpa terkecuali dan tanpa syarat",
+"Orang-orang miskin dari kalangan kaum muslimin",
+"Anak-anak yatim dari kalangan kaum muslimin"
+],
+"e": "Bagian kerabat dekat untuk Bani Hasyim dan Bani al-Muththalib.",
+"p": 11
+}
+],
+"u111": [
+{
+"q": "Apa makna fai' secara bahasa?",
+"c": "Harta yang kembali kepada kaum muslimin",
+"x": [
+"Harta yang diperoleh dari peperangan melawan orang kafir",
+"Harta yang dikumpulkan dari zakat kaum muslimin",
+"Harta yang ditinggalkan mayat kepada para ahli warisnya"
+],
+"e": "Fai' diambil dari fa'a apabila kembali.",
+"p": 1
+},
+{
+"q": "Berapa bagian seperlima fai' disalurkan kepada lima golongan?",
+"c": "Seperlima",
+"x": [
+"Setengah",
+"Sepertiga",
+"Seluruhnya"
+],
+"e": "Seperlima fai' disalurkan kepada lima golongan seperti ghanimah.",
+"p": 2
+},
+{
+"q": "Kepada siapa empat perlima fai' dibagikan?",
+"c": "Prajurit yang tercatat dalam daftar tentara bergaji",
+"x": [
+"Orang-orang miskin dari kalangan kaum muslimin",
+"Kerabat imam yang sedang membutuhkan bantuan",
+"Para pedagang yang berjasa kepada kaum muslimin"
+],
+"e": "Empat perlima diberikan kepada prajurit yang ditetapkan imam.",
+"p": 3
+}
+],
+"u112": [
+{
+"q": "Apakah yang dimaksud dengan jizyah menurut syara'?",
+"c": "Pungutan yang ditetapkan atas ahli dzimmah",
+"x": [
+"Zakat yang diwajibkan kepada kaum muslimin yang kaya",
+"Pajak jual beli yang dipungut dari para pedagang",
+"Denda perang yang dibayar oleh pihak yang kalah"
+],
+"e": "Jizyah adalah pungutan yang ditetapkan atas ahli dzimmah.",
+"p": 1
+},
+{
+"q": "Berapa syarat wajib jizyah?",
+"c": "Lima",
+"x": [
+"Dua",
+"Tiga",
+"Tujuh"
+],
+"e": "Syarat wajib jizyah ada lima: baligh, berakal, merdeka, laki-laki, ahli kitab.",
+"p": 3
+},
+{
+"q": "Siapa yang tidak dikenakan jizyah?",
+"c": "Anak kecil, perempuan, dan budak",
+"x": [
+"Laki-laki dewasa yang merdeka dan berakal",
+"Orang yang berakal dan telah mencapai baligh",
+"Ahli kitab yang merdeka dan laki-laki dewasa"
+],
+"e": "Jizyah tidak atas anak kecil, orang gila, budak, perempuan, dan khuntsa.",
+"p": 4
+},
+{
+"q": "Siapa yang dikenai jizyah dari segi agama?",
+"c": "Ahli kitab dan yang punya syubhat kitab",
+"x": [
+"Semua orang kafir tanpa memandang agamanya",
+"Hanya orang Majusi saja tanpa ahli kitab",
+"Hanya penyembah berhala saja tanpa ahli kitab"
+],
+"e": "Jizyah diakadkan untuk ahli kitab atau yang memiliki syubhat kitab.",
+"p": 5
+},
+{
+"q": "Berapa jizyah paling sedikit per orang?",
+"c": "Satu dinar setiap tahun",
+"x": [
+"Seratus dinar setiap tahun bagi setiap orang kafir",
+"Satu dirham setiap tahun bagi setiap orang kafir",
+"Sepuluh dinar setiap tahun bagi setiap orang kafir"
+],
+"e": "Paling sedikit satu dinar setiap tahun, tidak ada batas maksimal.",
+"p": 6
+},
+{
+"q": "Berapa perkara yang tercakup dalam akad jizyah?",
+"c": "Empat",
+"x": [
+"Dua",
+"Tiga",
+"Lima"
+],
+"e": "Akad jizyah mencakup empat perkara.",
+"p": 8
+},
+{
+"q": "Apa itu ghiyar?",
+"c": "Mengubah pakaian dengan menjahit sesuatu yang berbeda warna di bahu",
+"x": [
+"Mengikat benang tebal di pinggang di atas pakaian",
+"Memotong rambut hingga berbeda dari kaum muslimin",
+"Membayar pajak tambahan kepada imam setiap tahun"
+],
+"e": "Ghiyar adalah mengubah pakaian dengan menjahit yang berbeda warna.",
+"p": 10
+},
+{
+"q": "Apa itu zunnar?",
+"c": "Benang tebal yang diikat di pinggang di atas pakaian",
+"x": [
+"Pakaian berbeda warna yang dijahit pada bahu",
+"Topi yang dipakai ahli dzimmah sebagai tanda pengenal",
+"Sepatu berwarna yang dipakai ahli dzimmah sebagai tanda pengenal"
+],
+"e": "Zunnar adalah benang tebal yang diikatkan di pinggang di atas pakaian.",
+"p": 12
+}
 ]
 }
