@@ -160,9 +160,9 @@
 "q": "Setelah 121 ekor, zakat unta dihitung pada setiap kelipatan berapa?",
 "c": "Pada setiap empat puluh ekor satu bintu labun, dan pada setiap lima puluh ekor satu hiqqah",
 "x": [
-"Pada setiap sepuluh ekor satu kambing",
-"Pada setiap tiga puluh ekor satu tabi'",
-"Pada setiap seratus ekor satu jadza'ah"
+"Pada setiap sepuluh ekor satu kambing dan pada setiap lima puluh ekor satu hiqqah",
+"Pada setiap tiga puluh ekor satu tabi' dan pada setiap empat puluh ekor satu bintu labun",
+"Pada setiap seratus ekor satu jadza'ah dan pada setiap lima puluh ekor satu hiqqah"
 ],
 "e": "Mulai 121 ekor, hitungannya tetap: setiap 40 ekor satu bintu labun dan setiap 50 ekor satu hiqqah.",
 "p": 4
@@ -230,9 +230,9 @@
 "q": "Berapa awal nishab kambing, dan apa zakatnya?",
 "c": "Empat puluh ekor, zakatnya seekor domba jadza'ah atau kambing tsaniyyah",
 "x": [
-"Tiga puluh ekor, zakatnya seekor kambing",
-"Empat puluh ekor, zakatnya dua ekor kambing",
-"Lima ekor, zakatnya seekor kambing"
+"Tiga puluh ekor, zakatnya seekor kambing yang telah tsaniyyah",
+"Empat puluh ekor, zakatnya dua ekor kambing tsaniyyah",
+"Lima ekor, zakatnya seekor kambing jadza'ah"
 ],
 "e": "Awal nishab kambing empat puluh ekor, zakatnya seekor jadza'ah (domba) atau tsaniyyah (kambing kacang).",
 "p": 1
@@ -309,9 +309,9 @@
 "q": "Apa yang dimaksud dengan masrah dalam syarat percampuran ternak?",
 "c": "Tempat ternak berkumpul untuk berangkat ke padang gembala",
 "x": [
-"Tempat ternak bermalam",
-"Wadah tempat susu diperah",
-"Tempat pejantan mengawini ternak"
+"Tempat ternak bermalam setelah pulang dari padang gembala",
+"Wadah tempat susu ternak diperah oleh pemiliknya",
+"Tempat pejantan mengawini ternak betina milik bersama"
 ],
 "e": "Masrah adalah tempat ternak berkumpul untuk berangkat ke tempat gembala.",
 "p": 3
@@ -410,9 +410,9 @@
 "q": "Bagaimana hukum zakat perhiasan emas yang mubah, dan bagaimana yang haram?",
 "c": "Perhiasan mubah tidak wajib zakat, perhiasan haram (seperti gelang bagi laki-laki) wajib zakat",
 "x": [
-"Semua perhiasan wajib zakat",
-"Semua perhiasan tidak wajib zakat",
-"Perhiasan mubah wajib, perhiasan haram tidak wajib"
+"Semua perhiasan wajib zakat, baik yang mubah maupun yang haram",
+"Semua perhiasan tidak wajib zakat, baik yang mubah maupun yang haram",
+"Perhiasan mubah wajib zakat, sedangkan perhiasan haram tidak wajib zakat"
 ],
 "e": "Tidak wajib zakat pada perhiasan yang mubah. Perhiasan haram, misalnya gelang tangan dan kaki bagi laki-laki dan khuntsa, wajib dizakati.",
 "p": 3
@@ -423,9 +423,9 @@
 "q": "Berapa nishab tanaman dan buah-buahan?",
 "c": "Lima wasaq (1.600 rithl Irak)",
 "x": [
-"Sepuluh wasaq",
-"Satu wasaq",
-"Dua puluh wasaq"
+"Sepuluh wasaq, setara kira-kira tiga ribu rithl Irak",
+"Satu wasaq, setara kira-kira tiga ratus rithl Irak",
+"Dua puluh wasaq, setara kira-kira enam ribu rithl Irak"
 ],
 "e": "Nishab tanaman dan buah-buahan adalah lima wasaq, yaitu 1.600 rithl ukuran Irak.",
 "p": 1
@@ -434,9 +434,9 @@
 "q": "Mengapa dinamakan wasaq?",
 "c": "Dari kata yang bermakna mengumpulkan, karena satu wasaq mengumpulkan beberapa sha'",
 "x": [
-"Karena ditimbang dengan batu",
-"Karena diambil dari nama tempat",
-"Karena dikumpulkan pada akhir tahun"
+"Karena ditimbang dengan batu yang berukuran tertentu",
+"Karena diambil dari nama tempat penghasil tanaman itu",
+"Karena dikumpulkan pada akhir tahun menjelang haul berakhir"
 ],
 "e": "Wasaq berasal dari mashdar bermakna mengumpulkan, karena satu wasaq mengumpulkan beberapa sha'.",
 "p": 1
@@ -456,9 +456,9 @@
 "q": "Apa yang dimaksud dengan saih?",
 "c": "Air yang mengalir di atas tanah karena sungai dibendung sehingga mengairi tanah",
 "x": [
-"Air yang diangkat dengan kincir",
-"Air hujan yang disimpan dalam kolam",
-"Air sumur yang ditimba hewan"
+"Air yang diangkat dengan kincir dari sungai ke ladang",
+"Air hujan yang disimpan dalam kolam lalu dialirkan",
+"Air sumur yang ditimba hewan kemudian dialirkan ke ladang"
 ],
 "e": "Saih adalah air yang mengalir di atas tanah karena sungai dibendung sehingga air naik ke permukaan tanah dan mengairinya.",
 "p": 2
@@ -491,9 +491,9 @@
 "q": "Kapan barang dagangan dinilai untuk dizakati?",
 "c": "Pada akhir haul, dengan mata uang yang dipakai untuk membelinya",
 "x": [
-"Pada awal haul, dengan harga modal",
-"Setiap bulan dengan harga pasar",
-"Pada saat barang laku terjual"
+"Pada awal haul, dengan harga modal ketika barang dibeli",
+"Setiap bulan, dengan harga pasar pada bulan tersebut",
+"Pada saat barang laku terjual kepada pembeli"
 ],
 "e": "Barang dagangan dinilai pada akhir haul dengan mata uang yang dipakai membelinya; bila nilainya mencapai nishab ia menzakatinya.",
 "p": 1
@@ -524,9 +524,9 @@
 "q": "Zakat hasil tambang emas dan perak dikeluarkan kapan?",
 "c": "Seketika itu juga, bila mencapai nishab dan penggalinya ahli wajib zakat",
 "x": [
-"Setelah satu tahun penuh",
-"Setelah tiga tahun",
-"Tidak wajib dizakati"
+"Setelah satu tahun penuh sejak tambang itu digali",
+"Setelah tiga tahun sejak tambang itu pertama digali",
+"Tidak wajib dizakati karena bukan harta simpanan"
 ],
 "e": "Hasil tambang emas dan perak yang mencapai nishab dikeluarkan zakatnya seperempat dari sepersepuluh seketika itu.",
 "p": 2
@@ -570,9 +570,9 @@
 "q": "Kapan waktu wajib zakat fitrah?",
 "c": "Saat terbenamnya matahari pada hari terakhir bulan Ramadhan",
 "x": [
-"Saat terbit fajar tanggal 1 Syawal",
-"Pada awal bulan Ramadhan",
-"Saat selesai shalat Idul Fitri"
+"Saat terbit fajar tanggal satu Syawal setelah Ramadhan selesai",
+"Pada awal bulan Ramadhan ketika hilal Ramadhan terlihat",
+"Saat selesai shalat Idul Fitri dikerjakan oleh imam"
 ],
 "e": "Syarat kedua: terbenamnya matahari pada hari terakhir Ramadhan.",
 "p": 2
@@ -581,9 +581,9 @@
 "q": "Siapa yang tetap dikeluarkan fitrahnya menurut kitab ini?",
 "c": "Orang yang meninggal setelah matahari terbenam hari terakhir Ramadhan",
 "x": [
-"Bayi yang lahir setelah matahari terbenam",
-"Orang yang meninggal sebelum matahari terbenam",
-"Orang yang masuk Islam pada hari raya"
+"Bayi yang lahir setelah matahari terbenam hari terakhir Ramadhan",
+"Orang yang meninggal sebelum matahari terbenam hari terakhir Ramadhan",
+"Orang yang baru masuk Islam pada hari raya Idul Fitri"
 ],
 "e": "Zakat fitri dikeluarkan untuk orang yang meninggal setelah matahari terbenam, tidak untuk orang yang lahir setelahnya.",
 "p": 2
@@ -592,9 +592,9 @@
 "q": "Syarat ketiga zakat fitrah adalah adanya kelebihan. Kelebihan dari apa?",
 "c": "Dari makanannya dan makanan keluarganya pada hari raya, demikian pula malamnya",
 "x": [
-"Dari seluruh hartanya selama setahun",
-"Dari hutangnya",
-"Dari nafkah anak-anaknya selama sebulan"
+"Dari seluruh hartanya selama satu tahun penuh",
+"Dari seluruh hutangnya yang jatuh tempo pada hari raya",
+"Dari nafkah anak-anaknya selama sebulan penuh"
 ],
 "e": "Syarat ketiga adalah kelapangan harta dari makanannya dan makanan keluarganya pada hari raya Idul Fitri, demikian pula malamnya.",
 "p": 2
@@ -614,9 +614,9 @@
 "q": "Berapa ukuran zakat fitrah per jiwa?",
 "c": "Satu sha' makanan pokok daerahnya",
 "x": [
-"Satu wasaq",
-"Setengah sha'",
-"Satu mudd"
+"Satu wasaq makanan pokok daerahnya",
+"Setengah sha' makanan pokok daerahnya",
+"Satu mudd makanan pokok daerahnya"
 ],
 "e": "Ia mengeluarkan satu sha' dari makanan pokok daerahnya.",
 "p": 3
@@ -671,7 +671,7 @@
 "q": "Siapakah miskin dalam bab zakat?",
 "c": "Orang yang memperoleh harta atau pekerjaan yang mengisi sebagian kecukupannya tetapi tidak mencukupi, misalnya butuh sepuluh dirham hanya punya tujuh",
 "x": [
-"Orang yang sama sekali tidak memiliki harta maupun pekerjaan apa pun",
+"Orang yang sama sekali tidak memiliki harta maupun pekerjaan untuk kebutuhannya",
 "Orang yang berpenghasilan cukup bahkan lebih untuk seluruh kebutuhannya",
 "Orang yang berutang untuk mendamaikan dua kelompok yang bertikai"
 ],
@@ -738,7 +738,7 @@
 "c": "Orang yang memulai perjalanan dari daerah zakat atau melewatinya, membutuhkan, dan perjalanannya bukan maksiat",
 "x": [
 "Orang yang bepergian untuk berwisata dan memiliki bekal yang cukup",
-"Orang yang melakukan perjalanan untuk tujuan maksiat",
+"Orang yang melakukan perjalanan untuk tujuan maksiat dan kehabisan bekal",
 "Orang kaya yang kehabisan bekal tetapi hartanya ada di rumah"
 ],
 "e": "Ibnu sabil memulai perjalanan dari daerah zakat atau melewatinya; disyaratkan ia membutuhkan dan perjalanannya bukan maksiat.",

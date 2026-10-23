@@ -1,39 +1,349 @@
 {
-"u75":[
-{"q":"Apa makna faridhah secara syara' dalam kitab ini?","c":"Nama bagi bagian yang ditentukan bagi yang berhak","x":["Nama bagi semua harta peninggalan","Nama bagi wasiat orang yang meninggal","Nama bagi utang mayat"],"e":"Faraidh jamak dari faridhah, bermakna yang ditentukan; secara syara' nama bagian yang ditentukan bagi yang berhak.","p":1},
-{"q":"Berapa ahli waris laki-laki yang disepakati menurut ringkasan matan?","c":"Sepuluh","x":["Lima","Tujuh","Lima belas"],"e":"Ahli waris laki-laki yang disepakati sepuluh secara ringkas, lima belas secara rinci.","p":2},
-{"q":"Jika semua ahli waris laki-laki berkumpul, siapa yang mewarisi?","c":"Ayah, anak laki-laki, dan suami","x":["Ayah, kakek, dan paman","Anak, saudara, dan paman","Suami, kakek, dan saudara"],"e":"Jika semua laki-laki berkumpul, yang mewarisi hanya tiga: ayah, anak laki-laki, dan suami.","p":3},
-{"q":"Berapa ahli waris perempuan yang disepakati menurut ringkasan matan?","c":"Tujuh","x":["Sepuluh","Lima","Tiga"],"e":"Ahli waris perempuan yang disepakati tujuh secara ringkas, sepuluh secara rinci.","p":3},
-{"q":"Siapa saja lima ahli waris yang tidak pernah gugur?","c":"Suami-istri, kedua orang tua, dan anak kandung","x":["Kakek, nenek, dan saudara","Paman, bibi, dan sepupu","Cucu, kakek, dan istri"],"e":"Lima yang tidak gugur dalam keadaan apa pun: suami, istri, ayah, ibu, dan anak kandung.","p":5},
-{"q":"Berapa orang yang tidak mewarisi dalam keadaan apa pun?","c":"Tujuh","x":["Lima","Tiga","Sepuluh"],"e":"Orang yang tidak mewarisi dalam keadaan apa pun ada tujuh.","p":6},
-{"q":"Siapa saja yang tidak mewarisi?","c":"Budak, mudabbar, ummul walad, mukatab, pembunuh, murtad, dan pemeluk dua agama","x":["Anak yatim dan janda","Orang miskin dan sakit","Anak angkat dan tetangga"],"e":"Budak, mudabbar, ummul walad, mukatab, pembunuh, murtad, dan pemeluk dua agama tidak mewarisi.","p":7},
-{"q":"Bolehkah pembunuh mewarisi dari orang yang ia bunuh?","c":"Tidak boleh","x":["Boleh","Boleh bila tidak sengaja","Boleh bila diampuni"],"e":"Pembunuh tidak mewarisi dari orang yang ia bunuh.","p":7},
-{"q":"Apakah orang kafir mewarisi dari orang kafir yang berbeda agama?","c":"Ya, mewarisi walaupun agamanya berbeda","x":["Tidak","Hanya jika sama","Hanya jika dzimmi"],"e":"Orang kafir mewarisi dari orang kafir walaupun berbeda agama, seperti Yahudi dan Nasrani.","p":8},
-{"q":"Urutan 'ashabah yang paling dekat dimulai dari...","c":"Anak laki-laki","x":["Ayah","Saudara kandung","Paman"],"e":"Anak laki-laki, kemudian anaknya, kemudian ayah, kemudian ayahnya, kemudian saudara kandung, dan seterusnya.","p":10},
-{"q":"Jika tidak ada 'ashabah dari nasab dan mayat bekas budak, siapa yang mewarisinya?","c":"Tuan yang memerdekakan","x":["Baitul mal","Saudara","Tetangga"],"e":"Tuan yang memerdekakan mewarisi dengan 'ushubah, laki-laki maupun perempuan.","p":12},
-{"q":"Jika tidak ada 'ashabah nasab maupun wala', hartanya?","c":"Untuk baitul mal","x":["Dibagi tetangga","Diwakafkan","Dibuang"],"e":"Jika tidak ada 'ashabah karena nasab maupun wala', hartanya untuk baitul mal.","p":12}
+"u75": [
+{
+"q": "Apa makna faridhah secara syara' dalam kitab ini?",
+"c": "Nama bagi bagian yang ditentukan bagi yang berhak",
+"x": [
+"Nama bagi semua harta peninggalan",
+"Nama bagi wasiat orang yang meninggal",
+"Nama bagi utang mayat"
 ],
-"u76":[
-{"q":"Berapa bagian yang disebutkan dalam Kitab Allah?","c":"Enam","x":["Tiga","Empat","Delapan"],"e":"Bagian-bagian yang disebutkan dalam Kitab Allah ada enam.","p":1},
-{"q":"Enam bagian itu adalah...","c":"Setengah, seperempat, seperdelapan, dua pertiga, sepertiga, seperenam","x":["Setengah, sepertiga, seperlima, seperenam","Seperempat, seperlima, seperenam, seperdelapan","Setengah, seperdelapan, seperlima, dua pertiga"],"e":"Enam bagian: 1/2, 1/4, 1/8, 2/3, 1/3, 1/6.","p":1},
-{"q":"Siapa yang mendapat setengah?","c":"Anak perempuan, cucu perempuan, saudara perempuan kandung atau seayah (masing-masing sendirian), dan suami","x":["Istri bersama anak","Ibu bersama anak","Nenek bersama cucu"],"e":"Setengah adalah bagian anak perempuan, cucu perempuan dari anak laki-laki, saudara perempuan kandung, dan seayah (masing-masing sendirian) dan suami tanpa anak.","p":2},
-{"q":"Suami mendapat seperempat bila...","c":"Ada anak atau cucu dari anak laki-laki","x":["Tidak ada anak","Ada ibu","Ada saudara"],"e":"Seperempat bagian suami bersama anak atau cucu; bagian istri bila tidak ada anak.","p":3},
-{"q":"Istri mendapat seperdelapan bila...","c":"Ada anak atau cucu dari anak laki-laki","x":["Tidak ada anak","Ada saudara","Ada ibu"],"e":"Seperdelapan bagian istri bersama anak atau cucu.","p":4},
-{"q":"Dua pertiga adalah bagian...","c":"Dua anak perempuan atau lebih, dua cucu perempuan atau lebih, dua saudara perempuan kandung atau lebih, dan seayah","x":["Satu anak perempuan","Satu cucu","Istri"],"e":"Dua pertiga untuk empat golongan perempuan ini jika dua orang atau lebih.","p":5},
-{"q":"Ibu mendapat sepertiga bila...","c":"Tidak terhalang: tidak ada anak, cucu, atau dua saudara","x":["Ada anak","Ada cucu","Ada dua saudara"],"e":"Sepertiga untuk ibu bila tidak ada anak, cucu dari anak laki-laki, atau dua saudara.","p":7},
-{"q":"Ibu mendapat seperenam bila...","c":"Ada anak, cucu, atau dua saudara atau lebih","x":["Tidak ada anak","Tidak ada cucu","Tidak ada saudara"],"e":"Seperenam untuk ibu bersama anak, cucu, atau dua orang atau lebih dari saudara.","p":8},
-{"q":"Cucu perempuan dari anak laki-laki bersama anak perempuan kandung mendapat...","c":"Seperenam untuk menyempurnakan dua pertiga","x":["Setengah","Sepertiga","Tidak mendapat"],"e":"Seperenam cucu perempuan bersama anak perempuan kandung untuk menyempurnakan dua pertiga.","p":9},
-{"q":"Bila mayat meninggalkan seorang anak perempuan dan ayah, bagian ayah?","c":"Seperenam sebagai bagian tetap dan sisanya sebagai 'ashabah","x":["Sepertiga","Setengah","Tidak mendapat"],"e":"Anak perempuan mendapat setengah, ayah seperenam dan sisanya sebagai 'ashabah.","p":10},
-{"q":"Siapa yang menggugurkan para nenek?","c":"Ibu","x":["Ayah","Anak","Saudara"],"e":"Para nenek gugur dengan adanya ibu saja, dan para kakek gugur dengan adanya ayah.","p":11},
-{"q":"Saudara seibu gugur bersama empat siapa?","c":"Anak, cucu dari anak laki-laki, ayah, dan kakek","x":["Ibu dan nenek","Saudara kandung dan seayah","Paman dan sepupu"],"e":"Anak ibu gugur bersama anak, cucu dari anak laki-laki, ayah, dan kakek.","p":12},
-{"q":"Siapa yang mewarisi tanpa saudara perempuan mereka?","c":"Paman, anak laki-laki paman, anak laki-laki saudara, dan 'ashabah tuan pemerdeka","x":["Anak laki-laki","Saudara kandung","Ayah"],"e":"Empat yang mewarisi tanpa saudara perempuan mereka.","p":14}
+"e": "Faraidh jamak dari faridhah, bermakna yang ditentukan; secara syara' nama bagian yang ditentukan bagi yang berhak.",
+"p": 1
+},
+{
+"q": "Berapa ahli waris laki-laki yang disepakati menurut ringkasan matan?",
+"c": "Sepuluh",
+"x": [
+"Lima",
+"Tujuh",
+"Lima belas"
 ],
-"u77":[
-{"q":"Wasiat maksimal berapa dari harta?","c":"Sepertiga","x":["Setengah","Seperempat","Seluruhnya"],"e":"Wasiat itu dari sepertiga harta orang yang berwasiat.","p":2},
-{"q":"Jika wasiat melebihi sepertiga, bagaimana?","c":"Ditangguhkan atas izin ahli waris","x":["Batal","Sah penuh","Sah separuh"],"e":"Kelebihan sepertiga ditangguhkan atas izin ahli waris yang bebas bertasharruf.","p":2},
-{"q":"Bolehkah wasiat untuk ahli waris?","c":"Tidak boleh kecuali ahli waris lain mengizinkan","x":["Boleh","Boleh sepertiga","Boleh seperempat"],"e":"Tidak boleh wasiat untuk ahli waris kecuali ahli waris lainnya mengizinkan.","p":3},
-{"q":"Siapa yang sah berwasiat?","c":"Setiap orang yang baligh dan berakal, atas kemauan sendiri","x":["Anak kecil","Orang gila","Orang yang dipaksa"],"e":"Sah dari setiap orang baligh dan berakal, atas kemauan sendiri dan merdeka.","p":4},
-{"q":"Wasiat untuk membangun gereja tempat beribadah hukumnya?","c":"Tidak sah karena arah maksiat","x":["Sah","Sah jika kafir","Sah dengan sepertiga"],"e":"Wasiat tidak sah untuk arah maksiat seperti membangun gereja.","p":6},
-{"q":"Pelaksana wasiat harus punya berapa sifat?","c":"Lima: Islam, baligh, berakal, merdeka, amanah","x":["Tiga","Dua","Sepuluh"],"e":"Wasiat sah kepada yang terkumpul lima sifat.","p":7}
+"e": "Ahli waris laki-laki yang disepakati sepuluh secara ringkas, lima belas secara rinci.",
+"p": 2
+},
+{
+"q": "Jika semua ahli waris laki-laki berkumpul, siapa yang mewarisi?",
+"c": "Ayah, anak laki-laki, dan suami",
+"x": [
+"Ayah, kakek, dan paman",
+"Anak, saudara, dan paman",
+"Suami, kakek, dan saudara"
+],
+"e": "Jika semua laki-laki berkumpul, yang mewarisi hanya tiga: ayah, anak laki-laki, dan suami.",
+"p": 3
+},
+{
+"q": "Berapa ahli waris perempuan yang disepakati menurut ringkasan matan?",
+"c": "Tujuh",
+"x": [
+"Sepuluh",
+"Lima",
+"Tiga"
+],
+"e": "Ahli waris perempuan yang disepakati tujuh secara ringkas, sepuluh secara rinci.",
+"p": 3
+},
+{
+"q": "Siapa saja lima ahli waris yang tidak pernah gugur?",
+"c": "Suami-istri, kedua orang tua, dan anak kandung",
+"x": [
+"Kakek, nenek, dan saudara kandung dari pihak ayah",
+"Paman, bibi, dan sepupu dari pihak ayah maupun ibu",
+"Cucu, kakek, dan istri dari anak laki-laki"
+],
+"e": "Lima yang tidak gugur dalam keadaan apa pun: suami, istri, ayah, ibu, dan anak kandung.",
+"p": 5
+},
+{
+"q": "Berapa orang yang tidak mewarisi dalam keadaan apa pun?",
+"c": "Tujuh",
+"x": [
+"Lima",
+"Tiga",
+"Sepuluh"
+],
+"e": "Orang yang tidak mewarisi dalam keadaan apa pun ada tujuh.",
+"p": 6
+},
+{
+"q": "Siapa saja yang tidak mewarisi?",
+"c": "Budak, mudabbar, ummul walad, mukatab, pembunuh, murtad, dan pemeluk dua agama",
+"x": [
+"Anak yatim, janda, dan orang yang menjadi miskin",
+"Orang miskin, orang sakit, dan orang yang lanjut usia",
+"Anak angkat, tetangga, dan teman dekat mayat"
+],
+"e": "Budak, mudabbar, ummul walad, mukatab, pembunuh, murtad, dan pemeluk dua agama tidak mewarisi.",
+"p": 7
+},
+{
+"q": "Bolehkah pembunuh mewarisi dari orang yang ia bunuh?",
+"c": "Tidak boleh",
+"x": [
+"Boleh",
+"Boleh bila tidak sengaja",
+"Boleh bila diampuni"
+],
+"e": "Pembunuh tidak mewarisi dari orang yang ia bunuh.",
+"p": 7
+},
+{
+"q": "Apakah orang kafir mewarisi dari orang kafir yang berbeda agama?",
+"c": "Ya, mewarisi walaupun agamanya berbeda",
+"x": [
+"Tidak mewarisi karena perbedaan agama menghalangi waris",
+"Hanya mewarisi jika agamanya sama persis seperti mayat",
+"Hanya mewarisi jika ia termasuk kafir dzimmi"
+],
+"e": "Orang kafir mewarisi dari orang kafir walaupun berbeda agama, seperti Yahudi dan Nasrani.",
+"p": 8
+},
+{
+"q": "Urutan 'ashabah yang paling dekat dimulai dari...",
+"c": "Anak laki-laki",
+"x": [
+"Ayah",
+"Saudara kandung",
+"Paman"
+],
+"e": "Anak laki-laki, kemudian anaknya, kemudian ayah, kemudian ayahnya, kemudian saudara kandung, dan seterusnya.",
+"p": 10
+},
+{
+"q": "Jika tidak ada 'ashabah dari nasab dan mayat bekas budak, siapa yang mewarisinya?",
+"c": "Tuan yang memerdekakan",
+"x": [
+"Baitul mal, yakni kas yang mengurus harta kaum muslimin",
+"Saudara kandung dari pihak ibu yang masih hidup",
+"Tetangga dekat yang mengurus jenazah mayat itu"
+],
+"e": "Tuan yang memerdekakan mewarisi dengan 'ushubah, laki-laki maupun perempuan.",
+"p": 12
+},
+{
+"q": "Jika tidak ada 'ashabah nasab maupun wala', hartanya?",
+"c": "Untuk baitul mal",
+"x": [
+"Dibagi tetangga",
+"Diwakafkan",
+"Dibuang"
+],
+"e": "Jika tidak ada 'ashabah karena nasab maupun wala', hartanya untuk baitul mal.",
+"p": 12
+}
+],
+"u76": [
+{
+"q": "Berapa bagian yang disebutkan dalam Kitab Allah?",
+"c": "Enam",
+"x": [
+"Tiga",
+"Empat",
+"Delapan"
+],
+"e": "Bagian-bagian yang disebutkan dalam Kitab Allah ada enam.",
+"p": 1
+},
+{
+"q": "Enam bagian itu adalah...",
+"c": "Setengah, seperempat, seperdelapan, dua pertiga, sepertiga, seperenam",
+"x": [
+"Setengah, sepertiga, seperlima, seperenam, dan seperdelapan",
+"Seperempat, seperlima, seperenam, seperdelapan, dan sepertiga",
+"Setengah, seperdelapan, seperlima, dua pertiga, dan sepertiga"
+],
+"e": "Enam bagian: 1/2, 1/4, 1/8, 2/3, 1/3, 1/6.",
+"p": 1
+},
+{
+"q": "Siapa yang mendapat setengah?",
+"c": "Anak perempuan, cucu perempuan, saudara perempuan kandung atau seayah (masing-masing sendirian), dan suami",
+"x": [
+"Istri bersama anak laki-laki dari mayat",
+"Ibu bersama anak laki-laki dari mayat",
+"Nenek bersama cucu laki-laki dari mayat"
+],
+"e": "Setengah adalah bagian anak perempuan, cucu perempuan dari anak laki-laki, saudara perempuan kandung, dan seayah (masing-masing sendirian) dan suami tanpa anak.",
+"p": 2
+},
+{
+"q": "Suami mendapat seperempat bila...",
+"c": "Ada anak atau cucu dari anak laki-laki",
+"x": [
+"Tidak ada anak dan tidak ada cucu dari anak laki-laki",
+"Ada ibu yang masih hidup bersama mayat",
+"Ada saudara kandung yang masih hidup bersama mayat"
+],
+"e": "Seperempat bagian suami bersama anak atau cucu; bagian istri bila tidak ada anak.",
+"p": 3
+},
+{
+"q": "Istri mendapat seperdelapan bila...",
+"c": "Ada anak atau cucu dari anak laki-laki",
+"x": [
+"Tidak ada anak dan tidak ada cucu dari anak laki-laki",
+"Ada saudara yang masih hidup bersama mayat",
+"Ada ibu yang masih hidup bersama mayat"
+],
+"e": "Seperdelapan bagian istri bersama anak atau cucu.",
+"p": 4
+},
+{
+"q": "Dua pertiga adalah bagian...",
+"c": "Dua anak perempuan atau lebih, dua cucu perempuan atau lebih, dua saudara perempuan kandung atau lebih, dan seayah",
+"x": [
+"Satu anak perempuan yang sendirian tanpa saudara",
+"Satu cucu laki-laki dari anak laki-laki saja",
+"Istri dari mayat yang tidak memiliki anak"
+],
+"e": "Dua pertiga untuk empat golongan perempuan ini jika dua orang atau lebih.",
+"p": 5
+},
+{
+"q": "Ibu mendapat sepertiga bila...",
+"c": "Tidak terhalang: tidak ada anak, cucu, atau dua saudara",
+"x": [
+"Ada anak dari mayat yang masih hidup",
+"Ada cucu dari anak laki-laki yang masih hidup",
+"Ada dua saudara atau lebih yang masih hidup"
+],
+"e": "Sepertiga untuk ibu bila tidak ada anak, cucu dari anak laki-laki, atau dua saudara.",
+"p": 7
+},
+{
+"q": "Ibu mendapat seperenam bila...",
+"c": "Ada anak, cucu, atau dua saudara atau lebih",
+"x": [
+"Tidak ada anak dari mayat yang masih hidup",
+"Tidak ada cucu dari anak laki-laki yang masih hidup",
+"Tidak ada saudara yang masih hidup bersama mayat"
+],
+"e": "Seperenam untuk ibu bersama anak, cucu, atau dua orang atau lebih dari saudara.",
+"p": 8
+},
+{
+"q": "Cucu perempuan dari anak laki-laki bersama anak perempuan kandung mendapat...",
+"c": "Seperenam untuk menyempurnakan dua pertiga",
+"x": [
+"Setengah karena ia mewarisi seperti anak kandung",
+"Sepertiga karena ia mewarisi bersama anak kandung",
+"Tidak mendapat apa pun karena terhalang anak kandung"
+],
+"e": "Seperenam cucu perempuan bersama anak perempuan kandung untuk menyempurnakan dua pertiga.",
+"p": 9
+},
+{
+"q": "Bila mayat meninggalkan seorang anak perempuan dan ayah, bagian ayah?",
+"c": "Seperenam sebagai bagian tetap dan sisanya sebagai 'ashabah",
+"x": [
+"Sepertiga karena bersama anak perempuan saja",
+"Setengah karena bersama anak perempuan saja",
+"Tidak mendapat apa pun karena terhalang anak perempuan"
+],
+"e": "Anak perempuan mendapat setengah, ayah seperenam dan sisanya sebagai 'ashabah.",
+"p": 10
+},
+{
+"q": "Siapa yang menggugurkan para nenek?",
+"c": "Ibu",
+"x": [
+"Ayah",
+"Anak",
+"Saudara"
+],
+"e": "Para nenek gugur dengan adanya ibu saja, dan para kakek gugur dengan adanya ayah.",
+"p": 11
+},
+{
+"q": "Saudara seibu gugur bersama empat siapa?",
+"c": "Anak, cucu dari anak laki-laki, ayah, dan kakek",
+"x": [
+"Ibu dan nenek dari pihak ibu yang masih hidup",
+"Saudara kandung dan saudara seayah yang masih hidup",
+"Paman dan sepupu dari pihak ayah yang masih hidup"
+],
+"e": "Anak ibu gugur bersama anak, cucu dari anak laki-laki, ayah, dan kakek.",
+"p": 12
+},
+{
+"q": "Siapa yang mewarisi tanpa saudara perempuan mereka?",
+"c": "Paman, anak laki-laki paman, anak laki-laki saudara, dan 'ashabah tuan pemerdeka",
+"x": [
+"Anak laki-laki bersama anak perempuan dari mayat",
+"Saudara kandung bersama saudara perempuan kandungnya",
+"Ayah bersama ibu dari mayat itu"
+],
+"e": "Empat yang mewarisi tanpa saudara perempuan mereka.",
+"p": 14
+}
+],
+"u77": [
+{
+"q": "Wasiat maksimal berapa dari harta?",
+"c": "Sepertiga",
+"x": [
+"Setengah",
+"Seperempat",
+"Seluruhnya"
+],
+"e": "Wasiat itu dari sepertiga harta orang yang berwasiat.",
+"p": 2
+},
+{
+"q": "Jika wasiat melebihi sepertiga, bagaimana?",
+"c": "Ditangguhkan atas izin ahli waris",
+"x": [
+"Batal seluruhnya karena melebihi batas yang diizinkan",
+"Sah penuh tanpa perlu izin ahli waris sama sekali",
+"Sah separuhnya saja, separuh lainnya batal"
+],
+"e": "Kelebihan sepertiga ditangguhkan atas izin ahli waris yang bebas bertasharruf.",
+"p": 2
+},
+{
+"q": "Bolehkah wasiat untuk ahli waris?",
+"c": "Tidak boleh kecuali ahli waris lain mengizinkan",
+"x": [
+"Boleh dan sah tanpa perlu izin ahli waris lain",
+"Boleh sebesar sepertiga harta tanpa izin ahli waris lain",
+"Boleh sebesar seperempat harta tanpa izin ahli waris lain"
+],
+"e": "Tidak boleh wasiat untuk ahli waris kecuali ahli waris lainnya mengizinkan.",
+"p": 3
+},
+{
+"q": "Siapa yang sah berwasiat?",
+"c": "Setiap orang yang baligh dan berakal, atas kemauan sendiri",
+"x": [
+"Anak kecil yang telah mumayyiz dan memahami wasiat",
+"Orang gila yang sedang berada pada masa sadarnya",
+"Orang yang dipaksa berwasiat oleh ahli warisnya"
+],
+"e": "Sah dari setiap orang baligh dan berakal, atas kemauan sendiri dan merdeka.",
+"p": 4
+},
+{
+"q": "Wasiat untuk membangun gereja tempat beribadah hukumnya?",
+"c": "Tidak sah karena arah maksiat",
+"x": [
+"Sah",
+"Sah jika kafir",
+"Sah dengan sepertiga"
+],
+"e": "Wasiat tidak sah untuk arah maksiat seperti membangun gereja.",
+"p": 6
+},
+{
+"q": "Pelaksana wasiat harus punya berapa sifat?",
+"c": "Lima: Islam, baligh, berakal, merdeka, amanah",
+"x": [
+"Tiga: Islam, baligh, dan berakal saja",
+"Dua: Islam dan merdeka saja",
+"Sepuluh: termasuk mampu membaca dan menulis"
+],
+"e": "Wasiat sah kepada yang terkumpul lima sifat.",
+"p": 7
+}
 ]
 }
