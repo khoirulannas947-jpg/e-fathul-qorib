@@ -1,20 +1,160 @@
 {
-"muqaddimah":[
-{"q":"Siapa pengarang matan at-Taqrib (Abu Syuja')?","c":"Ahmad bin al-Husain bin Ahmad al-Ashfahani","x":["Muhammad bin Idris","Yahya bin Syaraf","Ahmad bin Hanbal"],"e":"Abu Syuja' bernama Ahmad bin al-Husain bin Ahmad al-Ashfahani.","p":1},
-{"q":"Mana yang lebih dalam maknanya, ar-Rahman atau ar-Rahim?","c":"Ar-Rahman","x":["Ar-Rahim","Sama","Tidak dijelaskan"],"e":"Ar-Rahman lebih dalam maknanya daripada ar-Rahim.","p":2},
-{"q":"Apa makna al-hamdu?","c":"Sanjungan kepada Allah dengan sifat yang indah dalam rangka mengagungkan","x":["Doa kepada Allah","Syukur dengan harta","Takbir"],"e":"Al-hamdu adalah sanjungan kepada Allah dengan sifat yang indah.","p":3},
-{"q":"Apa itu nabi menurut penjelasan di sini?","c":"Manusia yang diberi wahyu berupa syariat untuk ia amalkan","x":["Malaikat","Jin","Makhluk apa saja"],"e":"Nabi adalah manusia yang diberi wahyu berupa syariat.","p":5},
-{"q":"Siapa keluarga yang dimaksud menurut asy-Syafi'i?","c":"Kerabat beliau yang beriman dari Bani Hasyim dan Bani al-Muththalib","x":["Seluruh Quraisy","Semua umat","Hanya istri-istri beliau"],"e":"Menurut asy-Syafi'i, keluarga adalah kerabat beriman dari Bani Hasyim dan Bani al-Muththalib.","p":7},
-{"q":"Apa itu mukhtashar?","c":"Tulisan yang lafadznya sedikit tetapi maknanya banyak","x":["Tulisan yang panjang","Kitab hadis","Kitab tafsir"],"e":"Mukhtashar adalah tulisan yang lafadznya sedikit tetapi maknanya banyak.","p":10},
-{"q":"Menurut madzhab siapa kitab ini ditulis?","c":"Imam asy-Syafi'i","x":["Imam Malik","Imam Abu Hanifah","Imam Ahmad"],"e":"Kitab ini disusun menurut madzhab Imam asy-Syafi'i.","p":11},
-{"q":"Kapan dan di mana asy-Syafi'i lahir?","c":"Tahun 150 H di Gaza","x":["Tahun 204 H di Makkah","Tahun 100 H di Madinah","Tahun 150 H di Baghdad"],"e":"Beliau lahir di Gaza tahun 150 H dan wafat tahun 204 H.","p":12},
-{"q":"Apa sifat kitab ringkas ini menurut pengarang?","c":"Puncak keringkasan, mudah dipelajari, dan mudah dihafal","x":["Panjang dan mendalam","Sulit dihafal","Khusus ahli"],"e":"Kitab ini digambarkan sangat ringkas, mudah dipelajari, dan mudah dihafal.","p":14},
-{"q":"Apa permintaan sebagian sahabat pengarang kedua kalinya?","c":"Memperbanyak pembagian dan pembatasan hukum","x":["Memperpendek kitab","Menghapus bab","Menulis tafsir"],"e":"Sebagian sahabat meminta agar pembagian-pembagian dan pembatasan diperbanyak.","p":15},
-{"q":"Apa makna al-Lathif?","c":"Yang Mengetahui hal-hal halus dan rumit dari segala urusan","x":["Yang Maha Keras","Yang Maha Kaya","Yang Maha Kuasa"],"e":"Al-Lathif: mengetahui hal-hal yang halus dan rumit.","p":18}
+"muqaddimah": [
+{
+"q": "Siapa pengarang matan at-Taqrib (Abu Syuja')?",
+"c": "Ahmad bin al-Husain bin Ahmad al-Ashfahani",
+"x": [
+"Muhammad bin Idris bin al-'Abbas bin 'Utsman bin Syafi'",
+"Yahya bin Syaraf bin Murri an-Nawawi ad-Dimasyqi",
+"Ahmad bin Muhammad bin Hanbal asy-Syaibani al-Baghdadi"
 ],
-"khutbah":[
-{"q":"Mengapa pensyarah memulai dengan hamdalah?","c":"Untuk mengambil berkah dari Fatihatul Kitab","x":["Karena kebiasaan saja","Karena wajib","Untuk memperpanjang"],"e":"Memulai dengan hamdalah untuk mengambil berkah dari Fatihatul Kitab.","p":1},
-{"q":"Apa tujuan kitab syarah ini disusun?","c":"Agar orang yang membutuhkan dari kalangan pemula mudah memahami matan at-Taqrib","x":["Untuk para ahli saja","Untuk menyaingi kitab lain","Untuk menambah hadis"],"e":"Syarah ini disusun agar pemula mudah memahami matan at-Taqrib.","p":4},
-{"q":"Apa nama lain matan Abu Syuja' selain at-Taqrib?","c":"Ghayatul Ikhtishar","x":["Minhajut Thalibin","Safinatun Naja","Fathul Mu'in"],"e":"Matan ini kadang dinamai at-Taqrib dan kadang Ghayatul Ikhtishar.","p":6}
+"e": "Abu Syuja' bernama Ahmad bin al-Husain bin Ahmad al-Ashfahani.",
+"p": 1
+},
+{
+"q": "Mana yang lebih dalam maknanya, ar-Rahman atau ar-Rahim?",
+"c": "Ar-Rahman",
+"x": [
+"Ar-Rahim",
+"Sama",
+"Tidak dijelaskan"
+],
+"e": "Ar-Rahman lebih dalam maknanya daripada ar-Rahim.",
+"p": 2
+},
+{
+"q": "Apa makna al-hamdu?",
+"c": "Sanjungan kepada Allah dengan sifat yang indah dalam rangka mengagungkan",
+"x": [
+"Doa kepada Allah dengan lafadz yang indah dalam rangka memohon",
+"Syukur kepada Allah dengan harta yang diinfakkan kepada fakir",
+"Takbir kepada Allah dengan lafadz yang diulang pada awal shalat"
+],
+"e": "Al-hamdu adalah sanjungan kepada Allah dengan sifat yang indah.",
+"p": 3
+},
+{
+"q": "Apa itu nabi menurut penjelasan di sini?",
+"c": "Manusia yang diberi wahyu berupa syariat untuk ia amalkan",
+"x": [
+"Malaikat yang diberi wahyu untuk disampaikan kepada manusia",
+"Jin yang diberi wahyu untuk disampaikan kepada kaumnya",
+"Makhluk apa saja yang menerima wahyu dari Allah"
+],
+"e": "Nabi adalah manusia yang diberi wahyu berupa syariat.",
+"p": 5
+},
+{
+"q": "Siapa keluarga yang dimaksud menurut asy-Syafi'i?",
+"c": "Kerabat beliau yang beriman dari Bani Hasyim dan Bani al-Muththalib",
+"x": [
+"Seluruh suku Quraisy yang beriman kepada beliau",
+"Semua umat beliau yang beriman sampai hari kiamat",
+"Hanya istri-istri beliau yang tinggal bersama beliau"
+],
+"e": "Menurut asy-Syafi'i, keluarga adalah kerabat beriman dari Bani Hasyim dan Bani al-Muththalib.",
+"p": 7
+},
+{
+"q": "Apa itu mukhtashar?",
+"c": "Tulisan yang lafadznya sedikit tetapi maknanya banyak",
+"x": [
+"Tulisan yang panjang lafadznya dan banyak pembahasannya",
+"Kitab kumpulan hadis yang disusun secara ringkas",
+"Kitab tafsir yang disusun secara ringkas dan padat"
+],
+"e": "Mukhtashar adalah tulisan yang lafadznya sedikit tetapi maknanya banyak.",
+"p": 10
+},
+{
+"q": "Menurut madzhab siapa kitab ini ditulis?",
+"c": "Imam asy-Syafi'i",
+"x": [
+"Imam Malik",
+"Imam Abu Hanifah",
+"Imam Ahmad"
+],
+"e": "Kitab ini disusun menurut madzhab Imam asy-Syafi'i.",
+"p": 11
+},
+{
+"q": "Kapan dan di mana asy-Syafi'i lahir?",
+"c": "Tahun 150 H di Gaza",
+"x": [
+"Tahun 204 H di Makkah",
+"Tahun 100 H di Madinah",
+"Tahun 150 H di Baghdad"
+],
+"e": "Beliau lahir di Gaza tahun 150 H dan wafat tahun 204 H.",
+"p": 12
+},
+{
+"q": "Apa sifat kitab ringkas ini menurut pengarang?",
+"c": "Puncak keringkasan, mudah dipelajari, dan mudah dihafal",
+"x": [
+"Panjang pembahasannya dan mendalam bagi para ahli",
+"Sulit dihafal bagi para pemula dan pelajar",
+"Khusus untuk para ahli fiqih yang sudah mahir"
+],
+"e": "Kitab ini digambarkan sangat ringkas, mudah dipelajari, dan mudah dihafal.",
+"p": 14
+},
+{
+"q": "Apa permintaan sebagian sahabat pengarang kedua kalinya?",
+"c": "Memperbanyak pembagian dan pembatasan hukum",
+"x": [
+"Memperpendek kitab agar lebih mudah dihafal pemula",
+"Menghapus beberapa bab yang jarang dipakai orang",
+"Menulis tafsir yang menjelaskan ayat-ayat hukum"
+],
+"e": "Sebagian sahabat meminta agar pembagian-pembagian dan pembatasan diperbanyak.",
+"p": 15
+},
+{
+"q": "Apa makna al-Lathif?",
+"c": "Yang Mengetahui hal-hal halus dan rumit dari segala urusan",
+"x": [
+"Yang Maha Keras hukuman-Nya bagi orang yang berbuat zalim",
+"Yang Maha Kaya dan tidak membutuhkan segala sesuatu",
+"Yang Maha Kuasa atas segala sesuatu yang Dia kehendaki"
+],
+"e": "Al-Lathif: mengetahui hal-hal yang halus dan rumit.",
+"p": 18
+}
+],
+"khutbah": [
+{
+"q": "Mengapa pensyarah memulai dengan hamdalah?",
+"c": "Untuk mengambil berkah dari Fatihatul Kitab",
+"x": [
+"Karena sudah menjadi kebiasaan para penulis kitab saja",
+"Karena hamdalah wajib diucapkan pada awal setiap kitab",
+"Untuk memperpanjang pembukaan kitab syarahnya"
+],
+"e": "Memulai dengan hamdalah untuk mengambil berkah dari Fatihatul Kitab.",
+"p": 1
+},
+{
+"q": "Apa tujuan kitab syarah ini disusun?",
+"c": "Agar orang yang membutuhkan dari kalangan pemula mudah memahami matan at-Taqrib",
+"x": [
+"Untuk para ahli fiqih yang sudah mendalam ilmunya",
+"Untuk menyaingi kitab-kitab syarah yang sudah ada",
+"Untuk menambahkan hadis-hadis yang tidak dimuat matan"
+],
+"e": "Syarah ini disusun agar pemula mudah memahami matan at-Taqrib.",
+"p": 4
+},
+{
+"q": "Apa nama lain matan Abu Syuja' selain at-Taqrib?",
+"c": "Ghayatul Ikhtishar",
+"x": [
+"Minhajut Thalibin",
+"Safinatun Naja",
+"Fathul Mu'in"
+],
+"e": "Matan ini kadang dinamai at-Taqrib dan kadang Ghayatul Ikhtishar.",
+"p": 6
+}
 ]
 }

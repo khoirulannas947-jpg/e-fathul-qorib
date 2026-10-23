@@ -1,46 +1,386 @@
 {
-"u120":[
-{"q":"Apa makna qadha' secara syara'?","c":"Memutuskan perkara dan menyelesaikan sengketa dengan hukum syara'","x":["Menghukum tanpa pengadilan","Memberi fatwa saja","Menjadi saksi"],"e":"Qadha' secara bahasa mengokohkan dan melaksanakan; secara syara' memutuskan perkara dengan hukum syara'.","p":1},
-{"q":"Berapa sifat yang harus dipenuhi seorang qadhi?","c":"Lima belas","x":["Lima","Sepuluh","Dua puluh"],"e":"Tidak boleh memegang jabatan qadhi kecuali yang memenuhi lima belas sifat.","p":2},
-{"q":"Apakah sah mengangkat anak kecil atau orang gila sebagai qadhi?","c":"Tidak sah","x":["Sah","Sah jika pintar","Sah dengan izin wali"],"e":"Qadhi disyaratkan baligh dan berakal.","p":4},
-{"q":"Apakah sah mengangkat orang fasik sebagai qadhi?","c":"Tidak sah, qadhi harus adil","x":["Sah","Sah jika kaya","Sah jika berilmu"],"e":"Syarat keenam: adil; tidak ada perwalian bagi orang fasik.","p":5},
-{"q":"Apakah sah mengangkat orang tuli atau buta sebagai qadhi?","c":"Tidak sah","x":["Sah","Sah jika cerdas","Sah jika kaya"],"e":"Qadhi disyaratkan dapat mendengar dan melihat.","p":8},
-{"q":"Di mana qadhi disunnahkan duduk mengadili?","c":"Di tengah negeri, tempat yang luas dan terbuka","x":["Di masjid","Di rumah pribadi","Di pasar"],"e":"Qadhi disunnahkan duduk di tengah negeri di tempat luas dan tampak.","p":11},
-{"q":"Apa hukum mengadili di dalam masjid?","c":"Makruh","x":["Wajib","Sunnah","Haram"],"e":"Qadhi tidak duduk mengadili di masjid; jika melakukannya, makruh.","p":12},
-{"q":"Dalam tiga hal apa qadhi wajib menyamakan dua pihak?","c":"Tempat duduk, ucapan, dan pandangan","x":["Harta, nasab, jabatan","Usia, kekayaan, ilmu","Pakaian, tempat, waktu"],"e":"Menyamakan dalam tempat duduk, ucapan, dan pandangan.","p":13},
-{"q":"Bolehkah qadhi menerima hadiah dari penduduk wilayah kerjanya?","c":"Tidak boleh","x":["Boleh","Boleh jika kecil","Boleh jika dibagi"],"e":"Tidak boleh bagi qadhi menerima hadiah dari penduduk wilayah kerjanya.","p":15},
-{"q":"Dalam keadaan apa makruh bagi qadhi mengadili?","c":"Ketika marah, lapar, haus, sedih, atau menahan kotoran","x":["Ketika tenang","Ketika segar","Ketika senang biasa"],"e":"Qadhi menghindari mengadili dalam sepuluh keadaan yang memburukkan perangainya.","p":16},
-{"q":"Kapan qadhi boleh menyumpah tergugat?","c":"Setelah permintaan penggugat","x":["Atas kemauan sendiri","Sebelum gugatan","Tidak boleh"],"e":"Qadhi tidak menyumpah tergugat kecuali setelah permintaan penggugat.","p":21},
-{"q":"Persaksian siapa yang diterima oleh qadhi?","c":"Orang yang telah tetap keadilannya","x":["Siapa saja","Orang fasik","Orang tak dikenal"],"e":"Qadhi tidak menerima persaksian kecuali dari orang yang telah tetap keadilannya.","p":23},
-{"q":"Apakah persaksian orang tua untuk anaknya diterima?","c":"Tidak diterima","x":["Diterima","Diterima jika adil","Diterima jika disumpah"],"e":"Qadhi tidak menerima persaksian orang tua untuk anaknya dan sebaliknya.","p":26}
+"u120": [
+{
+"q": "Apa makna qadha' secara syara'?",
+"c": "Memutuskan perkara dan menyelesaikan sengketa dengan hukum syara'",
+"x": [
+"Menghukum seseorang tanpa melalui proses pengadilan apa pun",
+"Memberi fatwa saja tanpa menetapkan keputusan yang mengikat",
+"Menjadi saksi atas perkara yang diajukan kepada hakim"
 ],
-"u121":[
-{"q":"Apa makna qismah (pembagian)?","c":"Memisahkan sebagian bagian dari sebagian lain","x":["Menggabungkan harta","Menjual harta","Menyewakan harta"],"e":"Qismah adalah memisahkan sebagian bagian dari sebagian lainnya.","p":1},
-{"q":"Pembagian ada berapa jenis?","c":"Tiga: ifraz, ta'dil, dan radd","x":["Dua","Empat","Lima"],"e":"Pembagian ada tiga jenis: dengan bagian-bagian (ifraz), penyetaraan, dan pengembalian (radd).","p":3},
-{"q":"Bagaimana cara menentukan bagian dalam pembagian sama rata?","c":"Dengan undian kertas","x":["Dengan menunjuk","Dengan lompat","Dengan menjual"],"e":"Cara mengundi dengan kertas yang sama bertuliskan nama sekutu atau bagian.","p":4},
-{"q":"Apa pembagian dengan penyetaraan nilai (ta'dil)?","c":"Jatah berdasarkan nilai, seperti tanah yang berbeda kesuburan","x":["Jatah berdasarkan jumlah saja","Jatah untuk yang kuat","Jatah tanpa undian"],"e":"Ta'dil berdasarkan nilai, seperti tanah yang bagiannya berbeda kesuburan.","p":7},
-{"q":"Apa pembagian dengan radd?","c":"Salah satu pihak mengembalikan kelebihan nilai karena ada sumur atau pohon yang tidak bisa dibagi","x":["Membagi tanpa uang","Menjual semua","Menunda"],"e":"Radd: ada benda yang tidak mungkin dibagi, orang yang mengambilnya mengembalikan nilai.","p":8}
+"e": "Qadha' secara bahasa mengokohkan dan melaksanakan; secara syara' memutuskan perkara dengan hukum syara'.",
+"p": 1
+},
+{
+"q": "Berapa sifat yang harus dipenuhi seorang qadhi?",
+"c": "Lima belas",
+"x": [
+"Lima",
+"Sepuluh",
+"Dua puluh"
 ],
-"u122":[
-{"q":"Siapa penggugat?","c":"Orang yang ucapannya menyalahi yang tampak (zhahir)","x":["Orang yang ucapannya sesuai yang tampak","Hakim","Saksi"],"e":"Penggugat adalah orang yang ucapannya menyalahi zhahir.","p":2},
-{"q":"Siapa tergugat?","c":"Orang yang ucapannya sesuai dengan yang tampak","x":["Orang yang menuntut","Saksi","Qadhi"],"e":"Tergugat adalah yang ucapannya sesuai zhahir.","p":2},
-{"q":"Jika tergugat enggan bersumpah, apa yang terjadi?","c":"Sumpah dikembalikan kepada penggugat","x":["Gugatan ditolak","Tergugat dipenjara","Perkara ditunda"],"e":"Jika tergugat enggan, sumpah dikembalikan kepada penggugat dan ia berhak atas gugatan.","p":3},
-{"q":"Jika dua orang menggugat sesuatu yang ada di tangan salah satunya, ucapan siapa yang dipegang?","c":"Orang yang menguasainya dengan sumpahnya","x":["Orang yang kuat","Orang yang kaya","Orang yang lebih tua"],"e":"Yang dipegang adalah ucapan orang yang menguasainya dengan sumpahnya.","p":4},
-{"q":"Bagaimana bersumpah atas perbuatan diri sendiri?","c":"Dengan pasti dan tegas","x":["Dengan dugaan","Dengan ragu","Dengan ucapan acak"],"e":"Orang yang bersumpah atas perbuatan dirinya bersumpah dengan pasti dan tegas.","p":5}
+"e": "Tidak boleh memegang jabatan qadhi kecuali yang memenuhi lima belas sifat.",
+"p": 2
+},
+{
+"q": "Apakah sah mengangkat anak kecil atau orang gila sebagai qadhi?",
+"c": "Tidak sah",
+"x": [
+"Sah",
+"Sah jika pintar",
+"Sah dengan izin wali"
 ],
-"u123":[
-{"q":"Berapa sifat saksi yang diterima persaksiannya?","c":"Lima","x":["Dua","Tiga","Sepuluh"],"e":"Persaksian tidak diterima kecuali dari orang yang terkumpul padanya lima sifat.","p":1},
-{"q":"Apa arti adil secara syara'?","c":"Watak jiwa yang mencegah dosa besar dan kehinaan yang merusak muru'ah","x":["Hanya kaya","Hanya berilmu","Hanya tua"],"e":"Adil secara syara' adalah watak yang mencegah dari dosa besar dan kehinaan.","p":2},
-{"q":"Apakah persaksian orang yang terus-menerus berbuat dosa kecil diterima?","c":"Tidak diterima","x":["Diterima","Diterima jika sedikit","Diterima jika disumpah"],"e":"Orang adil tidak terus-menerus melakukan dosa kecil.","p":3},
-{"q":"Apakah persaksian ahli bid'ah yang dikafirkan diterima?","c":"Tidak diterima","x":["Diterima","Diterima dengan sumpah","Diterima bila alim"],"e":"Orang adil harus selamat batin/akidahnya.","p":4},
-{"q":"Apakah yang dimaksud dengan muru'ah pada seorang saksi?","c":"Berakhlak dengan akhlak orang-orang semasanya pada zaman dan tempatnya","x":["Berpakaian mewah","Kaya","Berilmu tinggi"],"e":"Muru'ah adalah berakhlak seperti orang sepertinya pada zaman dan tempatnya.","p":7}
+"e": "Qadhi disyaratkan baligh dan berakal.",
+"p": 4
+},
+{
+"q": "Apakah sah mengangkat orang fasik sebagai qadhi?",
+"c": "Tidak sah, qadhi harus adil",
+"x": [
+"Sah karena yang terpenting adalah ilmunya, bukan keadilannya",
+"Sah jika ia kaya dan memiliki pengaruh besar di tengah kaumnya",
+"Sah jika ia berilmu luas walaupun fasik dan tidak adil"
 ],
-"u124":[
-{"q":"Hak-hak ada berapa macam?","c":"Dua: hak Allah dan hak manusia","x":["Satu","Tiga","Empat"],"e":"Hak-hak ada dua: hak Allah dan hak manusia.","p":1},
-{"q":"Hak manusia ada berapa macam?","c":"Tiga","x":["Dua","Empat","Lima"],"e":"Hak-hak manusia ada tiga macam.","p":1},
-{"q":"Apa contoh hak manusia yang bukan harta dan dilihat laki-laki?","c":"Talak dan nikah","x":["Jual beli","Sewa","Hibah"],"e":"Macam ini bukan harta dan biasanya dilihat laki-laki, seperti talak dan nikah.","p":2},
-{"q":"Bolehkah perempuan menjadi saksi dalam hak Allah?","c":"Tidak diterima","x":["Diterima","Diterima bersama laki-laki","Diterima berempat"],"e":"Dalam hak-hak Allah tidak diterima perempuan.","p":6},
-{"q":"Hilal bulan apa yang cukup diterima dengan seorang saksi laki-laki?","c":"Ramadhan","x":["Syawal","Dzulhijjah","Muharram"],"e":"Seorang laki-laki cukup untuk hilal Ramadhan saja.","p":8},
-{"q":"Persaksian orang yang menarik manfaat untuk dirinya, bagaimana?","c":"Tidak diterima","x":["Diterima","Diterima jika adil","Diterima dengan sumpah"],"e":"Tidak diterima persaksian orang yang menarik manfaat untuk dirinya atau menolak mudarat darinya.","p":12}
+"e": "Syarat keenam: adil; tidak ada perwalian bagi orang fasik.",
+"p": 5
+},
+{
+"q": "Apakah sah mengangkat orang tuli atau buta sebagai qadhi?",
+"c": "Tidak sah",
+"x": [
+"Sah",
+"Sah jika cerdas",
+"Sah jika kaya"
+],
+"e": "Qadhi disyaratkan dapat mendengar dan melihat.",
+"p": 8
+},
+{
+"q": "Di mana qadhi disunnahkan duduk mengadili?",
+"c": "Di tengah negeri, tempat yang luas dan terbuka",
+"x": [
+"Di dalam masjid karena merupakan tempat yang paling mulia",
+"Di rumah pribadi qadhi agar tidak terganggu orang banyak",
+"Di pasar agar mudah dijangkau oleh semua pihak yang bersengketa"
+],
+"e": "Qadhi disunnahkan duduk di tengah negeri di tempat luas dan tampak.",
+"p": 11
+},
+{
+"q": "Apa hukum mengadili di dalam masjid?",
+"c": "Makruh",
+"x": [
+"Wajib",
+"Sunnah",
+"Haram"
+],
+"e": "Qadhi tidak duduk mengadili di masjid; jika melakukannya, makruh.",
+"p": 12
+},
+{
+"q": "Dalam tiga hal apa qadhi wajib menyamakan dua pihak?",
+"c": "Tempat duduk, ucapan, dan pandangan",
+"x": [
+"Harta, nasab, dan jabatan kedua pihak yang bersengketa",
+"Usia, kekayaan, dan ilmu kedua pihak yang bersengketa",
+"Pakaian, tempat, dan waktu kedua pihak yang bersengketa"
+],
+"e": "Menyamakan dalam tempat duduk, ucapan, dan pandangan.",
+"p": 13
+},
+{
+"q": "Bolehkah qadhi menerima hadiah dari penduduk wilayah kerjanya?",
+"c": "Tidak boleh",
+"x": [
+"Boleh",
+"Boleh jika kecil",
+"Boleh jika dibagi"
+],
+"e": "Tidak boleh bagi qadhi menerima hadiah dari penduduk wilayah kerjanya.",
+"p": 15
+},
+{
+"q": "Dalam keadaan apa makruh bagi qadhi mengadili?",
+"c": "Ketika marah, lapar, haus, sedih, atau menahan kotoran",
+"x": [
+"Ketika tenang dan pikirannya jernih serta tidak terganggu",
+"Ketika segar badannya setelah beristirahat cukup lama",
+"Ketika senang biasa dan tidak berlebihan dalam bergembira"
+],
+"e": "Qadhi menghindari mengadili dalam sepuluh keadaan yang memburukkan perangainya.",
+"p": 16
+},
+{
+"q": "Kapan qadhi boleh menyumpah tergugat?",
+"c": "Setelah permintaan penggugat",
+"x": [
+"Atas kemauan sendiri",
+"Sebelum gugatan",
+"Tidak boleh"
+],
+"e": "Qadhi tidak menyumpah tergugat kecuali setelah permintaan penggugat.",
+"p": 21
+},
+{
+"q": "Persaksian siapa yang diterima oleh qadhi?",
+"c": "Orang yang telah tetap keadilannya",
+"x": [
+"Siapa saja yang hadir di majelis pengadilan itu",
+"Orang fasik yang mengaku bahwa ia telah bertaubat",
+"Orang yang tidak dikenal oleh qadhi dan para pihak"
+],
+"e": "Qadhi tidak menerima persaksian kecuali dari orang yang telah tetap keadilannya.",
+"p": 23
+},
+{
+"q": "Apakah persaksian orang tua untuk anaknya diterima?",
+"c": "Tidak diterima",
+"x": [
+"Diterima",
+"Diterima jika adil",
+"Diterima jika disumpah"
+],
+"e": "Qadhi tidak menerima persaksian orang tua untuk anaknya dan sebaliknya.",
+"p": 26
+}
+],
+"u121": [
+{
+"q": "Apa makna qismah (pembagian)?",
+"c": "Memisahkan sebagian bagian dari sebagian lain",
+"x": [
+"Menggabungkan harta beberapa orang menjadi satu kepemilikan",
+"Menjual harta bersama kepada pihak ketiga dengan harga tertentu",
+"Menyewakan harta bersama kepada pihak ketiga untuk waktu tertentu"
+],
+"e": "Qismah adalah memisahkan sebagian bagian dari sebagian lainnya.",
+"p": 1
+},
+{
+"q": "Pembagian ada berapa jenis?",
+"c": "Tiga: ifraz, ta'dil, dan radd",
+"x": [
+"Dua jenis: ifraz dan ta'dil saja",
+"Empat jenis: ifraz, ta'dil, radd, dan qur'ah",
+"Lima jenis: ditambah pembagian dengan jual beli dan sewa"
+],
+"e": "Pembagian ada tiga jenis: dengan bagian-bagian (ifraz), penyetaraan, dan pengembalian (radd).",
+"p": 3
+},
+{
+"q": "Bagaimana cara menentukan bagian dalam pembagian sama rata?",
+"c": "Dengan undian kertas",
+"x": [
+"Dengan menunjuk",
+"Dengan lompat",
+"Dengan menjual"
+],
+"e": "Cara mengundi dengan kertas yang sama bertuliskan nama sekutu atau bagian.",
+"p": 4
+},
+{
+"q": "Apa pembagian dengan penyetaraan nilai (ta'dil)?",
+"c": "Jatah berdasarkan nilai, seperti tanah yang berbeda kesuburan",
+"x": [
+"Jatah berdasarkan jumlah dan ukuran saja tanpa memandang nilai",
+"Jatah untuk yang kuat dan mampu mengelola tanah itu",
+"Jatah tanpa undian yang ditentukan oleh orang yang berserikat"
+],
+"e": "Ta'dil berdasarkan nilai, seperti tanah yang bagiannya berbeda kesuburan.",
+"p": 7
+},
+{
+"q": "Apa pembagian dengan radd?",
+"c": "Salah satu pihak mengembalikan kelebihan nilai karena ada sumur atau pohon yang tidak bisa dibagi",
+"x": [
+"Membagi harta bersama tanpa adanya pengembalian uang",
+"Menjual seluruh harta bersama lalu membagi hasil penjualannya",
+"Menunda pembagian sampai seluruh sekutu setuju"
+],
+"e": "Radd: ada benda yang tidak mungkin dibagi, orang yang mengambilnya mengembalikan nilai.",
+"p": 8
+}
+],
+"u122": [
+{
+"q": "Siapa penggugat?",
+"c": "Orang yang ucapannya menyalahi yang tampak (zhahir)",
+"x": [
+"Orang yang ucapannya sesuai yang tampak",
+"Hakim",
+"Saksi"
+],
+"e": "Penggugat adalah orang yang ucapannya menyalahi zhahir.",
+"p": 2
+},
+{
+"q": "Siapa tergugat?",
+"c": "Orang yang ucapannya sesuai dengan yang tampak",
+"x": [
+"Orang yang menuntut hak dengan ucapan yang menyalahi zhahir",
+"Saksi yang menyaksikan perkara yang diajukan kepada qadhi",
+"Qadhi yang memutuskan perkara yang diajukan kepadanya"
+],
+"e": "Tergugat adalah yang ucapannya sesuai zhahir.",
+"p": 2
+},
+{
+"q": "Jika tergugat enggan bersumpah, apa yang terjadi?",
+"c": "Sumpah dikembalikan kepada penggugat",
+"x": [
+"Gugatan ditolak seketika tanpa ada kesempatan bagi penggugat",
+"Tergugat dipenjara sampai ia mau bersumpah di hadapan qadhi",
+"Perkara ditunda sampai tergugat bersedia untuk bersumpah"
+],
+"e": "Jika tergugat enggan, sumpah dikembalikan kepada penggugat dan ia berhak atas gugatan.",
+"p": 3
+},
+{
+"q": "Jika dua orang menggugat sesuatu yang ada di tangan salah satunya, ucapan siapa yang dipegang?",
+"c": "Orang yang menguasainya dengan sumpahnya",
+"x": [
+"Orang yang kuat dan berpengaruh di antara keduanya",
+"Orang yang kaya dan memiliki harta lebih banyak",
+"Orang yang lebih tua usianya di antara keduanya"
+],
+"e": "Yang dipegang adalah ucapan orang yang menguasainya dengan sumpahnya.",
+"p": 4
+},
+{
+"q": "Bagaimana bersumpah atas perbuatan diri sendiri?",
+"c": "Dengan pasti dan tegas",
+"x": [
+"Dengan dugaan",
+"Dengan ragu",
+"Dengan ucapan acak"
+],
+"e": "Orang yang bersumpah atas perbuatan dirinya bersumpah dengan pasti dan tegas.",
+"p": 5
+}
+],
+"u123": [
+{
+"q": "Berapa sifat saksi yang diterima persaksiannya?",
+"c": "Lima",
+"x": [
+"Dua",
+"Tiga",
+"Sepuluh"
+],
+"e": "Persaksian tidak diterima kecuali dari orang yang terkumpul padanya lima sifat.",
+"p": 1
+},
+{
+"q": "Apa arti adil secara syara'?",
+"c": "Watak jiwa yang mencegah dosa besar dan kehinaan yang merusak muru'ah",
+"x": [
+"Hanya kaya sehingga tidak mudah tergoda mengambil harta orang",
+"Hanya berilmu sehingga dapat membedakan benar dan salah",
+"Hanya tua usianya sehingga banyak pengalaman hidupnya"
+],
+"e": "Adil secara syara' adalah watak yang mencegah dari dosa besar dan kehinaan.",
+"p": 2
+},
+{
+"q": "Apakah persaksian orang yang terus-menerus berbuat dosa kecil diterima?",
+"c": "Tidak diterima",
+"x": [
+"Diterima",
+"Diterima jika sedikit",
+"Diterima jika disumpah"
+],
+"e": "Orang adil tidak terus-menerus melakukan dosa kecil.",
+"p": 3
+},
+{
+"q": "Apakah persaksian ahli bid'ah yang dikafirkan diterima?",
+"c": "Tidak diterima",
+"x": [
+"Diterima",
+"Diterima dengan sumpah",
+"Diterima bila alim"
+],
+"e": "Orang adil harus selamat batin/akidahnya.",
+"p": 4
+},
+{
+"q": "Apakah yang dimaksud dengan muru'ah pada seorang saksi?",
+"c": "Berakhlak dengan akhlak orang-orang semasanya pada zaman dan tempatnya",
+"x": [
+"Berpakaian mewah sehingga dihormati oleh orang-orang sekitarnya",
+"Kaya raya sehingga tidak mungkin berbuat curang",
+"Berilmu tinggi sehingga dipercaya oleh seluruh masyarakat"
+],
+"e": "Muru'ah adalah berakhlak seperti orang sepertinya pada zaman dan tempatnya.",
+"p": 7
+}
+],
+"u124": [
+{
+"q": "Hak-hak ada berapa macam?",
+"c": "Dua: hak Allah dan hak manusia",
+"x": [
+"Satu macam saja, yaitu hak manusia atas sesamanya",
+"Tiga macam: hak Allah, hak manusia, dan hak negara",
+"Empat macam: menurut jenis perkara yang diajukan"
+],
+"e": "Hak-hak ada dua: hak Allah dan hak manusia.",
+"p": 1
+},
+{
+"q": "Hak manusia ada berapa macam?",
+"c": "Tiga",
+"x": [
+"Dua",
+"Empat",
+"Lima"
+],
+"e": "Hak-hak manusia ada tiga macam.",
+"p": 1
+},
+{
+"q": "Apa contoh hak manusia yang bukan harta dan dilihat laki-laki?",
+"c": "Talak dan nikah",
+"x": [
+"Jual beli",
+"Sewa",
+"Hibah"
+],
+"e": "Macam ini bukan harta dan biasanya dilihat laki-laki, seperti talak dan nikah.",
+"p": 2
+},
+{
+"q": "Bolehkah perempuan menjadi saksi dalam hak Allah?",
+"c": "Tidak diterima",
+"x": [
+"Diterima",
+"Diterima bersama laki-laki",
+"Diterima berempat"
+],
+"e": "Dalam hak-hak Allah tidak diterima perempuan.",
+"p": 6
+},
+{
+"q": "Hilal bulan apa yang cukup diterima dengan seorang saksi laki-laki?",
+"c": "Ramadhan",
+"x": [
+"Syawal",
+"Dzulhijjah",
+"Muharram"
+],
+"e": "Seorang laki-laki cukup untuk hilal Ramadhan saja.",
+"p": 8
+},
+{
+"q": "Persaksian orang yang menarik manfaat untuk dirinya, bagaimana?",
+"c": "Tidak diterima",
+"x": [
+"Diterima",
+"Diterima jika adil",
+"Diterima dengan sumpah"
+],
+"e": "Tidak diterima persaksian orang yang menarik manfaat untuk dirinya atau menolak mudarat darinya.",
+"p": 12
+}
 ]
 }
