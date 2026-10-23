@@ -1,0 +1,36 @@
+{
+"u125":[
+{"q":"Apa arti 'itq secara syara'?","c":"Menghilangkan kepemilikan atas manusia hingga ia merdeka","x":["Menjual budak","Menyewakan budak","Menghibahkan budak"],"e":"'Itq secara syara' adalah menghilangkan kepemilikan atas manusia, menjadikannya merdeka.","p":1},
+{"q":"Dari siapa pemerdekaan sah?","c":"Pemilik yang boleh bertasharruf dalam miliknya","x":["Anak kecil","Orang gila","Semua orang"],"e":"Sah memerdekakan dari setiap pemilik yang boleh bertasharruf dalam miliknya.","p":2},
+{"q":"Apa lafadz sharih pemerdekaan?","c":"I'taq dan tahrir beserta bentukannya","x":["Pergilah","Lepaskan jalanmu","Engkau bebas dari aku"],"e":"Lafadz sharihnya adalah al-i'taq dan at-tahrir serta bentukan keduanya.","p":3},
+{"q":"Jika memerdekakan sebagian budak, apa akibatnya?","c":"Seluruhnya merdeka","x":["Hanya sebagian merdeka","Tidak ada pengaruh","Menunggu hakim"],"e":"Jika memerdekakan sebagian, merdekalah atasnya seluruhnya.","p":4},
+{"q":"Bagaimana jika sekutu memerdekakan bagiannya dan ia mampu membayar sisanya?","c":"Kemerdekaan menjalar ke seluruh budak","x":["Hanya bagiannya yang merdeka","Tidak merdeka","Menunggu setahun"],"e":"Jika mampu membayar bagian sekutunya, kemerdekaan menjalar.","p":5},
+{"q":"Orang yang memiliki salah satu orang tua atau anaknya, bagaimana?","c":"Mereka merdeka atasnya","x":["Boleh menjualnya","Boleh dijadikan pembantu","Tidak merdeka"],"e":"Orang yang memiliki orang tua atau anaknya, merdekalah atasnya.","p":7}
+],
+"u126":[
+{"q":"Apa makna wala' secara syara'?","c":"'Ushubah yang sebabnya hilangnya kepemilikan dari budak yang dimerdekakan","x":["Hak menjual budak","Hak mempekerjakan budak","Hak menghibahkan"],"e":"Wala' secara syara' adalah 'ushubah yang sebabnya hilangnya kepemilikan dari budak yang dimerdekakan.","p":1},
+{"q":"Wala' berpindah kepada siapa setelah orang yang memerdekakan meninggal?","c":"Laki-laki 'ashabah yang menjadi 'ashabah dengan dirinya sendiri","x":["Anak perempuannya","Saudara perempuan","Semua keluarganya"],"e":"Wala' berpindah kepada 'ashabah laki-laki, bukan anak perempuan atau saudari.","p":2},
+{"q":"Apakah wala' boleh dijual atau dihibahkan?","c":"Tidak boleh","x":["Boleh","Boleh dengan izin","Boleh dengan harta"],"e":"Tidak sah menjual atau menghibahkan wala'.","p":3}
+],
+"u127":[
+{"q":"Apa makna tadbir secara syara'?","c":"Pemerdekaan setelah berakhirnya hidup tuan","x":["Pemerdekaan saat ini","Penjualan budak","Penyewaan budak"],"e":"Tadbir secara syara' adalah pemerdekaan setelah wafatnya tuan.","p":1},
+{"q":"Apa contoh lafadz sharih tadbir?","c":"Aku merdekakan engkau setelah matiku","x":["Pergilah","Aku sewakan engkau","Engkau tertalak"],"e":"Termasuk lafadz sharih tadbir: 'Aku merdekakan engkau setelah matiku'.","p":2},
+{"q":"Menurut pendapat azhar, tadbir adalah apa?","c":"Menggantungkan pemerdekaan dengan suatu sifat","x":["Wasiat murni","Jual beli","Hibah"],"e":"Menurut azhar, tadbir menggantungkan pemerdekaan dengan sifat.","p":3},
+{"q":"Jika mudabbar dibunuh, siapa yang mendapat nilainya?","c":"Tuannya","x":["Mudabbar","Keluarga mudabbar","Baitul mal"],"e":"Nilainya untuk tuan dan tadbir tetap pada keadaannya.","p":4}
+],
+"u128":[
+{"q":"Apa itu kitabah?","c":"Akad pemerdekaan budak dengan pembayaran cicilan harta","x":["Penulisan kitab","Penjualan budak","Penyewaan budak"],"e":"Kitabah adalah akad pemerdekaan budak dengan harta yang dicicil.","p":1},
+{"q":"Kapan kitabah disunnahkan?","c":"Jika budak memintanya, terpercaya, dan mampu berusaha","x":["Jika tuan miskin","Jika budak malas","Selalu wajib"],"e":"Kitabah disunnahkan jika budak memintanya, amanah, dan mampu berusaha.","p":2},
+{"q":"Dengan harta apa kitabah sah?","c":"Harta yang diketahui dan ditangguhkan dicicil","x":["Harta tidak diketahui","Harta tunai saja","Tanpa harta"],"e":"Kitabah tidak sah kecuali dengan harta yang diketahui dan ditangguhkan.","p":3},
+{"q":"Bagi tuan, kitabah itu...","c":"Mengikat","x":["Tidak mengikat","Bisa dibatalkan kapan saja","Sunnah dibatalkan"],"e":"Dari pihak tuan kitabah mengikat.","p":4},
+{"q":"Bagi mukatab, kitabah itu...","c":"Tidak mengikat, ia boleh membatalkannya kapan saja","x":["Mengikat","Tidak boleh dibatalkan","Menunggu tuan"],"e":"Dari pihak mukatab tidak mengikat.","p":5},
+{"q":"Apa kewajiban tuan setelah kitabah sah?","c":"Mengurangi atau memberi sebagian harta kitabah","x":["Menjualnya","Menagih lebih","Tidak ada kewajiban"],"e":"Tuan wajib mengurangi dari harta kitabah sesuatu yang membantu melunasi.","p":7}
+],
+"u129":[
+{"q":"Siapa ummul walad?","c":"Budak perempuan yang melahirkan anak tuannya","x":["Istri merdeka","Ibu tuan","Budak yang dijual"],"e":"Ummul walad adalah budak perempuan yang melahirkan anak tuannya.","p":1},
+{"q":"Apa yang boleh dilakukan tuan terhadap ummul walad?","c":"Mempekerjakan, menggauli, menyewakan, dan meminjamkan","x":["Menjual","Menghibahkan","Menggadaikan"],"e":"Tuan boleh mempekerjakan, menggauli, menyewakan, dan meminjamkannya, tetapi tidak menjual.","p":3},
+{"q":"Kapan ummul walad merdeka?","c":"Setelah tuannya meninggal, dari pokok hartanya","x":["Seketika melahirkan","Setelah setahun","Tidak pernah merdeka"],"e":"Ketika tuan meninggal, ia merdeka dari pokok harta tuan.","p":4},
+{"q":"Anak dari budak orang lain dengan syubhat, bagaimana?","c":"Anak itu merdeka","x":["Menjadi budak","Menjadi milik tuan ibu","Ikut ayah"],"e":"Dengan syubhat, anak itu merdeka dan ayahnya wajib membayar nilainya.","p":6},
+{"q":"Mengapa pengarang menutup kitabnya dengan bab 'itq?","c":"Berharap Allah membebaskannya dari neraka","x":["Karena bab terakhir","Karena paling mudah","Karena paling pendek"],"e":"Penutup dengan bab 'itq karena berharap Allah membebaskannya dari neraka.","p":8}
+]
+}
