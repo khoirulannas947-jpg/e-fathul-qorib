@@ -1,90 +1,890 @@
 {
-"u11":[
-{"q":"Mengusap khuf boleh dilakukan pada thaharah yang mana?","c":"Pada wudhu saja, tidak pada mandi wajib maupun mandi sunnah","x":["Pada wudhu dan mandi wajib","Pada mandi wajib dan menghilangkan najis","Pada wudhu, mandi, dan menghilangkan najis"],"e":"Mengusap khuf boleh dalam wudhu, tidak dalam mandi wajib atau sunnah, dan tidak dalam menghilangkan najis.","p":1},
-{"q":"Mana yang lebih utama, membasuh kaki atau mengusap khuf?","c":"Membasuh kaki lebih utama","x":["Mengusap khuf lebih utama","Keduanya sama utama","Mengusap khuf wajib bagi musafir"],"e":"Kata 'boleh' mengisyaratkan membasuh kaki lebih utama daripada mengusap.","p":2},
-{"q":"Syarat pertama mengusap khuf adalah...","c":"Mulai memakai kedua khuf setelah sempurna bersuci","x":["Memakai khuf sebelum berwudhu","Memakai khuf satu per satu setelah membasuh kaki masing-masing","Memakai khuf setelah makan"],"e":"Syarat pertama: mulai memakai keduanya setelah sempurna bersuci. Memakai satu per satu setelah membasuh masing-masing kaki tidak mencukupi.","p":3},
-{"q":"Jika membasuh satu kaki lalu langsung memakai khufnya, kemudian kaki lain demikian, apa hukumnya?","c":"Tidak mencukupi untuk mengusap khuf","x":["Mencukupi","Mencukupi bila dilakukan dengan cepat","Mencukupi hanya bagi musafir"],"e":"Itu tidak mencukupi, karena memakai khuf harus setelah sempurna bersuci kedua kaki.","p":3},
-{"q":"Syarat kedua: khuf menutupi apa?","c":"Tempat yang wajib dibasuh dari kaki beserta mata kaki","x":["Betis hingga lutut","Hanya telapak kaki","Hanya jari-jari kaki"],"e":"Khuf harus menutupi tempat yang wajib dibasuh beserta mata kaki; sandal tidak cukup.","p":4},
-{"q":"Makna 'menutupi' pada syarat khuf adalah...","c":"Menjadi penghalang air, bukan menghalangi pandangan","x":["Menghalangi pandangan mata","Terbuat dari kulit kambing","Berwarna hitam"],"e":"Menutupi di sini maksudnya menjadi penghalang air, bukan menghalangi pandangan.","p":5},
-{"q":"Syarat ketiga khuf adalah...","c":"Dapat dipakai berjalan terus-menerus dan suci","x":["Tidak dapat dipakai berjalan","Bagian atasnya terbuka","Terbuat dari bahan yang najis"],"e":"Syarat ketiga: termasuk yang dapat dipakai berjalan terus-menerus, kuat mencegah tembusnya air, dan suci.","p":6},
-{"q":"Bagaimana masa mengusap khuf bagi orang mukim?","c":"Sehari semalam","x":["Tiga hari tiga malam","Dua hari dua malam","Seminggu"],"e":"Mukim mengusap selama sehari semalam; musafir tiga hari beserta malamnya.","p":9},
-{"q":"Bagaimana masa mengusap khuf bagi musafir?","c":"Tiga hari beserta malam-malamnya","x":["Sehari semalam","Dua hari dua malam","Satu minggu"],"e":"Musafir mengusap selama tiga hari beserta malam-malamnya.","p":9},
-{"q":"Sejak kapan masa mengusap khuf dihitung?","c":"Sejak selesainya hadats yang terjadi setelah memakai khuf","x":["Sejak mulai memakai khuf","Sejak pertama kali mengusap","Sejak awal terjadinya hadats"],"e":"Masa dihitung sejak ia berhadats, yakni selesainya hadats yang terjadi setelah sempurna memakai kedua khuf.","p":10},
-{"q":"Bagaimana masa mengusap bagi musafir yang bermaksiat dengan safarnya?","c":"Seperti orang mukim","x":["Tiga hari tiga malam","Dua hari dua malam","Tidak boleh mengusap sama sekali"],"e":"Orang yang bermaksiat dengan safarnya mengusap seperti orang mukim.","p":11},
-{"q":"Jika mengusap saat mukim lalu bepergian sebelum sehari semalam berlalu, masa apa yang dipakai?","c":"Menyempurnakan masa orang mukim","x":["Memakai masa musafir","Menghitung ulang dari awal","Tidak boleh mengusap lagi"],"e":"Ia menyempurnakan masa usapan orang mukim.","p":12},
-{"q":"Bagian khuf mana yang wajib diusap?","c":"Bagian luar (atas) khuf","x":["Bagian dalam khuf","Tumit khuf","Bagian bawah khuf"],"e":"Wajib mengusap bagian luar khuf; tidak cukup bagian dalam, tumit, sisi, atau bawahnya.","p":13},
-{"q":"Apa sunnah dalam cara mengusap khuf?","c":"Usapan bergaris-garis dengan jari yang direnggangkan","x":["Mengusap dengan telapak rapat","Mengusap seluruh khuf","Mengusap dengan kain basah saja"],"e":"Sunnahnya usapan bergaris-garis, jari-jari direnggangkan dan tidak dirapatkan.","p":13},
-{"q":"Manakah yang membatalkan usapan khuf?","c":"Melepas khuf, habisnya masa, dan hal yang mewajibkan mandi","x":["Tidur, makan, dan minum","Berbicara, tertawa, dan menangis","Hanya habisnya masa saja"],"e":"Batal karena melepas khuf, habisnya masa, dan perkara yang mewajibkan mandi.","p":14}
+"u11": [
+{
+"q": "Mengusap khuf boleh dilakukan pada thaharah yang mana?",
+"c": "Pada wudhu saja, tidak pada mandi wajib maupun mandi sunnah",
+"x": [
+"Pada wudhu dan mandi wajib",
+"Pada mandi wajib dan menghilangkan najis",
+"Pada wudhu, mandi, dan menghilangkan najis"
 ],
-"u12":[
-{"q":"Apa arti tayammum secara bahasa?","c":"Menyengaja","x":["Membersihkan","Mengusap","Berwudhu"],"e":"Tayammum secara bahasa berarti menyengaja; secara syara' menyampaikan debu ke wajah dan tangan sebagai ganti wudhu atau mandi.","p":1},
-{"q":"Berapa syarat tayammum?","c":"Lima","x":["Tiga","Empat","Enam"],"e":"Syarat tayammum ada lima.","p":2},
-{"q":"Syarat pertama tayammum adalah...","c":"Adanya uzur karena safar atau sakit","x":["Telah masuk waktu zuhur","Adanya debu yang basah","Tidak adanya wudhu"],"e":"Syarat pertama: adanya uzur karena safar atau sakit.","p":2},
-{"q":"Bolehkah bertayammum untuk shalat sebelum masuk waktunya?","c":"Tidak sah","x":["Sah","Sah bila sedang bepergian","Sah asal berniat"],"e":"Syarat kedua: masuknya waktu shalat; tayammum sebelum masuk waktu tidak sah.","p":2},
-{"q":"Syarat ketiga tayammum adalah...","c":"Mencari air setelah masuk waktu","x":["Mencari debu","Mencari mushaf","Mencari masjid"],"e":"Syarat ketiga: mencari air setelah masuk waktu.","p":3},
-{"q":"Jika sendirian di tanah datar, bagaimana mencari air?","c":"Melihat ke empat arah sekelilingnya","x":["Berjalan satu hari penuh","Bertanya kepada orang lain saja","Menggali tanah"],"e":"Jika sendirian dan tanah datar, ia melihat ke empat arah; bila naik-turun, berkeliling sejauh jangkauan pandangan.","p":3},
-{"q":"Termasuk uzur 'sulit memakai air' adalah...","c":"Khawatir hilang nyawa atau fungsi anggota badan","x":["Malas mengambil air","Air terlalu dingin tanpa mudarat","Air terlalu banyak"],"e":"Sulit memakai air termasuk khawatir hilangnya nyawa atau fungsi anggota, atau ada ancaman binatang buas, musuh, atau pencuri bila menuju air.","p":4},
-{"q":"Syarat kelima tayammum adalah...","c":"Debu yang suci, yakni menyucikan dan tidak basah","x":["Debu yang najis","Pasir yang banyak air","Kapur gamping"],"e":"Syarat kelima: debu yang suci, yaitu menyucikan dan tidak basah.","p":5},
-{"q":"Manakah yang dikecualikan dari 'debu' dalam tayammum?","c":"Kapur gamping dan serbuk tembikar","x":["Tanah di tepi jalan","Debu di kuburan yang belum digali","Debu hasil ghashab"],"e":"Dikecualikan selain debu seperti kapur gamping dan serbuk tembikar; debu najis dan musta'mal juga tidak sah.","p":7},
-{"q":"Bolehkah tayammum dengan debu yang sudah dipakai tayammum (musta'mal)?","c":"Tidak sah","x":["Sah","Sah bila masih kering","Sah bila dicampur debu baru"],"e":"Debu musta'mal tidak sah dipakai tayammum.","p":7},
-{"q":"Berapa fardhu tayammum?","c":"Empat: niat, mengusap wajah, mengusap kedua tangan sampai siku, dan tertib","x":["Tiga: niat, wajah, dan tangan","Enam: niat, wajah, tangan, kepala, kaki, tertib","Lima: niat, wajah, tangan, tertib, muwalat"],"e":"Fardhu tayammum ada empat: niat, mengusap wajah, mengusap kedua tangan beserta siku, dan tertib.","p":8},
-{"q":"Orang yang bertayammum dengan niat fardhu saja boleh mengerjakan apa?","c":"Fardhu dan sunnah, serta shalat jenazah","x":["Fardhu saja","Sunnah saja","Tidak boleh shalat apa pun"],"e":"Jika berniat fardhu saja, ia boleh mengerjakan sunnah dan shalat jenazah bersamanya.","p":8},
-{"q":"Jika berniat tayammum sunnah saja, bolehkah mengerjakan fardhu?","c":"Tidak boleh","x":["Boleh","Boleh bagi musafir","Boleh bagi orang sakit"],"e":"Jika berniat sunnah saja atau 'shalat' saja, tidak boleh mengerjakan fardhu.","p":8},
-{"q":"Kapan niat tayammum wajib disertakan?","c":"Ketika memindahkan debu ke wajah dan tangan, dan dilanggengkan sampai mengusap sebagian wajah","x":["Setelah selesai mengusap tangan","Sebelum mencari air","Pada saat menyentuh tanah pertama kali tanpa niat"],"e":"Niat disertakan saat memindahkan debu dan dilanggengkan sampai mengusap sebagian wajah.","p":9},
-{"q":"Mengusap wajah dan tangan dilakukan dengan berapa pukulan debu?","c":"Dua kali pukulan","x":["Satu kali","Tiga kali","Empat kali"],"e":"Mengusap wajah dan tangan dengan dua kali pukulan debu.","p":10},
-{"q":"Bagaimana tertib dalam tayammum?","c":"Mendahulukan usapan wajah atas usapan tangan","x":["Mendahulukan tangan atas wajah","Tidak ada tertib","Mendahulukan kaki atas wajah"],"e":"Wajib mendahulukan usapan wajah atas tangan, baik tayammum hadats kecil maupun besar.","p":11},
-{"q":"Berapa sunnah tayammum menurut matan?","c":"Tiga: basmalah, mendahulukan kanan, dan muwalat","x":["Dua: basmalah dan muwalat","Lima: basmalah, siwak, kanan, muwalat, tertib","Tiga: niat, tertib, dan muwalat"],"e":"Sunnah tayammum tiga: basmalah, mendahulukan tangan kanan, dan muwalat.","p":12},
-{"q":"Berapa perkara yang membatalkan tayammum?","c":"Tiga","x":["Dua","Lima","Enam"],"e":"Pembatal tayammum tiga: pembatal wudhu, melihat air di luar shalat, dan murtad.","p":14},
-{"q":"Pembatal tayammum yang kedua adalah...","c":"Melihat air di luar shalat","x":["Menyentuh debu","Mengucapkan basmalah","Tidur sebentar"],"e":"Kedua: melihat air di luar shalat bagi yang bertayammum karena tidak ada air.","p":15},
-{"q":"Jika orang mukim melihat air setelah masuk shalat yang tayammumnya tidak menggugurkan kewajiban, apa akibatnya?","c":"Shalatnya batal seketika","x":["Shalatnya tetap sah","Shalatnya sah tetapi sunnah mengulang","Shalatnya sah bila hampir selesai"],"e":"Pada shalat yang kewajibannya tidak gugur dengan tayammum (seperti orang mukim), shalat batal seketika.","p":16},
-{"q":"Jika tayammum karena sakit, lalu melihat air, bagaimana?","c":"Melihat air tidak berpengaruh, tayammum tetap","x":["Tayammum batal","Wajib wudhu","Tayammum batal bila air banyak"],"e":"Pada tayammum karena sakit dan sejenisnya, melihat air tidak berpengaruh.","p":17},
-{"q":"Apa itu jaba'ir (jabirah)?","c":"Potongan kayu atau bambu yang diikatkan pada tulang patah agar menyambung","x":["Debu halus untuk tayammum","Sejenis khuf dari kulit","Alat untuk menyamak kulit"],"e":"Jabirah (jamak jaba'ir) adalah potongan kayu atau bambu yang dirapikan dan diikat pada tempat patah tulang.","p":19},
-{"q":"Pemilik jabirah wajib mengulang shalat bila...","c":"Memasang perban tidak dalam keadaan suci atau di anggota tayammum","x":["Memasang perban dalam keadaan suci","Perban berada di betis","Selalu wajib mengulang"],"e":"Tidak wajib mengulang jika memasang perban dalam keadaan suci dan bukan pada anggota tayammum; jika tidak demikian wajib mengulang.","p":20},
-{"q":"Satu tayammum boleh dipakai untuk berapa shalat fardhu?","c":"Satu shalat fardhu, ditambah sunnah sebanyak yang dikehendaki","x":["Dua shalat fardhu","Semua shalat fardhu dalam sehari","Tiga shalat fardhu"],"e":"Ia bertayammum untuk setiap shalat fardhu; satu tayammum boleh untuk sunnah sebanyak yang dikehendaki.","p":23}
+"e": "Mengusap khuf boleh dalam wudhu, tidak dalam mandi wajib atau sunnah, dan tidak dalam menghilangkan najis.",
+"p": 1
+},
+{
+"q": "Mana yang lebih utama, membasuh kaki atau mengusap khuf?",
+"c": "Membasuh kaki lebih utama",
+"x": [
+"Mengusap khuf lebih utama",
+"Keduanya sama utama",
+"Mengusap khuf wajib bagi musafir"
 ],
-"u13":[
-{"q":"Apa makna najis secara bahasa?","c":"Sesuatu yang dianggap kotor","x":["Benda yang haram dimakan","Sesuatu yang berbau menyengat","Benda cair yang keluar dari tubuh"],"e":"Najis secara bahasa adalah sesuatu yang dianggap kotor.","p":1},
-{"q":"Najis secara syara' didefinisikan sebagai...","c":"Setiap benda yang haram dikonsumsi secara mutlak saat bebas memilih, bukan karena mulia, jijik, atau berbahaya","x":["Setiap benda yang berbau busuk","Setiap benda yang kotor menurut pandangan","Setiap benda yang berwarna hitam"],"e":"Najis: benda yang haram dikonsumsi secara mutlak dalam keadaan bebas memilih dan mudah dibedakan, bukan karena mulia, jijik, atau berbahaya.","p":2},
-{"q":"Mengapa mayat manusia tidak termasuk najis dalam definisi?","c":"Karena haram dimakan akibat kemuliaannya","x":["Karena menjijikkan","Karena berbahaya","Karena sedikit"],"e":"Dengan 'bukan karena kemuliaannya' dikecualikan mayat manusia.","p":3},
-{"q":"Apa kaidah najis yang keluar dari dua jalan?","c":"Setiap benda cair yang keluar dari qubul dan dubur adalah najis","x":["Hanya kencing dan tinja yang najis","Semuanya suci","Hanya darah yang najis"],"e":"Setiap benda cair yang keluar dari dua jalan najis, yang biasa maupun jarang.","p":4},
-{"q":"Apa yang dikecualikan dari najis yang keluar dari dua jalan?","c":"Mani dari manusia atau hewan selain anjing dan babi","x":["Darah","Nanah","Kencing"],"e":"Dikecualikan mani dari manusia atau hewan selain anjing, babi, dan keturunannya.","p":5},
-{"q":"Apakah kencing hewan yang dagingnya dimakan wajib dibasuh?","c":"Ya, wajib dibasuh","x":["Tidak, karena suci","Cukup diusap","Cukup dipercik"],"e":"Wajib membasuh semua air kencing dan kotoran walaupun dari hewan yang dagingnya dimakan.","p":6},
-{"q":"Cara menghilangkan najis 'ainiyyah adalah...","c":"Menghilangkan zatnya dan sifat-sifatnya: rasa, warna, bau","x":["Cukup mengalirkan air sekali","Menggosok dengan debu","Menjemur di bawah sinar matahari"],"e":"Najis 'ainiyyah dibasuh dengan menghilangkan zat dan sifat-sifatnya.","p":7},
-{"q":"Jika rasa najis masih tersisa setelah dibasuh, bagaimana?","c":"Belum suci","x":["Sudah suci","Suci bila hilang baunya","Suci bila hilang warnanya"],"e":"Jika rasa najis masih tersisa, belum suci; warna atau bau yang sulit dihilangkan tidak berpengaruh.","p":7},
-{"q":"Najis hukmiyyah dibersihkan dengan cara...","c":"Mengalirkan air pada tempatnya, walau sekali","x":["Menggosok tiga kali","Menjemur sehari","Dibasuh tujuh kali"],"e":"Najis hukmiyyah cukup dengan mengalirkan air pada tempat yang terkena najis walau sekali.","p":8},
-{"q":"Kencing siapa yang cukup dipercik air?","c":"Anak laki-laki yang belum makan makanan","x":["Anak perempuan yang belum makan makanan","Anak laki-laki yang sudah makan","Khuntsa kecil"],"e":"Kencing anak laki-laki yang belum makan makanan cukup dipercik; anak perempuan dan khuntsa wajib dibasuh.","p":9},
-{"q":"Bagaimana kencing anak perempuan atau khuntsa?","c":"Wajib dibasuh","x":["Cukup dipercik","Suci","Cukup diusap"],"e":"Dengan kata 'anak laki-laki' dikecualikan anak perempuan dan khuntsa; kencing keduanya wajib dibasuh.","p":10},
-{"q":"Saat membasuh dengan air sedikit, mana yang benar?","c":"Air harus didatangkan kepada benda yang terkena najis","x":["Benda dimasukkan ke dalam air sedikit","Keduanya sama","Benda dijemur lebih dulu"],"e":"Disyaratkan air yang didatangkan kepadanya jika airnya sedikit; bila dibalik, tidak suci.","p":11},
-{"q":"Najis apa yang dimaafkan sedikitnya?","c":"Darah dan nanah yang sedikit","x":["Kencing yang sedikit","Tinja yang sedikit","Bangkai yang sedikit"],"e":"Tidak dimaafkan najis apa pun kecuali darah dan nanah yang sedikit.","p":12},
-{"q":"Apa hukum hewan tak berdarah mengalir yang jatuh dan mati di dalam bejana?","c":"Tidak menajiskan","x":["Menajiskan","Menajiskan bila banyak air","Menajiskan bila sengaja diambil"],"e":"Hewan tak berdarah mengalir seperti lalat dan semut yang jatuh lalu mati di bejana tidak menajiskan.","p":13},
-{"q":"Jika hewan tak berdarah itu sengaja dilemparkan ke cairan, bagaimana?","c":"Menajiskan","x":["Tidak menajiskan","Makruh","Hanya mengubah rasa"],"e":"Jika sengaja dilemparkan ke dalam cairan, menajiskan (menurut ar-Rafi'i).","p":14},
-{"q":"Semua hewan hukumnya suci kecuali...","c":"Anjing, babi, dan yang lahir dari keduanya atau salah satunya","x":["Kucing dan tikus","Ular dan kadal","Keledai dan kuda"],"e":"Semua hewan suci kecuali anjing, babi, dan keturunan dari keduanya atau salah satunya.","p":16},
-{"q":"Bangkai apa yang suci?","c":"Ikan, belalang, dan manusia","x":["Sapi, kambing, dan ayam","Tikus, kucing, dan burung","Ikan, ayam, dan kambing"],"e":"Semua bangkai najis kecuali ikan, belalang, dan manusia.","p":17},
-{"q":"Bejana yang dijilat anjing dibasuh berapa kali?","c":"Tujuh kali, salah satunya dengan debu","x":["Tiga kali dengan debu","Satu kali dengan sabun","Tujuh kali tanpa debu"],"e":"Dibasuh tujuh kali dengan air yang menyucikan, salah satunya disertai debu.","p":18},
-{"q":"Najis selain anjing dan babi dibasuh berapa kali sebagai kewajiban?","c":"Satu kali yang meratainya (tiga kali lebih utama)","x":["Tiga kali wajib","Tujuh kali wajib","Dua kali wajib"],"e":"Dibasuh satu kali yang meratainya; tiga kali lebih utama.","p":20},
-{"q":"Khamr menjadi suci bila berubah menjadi cuka dengan cara apa?","c":"Dengan sendirinya","x":["Dengan ditambah garam","Dengan ditambah ragi","Dengan dipanaskan di api"],"e":"Jika khamr berubah menjadi cuka dengan sendirinya, menjadi suci; bila karena dimasukkan sesuatu, tidak suci.","p":23},
-{"q":"Jika khamr berubah menjadi cuka karena dimasukkan sesuatu ke dalamnya, bagaimana?","c":"Tidak suci","x":["Suci","Suci bila sedikit","Suci bila dipindah wadah"],"e":"Jika berubah karena dimasukkan sesuatu, ia tidak suci.","p":24}
+"e": "Kata 'boleh' mengisyaratkan membasuh kaki lebih utama daripada mengusap.",
+"p": 2
+},
+{
+"q": "Syarat pertama mengusap khuf adalah...",
+"c": "Mulai memakai kedua khuf setelah sempurna bersuci",
+"x": [
+"Memakai khuf sebelum berwudhu",
+"Memakai khuf satu per satu setelah membasuh kaki masing-masing",
+"Memakai khuf setelah makan"
 ],
-"u14":[
-{"q":"Tiga macam darah yang keluar dari farji adalah...","c":"Haid, nifas, dan istihadhah","x":["Haid, luka, dan nifas","Nifas, istihadhah, dan darah mimpi","Haid, darah kulit, dan istihadhah"],"e":"Dari farji keluar tiga macam darah: haid, nifas, dan istihadhah.","p":1},
-{"q":"Apa haid itu?","c":"Darah yang keluar pada usia haid dari farji wanita dalam keadaan sehat, bukan karena melahirkan","x":["Darah karena penyakit","Darah setelah melahirkan","Darah yang keluar karena luka"],"e":"Haid adalah darah yang keluar pada usia haid dari farji wanita yang sehat, bukan karena melahirkan.","p":2},
-{"q":"Nifas adalah...","c":"Darah yang keluar setelah melahirkan","x":["Darah yang keluar bersama anak","Darah sebelum melahirkan","Darah penyakit"],"e":"Nifas adalah darah setelah melahirkan; yang keluar bersama anak atau sebelumnya bukan nifas.","p":4},
-{"q":"Istihadhah adalah...","c":"Darah di luar hari-hari haid dan nifas, tidak dalam keadaan sehat","x":["Darah haid yang deras","Darah nifas yang panjang","Darah yang keluar karena sehat"],"e":"Istihadhah adalah darah yang keluar di luar hari haid dan nifas, tidak dalam keadaan sehat.","p":5},
-{"q":"Berapa masa haid paling sedikit?","c":"Sehari semalam","x":["Tiga hari","Sepuluh hari","Seperempat hari"],"e":"Haid paling sedikit sehari semalam (24 jam bersambung).","p":6},
-{"q":"Berapa masa haid paling lama?","c":"Lima belas hari beserta malamnya","x":["Sepuluh hari","Tujuh hari","Dua puluh hari"],"e":"Haid paling lama lima belas hari; lebihnya istihadhah.","p":6},
-{"q":"Berapa masa haid yang umum?","c":"Enam atau tujuh hari","x":["Sepuluh hari","Tiga hari","Lima belas hari"],"e":"Haid umumnya enam atau tujuh hari.","p":6},
-{"q":"Berapa lama nifas paling lama dan umumnya?","c":"Enam puluh hari paling lama, umumnya empat puluh hari","x":["Empat puluh hari paling lama, umumnya dua puluh hari","Seratus hari paling lama, umumnya enam puluh hari","Lima belas hari paling lama, umumnya tujuh hari"],"e":"Nifas paling sedikit sekejap, paling lama enam puluh hari, umumnya empat puluh hari.","p":7},
-{"q":"Berapa masa suci paling sedikit antara dua haid?","c":"Lima belas hari","x":["Sepuluh hari","Tujuh hari","Satu hari"],"e":"Masa suci paling sedikit yang memisahkan antara dua haid adalah lima belas hari.","p":8},
-{"q":"Apakah ada batas masa suci paling lama?","c":"Tidak ada batas","x":["Tiga bulan","Satu tahun","Empat puluh hari"],"e":"Tidak ada batas bagi masa suci yang paling lama.","p":9},
-{"q":"Pada usia berapa seorang wanita paling muda bisa haid?","c":"Sembilan tahun hijriah","x":["Tujuh tahun","Dua belas tahun","Lima belas tahun"],"e":"Usia paling muda haid adalah sembilan tahun hijriah.","p":10},
-{"q":"Berapa masa hamil paling singkat dan paling lama?","c":"Enam bulan lebih sedikit dan empat tahun","x":["Tiga bulan dan satu tahun","Sembilan bulan dan dua tahun","Enam bulan dan sembilan bulan"],"e":"Masa hamil paling singkat enam bulan ditambah dua saat, paling lama empat tahun, umumnya sembilan bulan.","p":11},
-{"q":"Ada berapa perkara yang haram bagi wanita haid dan nifas?","c":"Delapan","x":["Lima","Tiga","Sepuluh"],"e":"Delapan: shalat, puasa, baca Al-Qur'an, menyentuh mushaf, masuk masjid, thawaf, bersetubuh, bersenang-senang antara pusar dan lutut.","p":12},
-{"q":"Yang mana yang haram bagi wanita haid?","c":"Shalat dan puasa","x":["Berzikir","Makan","Mandi"],"e":"Haid mengharamkan shalat (fardhu/sunnah) dan puasa (fardhu/sunnah).","p":12},
-{"q":"Apa yang disunnahkan bagi yang bersetubuh saat haid di awal darah?","c":"Bersedekah satu dinar","x":["Bersedekah setengah dinar","Mengulang mandi","Berpuasa tiga hari"],"e":"Di awal keluarnya darah disunnahkan satu dinar, di akhir setengah dinar.","p":14},
-{"q":"Ada berapa perkara haram atas orang junub?","c":"Lima","x":["Tiga","Delapan","Dua"],"e":"Orang junub: shalat, baca Al-Qur'an, menyentuh/membawa mushaf, thawaf, berdiam di masjid.","p":16},
-{"q":"Bagaimana hukum orang junub melewati masjid tanpa berdiam?","c":"Tidak haram, bahkan tidak makruh menurut pendapat paling sahih","x":["Haram","Makruh","Wajib mandi dahulu"],"e":"Melewati masjid tanpa berdiam tidak haram.","p":19},
-{"q":"Ada berapa perkara haram atas orang berhadats kecil?","c":"Tiga: shalat, thawaf, menyentuh dan membawa mushaf","x":["Dua: shalat dan puasa","Lima","Satu: shalat saja"],"e":"Orang berhadats kecil haram melakukan shalat, thawaf, serta menyentuh dan membawa mushaf.","p":20},
-{"q":"Manakah yang halal bagi orang berhadats kecil?","c":"Membawa dinar atau cincin yang terukir ayat Al-Qur'an","x":["Menyentuh mushaf langsung","Shalat","Thawaf"],"e":"Halal membawa mushaf di antara barang lain, tafsir yang tulisannya lebih banyak, dan dinar, dirham, atau cincin berukir ayat.","p":21},
-{"q":"Bagaimana anak mumayyiz berhadats menyentuh mushaf untuk belajar?","c":"Tidak dilarang","x":["Dilarang","Makruh","Haram bagi anak laki-laki"],"e":"Anak mumayyiz yang berhadats tidak dilarang menyentuh mushaf dan papan tulis untuk belajar Al-Qur'an.","p":21}
+"e": "Syarat pertama: mulai memakai keduanya setelah sempurna bersuci. Memakai satu per satu setelah membasuh masing-masing kaki tidak mencukupi.",
+"p": 3
+},
+{
+"q": "Jika membasuh satu kaki lalu langsung memakai khufnya, kemudian kaki lain demikian, apa hukumnya?",
+"c": "Tidak mencukupi untuk mengusap khuf",
+"x": [
+"Mencukupi",
+"Mencukupi bila dilakukan dengan cepat",
+"Mencukupi hanya bagi musafir"
+],
+"e": "Itu tidak mencukupi, karena memakai khuf harus setelah sempurna bersuci kedua kaki.",
+"p": 3
+},
+{
+"q": "Syarat kedua: khuf menutupi apa?",
+"c": "Tempat yang wajib dibasuh dari kaki beserta mata kaki",
+"x": [
+"Betis hingga lutut",
+"Hanya telapak kaki",
+"Hanya jari-jari kaki"
+],
+"e": "Khuf harus menutupi tempat yang wajib dibasuh beserta mata kaki; sandal tidak cukup.",
+"p": 4
+},
+{
+"q": "Makna 'menutupi' pada syarat khuf adalah...",
+"c": "Menjadi penghalang air, bukan menghalangi pandangan",
+"x": [
+"Menghalangi pandangan mata",
+"Terbuat dari kulit kambing",
+"Berwarna hitam"
+],
+"e": "Menutupi di sini maksudnya menjadi penghalang air, bukan menghalangi pandangan.",
+"p": 5
+},
+{
+"q": "Syarat ketiga khuf adalah...",
+"c": "Dapat dipakai berjalan terus-menerus dan suci",
+"x": [
+"Tidak dapat dipakai berjalan",
+"Bagian atasnya terbuka",
+"Terbuat dari bahan yang najis"
+],
+"e": "Syarat ketiga: termasuk yang dapat dipakai berjalan terus-menerus, kuat mencegah tembusnya air, dan suci.",
+"p": 6
+},
+{
+"q": "Bagaimana masa mengusap khuf bagi orang mukim?",
+"c": "Sehari semalam",
+"x": [
+"Tiga hari tiga malam",
+"Dua hari dua malam",
+"Seminggu"
+],
+"e": "Mukim mengusap selama sehari semalam; musafir tiga hari beserta malamnya.",
+"p": 9
+},
+{
+"q": "Bagaimana masa mengusap khuf bagi musafir?",
+"c": "Tiga hari beserta malam-malamnya",
+"x": [
+"Sehari semalam",
+"Dua hari dua malam",
+"Satu minggu"
+],
+"e": "Musafir mengusap selama tiga hari beserta malam-malamnya.",
+"p": 9
+},
+{
+"q": "Sejak kapan masa mengusap khuf dihitung?",
+"c": "Sejak selesainya hadats yang terjadi setelah memakai khuf",
+"x": [
+"Sejak mulai memakai khuf",
+"Sejak pertama kali mengusap",
+"Sejak awal terjadinya hadats"
+],
+"e": "Masa dihitung sejak ia berhadats, yakni selesainya hadats yang terjadi setelah sempurna memakai kedua khuf.",
+"p": 10
+},
+{
+"q": "Bagaimana masa mengusap bagi musafir yang bermaksiat dengan safarnya?",
+"c": "Seperti orang mukim",
+"x": [
+"Tiga hari tiga malam",
+"Dua hari dua malam",
+"Tidak boleh mengusap sama sekali"
+],
+"e": "Orang yang bermaksiat dengan safarnya mengusap seperti orang mukim.",
+"p": 11
+},
+{
+"q": "Jika mengusap saat mukim lalu bepergian sebelum sehari semalam berlalu, masa apa yang dipakai?",
+"c": "Menyempurnakan masa orang mukim",
+"x": [
+"Memakai masa musafir",
+"Menghitung ulang dari awal",
+"Tidak boleh mengusap lagi"
+],
+"e": "Ia menyempurnakan masa usapan orang mukim.",
+"p": 12
+},
+{
+"q": "Bagian khuf mana yang wajib diusap?",
+"c": "Bagian luar (atas) khuf",
+"x": [
+"Bagian dalam khuf",
+"Tumit khuf",
+"Bagian bawah khuf"
+],
+"e": "Wajib mengusap bagian luar khuf; tidak cukup bagian dalam, tumit, sisi, atau bawahnya.",
+"p": 13
+},
+{
+"q": "Apa sunnah dalam cara mengusap khuf?",
+"c": "Usapan bergaris-garis dengan jari yang direnggangkan",
+"x": [
+"Mengusap dengan telapak rapat",
+"Mengusap seluruh khuf",
+"Mengusap dengan kain basah saja"
+],
+"e": "Sunnahnya usapan bergaris-garis, jari-jari direnggangkan dan tidak dirapatkan.",
+"p": 13
+},
+{
+"q": "Manakah yang membatalkan usapan khuf?",
+"c": "Melepas khuf, habisnya masa, dan hal yang mewajibkan mandi",
+"x": [
+"Tidur, makan, dan minum",
+"Berbicara, tertawa, dan menangis",
+"Hanya habisnya masa saja"
+],
+"e": "Batal karena melepas khuf, habisnya masa, dan perkara yang mewajibkan mandi.",
+"p": 14
+}
+],
+"u12": [
+{
+"q": "Apa arti tayammum secara bahasa?",
+"c": "Menyengaja",
+"x": [
+"Membersihkan",
+"Mengusap",
+"Berwudhu"
+],
+"e": "Tayammum secara bahasa berarti menyengaja; secara syara' menyampaikan debu ke wajah dan tangan sebagai ganti wudhu atau mandi.",
+"p": 1
+},
+{
+"q": "Berapa syarat tayammum?",
+"c": "Lima",
+"x": [
+"Tiga",
+"Empat",
+"Enam"
+],
+"e": "Syarat tayammum ada lima.",
+"p": 2
+},
+{
+"q": "Syarat pertama tayammum adalah...",
+"c": "Adanya uzur karena safar atau sakit",
+"x": [
+"Telah masuk waktu zuhur",
+"Adanya debu yang basah",
+"Tidak adanya wudhu"
+],
+"e": "Syarat pertama: adanya uzur karena safar atau sakit.",
+"p": 2
+},
+{
+"q": "Bolehkah bertayammum untuk shalat sebelum masuk waktunya?",
+"c": "Tidak sah",
+"x": [
+"Sah",
+"Sah bila sedang bepergian",
+"Sah asal berniat"
+],
+"e": "Syarat kedua: masuknya waktu shalat; tayammum sebelum masuk waktu tidak sah.",
+"p": 2
+},
+{
+"q": "Syarat ketiga tayammum adalah...",
+"c": "Mencari air setelah masuk waktu",
+"x": [
+"Mencari debu",
+"Mencari mushaf",
+"Mencari masjid"
+],
+"e": "Syarat ketiga: mencari air setelah masuk waktu.",
+"p": 3
+},
+{
+"q": "Jika sendirian di tanah datar, bagaimana mencari air?",
+"c": "Melihat ke empat arah sekelilingnya",
+"x": [
+"Berjalan satu hari penuh",
+"Bertanya kepada orang lain saja",
+"Menggali tanah"
+],
+"e": "Jika sendirian dan tanah datar, ia melihat ke empat arah; bila naik-turun, berkeliling sejauh jangkauan pandangan.",
+"p": 3
+},
+{
+"q": "Termasuk uzur 'sulit memakai air' adalah...",
+"c": "Khawatir hilang nyawa atau fungsi anggota badan",
+"x": [
+"Malas mengambil air",
+"Air terlalu dingin tanpa mudarat",
+"Air terlalu banyak"
+],
+"e": "Sulit memakai air termasuk khawatir hilangnya nyawa atau fungsi anggota, atau ada ancaman binatang buas, musuh, atau pencuri bila menuju air.",
+"p": 4
+},
+{
+"q": "Syarat kelima tayammum adalah...",
+"c": "Debu yang suci, yakni menyucikan dan tidak basah",
+"x": [
+"Debu yang najis",
+"Pasir yang banyak air",
+"Kapur gamping"
+],
+"e": "Syarat kelima: debu yang suci, yaitu menyucikan dan tidak basah.",
+"p": 5
+},
+{
+"q": "Manakah yang dikecualikan dari 'debu' dalam tayammum?",
+"c": "Kapur gamping dan serbuk tembikar",
+"x": [
+"Tanah di tepi jalan",
+"Debu di kuburan yang belum digali",
+"Debu hasil ghashab"
+],
+"e": "Dikecualikan selain debu seperti kapur gamping dan serbuk tembikar; debu najis dan musta'mal juga tidak sah.",
+"p": 7
+},
+{
+"q": "Bolehkah tayammum dengan debu yang sudah dipakai tayammum (musta'mal)?",
+"c": "Tidak sah",
+"x": [
+"Sah",
+"Sah bila masih kering",
+"Sah bila dicampur debu baru"
+],
+"e": "Debu musta'mal tidak sah dipakai tayammum.",
+"p": 7
+},
+{
+"q": "Berapa fardhu tayammum?",
+"c": "Empat: niat, mengusap wajah, mengusap kedua tangan sampai siku, dan tertib",
+"x": [
+"Tiga: niat, wajah, dan tangan",
+"Enam: niat, wajah, tangan, kepala, kaki, tertib",
+"Lima: niat, wajah, tangan, tertib, muwalat"
+],
+"e": "Fardhu tayammum ada empat: niat, mengusap wajah, mengusap kedua tangan beserta siku, dan tertib.",
+"p": 8
+},
+{
+"q": "Orang yang bertayammum dengan niat fardhu saja boleh mengerjakan apa?",
+"c": "Fardhu dan sunnah, serta shalat jenazah",
+"x": [
+"Fardhu saja",
+"Sunnah saja",
+"Tidak boleh shalat apa pun"
+],
+"e": "Jika berniat fardhu saja, ia boleh mengerjakan sunnah dan shalat jenazah bersamanya.",
+"p": 8
+},
+{
+"q": "Jika berniat tayammum sunnah saja, bolehkah mengerjakan fardhu?",
+"c": "Tidak boleh",
+"x": [
+"Boleh",
+"Boleh bagi musafir",
+"Boleh bagi orang sakit"
+],
+"e": "Jika berniat sunnah saja atau 'shalat' saja, tidak boleh mengerjakan fardhu.",
+"p": 8
+},
+{
+"q": "Kapan niat tayammum wajib disertakan?",
+"c": "Ketika memindahkan debu ke wajah dan tangan, dan dilanggengkan sampai mengusap sebagian wajah",
+"x": [
+"Setelah selesai mengusap tangan",
+"Sebelum mencari air",
+"Pada saat menyentuh tanah pertama kali tanpa niat"
+],
+"e": "Niat disertakan saat memindahkan debu dan dilanggengkan sampai mengusap sebagian wajah.",
+"p": 9
+},
+{
+"q": "Mengusap wajah dan tangan dilakukan dengan berapa pukulan debu?",
+"c": "Dua kali pukulan",
+"x": [
+"Satu kali",
+"Tiga kali",
+"Empat kali"
+],
+"e": "Mengusap wajah dan tangan dengan dua kali pukulan debu.",
+"p": 10
+},
+{
+"q": "Bagaimana tertib dalam tayammum?",
+"c": "Mendahulukan usapan wajah atas usapan tangan",
+"x": [
+"Mendahulukan tangan atas wajah",
+"Tidak ada tertib",
+"Mendahulukan kaki atas wajah"
+],
+"e": "Wajib mendahulukan usapan wajah atas tangan, baik tayammum hadats kecil maupun besar.",
+"p": 11
+},
+{
+"q": "Berapa sunnah tayammum menurut matan?",
+"c": "Tiga: basmalah, mendahulukan kanan, dan muwalat",
+"x": [
+"Dua: basmalah dan muwalat",
+"Lima: basmalah, siwak, kanan, muwalat, tertib",
+"Tiga: niat, tertib, dan muwalat"
+],
+"e": "Sunnah tayammum tiga: basmalah, mendahulukan tangan kanan, dan muwalat.",
+"p": 12
+},
+{
+"q": "Berapa perkara yang membatalkan tayammum?",
+"c": "Tiga",
+"x": [
+"Dua",
+"Lima",
+"Enam"
+],
+"e": "Pembatal tayammum tiga: pembatal wudhu, melihat air di luar shalat, dan murtad.",
+"p": 14
+},
+{
+"q": "Pembatal tayammum yang kedua adalah...",
+"c": "Melihat air di luar shalat",
+"x": [
+"Menyentuh debu",
+"Mengucapkan basmalah",
+"Tidur sebentar"
+],
+"e": "Kedua: melihat air di luar shalat bagi yang bertayammum karena tidak ada air.",
+"p": 15
+},
+{
+"q": "Jika orang mukim melihat air setelah masuk shalat yang tayammumnya tidak menggugurkan kewajiban, apa akibatnya?",
+"c": "Shalatnya batal seketika",
+"x": [
+"Shalatnya tetap sah",
+"Shalatnya sah tetapi sunnah mengulang",
+"Shalatnya sah bila hampir selesai"
+],
+"e": "Pada shalat yang kewajibannya tidak gugur dengan tayammum (seperti orang mukim), shalat batal seketika.",
+"p": 16
+},
+{
+"q": "Jika tayammum karena sakit, lalu melihat air, bagaimana?",
+"c": "Melihat air tidak berpengaruh, tayammum tetap",
+"x": [
+"Tayammum batal",
+"Wajib wudhu",
+"Tayammum batal bila air banyak"
+],
+"e": "Pada tayammum karena sakit dan sejenisnya, melihat air tidak berpengaruh.",
+"p": 17
+},
+{
+"q": "Apa itu jaba'ir (jabirah)?",
+"c": "Potongan kayu atau bambu yang diikatkan pada tulang patah agar menyambung",
+"x": [
+"Debu halus untuk tayammum",
+"Sejenis khuf dari kulit",
+"Alat untuk menyamak kulit"
+],
+"e": "Jabirah (jamak jaba'ir) adalah potongan kayu atau bambu yang dirapikan dan diikat pada tempat patah tulang.",
+"p": 19
+},
+{
+"q": "Pemilik jabirah wajib mengulang shalat bila...",
+"c": "Memasang perban tidak dalam keadaan suci atau di anggota tayammum",
+"x": [
+"Memasang perban dalam keadaan suci",
+"Perban berada di betis",
+"Selalu wajib mengulang"
+],
+"e": "Tidak wajib mengulang jika memasang perban dalam keadaan suci dan bukan pada anggota tayammum; jika tidak demikian wajib mengulang.",
+"p": 20
+},
+{
+"q": "Satu tayammum boleh dipakai untuk berapa shalat fardhu?",
+"c": "Satu shalat fardhu, ditambah sunnah sebanyak yang dikehendaki",
+"x": [
+"Dua shalat fardhu",
+"Semua shalat fardhu dalam sehari",
+"Tiga shalat fardhu"
+],
+"e": "Ia bertayammum untuk setiap shalat fardhu; satu tayammum boleh untuk sunnah sebanyak yang dikehendaki.",
+"p": 23
+}
+],
+"u13": [
+{
+"q": "Apa makna najis secara bahasa?",
+"c": "Sesuatu yang dianggap kotor",
+"x": [
+"Benda yang haram dimakan",
+"Sesuatu yang berbau menyengat",
+"Benda cair yang keluar dari tubuh"
+],
+"e": "Najis secara bahasa adalah sesuatu yang dianggap kotor.",
+"p": 1
+},
+{
+"q": "Najis secara syara' didefinisikan sebagai...",
+"c": "Setiap benda yang haram dikonsumsi secara mutlak saat bebas memilih, bukan karena mulia, jijik, atau berbahaya",
+"x": [
+"Setiap benda yang berbau busuk",
+"Setiap benda yang kotor menurut pandangan",
+"Setiap benda yang berwarna hitam"
+],
+"e": "Najis: benda yang haram dikonsumsi secara mutlak dalam keadaan bebas memilih dan mudah dibedakan, bukan karena mulia, jijik, atau berbahaya.",
+"p": 2
+},
+{
+"q": "Mengapa mayat manusia tidak termasuk najis dalam definisi?",
+"c": "Karena haram dimakan akibat kemuliaannya",
+"x": [
+"Karena menjijikkan",
+"Karena berbahaya",
+"Karena sedikit"
+],
+"e": "Dengan 'bukan karena kemuliaannya' dikecualikan mayat manusia.",
+"p": 3
+},
+{
+"q": "Apa kaidah najis yang keluar dari dua jalan?",
+"c": "Setiap benda cair yang keluar dari qubul dan dubur adalah najis",
+"x": [
+"Hanya kencing dan tinja yang najis",
+"Semuanya suci",
+"Hanya darah yang najis"
+],
+"e": "Setiap benda cair yang keluar dari dua jalan najis, yang biasa maupun jarang.",
+"p": 4
+},
+{
+"q": "Apa yang dikecualikan dari najis yang keluar dari dua jalan?",
+"c": "Mani dari manusia atau hewan selain anjing dan babi",
+"x": [
+"Darah",
+"Nanah",
+"Kencing"
+],
+"e": "Dikecualikan mani dari manusia atau hewan selain anjing, babi, dan keturunannya.",
+"p": 5
+},
+{
+"q": "Apakah kencing hewan yang dagingnya dimakan wajib dibasuh?",
+"c": "Ya, wajib dibasuh",
+"x": [
+"Tidak, karena suci",
+"Cukup diusap",
+"Cukup dipercik"
+],
+"e": "Wajib membasuh semua air kencing dan kotoran walaupun dari hewan yang dagingnya dimakan.",
+"p": 6
+},
+{
+"q": "Cara menghilangkan najis 'ainiyyah adalah...",
+"c": "Menghilangkan zatnya dan sifat-sifatnya: rasa, warna, bau",
+"x": [
+"Cukup mengalirkan air sekali",
+"Menggosok dengan debu",
+"Menjemur di bawah sinar matahari"
+],
+"e": "Najis 'ainiyyah dibasuh dengan menghilangkan zat dan sifat-sifatnya.",
+"p": 7
+},
+{
+"q": "Jika rasa najis masih tersisa setelah dibasuh, bagaimana?",
+"c": "Belum suci",
+"x": [
+"Sudah suci",
+"Suci bila hilang baunya",
+"Suci bila hilang warnanya"
+],
+"e": "Jika rasa najis masih tersisa, belum suci; warna atau bau yang sulit dihilangkan tidak berpengaruh.",
+"p": 7
+},
+{
+"q": "Najis hukmiyyah dibersihkan dengan cara...",
+"c": "Mengalirkan air pada tempatnya, walau sekali",
+"x": [
+"Menggosok tiga kali",
+"Menjemur sehari",
+"Dibasuh tujuh kali"
+],
+"e": "Najis hukmiyyah cukup dengan mengalirkan air pada tempat yang terkena najis walau sekali.",
+"p": 8
+},
+{
+"q": "Kencing siapa yang cukup dipercik air?",
+"c": "Anak laki-laki yang belum makan makanan",
+"x": [
+"Anak perempuan yang belum makan makanan",
+"Anak laki-laki yang sudah makan",
+"Khuntsa kecil"
+],
+"e": "Kencing anak laki-laki yang belum makan makanan cukup dipercik; anak perempuan dan khuntsa wajib dibasuh.",
+"p": 9
+},
+{
+"q": "Bagaimana kencing anak perempuan atau khuntsa?",
+"c": "Wajib dibasuh",
+"x": [
+"Cukup dipercik",
+"Suci",
+"Cukup diusap"
+],
+"e": "Dengan kata 'anak laki-laki' dikecualikan anak perempuan dan khuntsa; kencing keduanya wajib dibasuh.",
+"p": 10
+},
+{
+"q": "Saat membasuh dengan air sedikit, mana yang benar?",
+"c": "Air harus didatangkan kepada benda yang terkena najis",
+"x": [
+"Benda dimasukkan ke dalam air sedikit",
+"Keduanya sama",
+"Benda dijemur lebih dulu"
+],
+"e": "Disyaratkan air yang didatangkan kepadanya jika airnya sedikit; bila dibalik, tidak suci.",
+"p": 11
+},
+{
+"q": "Najis apa yang dimaafkan sedikitnya?",
+"c": "Darah dan nanah yang sedikit",
+"x": [
+"Kencing yang sedikit",
+"Tinja yang sedikit",
+"Bangkai yang sedikit"
+],
+"e": "Tidak dimaafkan najis apa pun kecuali darah dan nanah yang sedikit.",
+"p": 12
+},
+{
+"q": "Apa hukum hewan tak berdarah mengalir yang jatuh dan mati di dalam bejana?",
+"c": "Tidak menajiskan",
+"x": [
+"Menajiskan",
+"Menajiskan bila banyak air",
+"Menajiskan bila sengaja diambil"
+],
+"e": "Hewan tak berdarah mengalir seperti lalat dan semut yang jatuh lalu mati di bejana tidak menajiskan.",
+"p": 13
+},
+{
+"q": "Jika hewan tak berdarah itu sengaja dilemparkan ke cairan, bagaimana?",
+"c": "Menajiskan",
+"x": [
+"Tidak menajiskan",
+"Makruh",
+"Hanya mengubah rasa"
+],
+"e": "Jika sengaja dilemparkan ke dalam cairan, menajiskan (menurut ar-Rafi'i).",
+"p": 14
+},
+{
+"q": "Semua hewan hukumnya suci kecuali...",
+"c": "Anjing, babi, dan yang lahir dari keduanya atau salah satunya",
+"x": [
+"Kucing dan tikus",
+"Ular dan kadal",
+"Keledai dan kuda"
+],
+"e": "Semua hewan suci kecuali anjing, babi, dan keturunan dari keduanya atau salah satunya.",
+"p": 16
+},
+{
+"q": "Bangkai apa yang suci?",
+"c": "Ikan, belalang, dan manusia",
+"x": [
+"Sapi, kambing, dan ayam",
+"Tikus, kucing, dan burung",
+"Ikan, ayam, dan kambing"
+],
+"e": "Semua bangkai najis kecuali ikan, belalang, dan manusia.",
+"p": 17
+},
+{
+"q": "Bejana yang dijilat anjing dibasuh berapa kali?",
+"c": "Tujuh kali, salah satunya dengan debu",
+"x": [
+"Tiga kali dengan debu",
+"Satu kali dengan sabun",
+"Tujuh kali tanpa debu"
+],
+"e": "Dibasuh tujuh kali dengan air yang menyucikan, salah satunya disertai debu.",
+"p": 18
+},
+{
+"q": "Najis selain anjing dan babi dibasuh berapa kali sebagai kewajiban?",
+"c": "Satu kali yang meratainya (tiga kali lebih utama)",
+"x": [
+"Tiga kali wajib",
+"Tujuh kali wajib",
+"Dua kali wajib"
+],
+"e": "Dibasuh satu kali yang meratainya; tiga kali lebih utama.",
+"p": 20
+},
+{
+"q": "Khamr menjadi suci bila berubah menjadi cuka dengan cara apa?",
+"c": "Dengan sendirinya",
+"x": [
+"Dengan ditambah garam",
+"Dengan ditambah ragi",
+"Dengan dipanaskan di api"
+],
+"e": "Jika khamr berubah menjadi cuka dengan sendirinya, menjadi suci; bila karena dimasukkan sesuatu, tidak suci.",
+"p": 23
+},
+{
+"q": "Jika khamr berubah menjadi cuka karena dimasukkan sesuatu ke dalamnya, bagaimana?",
+"c": "Tidak suci",
+"x": [
+"Suci",
+"Suci bila sedikit",
+"Suci bila dipindah wadah"
+],
+"e": "Jika berubah karena dimasukkan sesuatu, ia tidak suci.",
+"p": 24
+}
+],
+"u14": [
+{
+"q": "Tiga macam darah yang keluar dari farji adalah...",
+"c": "Haid, nifas, dan istihadhah",
+"x": [
+"Haid, luka, dan nifas",
+"Nifas, istihadhah, dan darah mimpi",
+"Haid, darah kulit, dan istihadhah"
+],
+"e": "Dari farji keluar tiga macam darah: haid, nifas, dan istihadhah.",
+"p": 1
+},
+{
+"q": "Apa yang dimaksud dengan darah haid dalam bab ini?",
+"c": "Darah yang keluar pada usia haid dari farji wanita dalam keadaan sehat, bukan karena melahirkan",
+"x": [
+"Darah karena penyakit",
+"Darah setelah melahirkan",
+"Darah yang keluar karena luka"
+],
+"e": "Haid adalah darah yang keluar pada usia haid dari farji wanita yang sehat, bukan karena melahirkan.",
+"p": 2
+},
+{
+"q": "Nifas adalah...",
+"c": "Darah yang keluar setelah melahirkan",
+"x": [
+"Darah yang keluar bersama anak",
+"Darah sebelum melahirkan",
+"Darah penyakit"
+],
+"e": "Nifas adalah darah setelah melahirkan; yang keluar bersama anak atau sebelumnya bukan nifas.",
+"p": 4
+},
+{
+"q": "Istihadhah adalah...",
+"c": "Darah di luar hari-hari haid dan nifas, tidak dalam keadaan sehat",
+"x": [
+"Darah haid yang deras",
+"Darah nifas yang panjang",
+"Darah yang keluar karena sehat"
+],
+"e": "Istihadhah adalah darah yang keluar di luar hari haid dan nifas, tidak dalam keadaan sehat.",
+"p": 5
+},
+{
+"q": "Berapa masa haid paling sedikit?",
+"c": "Sehari semalam",
+"x": [
+"Tiga hari",
+"Sepuluh hari",
+"Seperempat hari"
+],
+"e": "Haid paling sedikit sehari semalam (24 jam bersambung).",
+"p": 6
+},
+{
+"q": "Berapa masa haid paling lama?",
+"c": "Lima belas hari beserta malamnya",
+"x": [
+"Sepuluh hari",
+"Tujuh hari",
+"Dua puluh hari"
+],
+"e": "Haid paling lama lima belas hari; lebihnya istihadhah.",
+"p": 6
+},
+{
+"q": "Berapa masa haid yang umum?",
+"c": "Enam atau tujuh hari",
+"x": [
+"Sepuluh hari",
+"Tiga hari",
+"Lima belas hari"
+],
+"e": "Haid umumnya enam atau tujuh hari.",
+"p": 6
+},
+{
+"q": "Berapa lama nifas paling lama dan umumnya?",
+"c": "Enam puluh hari paling lama, umumnya empat puluh hari",
+"x": [
+"Empat puluh hari paling lama, umumnya dua puluh hari",
+"Seratus hari paling lama, umumnya enam puluh hari",
+"Lima belas hari paling lama, umumnya tujuh hari"
+],
+"e": "Nifas paling sedikit sekejap, paling lama enam puluh hari, umumnya empat puluh hari.",
+"p": 7
+},
+{
+"q": "Berapa masa suci paling sedikit antara dua haid?",
+"c": "Lima belas hari",
+"x": [
+"Sepuluh hari",
+"Tujuh hari",
+"Satu hari"
+],
+"e": "Masa suci paling sedikit yang memisahkan antara dua haid adalah lima belas hari.",
+"p": 8
+},
+{
+"q": "Apakah ada batas masa suci paling lama?",
+"c": "Tidak ada batas",
+"x": [
+"Tiga bulan",
+"Satu tahun",
+"Empat puluh hari"
+],
+"e": "Tidak ada batas bagi masa suci yang paling lama.",
+"p": 9
+},
+{
+"q": "Pada usia berapa seorang wanita paling muda bisa haid?",
+"c": "Sembilan tahun hijriah",
+"x": [
+"Tujuh tahun",
+"Dua belas tahun",
+"Lima belas tahun"
+],
+"e": "Usia paling muda haid adalah sembilan tahun hijriah.",
+"p": 10
+},
+{
+"q": "Berapa masa hamil paling singkat dan paling lama?",
+"c": "Enam bulan lebih sedikit dan empat tahun",
+"x": [
+"Tiga bulan dan satu tahun",
+"Sembilan bulan dan dua tahun",
+"Enam bulan dan sembilan bulan"
+],
+"e": "Masa hamil paling singkat enam bulan ditambah dua saat, paling lama empat tahun, umumnya sembilan bulan.",
+"p": 11
+},
+{
+"q": "Ada berapa perkara yang haram bagi wanita haid dan nifas?",
+"c": "Delapan",
+"x": [
+"Lima",
+"Tiga",
+"Sepuluh"
+],
+"e": "Delapan: shalat, puasa, baca Al-Qur'an, menyentuh mushaf, masuk masjid, thawaf, bersetubuh, bersenang-senang antara pusar dan lutut.",
+"p": 12
+},
+{
+"q": "Yang mana yang haram bagi wanita haid?",
+"c": "Shalat dan puasa",
+"x": [
+"Berzikir",
+"Makan",
+"Mandi"
+],
+"e": "Haid mengharamkan shalat (fardhu/sunnah) dan puasa (fardhu/sunnah).",
+"p": 12
+},
+{
+"q": "Apa yang disunnahkan bagi yang bersetubuh saat haid di awal darah?",
+"c": "Bersedekah satu dinar",
+"x": [
+"Bersedekah setengah dinar",
+"Mengulang mandi",
+"Berpuasa tiga hari"
+],
+"e": "Di awal keluarnya darah disunnahkan satu dinar, di akhir setengah dinar.",
+"p": 14
+},
+{
+"q": "Ada berapa perkara haram atas orang junub?",
+"c": "Lima",
+"x": [
+"Tiga",
+"Delapan",
+"Dua"
+],
+"e": "Orang junub: shalat, baca Al-Qur'an, menyentuh/membawa mushaf, thawaf, berdiam di masjid.",
+"p": 16
+},
+{
+"q": "Bagaimana hukum orang junub melewati masjid tanpa berdiam?",
+"c": "Tidak haram, bahkan tidak makruh menurut pendapat paling sahih",
+"x": [
+"Haram",
+"Makruh",
+"Wajib mandi dahulu"
+],
+"e": "Melewati masjid tanpa berdiam tidak haram.",
+"p": 19
+},
+{
+"q": "Ada berapa perkara haram atas orang berhadats kecil?",
+"c": "Tiga: shalat, thawaf, menyentuh dan membawa mushaf",
+"x": [
+"Dua: shalat dan puasa",
+"Lima",
+"Satu: shalat saja"
+],
+"e": "Orang berhadats kecil haram melakukan shalat, thawaf, serta menyentuh dan membawa mushaf.",
+"p": 20
+},
+{
+"q": "Manakah yang halal bagi orang berhadats kecil?",
+"c": "Membawa dinar atau cincin yang terukir ayat Al-Qur'an",
+"x": [
+"Menyentuh mushaf langsung",
+"Shalat",
+"Thawaf"
+],
+"e": "Halal membawa mushaf di antara barang lain, tafsir yang tulisannya lebih banyak, dan dinar, dirham, atau cincin berukir ayat.",
+"p": 21
+},
+{
+"q": "Bagaimana anak mumayyiz berhadats menyentuh mushaf untuk belajar?",
+"c": "Tidak dilarang",
+"x": [
+"Dilarang",
+"Makruh",
+"Haram bagi anak laki-laki"
+],
+"e": "Anak mumayyiz yang berhadats tidak dilarang menyentuh mushaf dan papan tulis untuk belajar Al-Qur'an.",
+"p": 21
+}
 ]
 }
