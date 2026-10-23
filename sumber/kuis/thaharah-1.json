@@ -103,9 +103,9 @@
 "q": "Sebagai kaidah, tujuh macam air itu terhimpun dalam ucapan apa?",
 "c": "Air yang turun dari langit atau memancar dari bumi, dalam sifat apa pun ia berada menurut asal penciptaannya",
 "x": [
-"Air yang diambil dengan wadah dan disimpan di rumah",
-"Air yang telah dimasak sampai mendidih",
-"Air yang dicampur dengan benda suci hingga berubah namanya"
+"Air yang diambil dengan wadah lalu disimpan di rumah dalam waktu lama sampai berubah sifatnya",
+"Air yang telah dimasak sampai mendidih kemudian didinginkan hingga berubah namanya",
+"Air yang dicampur dengan benda suci sampai berubah namanya menurut kebiasaan orang"
 ],
 "e": "Kaidahnya: setiap air yang turun dari langit atau memancar dari bumi, dalam sifat apa pun menurut asal penciptaannya.",
 "p": 5
@@ -169,9 +169,9 @@
 "q": "Pada kondisi apa air musyammas makruh dipakai?",
 "c": "Di negeri yang panas, dalam wadah logam yang bisa ditempa selain emas dan perak",
 "x": [
-"Di negeri mana saja, dalam wadah apa saja",
-"Di negeri yang dingin, dalam wadah tanah liat",
-"Hanya bila dipakai oleh orang yang sedang berpuasa"
+"Di negeri mana saja, dalam wadah apa saja yang dipakai untuk menampung air",
+"Di negeri yang dingin, dalam wadah tanah liat yang dipakai untuk menampung air",
+"Hanya bila dipakai oleh orang yang sedang berpuasa di negeri yang sangat panas"
 ],
 "e": "Musyammas makruh di negeri yang panas dan dalam wadah logam yang bisa ditempa, kecuali emas dan perak karena jernih zatnya.",
 "p": 8
@@ -290,9 +290,9 @@
 "q": "Apa macam kedua air najis?",
 "c": "Air dua qullah atau lebih yang berubah karena najis, baik sedikit maupun banyak perubahannya",
 "x": [
-"Air kurang dari dua qullah yang tidak berubah",
-"Air dua qullah atau lebih yang tidak berubah",
-"Air yang bercampur sesuatu yang suci"
+"Air kurang dari dua qullah yang bercampur najis tetapi sifatnya tidak berubah",
+"Air dua qullah atau lebih yang terkena najis tetapi sifatnya tidak berubah sama sekali",
+"Air yang bercampur sesuatu yang suci sehingga namanya berubah menurut kebiasaan"
 ],
 "e": "Macam kedua: air banyak (dua qullah atau lebih) yang berubah, baik sedikit maupun banyak perubahannya.",
 "p": 15
@@ -323,9 +323,9 @@
 "q": "Bagian kelima air yang tidak disebutkan penulis adalah...",
 "c": "Air yang menyucikan tetapi haram dipakai, seperti air ghashab",
 "x": [
-"Air yang suci tetapi tidak menyucikan",
-"Air yang najis tetapi menyucikan",
-"Air yang suci, menyucikan, dan makruh"
+"Air yang suci tetapi tidak menyucikan, seperti air mawar yang disuling",
+"Air yang najis tetapi tetap menyucikan karena jumlahnya sangat banyak",
+"Air yang suci, menyucikan, dan makruh dipakai, seperti air musyammas"
 ],
 "e": "Bagian kelima: air yang menyucikan tetapi haram dipakai, seperti air hasil ghashab atau air yang diwakafkan untuk minum.",
 "p": 17
@@ -347,9 +347,9 @@
 "q": "Bagaimana cara menyamak yang dimaksud dalam kitab ini?",
 "c": "Menghilangkan sisa kulit yang bisa membuatnya busuk dengan benda yang sepat, seperti manjakani",
 "x": [
-"Menjemur kulit di bawah terik matahari beberapa hari",
-"Mencuci kulit dengan air mutlak sampai tiga kali",
-"Menggosok kulit dengan tanah yang suci"
+"Menjemur kulit di bawah terik matahari beberapa hari sampai kering dan tidak berbau",
+"Mencuci kulit dengan air mutlak sampai tiga kali hingga bersih dari sisa daging",
+"Menggosok kulit dengan tanah yang suci hingga hilang bau dan sisa lemaknya"
 ],
 "e": "Menyamak adalah menghilangkan sisa-sisa kulit yang dapat membuatnya busuk dengan benda yang sepat seperti 'afsh (manjakani).",
 "p": 3
@@ -358,9 +358,9 @@
 "q": "Apakah benda sepat untuk menyamak harus suci?",
 "c": "Tidak, benda sepat yang najis seperti kotoran merpati sudah cukup",
 "x": [
-"Ya, harus benda suci",
-"Ya, harus berupa manjakani saja",
-"Tidak, tetapi harus dicuci dahulu"
+"Ya, benda sepat itu harus berupa benda yang suci saja",
+"Ya, benda sepat itu harus berupa manjakani saja tidak boleh lainnya",
+"Tidak, tetapi benda sepat yang najis itu harus dicuci terlebih dahulu"
 ],
 "e": "Walaupun benda sepat itu najis seperti kotoran merpati, sudah cukup untuk menyamak.",
 "p": 3
@@ -369,9 +369,9 @@
 "q": "Kulit apa yang tidak menjadi suci dengan disamak?",
 "c": "Kulit anjing, babi, dan hewan yang lahir dari keduanya atau dari salah satunya",
 "x": [
-"Kulit unta, sapi, dan kambing",
-"Kulit ular dan kadal",
-"Kulit kijang yang diburu dari hutan"
+"Kulit unta, sapi, dan kambing yang telah mati tanpa disembelih",
+"Kulit ular dan kadal beserta hewan yang lahir dari keduanya",
+"Kulit kijang yang diburu dari hutan dan mati tanpa disembelih"
 ],
 "e": "Kulit anjing, babi, dan hewan yang lahir dari keduanya atau salah satunya dengan hewan suci tidak menjadi suci dengan disamak.",
 "p": 4
@@ -391,9 +391,9 @@
 "q": "Apa yang dimaksud bangkai dalam bab ini?",
 "c": "Hewan yang hilang nyawanya tanpa penyembelihan yang syar'i",
 "x": [
-"Hewan yang mati karena tua",
-"Hewan yang mati di dalam air",
-"Hewan yang mati karena sakit saja"
+"Hewan yang mati karena sudah tua setelah disembelih secara syar'i",
+"Hewan yang mati di dalam air setelah disembelih secara syar'i",
+"Hewan yang mati karena sakit setelah dipotong lehernya dengan benar"
 ],
 "e": "Bangkai adalah hewan yang hilang nyawanya tanpa penyembelihan yang syar'i.",
 "p": 5
@@ -448,9 +448,9 @@
 "q": "Kapan bejana yang dilapisi emas atau perak haram?",
 "c": "Jika lapisan itu menghasilkan emas atau perak ketika dipanaskan di atas api",
 "x": [
-"Jika lapisannya tampak berkilau",
-"Jika bejana itu dipakai makan",
-"Jika bejana itu milik perempuan"
+"Jika lapisannya tampak berkilau seperti emas atau perak asli",
+"Jika bejana itu dipakai makan atau minum oleh orang yang beriman",
+"Jika bejana itu milik perempuan yang memakainya sebagai perhiasan"
 ],
 "e": "Bejana berlapis haram jika lapisannya menghasilkan emas atau perak ketika dipanaskan di api.",
 "p": 2
@@ -549,9 +549,9 @@
 "q": "Dua keadaan lain yang lebih sangat disunnahkan bersiwak adalah...",
 "c": "Ketika bangun dari tidur dan ketika hendak mendirikan shalat",
 "x": [
-"Ketika hendak makan dan hendak minum",
-"Ketika masuk masjid dan keluar masjid",
-"Ketika berpuasa dan ketika berbuka"
+"Ketika hendak makan dan hendak minum di waktu pagi",
+"Ketika masuk masjid dan keluar masjid dengan berwudhu",
+"Ketika berpuasa dan ketika berbuka dengan bacaan doa"
 ],
 "e": "Kedua: ketika bangun dari tidur; ketiga: ketika hendak mendirikan shalat, fardhu maupun sunnah.",
 "p": 4
@@ -560,9 +560,9 @@
 "q": "Mengapa penulis menambahkan kata 'dan selainnya' setelah azm?",
 "c": "Agar mencakup berubahnya bau mulut karena sebab lain, misalnya memakan bawang putih",
 "x": [
-"Agar mencakup semua hewan yang dagingnya haram",
-"Agar mencakup seluruh macam air",
-"Agar mencakup orang yang tidak punya gigi"
+"Agar mencakup semua hewan yang dagingnya haram dimakan manusia",
+"Agar mencakup seluruh macam air yang dipakai bersuci sehari-hari",
+"Agar mencakup orang yang tidak memiliki gigi sama sekali"
 ],
 "e": "Penambahan itu mencakup berubahnya bau mulut karena sebab lain, seperti memakan sesuatu yang berbau tidak sedap.",
 "p": 4
@@ -571,9 +571,9 @@
 "q": "Manakah yang termasuk adab bersiwak?",
 "c": "Berniat sunnah, memakai tangan kanan, dan memulai dari sisi kanan mulut",
 "x": [
-"Memakai tangan kiri dan memulai dari sisi kiri",
-"Bersiwak dengan keras di gusi",
-"Bersiwak tanpa niat apa pun"
+"Memakai tangan kiri dan memulai dari sisi kiri mulut",
+"Bersiwak dengan keras pada gusi sampai berdarah dan sakit",
+"Bersiwak tanpa niat apa pun dan tanpa memulai dari kanan"
 ],
 "e": "Disunnahkan berniat menjalankan sunnah, bersiwak dengan tangan kanan, memulai dari sisi kanan mulut, dan lembut pada langit-langit dan pangkal geraham.",
 "p": 6
@@ -650,9 +650,9 @@
 "q": "Apa batas panjang wajah?",
 "c": "Dari tempat tumbuh rambut kepala pada umumnya sampai ujung kedua tulang rahang",
 "x": [
-"Dari ubun-ubun sampai dagu",
-"Dari dahi sampai leher",
-"Dari alis sampai ujung hidung"
+"Dari ubun-ubun kepala sampai ujung dagu bagian bawah",
+"Dari dahi sampai leher bagian belakang kepala",
+"Dari alis mata sampai ujung hidung bagian bawah"
 ],
 "e": "Batas panjang wajah: dari tempat tumbuh rambut kepala pada umumnya sampai ujung kedua tulang rahang. Batas lebarnya: antara kedua telinga.",
 "p": 6
@@ -683,9 +683,9 @@
 "q": "Bagaimana hukum jenggot perempuan dan khuntsa yang tebal dalam wudhu?",
 "c": "Wajib menyampaikan air ke kulitnya walaupun tebal",
 "x": [
-"Cukup dibasuh bagian luarnya",
-"Tidak wajib dibasuh",
-"Cukup diusap sebagian"
+"Cukup dibasuh bagian luarnya saja karena jenggotnya tebal",
+"Tidak wajib dibasuh karena jenggot perempuan tidak dianggap",
+"Cukup diusap sebagian saja seperti mengusap kepala dalam wudhu"
 ],
 "e": "Jenggot perempuan dan khuntsa wajib dibasuh sampai kulit walaupun tebal.",
 "p": 8
@@ -694,9 +694,9 @@
 "q": "Apa yang wajib dibasuh bersama wajah agar sempurna?",
 "c": "Sedikit bagian kepala, leher, dan bagian di bawah dagu",
 "x": [
-"Seluruh kepala dan leher",
-"Telinga luar dan dalam",
-"Tengkuk dan punggung"
+"Seluruh kepala dan seluruh leher sampai tengkuk",
+"Telinga luar dan dalam serta bagian atas kepala",
+"Tengkuk dan punggung bagian atas yang terlihat"
 ],
 "e": "Bersama membasuh wajah wajib pula membasuh sedikit bagian kepala, leher, dan bagian bawah dagu.",
 "p": 8
@@ -870,9 +870,9 @@
 "q": "Apa yang dimaksud muwalat?",
 "c": "Tidak ada jeda lama sehingga anggota sebelumnya belum kering",
 "x": [
-"Mengulangi basuhan tiga kali",
-"Membasuh anggota kanan lebih dahulu",
-"Membasuh dengan air mengalir"
+"Mengulangi basuhan tiga kali pada setiap anggota wudhu",
+"Membasuh anggota kanan lebih dahulu sebelum anggota kiri",
+"Membasuh dengan air yang mengalir dan tidak diam"
 ],
 "e": "Muwalat adalah menyucikan anggota demi anggota tanpa jeda yang membuat anggota sebelumnya kering.",
 "p": 26
