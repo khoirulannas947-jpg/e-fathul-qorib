@@ -1,0 +1,62 @@
+{
+"u100":[
+{"q":"Apa arti hudud secara bahasa?","c":"Mencegah","x":["Memotong","Membayar","Mengampuni"],"e":"Hudud jamak dari hadd, secara bahasa mencegah dari perbuatan keji.","p":1},
+{"q":"Apa had pezina muhshan?","c":"Rajam dengan batu sedang","x":["Seratus cambukan","Potong tangan","Penjara setahun"],"e":"Hadnya pezina muhshan adalah rajam.","p":2},
+{"q":"Apa had pezina ghairu muhshan yang merdeka?","c":"Seratus cambukan dan pengasingan setahun","x":["Rajam","Lima puluh cambukan","Potong tangan"],"e":"Ghairu muhshan dicambuk seratus kali dan diasingkan setahun.","p":2},
+{"q":"Berapa syarat ihshan?","c":"Empat: baligh, berakal, merdeka, dan persetubuhan dalam nikah sah","x":["Dua syarat","Tiga syarat","Lima syarat"],"e":"Syarat ihshan ada empat.","p":3},
+{"q":"Apakah budak yang bersetubuh dalam nikah sah menjadi muhshan?","c":"Tidak menjadi muhshan","x":["Menjadi muhshan","Muhshan jika lama","Muhshan jika berakal"],"e":"Budak, mukatab, dan ummul walad tidak menjadi muhshan.","p":4},
+{"q":"Berapa had budak yang berzina?","c":"Lima puluh cambukan dan pengasingan setengah tahun","x":["Seratus cambukan","Rajam","Dua puluh cambukan"],"e":"Had budak setengah had orang merdeka.","p":5},
+{"q":"Bagaimana hukum liwath?","c":"Seperti hukum zina","x":["Hanya ta'zir","Tidak dihad","Cukup denda"],"e":"Hukum liwath dan menyetubuhi hewan seperti zina menurut madzhab.","p":6},
+{"q":"Bagaimana hukum menyetubuhi ajnabiyyah pada selain kemaluan?","c":"Dita'zir","x":["Dirajam","Dicambuk seratus kali","Tidak ada hukuman"],"e":"Menyetubuhi pada selain kemaluan dita'zir.","p":7}
+],
+"u101":[
+{"q":"Apa arti qadzaf secara syara'?","c":"Menuduh berzina dengan maksud mencela","x":["Menuduh mencuri","Menuduh minum khamr","Menuduh murtad"],"e":"Qadzaf secara syara' adalah menuduh berzina dengan maksud mencela.","p":1},
+{"q":"Berapa cambukan had qadzaf bagi penuduh merdeka?","c":"Delapan puluh","x":["Empat puluh","Seratus","Dua puluh"],"e":"Orang merdeka penuduh dihad delapan puluh cambukan.","p":3},
+{"q":"Berapa syarat dihad karena qadzaf?","c":"Delapan syarat: tiga pada penuduh dan lima pada yang dituduh","x":["Dua syarat","Tiga syarat","Sepuluh syarat"],"e":"Delapan syarat: tiga pada penuduh dan lima pada yang dituduh.","p":2},
+{"q":"Siapa yang tidak dihad bila menuduh?","c":"Anak kecil dan orang gila","x":["Orang dewasa","Orang berakal","Orang merdeka"],"e":"Anak kecil dan orang gila tidak dihad karena menuduh.","p":2},
+{"q":"Apa yang menggugurkan had qadzaf?","c":"Menegakkan bukti, pemaafan yang dituduh, atau li'an dari suami","x":["Waktu yang lama","Meminta maaf kepada hakim","Hanya membayar denda"],"e":"Had qadzaf gugur dengan tiga hal: bukti, pemaafan, atau li'an.","p":4}
+],
+"u102":[
+{"q":"Apa yang dimaksud khamr?","c":"Minuman dari perasan anggur yang memabukkan","x":["Semua minuman manis","Air biasa","Susu"],"e":"Khamr adalah yang dibuat dari perasan anggur; selain itu minuman yang memabukkan.","p":1},
+{"q":"Berapa cambukan had peminum khamr bagi orang merdeka?","c":"Empat puluh","x":["Dua puluh","Delapan puluh","Seratus"],"e":"Had peminum merdeka empat puluh; imam boleh mencapai delapan puluh dengan ta'zir.","p":2},
+{"q":"Dengan apa had minum wajib ditetapkan?","c":"Bukti dua laki-laki atau pengakuan peminum","x":["Dugaan hakim","Aroma saja","Laporan satu orang"],"e":"Had wajib dengan bukti dua laki-laki atau pengakuan.","p":3}
+],
+"u103":[
+{"q":"Apa arti pencurian secara syara'?","c":"Mengambil harta secara sembunyi dan zhalim dari tempat penyimpanan layak","x":["Mengambil harta secara terang-terangan","Meminjam tanpa izin","Menemukan barang hilang"],"e":"Pencurian secara syara': mengambilnya sembunyi-sembunyi dan zhalim dari tempat penyimpanan layak.","p":1},
+{"q":"Apakah mu'ahad dipotong tangannya karena mencuri?","c":"Tidak menurut pendapat azhhar","x":["Ya","Ya, jika sengaja","Ya, jika kaya"],"e":"Muslim dan dzimmi dipotong; mu'ahad tidak menurut azhhar.","p":2},
+{"q":"Apa syarat dalam barang curian?","c":"Pencuri tidak memiliki padanya dan tidak ada syubhat","x":["Barang murah","Barang kecil","Barang di tempat terbuka"],"e":"Tidak ada kepemilikan dan syubhat bagi pencuri atas harta tersebut.","p":4},
+{"q":"Tangan mana yang dipotong pada pencurian pertama?","c":"Tangan kanan dari pergelangan","x":["Tangan kiri","Kaki kanan","Kaki kiri"],"e":"Pencurian pertama dipotong tangan kanan dari sendi pergelangan.","p":5},
+{"q":"Pencurian kedua kali dipotong apa?","c":"Kaki kiri","x":["Tangan kiri","Kaki kanan","Tidak dipotong"],"e":"Pencurian kedua dipotong kaki kiri.","p":5},
+{"q":"Pencurian keempat dipotong apa?","c":"Kaki kanan","x":["Tangan kiri","Tangan kanan","Kaki kiri"],"e":"Pencurian ketiga tangan kiri, keempat kaki kanan.","p":6}
+],
+"u104":[
+{"q":"Siapakah perampok jalan?","c":"Muslim mukallaf yang memiliki kekuatan dan menakuti pengguna jalan","x":["Setiap pencuri","Anak kecil","Pencuri di rumah"],"e":"Perampok jalan: muslim mukallaf yang memiliki kekuatan.","p":1},
+{"q":"Bagaimana hukum perampok yang membunuh tanpa mengambil harta?","c":"Dibunuh secara pasti","x":["Disalib","Dipotong tangan dan kaki","Dipenjara"],"e":"Jika membunuh tanpa mengambil harta, dibunuh secara pasti.","p":2},
+{"q":"Bagaimana hukum perampok yang membunuh dan mengambil harta?","c":"Dibunuh dan disalib","x":["Dibunuh saja","Dipotong tangan","Dipenjara"],"e":"Membunuh dan mengambil harta: dibunuh dan disalib.","p":3},
+{"q":"Bagaimana hukum perampok yang mengambil harta tanpa membunuh?","c":"Dipotong tangan kanan dan kaki kirinya","x":["Dibunuh","Disalib","Dipenjara"],"e":"Mengambil harta tanpa membunuh: dipotong tangan dan kaki secara menyilang.","p":4},
+{"q":"Bagaimana hukum perampok yang hanya menakut-nakuti?","c":"Dipenjara dan dita'zir","x":["Dibunuh","Dipotong tangan","Disalib"],"e":"Menakut-nakuti tanpa harta dan membunuh: dipenjara dan dita'zir.","p":5},
+{"q":"Apa yang gugur jika perampok bertaubat sebelum tertangkap?","c":"Hukuman khusus perampok jalan","x":["Semua hak manusia","Tidak ada","Kafarat saja"],"e":"Hudud khusus perampok gugur, tetapi hak manusia tetap dituntut.","p":6}
+],
+"u105":[
+{"q":"Apa hukum membela diri dari penyerang?","c":"Boleh bahkan dapat wajib dibela","x":["Haram","Makruh","Hanya sunnah"],"e":"Orang yang diserang pada diri, harta, atau keluarganya berhak membela diri.","p":1},
+{"q":"Siapa yang menanggung kerusakan oleh hewan tunggangan?","c":"Penunggang (pemilik, peminjam, penyewa, atau perampas)","x":["Tidak ada","Hewan itu sendiri","Hakim"],"e":"Penunggang menanggung apa yang dirusak hewannya.","p":2}
+],
+"u106":[
+{"q":"Siapa bughat?","c":"Kelompok muslim yang menentang imam yang adil","x":["Orang kafir","Pencuri","Perampok"],"e":"Bughat adalah kelompok muslim yang menentang imam yang adil.","p":1},
+{"q":"Berapa syarat bughat diperangi?","c":"Tiga: memiliki kekuatan, keluar dari kekuasaan imam, punya takwil","x":["Dua syarat","Empat syarat","Satu syarat"],"e":"Tiga syarat: kekuatan, keluar dari imam, dan takwil yang dapat diterima.","p":2},
+{"q":"Apa yang dilakukan imam sebelum memerangi bughat?","c":"Mengutus utusan amanah untuk menanyakan apa yang mereka benci","x":["Langsung memerangi","Membiarkan","Menyita harta mereka"],"e":"Imam mengutus utusan yang amanah dan cerdas sebelum memerangi.","p":5},
+{"q":"Bagaimana hukum tawanan bughat?","c":"Tidak dibunuh","x":["Dibunuh","Dijadikan budak","Dihukum potong"],"e":"Tawanan bughat tidak dibunuh.","p":6},
+{"q":"Apa yang dilakukan pada senjata bughat setelah perang?","c":"Dikembalikan kepada mereka","x":["Disita","Dibakar","Dijual"],"e":"Senjata dan kuda dikembalikan apabila perang telah usai.","p":7}
+],
+"u107":[
+{"q":"Apa makna riddah secara syara'?","c":"Memutus Islam dengan niat, ucapan, atau perbuatan kufur","x":["Meninggalkan shalat","Keluar dari negeri","Meninggalkan puasa"],"e":"Riddah: memutus Islam dengan niat kufur, ucapan kufur, atau perbuatan kufur.","p":1},
+{"q":"Contoh riddah?","c":"Mengingkari adanya Allah atau menghalalkan yang haram secara ijma'","x":["Lupa shalat","Terlambat zakat","Meninggalkan sunnah"],"e":"Mengingkari Allah, mendustakan rasul, menghalalkan yang haram secara ijma' termasuk riddah.","p":2},
+{"q":"Jika orang murtad bertaubat, bagaimana?","c":"Diterima dengan bersyahadat dan kembali kepada Islam","x":["Tetap dibunuh","Dipenjara","Dicambuk"],"e":"Jika bertaubat dengan kembali kepada Islam, diterima.","p":3},
+{"q":"Jika orang murtad tidak bertaubat, siapa yang membunuhnya?","c":"Imam, dengan memenggal leher","x":["Siapa saja","Keluarganya","Hakim di negeri lain"],"e":"Imam membunuhnya dengan memenggal leher, bukan membakar; jika selain imam, dita'zir.","p":4},
+{"q":"Bagaimana pengurusan jenazah orang murtad?","c":"Tidak dimandikan, dishalatkan, atau dikubur di pemakaman muslim","x":["Dimandikan dan dishalatkan","Dikubur di pemakaman muslim","Dishalatkan saja"],"e":"Ia tidak dimandikan, tidak dishalatkan, dan tidak dikubur di pemakaman muslim.","p":5}
+],
+"u108":[
+{"q":"Bagaimana hukum yang meninggalkan shalat sambil mengingkari kewajibannya?","c":"Ia murtad","x":["Hanya fasik","Hanya dicambuk","Dimaafkan"],"e":"Meninggalkan tanpa meyakini kewajibannya adalah murtad.","p":1},
+{"q":"Bagaimana hukum orang yang meninggalkan shalat karena malas?","c":"Diminta bertaubat, jika tidak bertaubat dibunuh sebagai had","x":["Langsung dibunuh","Tidak dihukum","Dicambuk seratus kali"],"e":"Yang malas diminta bertaubat; jika tidak, dibunuh.","p":2}
+]
+}
