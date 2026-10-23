@@ -1,54 +1,434 @@
 {
-"u68":[
-{"q":"Apa itu mukhabarah?","c":"Pekerja menggarap tanah pemilik dengan imbalan sebagian hasil, benih dari pekerja","x":["Pekerja menggarap tanah dengan benih dari pemilik","Pemilik menyewakan tanah dengan emas","Pemilik menjual tanah dengan hasil"],"e":"Mukhabarah: pekerja bekerja di tanah pemilik dengan imbalan sebagian hasil, benihnya dari pekerja; muzara'ah benihnya dari pemilik.","p":1},
-{"q":"Apa itu muzara'ah?","c":"Pekerja menggarap tanah dengan imbalan sebagian hasil, benih dari pemilik","x":["Benih dari pekerja","Sewa tanah dengan emas","Gadai tanah"],"e":"Muzara'ah: pekerja bekerja di tanah dengan sebagian hasil, benihnya dari pemilik.","p":2},
-{"q":"Cara yang diperbolehkan untuk menggarapkan tanah adalah...","c":"Menyewakan tanah dengan emas atau perak atau makanan yang diketahui","x":["Dengan sebagian hasil yang tidak diketahui","Dengan imbalan hasil yang jauh","Dengan janji tanpa kadar"],"e":"Jika menyewakan tanah dengan emas/perak atau makanan yang diketahui dalam tanggungan, itu sah.","p":2}
+"u68": [
+{
+"q": "Apa itu mukhabarah?",
+"c": "Pekerja menggarap tanah pemilik dengan imbalan sebagian hasil, benih dari pekerja",
+"x": [
+"Pekerja menggarap tanah dengan benih dari pemilik",
+"Pemilik menyewakan tanah dengan emas",
+"Pemilik menjual tanah dengan hasil"
 ],
-"u69":[
-{"q":"Apa itu tanah mati?","c":"Tanah yang tidak ada pemiliknya dan tidak dimanfaatkan seorang pun","x":["Tanah yang tandus","Tanah yang gersang","Tanah milik negara"],"e":"Tanah mati adalah tanah yang tidak ada pemiliknya dan tidak dimanfaatkan seorang pun.","p":1},
-{"q":"Siapa yang berhak menghidupkan tanah mati?","c":"Muslim, di tanah yang bebas belum pernah dimiliki","x":["Hanya imam","Hanya orang kaya","Hanya penduduk setempat"],"e":"Menghidupkan tanah mati boleh dengan dua syarat: pelakunya muslim dan tanah bebas belum pernah dimiliki muslim.","p":1},
-{"q":"Tanah yang dahulu digarap dan kini rusak, milik siapa?","c":"Milik pemiliknya jika diketahui, muslim maupun dzimmi","x":["Milik imam","Milik yang menghidupkan","Milik penduduk"],"e":"Tanah yang dahulu digarap lalu rusak adalah milik pemiliknya jika diketahui.","p":3},
-{"q":"Cara menghidupkan tanah mati untuk tempat tinggal?","c":"Memagari lahan dan membuat atap","x":["Menanam rumput","Memberi tanda","Menyiram air"],"e":"Untuk tempat tinggal disyaratkan memagari lahan dengan bangunan dan memasang atap.","p":5},
-{"q":"Cara menghidupkan tanah mati untuk kandang hewan?","c":"Cukup pemagaran yang lebih ringan, tanpa atap","x":["Dengan atap penuh","Dengan taman","Dengan irigasi"],"e":"Untuk kandang cukup pemagaran lebih ringan dan tidak disyaratkan atap.","p":6},
-{"q":"Cara menghidupkan tanah mati sebagai ladang?","c":"Mengumpulkan tanah di sekelilingnya, meratakannya, dan menyiapkan pengairan","x":["Menanam pohon","Membuat rumah","Menyewakan"],"e":"Untuk ladang: mengumpulkan tanah di sekelilingnya, meratakan, dan mengatur air.","p":6},
-{"q":"Memberikan air wajib dengan berapa syarat?","c":"Tiga","x":["Dua","Lima","Satu"],"e":"Memberikan air hanya wajib dengan tiga syarat.","p":8},
-{"q":"Syarat pertama wajib memberikan air?","c":"Air itu lebih dari kebutuhan pemiliknya","x":["Air itu terbatas","Air itu mahal","Air itu jauh"],"e":"Pertama: air lebih dari kebutuhan pemiliknya.","p":8}
+"e": "Mukhabarah: pekerja bekerja di tanah pemilik dengan imbalan sebagian hasil, benihnya dari pekerja; muzara'ah benihnya dari pemilik.",
+"p": 1
+},
+{
+"q": "Apa itu muzara'ah?",
+"c": "Pekerja menggarap tanah dengan imbalan sebagian hasil, benih dari pemilik",
+"x": [
+"Benih dari pekerja",
+"Sewa tanah dengan emas",
+"Gadai tanah"
 ],
-"u70":[
-{"q":"Apa makna wakaf secara bahasa dan syara'?","c":"Bahasa: menahan; syara': menahan harta tertentu yang bermanfaat dengan utuh bendanya dan memutus tasharruf atasnya","x":["Bahasa: memberi; syara': memberi harta","Bahasa: menjual; syara': menjual harta","Bahasa: meminjam; syara': meminjam harta"],"e":"Wakaf: menahan harta, manfaatnya disalurkan pada kebaikan, dengan memutus tasharruf.","p":1},
-{"q":"Berapa syarat wakaf?","c":"Tiga","x":["Dua","Lima","Tujuh"],"e":"Wakaf boleh dengan tiga syarat.","p":2},
-{"q":"Syarat pertama wakaf?","c":"Barang wakaf dapat dimanfaatkan dengan tetap utuh bendanya","x":["Barang habis dipakai","Barang mudah rusak","Barang dikonsumsi"],"e":"Pertama: barang wakaf dapat dimanfaatkan dengan tetap utuh bendanya.","p":2},
-{"q":"Benda apa yang tidak sah diwakafkan?","c":"Makanan dan tanaman harum yang tidak tetap bendanya","x":["Tanah","Rumah","Buku"],"e":"Benda yang tidak tetap bendanya seperti makanan dan tanaman harum tidak sah diwakafkan.","p":3},
-{"q":"Syarat kedua wakaf?","c":"Atas pangkal yang ada dan cabang yang tidak terputus","x":["Atas orang yang sudah meninggal","Atas yang terputus awalnya","Atas yang terputus akhirnya"],"e":"Kedua: wakaf atas pangkal yang ada dan cabang yang tidak terputus.","p":4},
-{"q":"Syarat ketiga wakaf?","c":"Tidak pada sesuatu yang terlarang","x":["Pada tempat ibadah gereja","Pada yang haram","Pada yang dibatasi waktu"],"e":"Ketiga: wakaf tidak pada sesuatu yang haram, misalnya membangun gereja.","p":6},
-{"q":"Apakah wakaf boleh dibatasi waktu?","c":"Tidak boleh","x":["Boleh setahun","Boleh sepekan","Boleh sebulan"],"e":"Wakaf tidak dibatasi waktu dan tidak digantungkan.","p":7}
+"e": "Muzara'ah: pekerja bekerja di tanah dengan sebagian hasil, benihnya dari pemilik.",
+"p": 2
+},
+{
+"q": "Cara yang diperbolehkan untuk menggarapkan tanah adalah...",
+"c": "Menyewakan tanah dengan emas atau perak atau makanan yang diketahui",
+"x": [
+"Dengan sebagian hasil yang tidak diketahui",
+"Dengan imbalan hasil yang jauh",
+"Dengan janji tanpa kadar"
 ],
-"u71":[
-{"q":"Apa itu hibah secara syara'?","c":"Memberi kepemilikan benda secara langsung tanpa batas waktu ketika hidup, tanpa imbalan","x":["Memberi kepemilikan setelah meninggal","Meminjamkan benda sementara","Menjual benda dengan harga murah"],"e":"Hibah: memberi kepemilikan benda secara langsung, tanpa batas waktu, ketika hidup, tanpa imbalan.","p":1},
-{"q":"Apa yang dikecualikan oleh kata 'ketika hidup' dalam definisi hibah?","c":"Wasiat","x":["Wakaf","Jual beli","Pinjaman"],"e":"Dengan 'ketika hidup' dikecualikan wasiat.","p":2},
-{"q":"Barang yang boleh dihibahkan?","c":"Setiap barang yang boleh dijual","x":["Setiap barang najis","Setiap barang yang tidak diketahui","Setiap barang haram"],"e":"Setiap barang yang boleh dijual boleh dihibahkan.","p":3},
-{"q":"Hibah mengikat dengan apa?","c":"Serah terima dengan izin pemberi","x":["Ijab saja","Qabul saja","Saksi saja"],"e":"Hibah tidak mengikat kecuali dengan serah terima dengan izin pemberi.","p":4},
-{"q":"Siapa yang boleh menarik kembali hibah setelah diterima?","c":"Orang tua dan kakek ke atas","x":["Siapa saja","Saudara","Tetangga"],"e":"Pemberi tidak boleh menarik kembali kecuali orang tua, walaupun ke atas.","p":5}
+"e": "Jika menyewakan tanah dengan emas/perak atau makanan yang diketahui dalam tanggungan, itu sah.",
+"p": 2
+}
 ],
-"u72":[
-{"q":"Apa itu luqathah?","c":"Harta yang hilang dari pemiliknya karena jatuh atau lalai","x":["Harta yang dicuri","Harta yang disembunyikan","Harta yang diwakafkan"],"e":"Luqathah adalah harta yang hilang dari pemiliknya karena jatuh, lalai, atau semisalnya.","p":1},
-{"q":"Apa yang lebih utama terhadap barang temuan jika yakin mampu menunaikan?","c":"Mengambilnya","x":["Meninggalkannya","Membuangnya","Menjualnya"],"e":"Mengambilnya lebih utama daripada meninggalkannya jika yakin dapat melaksanakan kewajiban terhadapnya.","p":2},
-{"q":"Apa yang wajib dikenali penemu segera setelah mengambil?","c":"Enam perkara: wadah, 'ifash, tali, jenis, jumlah, dan timbangan","x":["Hanya jenis","Hanya jumlah","Hanya tempat"],"e":"Wajib mengenali enam perkara pada barang temuan segera setelah mengambilnya.","p":4},
-{"q":"Berapa lama barang temuan diumumkan jika penemu hendak memilikinya?","c":"Setahun","x":["Sebulan","Seminggu","Sepuluh tahun"],"e":"Mengumumkan setahun di pintu masjid dan tempat keramaian.","p":5},
-{"q":"Penemu menyebutkan sifat barang temuan saat mengumumkan?","c":"Sebagian sifatnya, tidak semuanya","x":["Seluruh sifatnya","Tidak menyebut apa pun","Harga barang"],"e":"Menyebutkan sebagian sifat; berlebihan menjadikannya menanggung.","p":7},
-{"q":"Barang temuan ada berapa macam menurut matan?","c":"Empat","x":["Dua","Tiga","Lima"],"e":"Barang temuan ada empat macam.","p":10},
-{"q":"Macam kedua: barang tidak tahan lama seperti makanan basah, pilihan penemu?","c":"Memakannya dan menggantinya, atau menjualnya dan menjaga harganya","x":["Membuangnya","Menyimpannya","Memberikannya"],"e":"Penemu diberi pilihan antara memakannya dan mengganti, atau menjualnya dan menjaga harga.","p":11},
-{"q":"Hewan yang mampu bertahan sendiri dari binatang buas kecil (unta, kuda) di padang pasir?","c":"Dibiarkan; haram memungutnya untuk dimiliki","x":["Dipungut","Dimakan","Dijual"],"e":"Ia membiarkannya, haram memungut untuk dimiliki; jika mengambil, ia menanggung.","p":14}
+"u69": [
+{
+"q": "Apa itu tanah mati?",
+"c": "Tanah yang tidak ada pemiliknya dan tidak dimanfaatkan seorang pun",
+"x": [
+"Tanah yang tandus",
+"Tanah yang gersang",
+"Tanah milik negara"
 ],
-"u73":[
-{"q":"Siapa laqith?","c":"Anak kecil yang dibuang dan tidak ada yang menanggungnya","x":["Anak yatim","Anak orang kaya","Anak yang hilang"],"e":"Laqith adalah anak kecil yang dibuang dan tidak ada yang menanggungnya.","p":1},
-{"q":"Memungut anak pungut hukumnya?","c":"Fardhu kifayah","x":["Sunnah","Mubah","Makruh"],"e":"Jika sebagian orang telah memungutnya, gugurlah dosa yang lain.","p":2},
-{"q":"Jika ada harta bersama anak pungut, siapa yang memberi nafkah?","c":"Hakim memberinya nafkah dari harta itu","x":["Pemungut dari hartanya","Tetangga","Orang tua"],"e":"Hakim memberinya nafkah dari harta itu; jika tidak ada, dari baitul mal.","p":3}
+"e": "Tanah mati adalah tanah yang tidak ada pemiliknya dan tidak dimanfaatkan seorang pun.",
+"p": 1
+},
+{
+"q": "Siapa yang berhak menghidupkan tanah mati?",
+"c": "Muslim, di tanah yang bebas belum pernah dimiliki",
+"x": [
+"Hanya imam",
+"Hanya orang kaya",
+"Hanya penduduk setempat"
 ],
-"u74":[
-{"q":"Apa makna wadi'ah?","c":"Akad penitipan agar sesuatu dijaga","x":["Akad pinjam","Akad sewa","Akad jual"],"e":"Wadi'ah adalah akad yang menuntut permintaan penjagaan.","p":1},
-{"q":"Hukum menerima titipan bagi yang mampu menjaga?","c":"Sunnah, wajib bila tidak ada orang lain","x":["Haram","Makruh","Mubah"],"e":"Disunnahkan menerimanya bagi yang mampu; jika tidak ada orang lain, wajib.","p":2},
-{"q":"Kapan penerima titipan menanggung?","c":"Hanya karena melampaui batas","x":["Selalu","Tidak pernah","Bila titipan rusak"],"e":"Penerima titipan tidak menanggung kecuali karena melampaui batas.","p":3},
-{"q":"Perkataan penerima titipan tentang pengembalian titipan diterima?","c":"Ya, diterima","x":["Tidak","Tidak diterima tanpa saksi","Hanya diterima dengan sumpah tanpa bukti"],"e":"Perkataan penerima titipan diterima dalam hal mengembalikannya kepada penitip.","p":4}
+"e": "Menghidupkan tanah mati boleh dengan dua syarat: pelakunya muslim dan tanah bebas belum pernah dimiliki muslim.",
+"p": 1
+},
+{
+"q": "Tanah yang dahulu digarap dan kini rusak, milik siapa?",
+"c": "Milik pemiliknya jika diketahui, muslim maupun dzimmi",
+"x": [
+"Milik imam",
+"Milik yang menghidupkan",
+"Milik penduduk"
+],
+"e": "Tanah yang dahulu digarap lalu rusak adalah milik pemiliknya jika diketahui.",
+"p": 3
+},
+{
+"q": "Cara menghidupkan tanah mati untuk tempat tinggal?",
+"c": "Memagari lahan dan membuat atap",
+"x": [
+"Menanam rumput",
+"Memberi tanda",
+"Menyiram air"
+],
+"e": "Untuk tempat tinggal disyaratkan memagari lahan dengan bangunan dan memasang atap.",
+"p": 5
+},
+{
+"q": "Cara menghidupkan tanah mati untuk kandang hewan?",
+"c": "Cukup pemagaran yang lebih ringan, tanpa atap",
+"x": [
+"Dengan atap penuh",
+"Dengan taman",
+"Dengan irigasi"
+],
+"e": "Untuk kandang cukup pemagaran lebih ringan dan tidak disyaratkan atap.",
+"p": 6
+},
+{
+"q": "Cara menghidupkan tanah mati sebagai ladang?",
+"c": "Mengumpulkan tanah di sekelilingnya, meratakannya, dan menyiapkan pengairan",
+"x": [
+"Menanam pohon",
+"Membuat rumah",
+"Menyewakan"
+],
+"e": "Untuk ladang: mengumpulkan tanah di sekelilingnya, meratakan, dan mengatur air.",
+"p": 6
+},
+{
+"q": "Memberikan air wajib dengan berapa syarat?",
+"c": "Tiga",
+"x": [
+"Dua",
+"Lima",
+"Satu"
+],
+"e": "Memberikan air hanya wajib dengan tiga syarat.",
+"p": 8
+},
+{
+"q": "Syarat pertama wajib memberikan air?",
+"c": "Air itu lebih dari kebutuhan pemiliknya",
+"x": [
+"Air itu terbatas",
+"Air itu mahal",
+"Air itu jauh"
+],
+"e": "Pertama: air lebih dari kebutuhan pemiliknya.",
+"p": 8
+}
+],
+"u70": [
+{
+"q": "Apa makna wakaf secara bahasa dan syara'?",
+"c": "Bahasa: menahan; syara': menahan harta tertentu yang bermanfaat dengan utuh bendanya dan memutus tasharruf atasnya",
+"x": [
+"Bahasa: memberi; syara': memberi harta",
+"Bahasa: menjual; syara': menjual harta",
+"Bahasa: meminjam; syara': meminjam harta"
+],
+"e": "Wakaf: menahan harta, manfaatnya disalurkan pada kebaikan, dengan memutus tasharruf.",
+"p": 1
+},
+{
+"q": "Berapa syarat wakaf?",
+"c": "Tiga",
+"x": [
+"Dua",
+"Lima",
+"Tujuh"
+],
+"e": "Wakaf boleh dengan tiga syarat.",
+"p": 2
+},
+{
+"q": "Syarat pertama wakaf?",
+"c": "Barang wakaf dapat dimanfaatkan dengan tetap utuh bendanya",
+"x": [
+"Barang habis dipakai",
+"Barang mudah rusak",
+"Barang dikonsumsi"
+],
+"e": "Pertama: barang wakaf dapat dimanfaatkan dengan tetap utuh bendanya.",
+"p": 2
+},
+{
+"q": "Benda apa yang tidak sah diwakafkan?",
+"c": "Makanan dan tanaman harum yang tidak tetap bendanya",
+"x": [
+"Tanah",
+"Rumah",
+"Buku"
+],
+"e": "Benda yang tidak tetap bendanya seperti makanan dan tanaman harum tidak sah diwakafkan.",
+"p": 3
+},
+{
+"q": "Syarat kedua wakaf?",
+"c": "Atas pangkal yang ada dan cabang yang tidak terputus",
+"x": [
+"Atas orang yang sudah meninggal",
+"Atas yang terputus awalnya",
+"Atas yang terputus akhirnya"
+],
+"e": "Kedua: wakaf atas pangkal yang ada dan cabang yang tidak terputus.",
+"p": 4
+},
+{
+"q": "Syarat ketiga wakaf?",
+"c": "Tidak pada sesuatu yang terlarang",
+"x": [
+"Pada tempat ibadah gereja",
+"Pada yang haram",
+"Pada yang dibatasi waktu"
+],
+"e": "Ketiga: wakaf tidak pada sesuatu yang haram, misalnya membangun gereja.",
+"p": 6
+},
+{
+"q": "Apakah wakaf boleh dibatasi waktu?",
+"c": "Tidak boleh",
+"x": [
+"Boleh setahun",
+"Boleh sepekan",
+"Boleh sebulan"
+],
+"e": "Wakaf tidak dibatasi waktu dan tidak digantungkan.",
+"p": 7
+}
+],
+"u71": [
+{
+"q": "Apa itu hibah secara syara'?",
+"c": "Memberi kepemilikan benda secara langsung tanpa batas waktu ketika hidup, tanpa imbalan",
+"x": [
+"Memberi kepemilikan setelah meninggal",
+"Meminjamkan benda sementara",
+"Menjual benda dengan harga murah"
+],
+"e": "Hibah: memberi kepemilikan benda secara langsung, tanpa batas waktu, ketika hidup, tanpa imbalan.",
+"p": 1
+},
+{
+"q": "Apa yang dikecualikan oleh kata 'ketika hidup' dalam definisi hibah?",
+"c": "Wasiat",
+"x": [
+"Wakaf",
+"Jual beli",
+"Pinjaman"
+],
+"e": "Dengan 'ketika hidup' dikecualikan wasiat.",
+"p": 2
+},
+{
+"q": "Barang yang boleh dihibahkan?",
+"c": "Setiap barang yang boleh dijual",
+"x": [
+"Setiap barang najis",
+"Setiap barang yang tidak diketahui",
+"Setiap barang haram"
+],
+"e": "Setiap barang yang boleh dijual boleh dihibahkan.",
+"p": 3
+},
+{
+"q": "Hibah mengikat dengan apa?",
+"c": "Serah terima dengan izin pemberi",
+"x": [
+"Ijab saja",
+"Qabul saja",
+"Saksi saja"
+],
+"e": "Hibah tidak mengikat kecuali dengan serah terima dengan izin pemberi.",
+"p": 4
+},
+{
+"q": "Siapa yang boleh menarik kembali hibah setelah diterima?",
+"c": "Orang tua dan kakek ke atas",
+"x": [
+"Siapa saja",
+"Saudara",
+"Tetangga"
+],
+"e": "Pemberi tidak boleh menarik kembali kecuali orang tua, walaupun ke atas.",
+"p": 5
+}
+],
+"u72": [
+{
+"q": "Apa itu luqathah?",
+"c": "Harta yang hilang dari pemiliknya karena jatuh atau lalai",
+"x": [
+"Harta yang dicuri",
+"Harta yang disembunyikan",
+"Harta yang diwakafkan"
+],
+"e": "Luqathah adalah harta yang hilang dari pemiliknya karena jatuh, lalai, atau semisalnya.",
+"p": 1
+},
+{
+"q": "Apa yang lebih utama terhadap barang temuan jika yakin mampu menunaikan?",
+"c": "Mengambilnya",
+"x": [
+"Meninggalkannya",
+"Membuangnya",
+"Menjualnya"
+],
+"e": "Mengambilnya lebih utama daripada meninggalkannya jika yakin dapat melaksanakan kewajiban terhadapnya.",
+"p": 2
+},
+{
+"q": "Apa yang wajib dikenali penemu segera setelah mengambil?",
+"c": "Enam perkara: wadah, 'ifash, tali, jenis, jumlah, dan timbangan",
+"x": [
+"Hanya jenis",
+"Hanya jumlah",
+"Hanya tempat"
+],
+"e": "Wajib mengenali enam perkara pada barang temuan segera setelah mengambilnya.",
+"p": 4
+},
+{
+"q": "Berapa lama barang temuan diumumkan jika penemu hendak memilikinya?",
+"c": "Setahun",
+"x": [
+"Sebulan",
+"Seminggu",
+"Sepuluh tahun"
+],
+"e": "Mengumumkan setahun di pintu masjid dan tempat keramaian.",
+"p": 5
+},
+{
+"q": "Penemu menyebutkan sifat barang temuan saat mengumumkan?",
+"c": "Sebagian sifatnya, tidak semuanya",
+"x": [
+"Seluruh sifatnya",
+"Tidak menyebut apa pun",
+"Harga barang"
+],
+"e": "Menyebutkan sebagian sifat; berlebihan menjadikannya menanggung.",
+"p": 7
+},
+{
+"q": "Barang temuan ada berapa macam menurut matan?",
+"c": "Empat",
+"x": [
+"Dua",
+"Tiga",
+"Lima"
+],
+"e": "Barang temuan ada empat macam.",
+"p": 10
+},
+{
+"q": "Macam kedua: barang tidak tahan lama seperti makanan basah, pilihan penemu?",
+"c": "Memakannya dan menggantinya, atau menjualnya dan menjaga harganya",
+"x": [
+"Membuangnya",
+"Menyimpannya",
+"Memberikannya"
+],
+"e": "Penemu diberi pilihan antara memakannya dan mengganti, atau menjualnya dan menjaga harga.",
+"p": 11
+},
+{
+"q": "Hewan yang mampu bertahan sendiri dari binatang buas kecil (unta, kuda) di padang pasir?",
+"c": "Dibiarkan; haram memungutnya untuk dimiliki",
+"x": [
+"Dipungut",
+"Dimakan",
+"Dijual"
+],
+"e": "Ia membiarkannya, haram memungut untuk dimiliki; jika mengambil, ia menanggung.",
+"p": 14
+}
+],
+"u73": [
+{
+"q": "Siapakah yang dimaksud dengan laqith dalam bab ini?",
+"c": "Anak kecil yang dibuang dan tidak ada yang menanggungnya",
+"x": [
+"Anak yatim",
+"Anak orang kaya",
+"Anak yang hilang"
+],
+"e": "Laqith adalah anak kecil yang dibuang dan tidak ada yang menanggungnya.",
+"p": 1
+},
+{
+"q": "Memungut anak pungut hukumnya?",
+"c": "Fardhu kifayah",
+"x": [
+"Sunnah",
+"Mubah",
+"Makruh"
+],
+"e": "Jika sebagian orang telah memungutnya, gugurlah dosa yang lain.",
+"p": 2
+},
+{
+"q": "Jika ada harta bersama anak pungut, siapa yang memberi nafkah?",
+"c": "Hakim memberinya nafkah dari harta itu",
+"x": [
+"Pemungut dari hartanya",
+"Tetangga",
+"Orang tua"
+],
+"e": "Hakim memberinya nafkah dari harta itu; jika tidak ada, dari baitul mal.",
+"p": 3
+}
+],
+"u74": [
+{
+"q": "Apa makna wadi'ah?",
+"c": "Akad penitipan agar sesuatu dijaga",
+"x": [
+"Akad pinjam",
+"Akad sewa",
+"Akad jual"
+],
+"e": "Wadi'ah adalah akad yang menuntut permintaan penjagaan.",
+"p": 1
+},
+{
+"q": "Hukum menerima titipan bagi yang mampu menjaga?",
+"c": "Sunnah, wajib bila tidak ada orang lain",
+"x": [
+"Haram",
+"Makruh",
+"Mubah"
+],
+"e": "Disunnahkan menerimanya bagi yang mampu; jika tidak ada orang lain, wajib.",
+"p": 2
+},
+{
+"q": "Kapan penerima titipan menanggung?",
+"c": "Hanya karena melampaui batas",
+"x": [
+"Selalu",
+"Tidak pernah",
+"Bila titipan rusak"
+],
+"e": "Penerima titipan tidak menanggung kecuali karena melampaui batas.",
+"p": 3
+},
+{
+"q": "Perkataan penerima titipan tentang pengembalian titipan diterima?",
+"c": "Ya, diterima",
+"x": [
+"Tidak",
+"Tidak diterima tanpa saksi",
+"Hanya diterima dengan sumpah tanpa bukti"
+],
+"e": "Perkataan penerima titipan diterima dalam hal mengembalikannya kepada penitip.",
+"p": 4
+}
 ]
 }
