@@ -1,0 +1,59 @@
+{
+"u55":[
+{"q":"Apa arti hawalah secara bahasa dan syara'?","c":"Bahasa: berpindah; syara': memindahkan hak dari tanggungan muhil ke muhal 'alaih","x":["Bahasa: menjamin; syara': menjamin utang orang lain","Bahasa: meminjam; syara': meminjam barang tanpa imbalan","Bahasa: mewakilkan; syara': mewakilkan urusan kepada orang lain"],"e":"Hawalah bahasa: berpindah; syara': memindahkan hak dari tanggungan muhil ke tanggungan muhal 'alaih.","p":1},
+{"q":"Berapa syarat hawalah?","c":"Empat","x":["Dua","Lima","Tujuh"],"e":"Syarat hawalah ada empat.","p":1},
+{"q":"Syarat pertama hawalah adalah...","c":"Kerelaan muhil, yaitu orang yang berutang","x":["Kerelaan saksi","Kerelaan hakim","Kerelaan wali"],"e":"Pertama: kerelaan muhil (yang berutang dan memindahkan hak).","p":1},
+{"q":"Syarat kedua hawalah?","c":"Penerimaan muhtal, yaitu pemilik piutang","x":["Penerimaan saksi","Penerimaan wali","Penerimaan hakim"],"e":"Kedua: penerimaan muhtal, pemilik piutang atas muhil.","p":2},
+{"q":"Syarat keempat hawalah adalah kesesuaian utang dalam apa?","c":"Jenis, kadar, macam, kontan atau bertempo, utuh dan pecahan","x":["Hanya jenis","Hanya kadar","Tidak perlu sesuai"],"e":"Keempat: kesesuaian utang muhil dan muhal 'alaih dalam jenis, kadar, macam, kontan/bertempo, utuh/pecahan.","p":3},
+{"q":"Jika muhal 'alaih bangkrut setelah hawalah, bolehkah muhtal menuntut kembali ke muhil?","c":"Tidak boleh","x":["Boleh","Boleh dalam semua keadaan","Boleh jika muhil kaya"],"e":"Muhtal tidak dapat kembali menuntut muhil jika sulit mengambil dari muhal 'alaih karena bangkrut atau mengingkari.","p":4}
+],
+"u56":[
+{"q":"Apa makna dhaman secara syara'?","c":"Menanggung harta yang ada dalam tanggungan orang lain","x":["Menjual barang","Menggadaikan barang","Meminjamkan barang"],"e":"Dhaman secara syara' adalah menanggung harta yang ada dalam tanggungan orang lain.","p":1},
+{"q":"Syarat penjamin adalah...","c":"Memiliki kelayakan bertasharruf","x":["Kaya raya","Laki-laki saja","Berusia lanjut"],"e":"Syarat penjamin: memiliki kelayakan bertasharruf.","p":1},
+{"q":"Siapa yang bisa ditagih pemilik piutang?","c":"Siapa saja yang ia kehendaki: penjamin atau yang berutang","x":["Penjamin saja","Yang berutang saja","Saksi"],"e":"Pemilik hak berhak menagih siapa saja yang ia kehendaki dari penjamin dan yang dijamin.","p":3},
+{"q":"Kapan penjamin menuntut kembali kepada yang dijamin?","c":"Apabila penjaminan dan pembayaran dengan izin yang dijamin","x":["Selalu","Tidak pernah","Hanya bila penjamin kaya"],"e":"Penjamin menuntut kembali dengan syarat penjaminan dan pembayaran dengan izinnya.","p":4},
+{"q":"Bolehkah menjamin yang tidak diketahui?","c":"Tidak sah","x":["Sah","Sah bila sedikit","Sah dengan saksi"],"e":"Tidak sah menjamin yang tidak diketahui atau belum wajib.","p":5}
+],
+"u57":[
+{"q":"Apa itu kafalah badan?","c":"Penjaminan badan orang yang dijamin untuk dihadirkan","x":["Penjaminan harta","Penjaminan barang","Penjaminan hasil"],"e":"Kafalah wajah atau badan adalah penjaminan selain harta, berupa badan.","p":1},
+{"q":"Kafalah badan sah bila ada hak apa pada orang yang dijamin?","c":"Hak manusia seperti qishash dan had qadzaf","x":["Hak Allah seperti had zina","Hak Allah seperti had mencuri","Tidak ada hak"],"e":"Boleh jika atas orang yang dijamin ada hak manusia; hak Allah seperti had zina dikecualikan.","p":1},
+{"q":"Bagaimana penjamin terbebas dari kafalah?","c":"Dengan menyerahkan badan orang yang dijamin di tempat penyerahan","x":["Dengan membayar utang","Dengan menunggu sebulan","Dengan sumpah"],"e":"Penjamin terbebas dengan menyerahkan badan orang yang dijamin di tempat penyerahan tanpa penghalang.","p":2}
+],
+"u58":[
+{"q":"Apa arti syirkah secara bahasa dan syara'?","c":"Bahasa: percampuran; syara': tetapnya hak kepemilikan bersama pada satu barang bagi dua orang atau lebih","x":["Bahasa: pemisahan; syara': pembagian harta","Bahasa: penjaminan; syara': penjaminan utang","Bahasa: perwakilan; syara': perwakilan urusan"],"e":"Syirkah bahasa: percampuran; syara': tetapnya hak kepemilikan bersama pada satu barang bagi dua orang atau lebih.","p":1},
+{"q":"Berapa syarat syirkah?","c":"Lima","x":["Tiga","Tujuh","Sepuluh"],"e":"Syirkah memiliki lima syarat.","p":1},
+{"q":"Syarat pertama syirkah?","c":"Atas uang tunai berupa dirham dan dinar","x":["Atas emas batangan","Atas perhiasan","Atas pakaian"],"e":"Pertama: syirkah atas uang tunai; tidak sah pada emas mentah, perhiasan, batangan.","p":1},
+{"q":"Syarat kedua syirkah?","c":"Sama dalam jenis dan macam","x":["Boleh berbeda jenis","Boleh emas dengan dirham","Tidak ada syarat"],"e":"Keduanya sama dalam jenis dan macam; tidak sah emas dengan dirham.","p":2},
+{"q":"Syarat ketiga dan keempat?","c":"Mencampur kedua harta, dan masing-masing mengizinkan sekutunya bertasharruf","x":["Memisahkan harta, dan melarang tasharruf","Menyimpan harta, dan menjual harta","Mencatat harta, dan menjual saham"],"e":"Ketiga: mencampur kedua harta; keempat: masing-masing mengizinkan sekutu bertasharruf.","p":3},
+{"q":"Syarat kelima syirkah?","c":"Keuntungan dan kerugian sesuai kadar kedua harta","x":["Dibagi rata apa pun modalnya","Dibagi menurut keinginan","Dibagi untuk sekutu saja"],"e":"Kelima: keuntungan dan kerugian sesuai kadar kedua harta.","p":4},
+{"q":"Syirkah adalah akad yang...","c":"Tidak mengikat; masing-masing boleh membatalkannya kapan saja","x":["Mengikat selamanya","Mengikat selama setahun","Mengikat dengan saksi"],"e":"Syirkah tidak mengikat, masing-masing boleh membatalkannya kapan saja.","p":5}
+],
+"u59":[
+{"q":"Apa makna wakalah?","c":"Seseorang menyerahkan suatu urusan yang boleh dilakukannya kepada orang lain","x":["Menjamin utang","Menggadaikan barang","Memberi hadiah"],"e":"Wakalah bahasa: menyerahkan; syara': seseorang menyerahkan urusan yang boleh ia lakukan dan dapat diwakilkan kepada orang lain.","p":1},
+{"q":"Siapa yang tidak sah menjadi pemberi kuasa?","c":"Anak kecil dan orang gila","x":["Orang dewasa","Orang berakal","Orang merdeka"],"e":"Tidak sah anak kecil atau orang gila menjadi pemberi kuasa; mereka tidak boleh bertasharruf sendiri.","p":2},
+{"q":"Ibadah badan apa yang boleh diwakilkan?","c":"Haji dan membagikan zakat","x":["Shalat","Puasa","Wudhu"],"e":"Tidak sah mewakilkan ibadah badan kecuali haji dan membagikan zakat, misalnya.","p":3},
+{"q":"Wakalah adalah akad yang...","c":"Tidak mengikat; masing-masing boleh membatalkan kapan saja","x":["Mengikat selamanya","Mengikat selama sebulan","Mengikat dengan sumpah"],"e":"Wakalah tidak mengikat, boleh dibatalkan; batal dengan matinya salah satu atau gilanya.","p":4},
+{"q":"Kapan wakil menanggung?","c":"Hanya karena kelalaian","x":["Selalu","Tidak pernah","Hanya bila untung"],"e":"Wakil tidak menanggung kecuali karena kelalaian dalam urusan yang diwakilkan.","p":5},
+{"q":"Wakalah mutlak jual beli sah dengan tiga syarat. Apa saja?","c":"Harga standar, tunai, dan dengan mata uang daerah itu","x":["Harga tinggi, tempo, mata uang asing","Harga rendah, tunai, barter","Harga bebas, tempo, tanpa syarat"],"e":"Tiga syarat: menjual dengan harga standar, tunai, dan dengan mata uang daerah itu.","p":5},
+{"q":"Bolehkah wakil menjual kepada dirinya sendiri dengan wakalah mutlak?","c":"Tidak boleh","x":["Boleh","Boleh dengan harga rendah","Boleh bila diizinkan hakim"],"e":"Wakil tidak boleh menjual kepada dirinya sendiri, tidak pula kepada anaknya yang kecil.","p":7},
+{"q":"Bolehkah wakil membuat pengakuan atas nama pemberi kuasa?","c":"Tidak boleh","x":["Boleh","Boleh dengan saksi","Boleh hanya jika menang"],"e":"Wakil tidak boleh membuat pengakuan atas nama pemberi kuasa dalam persengketaan.","p":8}
+],
+"u60":[
+{"q":"Apa makna iqrar secara bahasa dan syara'?","c":"Bahasa: menetapkan; syara': memberitahukan suatu hak atas diri orang yang mengaku","x":["Bahasa: menyaksikan; syara': memberitahukan hak orang lain","Bahasa: bersumpah; syara': menguatkan dengan sumpah","Bahasa: berdamai; syara': memutus persengketaan"],"e":"Iqrar bahasa: menetapkan; syara': memberitahukan suatu hak atas diri orang yang mengaku. Kesaksian adalah hak orang lain atas orang lain.","p":1},
+{"q":"Pengakuan terhadap hak Allah seperti zina, bisakah dicabut?","c":"Sah dicabut, bahkan disunnahkan","x":["Tidak sah dicabut","Wajib dicabut","Haram dicabut"],"e":"Hak Allah sah dicabut pengakuannya; disunnahkan bagi yang mengaku berzina mencabutnya.","p":2},
+{"q":"Pengakuan hak manusia, bisakah dicabut?","c":"Tidak sah dicabut","x":["Sah dicabut","Sah dicabut bila sendiri","Wajib dicabut"],"e":"Hak manusia tidak sah dicabut pengakuannya.","p":2},
+{"q":"Syarat sahnya iqrar?","c":"Baligh, berakal, dan rusyd jika tentang harta","x":["Kaya dan baligh","Merdeka dan laki-laki","Dewasa dan berumur"],"e":"Syarat: baligh, berakal, dan untuk harta ditambah rusyd.","p":3},
+{"q":"Pengakuan anak kecil yang mendekati baligh, sah?","c":"Tidak sah, walau dengan izin wali","x":["Sah","Sah dengan izin wali","Sah bila ia mengerti"],"e":"Tidak sah pengakuan anak kecil walaupun mendekati baligh dan dengan izin walinya.","p":3},
+{"q":"Jika mengaku dengan sesuatu yang tidak jelas, siapa yang menjelaskan?","c":"Yang mengaku, penafsirannya diterima","x":["Hakim","Saksi","Penggugat"],"e":"Dikembalikan kepada yang mengaku dalam penjelasannya.","p":5},
+{"q":"Pengecualian dalam iqrar sah bila...","c":"Disambungkan dengan yang dikecualikan","x":["Dipisah lama","Diucapkan esok hari","Dengan diam panjang"],"e":"Pengecualian sah bila disambungkan; jika dipisah dengan diam atau perkataan panjang, batal.","p":7},
+{"q":"Pengakuan saat sehat dan sakit, mana yang didahulukan?","c":"Keduanya sama, tidak ada yang didahulukan","x":["Pengakuan saat sehat","Pengakuan saat sakit","Pengakuan terakhir"],"e":"Pengakuan sehat dan sakit sama; harta diakui dibagi di antara keduanya secara proporsional.","p":8}
+],
+"u61":[
+{"q":"Apa makna 'ariyah secara syara'?","c":"Pembolehan memanfaatkan barang dari orang yang layak berderma","x":["Penjualan barang","Penyewaan barang","Penghibahan barang"],"e":"'Ariyah adalah pembolehan memanfaatkan barang dari orang yang layak berderma, berupa barang yang halal dimanfaatkan dengan tetap utuh bendanya.","p":1},
+{"q":"Siapa yang tidak sah meminjamkan?","c":"Anak kecil dan orang gila","x":["Orang dewasa","Orang berakal","Orang merdeka"],"e":"Orang yang tidak sah dermanya seperti anak kecil dan orang gila tidak sah meminjamkan.","p":2},
+{"q":"Barang apa yang boleh dipinjamkan?","c":"Yang mungkin dimanfaatkan dengan manfaat mubah dan tetap utuh bendanya","x":["Yang habis ketika dipakai","Alat musik melalaikan","Makanan sekali pakai"],"e":"Setiap barang yang mungkin dimanfaatkan dengan manfaat mubah, dengan tetap utuh bendanya.","p":3},
+{"q":"Meminjamkan kambing untuk diambil susunya, sah?","c":"Tidak sah karena manfaatnya berupa benda","x":["Sah","Sah bila sedikit","Sah dengan saksi"],"e":"Manfaat berupa benda seperti susu atau buah tidak sah dipinjamkan.","p":4},
+{"q":"Pinjaman boleh mutlak atau terbatas waktu?","c":"Keduanya boleh, dan pemberi boleh menarik kapan saja","x":["Hanya mutlak","Hanya terbatas","Tidak boleh ditarik"],"e":"Pinjaman boleh mutlak dan terbatas masa; pemberi boleh menarik dalam keduanya kapan saja.","p":5},
+{"q":"Barang pinjaman rusak bukan karena penggunaan yang diizinkan, bagaimana?","c":"Ditanggung peminjam dengan nilainya pada hari rusak","x":["Tidak ditanggung","Ditanggung pemberi","Ditanggung bersama"],"e":"Ditanggung peminjam dengan nilainya pada hari rusaknya; bila karena penggunaan yang diizinkan, tidak ditanggung.","p":6}
+]
+}
