@@ -43,3 +43,6 @@ Payment gateway nantinya cukup memanggil `berikanAkses(email, hari)` (di `akses-
 
 ### Sinkronisasi progres antar perangkat
 Riwayat bacaan, penanda, skor latihan, dan data kalkulator disalin ke server (`/api/sinkron`, tersimpan di Redis yang sama) sehingga ikut ke perangkat lain pada akun yang sama. Aturan: per data, yang terakhir diubah menang; saat dua perangkat pertama kali tersambung, penanda dan riwayat digabung. Pengaturan tampilan (tema, ukuran huruf) tetap per perangkat. Tanpa Redis, aplikasi tetap jalan hanya secara lokal. Bila perangkat dipakai akun lain, data lokal akun sebelumnya dikosongkan.
+
+### Halaman admin
+Buka `/admin` (login dengan email di `ADMIN_EMAILS`) untuk memberi/memperpanjang langganan (30/90/180/365 hari), mencabut akses, dan mereset daftar perangkat pelanggan, tanpa perintah teknis.

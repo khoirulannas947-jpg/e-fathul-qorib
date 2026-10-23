@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Admin Langganan – E-Fathul Qorib</title>
+<meta name="theme-color" content="#FFFFFF">
+<meta name="robots" content="noindex">
+<link rel="manifest" href="/manifest.webmanifest">
+<link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Fathul Qorib">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230F5132'/%3E%3Ctext x='32' y='44' font-size='36' text-anchor='middle' fill='%23fbf8ef' font-family='serif'%3E%D9%82%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
+<style>
+/* Halaman masuk: satu kartu di tengah lembar "kitab kuning"; login lewat Firebase (Google atau email). */
+:root{
+  --bg:#FAF9F4;--surface:#FFFFFF;--surface-2:#F5F3EC;--ink:#18201C;--ink-2:#4A544F;--ink-3:#7A847E;--line:#E8E4D8;--line-2:#D7D1BF;
+  --accent:#0F5132;--accent-ink:#0B4028;--accent-soft:#E7F0EA;--on-accent:#FFFFFF;--gold:#C5A35A;--gold-ink:#8C6D2A;--matan:#9A2B22;--danger:#A3261B;--danger-soft:#F8E4E0;
+  --f-ar:"Amiri","Traditional Arabic",serif;--f-ui:"Plus Jakarta Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0D1311;--surface:#141B18;--surface-2:#1A231F;--ink:#E7ECE8;--ink-2:#AEB8B2;--ink-3:#7D8882;--line:#232D29;--line-2:#323E39;
+  --accent:#7CC6A0;--accent-ink:#A8DDBF;--accent-soft:#16302A;--on-accent:#08130E;--gold:#D3B46F;--gold-ink:#E2C88E;--matan:#EE8C7B;--danger:#EE8C7B;--danger-soft:#3a201b;color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0D1311;--surface:#141B18;--surface-2:#1A231F;--ink:#E7ECE8;--ink-2:#AEB8B2;--ink-3:#7D8882;--line:#232D29;--line-2:#323E39;
+  --accent:#7CC6A0;--accent-ink:#A8DDBF;--accent-soft:#16302A;--on-accent:#08130E;--gold:#D3B46F;--gold-ink:#E2C88E;--matan:#EE8C7B;--danger:#EE8C7B;--danger-soft:#3a201b;color-scheme:dark}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html,body{min-height:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.6 var(--f-ui);-webkit-font-smoothing:antialiased;
+  display:grid;place-items:center;padding-block:32px;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));
+}
+button,input{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.card{width:min(640px,100%);background:var(--surface);border:1px solid var(--line);border-radius:18px;box-shadow:0 1px 2px rgba(16,32,24,.04),0 12px 40px -18px rgba(16,32,24,.22);padding:28px}
+.brand{display:flex;align-items:center;gap:12px}
+.seal{width:46px;height:46px;border-radius:13px;background:#0F5132;color:#fff;box-shadow:inset 0 0 0 1.5px rgba(197,163,90,.7);display:grid;place-items:center;font-family:var(--f-ar);font-size:26px;padding-bottom:4px;flex:none}
+.brand b{display:block;font-size:18px;font-weight:800;letter-spacing:-.01em}
+.brand small{color:var(--ink-3);font-size:12.5px}
+.ar{font-family:var(--f-ar);direction:rtl;text-align:center;color:var(--gold-ink);font-size:26px;line-height:1.6;margin:18px 0 4px}
+h1{font-size:22px;line-height:1.25;margin:0 0 4px;letter-spacing:-.02em;text-align:center}
+.lead{color:var(--ink-2);text-align:center;margin:0 0 22px;font-size:14px}
+.btn{width:100%;display:flex;align-items:center;justify-content:center;gap:10px;height:46px;border-radius:12px;border:1px solid var(--line);background:var(--surface);font-weight:700;font-size:14.5px;cursor:pointer}
+.btn:hover{border-color:var(--line-2);background:var(--surface-2)}
+.btn.pri{background:var(--accent);border-color:var(--accent);color:var(--on-accent)}
+.btn.pri:hover{background:var(--accent-ink)}
+.btn[disabled]{opacity:.55;cursor:wait}
+.btn svg{width:18px;height:18px;flex:none}
+.hint{font-size:12.5px;color:var(--ink-3);text-align:center;margin:8px 0 0}
+.or{display:flex;align-items:center;gap:12px;margin:22px 0 16px;color:var(--ink-3);font-size:12px;font-weight:700;letter-spacing:.1em;text-transform:uppercase}
+.or::before,.or::after{content:"";flex:1;border-top:1px solid var(--line)}
+form{display:grid;gap:10px;margin-top:12px}
+label{display:grid;gap:4px;font-size:13px;font-weight:600;color:var(--ink-2)}
+input{height:44px;border:1px solid var(--line);border-radius:11px;background:var(--surface-2);padding:0 12px;font-size:15px}
+input:focus{outline:none;border-color:var(--accent);background:var(--surface);box-shadow:0 0 0 3px var(--accent-soft)}
+.row{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap;font-size:13px}
+.link{background:none;border:0;padding:0;color:var(--accent-ink);font-weight:650;cursor:pointer;text-decoration:underline;text-underline-offset:3px}
+.kv{margin:14px 0 0;padding:12px 14px;border:1px solid var(--line);border-radius:12px;background:var(--surface-2);font-size:14px}.kv b{color:var(--ink)}
+table{width:100%;border-collapse:collapse;font-size:13.5px;margin-top:10px}th,td{text-align:left;padding:8px 6px;border-bottom:1px solid var(--line);vertical-align:middle}th{color:var(--ink-3);font-size:12px;text-transform:uppercase;letter-spacing:.06em}
+.ok{color:var(--accent-ink);font-weight:700}.no{color:var(--danger);font-weight:700}
+.mini{height:32px;padding:0 10px;border-radius:9px;border:1px solid var(--line);background:var(--surface);cursor:pointer;font-weight:650;font-size:12.5px}.mini:hover{border-color:var(--line-2);background:var(--surface-2)}
+.acts{display:flex;gap:6px;flex-wrap:wrap}.chips{display:flex;gap:8px;flex-wrap:wrap;margin-top:4px}
+.chip{height:34px;padding:0 12px;border-radius:999px;border:1px solid var(--line);background:var(--surface-2);cursor:pointer;font-weight:650}.chip[aria-pressed="true"]{background:var(--accent);color:var(--on-accent);border-color:var(--accent)}
+.wrapx{overflow-x:auto}
+.msg{margin-top:16px;padding:10px 12px;border-radius:11px;font-size:13.5px;background:var(--accent-soft);color:var(--accent-ink)}
+.msg.err{background:var(--danger-soft);color:var(--danger)}
+.foot{margin-top:20px;padding-top:14px;border-top:1px dashed var(--line);font-size:12px;color:var(--ink-3);text-align:center}
+@media (max-width:420px){.card{padding:22px 18px}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+</style>
+<script>try{var t=localStorage.getItem("efq:theme");if(t)document.documentElement.setAttribute("data-theme",JSON.parse(t))}catch(e){}</script>
+</head>
+<body>
+<main class="card" aria-labelledby="judul">
+  <div class="brand"><span class="seal">ق</span><span><b>E-Fathul Qorib</b><small>Admin langganan</small></span></div>
+  <h1 id="judul" style="margin-top:22px">Kelola langganan</h1>
+  <p class="lead" id="lead">Memeriksa akun admin…</p>
+  <div class="msg" id="pesan" hidden></div>
+  <section id="panel" hidden>
+    <form id="f" novalidate>
+      <label for="em">Email pelanggan<input id="em" type="email" autocomplete="off" placeholder="nama@gmail.com" required></label>
+      <div>
+        <div style="font-size:13px;font-weight:600;color:var(--ink-2)">Tambah masa aktif</div>
+        <div class="chips" id="chips">
+          <button type="button" class="chip" data-h="30" aria-pressed="true">30 hari</button>
+          <button type="button" class="chip" data-h="90" aria-pressed="false">90 hari</button>
+          <button type="button" class="chip" data-h="180" aria-pressed="false">180 hari</button>
+          <button type="button" class="chip" data-h="365" aria-pressed="false">365 hari</button>
+        </div>
+      </div>
+      <button class="btn pri" type="submit" id="beri">Aktifkan / perpanjang</button>
+    </form>
+    <div class="or">daftar pelanggan</div>
+    <div class="wrapx"><table><thead><tr><th>Email</th><th>Status</th><th>Sampai</th><th></th></tr></thead><tbody id="rows"></tbody></table></div>
+    <p class="hint" id="kosong" hidden>Belum ada pengguna tercatat.</p>
+  </section>
+  <p class="foot"><a class="link" href="/">Kembali ke kitab</a></p>
+</main>
+<script>
+(function(){
+  var $=function(i){return document.getElementById(i)}, hari=30;
+  function tgl(ms){return ms?new Date(ms).toLocaleDateString("id-ID",{day:"numeric",month:"short",year:"numeric"}):"-"}
+  function say(t,err){var p=$("pesan");p.textContent=t;p.className="msg"+(err?" err":"");p.hidden=!t}
+  function api(b){return fetch("/api/admin-akses",{method:"POST",credentials:"same-origin",headers:{"content-type":"application/json"},body:JSON.stringify(b)}).then(function(r){return r.json().then(function(j){return {s:r.status,j:j}})})}
+  function muat(){
+    return api({aksi:"daftar"}).then(function(o){
+      if(o.s===403){$("lead").textContent="Halaman ini khusus admin.";say("Akun Anda tidak terdaftar sebagai admin (ADMIN_EMAILS).",true);return}
+      if(o.s!==200){$("lead").textContent="Gagal memuat.";say(o.j.error==="redis_belum_dipasang"?"Redis belum terpasang di server.":"Terjadi kesalahan ("+(o.j.error||o.s)+").",true);return}
+      $("lead").textContent=o.j.jumlah+" pengguna tercatat.";$("panel").hidden=false;
+      var tb=$("rows");tb.textContent="";
+      o.j.pengguna.forEach(function(u){
+        var tr=document.createElement("tr");
+        var td1=document.createElement("td");td1.textContent=u.email;tr.appendChild(td1);
+        var td2=document.createElement("td");var st=document.createElement("span");st.className=u.aktif?"ok":"no";st.textContent=u.aktif?"Aktif":"Habis";td2.appendChild(st);tr.appendChild(td2);
+        var td3=document.createElement("td");td3.textContent=tgl(u.sampai?Date.parse(u.sampai):0);tr.appendChild(td3);
+        var td4=document.createElement("td");var ac=document.createElement("div");ac.className="acts";
+        [["+30","beri",u.email],["Cabut","cabut",u.email],["Reset perangkat","reset-perangkat",u.email]].forEach(function(a){
+          var b=document.createElement("button");b.type="button";b.className="mini";b.textContent=a[0];b.dataset.aksi=a[1];b.dataset.email=a[2];ac.appendChild(b)});
+        td4.appendChild(ac);tr.appendChild(td4);tb.appendChild(tr);
+      });
+      $("kosong").hidden=o.j.pengguna.length>0;
+    }).catch(function(){say("Tidak dapat terhubung ke server.",true)});
+  }
+  $("chips").addEventListener("click",function(e){var c=e.target.closest(".chip");if(!c)return;hari=+c.dataset.h;[].forEach.call($("chips").children,function(x){x.setAttribute("aria-pressed",x===c?"true":"false")})});
+  $("f").addEventListener("submit",function(e){
+    e.preventDefault();var em=$("em").value.trim().toLowerCase();
+    if(!em)return say("Isi email pelanggan.",true);
+    api({aksi:"beri",email:em,hari:hari}).then(function(o){
+      if(o.s===200){say(em+" aktif sampai "+tgl(Date.parse(o.j.sampai))+".");$("em").value="";muat()}else say("Gagal: "+(o.j.error||o.s),true)});
+  });
+  $("rows").addEventListener("click",function(e){
+    var b=e.target.closest("button[data-aksi]");if(!b)return;
+    var em=b.dataset.email,a=b.dataset.aksi;
+    if(a==="cabut"&&!confirm("Cabut akses "+em+"?"))return;
+    if(a==="reset-perangkat"&&!confirm("Reset daftar perangkat "+em+"?"))return;
+    var body={aksi:a,email:em};if(a==="beri")body.hari=30;
+    b.disabled=true;
+    api(body).then(function(o){say(o.s===200?"Berhasil: "+b.textContent+" untuk "+em+".":"Gagal: "+(o.j.error||o.s),o.s!==200);muat()});
+  });
+  muat();
+})();
+</script>
+</body>
+</html>
