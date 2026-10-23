@@ -48,9 +48,9 @@
 "q": "Syarat barang yang dijual adalah...",
 "c": "Suci, dapat dimanfaatkan, dapat diserahkan, dan pelakunya berwenang",
 "x": [
-"Mahal dan langka",
-"Baru dan belum dipakai",
-"Berasal dari pasar umum"
+"Mahal harganya dan langka didapatkan di pasar",
+"Baru dan belum pernah dipakai oleh orang lain",
+"Berasal dari pasar umum dan dijual terbuka"
 ],
 "e": "Barang suci, bermanfaat, dapat diserahkan, dan orang yang berakad berwenang atasnya.",
 "p": 3
@@ -70,9 +70,9 @@
 "q": "Macam kedua jual beli dinamakan...",
 "c": "Salam (menjual sesuatu yang disifati dalam tanggungan)",
 "x": [
-"Rahn",
-"Hajr",
-"Shulh"
+"Rahn (menjadikan barang sebagai jaminan utang)",
+"Hajr (pelarangan membelanjakan harta)",
+"Shulh (perdamaian dalam persengketaan)"
 ],
 "e": "Kedua: menjual sesuatu yang disifati dalam tanggungan, yang dinamakan salam.",
 "p": 5
@@ -92,9 +92,9 @@
 "q": "Apa yang tidak sah dijual?",
 "c": "Benda najis dan benda terkena najis yang tidak bisa disucikan",
 "x": [
-"Benda suci yang bermanfaat",
-"Benda yang dapat dimiliki",
-"Benda yang dapat diserahkan"
+"Benda suci yang bermanfaat dan dapat diserahkan",
+"Benda yang dapat dimiliki dan dapat dimanfaatkan",
+"Benda yang dapat diserahkan dan diketahui oleh kedua pihak"
 ],
 "e": "Tidak sah menjual benda najis atau yang terkena najis seperti khamr, dan minyak yang terkena najis tidak mungkin disucikan.",
 "p": 7
@@ -127,9 +127,9 @@
 "q": "Apa yang dimaksud makanan dalam bab riba?",
 "c": "Yang biasa dimaksudkan untuk dimakan: makanan pokok, buah, atau obat",
 "x": [
-"Hanya makanan pokok",
-"Hanya daging",
-"Hanya buah-buahan"
+"Hanya makanan pokok seperti gandum dan beras",
+"Hanya daging hewan yang halal dimakan",
+"Hanya buah-buahan yang biasa dimakan manusia"
 ],
 "e": "Makanan adalah yang biasanya dimaksudkan untuk dimakan, sebagai makanan pokok, buah, atau obat.",
 "p": 2
@@ -138,9 +138,9 @@
 "q": "Syarat menjual emas dengan emas adalah...",
 "c": "Sama (setara), tunai, dan diterima sebelum berpisah",
 "x": [
-"Boleh berbeda timbangan",
-"Boleh ditunda",
-"Boleh tanpa serah terima"
+"Boleh berbeda timbangan asalkan tunai dan diterima",
+"Boleh ditunda serah terima asalkan sama timbangannya",
+"Boleh tanpa serah terima asalkan sama timbangannya"
 ],
 "e": "Tidak boleh menjual emas dengan emas kecuali sama, tunai (kontan).",
 "p": 2
@@ -160,9 +160,9 @@
 "q": "Boleh menjual daging dengan hewan?",
 "c": "Tidak boleh, baik sejenis maupun jenis lain yang dimakan",
 "x": [
-"Boleh",
-"Boleh bila sejenis saja",
-"Boleh bila kambing"
+"Boleh, baik sejenis maupun jenis lain yang dimakan",
+"Boleh bila sejenis saja dan sama beratnya",
+"Boleh bila hewannya kambing dan dagingnya kambing"
 ],
 "e": "Tidak boleh menjual daging dengan hewan, seperti daging kambing dengan kambing atau daging sapi dengan kambing.",
 "p": 4
@@ -171,9 +171,9 @@
 "q": "Menjual emas dengan perak diperbolehkan bagaimana?",
 "c": "Boleh dengan kelebihan, tetapi tunai",
 "x": [
-"Harus sama beratnya",
-"Boleh ditunda",
-"Haram"
+"Harus sama beratnya dan harus tunai serta diterima",
+"Boleh ditunda dan boleh berbeda timbangan",
+"Haram dalam semua keadaan karena keduanya sama-sama riba"
 ],
 "e": "Boleh menjual emas dengan perak dengan kelebihan, tetapi tunai dan diterima sebelum berpisah.",
 "p": 4
@@ -193,9 +193,9 @@
 "q": "Contoh jual beli gharar adalah...",
 "c": "Menjual seorang budak tanpa ditentukan, atau burung yang berada di udara",
 "x": [
-"Menjual barang yang dilihat",
-"Menjual barang tertentu",
-"Menjual dengan harga standar"
+"Menjual barang yang dilihat langsung oleh pembeli",
+"Menjual barang tertentu yang diketahui jenis dan sifatnya",
+"Menjual barang dengan harga standar yang diketahui kedua pihak"
 ],
 "e": "Gharar seperti menjual budak yang tidak ditentukan atau burung di udara.",
 "p": 6
@@ -206,9 +206,9 @@
 "q": "Apa itu khiyar majelis?",
 "c": "Hak kedua pihak meneruskan atau membatalkan jual beli selama belum berpisah",
 "x": [
-"Hak penjual saja untuk membatalkan",
-"Hak pembeli saja untuk mengembalikan",
-"Hak saksi untuk menolak akad"
+"Hak penjual saja untuk membatalkan jual beli kapan ia mau",
+"Hak pembeli saja untuk mengembalikan barang setelah berpisah",
+"Hak saksi untuk menolak akad yang disaksikannya"
 ],
 "e": "Kedua pihak memiliki hak khiyar antara meneruskan dan membatalkan selama belum berpisah menurut kebiasaan.",
 "p": 1
@@ -217,9 +217,9 @@
 "q": "Jika salah satu memilih tetap lalu yang lain tidak segera memilih, bagaimana?",
 "c": "Gugur hak khiyar yang memilih, tetap bagi yang lain",
 "x": [
-"Gugur hak keduanya",
-"Tetap hak keduanya",
-"Akad batal"
+"Gugur hak khiyar keduanya sekaligus",
+"Tetap hak khiyar keduanya sampai berpisah",
+"Akad menjadi batal karena tidak ada kesepakatan"
 ],
 "e": "Hak khiyar orang yang memilih gugur dan tetap bagi yang lain.",
 "p": 2
@@ -250,9 +250,9 @@
 "q": "Buah yang terpisah dari pohon tidak boleh dijual kecuali...",
 "c": "Setelah tampak kematangannya",
 "x": [
-"Sebelum berbunga",
-"Sebelum terbentuk",
-"Saat masih kuncup"
+"Sebelum berbunga atau setelah berbunga tetapi belum matang",
+"Sebelum buah terbentuk dan masih berupa bunga",
+"Saat masih kuncup dan belum tampak buahnya"
 ],
 "e": "Tidak boleh menjual buah kecuali setelah tampak kematangannya.",
 "p": 5
@@ -296,9 +296,9 @@
 "q": "Apa makna salam secara syara'?",
 "c": "Menjual sesuatu yang disifati dalam tanggungan",
 "x": [
-"Menjual benda yang hadir",
-"Menjual benda tanpa harga",
-"Meminjam benda"
+"Menjual benda yang hadir dan terlihat oleh kedua pihak",
+"Menjual benda tanpa menyebut harga yang disepakati",
+"Meminjam benda dengan kewajiban mengembalikan nilainya"
 ],
 "e": "Salam adalah menjual sesuatu yang disifati dalam tanggungan, hanya sah dengan ijab dan qabul.",
 "p": 1
@@ -318,9 +318,9 @@
 "q": "Syarat pertama barang pesanan salam adalah...",
 "c": "Terukur dengan sifat yang menghilangkan ketidakjelasan",
 "x": [
-"Tidak berupa sifat",
-"Berupa barang langka",
-"Tercampur"
+"Tidak berupa sifat, melainkan benda yang dilihat langsung",
+"Berupa barang langka yang sulit ditemukan di pasar",
+"Tercampur dengan benda lain sehingga sifatnya berubah"
 ],
 "e": "Pertama: barang pesanan terukur dengan sifat yang menghilangkan ketidakjelasan.",
 "p": 2
@@ -329,9 +329,9 @@
 "q": "Barang pesanan campuran seperti harisah, sahkah?",
 "c": "Tidak sah karena bagian-bagiannya tidak terukur",
 "x": [
-"Sah",
-"Sah jika sedikit",
-"Sah dengan saksi"
+"Sah karena bagian-bagiannya dapat dikira-kira kadarnya",
+"Sah jika campurannya sedikit dan tidak berpengaruh",
+"Sah dengan dua orang saksi yang menyaksikan akadnya"
 ],
 "e": "Tidak sah salam pada barang campuran yang bagian-bagiannya dimaksudkan tetapi tidak terukur seperti harisah dan ma'jun.",
 "p": 3
@@ -340,9 +340,9 @@
 "q": "Barang yang dimasak dengan api, apakah sah salam?",
 "c": "Tidak sah jika api mengubahnya; jika api hanya memisahkan kotoran seperti madu, sah",
 "x": [
-"Sah semuanya",
-"Tidak sah semuanya",
-"Sah jika sedikit"
+"Sah semuanya karena tidak terpengaruh api sama sekali",
+"Tidak sah semuanya, termasuk yang hanya dipisahkan kotorannya",
+"Sah jika sedikit dan tidak berpengaruh pada barangnya"
 ],
 "e": "Syarat: tidak dimasuki api untuk mengubahnya; api untuk memisahkan kotoran seperti madu, sah.",
 "p": 4
@@ -351,9 +351,9 @@
 "q": "Barang salam harus berupa...",
 "c": "Tanggungan, bukan barang tertentu",
 "x": [
-"Barang tertentu",
-"Barang yang hadir",
-"Barang yang mahal"
+"Barang tertentu yang ditunjuk langsung pada saat akad",
+"Barang yang hadir dan diserahkan pada saat akad",
+"Barang yang mahal dan diketahui harganya oleh pembeli"
 ],
 "e": "Keempat: barang pesanan bukan barang tertentu tetapi berupa tanggungan.",
 "p": 5
@@ -373,9 +373,9 @@
 "q": "Salam pada kain harus menyebutkan apa?",
 "c": "Jenis, macam, panjang, lebar, tebal, tipis, halus, kasarnya",
 "x": [
-"Hanya warna",
-"Hanya merek",
-"Hanya harga"
+"Hanya warnanya agar pembeli dapat mengenali kain itu",
+"Hanya mereknya agar pembeli dapat mengenali kain itu",
+"Hanya harganya agar pembeli dapat mengenali kain itu"
 ],
 "e": "Pada kain disebutkan jenis, macam, panjang, lebar, tebal, tipis, rapat, renggang, halus, kasarnya.",
 "p": 8
@@ -384,9 +384,9 @@
 "q": "Syarat kadar barang salam dijelaskan dengan...",
 "c": "Takaran, timbangan, hitungan, atau hasta sesuai barangnya",
 "x": [
-"Perkiraan saja",
-"Tebakan",
-"Tidak perlu dijelaskan"
+"Perkiraan saja menurut kebiasaan penduduk setempat",
+"Tebakan yang disepakati kedua pihak tanpa takaran",
+"Tidak perlu dijelaskan karena sudah diketahui umum"
 ],
 "e": "Kadar dengan takaran pada yang ditakar, timbangan, hitungan, dan hasta.",
 "p": 9
@@ -430,9 +430,9 @@
 "q": "Apa arti rahn secara bahasa dan syara'?",
 "c": "Bahasa: tetap; syara': menjadikan benda bernilai harta sebagai jaminan utang",
 "x": [
-"Bahasa: menjual; syara': menyewakan benda",
-"Bahasa: memberi; syara': menghibahkan harta",
-"Bahasa: meminjam; syara': membagi harta"
+"Bahasa: menjual; syara': menyewakan benda untuk jangka waktu tertentu",
+"Bahasa: memberi; syara': menghibahkan harta kepada orang lain",
+"Bahasa: meminjam; syara': membagi harta kepada pihak yang berserikat"
 ],
 "e": "Rahn bahasa: tetap; syara': benda bernilai harta sebagai jaminan atas utang.",
 "p": 1
@@ -441,9 +441,9 @@
 "q": "Apa yang boleh digadaikan?",
 "c": "Setiap barang yang boleh dijual, untuk utang yang telah tetap",
 "x": [
-"Hanya barang berharga",
-"Barang yang tidak boleh dijual",
-"Barang yang najis"
+"Hanya barang berharga seperti emas dan perak saja",
+"Barang yang tidak boleh dijual untuk utang yang akan datang",
+"Barang yang najis untuk utang yang telah tetap"
 ],
 "e": "Setiap barang yang boleh dijual boleh digadaikan untuk utang yang telah tetap dalam tanggungan.",
 "p": 2
@@ -463,9 +463,9 @@
 "q": "Kapan penggadai boleh menarik kembali?",
 "c": "Selama belum diterima penerima gadai",
 "x": [
-"Kapan saja",
-"Setelah diterima",
-"Tidak boleh"
+"Kapan saja, walaupun barang telah diterima penerima gadai",
+"Setelah barang diterima penerima gadai dan telah lama",
+"Tidak boleh sama sekali setelah akad gadai diucapkan"
 ],
 "e": "Penggadai boleh menarik selama belum diterima; setelah diterima, gadai mengikat.",
 "p": 3
@@ -485,9 +485,9 @@
 "q": "Jika penerima gadai menerima sebagian haknya, apakah barang gadai keluar?",
 "c": "Tidak, sampai seluruh hak dilunasi",
 "x": [
-"Ya, sebagiannya",
-"Ya, seluruhnya",
-"Tergantung keinginan"
+"Ya, sebagian barang gadai itu keluar dari gadai",
+"Ya, seluruh barang gadai itu keluar dari gadai",
+"Tergantung keinginan penerima gadai saja"
 ],
 "e": "Tidak ada barang gadai yang keluar hingga seluruhnya dilunasi.",
 "p": 5
@@ -509,9 +509,9 @@
 "q": "Siapa yang dimaksud dengan orang muflis dalam bab hajr?",
 "c": "Orang yang dililit utang dan hartanya tidak cukup melunasinya",
 "x": [
-"Orang yang kaya",
-"Orang yang tidak punya utang",
-"Orang yang suka berhemat"
+"Orang yang kaya raya dan hartanya melebihi utangnya",
+"Orang yang tidak memiliki utang dan hartanya sedikit",
+"Orang yang suka berhemat dan tidak membelanjakan hartanya"
 ],
 "e": "Muflis secara syara' adalah orang yang dililit utang dan hartanya tidak mencukupi untuk melunasi.",
 "p": 2
@@ -520,9 +520,9 @@
 "q": "Orang sakit dihajr pada bagian harta berapa?",
 "c": "Pada yang melebihi sepertiga",
 "x": [
-"Seluruh harta",
-"Seperempat",
-"Tidak dihajr"
+"Seluruh hartanya sampai ia sembuh dari sakitnya",
+"Seperempat dari hartanya saja",
+"Tidak dihajr sama sekali dalam keadaan sakit"
 ],
 "e": "Orang sakit yang dikhawatirkan meninggal dihajr pada yang melebihi sepertiga.",
 "p": 2
@@ -553,9 +553,9 @@
 "q": "Tasharruf orang sakit melebihi sepertiga bagaimana?",
 "c": "Ditangguhkan atas izin ahli waris setelah ia meninggal",
 "x": [
-"Batal",
-"Sah penuh",
-"Sah dengan izin dokter"
+"Batal sama sekali walaupun ahli waris mengizinkan",
+"Sah penuh tanpa perlu izin siapa pun",
+"Sah dengan izin dokter yang merawatnya"
 ],
 "e": "Pada yang melebihi sepertiga ditangguhkan atas izin ahli waris; izin saat masih sakit tidak dianggap.",
 "p": 6
@@ -566,9 +566,9 @@
 "q": "Apa makna shulh?",
 "c": "Akad yang dengannya persengketaan terputus",
 "x": [
-"Akad jual beli",
-"Akad gadai",
-"Akad sewa"
+"Akad jual beli yang menimbulkan perpindahan milik",
+"Akad gadai yang menimbulkan jaminan atas utang",
+"Akad sewa yang menimbulkan manfaat atas benda"
 ],
 "e": "Shulh bahasa memutus persengketaan; syara' akad yang dengannya persengketaan terputus.",
 "p": 1
@@ -577,9 +577,9 @@
 "q": "Berapa macam perdamaian dalam fasal ini?",
 "c": "Dua: ibra' dan mu'awadhah",
 "x": [
-"Tiga",
-"Satu",
-"Empat"
+"Tiga: ibra', mu'awadhah, dan hibah",
+"Satu: ibra' saja",
+"Empat: ibra', mu'awadhah, hibah, dan wasiat"
 ],
 "e": "Perdamaian ada dua macam: ibra' dan mu'awadhah.",
 "p": 2
@@ -588,9 +588,9 @@
 "q": "Perdamaian ibra' adalah...",
 "c": "Seseorang mencukupkan dari sebagian haknya (piutangnya)",
 "x": [
-"Beralih dari haknya kepada selainnya",
-"Menukar benda dengan benda",
-"Berdamai tanpa pengakuan"
+"Seseorang beralih dari haknya kepada hak yang lain",
+"Menukar benda dengan benda yang sejenis dan setara",
+"Berdamai tanpa adanya pengakuan dari pihak tergugat"
 ],
 "e": "Ibra': mencukupkan dengan sebagian dari haknya.",
 "p": 2
@@ -621,9 +621,9 @@
 "q": "Berdamai dengan sebagian dari benda yang digugat bagaimana?",
 "c": "Hibah atas sebagian yang ditinggalkan",
 "x": [
-"Jual beli",
-"Sewa",
-"Gadai"
+"Jual beli atas sebagian yang digugat dengan harga tertentu",
+"Sewa atas sebagian yang digugat untuk jangka waktu tertentu",
+"Gadai atas sebagian yang digugat sebagai jaminan utang"
 ],
 "e": "Itu hibah atas sebagian yang ditinggalkan; dinamakan shulh hathithah.",
 "p": 5
@@ -632,9 +632,9 @@
 "q": "Apa yang dimaksud dengan rausyan dalam bab shulh?",
 "c": "Kayu yang dikeluarkan dari dinding ke udara jalan tembus",
 "x": [
-"Pintu rumah",
-"Tangga",
-"Jendela"
+"Pintu rumah yang dibuka menghadap jalan umum",
+"Tangga yang dipasang di depan rumah",
+"Jendela yang dibuka pada dinding rumah"
 ],
 "e": "Rausyan adalah mengeluarkan kayu dari dinding ke udara jalan tembus.",
 "p": 6
@@ -643,9 +643,9 @@
 "q": "Mengeluarkan rausyan di lorong milik bersama bagaimana?",
 "c": "Tidak boleh kecuali dengan izin para pemilik bersama",
 "x": [
-"Boleh",
-"Boleh dengan syarat",
-"Boleh bila tinggi"
+"Boleh sepenuhnya tanpa izin siapa pun",
+"Boleh dengan syarat tidak menghalangi cahaya",
+"Boleh bila letaknya tinggi dan tidak mengganggu orang lewat"
 ],
 "e": "Tidak boleh di lorong milik bersama kecuali dengan izin pemilik bersama.",
 "p": 8
@@ -654,9 +654,9 @@
 "q": "Memajukan pintu di lorong milik bersama boleh atau tidak?",
 "c": "Boleh dimajukan, tidak boleh dimundurkan tanpa izin",
 "x": [
-"Boleh keduanya",
-"Tidak boleh keduanya",
-"Hanya boleh dimundurkan"
+"Boleh dimajukan dan boleh dimundurkan tanpa izin",
+"Tidak boleh dimajukan maupun dimundurkan sama sekali",
+"Hanya boleh dimundurkan, tidak boleh dimajukan"
 ],
 "e": "Boleh memajukan pintu ke arah ujung tembus; memundurkan ke arah buntu kecuali dengan izin.",
 "p": 9
