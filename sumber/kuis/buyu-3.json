@@ -1,0 +1,43 @@
+{
+"u62":[
+{"q":"Apa arti ghashab secara bahasa dan syara'?","c":"Bahasa: mengambil secara zalim terang-terangan; syara': menguasai hak orang lain secara melampaui batas","x":["Bahasa: meminjam; syara': meminjam tanpa izin","Bahasa: menyewa; syara': menyewa barang orang lain","Bahasa: menjual; syara': menjual barang orang lain"],"e":"Ghashab bahasa: mengambil sesuatu secara zalim dan terang-terangan; syara': menguasai hak orang lain secara melampaui batas.","p":1},
+{"q":"Kewajiban orang yang mengghashab harta adalah...","c":"Mengembalikannya walaupun biayanya berlipat dari nilainya","x":["Mengganti dengan harga rendah","Memberikan setengahnya","Menunggu pemilik datang"],"e":"Wajib mengembalikannya kepada pemilik, walaupun harus mengeluarkan biaya berlipat-lipat.","p":2},
+{"q":"Jika barang ghashab berkurang karena turunnya harga, apakah pengghashab menanggung?","c":"Tidak menanggung menurut pendapat sahih","x":["Menanggung seluruhnya","Menanggung separuhnya","Menanggung sesuai pemilik"],"e":"Berkurang karena turunnya harga tidak ditanggung menurut pendapat sahih.","p":3},
+{"q":"Jika barang ghashab rusak dan punya padanan, bagaimana pengghashab menanggung?","c":"Dengan padanannya (mitsli)","x":["Dengan nilai tertinggi","Dengan nilai terendah","Tidak menanggung"],"e":"Jika ada padanannya (barang mitsli), ditanggung dengan padanannya.","p":4},
+{"q":"Barang mutaqawwam yang tidak punya padanan ditanggung dengan...","c":"Nilai tertinggi sejak hari ghashab sampai hari rusak","x":["Nilai pada hari ghashab","Nilai terendah","Nilai pada hari ditagih"],"e":"Ditanggung dengan nilai tertinggi sejak hari ghashab sampai hari rusak.","p":5}
+],
+"u63":[
+{"q":"Apa makna syuf'ah menurut syara'?","c":"Hak memiliki secara paksa bagi sekutu lama atas sekutu baru karena persekutuan","x":["Hak tetangga memiliki rumah","Hak penyewa membeli barang","Hak penjual membatalkan"],"e":"Syuf'ah adalah hak memiliki secara paksa yang tetap bagi sekutu lama atas sekutu baru karena persekutuan.","p":1},
+{"q":"Syuf'ah wajib karena...","c":"Percampuran (kepemilikan bersama), bukan bertetangga","x":["Bertetangga","Pertemanan","Kerabat"],"e":"Syuf'ah wajib karena percampuran, bukan bertetangga.","p":2},
+{"q":"Syuf'ah tetap pada benda apa?","c":"Tanah yang tidak dapat dipindahkan, serta bangunan dan pohon yang mengikutinya","x":["Pakaian","Hewan","Perhiasan"],"e":"Syuf'ah tetap pada setiap tanah yang tidak dapat dipindahkan, bangunan, dan pohon yang mengikuti tanah.","p":3},
+{"q":"Syuf'ah harus dituntut...","c":"Segera sesuai kebiasaan","x":["Kapan saja","Setahun kemudian","Tidak ada batas waktu"],"e":"Syuf'ah harus segera menurut kebiasaan.","p":4},
+{"q":"Jika menundanya padahal mampu, bagaimana?","c":"Batal hak syuf'ahnya","x":["Tetap","Berlanjut","Menjadi sunnah"],"e":"Jika menunda padahal mampu, batalah syuf'ah.","p":5},
+{"q":"Jika ada sekelompok syafi', pembagiannya?","c":"Sesuai kadar kepemilikan mereka","x":["Sama rata","Untuk yang tertua","Untuk yang pertama datang"],"e":"Mereka berhak atas syuf'ah sesuai kadar bagian kepemilikan.","p":7}
+],
+"u64":[
+{"q":"Apa itu qiradh?","c":"Pemilik menyerahkan harta kepada pekerja agar berdagang, keuntungan dibagi","x":["Pemilik menjual hartanya","Pemilik meminjamkan hartanya","Pemilik menggadaikan hartanya"],"e":"Qiradh: pemilik menyerahkan harta kepada pekerja agar bekerja dengannya, keuntungan dibagi.","p":1},
+{"q":"Berapa syarat qiradh?","c":"Empat","x":["Dua","Lima","Tujuh"],"e":"Qiradh memiliki empat syarat.","p":1},
+{"q":"Syarat kedua: pemilik mengizinkan pekerja bertasharruf...","c":"Secara mutlak, tidak mempersempit","x":["Dengan dibatasi jenis barang","Dengan dibatasi waktu","Dengan diawasi"],"e":"Pemilik mengizinkan tasharruf mutlak, tidak mempersempit.","p":2},
+{"q":"Bagian pekerja dari keuntungan harus...","c":"Diketahui, seperti separuh atau sepertiga","x":["Tidak diketahui","Ditetapkan jumlah tetap","Ditentukan nanti"],"e":"Ketiga: pemilik mensyaratkan bagian yang diketahui dari keuntungan.","p":3},
+{"q":"Bolehkah qiradh dibatasi masa?","c":"Tidak boleh","x":["Boleh setahun","Boleh sebulan","Boleh sepekan"],"e":"Keempat: qiradh tidak dibatasi masa dan tidak digantungkan syarat.","p":4},
+{"q":"Jika terjadi untung dan rugi, bagaimana?","c":"Kerugian ditutup dengan keuntungan","x":["Rugi ditanggung pekerja","Rugi dibagi dua","Keuntungan dibuang"],"e":"Kerugian ditutup dengan keuntungan.","p":5}
+],
+"u65":[
+{"q":"Apa itu musaqah?","c":"Menyerahkan pohon kurma atau anggur untuk dirawat dengan imbalan bagian buah","x":["Menyewakan pohon","Menjual pohon","Menggadaikan pohon"],"e":"Musaqah: menyerahkan pohon kurma/anggur kepada yang merawatnya dengan syarat mendapat kadar tertentu dari buah.","p":1},
+{"q":"Bagian pekerja dari buah harus...","c":"Diketahui, seperti separuh atau sepertiga","x":["Ditentukan kemudian","Tidak ditentukan","Sama dengan pemilik"],"e":"Pemilik menentukan bagi pekerja bagian yang diketahui dari buah.","p":3},
+{"q":"Pekerjaan yang manfaatnya kembali kepada buah menjadi kewajiban siapa?","c":"Pekerja","x":["Pemilik","Keduanya","Penyewa"],"e":"Pekerjaan yang manfaatnya kembali kepada buah, seperti menyiram dan mengawinkan, kewajiban pekerja.","p":4},
+{"q":"Pekerjaan menggali saluran, boleh disyaratkan atas pekerja?","c":"Tidak boleh","x":["Boleh","Boleh dengan syarat","Boleh bila sedikit"],"e":"Pemilik tidak boleh mensyaratkan sesuatu yang bukan pekerjaan musaqah seperti menggali saluran.","p":5}
+],
+"u66":[
+{"q":"Apa arti ijarah?","c":"Akad atas manfaat yang diketahui, dimaksudkan, dapat diserahkan dan dibolehkan dengan imbalan","x":["Akad atas benda dengan harga","Akad hibah tanpa imbalan","Akad pinjam-meminjam"],"e":"Ijarah secara syara' adalah akad atas manfaat yang diketahui, dimaksudkan, dapat diserahkan, dan dibolehkan dengan imbalan tertentu.","p":1},
+{"q":"Barang apa yang sah disewakan?","c":"Yang mungkin dimanfaatkan dengan tetap utuh bendanya","x":["Yang habis ketika dipakai","Makanan","Minuman"],"e":"Setiap barang yang mungkin dimanfaatkan dengan tetap utuh bendanya, seperti rumah dan kendaraan.","p":3},
+{"q":"Upah ijarah wajib kapan?","c":"Semata-mata dengan akad; mutlak berarti disegerakan","x":["Setelah selesai tahun","Setelah dua tahun","Tidak wajib"],"e":"Upah wajib dengan akad; memutlakkannya menuntut disegerakan kecuali disyaratkan penundaan.","p":4},
+{"q":"Apakah ijarah batal karena matinya salah satu pihak?","c":"Tidak batal","x":["Batal","Batal bila penyewa","Batal bila yang menyewakan"],"e":"Ijarah tidak batal dengan matinya salah satu pihak.","p":4},
+{"q":"Ijarah batal dengan...","c":"Rusaknya barang yang disewa seperti robohnya rumah","x":["Perbedaan pendapat","Libur","Perpindahan penyewa"],"e":"Ijarah batal dengan rusaknya barang yang disewa; berlaku untuk masa mendatang.","p":5},
+{"q":"Tangan pekerja sewaan atas barang adalah...","c":"Tangan amanah, tidak menanggung kecuali melampaui batas","x":["Tangan dhaman","Tangan zalim","Tangan pemilik"],"e":"Tangan pekerja sewaan adalah amanah; tidak ada tanggungan kecuali karena melampaui batas.","p":7}
+],
+"u67":[
+{"q":"Apa itu ju'alah?","c":"Mensyaratkan imbalan yang diketahui untuk mengembalikan barang yang hilang atau pekerjaan tertentu","x":["Menjual barang hilang","Meminjam barang","Menyewa barang"],"e":"Ju'alah: orang yang bebas bertasharruf menyanggupi imbalan tertentu atas pekerjaan tertentu, seperti mengembalikan barang hilang.","p":2},
+{"q":"Siapa yang berhak imbalan ju'alah?","c":"Orang yang mengembalikan barang yang hilang","x":["Orang yang menemukan tapi tidak mengembalikan","Orang yang melihat barang","Orang yang mengumumkan"],"e":"Apabila ia mengembalikannya, ia berhak imbalan yang disyaratkan.","p":2}
+]
+}
