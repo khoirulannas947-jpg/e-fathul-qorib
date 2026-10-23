@@ -1,40 +1,340 @@
 {
-"u113":[
-{"q":"Apa arti adz-dzakah secara syara'?","c":"Menghilangkan panas kehidupan dengan cara tertentu","x":["Memukul hewan","Menjual hewan","Memelihara hewan"],"e":"Adz-dzakah secara syara' adalah menghilangkan panas kehidupan dengan cara tertentu.","p":2},
-{"q":"Bagaimana menyembelih hewan yang tidak mampu disembelih (liar)?","c":"Dengan melukainya di mana pun yang mungkin sampai ia mati","x":["Dicekik","Dibiarkan mati sendiri","Dipukul kepalanya"],"e":"Hewan yang tidak mampu disembelih disembelih dengan melukainya di bagian mana pun.","p":3},
-{"q":"Apa saja yang dipotong agar sembelihan sempurna?","c":"Hulqum (saluran napas) dan mari' (saluran makan), serta dua urat leher","x":["Hanya hulqum","Kepala","Perut"],"e":"Kesempurnaan sembelihan: memotong hulqum, mari', dan dua wadaj.","p":4},
-{"q":"Apa yang minimal mencukupi dalam penyembelihan?","c":"Memotong hulqum dan mari'","x":["Memotong kepala","Memotong dua wadaj saja","Melukai punggung"],"e":"Yang mencukupi dua perkara: memotong hulqum dan mari'.","p":6},
-{"q":"Hewan pemburu apa yang boleh dimakan hasil buruannya?","c":"Hewan pemburu yang terlatih seperti macan tutul dan anjing","x":["Semua hewan","Hewan liar","Hewan yang tidak terlatih"],"e":"Boleh berburu dengan setiap hewan pemburu yang terlatih.","p":7},
-{"q":"Berapa syarat terlatihnya hewan pemburu?","c":"Empat","x":["Dua","Tiga","Lima"],"e":"Syarat terlatihnya hewan pemburu ada empat.","p":8},
-{"q":"Dengan alat apa tidak boleh menyembelih?","c":"Gigi, kuku, dan tulang","x":["Besi","Tembaga","Batu tajam"],"e":"Boleh dengan segala yang tajam kecuali gigi, kuku, dan tulang.","p":10},
-{"q":"Sembelihan siapa yang halal?","c":"Setiap muslim dan ahli kitab (Yahudi dan Nasrani)","x":["Semua orang kafir","Hanya muslim saja","Orang Majusi"],"e":"Halal sembelihan setiap muslim dan ahli kitab.","p":11},
-{"q":"Bagaimana penyembelihan janin?","c":"Terwujud dengan menyembelih induknya","x":["Harus disembelih sendiri","Haram","Hanya halal bila hidup"],"e":"Penyembelihan janin terwujud dengan penyembelihan induknya.","p":12},
-{"q":"Apa hukum bagian yang dipotong dari hewan yang masih hidup?","c":"Bangkai, kecuali rambut yang dimanfaatkan","x":["Halal semuanya","Halal jika disembelih","Suci semua"],"e":"Yang dipotong dari hewan hidup adalah bangkai, kecuali rambut.","p":13}
+"u113": [
+{
+"q": "Apa arti adz-dzakah secara syara'?",
+"c": "Menghilangkan panas kehidupan dengan cara tertentu",
+"x": [
+"Memukul hewan sampai ia tidak dapat bergerak lagi",
+"Menjual hewan kepada orang yang membutuhkannya",
+"Memelihara hewan sampai ia siap untuk dimanfaatkan"
 ],
-"u114":[
-{"q":"Bagaimana hukum hewan yang dianggap baik oleh orang Arab?","c":"Halal","x":["Haram","Makruh","Syubhat"],"e":"Setiap hewan yang dianggap baik oleh orang Arab halal.","p":1},
-{"q":"Bagaimana hukum hewan yang dianggap buruk oleh orang Arab?","c":"Haram, kecuali yang dikecualikan syariat","x":["Halal","Makruh","Sunnah"],"e":"Hewan yang dianggap buruk haram kecuali yang diizinkan syariat.","p":2},
-{"q":"Burung apa yang haram dimakan?","c":"Burung yang berkuku kuat untuk melukai, seperti elang","x":["Merpati","Ayam","Burung pipit"],"e":"Haram burung yang memiliki cakar kuat seperti elang dan rajawali.","p":3},
-{"q":"Kapan halal memakan bangkai bagi orang terpaksa?","c":"Ketika khawatir binasa karena kelaparan","x":["Kapan saja","Ketika bosan","Ketika bepergian"],"e":"Halal bagi orang terpaksa yang khawatir dirinya binasa.","p":4},
-{"q":"Dua bangkai yang halal adalah...","c":"Ikan dan belalang","x":["Ayam dan bebek","Sapi dan kambing","Ular dan katak"],"e":"Dua bangkai halal: ikan dan belalang.","p":5},
-{"q":"Dua darah yang halal adalah...","c":"Hati dan limpa","x":["Jantung dan paru","Ginjal dan usus","Otak dan lidah"],"e":"Dua darah yang halal: hati dan limpa.","p":5}
+"e": "Adz-dzakah secara syara' adalah menghilangkan panas kehidupan dengan cara tertentu.",
+"p": 2
+},
+{
+"q": "Bagaimana menyembelih hewan yang tidak mampu disembelih (liar)?",
+"c": "Dengan melukainya di mana pun yang mungkin sampai ia mati",
+"x": [
+"Dicekik sampai napasnya terhenti dan tidak bergerak",
+"Dibiarkan mati sendiri tanpa disentuh sama sekali",
+"Dipukul kepalanya sampai tidak sadarkan diri"
 ],
-"u115":[
-{"q":"Apakah yang dimaksud dengan udhhiyyah (kurban)?","c":"Hewan ternak yang disembelih pada hari raya kurban dan hari tasyriq","x":["Hewan untuk akikah","Hewan sembelihan nadzar saja","Hewan buruan"],"e":"Udhhiyyah adalah hewan ternak yang disembelih pada hari raya kurban dan tasyriq untuk mendekatkan diri.","p":1},
-{"q":"Berapa umur jadza' domba yang mencukupi untuk kurban?","c":"Setahun dan masuk tahun kedua","x":["Enam bulan","Dua tahun","Lima tahun"],"e":"Jadza' dari domba berumur setahun dan masuk tahun kedua.","p":2},
-{"q":"Unta atau sapi mencukupi untuk berapa orang?","c":"Tujuh orang","x":["Satu orang","Tiga orang","Sepuluh orang"],"e":"Unta dan sapi mencukupi tujuh orang yang berserikat.","p":3},
-{"q":"Berapa cacat yang membuat hewan tidak sah dikurbankan?","c":"Empat: buta sebelah, pincang, sakit, dan kurus","x":["Dua","Tiga","Lima"],"e":"Empat cacat tidak mencukupi: buta jelas, pincang jelas, sakit jelas, dan kurus.","p":4},
-{"q":"Apakah hewan yang dikebiri sah dikurbankan?","c":"Sah","x":["Tidak sah","Tidak sah jika sakit","Makruh"],"e":"Hewan yang dikebiri mencukupi.","p":6},
-{"q":"Kapan masuk waktu penyembelihan kurban?","c":"Sejak waktu shalat 'id pada hari nahr","x":["Setelah maghrib","Sebelum fajar","Setelah dzuhur"],"e":"Waktu penyembelihan kurban masuk sejak waktu shalat 'id.","p":7},
-{"q":"Berapa perkara yang disunnahkan saat menyembelih?","c":"Lima","x":["Dua","Tiga","Sepuluh"],"e":"Disunnahkan lima perkara saat menyembelih.","p":8},
-{"q":"Apakah orang yang berkurban boleh makan dari kurban nadzar?","c":"Tidak boleh, wajib menyedekahkan seluruh dagingnya","x":["Boleh seluruhnya","Boleh separuh","Boleh sepertiga"],"e":"Dari kurban yang dinadzarkan, ia tidak makan sedikit pun.","p":11}
+"e": "Hewan yang tidak mampu disembelih disembelih dengan melukainya di bagian mana pun.",
+"p": 3
+},
+{
+"q": "Apa saja yang dipotong agar sembelihan sempurna?",
+"c": "Hulqum (saluran napas) dan mari' (saluran makan), serta dua urat leher",
+"x": [
+"Hanya hulqum tanpa memotong mari' dan dua urat leher",
+"Kepala hewan sampai terpisah dari badannya",
+"Perut hewan sampai isi perutnya keluar"
 ],
-"u116":[
-{"q":"Apa makna aqiqah secara bahasa?","c":"Rambut di kepala bayi","x":["Kurban","Hewan sembelihan","Nama bayi"],"e":"Aqiqah secara bahasa adalah nama bagi rambut di kepala bayi.","p":1},
-{"q":"Apa hukum aqiqah?","c":"Sunnah","x":["Wajib","Haram","Makruh"],"e":"Aqiqah untuk bayi disunnahkan.","p":1},
-{"q":"Berapa kambing untuk anak laki-laki dan perempuan?","c":"Laki-laki dua kambing, perempuan satu kambing","x":["Sama-sama satu","Sama-sama dua","Laki-laki satu, perempuan dua"],"e":"Anak laki-laki dua kambing, perempuan satu.","p":3},
-{"q":"Bagaimana dengan daging aqiqah?","c":"Dimasak dan dibagikan kepada fakir dan miskin","x":["Dijual","Disimpan","Tidak boleh dimakan"],"e":"Orang yang beraqiqah memberi makan fakir dan miskin.","p":4},
-{"q":"Apa sunnah pada bayi yang baru lahir?","c":"Adzan di telinga kanan, iqamah di telinga kiri, dan tahnik dengan kurma","x":["Menunggu sebulan","Tidak diapa-apakan","Dimandikan dengan air garam"],"e":"Disunnahkan adzan, iqamah, dan tahnik.","p":6},
-{"q":"Kapan sunnah memberi nama bayi?","c":"Pada hari ketujuh kelahiran","x":["Setelah baligh","Setelah sebulan","Setelah setahun"],"e":"Disunnahkan memberi nama pada hari ketujuh.","p":7}
+"e": "Kesempurnaan sembelihan: memotong hulqum, mari', dan dua wadaj.",
+"p": 4
+},
+{
+"q": "Apa yang minimal mencukupi dalam penyembelihan?",
+"c": "Memotong hulqum dan mari'",
+"x": [
+"Memotong kepala",
+"Memotong dua wadaj saja",
+"Melukai punggung"
+],
+"e": "Yang mencukupi dua perkara: memotong hulqum dan mari'.",
+"p": 6
+},
+{
+"q": "Hewan pemburu apa yang boleh dimakan hasil buruannya?",
+"c": "Hewan pemburu yang terlatih seperti macan tutul dan anjing",
+"x": [
+"Semua hewan pemburu, terlatih maupun tidak terlatih",
+"Hewan liar yang menangkap buruan dengan sendirinya",
+"Hewan yang tidak terlatih tetapi menangkap buruan"
+],
+"e": "Boleh berburu dengan setiap hewan pemburu yang terlatih.",
+"p": 7
+},
+{
+"q": "Berapa syarat terlatihnya hewan pemburu?",
+"c": "Empat",
+"x": [
+"Dua",
+"Tiga",
+"Lima"
+],
+"e": "Syarat terlatihnya hewan pemburu ada empat.",
+"p": 8
+},
+{
+"q": "Dengan alat apa tidak boleh menyembelih?",
+"c": "Gigi, kuku, dan tulang",
+"x": [
+"Besi yang tajam dan dapat melukai hewan",
+"Tembaga yang tajam dan dapat melukai hewan",
+"Batu tajam yang dapat melukai hewan"
+],
+"e": "Boleh dengan segala yang tajam kecuali gigi, kuku, dan tulang.",
+"p": 10
+},
+{
+"q": "Sembelihan siapa yang halal?",
+"c": "Setiap muslim dan ahli kitab (Yahudi dan Nasrani)",
+"x": [
+"Semua orang kafir tanpa memandang agamanya",
+"Hanya muslim saja, tidak termasuk ahli kitab",
+"Orang Majusi yang menyembah api sebagaimana ahli kitab"
+],
+"e": "Halal sembelihan setiap muslim dan ahli kitab.",
+"p": 11
+},
+{
+"q": "Bagaimana penyembelihan janin?",
+"c": "Terwujud dengan menyembelih induknya",
+"x": [
+"Harus disembelih sendiri",
+"Haram",
+"Hanya halal bila hidup"
+],
+"e": "Penyembelihan janin terwujud dengan penyembelihan induknya.",
+"p": 12
+},
+{
+"q": "Apa hukum bagian yang dipotong dari hewan yang masih hidup?",
+"c": "Bangkai, kecuali rambut yang dimanfaatkan",
+"x": [
+"Halal dimakan semuanya seperti hewan yang disembelih",
+"Halal jika disembelih setelah dipotong dari tubuhnya",
+"Suci semuanya, termasuk rambut dan daging yang dipotong"
+],
+"e": "Yang dipotong dari hewan hidup adalah bangkai, kecuali rambut.",
+"p": 13
+}
+],
+"u114": [
+{
+"q": "Bagaimana hukum hewan yang dianggap baik oleh orang Arab?",
+"c": "Halal",
+"x": [
+"Haram",
+"Makruh",
+"Syubhat"
+],
+"e": "Setiap hewan yang dianggap baik oleh orang Arab halal.",
+"p": 1
+},
+{
+"q": "Bagaimana hukum hewan yang dianggap buruk oleh orang Arab?",
+"c": "Haram, kecuali yang dikecualikan syariat",
+"x": [
+"Halal dimakan karena asalnya segala sesuatu halal",
+"Makruh dimakan tetapi tidak sampai haram",
+"Sunnah dijauhi tetapi boleh dimakan jika terpaksa"
+],
+"e": "Hewan yang dianggap buruk haram kecuali yang diizinkan syariat.",
+"p": 2
+},
+{
+"q": "Burung apa yang haram dimakan?",
+"c": "Burung yang berkuku kuat untuk melukai, seperti elang",
+"x": [
+"Merpati yang biasa dipelihara dan dimakan manusia",
+"Ayam yang biasa dipelihara dan dimakan manusia",
+"Burung pipit yang biasa diburu dan dimakan manusia"
+],
+"e": "Haram burung yang memiliki cakar kuat seperti elang dan rajawali.",
+"p": 3
+},
+{
+"q": "Kapan halal memakan bangkai bagi orang terpaksa?",
+"c": "Ketika khawatir binasa karena kelaparan",
+"x": [
+"Kapan saja ia mau tanpa terikat keadaan apa pun",
+"Ketika bosan dengan makanan yang halal dan biasa",
+"Ketika bepergian jauh walaupun bekal masih ada"
+],
+"e": "Halal bagi orang terpaksa yang khawatir dirinya binasa.",
+"p": 4
+},
+{
+"q": "Dua bangkai yang halal adalah...",
+"c": "Ikan dan belalang",
+"x": [
+"Ayam dan bebek",
+"Sapi dan kambing",
+"Ular dan katak"
+],
+"e": "Dua bangkai halal: ikan dan belalang.",
+"p": 5
+},
+{
+"q": "Dua darah yang halal adalah...",
+"c": "Hati dan limpa",
+"x": [
+"Jantung dan paru",
+"Ginjal dan usus",
+"Otak dan lidah"
+],
+"e": "Dua darah yang halal: hati dan limpa.",
+"p": 5
+}
+],
+"u115": [
+{
+"q": "Apakah yang dimaksud dengan udhhiyyah (kurban)?",
+"c": "Hewan ternak yang disembelih pada hari raya kurban dan hari tasyriq",
+"x": [
+"Hewan untuk akikah yang disembelih pada hari ketujuh kelahiran",
+"Hewan sembelihan nadzar saja pada hari-hari biasa",
+"Hewan buruan yang disembelih pada hari raya kurban"
+],
+"e": "Udhhiyyah adalah hewan ternak yang disembelih pada hari raya kurban dan tasyriq untuk mendekatkan diri.",
+"p": 1
+},
+{
+"q": "Berapa umur jadza' domba yang mencukupi untuk kurban?",
+"c": "Setahun dan masuk tahun kedua",
+"x": [
+"Enam bulan dan masuk bulan ketujuh",
+"Dua tahun dan masuk tahun ketiga",
+"Lima tahun dan masuk tahun keenam"
+],
+"e": "Jadza' dari domba berumur setahun dan masuk tahun kedua.",
+"p": 2
+},
+{
+"q": "Unta atau sapi mencukupi untuk berapa orang?",
+"c": "Tujuh orang",
+"x": [
+"Satu orang",
+"Tiga orang",
+"Sepuluh orang"
+],
+"e": "Unta dan sapi mencukupi tujuh orang yang berserikat.",
+"p": 3
+},
+{
+"q": "Berapa cacat yang membuat hewan tidak sah dikurbankan?",
+"c": "Empat: buta sebelah, pincang, sakit, dan kurus",
+"x": [
+"Dua: buta sebelah dan pincang saja",
+"Tiga: buta sebelah, pincang, dan sakit saja",
+"Lima: ditambah patah tanduk dan terpotong telinganya"
+],
+"e": "Empat cacat tidak mencukupi: buta jelas, pincang jelas, sakit jelas, dan kurus.",
+"p": 4
+},
+{
+"q": "Apakah hewan yang dikebiri sah dikurbankan?",
+"c": "Sah",
+"x": [
+"Tidak sah",
+"Tidak sah jika sakit",
+"Makruh"
+],
+"e": "Hewan yang dikebiri mencukupi.",
+"p": 6
+},
+{
+"q": "Kapan masuk waktu penyembelihan kurban?",
+"c": "Sejak waktu shalat 'id pada hari nahr",
+"x": [
+"Setelah maghrib pada hari raya kurban berlangsung",
+"Sebelum fajar pada hari raya kurban dimulai",
+"Setelah dzuhur pada hari raya kurban berlangsung"
+],
+"e": "Waktu penyembelihan kurban masuk sejak waktu shalat 'id.",
+"p": 7
+},
+{
+"q": "Berapa perkara yang disunnahkan saat menyembelih?",
+"c": "Lima",
+"x": [
+"Dua",
+"Tiga",
+"Sepuluh"
+],
+"e": "Disunnahkan lima perkara saat menyembelih.",
+"p": 8
+},
+{
+"q": "Apakah orang yang berkurban boleh makan dari kurban nadzar?",
+"c": "Tidak boleh, wajib menyedekahkan seluruh dagingnya",
+"x": [
+"Boleh memakan seluruhnya karena ia yang berkurban",
+"Boleh memakan separuhnya dan menyedekahkan sisanya",
+"Boleh memakan sepertiganya dan menyedekahkan sisanya"
+],
+"e": "Dari kurban yang dinadzarkan, ia tidak makan sedikit pun.",
+"p": 11
+}
+],
+"u116": [
+{
+"q": "Apa makna aqiqah secara bahasa?",
+"c": "Rambut di kepala bayi",
+"x": [
+"Kurban",
+"Hewan sembelihan",
+"Nama bayi"
+],
+"e": "Aqiqah secara bahasa adalah nama bagi rambut di kepala bayi.",
+"p": 1
+},
+{
+"q": "Apa hukum aqiqah?",
+"c": "Sunnah",
+"x": [
+"Wajib",
+"Haram",
+"Makruh"
+],
+"e": "Aqiqah untuk bayi disunnahkan.",
+"p": 1
+},
+{
+"q": "Berapa kambing untuk anak laki-laki dan perempuan?",
+"c": "Laki-laki dua kambing, perempuan satu kambing",
+"x": [
+"Sama-sama satu kambing untuk anak laki-laki dan perempuan",
+"Sama-sama dua kambing untuk anak laki-laki dan perempuan",
+"Laki-laki satu kambing, perempuan dua kambing"
+],
+"e": "Anak laki-laki dua kambing, perempuan satu.",
+"p": 3
+},
+{
+"q": "Bagaimana dengan daging aqiqah?",
+"c": "Dimasak dan dibagikan kepada fakir dan miskin",
+"x": [
+"Dijual dan hasilnya disimpan untuk biaya anak itu",
+"Disimpan sampai anak itu dewasa lalu diberikan kepadanya",
+"Tidak boleh dimakan sama sekali oleh siapa pun"
+],
+"e": "Orang yang beraqiqah memberi makan fakir dan miskin.",
+"p": 4
+},
+{
+"q": "Apa sunnah pada bayi yang baru lahir?",
+"c": "Adzan di telinga kanan, iqamah di telinga kiri, dan tahnik dengan kurma",
+"x": [
+"Menunggu sebulan penuh sebelum melakukan apa pun",
+"Tidak diapa-apakan sampai ia dapat berbicara sendiri",
+"Dimandikan dengan air garam untuk menguatkan badannya"
+],
+"e": "Disunnahkan adzan, iqamah, dan tahnik.",
+"p": 6
+},
+{
+"q": "Kapan sunnah memberi nama bayi?",
+"c": "Pada hari ketujuh kelahiran",
+"x": [
+"Setelah baligh dan dapat menentukan nama sendiri",
+"Setelah sebulan sejak hari kelahirannya",
+"Setelah setahun sejak hari kelahirannya"
+],
+"e": "Disunnahkan memberi nama pada hari ketujuh.",
+"p": 7
+}
 ]
 }
