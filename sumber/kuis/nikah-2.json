@@ -1,51 +1,421 @@
 {
-"u85":[
-{"q":"Apa arti talak secara bahasa dan syara'?","c":"Bahasa: melepas ikatan; syara': pelepasan ikatan nikah","x":["Bahasa: menahan; syara': penahanan istri","Bahasa: menjual; syara': menjual istri","Bahasa: menikah; syara': akad nikah baru"],"e":"Talak bahasa: melepas ikatan; syara': nama bagi pelepasan ikatan nikah.","p":1},
-{"q":"Siapa yang talaknya berlaku?","c":"Mukallaf yang atas kemauan sendiri","x":["Anak kecil","Orang gila","Orang yang dipaksa tanpa hak"],"e":"Disyaratkan untuk berlakunya talak: mukallaf dan atas kemauan sendiri.","p":1},
-{"q":"Talak ada dua macam, yaitu...","c":"Sharih dan kinayah","x":["Raj'i dan ba'in","Sunnah dan bid'ah","Wajib dan haram"],"e":"Talak ada dua macam: sharih dan kinayah.","p":2},
-{"q":"Apa itu lafadz sharih?","c":"Lafadz yang tidak mengandung kemungkinan selain talak","x":["Lafadz yang mengandung kemungkinan selain talak","Lafadz yang tidak diucapkan","Lafadz yang dipaksa"],"e":"Sharih adalah lafadz yang tidak mengandung kemungkinan selain talak; kinayah mengandung kemungkinan selainnya.","p":2},
-{"q":"Apa saja lafadz sharih talak?","c":"Talak, firaq, dan sarah","x":["Pulanglah dan pergilah","Jauhi aku","Engkau bebas"],"e":"Lafadz sharih ada tiga: talak, firaq, dan sarah (dengan bentukan-bentukannya).","p":3},
-{"q":"Apakah lafadz sharih talak membutuhkan niat?","c":"Tidak membutuhkan niat","x":["Membutuhkan niat","Membutuhkan saksi","Membutuhkan hakim"],"e":"Lafadz sharih tidak membutuhkan niat, kecuali yang dipaksa.","p":4},
-{"q":"Pada kinayah apa yang dibutuhkan agar jatuh talak?","c":"Niat","x":["Saksi","Hakim","Wali"],"e":"Kinayah membutuhkan niat.","p":4},
-{"q":"Talak sunnah dan bid'ah terjadi pada perempuan yang...","c":"Haid","x":["Hamil","Menopause","Masih kecil"],"e":"Perempuan haid ada sunnah dan bid'ah dalam talaknya.","p":5},
-{"q":"Siapa empat perempuan yang tidak ada sunnah dan bid'ah dalam talaknya?","c":"Anak kecil, menopause, hamil, dan yang dikhulu' sebelum disetubuhi","x":["Gadis, janda, hamil, haid","Haid, nifas, hamil, menyusui","Anak kecil, dewasa, tua, haid"],"e":"Empat: anak kecil, menopause, hamil, dan perempuan yang dikhulu' yang belum disetubuhi.","p":6}
+"u85": [
+{
+"q": "Apa arti talak secara bahasa dan syara'?",
+"c": "Bahasa: melepas ikatan; syara': pelepasan ikatan nikah",
+"x": [
+"Bahasa: menahan; syara': penahanan istri",
+"Bahasa: menjual; syara': menjual istri",
+"Bahasa: menikah; syara': akad nikah baru"
 ],
-"u86":[
-{"q":"Berapa talak yang dimiliki suami merdeka dan budak?","c":"Merdeka tiga, budak dua","x":["Merdeka dua, budak satu","Merdeka tiga, budak tiga","Merdeka empat, budak dua"],"e":"Suami merdeka memiliki tiga talak, budak dua, baik istrinya merdeka maupun budak.","p":1},
-{"q":"Istitsna' dalam talak sah bila...","c":"Disambungkan dengan yang dikecualikan secara bersambung","x":["Dipisahkan lama","Diucapkan esok hari","Dilakukan sendirian"],"e":"Sah istitsna' apabila menyambungkannya, dianggap satu ucapan dalam kebiasaan.","p":2},
-{"q":"Jika menghabiskan, seperti 'engkau tertalak tiga kecuali tiga', bagaimana?","c":"Istitsna' batal dan jatuh tiga","x":["Istitsna' sah","Tidak jatuh talak","Jatuh satu"],"e":"Istitsna' tidak boleh menghabiskan yang dikecualikan; jika menghabiskan, batal.","p":3},
-{"q":"Apakah sah menggantungkan talak dengan sifat dan syarat?","c":"Sah","x":["Tidak sah","Sah dengan saksi","Sah dengan hakim"],"e":"Sah menggantungkan talak dengan sifat dan syarat.","p":3},
-{"q":"Talak sebelum nikah, bagaimana?","c":"Tidak terjadi","x":["Terjadi","Terjadi jika digantung","Terjadi dengan niat"],"e":"Talak tidak terjadi sebelum nikah.","p":4},
-{"q":"Empat orang yang talaknya tidak terjadi?","c":"Anak kecil, orang gila, orang tidur, dan orang yang dipaksa","x":["Orang miskin dan sakit","Orang tua dan lemah","Orang buta dan bisu"],"e":"Talak tidak terjadi dari anak kecil, orang gila, orang tidur, dan orang yang dipaksa tanpa hak.","p":5},
-{"q":"Dalam keadaan apa pemaksaan terwujud?","c":"Ancaman pukulan keras, penjara, atau perusakan harta","x":["Permintaan halus","Nasihat","Harapan biasa"],"e":"Pemaksaan terwujud dengan ancaman pukulan keras, penjara, perusakan harta dan semisalnya.","p":7}
+"e": "Talak bahasa: melepas ikatan; syara': nama bagi pelepasan ikatan nikah.",
+"p": 1
+},
+{
+"q": "Siapa yang talaknya berlaku?",
+"c": "Mukallaf yang atas kemauan sendiri",
+"x": [
+"Anak kecil",
+"Orang gila",
+"Orang yang dipaksa tanpa hak"
 ],
-"u87":[
-{"q":"Apa makna rujuk secara syara'?","c":"Mengembalikan istri kepada nikah dalam iddah talak yang tidak ba'in","x":["Menikah baru","Menalak istri","Memisahkan istri"],"e":"Rujuk: mengembalikan istri kepada nikah dalam iddah talak yang tidak ba'in dengan cara tertentu.","p":1},
-{"q":"Kapan suami boleh rujuk?","c":"Selama belum habis iddah, tanpa izinnya","x":["Setelah iddah","Dengan izin wali","Dengan saksi"],"e":"Menalak satu atau dua kali, ia boleh merujuk selama belum habis iddah tanpa izin.","p":2},
-{"q":"Lafadz sharih rujuk?","c":"Aku kembalikan engkau kepada nikahku, atau aku tahan engkau","x":["Aku menikahimu","Aku mengawinimu","Pulanglah"],"e":"Lafadz sharih dalam rujuk: 'aku kembalikan engkau kepada nikahku' dan 'aku tahan engkau'.","p":3},
-{"q":"Jika iddah habis, bagaimana suami menikahinya?","c":"Dengan akad baru","x":["Dengan rujuk","Tanpa akad","Dengan saksi"],"e":"Halal menikahinya dengan akad baru, dengan sisa talak.","p":5},
-{"q":"Berapa syarat agar perempuan yang ditalak tiga halal bagi suami pertama?","c":"Lima syarat, antara lain menikah dengan laki-laki lain dan disetubuhi","x":["Dua syarat","Tiga syarat saja","Tidak ada syarat"],"e":"Tidak halal kecuali setelah lima syarat, termasuk habis iddah, menikah dengan suami lain, dan disetubuhi.","p":6}
+"e": "Disyaratkan untuk berlakunya talak: mukallaf dan atas kemauan sendiri.",
+"p": 1
+},
+{
+"q": "Talak ada dua macam, yaitu...",
+"c": "Sharih dan kinayah",
+"x": [
+"Raj'i dan ba'in",
+"Sunnah dan bid'ah",
+"Wajib dan haram"
 ],
-"u88":[
-{"q":"Apa makna ila' secara syara'?","c":"Sumpah suami untuk tidak menyetubuhi istri secara mutlak atau lebih dari empat bulan","x":["Sumpah suami untuk menalak","Sumpah suami untuk memberi nafkah","Sumpah istri untuk setia"],"e":"Ila' adalah sumpah suami untuk tidak menyetubuhi istri secara mutlak atau lebih dari empat bulan.","p":1},
-{"q":"Berapa lama muli ditangguhkan?","c":"Empat bulan","x":["Dua bulan","Enam bulan","Setahun"],"e":"Muli diberi tangguh empat bulan.","p":4},
-{"q":"Setelah masa tangguh habis, apa pilihan muli?","c":"Kembali (menyetubuhi) dan membayar kafarat, atau menalak","x":["Menalak tiga","Mendiamkan","Menunggu"],"e":"Muli diberi pilihan antara kembali dan membayar kafarat, atau menalak.","p":5},
-{"q":"Jika suami menolak kembali dan menalak, apa yang dilakukan hakim?","c":"Hakim menalak atasnya satu talak raj'i","x":["Hakim menalak tiga","Hakim membatalkan","Hakim mendiamkan"],"e":"Hakim menalak atasnya satu talak raj'i.","p":6}
+"e": "Talak ada dua macam: sharih dan kinayah.",
+"p": 2
+},
+{
+"q": "Apa itu lafadz sharih?",
+"c": "Lafadz yang tidak mengandung kemungkinan selain talak",
+"x": [
+"Lafadz yang mengandung kemungkinan selain talak",
+"Lafadz yang tidak diucapkan",
+"Lafadz yang dipaksa"
 ],
-"u89":[
-{"q":"Apa makna zhihar?","c":"Suami menyerupakan istrinya dengan perempuan yang tidak halal baginya","x":["Suami menalak istri","Suami bersumpah tidak menggauli istri","Suami menuduh istri berzina"],"e":"Zhihar: suami menyerupakan istrinya yang tidak ba'in dengan perempuan yang tidak halal baginya.","p":1},
-{"q":"Contoh ucapan zhihar?","c":"Engkau bagiku seperti punggung ibuku","x":["Engkau tertalak","Aku menalakmu","Aku ila'"],"e":"Zhihar adalah mengucapkan 'engkau bagiku seperti punggung ibuku'.","p":1},
-{"q":"Urutan kafarat zhihar?","c":"Memerdekakan budak, puasa dua bulan berturut-turut, memberi makan enam puluh orang miskin","x":["Puasa tiga hari, memberi makan sepuluh orang","Memberi makan, lalu memerdekakan","Sedekah satu dirham"],"e":"Kafarat zhihar: budak mukmin, puasa dua bulan berturut-turut, memberi makan enam puluh miskin.","p":3},
-{"q":"Setiap orang miskin diberi berapa dalam kafarat zhihar?","c":"Satu mud","x":["Satu sha'","Satu wasaq","Setengah mud"],"e":"Setiap orang miskin satu mud dari makanan pokok.","p":5},
-{"q":"Apakah halal menyetubuhi istri yang dizhihar sebelum kafarat?","c":"Tidak halal hingga membayar kafarat","x":["Halal","Halal dengan kafarat nanti","Halal setelah sebulan"],"e":"Tidak halal menyetubuhinya hingga membayar kafarat.","p":6}
+"e": "Sharih adalah lafadz yang tidak mengandung kemungkinan selain talak; kinayah mengandung kemungkinan selainnya.",
+"p": 2
+},
+{
+"q": "Apa saja lafadz sharih talak?",
+"c": "Talak, firaq, dan sarah",
+"x": [
+"Pulanglah dan pergilah",
+"Jauhi aku",
+"Engkau bebas"
 ],
-"u90":[
-{"q":"Apa makna li'an secara syara'?","c":"Kalimat-kalimat tertentu sebagai hujjah bagi suami yang terpaksa menuduh istri","x":["Sumpah untuk berdamai","Sumpah untuk menalak","Janji untuk tidak menggauli"],"e":"Li'an: kalimat-kalimat tertentu yang dijadikan hujjah bagi orang yang terpaksa menuduh orang yang mengotori ranjangnya.","p":1},
-{"q":"Jika suami menuduh istri berzina tanpa bukti, atasnya had apa?","c":"Had qadzaf (delapan puluh cambukan), kecuali meli'an","x":["Had zina","Had pencurian","Tidak ada had"],"e":"Atasnya had qadzaf kecuali menegakkan bukti atau meli'an.","p":2},
-{"q":"Berapa kali suami mengucap kalimat li'an?","c":"Empat kali, dan kelima dengan laknat","x":["Satu kali","Dua kali","Tujuh kali"],"e":"Empat kali kalimat, kelima laknat jika berdusta.","p":4},
-{"q":"Berapa hukum yang terkait li'an suami?","c":"Lima: gugur had, wajib had atas istri jika tidak meli'an, hilang status nikah, nasab anak terputus, haram selamanya","x":["Dua","Tiga","Sepuluh"],"e":"Berkaitan dengan li'an suami lima hukum.","p":5},
-{"q":"Bagaimana setelah li'an hubungan nikah?","c":"Perpisahan selamanya dan haram dinikahi lagi","x":["Dapat rujuk","Dapat nikah ulang","Tetap suami istri"],"e":"Hilangnya status pernikahan dan pengharaman selamanya.","p":7},
-{"q":"Bagaimana istri menggugurkan had zina?","c":"Dengan meli'an suaminya","x":["Dengan bersumpah saja","Dengan diam","Dengan membayar"],"e":"Had gugur darinya dengan ia berli'an.","p":8},
-{"q":"Bagaimana li'an orang bisu?","c":"Dengan isyarat yang dapat dipahami","x":["Tidak bisa","Dengan tulisan saja","Dengan wali"],"e":"Orang bisu meli'an dengan isyarat yang dapat dipahami.","p":10}
+"e": "Lafadz sharih ada tiga: talak, firaq, dan sarah (dengan bentukan-bentukannya).",
+"p": 3
+},
+{
+"q": "Apakah lafadz sharih talak membutuhkan niat?",
+"c": "Tidak membutuhkan niat",
+"x": [
+"Membutuhkan niat",
+"Membutuhkan saksi",
+"Membutuhkan hakim"
+],
+"e": "Lafadz sharih tidak membutuhkan niat, kecuali yang dipaksa.",
+"p": 4
+},
+{
+"q": "Pada kinayah apa yang dibutuhkan agar jatuh talak?",
+"c": "Niat",
+"x": [
+"Saksi",
+"Hakim",
+"Wali"
+],
+"e": "Kinayah membutuhkan niat.",
+"p": 4
+},
+{
+"q": "Talak sunnah dan bid'ah terjadi pada perempuan yang...",
+"c": "Haid",
+"x": [
+"Hamil",
+"Menopause",
+"Masih kecil"
+],
+"e": "Perempuan haid ada sunnah dan bid'ah dalam talaknya.",
+"p": 5
+},
+{
+"q": "Siapa empat perempuan yang tidak ada sunnah dan bid'ah dalam talaknya?",
+"c": "Anak kecil, menopause, hamil, dan yang dikhulu' sebelum disetubuhi",
+"x": [
+"Gadis, janda, perempuan hamil, dan perempuan haid",
+"Perempuan haid, nifas, hamil, dan menyusui",
+"Anak kecil, perempuan dewasa, perempuan tua, dan perempuan haid"
+],
+"e": "Empat: anak kecil, menopause, hamil, dan perempuan yang dikhulu' yang belum disetubuhi.",
+"p": 6
+}
+],
+"u86": [
+{
+"q": "Berapa talak yang dimiliki suami merdeka dan budak?",
+"c": "Merdeka tiga, budak dua",
+"x": [
+"Merdeka dua, budak satu",
+"Merdeka tiga, budak tiga",
+"Merdeka empat, budak dua"
+],
+"e": "Suami merdeka memiliki tiga talak, budak dua, baik istrinya merdeka maupun budak.",
+"p": 1
+},
+{
+"q": "Istitsna' dalam talak sah bila...",
+"c": "Disambungkan dengan yang dikecualikan secara bersambung",
+"x": [
+"Dipisahkan dari yang dikecualikan dengan jeda yang lama",
+"Diucapkan keesokan harinya setelah talak diucapkan",
+"Dilakukan sendirian tanpa menyebut yang dikecualikan"
+],
+"e": "Sah istitsna' apabila menyambungkannya, dianggap satu ucapan dalam kebiasaan.",
+"p": 2
+},
+{
+"q": "Jika menghabiskan, seperti 'engkau tertalak tiga kecuali tiga', bagaimana?",
+"c": "Istitsna' batal dan jatuh tiga",
+"x": [
+"Istitsna' sah dan talak yang dikecualikan tidak jatuh",
+"Tidak jatuh talak sama sekali karena ucapan bertentangan",
+"Jatuh satu talak saja sebagai hasil pengecualian"
+],
+"e": "Istitsna' tidak boleh menghabiskan yang dikecualikan; jika menghabiskan, batal.",
+"p": 3
+},
+{
+"q": "Apakah sah menggantungkan talak dengan sifat dan syarat?",
+"c": "Sah",
+"x": [
+"Tidak sah",
+"Sah dengan saksi",
+"Sah dengan hakim"
+],
+"e": "Sah menggantungkan talak dengan sifat dan syarat.",
+"p": 3
+},
+{
+"q": "Talak sebelum nikah, bagaimana?",
+"c": "Tidak terjadi",
+"x": [
+"Terjadi",
+"Terjadi jika digantung",
+"Terjadi dengan niat"
+],
+"e": "Talak tidak terjadi sebelum nikah.",
+"p": 4
+},
+{
+"q": "Empat orang yang talaknya tidak terjadi?",
+"c": "Anak kecil, orang gila, orang tidur, dan orang yang dipaksa",
+"x": [
+"Orang miskin, orang sakit, orang tua, dan orang lemah",
+"Orang buta, orang bisu, orang tuli, dan orang lumpuh",
+"Anak kecil, orang gila, orang mabuk, dan orang marah"
+],
+"e": "Talak tidak terjadi dari anak kecil, orang gila, orang tidur, dan orang yang dipaksa tanpa hak.",
+"p": 5
+},
+{
+"q": "Dalam keadaan apa pemaksaan terwujud?",
+"c": "Ancaman pukulan keras, penjara, atau perusakan harta",
+"x": [
+"Permintaan halus, nasihat, harapan biasa, atau bujukan",
+"Cukup ucapan tidak suka dan tidak ada ancaman sama sekali",
+"Ancaman celaan ringan dan teguran biasa di hadapan orang"
+],
+"e": "Pemaksaan terwujud dengan ancaman pukulan keras, penjara, perusakan harta dan semisalnya.",
+"p": 7
+}
+],
+"u87": [
+{
+"q": "Apa makna rujuk secara syara'?",
+"c": "Mengembalikan istri kepada nikah dalam iddah talak yang tidak ba'in",
+"x": [
+"Menikahi kembali perempuan yang sudah habis masa iddahnya",
+"Menjatuhkan talak kepada istri setelah akad nikah baru",
+"Memisahkan istri dari suami dengan keputusan hakim"
+],
+"e": "Rujuk: mengembalikan istri kepada nikah dalam iddah talak yang tidak ba'in dengan cara tertentu.",
+"p": 1
+},
+{
+"q": "Kapan suami boleh rujuk?",
+"c": "Selama belum habis iddah, tanpa izinnya",
+"x": [
+"Setelah iddah habis, dengan izin wali perempuan",
+"Selama belum habis iddah, dengan izin istrinya",
+"Selama belum habis iddah, dengan dua orang saksi"
+],
+"e": "Menalak satu atau dua kali, ia boleh merujuk selama belum habis iddah tanpa izin.",
+"p": 2
+},
+{
+"q": "Lafadz sharih rujuk?",
+"c": "Aku kembalikan engkau kepada nikahku, atau aku tahan engkau",
+"x": [
+"Aku menikahimu kembali, atau aku mengawinimu lagi",
+"Aku pulangkan engkau kepada orang tuamu, atau pulanglah",
+"Aku bebaskan engkau dari nikahku, atau engkau bebas"
+],
+"e": "Lafadz sharih dalam rujuk: 'aku kembalikan engkau kepada nikahku' dan 'aku tahan engkau'.",
+"p": 3
+},
+{
+"q": "Jika iddah habis, bagaimana suami menikahinya?",
+"c": "Dengan akad baru",
+"x": [
+"Dengan rujuk",
+"Tanpa akad",
+"Dengan saksi"
+],
+"e": "Halal menikahinya dengan akad baru, dengan sisa talak.",
+"p": 5
+},
+{
+"q": "Berapa syarat agar perempuan yang ditalak tiga halal bagi suami pertama?",
+"c": "Lima syarat, antara lain menikah dengan laki-laki lain dan disetubuhi",
+"x": [
+"Dua syarat: habis iddah dan menikah dengan laki-laki lain",
+"Tiga syarat saja: iddah, nikah lain, dan talak dari suami kedua",
+"Tidak ada syarat selain habis iddah dari suami pertama"
+],
+"e": "Tidak halal kecuali setelah lima syarat, termasuk habis iddah, menikah dengan suami lain, dan disetubuhi.",
+"p": 6
+}
+],
+"u88": [
+{
+"q": "Apa makna ila' secara syara'?",
+"c": "Sumpah suami untuk tidak menyetubuhi istri secara mutlak atau lebih dari empat bulan",
+"x": [
+"Sumpah suami untuk tidak menalak istri secara mutlak atau lebih dari empat bulan",
+"Sumpah suami untuk tidak memberi nafkah istri selama empat bulan",
+"Sumpah istri untuk tidak melayani suami secara mutlak"
+],
+"e": "Ila' adalah sumpah suami untuk tidak menyetubuhi istri secara mutlak atau lebih dari empat bulan.",
+"p": 1
+},
+{
+"q": "Berapa lama muli ditangguhkan?",
+"c": "Empat bulan",
+"x": [
+"Dua bulan",
+"Enam bulan",
+"Setahun"
+],
+"e": "Muli diberi tangguh empat bulan.",
+"p": 4
+},
+{
+"q": "Setelah masa tangguh habis, apa pilihan muli?",
+"c": "Kembali (menyetubuhi) dan membayar kafarat, atau menalak",
+"x": [
+"Menalak tiga sekaligus atau membayar kafarat zhihar",
+"Mendiamkan istri sambil menunggu waktu tangguh baru",
+"Menunggu hakim memutuskan sambil tetap menahan istrinya"
+],
+"e": "Muli diberi pilihan antara kembali dan membayar kafarat, atau menalak.",
+"p": 5
+},
+{
+"q": "Jika suami menolak kembali dan menalak, apa yang dilakukan hakim?",
+"c": "Hakim menalak atasnya satu talak raj'i",
+"x": [
+"Hakim menalak atasnya tiga talak sekaligus",
+"Hakim membatalkan sumpahnya tanpa menjatuhkan talak",
+"Hakim mendiamkannya dan memberinya tangguh empat bulan lagi"
+],
+"e": "Hakim menalak atasnya satu talak raj'i.",
+"p": 6
+}
+],
+"u89": [
+{
+"q": "Apa makna zhihar?",
+"c": "Suami menyerupakan istrinya dengan perempuan yang tidak halal baginya",
+"x": [
+"Suami menalak istrinya dengan lafadz yang tidak jelas",
+"Suami bersumpah tidak menggauli istri lebih dari empat bulan",
+"Suami menuduh istrinya berzina tanpa mendatangkan saksi"
+],
+"e": "Zhihar: suami menyerupakan istrinya yang tidak ba'in dengan perempuan yang tidak halal baginya.",
+"p": 1
+},
+{
+"q": "Contoh ucapan zhihar?",
+"c": "Engkau bagiku seperti punggung ibuku",
+"x": [
+"Engkau bagiku seperti saudara perempuanku sendiri yang halal",
+"Aku menalakmu dengan talak raj'i pada hari ini",
+"Demi Allah aku tidak akan menggaulimu selama lima bulan"
+],
+"e": "Zhihar adalah mengucapkan 'engkau bagiku seperti punggung ibuku'.",
+"p": 1
+},
+{
+"q": "Urutan kafarat zhihar?",
+"c": "Memerdekakan budak, puasa dua bulan berturut-turut, memberi makan enam puluh orang miskin",
+"x": [
+"Puasa tiga hari berturut-turut, lalu memberi makan sepuluh orang miskin",
+"Memberi makan enam puluh orang miskin, kemudian memerdekakan budak",
+"Bersedekah satu dirham, kemudian puasa tiga hari berturut-turut"
+],
+"e": "Kafarat zhihar: budak mukmin, puasa dua bulan berturut-turut, memberi makan enam puluh miskin.",
+"p": 3
+},
+{
+"q": "Setiap orang miskin diberi berapa dalam kafarat zhihar?",
+"c": "Satu mud",
+"x": [
+"Satu sha'",
+"Satu wasaq",
+"Setengah mud"
+],
+"e": "Setiap orang miskin satu mud dari makanan pokok.",
+"p": 5
+},
+{
+"q": "Apakah halal menyetubuhi istri yang dizhihar sebelum kafarat?",
+"c": "Tidak halal hingga membayar kafarat",
+"x": [
+"Halal",
+"Halal dengan kafarat nanti",
+"Halal setelah sebulan"
+],
+"e": "Tidak halal menyetubuhinya hingga membayar kafarat.",
+"p": 6
+}
+],
+"u90": [
+{
+"q": "Apa makna li'an secara syara'?",
+"c": "Kalimat-kalimat tertentu sebagai hujjah bagi suami yang terpaksa menuduh istri",
+"x": [
+"Sumpah suami istri untuk berdamai dan melanjutkan pernikahan",
+"Sumpah suami untuk menalak istri jika ia berzina",
+"Janji suami untuk tidak menggauli istri dalam waktu tertentu"
+],
+"e": "Li'an: kalimat-kalimat tertentu yang dijadikan hujjah bagi orang yang terpaksa menuduh orang yang mengotori ranjangnya.",
+"p": 1
+},
+{
+"q": "Jika suami menuduh istri berzina tanpa bukti, atasnya had apa?",
+"c": "Had qadzaf (delapan puluh cambukan), kecuali meli'an",
+"x": [
+"Had zina karena ia sendiri yang menuduh istrinya berzina",
+"Had pencurian karena menuduh tanpa mendatangkan bukti",
+"Tidak ada had apa pun karena yang dituduh adalah istrinya"
+],
+"e": "Atasnya had qadzaf kecuali menegakkan bukti atau meli'an.",
+"p": 2
+},
+{
+"q": "Berapa kali suami mengucap kalimat li'an?",
+"c": "Empat kali, dan kelima dengan laknat",
+"x": [
+"Satu kali sumpah, kemudian laknat jika berdusta",
+"Dua kali sumpah, kemudian laknat jika berdusta",
+"Tujuh kali sumpah, kemudian laknat jika berdusta"
+],
+"e": "Empat kali kalimat, kelima laknat jika berdusta.",
+"p": 4
+},
+{
+"q": "Berapa hukum yang terkait li'an suami?",
+"c": "Lima: gugur had, wajib had atas istri jika tidak meli'an, hilang status nikah, nasab anak terputus, haram selamanya",
+"x": [
+"Dua: hilang status nikah dan nasab anak terputus",
+"Tiga: hilang status nikah, gugur had, dan mahar gugur",
+"Sepuluh: seluruh hak suami istri terputus selamanya"
+],
+"e": "Berkaitan dengan li'an suami lima hukum.",
+"p": 5
+},
+{
+"q": "Bagaimana setelah li'an hubungan nikah?",
+"c": "Perpisahan selamanya dan haram dinikahi lagi",
+"x": [
+"Keduanya dapat rujuk kapan saja selama istri dalam iddah",
+"Keduanya dapat menikah ulang setelah suami bertaubat",
+"Keduanya tetap sebagai suami istri dan hanya berpisah tempat"
+],
+"e": "Hilangnya status pernikahan dan pengharaman selamanya.",
+"p": 7
+},
+{
+"q": "Bagaimana istri menggugurkan had zina?",
+"c": "Dengan meli'an suaminya",
+"x": [
+"Dengan bersumpah saja",
+"Dengan diam",
+"Dengan membayar"
+],
+"e": "Had gugur darinya dengan ia berli'an.",
+"p": 8
+},
+{
+"q": "Bagaimana li'an orang bisu?",
+"c": "Dengan isyarat yang dapat dipahami",
+"x": [
+"Tidak bisa dilakukan sama sekali karena tidak dapat berucap",
+"Cukup dengan tulisan saja tanpa isyarat yang dipahami",
+"Dilakukan oleh walinya sebagai pengganti ucapannya"
+],
+"e": "Orang bisu meli'an dengan isyarat yang dapat dipahami.",
+"p": 10
+}
 ]
 }

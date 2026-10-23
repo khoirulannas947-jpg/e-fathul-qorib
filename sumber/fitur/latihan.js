@@ -8,8 +8,8 @@ const LAT_TYPES=["irab","kuis","susun"];
 const LATI={
   irab:{t:"Latihan I'rab",ar:"تَدْرِيْبُ الْإِعْرَابِ",ic:"pen",d:"Satu kata disorot dalam kalimat kitab. Tebak kedudukannya: mubtada', khabar, fa'il, maf'ul, dan seterusnya.",
     note:"Kunci jawaban hanya diambil dari kata yang i'rabnya ditulis tangan dan cocok dengan kode kedudukannya, bukan dari baris i'rab otomatis."},
-  kuis:{t:"Kuis Bab",ar:"اِخْتِبَارُ الْبَابِ",ic:"quiz",d:"Soal pilihan ganda dari mind map bab (poin, kelompok, dan nomor paragraf) serta arti kata dalam kitab.",
-    note:"Soal disusun otomatis dari mind map dan makna per kata. Bab yang belum punya mind map memakai soal arti kata saja."},
+  kuis:{t:"Kuis Bab",ar:"اِخْتِبَارُ الْبَابِ",ic:"quiz",d:"Soal pilihan ganda untuk menguji pemahaman isi kitab per bab, lengkap dengan penjelasan dan nomor paragraf rujukan.",
+    note:"Soal ditulis dari isi tiap bab. Setelah menjawab, tombol “Buka paragraf di kitab” membawa Anda ke bagian yang dibahas."},
   susun:{t:"Susun Kalimat",ar:"تَرْتِيْبُ الْجُمَلِ",ic:"shuffle",d:"Kata-kata Arab diacak. Susun kembali menjadi kalimat yang benar untuk melatih tarkib dan hafalan matan.",
     note:"Ketuk kata untuk menaruhnya di baris jawaban, ketuk lagi untuk mengembalikan. Percobaan pertama yang menentukan skor."}
 };

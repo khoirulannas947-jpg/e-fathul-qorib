@@ -4,9 +4,9 @@
 "q": "Apa makna nikah secara bahasa dan syara'?",
 "c": "Bahasa: berkumpul, bersetubuh, dan akad; syara': akad yang mencakup rukun dan syarat",
 "x": [
-"Bahasa: berpisah; syara': perceraian suami istri",
-"Bahasa: berjanji; syara': janji menikah di masa depan",
-"Bahasa: bersaksi; syara': kesaksian atas pernikahan"
+"Bahasa: berpisah dan menjauh; syara': akad yang mencakup talak dan rujuk",
+"Bahasa: berjanji dan bersaksi; syara': janji yang disaksikan dua orang",
+"Bahasa: menjual dan membeli; syara': akad pemindahan milik atas perempuan"
 ],
 "e": "Nikah bahasa: berkumpul, bersetubuh, akad; syara': akad yang mencakup rukun dan syarat.",
 "p": 1
@@ -15,9 +15,9 @@
 "q": "Kapan nikah disunnahkan?",
 "c": "Bagi yang membutuhkan dan memiliki biaya seperti mahar dan nafkah",
 "x": [
-"Bagi siapa saja tanpa syarat",
-"Bagi yang tidak mampu biaya",
-"Bagi yang tidak menginginkannya"
+"Bagi siapa saja yang sudah baligh, walaupun tidak mampu dan tidak butuh",
+"Bagi yang tidak membutuhkan dan tidak memiliki biaya seperti mahar",
+"Bagi yang takut zina tetapi tidak memiliki biaya nafkah sama sekali"
 ],
 "e": "Nikah disunnahkan bagi orang yang membutuhkannya dan mendapatkan biayanya.",
 "p": 2
@@ -26,9 +26,9 @@
 "q": "Berapa maksimal istri bagi orang merdeka?",
 "c": "Empat perempuan merdeka",
 "x": [
-"Dua",
-"Tiga",
-"Lima"
+"Dua perempuan merdeka dan dua budak perempuan",
+"Tiga perempuan merdeka saja",
+"Lima perempuan merdeka dengan izin hakim"
 ],
 "e": "Orang merdeka boleh mengumpulkan empat perempuan merdeka saja.",
 "p": 3
@@ -37,9 +37,9 @@
 "q": "Orang merdeka menikahi budak perempuan milik orang lain dengan dua syarat. Apa saja?",
 "c": "Tidak mampu mahar perempuan merdeka dan takut zina",
 "x": [
-"Kaya raya dan menikah banyak",
-"Tidak punya istri dan ingin anak",
-"Punya budak dan tidak takut zina"
+"Tidak mampu nafkah budak itu dan menginginkan banyak anak",
+"Mampu mahar perempuan merdeka dan tidak takut zina",
+"Telah memiliki istri merdeka dan menginginkan tambahan istri"
 ],
 "e": "Syarat: tidak adanya mahar perempuan merdeka (atau tidak ada/tidak rela) dan takut zina (al-'anat).",
 "p": 4
@@ -81,9 +81,9 @@
 "q": "Pandangan kepada mahram boleh sampai mana?",
 "c": "Selain bagian antara pusar dan lutut",
 "x": [
-"Seluruh badan",
-"Hanya wajah",
-"Hanya tangan"
+"Seluruh badan termasuk antara pusar dan lutut",
+"Hanya wajah dan kedua telapak tangan",
+"Hanya kepala, leher, dan kedua tangan"
 ],
 "e": "Boleh memandang selain antara pusar dan lutut; yang di antaranya haram.",
 "p": 8
@@ -92,9 +92,9 @@
 "q": "Pandangan karena kebutuhan nikah boleh kepada bagian mana?",
 "c": "Wajah dan kedua telapak tangan",
 "x": [
-"Seluruh badan",
-"Rambut",
-"Kaki"
+"Seluruh badan karena hendak berumah tangga",
+"Wajah, rambut, dan kedua betis",
+"Wajah, leher, dan kedua kaki"
 ],
 "e": "Ketika bertekad menikahi, boleh memandang wajah dan telapak tangan, luar dan dalam.",
 "p": 9
@@ -103,9 +103,9 @@
 "q": "Pandangan untuk pengobatan boleh sampai mana?",
 "c": "Pada tempat yang dibutuhkan, hingga kemaluan, dengan kehadiran mahram",
 "x": [
-"Hanya wajah",
-"Hanya tangan",
-"Tidak boleh sama sekali"
+"Hanya pada wajah dan kedua telapak tangan",
+"Pada seluruh badan tanpa perlu kehadiran mahram",
+"Tidak boleh sama sekali walaupun ada kebutuhan"
 ],
 "e": "Dokter boleh memandang tempat yang dibutuhkan hingga kemaluan, dengan kehadiran mahram/suami dan tidak ada perempuan yang dapat mengobati.",
 "p": 10
@@ -114,9 +114,9 @@
 "q": "Saksi boleh memandang kemaluan perempuan untuk apa?",
 "c": "Untuk bersaksi atas zinanya atau kelahirannya",
 "x": [
-"Untuk mengobati",
-"Untuk membeli",
-"Untuk menikah"
+"Untuk mengobati penyakitnya ketika tabib tidak ada",
+"Untuk membelinya sebagai budak perempuan",
+"Untuk menikahinya ketika sudah mengajukan lamaran"
 ],
 "e": "Pandangan untuk persaksian: saksi memandang kemaluannya ketika bersaksi atas zina atau kelahiran.",
 "p": 11
@@ -125,9 +125,9 @@
 "q": "Pandangan ketujuh?",
 "c": "Kepada budak perempuan ketika membelinya, pada tempat yang dibutuhkan",
 "x": [
-"Kepada tetangga",
-"Kepada tamu",
-"Kepada teman"
+"Kepada tetangga perempuan ketika bertamu ke rumahnya",
+"Kepada tamu perempuan ketika diterima di rumah",
+"Kepada teman perempuan ketika bepergian bersama"
 ],
 "e": "Pandangan kepada budak perempuan ketika membelinya; ia memandang tubuh luar dan rambut, bukan aurat.",
 "p": 12
@@ -160,9 +160,9 @@
 "q": "Pengecualian syarat wali pada nikah perempuan dzimmi dan budak?",
 "c": "Tidak membutuhkan wali muslim, dan tuan boleh fasik",
 "x": [
-"Harus wali muslim",
-"Harus tuan adil",
-"Tidak perlu wali sama sekali"
+"Harus memakai wali muslim yang adil dan tuan harus adil",
+"Harus wali dari kerabat dan tuan harus muslim",
+"Tidak membutuhkan wali sama sekali dan tuan harus muslim"
 ],
 "e": "Nikah perempuan dzimmi tidak butuh wali muslim; nikah budak perempuan tidak butuh tuan yang adil.",
 "p": 4
@@ -171,9 +171,9 @@
 "q": "Siapa wali yang paling berhak?",
 "c": "Ayah, kemudian kakek, kemudian saudara kandung",
 "x": [
-"Saudara, lalu ayah",
-"Paman, lalu ayah",
-"Hakim, lalu ayah"
+"Saudara kandung, kemudian ayah, kemudian kakek",
+"Paman dari ayah, kemudian ayah, kemudian saudara",
+"Hakim, kemudian ayah, kemudian kakek"
 ],
 "e": "Wali yang paling berhak ayah, kemudian kakek, kemudian saudara laki-laki kandung dan seterusnya.",
 "p": 5
@@ -182,9 +182,9 @@
 "q": "Jika tidak ada 'ashabah nasab, siapa wali?",
 "c": "Tuan yang memerdekakan, kemudian hakim",
 "x": [
-"Tetangga",
-"Teman",
-"Kerabat jauh"
+"Tetangga terdekat, kemudian hakim setempat",
+"Teman dekat ayah, kemudian kerabat jauh",
+"Kerabat jauh dari ibu, kemudian tuan yang memerdekakan"
 ],
 "e": "Jika tidak ada 'ashabah dari nasab, tuan yang memerdekakan lalu hakim.",
 "p": 6
@@ -215,9 +215,9 @@
 "q": "Siapa yang dimaksud janda?",
 "c": "Perempuan yang hilang keperawanannya dengan persetubuhan halal atau haram",
 "x": [
-"Perempuan yang cerai",
-"Perempuan yang ditinggal mati",
-"Perempuan yang pernah bertunangan"
+"Perempuan yang telah bercerai walaupun belum pernah disetubuhi",
+"Perempuan yang ditinggal mati suami walaupun belum disetubuhi",
+"Perempuan yang pernah bertunangan lalu putus sebelum akad"
 ],
 "e": "Janda adalah yang hilang keperawanannya dengan persetubuhan, halal atau haram; gadis kebalikannya.",
 "p": 10
@@ -237,9 +237,9 @@
 "q": "Janda boleh dinikahkan setelah...",
 "c": "Baligh dan dengan izinnya melalui ucapan",
 "x": [
-"Diam saja",
-"Dengan izin wali",
-"Tanpa izin"
+"Cukup diam karena malu, setelah baligh dan berakal",
+"Dengan izin wali saja tanpa ucapan dirinya",
+"Tanpa izin siapa pun setelah ia baligh"
 ],
 "e": "Janda tidak boleh dinikahkan kecuali setelah baligh dan dengan izinnya, dengan ucapan bukan diam.",
 "p": 11
@@ -261,9 +261,9 @@
 "q": "Tujuh haram karena nasab mencakup...",
 "c": "Ibu, anak perempuan, saudara perempuan, bibi, keponakan, dan sebagainya",
 "x": [
-"Ibu mertua dan menantu",
-"Saudara istri dan bibi istri",
-"Anak tiri dan istri ayah"
+"Ibu mertua, menantu perempuan, dan anak tiri yang sudah disetubuhi",
+"Saudara istri, bibi istri, dan keponakan istri",
+"Anak tiri, istri ayah, dan istri anak"
 ],
 "e": "Tujuh karena nasab: ibu, anak perempuan, saudara perempuan, bibi dari ayah, bibi dari ibu, anak perempuan saudara laki-laki, anak perempuan saudara perempuan.",
 "p": 1
@@ -272,9 +272,9 @@
 "q": "Anak perempuan hasil zina seseorang, halal dinikahinya?",
 "c": "Halal tetapi makruh menurut pendapat paling sahih",
 "x": [
-"Haram",
-"Wajib",
-"Haram selamanya"
+"Haram dinikahi selamanya sebagaimana anak dari nikah sah",
+"Wajib dinikahi karena itu darah dagingnya sendiri",
+"Haram dinikahi sampai ia bertaubat dari zina itu"
 ],
 "e": "Halal menurut pendapat paling sahih tetapi makruh.",
 "p": 2
@@ -283,9 +283,9 @@
 "q": "Berapa yang haram karena pernikahan?",
 "c": "Empat: ibu istri, anak tiri, istri anak, istri ayah",
 "x": [
-"Dua",
-"Tujuh",
-"Sepuluh"
+"Dua: ibu istri dan anak tiri saja",
+"Tujuh: sama seperti yang haram karena nasab",
+"Sepuluh: termasuk saudara perempuan istri dan bibinya"
 ],
 "e": "Empat karena pernikahan.",
 "p": 5
@@ -294,9 +294,9 @@
 "q": "Perempuan yang haram dari segi pengumpulan?",
 "c": "Saudara perempuan istri",
 "x": [
-"Ibu istri",
-"Anak tiri",
-"Istri ayah"
+"Ibu istri yang telah disetubuhi suaminya sah",
+"Anak tiri yang ibunya telah disetubuhi",
+"Istri ayah yang telah dinikahi secara sah"
 ],
 "e": "Tidak boleh dikumpulkan antara istri dan saudarinya.",
 "p": 6
@@ -316,9 +316,9 @@
 "q": "Kaidah persusuan?",
 "c": "Haram karena persusuan apa yang haram karena nasab",
 "x": [
-"Persusuan tidak mengharamkan",
-"Hanya haram sebagian",
-"Haram hanya bila tiga kali"
+"Persusuan tidak mengharamkan apa pun, hanya nasab yang mengharamkan",
+"Haram karena persusuan hanya sebagian yang haram karena nasab",
+"Haram karena persusuan hanya jika susuan mencapai sepuluh kali"
 ],
 "e": "Haram karena persusuan apa yang haram karena nasab.",
 "p": 9
@@ -327,9 +327,9 @@
 "q": "Perempuan (istri) dikembalikan karena berapa cacat?",
 "c": "Lima: gila, kusta, belang, ratq, qarn",
 "x": [
-"Tiga",
-"Tujuh",
-"Sepuluh"
+"Tiga: gila, kusta, dan impotensi saja",
+"Tujuh: lima macam ditambah buta dan tuli",
+"Sepuluh: semua cacat badan yang terlihat"
 ],
 "e": "Istri dikembalikan karena lima cacat.",
 "p": 10
@@ -349,9 +349,9 @@
 "q": "Apa itu jabb dan 'unnah pada suami?",
 "c": "Jabb: terpotong zakar; 'unnah: impotensi",
 "x": [
-"Gila dan belang",
-"Kusta dan belang",
-"Ratq dan qarn"
+"Jabb: gila yang terputus-putus; 'unnah: kusta",
+"Jabb: belang di kulit; 'unnah: tersumbat kemaluan",
+"Jabb: lumpuh kedua kaki; 'unnah: kehilangan akal"
 ],
 "e": "Suami dikembalikan karena lima cacat: gila, kusta, belang, jabb, 'unnah.",
 "p": 13
@@ -362,9 +362,9 @@
 "q": "Apa makna mahar (shadaq) menurut syara'?",
 "c": "Harta yang wajib atas laki-laki bagi perempuan karena nikah atau persetubuhan",
 "x": [
-"Hadiah dari wali",
-"Biaya walimah",
-"Nafkah bulanan"
+"Hadiah dari wali perempuan kepada suami ketika akad nikah",
+"Biaya pesta pernikahan yang ditanggung suami untuk tamu",
+"Nafkah bulanan yang diberikan suami kepada istri setelah akad"
 ],
 "e": "Mahar secara syara' nama bagi harta yang wajib atas laki-laki bagi perempuan karena nikah atau persetubuhan.",
 "p": 1
@@ -373,9 +373,9 @@
 "q": "Apakah menyebut mahar dalam akad nikah wajib?",
 "c": "Sunnah, akad tetap sah tanpa menyebut",
 "x": [
-"Wajib",
-"Haram",
-"Makruh"
+"Wajib disebut dalam akad, bila tidak disebut akad batal",
+"Haram disebut dalam akad karena menyerupai jual beli",
+"Makruh disebut dalam akad, dan akad tetap sah tanpanya"
 ],
 "e": "Disunnahkan menyebutkan mahar; jika tidak disebut, akad sah (tafwidh).",
 "p": 2
@@ -384,9 +384,9 @@
 "q": "Mahar disunnahkan tidak kurang dan tidak lebih dari...",
 "c": "Sepuluh dirham sampai lima ratus dirham",
 "x": [
-"Seribu dirham",
-"Satu dirham",
-"Tidak ada batas"
+"Seribu dirham sampai sepuluh ribu dirham",
+"Satu dirham sampai seratus dirham saja",
+"Satu dinar sampai tiga ratus dinar"
 ],
 "e": "Disunnahkan tidak kurang dari sepuluh dirham dan tidak lebih dari lima ratus dirham.",
 "p": 2
@@ -395,9 +395,9 @@
 "q": "Bila akad tanpa mahar, kapan mahar wajib?",
 "c": "Suami menetapkan, hakim menetapkan, atau suami menyetubuhi (mahar mitsil)",
 "x": [
-"Setahun kemudian",
-"Tidak pernah",
-"Saat istri meminta"
+"Setelah setahun akad berlangsung dan istri menuntutnya",
+"Tidak pernah wajib jika tidak disebut dalam akad",
+"Hanya ketika istri meminta di hadapan hakim"
 ],
 "e": "Mahar wajib dengan tiga hal: suami menetapkan, hakim menetapkan, atau suami menyetubuhi.",
 "p": 4
@@ -406,9 +406,9 @@
 "q": "Batas paling sedikit mahar?",
 "c": "Tidak ada batas tertentu",
 "x": [
-"Sepuluh dirham",
-"Satu dinar",
-"Lima dirham"
+"Sepuluh dirham, tidak boleh kurang dari itu",
+"Satu dinar, tidak boleh kurang dari itu",
+"Lima dirham, tidak boleh kurang dari itu"
 ],
 "e": "Tidak ada batas bagi paling sedikit maupun paling banyak; setiap yang sah dijadikan harga sah menjadi mahar.",
 "p": 6
@@ -417,9 +417,9 @@
 "q": "Bolehkah mahar berupa manfaat?",
 "c": "Boleh, seperti mengajarinya Al-Qur'an",
 "x": [
-"Tidak boleh",
-"Hanya harta",
-"Hanya emas"
+"Tidak boleh, mahar harus berupa harta yang berwujud",
+"Boleh asal berupa emas atau perak yang ditimbang",
+"Boleh hanya jika wali perempuan menyetujuinya"
 ],
 "e": "Boleh menikahinya dengan mahar manfaat yang diketahui, misalnya mengajari Al-Qur'an.",
 "p": 7
@@ -439,9 +439,9 @@
 "q": "Mahar wajib seluruhnya kapan?",
 "c": "Setelah persetubuhan, atau meninggalnya salah satu pasangan",
 "x": [
-"Setelah khalwat",
-"Setelah akad saja",
-"Setelah setahun"
+"Setelah khalwat sempurna dengan istri, walaupun belum bersetubuh",
+"Setelah akad nikah selesai dan istri diterima di rumah suami",
+"Setelah satu tahun dari akad nikah, ada atau tidak persetubuhan"
 ],
 "e": "Wajib seluruh mahar dengan persetubuhan atau meninggalnya salah satu, bukan dengan khalwat (qaul jadid).",
 "p": 8
@@ -463,9 +463,9 @@
 "q": "Minimal walimah bagi orang kaya dan orang miskin?",
 "c": "Seekor kambing bagi kaya, dan apa yang mudah bagi miskin",
 "x": [
-"Seekor unta",
-"Seekor sapi",
-"Tidak ada"
+"Seekor unta bagi kaya, dan seekor kambing bagi miskin",
+"Seekor sapi bagi kaya, dan seekor domba bagi miskin",
+"Tidak ada batas minimal bagi kaya maupun miskin"
 ],
 "e": "Paling sedikitnya bagi orang kaya seekor kambing, dan bagi lainnya sesuai kemampuan.",
 "p": 1
@@ -474,9 +474,9 @@
 "q": "Memenuhi undangan walimah pernikahan hukumnya?",
 "c": "Wajib (fardhu 'ain)",
 "x": [
-"Sunnah",
-"Mubah",
-"Haram"
+"Sunnah muakkadah, boleh ditinggalkan tanpa uzur",
+"Mubah, boleh dipenuhi dan boleh ditinggalkan",
+"Haram dipenuhi jika di sana ada hiburan"
 ],
 "e": "Memenuhi undangannya wajib, fardhu 'ain menurut pendapat paling sahih; makan darinya tidak wajib.",
 "p": 2
@@ -496,9 +496,9 @@
 "q": "Uzur yang membolehkan tidak memenuhi undangan?",
 "c": "Di tempat ada orang yang menyakiti atau tidak layak duduk bersamanya",
 "x": [
-"Malas",
-"Sibuk bermain",
-"Tidak dekat"
+"Malas keluar rumah atau sedang ingin beristirahat",
+"Sibuk dengan permainan dan urusan dunia yang ringan",
+"Tempat acara agak jauh tetapi masih terjangkau"
 ],
 "e": "Uzur seperti ada orang yang menyakiti orang yang diundang atau tidak layak duduk bersama.",
 "p": 4
@@ -520,9 +520,9 @@
 "q": "Apakah giliran di antara istri wajib sejak awal?",
 "c": "Tidak wajib sejak awal, tetapi menyamakan giliran wajib jika memulainya",
 "x": [
-"Wajib sejak awal",
-"Haram",
-"Makruh"
+"Wajib sejak awal pernikahan, walaupun suami tidak ingin",
+"Haram dilakukan karena memberatkan suami",
+"Makruh dilakukan kecuali istri meminta"
 ],
 "e": "Tidak wajib baginya giliran di antara mereka sejak awal, namun jika menggilir wajib menyamakan.",
 "p": 2
@@ -531,9 +531,9 @@
 "q": "Penyamaan giliran dipertimbangkan dengan apa?",
 "c": "Tempat dan waktu",
 "x": [
-"Hadiah",
-"Makanan",
-"Pakaian"
+"Hadiah dan perhiasan yang diberikan kepada masing-masing istri",
+"Makanan dan minuman yang disediakan untuk masing-masing istri",
+"Pakaian dan perabot yang diberikan kepada masing-masing istri"
 ],
 "e": "Penyamaan dipertimbangkan kadang dengan tempat dan kadang dengan waktu.",
 "p": 3
@@ -542,9 +542,9 @@
 "q": "Bolehkah mengumpulkan dua istri dalam satu tempat tinggal?",
 "c": "Haram kecuali dengan kerelaan",
 "x": [
-"Boleh",
-"Boleh bila kecil",
-"Wajib"
+"Boleh walaupun istri tidak rela, jika tempatnya luas",
+"Boleh jika tempat tinggal kecil dan sempit",
+"Wajib dilakukan agar giliran sama rata"
 ],
 "e": "Haram mengumpulkan dua istri atau lebih dalam satu tempat tinggal kecuali dengan kerelaan.",
 "p": 3
@@ -564,9 +564,9 @@
 "q": "Istri baru yang gadis dikhususkan dengan berapa malam?",
 "c": "Tujuh malam berturut-turut",
 "x": [
-"Tiga malam",
-"Satu malam",
-"Sepuluh malam"
+"Tiga malam berturut-turut, kemudian digilir seperti biasa",
+"Satu malam saja kemudian digilir seperti istri lain",
+"Sepuluh malam berturut-turut tanpa giliran istri lain"
 ],
 "e": "Istri baru gadis tujuh malam; janda tiga malam.",
 "p": 7
@@ -575,9 +575,9 @@
 "q": "Langkah pertama menghadapi istri nusyuz?",
 "c": "Menasihati tanpa memukul dan tanpa mendiamkan",
 "x": [
-"Memukul",
-"Mendiamkan",
-"Menceraikan"
+"Memukul dengan pukulan ringan tanpa menasihati lebih dulu",
+"Mendiamkan di tempat tidur tanpa berbicara sama sekali",
+"Menceraikan dengan talak raj'i tanpa peringatan terlebih dahulu"
 ],
 "e": "Pertama menasihati; jika enggan, mendiamkan di tempat tidur; jika tetap, memukul untuk mendidik.",
 "p": 9
@@ -586,9 +586,9 @@
 "q": "Berapa lama maksimal mendiamkan istri?",
 "c": "Tidak lebih dari tiga hari dalam ucapan",
 "x": [
-"Seminggu",
-"Sebulan",
-"Setahun"
+"Tidak lebih dari seminggu dalam ucapan dan tempat tidur",
+"Tidak lebih dari sebulan dalam ucapan dan tempat tidur",
+"Tidak lebih dari setahun dalam ucapan dan tempat tidur"
 ],
 "e": "Haram mendiamkan istri lebih dari tiga hari dalam ucapan tanpa uzur syar'i.",
 "p": 11
@@ -599,9 +599,9 @@
 "q": "Apa makna khulu' secara syara'?",
 "c": "Perpisahan dengan tebusan yang bernilai",
 "x": [
-"Perpisahan tanpa tebusan",
-"Talak tiga",
-"Sumpah suami"
+"Perpisahan tanpa tebusan dengan lafadz talak yang jelas",
+"Talak tiga sekaligus dengan tebusan harta dari istri",
+"Sumpah suami untuk tidak menyetubuhi istri dalam waktu tertentu"
 ],
 "e": "Khulu' bahasa: melepas; syara': perpisahan dengan tebusan yang bernilai.",
 "p": 1
@@ -610,9 +610,9 @@
 "q": "Tebusan khulu' harus...",
 "c": "Diketahui dan mampu diserahkan",
 "x": [
-"Tidak diketahui",
-"Berupa darah",
-"Tidak harus ada"
+"Tidak diketahui kadarnya dan tidak harus mampu diserahkan",
+"Berupa sesuatu yang najis atau haram dimiliki",
+"Tidak harus ada, cukup dengan ucapan suami saja"
 ],
 "e": "Khulu' boleh dengan tebusan yang diketahui yang mampu diserahkan.",
 "p": 2
@@ -621,9 +621,9 @@
 "q": "Jika tebusan tidak diketahui, apa akibatnya?",
 "c": "Istri tertalak ba'in dengan mahar mitsil",
 "x": [
-"Khulu' batal",
-"Istri tidak tertalak",
-"Tidak ada kewajiban"
+"Khulu' batal dan istri tetap dalam nikah semula",
+"Istri tidak tertalak tetapi wajib membayar tebusan",
+"Istri tertalak raj'i tanpa kewajiban apa pun"
 ],
 "e": "Istri tertalak ba'in dengan kewajiban mahar mitsil.",
 "p": 2
@@ -632,9 +632,9 @@
 "q": "Apakah suami boleh rujuk setelah khulu'?",
 "c": "Tidak boleh kecuali dengan nikah baru",
 "x": [
-"Boleh kapan saja",
-"Boleh dalam iddah",
-"Boleh dengan saksi"
+"Boleh rujuk kapan saja selama istri masih hidup",
+"Boleh rujuk selama masih dalam masa iddah istri",
+"Boleh rujuk jika disaksikan dua orang yang adil"
 ],
 "e": "Dengan khulu' perempuan memiliki dirinya dan tidak ada rujuk kecuali dengan nikah baru.",
 "p": 3
@@ -643,9 +643,9 @@
 "q": "Khulu' pada masa haid, bagaimana?",
 "c": "Boleh, tidak haram",
 "x": [
-"Haram",
-"Makruh",
-"Batal"
+"Haram dilakukan karena istri sedang haid",
+"Makruh dilakukan tetapi khulu'nya tetap sah",
+"Batal karena haid adalah masa yang terlarang"
 ],
 "e": "Khulu' boleh pada masa suci dan haid.",
 "p": 4
