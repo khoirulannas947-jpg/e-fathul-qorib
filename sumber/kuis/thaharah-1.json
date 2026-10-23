@@ -1,0 +1,892 @@
+{
+"miyah": [
+{
+"q": "Secara bahasa, apa arti kata 'kitab' menurut penjelasan Fathul Qorib?",
+"c": "Mashdar yang bermakna menghimpun dan mengumpulkan",
+"x": [
+"Nama bagi satu macam dari hal-hal yang masuk dalam sebuah jenis hukum",
+"Nama bagi sisa air yang dipakai untuk bersuci",
+"Kebersihan dari kotoran dan najis yang tampak"
+],
+"e": "Kitab secara bahasa bermakna menghimpun; secara istilah adalah nama bagi satu jenis hukum, sedangkan 'bab' adalah satu macam di bawah jenis itu.",
+"p": 1
+},
+{
+"q": "Apa perbedaan 'kitab' dan 'bab' secara istilah?",
+"c": "Kitab adalah nama satu jenis hukum, bab adalah satu macam dari hal-hal di bawah jenis itu",
+"x": [
+"Kitab adalah nama satu macam hukum, bab adalah nama satu jenis yang menaungi banyak kitab",
+"Keduanya sama persis dan hanya berbeda cara penulisannya",
+"Kitab untuk hukum shalat saja, bab untuk hukum selain shalat"
+],
+"e": "Kitab = satu jenis hukum; bab = satu macam yang masuk di bawah jenis tersebut.",
+"p": 1
+},
+{
+"q": "Apa makna ath-thaharah (dengan fathah tha') secara bahasa?",
+"c": "Kebersihan",
+"x": [
+"Sisa air bekas bersuci",
+"Kewajiban shalat",
+"Pembersihan dengan tanah"
+],
+"e": "Ath-thaharah secara bahasa bermakna kebersihan. Adapun ath-thuharah (dhammah) adalah nama bagi sisa air bersuci.",
+"p": 2
+},
+{
+"q": "Apa yang dimaksud ath-thuharah dengan dhammah pada tha'?",
+"c": "Nama bagi sisa air bekas bersuci",
+"x": [
+"Kebersihan secara umum",
+"Wudhu, mandi, dan tayammum",
+"Menghilangkan najis dari badan"
+],
+"e": "Ath-thuharah (dhammah) adalah nama bagi sisa air.",
+"p": 2
+},
+{
+"q": "Thaharah menurut syara' di antaranya didefinisikan sebagai mengerjakan sesuatu yang dengannya shalat menjadi boleh. Apa saja contohnya?",
+"c": "Wudhu, mandi, tayammum, dan menghilangkan najis",
+"x": [
+"Wudhu, shalat, puasa, dan zakat",
+"Mandi, siwak, adzan, dan iqamah",
+"Tayammum, istinja', dan membaca Al-Qur'an saja"
+],
+"e": "Contohnya: wudhu, mandi, tayammum, dan menghilangkan najis.",
+"p": 2
+},
+{
+"q": "Mengapa penulis beralih membahas macam-macam air setelah menyebut thaharah?",
+"c": "Karena air adalah alat untuk bersuci",
+"x": [
+"Karena air adalah satu-satunya benda yang suci",
+"Karena air lebih murah daripada tanah",
+"Karena air wajib dibawa ketika bepergian"
+],
+"e": "Air adalah alat bersuci, maka penulis membahas macam-macam air.",
+"p": 3
+},
+{
+"q": "Berapa macam air yang boleh dipakai bersuci?",
+"c": "Tujuh macam",
+"x": [
+"Empat macam",
+"Lima macam",
+"Sembilan macam"
+],
+"e": "Air yang boleh dipakai bersuci ada tujuh: air langit, laut, sungai, sumur, mata air, salju, dan embun beku/hujan es.",
+"p": 3
+},
+{
+"q": "Manakah yang termasuk tujuh macam air yang boleh dipakai bersuci?",
+"c": "Air laut, air sumur, dan air salju",
+"x": [
+"Air kelapa, air tebu, dan air sungai",
+"Air mawar, air teh, dan air laut",
+"Air cuka, air sumur, dan air hujan"
+],
+"e": "Tujuh air itu: air hujan, laut, sungai, sumur, mata air, salju, dan embun beku/hujan es.",
+"p": 4
+},
+{
+"q": "Air laut digambarkan dengan sifat apa dalam kitab ini?",
+"c": "Asin",
+"x": [
+"Tawar",
+"Panas",
+"Sangat dingin"
+],
+"e": "Air laut adalah yang asin; air sungai adalah yang tawar.",
+"p": 4
+},
+{
+"q": "Sebagai kaidah, tujuh macam air itu terhimpun dalam ucapan apa?",
+"c": "Air yang turun dari langit atau memancar dari bumi, dalam sifat apa pun ia berada menurut asal penciptaannya",
+"x": [
+"Air yang diambil dengan wadah dan disimpan di rumah",
+"Air yang telah dimasak sampai mendidih",
+"Air yang dicampur dengan benda suci hingga berubah namanya"
+],
+"e": "Kaidahnya: setiap air yang turun dari langit atau memancar dari bumi, dalam sifat apa pun menurut asal penciptaannya.",
+"p": 5
+},
+{
+"q": "Air terbagi menjadi berapa bagian, dan apa bagian pertamanya?",
+"c": "Empat bagian; pertama suci pada dirinya, menyucikan, dan tidak makruh, yaitu air mutlak",
+"x": [
+"Tiga bagian; pertama suci tetapi tidak menyucikan, yaitu air musta'mal",
+"Empat bagian; pertama suci dan menyucikan tetapi makruh, yaitu air musyammas",
+"Lima bagian; pertama najis tetapi menyucikan, yaitu air hasil ghashab"
+],
+"e": "Air terbagi empat; bagian pertama adalah air mutlak yang suci, menyucikan, dan tidak makruh.",
+"p": 6
+},
+{
+"q": "Apa yang dimaksud air mutlak?",
+"c": "Air yang lepas dari ikatan sebutan yang tetap",
+"x": [
+"Air yang tidak pernah dipakai oleh siapa pun sebelumnya",
+"Air yang dihasilkan hanya dari hujan",
+"Air yang tidak berubah dari sifat dinginnya"
+],
+"e": "Air mutlak adalah air yang lepas dari ikatan sebutan yang tetap. Ikatan sebutan yang bisa dilepas, seperti 'air sumur', tidak mengubah status mutlaknya.",
+"p": 6
+},
+{
+"q": "Apakah sebutan 'air sumur' mengubah status air mutlak?",
+"c": "Tidak, karena ikatan sebutannya bisa dilepas",
+"x": [
+"Ya, sebab menjadi air terikat sehingga tidak menyucikan",
+"Ya, sebab air sumur makruh digunakan",
+"Tidak, tetapi hanya berlaku untuk air sumur yang dalam"
+],
+"e": "Ikatan sebutan yang bisa dilepas seperti 'air sumur' tidak mengubah status air mutlak.",
+"p": 6
+},
+{
+"q": "Apa bagian air yang kedua?",
+"c": "Suci, menyucikan, tetapi makruh digunakan pada badan, yaitu air musyammas",
+"x": [
+"Suci tetapi tidak menyucikan, yaitu air musta'mal",
+"Najis, yaitu air yang kejatuhan najis",
+"Suci dan menyucikan tetapi haram, yaitu air ghashab"
+],
+"e": "Bagian kedua: suci, menyucikan, makruh dipakai pada badan (bukan pada pakaian), yaitu air musyammas.",
+"p": 7
+},
+{
+"q": "Apa air musyammas itu?",
+"c": "Air yang menjadi panas karena pengaruh sinar matahari",
+"x": [
+"Air yang dipanaskan di atas api",
+"Air yang bercampur dengan benda suci",
+"Air yang telah dipakai untuk wudhu"
+],
+"e": "Musyammas adalah air yang menjadi panas karena pengaruh sinar matahari.",
+"p": 7
+},
+{
+"q": "Pada kondisi apa air musyammas makruh dipakai?",
+"c": "Di negeri yang panas, dalam wadah logam yang bisa ditempa selain emas dan perak",
+"x": [
+"Di negeri mana saja, dalam wadah apa saja",
+"Di negeri yang dingin, dalam wadah tanah liat",
+"Hanya bila dipakai oleh orang yang sedang berpuasa"
+],
+"e": "Musyammas makruh di negeri yang panas dan dalam wadah logam yang bisa ditempa, kecuali emas dan perak karena jernih zatnya.",
+"p": 8
+},
+{
+"q": "Bagaimana pendapat an-Nawawi tentang air musyammas?",
+"c": "Tidak makruh sama sekali",
+"x": [
+"Haram digunakan",
+"Makruh pada semua keadaan",
+"Menjadi air musta'mal"
+],
+"e": "An-Nawawi memilih pendapat bahwa air musyammas tidak makruh sama sekali.",
+"p": 8
+},
+{
+"q": "Air musta'mal termasuk bagian ketiga. Apa sifatnya?",
+"c": "Suci pada dirinya tetapi tidak menyucikan bagi yang lain",
+"x": [
+"Najis dan tidak menyucikan",
+"Suci dan menyucikan tetapi makruh",
+"Suci dan menyucikan serta tidak makruh"
+],
+"e": "Bagian ketiga: suci tetapi tidak menyucikan, yaitu air musta'mal.",
+"p": 9
+},
+{
+"q": "Apa air musta'mal itu?",
+"c": "Air yang telah dipakai untuk menghilangkan hadats atau najis",
+"x": [
+"Air yang telah dipanaskan oleh sinar matahari",
+"Air yang kejatuhan najis kurang dari dua qullah",
+"Air yang diwakafkan untuk minum"
+],
+"e": "Musta'mal adalah air yang telah dipakai untuk menghilangkan hadats atau najis.",
+"p": 9
+},
+{
+"q": "Syarat air bekas mencuci najis tetap dianggap suci adalah...",
+"c": "Tidak berubah dan beratnya tidak bertambah setelah terpisah dari benda yang dicuci",
+"x": [
+"Warnanya berubah menjadi keruh setelah mencuci",
+"Beratnya bertambah setelah terpisah dari benda yang dicuci",
+"Jumlahnya kurang dari dua qullah"
+],
+"e": "Air bekas mencuci najis tetap suci bila tidak berubah dan beratnya tidak bertambah setelah memperhitungkan air yang terserap benda yang dicuci.",
+"p": 9
+},
+{
+"q": "Air yang berubah karena bercampur benda suci dengan perubahan yang mencegahnya disebut 'air' secara mutlak, hukumnya apa?",
+"c": "Suci tetapi tidak menyucikan",
+"x": [
+"Suci dan menyucikan",
+"Najis",
+"Suci, menyucikan, tetapi makruh"
+],
+"e": "Air yang berubah karena campuran benda suci hingga tidak lagi disebut air mutlak adalah suci tetapi tidak menyucikan.",
+"p": 10
+},
+{
+"q": "Jika perubahan air karena benda suci hanya sedikit dan tidak mencegah penyebutan 'air' padanya, bagaimana hukumnya?",
+"c": "Tetap menyucikan",
+"x": [
+"Menjadi suci tetapi tidak menyucikan",
+"Menjadi najis",
+"Menjadi makruh dipakai pada pakaian"
+],
+"e": "Jika perubahan tidak mencegah nama 'air', sifat menyucikan tidak hilang.",
+"p": 11
+},
+{
+"q": "Apa yang dikecualikan dengan ucapan 'yang bercampur dengannya' dalam hukum air berubah?",
+"c": "Benda suci yang hanya bersebelahan dan tidak larut dalam air",
+"x": [
+"Benda najis yang jatuh ke dalam air",
+"Hujan yang turun bersama air sungai",
+"Air yang telah melewati batas dua qullah"
+],
+"e": "Dengan ucapan itu, penulis mengecualikan benda suci yang hanya bersebelahan dengan air; air tersebut tetap menyucikan walau perubahannya banyak.",
+"p": 12
+},
+{
+"q": "Manakah perubahan air yang tidak menghilangkan sifat menyucikannya?",
+"c": "Perubahan karena lumpur, lumut, atau lama tergenang",
+"x": [
+"Perubahan karena tercampur sabun yang larut",
+"Perubahan karena kejatuhan kencing",
+"Perubahan karena tercampur kunyit hingga menjadi kuning pekat"
+],
+"e": "Air yang berubah karena campuran yang tidak dapat dihindari seperti lumpur, lumut, dan lama tergenang tetap menyucikan.",
+"p": 12
+},
+{
+"q": "Bagian keempat air adalah air najis. Macam pertamanya apa?",
+"c": "Air kurang dari dua qullah yang kejatuhan najis, berubah maupun tidak",
+"x": [
+"Air dua qullah atau lebih yang kejatuhan najis dan tidak berubah",
+"Air musyammas yang bercampur dengan debu",
+"Air hujan yang jatuh di atas tanah yang najis"
+],
+"e": "Macam pertama air najis: air yang kejatuhan najis dalam keadaan kurang dari dua qullah, baik berubah maupun tidak.",
+"p": 13
+},
+{
+"q": "Mengapa bangkai lalat tidak menajiskan air yang kurang dari dua qullah?",
+"c": "Karena lalat tidak memiliki darah mengalir, dengan syarat tidak sengaja dilemparkan dan tidak mengubah air",
+"x": [
+"Karena lalat adalah hewan yang boleh dimakan",
+"Karena lalat adalah hewan yang lahir dari air",
+"Karena bangkai lalat selalu suci dalam keadaan apa pun, termasuk bila dilempar ke air sampai air berubah"
+],
+"e": "Bangkai hewan yang tidak berdarah mengalir seperti lalat tidak menajiskan air, dengan syarat tidak sengaja dilemparkan dan tidak mengubah air.",
+"p": 14
+},
+{
+"q": "Apa macam kedua air najis?",
+"c": "Air dua qullah atau lebih yang berubah karena najis, baik sedikit maupun banyak perubahannya",
+"x": [
+"Air kurang dari dua qullah yang tidak berubah",
+"Air dua qullah atau lebih yang tidak berubah",
+"Air yang bercampur sesuatu yang suci"
+],
+"e": "Macam kedua: air banyak (dua qullah atau lebih) yang berubah, baik sedikit maupun banyak perubahannya.",
+"p": 15
+},
+{
+"q": "Berapa ukuran dua qullah menurut pendapat paling sahih?",
+"c": "Lima ratus rithl Baghdad, kira-kira",
+"x": [
+"Dua ratus rithl Baghdad",
+"Seribu rithl Baghdad",
+"Lima puluh rithl Baghdad"
+],
+"e": "Dua qullah adalah 500 rithl Baghdad menurut pendapat yang paling sahih.",
+"p": 16
+},
+{
+"q": "Satu rithl Baghdad menurut an-Nawawi sama dengan berapa dirham?",
+"c": "128 dan 4/7 dirham",
+"x": [
+"100 dirham",
+"200 dirham",
+"64 dan 2/7 dirham"
+],
+"e": "Satu rithl Baghdad menurut an-Nawawi adalah 128 dan 4/7 dirham.",
+"p": 16
+},
+{
+"q": "Bagian kelima air yang tidak disebutkan penulis adalah...",
+"c": "Air yang menyucikan tetapi haram dipakai, seperti air ghashab",
+"x": [
+"Air yang suci tetapi tidak menyucikan",
+"Air yang najis tetapi menyucikan",
+"Air yang suci, menyucikan, dan makruh"
+],
+"e": "Bagian kelima: air yang menyucikan tetapi haram dipakai, seperti air hasil ghashab atau air yang diwakafkan untuk minum.",
+"p": 17
+}
+],
+"u02": [
+{
+"q": "Apa hukum kulit bangkai yang disamak, menurut kitab ini?",
+"c": "Menjadi suci dengan disamak, baik bangkai hewan yang halal dimakan maupun yang lain",
+"x": [
+"Tetap najis meskipun telah disamak",
+"Menjadi suci hanya jika berasal dari hewan yang halal dimakan",
+"Menjadi suci hanya jika disamak dengan benda yang suci"
+],
+"e": "Semua kulit bangkai menjadi suci dengan disamak, baik dari hewan yang dagingnya boleh dimakan maupun tidak.",
+"p": 2
+},
+{
+"q": "Bagaimana cara menyamak yang dimaksud dalam kitab ini?",
+"c": "Menghilangkan sisa kulit yang bisa membuatnya busuk dengan benda yang sepat, seperti manjakani",
+"x": [
+"Menjemur kulit di bawah terik matahari beberapa hari",
+"Mencuci kulit dengan air mutlak sampai tiga kali",
+"Menggosok kulit dengan tanah yang suci"
+],
+"e": "Menyamak adalah menghilangkan sisa-sisa kulit yang dapat membuatnya busuk dengan benda yang sepat seperti 'afsh (manjakani).",
+"p": 3
+},
+{
+"q": "Apakah benda sepat untuk menyamak harus suci?",
+"c": "Tidak, benda sepat yang najis seperti kotoran merpati sudah cukup",
+"x": [
+"Ya, harus benda suci",
+"Ya, harus berupa manjakani saja",
+"Tidak, tetapi harus dicuci dahulu"
+],
+"e": "Walaupun benda sepat itu najis seperti kotoran merpati, sudah cukup untuk menyamak.",
+"p": 3
+},
+{
+"q": "Kulit apa yang tidak menjadi suci dengan disamak?",
+"c": "Kulit anjing, babi, dan hewan yang lahir dari keduanya atau dari salah satunya",
+"x": [
+"Kulit unta, sapi, dan kambing",
+"Kulit ular dan kadal",
+"Kulit kijang yang diburu dari hutan"
+],
+"e": "Kulit anjing, babi, dan hewan yang lahir dari keduanya atau salah satunya dengan hewan suci tidak menjadi suci dengan disamak.",
+"p": 4
+},
+{
+"q": "Bagaimana hukum tulang dan rambut bangkai?",
+"c": "Najis",
+"x": [
+"Suci",
+"Suci setelah disamak",
+"Najis hanya bila bangkainya hewan haram"
+],
+"e": "Tulang dan rambut bangkai itu najis, sebagaimana bangkai itu sendiri.",
+"p": 5
+},
+{
+"q": "Apa yang dimaksud bangkai dalam bab ini?",
+"c": "Hewan yang hilang nyawanya tanpa penyembelihan yang syar'i",
+"x": [
+"Hewan yang mati karena tua",
+"Hewan yang mati di dalam air",
+"Hewan yang mati karena sakit saja"
+],
+"e": "Bangkai adalah hewan yang hilang nyawanya tanpa penyembelihan yang syar'i.",
+"p": 5
+},
+{
+"q": "Mengapa janin hewan yang disembelih tidak perlu dikecualikan jika keluar dalam keadaan mati?",
+"c": "Karena penyembelihannya sudah tercakup dalam penyembelihan induknya",
+"x": [
+"Karena janin tidak memiliki nyawa",
+"Karena janin tidak pernah dianggap hewan",
+"Karena janin selalu najis dalam semua keadaan"
+],
+"e": "Penyembelihan janin sudah tercakup dalam penyembelihan induknya.",
+"p": 6
+},
+{
+"q": "Rambut siapa yang dikecualikan dari najisnya rambut bangkai?",
+"c": "Rambut manusia, karena mayat manusia suci",
+"x": [
+"Rambut kambing",
+"Rambut kuda",
+"Rambut anjing yang telah disamak"
+],
+"e": "Rambut manusia dikecualikan, sebagaimana mayatnya juga suci.",
+"p": 7
+}
+],
+"u03": [
+{
+"q": "Apa hukum memakai bejana emas dan perak tanpa darurat?",
+"c": "Tidak boleh, bagi laki-laki maupun perempuan",
+"x": [
+"Boleh bagi perempuan saja",
+"Boleh hanya untuk makan dan minum",
+"Makruh namun tidak haram"
+],
+"e": "Tidak boleh memakai bejana emas dan perak tanpa darurat, bagi laki-laki maupun perempuan, untuk makan, minum, maupun keperluan lain.",
+"p": 1
+},
+{
+"q": "Bagaimana hukum menyimpan bejana emas atau perak tanpa dipakai, menurut pendapat paling sahih?",
+"c": "Haram juga",
+"x": [
+"Boleh",
+"Makruh",
+"Wajib dihancurkan"
+],
+"e": "Sebagaimana haram memakainya, haram pula menyimpannya tanpa dipakai menurut pendapat yang paling sahih.",
+"p": 2
+},
+{
+"q": "Kapan bejana yang dilapisi emas atau perak haram?",
+"c": "Jika lapisan itu menghasilkan emas atau perak ketika dipanaskan di atas api",
+"x": [
+"Jika lapisannya tampak berkilau",
+"Jika bejana itu dipakai makan",
+"Jika bejana itu milik perempuan"
+],
+"e": "Bejana berlapis haram jika lapisannya menghasilkan emas atau perak ketika dipanaskan di api.",
+"p": 2
+},
+{
+"q": "Bagaimana hukum memakai bejana yang mahal selain emas dan perak, misalnya dari batu yaqut?",
+"c": "Boleh",
+"x": [
+"Haram",
+"Makruh",
+"Haram bagi laki-laki saja"
+],
+"e": "Boleh memakai bejana selain emas dan perak, walaupun mahal seperti dari batu yaqut.",
+"p": 3
+},
+{
+"q": "Bagaimana hukum bejana yang ditambal dengan tambalan perak yang kecil karena kebutuhan?",
+"c": "Tidak makruh",
+"x": [
+"Haram",
+"Makruh",
+"Wajib dilepas tambalannya"
+],
+"e": "Tambalan perak kecil karena kebutuhan tidak makruh; kecil untuk hiasan makruh; besar karena kebutuhan boleh tetapi makruh; besar untuk hiasan haram.",
+"p": 4
+},
+{
+"q": "Bagaimana hukum tambalan emas pada bejana?",
+"c": "Haram secara mutlak",
+"x": [
+"Boleh jika kecil",
+"Makruh jika kecil",
+"Boleh jika karena kebutuhan"
+],
+"e": "Tambalan emas haram secara mutlak, sebagaimana disahihkan an-Nawawi.",
+"p": 4
+}
+],
+"u04": [
+{
+"q": "Bersiwak termasuk sunnah apa?",
+"c": "Sunnah wudhu",
+"x": [
+"Sunnah mandi besar",
+"Rukun wudhu",
+"Syarat sah shalat"
+],
+"e": "Bersiwak termasuk sunnah wudhu.",
+"p": 1
+},
+{
+"q": "Siwak juga dipakai untuk menyebut apa?",
+"c": "Benda yang digunakan bersiwak, seperti kayu arak",
+"x": [
+"Air yang dipakai berkumur",
+"Pasta pembersih gigi dari bahan kimia",
+"Kain pembersih mulut"
+],
+"e": "Kata siwak juga dipakai untuk benda yang digunakan bersiwak, seperti kayu arak.",
+"p": 1
+},
+{
+"q": "Kapan bersiwak makruh menurut mazhab yang dipegang kitab ini?",
+"c": "Setelah tergelincir matahari bagi orang yang berpuasa",
+"x": [
+"Sebelum tergelincir matahari bagi orang yang berpuasa",
+"Setelah shalat Isya",
+"Ketika sedang berwudhu"
+],
+"e": "Bersiwak disunnahkan dalam setiap keadaan kecuali setelah tergelincir matahari bagi orang berpuasa; kemakruhan itu hilang dengan terbenamnya matahari.",
+"p": 2
+},
+{
+"q": "Apa pendapat an-Nawawi tentang bersiwak bagi orang berpuasa setelah tergelincir matahari?",
+"c": "Tidak makruh sama sekali",
+"x": [
+"Haram",
+"Makruh pada puasa fardhu saja",
+"Makruh pada puasa sunnah saja"
+],
+"e": "An-Nawawi memilih pendapat bahwa bersiwak tidak makruh sama sekali.",
+"p": 2
+},
+{
+"q": "Pada berapa keadaan bersiwak lebih sangat disunnahkan, dan apa yang pertama?",
+"c": "Tiga keadaan; pertama ketika mulut berubah baunya karena azm",
+"x": [
+"Dua keadaan; pertama ketika sedang berpuasa",
+"Empat keadaan; pertama ketika hendak tidur",
+"Tiga keadaan; pertama ketika membaca Al-Qur'an"
+],
+"e": "Tiga keadaan: mulut berubah bau karena azm, bangun dari tidur, dan hendak mendirikan shalat.",
+"p": 3
+},
+{
+"q": "Dua keadaan lain yang lebih sangat disunnahkan bersiwak adalah...",
+"c": "Ketika bangun dari tidur dan ketika hendak mendirikan shalat",
+"x": [
+"Ketika hendak makan dan hendak minum",
+"Ketika masuk masjid dan keluar masjid",
+"Ketika berpuasa dan ketika berbuka"
+],
+"e": "Kedua: ketika bangun dari tidur; ketiga: ketika hendak mendirikan shalat, fardhu maupun sunnah.",
+"p": 4
+},
+{
+"q": "Mengapa penulis menambahkan kata 'dan selainnya' setelah azm?",
+"c": "Agar mencakup berubahnya bau mulut karena sebab lain, misalnya memakan bawang putih",
+"x": [
+"Agar mencakup semua hewan yang dagingnya haram",
+"Agar mencakup seluruh macam air",
+"Agar mencakup orang yang tidak punya gigi"
+],
+"e": "Penambahan itu mencakup berubahnya bau mulut karena sebab lain, seperti memakan sesuatu yang berbau tidak sedap.",
+"p": 4
+},
+{
+"q": "Manakah yang termasuk adab bersiwak?",
+"c": "Berniat sunnah, memakai tangan kanan, dan memulai dari sisi kanan mulut",
+"x": [
+"Memakai tangan kiri dan memulai dari sisi kiri",
+"Bersiwak dengan keras di gusi",
+"Bersiwak tanpa niat apa pun"
+],
+"e": "Disunnahkan berniat menjalankan sunnah, bersiwak dengan tangan kanan, memulai dari sisi kanan mulut, dan lembut pada langit-langit dan pangkal geraham.",
+"p": 6
+}
+],
+"u05": [
+{
+"q": "Apa perbedaan al-wudhu' (dhammah) dan al-wadhu' (fathah)?",
+"c": "Dhammah nama bagi perbuatan berwudhu, fathah nama bagi air yang dipakai berwudhu",
+"x": [
+"Dhammah nama bagi air wudhu, fathah nama bagi perbuatan berwudhu",
+"Dhammah untuk wudhu wajib, fathah untuk wudhu sunnah",
+"Keduanya sama, hanya beda dialek"
+],
+"e": "Wudhu dengan dhammah adalah nama perbuatan (yang dimaksud di sini); dengan fathah adalah nama air yang dipakai berwudhu.",
+"p": 1
+},
+{
+"q": "Berapa fardhu wudhu, dan apa yang pertama?",
+"c": "Enam, yang pertama niat",
+"x": [
+"Empat, yang pertama membasuh wajah",
+"Enam, yang pertama membasuh wajah",
+"Sepuluh, yang pertama membaca basmalah"
+],
+"e": "Fardhu wudhu ada enam, pertama niat.",
+"p": 2
+},
+{
+"q": "Apa hakikat niat menurut syara'?",
+"c": "Menyengaja sesuatu bersamaan dengan mengerjakannya",
+"x": [
+"Mengucapkan sesuatu dengan lisan sebelum mengerjakannya",
+"Berkeinginan mengerjakan sesuatu pada waktu yang akan datang",
+"Menghafal tata cara sebelum mengerjakannya"
+],
+"e": "Niat adalah menyengaja sesuatu bersamaan dengan mengerjakannya; bila kehendak terlambat dari perbuatan disebut 'azam.",
+"p": 2
+},
+{
+"q": "Kapan niat wudhu dilakukan?",
+"c": "Bersamaan dengan membasuh bagian pertama dari wajah",
+"x": [
+"Sebelum membasuh wajah dan telah selesai sebelum membasuh",
+"Bersamaan dengan membasuh seluruh wajah sampai selesai",
+"Setelah selesai membasuh wajah"
+],
+"e": "Niat dilakukan ketika membasuh bagian pertama wajah, bukan seluruh wajah, bukan sebelumnya, bukan sesudahnya.",
+"p": 3
+},
+{
+"q": "Manakah niat wudhu yang tidak sah?",
+"c": "Berniat bersuci saja tanpa menyebut 'dari hadats'",
+"x": [
+"Berniat menghilangkan salah satu hadats",
+"Berniat agar boleh melakukan perkara yang membutuhkan wudhu",
+"Berniat fardhu wudhu"
+],
+"e": "Jika tidak menyebut 'dari hadats' pada niat bersuci, niatnya tidak sah.",
+"p": 4
+},
+{
+"q": "Jika berniat dengan niat yang sah lalu menyertakan niat menyegarkan badan, bagaimana hukumnya?",
+"c": "Wudhunya tetap sah",
+"x": [
+"Wudhunya batal",
+"Wajib mengulangi niat",
+"Wudhunya sah tetapi pahalanya hilang"
+],
+"e": "Menyertakan niat membersihkan diri atau menyegarkan badan tidak merusak wudhu.",
+"p": 5
+},
+{
+"q": "Apa batas panjang wajah?",
+"c": "Dari tempat tumbuh rambut kepala pada umumnya sampai ujung kedua tulang rahang",
+"x": [
+"Dari ubun-ubun sampai dagu",
+"Dari dahi sampai leher",
+"Dari alis sampai ujung hidung"
+],
+"e": "Batas panjang wajah: dari tempat tumbuh rambut kepala pada umumnya sampai ujung kedua tulang rahang. Batas lebarnya: antara kedua telinga.",
+"p": 6
+},
+{
+"q": "Apa batas lebar wajah?",
+"c": "Antara kedua telinga",
+"x": [
+"Antara kedua mata",
+"Antara kedua pelipis saja",
+"Antara kedua ujung bibir"
+],
+"e": "Batas lebar wajah antara kedua telinga.",
+"p": 6
+},
+{
+"q": "Jika jenggot laki-laki tebal sehingga kulit sela-selanya tak terlihat oleh lawan bicara, apa yang wajib dibasuh?",
+"c": "Cukup bagian luarnya",
+"x": [
+"Bagian luar dan kulit di bawahnya",
+"Cukup bagian dalamnya",
+"Tidak wajib dibasuh sama sekali"
+],
+"e": "Pada jenggot laki-laki yang tebal cukup membasuh bagian luarnya.",
+"p": 7
+},
+{
+"q": "Bagaimana hukum jenggot perempuan dan khuntsa yang tebal dalam wudhu?",
+"c": "Wajib menyampaikan air ke kulitnya walaupun tebal",
+"x": [
+"Cukup dibasuh bagian luarnya",
+"Tidak wajib dibasuh",
+"Cukup diusap sebagian"
+],
+"e": "Jenggot perempuan dan khuntsa wajib dibasuh sampai kulit walaupun tebal.",
+"p": 8
+},
+{
+"q": "Apa yang wajib dibasuh bersama wajah agar sempurna?",
+"c": "Sedikit bagian kepala, leher, dan bagian di bawah dagu",
+"x": [
+"Seluruh kepala dan leher",
+"Telinga luar dan dalam",
+"Tengkuk dan punggung"
+],
+"e": "Bersama membasuh wajah wajib pula membasuh sedikit bagian kepala, leher, dan bagian bawah dagu.",
+"p": 8
+},
+{
+"q": "Fardhu ketiga wudhu adalah...",
+"c": "Membasuh kedua tangan sampai kedua siku",
+"x": [
+"Mengusap kedua telinga",
+"Membasuh telapak tangan saja",
+"Membasuh kedua tangan sampai pergelangan"
+],
+"e": "Fardhu ketiga: membasuh kedua tangan sampai kedua siku.",
+"p": 9
+},
+{
+"q": "Apa yang harus dilakukan terhadap kotoran di bawah kuku?",
+"c": "Wajib dihilangkan bila menghalangi sampainya air",
+"x": [
+"Dibiarkan karena tidak berpengaruh",
+"Disunnahkan dihilangkan",
+"Dimakruhkan menghilangkan"
+],
+"e": "Wajib menghilangkan kotoran di bawah kuku yang menghalangi sampainya air.",
+"p": 9
+},
+{
+"q": "Fardhu keempat wudhu, dan berapa kadarnya?",
+"c": "Mengusap sebagian kepala",
+"x": [
+"Mengusap seluruh kepala",
+"Membasuh seluruh kepala",
+"Mengusap telinga saja"
+],
+"e": "Fardhu keempat: mengusap sebagian kepala; mengusap seluruhnya adalah sunnah.",
+"p": 10
+},
+{
+"q": "Jika orang membasuh kepalanya sebagai ganti mengusap, bagaimana hukumnya?",
+"c": "Boleh",
+"x": [
+"Tidak sah",
+"Makruh",
+"Wudhunya batal"
+],
+"e": "Jika ia membasuh kepalanya sebagai ganti mengusap, boleh.",
+"p": 10
+},
+{
+"q": "Jika memakai khuf, apa kewajiban untuk kaki?",
+"c": "Mengusap khuf atau membasuh kaki",
+"x": [
+"Hanya wajib mengusap khuf",
+"Hanya wajib membasuh kaki",
+"Tidak wajib apa-apa"
+],
+"e": "Jika memakai khuf, wajib mengusap khuf atau membasuh kaki.",
+"p": 11
+},
+{
+"q": "Fardhu keenam wudhu adalah...",
+"c": "Tertib sesuai urutan fardhu",
+"x": [
+"Muwalat",
+"Berkumur",
+"Menyela-nyelai jari"
+],
+"e": "Fardhu keenam adalah tertib; muwalat termasuk sunnah.",
+"p": 12
+},
+{
+"q": "Jika empat anggota wudhu dibasuh sekaligus dengan izinnya, anggota apa yang hadatsnya hilang?",
+"c": "Hanya hadats wajah",
+"x": [
+"Hadats empat anggota hilang",
+"Hadats tangan saja",
+"Tidak ada yang hilang"
+],
+"e": "Karena tertib, hanya hadats wajah yang hilang.",
+"p": 12
+},
+{
+"q": "Berapa sunnah wudhu, dan apa yang pertama?",
+"c": "Sepuluh, yang pertama membaca basmalah",
+"x": [
+"Sepuluh, yang pertama berkumur",
+"Enam, yang pertama membaca basmalah",
+"Delapan, yang pertama membasuh telapak tangan"
+],
+"e": "Sunnah wudhu ada sepuluh; pertama membaca basmalah.",
+"p": 13
+},
+{
+"q": "Jika lupa basmalah di awal wudhu, apa yang dilakukan?",
+"c": "Membacanya di tengah wudhu",
+"x": [
+"Tidak perlu mengulangi wudhu dan tidak membaca",
+"Membacanya setelah selesai wudhu",
+"Mengulangi wudhu dari awal"
+],
+"e": "Jika lupa di awal, ia membacanya di tengah wudhu; jika sudah selesai, tidak perlu membaca.",
+"p": 13
+},
+{
+"q": "Kapan makruh mencelupkan telapak tangan ke bejana berisi air kurang dari dua qullah?",
+"c": "Jika belum dibasuh dan ragu akan kesuciannya",
+"x": [
+"Jika telah dibasuh tiga kali",
+"Jika yakin tangannya suci",
+"Jika air bejana lebih dari dua qullah"
+],
+"e": "Jika belum dibasuh makruh mencelupkan; jika yakin suci tidak makruh.",
+"p": 14
+},
+{
+"q": "Urutan sunnah wudhu setelah membasuh telapak tangan adalah...",
+"c": "Berkumur, lalu istinsyaq",
+"x": [
+"Istinsyaq, lalu berkumur",
+"Membasuh wajah, lalu berkumur",
+"Mengusap telinga, lalu berkumur"
+],
+"e": "Telapak tangan, lalu berkumur, kemudian istinsyaq.",
+"p": 16
+},
+{
+"q": "Mana yang lebih utama dalam berkumur dan istinsyaq?",
+"c": "Menggabungkan keduanya dengan tiga cidukan",
+"x": [
+"Memisahkan keduanya dengan masing-masing tiga cidukan",
+"Melakukan satu kali saja",
+"Meninggalkan keduanya dalam keadaan berpuasa"
+],
+"e": "Menggabungkan berkumur dan istinsyaq dengan tiga cidukan lebih utama daripada memisahkan.",
+"p": 17
+},
+{
+"q": "Telinga diusap dengan apa?",
+"c": "Air baru, bukan sisa basahan kepala",
+"x": [
+"Sisa basahan kepala",
+"Air bekas membasuh wajah",
+"Tanpa air"
+],
+"e": "Telinga diusap, luar dan dalam, dengan air baru.",
+"p": 19
+},
+{
+"q": "Bagaimana cara menyela-nyelai jari tangan?",
+"c": "Dengan menjalin jari-jari",
+"x": [
+"Dengan kelingking kiri dari bawah",
+"Dengan menggosok dengan kain",
+"Dengan menyiram saja"
+],
+"e": "Menyela jari tangan dengan menjalin jari-jari; jari kaki dengan kelingking tangan kiri dari bawah.",
+"p": 23
+},
+{
+"q": "Mengapa dua pipi tidak perlu mendahulukan yang kanan?",
+"c": "Karena keduanya mudah dibasuh bersamaan",
+"x": [
+"Karena pipi bukan fardhu wudhu",
+"Karena pipi kiri lebih utama",
+"Karena pipi tidak ada hadatsnya"
+],
+"e": "Dua anggota yang mudah dibasuh bersamaan seperti kedua pipi dibasuh sekaligus.",
+"p": 24
+},
+{
+"q": "Apa yang dimaksud muwalat?",
+"c": "Tidak ada jeda lama sehingga anggota sebelumnya belum kering",
+"x": [
+"Mengulangi basuhan tiga kali",
+"Membasuh anggota kanan lebih dahulu",
+"Membasuh dengan air mengalir"
+],
+"e": "Muwalat adalah menyucikan anggota demi anggota tanpa jeda yang membuat anggota sebelumnya kering.",
+"p": 26
+},
+{
+"q": "Bagi orang yang berhadats terus-menerus (darurat), bagaimana hukum muwalat?",
+"c": "Wajib",
+"x": [
+"Sunnah",
+"Makruh",
+"Tidak disyariatkan"
+],
+"e": "Muwalat sunnah pada selain orang darurat; bagi orang darurat wajib.",
+"p": 27
+}
+]
+}
