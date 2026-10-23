@@ -1,74 +1,674 @@
 {
-"u27":[
-{"q":"Apa hukum shalat dua hari raya?","c":"Sunnah muakkad","x":["Fardhu kifayah","Fardhu 'ain","Mubah"],"e":"Shalat Idul Fitri dan Idul Adha hukumnya sunnah muakkad.","p":1},
-{"q":"Berapa rakaat shalat Id?","c":"Dua rakaat","x":["Empat rakaat","Tiga rakaat","Satu rakaat"],"e":"Shalat Id dua rakaat.","p":2},
-{"q":"Berapa takbir tambahan pada rakaat pertama shalat Id, selain takbiratul ihram?","c":"Tujuh kali","x":["Lima kali","Sembilan kali","Tiga kali"],"e":"Rakaat pertama tujuh kali selain takbiratul ihram, rakaat kedua lima kali selain takbir berdiri.","p":2},
-{"q":"Berapa takbir tambahan pada rakaat kedua shalat Id?","c":"Lima kali","x":["Tujuh kali","Tiga kali","Sembilan kali"],"e":"Rakaat kedua lima kali selain takbir berdiri.","p":3},
-{"q":"Surah apa yang disunnahkan dibaca pada rakaat pertama dan kedua shalat Id?","c":"Surah Qaf dan Iqtarabat (al-Qamar)","x":["Surah al-Ikhlash dan al-Falaq","Surah al-Kafirun dan an-Nas","Surah Yasin dan ar-Rahman"],"e":"Rakaat pertama surah Qaf, rakaat kedua Iqtarabat (al-Qamar), dengan suara keras.","p":3},
-{"q":"Khutbah Id dilakukan kapan, dan berapa takbir di awalnya?","c":"Setelah shalat; sembilan takbir di khutbah pertama, tujuh di kedua","x":["Sebelum shalat; tujuh takbir di pertama, lima di kedua","Setelah shalat; lima takbir di pertama, tiga di kedua","Sebelum shalat; sembilan takbir di kedua saja"],"e":"Dua khutbah sesudah shalat; khutbah pertama dibuka sembilan takbir, kedua tujuh takbir.","p":4},
-{"q":"Takbir mursal artinya...","c":"Takbir yang tidak dilakukan setelah shalat","x":["Takbir setelah shalat","Takbir hanya di masjid","Takbir pada malam Jumat"],"e":"Takbir mursal adalah yang tidak dilakukan setelah shalat; muqayyad setelah shalat.","p":5},
-{"q":"Takbir mursal Idul Fitri dimulai sejak kapan?","c":"Sejak terbenam matahari pada malam Id","x":["Sejak fajar hari Id","Sejak awal Ramadhan","Sejak tengah malam Id"],"e":"Takbir sunnah sejak terbenam matahari malam Id, yaitu Idul Fitri.","p":5},
-{"q":"Takbir muqayyad pada Idul Adha dilakukan setelah apa?","c":"Setelah shalat-shalat fardhu dan juga sunnah serta jenazah","x":["Hanya setelah Shubuh","Hanya setelah Jumat","Hanya setelah shalat Id"],"e":"Takbir muqayyad Idul Adha setelah shalat fardhu (ada' atau qadha), rawatib, sunnah mutlak, dan jenazah.","p":6}
+"u27": [
+{
+"q": "Apa hukum shalat dua hari raya?",
+"c": "Sunnah muakkad",
+"x": [
+"Fardhu kifayah",
+"Fardhu 'ain",
+"Mubah"
 ],
-"u28":[
-{"q":"Shalat kusuf dan khusuf masing-masing untuk gerhana apa?","c":"Kusuf untuk matahari, khusuf untuk bulan","x":["Kusuf untuk bulan, khusuf untuk matahari","Keduanya untuk matahari","Keduanya untuk bulan"],"e":"Shalat kusuf untuk gerhana matahari dan khusuf untuk gerhana bulan.","p":1},
-{"q":"Hukum shalat gerhana dan apakah diqadha jika terlewat?","c":"Sunnah muakkad dan tidak diqadha","x":["Fardhu kifayah dan wajib diqadha","Sunnah muakkad dan wajib diqadha","Mubah dan tidak diqadha"],"e":"Sunnah muakkad; bila terlewat tidak diqadha.","p":1},
-{"q":"Berapa rakaat shalat gerhana?","c":"Dua rakaat","x":["Empat rakaat","Satu rakaat","Enam rakaat"],"e":"Shalat gerhana dua rakaat.","p":2},
-{"q":"Pada setiap rakaat shalat gerhana ada berapa berdiri dan ruku'?","c":"Dua berdiri dan dua ruku'","x":["Satu berdiri dan satu ruku'","Dua berdiri dan satu ruku'","Satu berdiri dan dua ruku'"],"e":"Setiap rakaat ada dua berdiri yang dipanjangkan bacaannya dan dua ruku'.","p":3},
-{"q":"Apa yang dilakukan imam setelah shalat gerhana?","c":"Berkhutbah dua khutbah dan mendorong taubat serta sedekah","x":["Langsung pulang","Berkhutbah satu khutbah tanpa nasihat","Membaca doa istisqa'"],"e":"Imam berkhutbah dua khutbah seperti Jumat, mendorong taubat, sedekah, memerdekakan budak.","p":4},
-{"q":"Bagaimana bacaan pada shalat gerhana matahari dan bulan?","c":"Dipelankan pada gerhana matahari, dikeraskan pada gerhana bulan","x":["Dikeraskan pada gerhana matahari, dipelankan pada gerhana bulan","Dikeraskan pada keduanya","Dipelankan pada keduanya"],"e":"Pada gerhana matahari bacaan pelan, pada gerhana bulan keras.","p":5}
+"e": "Shalat Idul Fitri dan Idul Adha hukumnya sunnah muakkad.",
+"p": 1
+},
+{
+"q": "Berapa rakaat shalat Id?",
+"c": "Dua rakaat",
+"x": [
+"Empat rakaat",
+"Tiga rakaat",
+"Satu rakaat"
 ],
-"u29":[
-{"q":"Apa makna istisqa'?","c":"Meminta siraman hujan dari Allah Ta'ala","x":["Meminta ampun dari dosa","Meminta rezeki berupa harta","Meminta perlindungan dari musuh"],"e":"Istisqa' adalah meminta siraman hujan kepada Allah.","p":1},
-{"q":"Kapan shalat istisqa' disunnahkan?","c":"Ketika ada kebutuhan seperti terputusnya hujan atau mata air","x":["Setiap hari Jumat","Setiap musim kemarau tanpa kebutuhan","Hanya saat terjadi banjir"],"e":"Disunnahkan bagi mukim dan musafir ketika ada kebutuhan seperti terputusnya hujan atau mata air.","p":1},
-{"q":"Jika belum diberi hujan, bagaimana?","c":"Shalat istisqa' diulang sampai Allah memberi hujan","x":["Cukup sekali saja","Diganti shalat gerhana","Diganti puasa tiga hari"],"e":"Shalat istisqa' diulang kedua kalinya dan lebih jika belum diberi hujan.","p":1},
-{"q":"Apa yang diperintahkan imam kepada orang sebelum istisqa'?","c":"Bertaubat, bersedekah, meninggalkan kezaliman, berdamai, dan puasa tiga hari","x":["Berpuasa sebulan penuh","Berkumpul tanpa persiapan","Membawa hewan kurban"],"e":"Imam memerintahkan taubat, sedekah, keluar dari kezaliman, berdamai, dan berpuasa tiga hari.","p":2},
-{"q":"Pada hari ke berapa mereka keluar untuk shalat istisqa'?","c":"Hari keempat, dalam keadaan berpuasa","x":["Hari pertama","Hari kedua","Hari ketujuh"],"e":"Setelah puasa tiga hari, imam keluar bersama mereka pada hari keempat.","p":3},
-{"q":"Bagaimana pakaian dan sikap saat keluar istisqa'?","c":"Pakaian sehari-hari, merendah, khusyuk, tanpa wewangian dan hiasan","x":["Pakaian terbaik dengan wewangian","Pakaian putih bersih penuh hiasan","Pakaian bebas, sambil bercanda"],"e":"Mereka keluar dengan pakaian kerja sehari-hari, merendah, memelas, tanpa wewangian dan hiasan.","p":3},
-{"q":"Shalat istisqa' dilakukan seperti apa?","c":"Dua rakaat seperti shalat Id","x":["Empat rakaat seperti Zhuhur","Dua rakaat seperti shalat gerhana","Satu rakaat saja"],"e":"Dua rakaat seperti shalat Id dalam tata caranya.","p":4},
-{"q":"Pada khutbah istisqa', apa yang menggantikan takbir pembuka?","c":"Istighfar, sembilan kali pada khutbah pertama dan tujuh kali pada kedua","x":["Tasbih tiga kali","Tahlil tujuh kali","Hamdalah sembilan kali"],"e":"Istighfar menggantikan takbir pembuka khutbah Id.","p":5},
-{"q":"Apa yang dilakukan khatib dengan selendangnya?","c":"Membalik selendang: kanan ke kiri, atas ke bawah","x":["Menanggalkan selendang","Mengikatnya di leher","Melepasnya dan memberikannya"],"e":"Khatib membalik selendangnya, dan orang-orang melakukan hal yang sama.","p":6},
-{"q":"Ayat apa yang dibaca khatib dalam istisqa'?","c":"QS. Nuh ayat 10-11 tentang memohon ampun agar diturunkan hujan","x":["QS. al-Ikhlas","QS. al-Fatihah","QS. at-Taubah ayat 60"],"e":"Khatib membaca 'Mohonlah ampun kepada Tuhanmu...' (QS. Nuh: 10–11).","p":7}
+"e": "Shalat Id dua rakaat.",
+"p": 2
+},
+{
+"q": "Berapa takbir tambahan pada rakaat pertama shalat Id, selain takbiratul ihram?",
+"c": "Tujuh kali",
+"x": [
+"Lima kali",
+"Sembilan kali",
+"Tiga kali"
 ],
-"u30":[
-{"q":"Mengapa shalat khauf disendirikan dalam satu fasal?","c":"Karena ditoleransi hal-hal yang tidak ditoleransi dalam keadaan lain","x":["Karena hanya dilakukan sekali setahun","Karena tidak ada hukumnya","Karena sama persis dengan shalat biasa"],"e":"Dalam shalat fardhu ketika takut ditoleransi hal-hal yang tidak ditoleransi pada keadaan lain.","p":1},
-{"q":"Pengarang membatasi shalat khauf pada berapa bentuk?","c":"Tiga bentuk","x":["Dua bentuk","Enam bentuk","Satu bentuk"],"e":"Walau ada enam bentuk dalam Shahih Muslim, pengarang membatasi tiga.","p":2},
-{"q":"Bentuk pertama shalat khauf terjadi saat...","c":"Musuh berada di selain arah kiblat dan jumlahnya sedikit","x":["Musuh berada di arah kiblat","Perang berkecamuk","Tidak ada musuh"],"e":"Pertama: musuh di selain arah kiblat, jumlahnya sedikit, kaum muslimin banyak.","p":2},
-{"q":"Pada bentuk pertama, imam membagi pasukan menjadi...","c":"Dua kelompok: satu menjaga musuh, satu shalat di belakangnya","x":["Tiga kelompok","Satu kelompok saja","Empat kelompok"],"e":"Imam membagi dua kelompok: satu berdiri menghadap musuh, satu di belakang imam.","p":3},
-{"q":"Shalat khauf bentuk pertama disebut shalat di mana?","c":"Dzatur Riqa'","x":["'Usfan","Badar","Uhud"],"e":"Bentuk pertama ini shalat Rasulullah di Dzatur Riqa'.","p":4},
-{"q":"Bentuk kedua shalat khauf terjadi bila musuh berada...","c":"Di arah kiblat tanpa penghalang","x":["Di belakang","Di tempat tertutup","Di selain arah kiblat"],"e":"Kedua: musuh di arah kiblat tanpa penutup; imam membariskan dua shaf.","p":5},
-{"q":"Pada bentuk kedua, saat imam sujud apa yang dilakukan?","c":"Satu shaf sujud bersama imam, shaf lain menjaga, lalu bergantian","x":["Semua shaf sujud sekaligus","Semua shaf berdiri menjaga","Tidak ada yang sujud"],"e":"Satu shaf sujud bersama imam sementara shaf lain berdiri menjaga.","p":6},
-{"q":"Bentuk kedua ini adalah shalat Rasulullah di...","c":"'Usfan","x":["Dzatur Riqa'","Hudaibiyah","Mina"],"e":"Itulah shalat Rasulullah di 'Usfan.","p":7},
-{"q":"Bentuk ketiga terjadi saat...","c":"Sangat takut dan perang berkecamuk","x":["Musuh jauh","Musuh tidak tampak","Tidak ada perang"],"e":"Ketiga: sangat takut dan perang berkecamuk, pasukan bercampur.","p":8},
-{"q":"Dalam bentuk ketiga, bagaimana boleh shalat?","c":"Bagaimanapun mampu, berjalan atau berkendaraan, menghadap kiblat atau tidak","x":["Harus menghadap kiblat","Harus berdiri tegak","Wajib ditunda"],"e":"Setiap orang shalat bagaimanapun mampu, menghadap kiblat atau tidak, dimaafkan gerakan banyak.","p":9}
+"e": "Rakaat pertama tujuh kali selain takbiratul ihram, rakaat kedua lima kali selain takbir berdiri.",
+"p": 2
+},
+{
+"q": "Berapa takbir tambahan pada rakaat kedua shalat Id?",
+"c": "Lima kali",
+"x": [
+"Tujuh kali",
+"Tiga kali",
+"Sembilan kali"
 ],
-"u31":[
-{"q":"Apa yang haram dipakai laki-laki tanpa darurat?","c":"Sutra dan cincin emas","x":["Katun","Kulit","Wol"],"e":"Haram atas laki-laki memakai sutra dan cincin emas dalam keadaan tidak terpaksa.","p":1},
-{"q":"Kapan laki-laki boleh memakai sutra?","c":"Karena darurat seperti panas atau dingin yang membinasakan","x":["Kapan saja","Saat shalat","Saat bepergian"],"e":"Halal bagi laki-laki karena darurat seperti panas dan dingin yang membinasakan.","p":1},
-{"q":"Bagaimana hukum sutra bagi perempuan?","c":"Halal dipakai dan dijadikan alas","x":["Haram","Makruh","Haram jika banyak"],"e":"Halal bagi perempuan memakai sutra dan menjadikannya alas.","p":2},
-{"q":"Bolehkah wali memakaikan sutra kepada anak kecil?","c":"Boleh, sebelum maupun sesudah tujuh tahun","x":["Haram","Boleh sebelum tujuh tahun saja","Makruh"],"e":"Halal bagi wali memakaikan sutra kepada anak kecil.","p":2},
-{"q":"Kain campuran sutra dan katun, kapan halal dipakai laki-laki?","c":"Jika sutra tidak dominan, atau sama banyak","x":["Jika sutra dominan","Tidak pernah halal","Hanya jika katun sedikit"],"e":"Boleh selama ibrisam tidak dominan; jika sama, halal menurut pendapat paling sahih.","p":3}
+"e": "Rakaat kedua lima kali selain takbir berdiri.",
+"p": 3
+},
+{
+"q": "Surah apa yang disunnahkan dibaca pada rakaat pertama dan kedua shalat Id?",
+"c": "Surah Qaf dan Iqtarabat (al-Qamar)",
+"x": [
+"Surah al-Ikhlash dan al-Falaq",
+"Surah al-Kafirun dan an-Nas",
+"Surah Yasin dan ar-Rahman"
 ],
-"u32":[
-{"q":"Berapa perkara wajib pada mayat muslim (selain syahid dan orang ihram)?","c":"Empat: memandikan, mengafani, menshalati, menguburkan","x":["Tiga: memandikan, mengafani, menguburkan","Dua: memandikan dan menshalati","Lima: ditambah ta'ziyah"],"e":"Fardhu kifayah empat perkara pada mayat muslim.","p":1},
-{"q":"Bagaimana hukum menshalati mayat kafir?","c":"Haram, harbi maupun dzimmi","x":["Wajib","Sunnah","Makruh"],"e":"Menshalati mayat kafir haram; memandikan boleh.","p":2},
-{"q":"Mayat yang dikafani dalam ihram, apa yang tidak ditutup?","c":"Kepalanya (dan wajah perempuan ihram)","x":["Kakinya","Tangannya","Dadanya"],"e":"Orang ihram, apabila dikafani, kepalanya tidak ditutup, demikian pula wajah perempuan ihram.","p":2},
-{"q":"Dua mayat yang tidak dimandikan dan tidak dishalati adalah...","c":"Syahid dalam pertempuran melawan musyrik, dan janin keguguran yang tidak bersuara","x":["Anak kecil dan perempuan hamil","Orang sakit dan orang tua","Orang murtad dan orang gila"],"e":"Pertama syahid dalam perang melawan musyrik; kedua janin keguguran yang tidak bersuara.","p":3},
-{"q":"Mayat dimandikan dengan bilangan...","c":"Ganjil: tiga, lima, atau lebih","x":["Genap","Satu kali saja wajib tiga kali","Tidak ada ketentuan"],"e":"Mayat dimandikan dengan bilangan ganjil.","p":5},
-{"q":"Apa yang digunakan pada basuhan pertama dan terakhir?","c":"Daun bidara di awal, kapur barus sedikit di akhir","x":["Sabun di awal, wewangian di akhir","Air garam di awal, air biasa di akhir","Tidak ada tambahan"],"e":"Awal: daun bidara; akhir: sedikit kapur barus (bagi yang tidak ihram).","p":5},
-{"q":"Minimal memandikan mayat adalah...","c":"Meratakan air ke seluruh badan satu kali","x":["Tiga kali basuhan","Tujuh kali basuhan","Hanya membasuh wajah"],"e":"Minimal meratakan air ke seluruh badannya sekali.","p":6},
-{"q":"Mayat dikafani dengan berapa lembar kain?","c":"Tiga lembar putih, tanpa gamis dan serban","x":["Satu lembar","Lima lembar wajib","Dua lembar berwarna"],"e":"Kafan tiga lembar kain putih pembungkus, tanpa gamis dan serban.","p":7},
-{"q":"Berapa takbir dalam shalat jenazah?","c":"Empat takbir termasuk takbiratul ihram","x":["Tiga takbir","Lima takbir","Dua takbir"],"e":"Empat takbir termasuk takbiratul ihram; lima kali tidak membatalkan.","p":9},
-{"q":"Apa yang dilakukan makmum jika imam bertakbir lima kali?","c":"Tidak mengikutinya; salam atau menunggu imam salam","x":["Ikut bertakbir lima","Shalat batal","Menambah satu takbir"],"e":"Jika imam bertakbir lima kali, makmum tidak mengikuti.","p":9},
-{"q":"Setelah takbir pertama dibaca apa?","c":"Al-Fatihah","x":["Doa untuk mayat","Shalawat","Doa untuk muslimin"],"e":"Al-Fatihah setelah takbir pertama, shalawat setelah kedua, doa mayat setelah ketiga.","p":10},
-{"q":"Minimal doa untuk mayat adalah...","c":"Ya Allah, ampunilah dia","x":["Allahu akbar","Subhanallah","Alhamdulillah"],"e":"Minimal doa: 'Allahummaghfir lahu'.","p":11},
-{"q":"Takbir keempat diikuti doa...","c":"Agar tidak terhalang dari pahala dan tidak terkena fitnah sepeninggalnya, lalu salam","x":["Doa untuk mayat lagi","Shalawat","Doa iftitah"],"e":"Pada takbir keempat berdoa: 'Ya Allah, janganlah Engkau halangi kami dari pahalanya...', lalu salam.","p":15},
-{"q":"Apa itu lahad?","c":"Lubang di bagian bawah sisi kubur ke arah kiblat","x":["Lubang di tengah kubur seperti parit","Nisan kubur","Papan penutup kubur"],"e":"Lahad adalah lubang yang digali di bagian bawah sisi kubur ke arah kiblat; lebih utama daripada syaq bila tanah keras.","p":16},
-{"q":"Apa itu syaq?","c":"Lubang di tengah kubur seperti parit yang ditutup atap","x":["Lubang di sisi kubur","Penutup mayat","Kain kafan"],"e":"Syaq adalah lubang di tengah kubur seperti parit, kedua sisinya dibangun, diberi atap bata.","p":17},
-{"q":"Doa ketika memasukkan mayat ke lahad?","c":"Dengan nama Allah dan di atas agama Rasulullah ﷺ","x":["Allahu akbar","Subhanallah","La ilaha illallah"],"e":"Orang yang memasukkan mengucapkan 'Bismillah wa 'ala millati Rasulillah'.","p":18},
-{"q":"Bagaimana posisi mayat di kubur?","c":"Di atas lambung kanan menghadap kiblat","x":["Terlentang","Di atas lambung kiri","Telungkup"],"e":"Dibaringkan menghadap kiblat di atas lambung kanan.","p":19},
-{"q":"Bagaimana hukum membangun dan mengapur kubur?","c":"Tidak dibangun dan makruh dikapur","x":["Disunnahkan dibangun","Wajib dikapur","Disunnahkan dibangun tinggi"],"e":"Kubur diratakan, tidak dibangun di atasnya, dan makruh dikapur.","p":20},
-{"q":"Menangisi mayat hukumnya?","c":"Boleh tanpa meratap dan merobek pakaian","x":["Haram","Wajib","Sunnah"],"e":"Boleh menangis tanpa meratap dan merobek pakaian; meninggalkannya lebih utama.","p":21},
-{"q":"Ta'ziyah sunnah sampai berapa lama?","c":"Sampai tiga hari setelah penguburan","x":["Sampai sebulan","Sampai tujuh hari","Hanya pada hari kematian"],"e":"Ta'ziyah sunnah sebelum dan sesudah penguburan, sampai tiga hari setelahnya.","p":22}
+"e": "Rakaat pertama surah Qaf, rakaat kedua Iqtarabat (al-Qamar), dengan suara keras.",
+"p": 3
+},
+{
+"q": "Khutbah Id dilakukan kapan, dan berapa takbir di awalnya?",
+"c": "Setelah shalat; sembilan takbir di khutbah pertama, tujuh di kedua",
+"x": [
+"Sebelum shalat; tujuh takbir di pertama, lima di kedua",
+"Setelah shalat; lima takbir di pertama, tiga di kedua",
+"Sebelum shalat; sembilan takbir di kedua saja"
+],
+"e": "Dua khutbah sesudah shalat; khutbah pertama dibuka sembilan takbir, kedua tujuh takbir.",
+"p": 4
+},
+{
+"q": "Takbir mursal artinya...",
+"c": "Takbir yang tidak dilakukan setelah shalat",
+"x": [
+"Takbir setelah shalat",
+"Takbir hanya di masjid",
+"Takbir pada malam Jumat"
+],
+"e": "Takbir mursal adalah yang tidak dilakukan setelah shalat; muqayyad setelah shalat.",
+"p": 5
+},
+{
+"q": "Takbir mursal Idul Fitri dimulai sejak kapan?",
+"c": "Sejak terbenam matahari pada malam Id",
+"x": [
+"Sejak fajar hari Id",
+"Sejak awal Ramadhan",
+"Sejak tengah malam Id"
+],
+"e": "Takbir sunnah sejak terbenam matahari malam Id, yaitu Idul Fitri.",
+"p": 5
+},
+{
+"q": "Takbir muqayyad pada Idul Adha dilakukan setelah apa?",
+"c": "Setelah shalat-shalat fardhu dan juga sunnah serta jenazah",
+"x": [
+"Hanya setelah Shubuh",
+"Hanya setelah Jumat",
+"Hanya setelah shalat Id"
+],
+"e": "Takbir muqayyad Idul Adha setelah shalat fardhu (ada' atau qadha), rawatib, sunnah mutlak, dan jenazah.",
+"p": 6
+}
+],
+"u28": [
+{
+"q": "Shalat kusuf dan khusuf masing-masing untuk gerhana apa?",
+"c": "Kusuf untuk matahari, khusuf untuk bulan",
+"x": [
+"Kusuf untuk bulan, khusuf untuk matahari",
+"Keduanya untuk matahari",
+"Keduanya untuk bulan"
+],
+"e": "Shalat kusuf untuk gerhana matahari dan khusuf untuk gerhana bulan.",
+"p": 1
+},
+{
+"q": "Hukum shalat gerhana dan apakah diqadha jika terlewat?",
+"c": "Sunnah muakkad dan tidak diqadha",
+"x": [
+"Fardhu kifayah dan wajib diqadha",
+"Sunnah muakkad dan wajib diqadha",
+"Mubah dan tidak diqadha"
+],
+"e": "Sunnah muakkad; bila terlewat tidak diqadha.",
+"p": 1
+},
+{
+"q": "Berapa rakaat shalat gerhana?",
+"c": "Dua rakaat",
+"x": [
+"Empat rakaat",
+"Satu rakaat",
+"Enam rakaat"
+],
+"e": "Shalat gerhana dua rakaat.",
+"p": 2
+},
+{
+"q": "Pada setiap rakaat shalat gerhana ada berapa berdiri dan ruku'?",
+"c": "Dua berdiri dan dua ruku'",
+"x": [
+"Satu berdiri dan satu ruku'",
+"Dua berdiri dan satu ruku'",
+"Satu berdiri dan dua ruku'"
+],
+"e": "Setiap rakaat ada dua berdiri yang dipanjangkan bacaannya dan dua ruku'.",
+"p": 3
+},
+{
+"q": "Apa yang dilakukan imam setelah shalat gerhana?",
+"c": "Berkhutbah dua khutbah dan mendorong taubat serta sedekah",
+"x": [
+"Langsung pulang",
+"Berkhutbah satu khutbah tanpa nasihat",
+"Membaca doa istisqa'"
+],
+"e": "Imam berkhutbah dua khutbah seperti Jumat, mendorong taubat, sedekah, memerdekakan budak.",
+"p": 4
+},
+{
+"q": "Bagaimana bacaan pada shalat gerhana matahari dan bulan?",
+"c": "Dipelankan pada gerhana matahari, dikeraskan pada gerhana bulan",
+"x": [
+"Dikeraskan pada gerhana matahari, dipelankan pada gerhana bulan",
+"Dikeraskan pada keduanya",
+"Dipelankan pada keduanya"
+],
+"e": "Pada gerhana matahari bacaan pelan, pada gerhana bulan keras.",
+"p": 5
+}
+],
+"u29": [
+{
+"q": "Apa makna istisqa'?",
+"c": "Meminta siraman hujan dari Allah Ta'ala",
+"x": [
+"Meminta ampun dari dosa",
+"Meminta rezeki berupa harta",
+"Meminta perlindungan dari musuh"
+],
+"e": "Istisqa' adalah meminta siraman hujan kepada Allah.",
+"p": 1
+},
+{
+"q": "Kapan shalat istisqa' disunnahkan?",
+"c": "Ketika ada kebutuhan seperti terputusnya hujan atau mata air",
+"x": [
+"Setiap hari Jumat",
+"Setiap musim kemarau tanpa kebutuhan",
+"Hanya saat terjadi banjir"
+],
+"e": "Disunnahkan bagi mukim dan musafir ketika ada kebutuhan seperti terputusnya hujan atau mata air.",
+"p": 1
+},
+{
+"q": "Jika belum diberi hujan, bagaimana?",
+"c": "Shalat istisqa' diulang sampai Allah memberi hujan",
+"x": [
+"Cukup sekali saja",
+"Diganti shalat gerhana",
+"Diganti puasa tiga hari"
+],
+"e": "Shalat istisqa' diulang kedua kalinya dan lebih jika belum diberi hujan.",
+"p": 1
+},
+{
+"q": "Apa yang diperintahkan imam kepada orang sebelum istisqa'?",
+"c": "Bertaubat, bersedekah, meninggalkan kezaliman, berdamai, dan puasa tiga hari",
+"x": [
+"Berpuasa sebulan penuh",
+"Berkumpul tanpa persiapan",
+"Membawa hewan kurban"
+],
+"e": "Imam memerintahkan taubat, sedekah, keluar dari kezaliman, berdamai, dan berpuasa tiga hari.",
+"p": 2
+},
+{
+"q": "Pada hari ke berapa mereka keluar untuk shalat istisqa'?",
+"c": "Hari keempat, dalam keadaan berpuasa",
+"x": [
+"Hari pertama",
+"Hari kedua",
+"Hari ketujuh"
+],
+"e": "Setelah puasa tiga hari, imam keluar bersama mereka pada hari keempat.",
+"p": 3
+},
+{
+"q": "Bagaimana pakaian dan sikap saat keluar istisqa'?",
+"c": "Pakaian sehari-hari, merendah, khusyuk, tanpa wewangian dan hiasan",
+"x": [
+"Pakaian terbaik dengan wewangian",
+"Pakaian putih bersih penuh hiasan",
+"Pakaian bebas, sambil bercanda"
+],
+"e": "Mereka keluar dengan pakaian kerja sehari-hari, merendah, memelas, tanpa wewangian dan hiasan.",
+"p": 3
+},
+{
+"q": "Shalat istisqa' dilakukan seperti apa?",
+"c": "Dua rakaat seperti shalat Id",
+"x": [
+"Empat rakaat seperti Zhuhur",
+"Dua rakaat seperti shalat gerhana",
+"Satu rakaat saja"
+],
+"e": "Dua rakaat seperti shalat Id dalam tata caranya.",
+"p": 4
+},
+{
+"q": "Pada khutbah istisqa', apa yang menggantikan takbir pembuka?",
+"c": "Istighfar, sembilan kali pada khutbah pertama dan tujuh kali pada kedua",
+"x": [
+"Tasbih tiga kali",
+"Tahlil tujuh kali",
+"Hamdalah sembilan kali"
+],
+"e": "Istighfar menggantikan takbir pembuka khutbah Id.",
+"p": 5
+},
+{
+"q": "Apa yang dilakukan khatib dengan selendangnya?",
+"c": "Membalik selendang: kanan ke kiri, atas ke bawah",
+"x": [
+"Menanggalkan selendang",
+"Mengikatnya di leher",
+"Melepasnya dan memberikannya"
+],
+"e": "Khatib membalik selendangnya, dan orang-orang melakukan hal yang sama.",
+"p": 6
+},
+{
+"q": "Ayat apa yang dibaca khatib dalam istisqa'?",
+"c": "QS. Nuh ayat 10-11 tentang memohon ampun agar diturunkan hujan",
+"x": [
+"QS. al-Ikhlas",
+"QS. al-Fatihah",
+"QS. at-Taubah ayat 60"
+],
+"e": "Khatib membaca 'Mohonlah ampun kepada Tuhanmu...' (QS. Nuh: 10–11).",
+"p": 7
+}
+],
+"u30": [
+{
+"q": "Mengapa shalat khauf disendirikan dalam satu fasal?",
+"c": "Karena ditoleransi hal-hal yang tidak ditoleransi dalam keadaan lain",
+"x": [
+"Karena hanya dilakukan sekali setahun",
+"Karena tidak ada hukumnya",
+"Karena sama persis dengan shalat biasa"
+],
+"e": "Dalam shalat fardhu ketika takut ditoleransi hal-hal yang tidak ditoleransi pada keadaan lain.",
+"p": 1
+},
+{
+"q": "Pengarang membatasi shalat khauf pada berapa bentuk?",
+"c": "Tiga bentuk",
+"x": [
+"Dua bentuk",
+"Enam bentuk",
+"Satu bentuk"
+],
+"e": "Walau ada enam bentuk dalam Shahih Muslim, pengarang membatasi tiga.",
+"p": 2
+},
+{
+"q": "Bentuk pertama shalat khauf terjadi saat...",
+"c": "Musuh berada di selain arah kiblat dan jumlahnya sedikit",
+"x": [
+"Musuh berada di arah kiblat",
+"Perang berkecamuk",
+"Tidak ada musuh"
+],
+"e": "Pertama: musuh di selain arah kiblat, jumlahnya sedikit, kaum muslimin banyak.",
+"p": 2
+},
+{
+"q": "Pada bentuk pertama, imam membagi pasukan menjadi...",
+"c": "Dua kelompok: satu menjaga musuh, satu shalat di belakangnya",
+"x": [
+"Tiga kelompok",
+"Satu kelompok saja",
+"Empat kelompok"
+],
+"e": "Imam membagi dua kelompok: satu berdiri menghadap musuh, satu di belakang imam.",
+"p": 3
+},
+{
+"q": "Shalat khauf bentuk pertama disebut shalat di mana?",
+"c": "Dzatur Riqa'",
+"x": [
+"'Usfan",
+"Badar",
+"Uhud"
+],
+"e": "Bentuk pertama ini shalat Rasulullah di Dzatur Riqa'.",
+"p": 4
+},
+{
+"q": "Bentuk kedua shalat khauf terjadi bila musuh berada...",
+"c": "Di arah kiblat tanpa penghalang",
+"x": [
+"Di belakang",
+"Di tempat tertutup",
+"Di selain arah kiblat"
+],
+"e": "Kedua: musuh di arah kiblat tanpa penutup; imam membariskan dua shaf.",
+"p": 5
+},
+{
+"q": "Pada bentuk kedua, saat imam sujud apa yang dilakukan?",
+"c": "Satu shaf sujud bersama imam, shaf lain menjaga, lalu bergantian",
+"x": [
+"Semua shaf sujud sekaligus",
+"Semua shaf berdiri menjaga",
+"Tidak ada yang sujud"
+],
+"e": "Satu shaf sujud bersama imam sementara shaf lain berdiri menjaga.",
+"p": 6
+},
+{
+"q": "Bentuk kedua ini adalah shalat Rasulullah di...",
+"c": "'Usfan",
+"x": [
+"Dzatur Riqa'",
+"Hudaibiyah",
+"Mina"
+],
+"e": "Itulah shalat Rasulullah di 'Usfan.",
+"p": 7
+},
+{
+"q": "Bentuk ketiga terjadi saat...",
+"c": "Sangat takut dan perang berkecamuk",
+"x": [
+"Musuh jauh",
+"Musuh tidak tampak",
+"Tidak ada perang"
+],
+"e": "Ketiga: sangat takut dan perang berkecamuk, pasukan bercampur.",
+"p": 8
+},
+{
+"q": "Dalam bentuk ketiga, bagaimana boleh shalat?",
+"c": "Bagaimanapun mampu, berjalan atau berkendaraan, menghadap kiblat atau tidak",
+"x": [
+"Harus menghadap kiblat",
+"Harus berdiri tegak",
+"Wajib ditunda"
+],
+"e": "Setiap orang shalat bagaimanapun mampu, menghadap kiblat atau tidak, dimaafkan gerakan banyak.",
+"p": 9
+}
+],
+"u31": [
+{
+"q": "Apa yang haram dipakai laki-laki tanpa darurat?",
+"c": "Sutra dan cincin emas",
+"x": [
+"Katun",
+"Kulit",
+"Wol"
+],
+"e": "Haram atas laki-laki memakai sutra dan cincin emas dalam keadaan tidak terpaksa.",
+"p": 1
+},
+{
+"q": "Kapan laki-laki boleh memakai sutra?",
+"c": "Karena darurat seperti panas atau dingin yang membinasakan",
+"x": [
+"Kapan saja",
+"Saat shalat",
+"Saat bepergian"
+],
+"e": "Halal bagi laki-laki karena darurat seperti panas dan dingin yang membinasakan.",
+"p": 1
+},
+{
+"q": "Bagaimana hukum sutra bagi perempuan?",
+"c": "Halal dipakai dan dijadikan alas",
+"x": [
+"Haram",
+"Makruh",
+"Haram jika banyak"
+],
+"e": "Halal bagi perempuan memakai sutra dan menjadikannya alas.",
+"p": 2
+},
+{
+"q": "Bolehkah wali memakaikan sutra kepada anak kecil?",
+"c": "Boleh, sebelum maupun sesudah tujuh tahun",
+"x": [
+"Haram",
+"Boleh sebelum tujuh tahun saja",
+"Makruh"
+],
+"e": "Halal bagi wali memakaikan sutra kepada anak kecil.",
+"p": 2
+},
+{
+"q": "Kain campuran sutra dan katun, kapan halal dipakai laki-laki?",
+"c": "Jika sutra tidak dominan, atau sama banyak",
+"x": [
+"Jika sutra dominan",
+"Tidak pernah halal",
+"Hanya jika katun sedikit"
+],
+"e": "Boleh selama ibrisam tidak dominan; jika sama, halal menurut pendapat paling sahih.",
+"p": 3
+}
+],
+"u32": [
+{
+"q": "Berapa perkara wajib pada mayat muslim (selain syahid dan orang ihram)?",
+"c": "Empat: memandikan, mengafani, menshalati, menguburkan",
+"x": [
+"Tiga: memandikan, mengafani, menguburkan",
+"Dua: memandikan dan menshalati",
+"Lima: ditambah ta'ziyah"
+],
+"e": "Fardhu kifayah empat perkara pada mayat muslim.",
+"p": 1
+},
+{
+"q": "Bagaimana hukum menshalati mayat kafir?",
+"c": "Haram, harbi maupun dzimmi",
+"x": [
+"Wajib",
+"Sunnah",
+"Makruh"
+],
+"e": "Menshalati mayat kafir haram; memandikan boleh.",
+"p": 2
+},
+{
+"q": "Mayat yang dikafani dalam ihram, apa yang tidak ditutup?",
+"c": "Kepalanya (dan wajah perempuan ihram)",
+"x": [
+"Kakinya",
+"Tangannya",
+"Dadanya"
+],
+"e": "Orang ihram, apabila dikafani, kepalanya tidak ditutup, demikian pula wajah perempuan ihram.",
+"p": 2
+},
+{
+"q": "Dua mayat yang tidak dimandikan dan tidak dishalati adalah...",
+"c": "Syahid dalam pertempuran melawan musyrik, dan janin keguguran yang tidak bersuara",
+"x": [
+"Anak kecil dan perempuan hamil",
+"Orang sakit dan orang tua",
+"Orang murtad dan orang gila"
+],
+"e": "Pertama syahid dalam perang melawan musyrik; kedua janin keguguran yang tidak bersuara.",
+"p": 3
+},
+{
+"q": "Mayat dimandikan dengan bilangan...",
+"c": "Ganjil: tiga, lima, atau lebih",
+"x": [
+"Genap",
+"Satu kali saja wajib tiga kali",
+"Tidak ada ketentuan"
+],
+"e": "Mayat dimandikan dengan bilangan ganjil.",
+"p": 5
+},
+{
+"q": "Apa yang digunakan pada basuhan pertama dan terakhir?",
+"c": "Daun bidara di awal, kapur barus sedikit di akhir",
+"x": [
+"Sabun di awal, wewangian di akhir",
+"Air garam di awal, air biasa di akhir",
+"Tidak ada tambahan"
+],
+"e": "Awal: daun bidara; akhir: sedikit kapur barus (bagi yang tidak ihram).",
+"p": 5
+},
+{
+"q": "Minimal memandikan mayat adalah...",
+"c": "Meratakan air ke seluruh badan satu kali",
+"x": [
+"Tiga kali basuhan",
+"Tujuh kali basuhan",
+"Hanya membasuh wajah"
+],
+"e": "Minimal meratakan air ke seluruh badannya sekali.",
+"p": 6
+},
+{
+"q": "Mayat dikafani dengan berapa lembar kain?",
+"c": "Tiga lembar putih, tanpa gamis dan serban",
+"x": [
+"Satu lembar",
+"Lima lembar wajib",
+"Dua lembar berwarna"
+],
+"e": "Kafan tiga lembar kain putih pembungkus, tanpa gamis dan serban.",
+"p": 7
+},
+{
+"q": "Berapa takbir dalam shalat jenazah?",
+"c": "Empat takbir termasuk takbiratul ihram",
+"x": [
+"Tiga takbir",
+"Lima takbir",
+"Dua takbir"
+],
+"e": "Empat takbir termasuk takbiratul ihram; lima kali tidak membatalkan.",
+"p": 9
+},
+{
+"q": "Apa yang dilakukan makmum jika imam bertakbir lima kali?",
+"c": "Tidak mengikutinya; salam atau menunggu imam salam",
+"x": [
+"Ikut bertakbir lima",
+"Shalat batal",
+"Menambah satu takbir"
+],
+"e": "Jika imam bertakbir lima kali, makmum tidak mengikuti.",
+"p": 9
+},
+{
+"q": "Setelah takbir pertama dibaca apa?",
+"c": "Al-Fatihah",
+"x": [
+"Doa untuk mayat",
+"Shalawat",
+"Doa untuk muslimin"
+],
+"e": "Al-Fatihah setelah takbir pertama, shalawat setelah kedua, doa mayat setelah ketiga.",
+"p": 10
+},
+{
+"q": "Minimal doa untuk mayat adalah...",
+"c": "Ya Allah, ampunilah dia",
+"x": [
+"Allahu akbar",
+"Subhanallah",
+"Alhamdulillah"
+],
+"e": "Minimal doa: 'Allahummaghfir lahu'.",
+"p": 11
+},
+{
+"q": "Takbir keempat diikuti doa...",
+"c": "Agar tidak terhalang dari pahala dan tidak terkena fitnah sepeninggalnya, lalu salam",
+"x": [
+"Doa untuk mayat lagi",
+"Shalawat",
+"Doa iftitah"
+],
+"e": "Pada takbir keempat berdoa: 'Ya Allah, janganlah Engkau halangi kami dari pahalanya...', lalu salam.",
+"p": 15
+},
+{
+"q": "Apa yang dimaksud dengan lahad dalam penguburan?",
+"c": "Lubang di bagian bawah sisi kubur ke arah kiblat",
+"x": [
+"Lubang di tengah kubur seperti parit",
+"Nisan kubur",
+"Papan penutup kubur"
+],
+"e": "Lahad adalah lubang yang digali di bagian bawah sisi kubur ke arah kiblat; lebih utama daripada syaq bila tanah keras.",
+"p": 16
+},
+{
+"q": "Apa yang dimaksud dengan syaq dalam penguburan?",
+"c": "Lubang di tengah kubur seperti parit yang ditutup atap",
+"x": [
+"Lubang di sisi kubur",
+"Penutup mayat",
+"Kain kafan"
+],
+"e": "Syaq adalah lubang di tengah kubur seperti parit, kedua sisinya dibangun, diberi atap bata.",
+"p": 17
+},
+{
+"q": "Doa ketika memasukkan mayat ke lahad?",
+"c": "Dengan nama Allah dan di atas agama Rasulullah ﷺ",
+"x": [
+"Allahu akbar",
+"Subhanallah",
+"La ilaha illallah"
+],
+"e": "Orang yang memasukkan mengucapkan 'Bismillah wa 'ala millati Rasulillah'.",
+"p": 18
+},
+{
+"q": "Bagaimana posisi mayat di kubur?",
+"c": "Di atas lambung kanan menghadap kiblat",
+"x": [
+"Terlentang",
+"Di atas lambung kiri",
+"Telungkup"
+],
+"e": "Dibaringkan menghadap kiblat di atas lambung kanan.",
+"p": 19
+},
+{
+"q": "Bagaimana hukum membangun dan mengapur kubur?",
+"c": "Tidak dibangun dan makruh dikapur",
+"x": [
+"Disunnahkan dibangun",
+"Wajib dikapur",
+"Disunnahkan dibangun tinggi"
+],
+"e": "Kubur diratakan, tidak dibangun di atasnya, dan makruh dikapur.",
+"p": 20
+},
+{
+"q": "Menangisi mayat hukumnya?",
+"c": "Boleh tanpa meratap dan merobek pakaian",
+"x": [
+"Haram",
+"Wajib",
+"Sunnah"
+],
+"e": "Boleh menangis tanpa meratap dan merobek pakaian; meninggalkannya lebih utama.",
+"p": 21
+},
+{
+"q": "Ta'ziyah sunnah sampai berapa lama?",
+"c": "Sampai tiga hari setelah penguburan",
+"x": [
+"Sampai sebulan",
+"Sampai tujuh hari",
+"Hanya pada hari kematian"
+],
+"e": "Ta'ziyah sunnah sebelum dan sesudah penguburan, sampai tiga hari setelahnya.",
+"p": 22
+}
 ]
 }
