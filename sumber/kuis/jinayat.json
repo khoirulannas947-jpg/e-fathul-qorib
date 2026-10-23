@@ -1,0 +1,39 @@
+{
+"u97":[
+{"q":"Pembunuhan ada berapa macam?","c":"Tiga: sengaja murni, keliru murni, dan sengaja-keliru","x":["Dua: sengaja dan keliru","Empat macam","Lima macam"],"e":"Pembunuhan ada tiga macam, tidak ada yang keempat.","p":1},
+{"q":"Apa yang dimaksud pembunuhan sengaja murni?","c":"Memukul dengan sesuatu yang umumnya membunuh dan bermaksud membunuh","x":["Memukul dengan tongkat ringan tanpa maksud","Melempar buruan lalu mengenai orang","Membunuh karena tertidur"],"e":"Sengaja murni: memukul dengan sesuatu yang umumnya membunuh dan bermaksud membunuh.","p":2},
+{"q":"Jika wali memaafkan pelaku pembunuhan sengaja murni, apa yang wajib?","c":"Diyat diperberat, tunai, dari harta pembunuh","x":["Diyat diperingan dari 'aqilah","Tidak ada kewajiban","Kafarat saja"],"e":"Jika dimaafkan, wajib diyat yang diperberat, tunai, dalam harta pembunuh.","p":4},
+{"q":"Bagaimana hukum pembunuhan keliru murni?","c":"Tidak ada qishash, wajib diyat diperingan atas 'aqilah","x":["Qishash wajib","Diyat diperberat atas pelaku","Tidak ada kewajiban apa pun"],"e":"Keliru murni tidak ada qawad; wajib diyat yang diperingan atas 'aqilah.","p":5},
+{"q":"Apa pembunuhan sengaja-keliru (syibh 'amd)?","c":"Memukul dengan sesuatu yang umumnya tidak membunuh lalu korban meninggal","x":["Memukul dengan pedang","Melempar buruan lalu mengenai orang","Membunuh dengan niat jelas"],"e":"Syibh 'amd: memukul dengan sesuatu yang umumnya tidak membunuh lalu korban meninggal.","p":7},
+{"q":"Siapa 'aqilah?","c":"'Ashabah pelaku, bukan ayah ke atas dan anak ke bawah","x":["Seluruh tetangga pelaku","Ayah dan anak pelaku","Hanya istri pelaku"],"e":"'Aqilah adalah 'ashabah pelaku, bukan asal dan cabang.","p":6},
+{"q":"Apa makna qishash menurut asal katanya?","c":"Mengikuti jejak, karena korban mengambil semisal perbuatan pelaku","x":["Memutus","Menahan","Mengganti"],"e":"Qishash diambil dari iqtishash al-atsar, mengikuti jejak.","p":8},
+{"q":"Siapa yang tidak terkena qishash karena belum baligh?","c":"Anak kecil","x":["Orang dewasa mabuk sengaja","Orang berakal","Orang sehat"],"e":"Syarat pertama: pembunuh baligh; tidak ada qishash atas anak kecil.","p":9},
+{"q":"Apakah orang tua di-qishash karena membunuh anaknya?","c":"Tidak, walaupun sampai cucu","x":["Ya","Ya, jika sengaja","Ya, jika ayah"],"e":"Syarat ketiga: pembunuh bukan orang tua korban.","p":11},
+{"q":"Apakah muslim dibunuh karena membunuh kafir dzimmi?","c":"Tidak dibunuh","x":["Dibunuh","Dibunuh jika sengaja","Dibunuh jika di tanah haram"],"e":"Syarat keempat: korban tidak lebih rendah karena kekafiran atau perbudakan.","p":12},
+{"q":"Apakah sekelompok orang dibunuh karena membunuh satu orang?","c":"Ya, jika perbuatan masing-masing sendirian dapat membunuh","x":["Tidak dibunuh","Hanya satu yang dibunuh","Hanya ketuanya"],"e":"Sekelompok orang dibunuh karena satu orang jika korban setara dan perbuatan masing-masing membunuh.","p":13},
+{"q":"Apa syarat qishash pada anggota tubuh?","c":"Kesamaan nama anggota dan tidak ada kelumpuhan pada salah satunya","x":["Kesamaan ukuran saja","Kesamaan warna","Tidak ada syarat"],"e":"Dua syarat: kesamaan dalam nama khusus anggota dan tidak ada kelumpuhan.","p":16},
+{"q":"Berapa jenis luka kepala dan wajah?","c":"Sepuluh","x":["Tiga","Lima","Dua puluh"],"e":"Luka kepala dan wajah ada sepuluh, dari harishah sampai damighah.","p":18}
+],
+"u98":[
+{"q":"Diyat ada berapa macam?","c":"Dua: diperberat dan diperingan","x":["Satu","Tiga","Empat"],"e":"Diyat ada dua macam: diperberat dan diperingan.","p":1},
+{"q":"Berapa unta diyat laki-laki merdeka muslim?","c":"Seratus unta","x":["Lima puluh unta","Dua ratus unta","Seribu unta"],"e":"Diyat laki-laki merdeka muslim seratus unta.","p":3},
+{"q":"Pada diyat diperberat, berapa unta khalifah (bunting)?","c":"Empat puluh","x":["Dua puluh","Sepuluh","Seratus"],"e":"Diyat diperberat memuat empat puluh khalifah yang di perutnya ada anaknya.","p":2},
+{"q":"Jika unta tidak ada, diyat berpindah ke apa menurut qaul jadid?","c":"Nilai unta","x":["Seribu dinar","Dua belas ribu dirham","Gugur"],"e":"Menurut qaul jadid, berpindah kepada nilainya; qaul qadim seribu dinar atau dua belas ribu dirham.","p":5},
+{"q":"Di mana pembunuhan keliru diperberat diyatnya?","c":"Di tanah haram Makkah, dalam bulan haram, dan terhadap mahram","x":["Di Madinah saja","Di mana saja","Di rumah"],"e":"Diperberat di tiga tempat: tanah haram, bulan haram, dan kerabat mahram.","p":7},
+{"q":"Berapa diyat perempuan dibanding laki-laki?","c":"Setengah","x":["Sama","Sepertiga","Dua kali lipat"],"e":"Diyat perempuan dan khuntsa musykil setengah dari laki-laki.","p":9},
+{"q":"Berapa diyat Yahudi dan Nasrani dibanding muslim?","c":"Sepertiga","x":["Setengah","Sama","Dua pertiga"],"e":"Diyat Yahudi, Nasrani, musta'man, dan mu'ahad sepertiga diyat muslim.","p":10},
+{"q":"Pada pemotongan kedua tangan, berapa diyatnya?","c":"Seratus unta (diyat sempurna)","x":["Lima puluh unta","Dua puluh unta","Sepuluh unta"],"e":"Diyat jiwa disempurnakan pada memotong kedua tangan; setiap tangan lima puluh unta.","p":11},
+{"q":"Berapa unta pada mudhihah dan pada gigi?","c":"Lima unta","x":["Satu unta","Sepuluh unta","Dua puluh unta"],"e":"Pada mudhihah dan pada gigi masing-masing lima unta.","p":16},
+{"q":"Apa yang dimaksud hukumah?","c":"Bagian dari diyat sesuai kekurangan nilai korban akibat tindak pidana","x":["Hukuman penjara","Denda tetap seribu dinar","Kafarat"],"e":"Hukumah adalah bagian diyat dengan perbandingan kekurangan nilai korban.","p":16},
+{"q":"Apa diyat janin merdeka muslim?","c":"Ghurrah, yaitu seorang budak laki-laki atau perempuan","x":["Seratus unta","Lima puluh unta","Setengah ghurrah"],"e":"Diyat janin merdeka muslim adalah ghurrah, budak laki-laki atau perempuan.","p":18},
+{"q":"Berapa diyat janin budak?","c":"Sepersepuluh nilai ibunya, untuk tuannya","x":["Satu ghurrah","Seratus unta","Setengah nilai ibunya"],"e":"Diyat janin budak sepersepuluh nilai ibunya pada hari tindak pidana.","p":19}
+],
+"u99":[
+{"q":"Apa makna qasamah?","c":"Sumpah-sumpah dalam perkara darah","x":["Sumpah dalam jual beli","Sumpah dalam nikah","Sumpah dalam hutang"],"e":"Qasamah adalah sumpah-sumpah dalam perkara darah.","p":1},
+{"q":"Apa arti lauts dalam gugatan pembunuhan?","c":"Indikasi yang menunjukkan kebenaran penggugat","x":["Bukti dua saksi","Pengakuan pembunuh","Sumpah tergugat"],"e":"Lauts secara syara' adalah indikasi yang menunjukkan kebenaran penggugat.","p":1},
+{"q":"Berapa kali sumpah dalam qasamah?","c":"Lima puluh kali","x":["Empat kali","Sepuluh kali","Seratus kali"],"e":"Sumpah dilakukan lima puluh kali.","p":4},
+{"q":"Siapa yang bersumpah bila tidak ada lauts?","c":"Tergugat","x":["Penggugat","Hakim","Saksi"],"e":"Jika tidak ada lauts, sumpah atas tergugat lima puluh kali.","p":4},
+{"q":"Siapa yang wajib kafarat pembunuhan jiwa yang diharamkan?","c":"Pembunuh, walau anak kecil atau orang gila (dibayar walinya)","x":["Hanya yang sengaja","Hanya orang dewasa","Tidak ada kafarat"],"e":"Pembunuhan sengaja, keliru, atau syibh 'amd berkafarat, walau pembunuhnya anak kecil atau gila.","p":5},
+{"q":"Jika tidak mampu puasa dua bulan karena tua renta, apa penggantinya?","c":"Memberi makan enam puluh orang miskin","x":["Memerdekakan budak","Membayar dirham","Tidak ada pengganti"],"e":"Jika tidak mampu berpuasa karena tua renta, berkafarat memberi makan enam puluh miskin.","p":6}
+]
+}
