@@ -13,6 +13,15 @@
   function setCookie(name, value, maxAge) {
     document.cookie = name + "=" + encodeURIComponent(value) + "; Path=/; Max-Age=" + maxAge + "; SameSite=Lax" + (location.protocol === "https:" ? "; Secure" : "");
   }
+  // ID perangkat acak (untuk batas jumlah perangkat per akun); dikirim ke server lewat cookie "efq_dev".
+  (function () {
+    let id = store.get("dev");
+    if (!/^[a-z0-9-]{16,64}$/i.test(id || "")) {
+      try { id = (crypto.randomUUID ? crypto.randomUUID() : Array.from(crypto.getRandomValues(new Uint8Array(16)), function (b) { return b.toString(16).padStart(2, "0"); }).join("")); } catch (e) { id = ""; }
+      if (id) store.set("dev", id);
+    }
+    if (id) setCookie("efq_dev", id, 31536000);
+  })();
   function loadScript(src, attrs) {
     return new Promise(function (resolve, reject) {
       const s = document.createElement("script");

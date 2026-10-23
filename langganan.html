@@ -75,6 +75,7 @@ input:focus{outline:none;border-color:var(--accent);background:var(--surface);bo
   <p class="lead" id="lead">Memeriksa status akun…</p>
   <div class="kv" id="kv" hidden></div>
   <div class="msg" id="pesan" hidden></div>
+  <button class="btn" id="lepas" type="button" hidden>Keluarkan perangkat lain &amp; pakai di sini</button>
   <div style="display:grid;gap:10px;margin-top:18px">
     <a class="btn pri" id="beli" href="#" hidden target="_blank" rel="noopener">Hubungi kami untuk berlangganan</a>
     <a class="btn pri" id="buka" href="/" hidden>Buka kitab</a>
@@ -82,6 +83,8 @@ input:focus{outline:none;border-color:var(--accent);background:var(--surface);bo
   </div>
   <p class="foot">Akses dibuka per akun setelah pembayaran dikonfirmasi. Gunakan alamat email yang sama saat mendaftar.</p>
 </main>
+<script src="/auth-config.js"></script>
+<script src="/auth-client.js"></script>
 <script>
 (function(){
   var $=function(i){return document.getElementById(i)};
@@ -98,6 +101,15 @@ input:focus{outline:none;border-color:var(--accent);background:var(--surface);bo
       $("lead").textContent=j.sampai?"Langganan Anda aktif.":"Akun Anda punya akses penuh.";
       if(j.sampai){var d=document.createElement("div");d.textContent="Berlaku sampai "+tgl(j.sampai)+".";kv.appendChild(d)}
       $("buka").hidden=false;
+      var pf=j.perangkat;
+      if(pf){
+        var d=document.createElement("div");d.textContent="Perangkat terdaftar: "+pf.jumlah+" dari "+pf.maks+".";kv.appendChild(d);
+        if(!pf.ok){
+          $("buka").hidden=true; pesan.hidden=false; pesan.classList.add("err");
+          pesan.textContent="Akun ini sudah dipakai di "+pf.maks+" perangkat (batas maksimum). Untuk memakai di perangkat ini, keluarkan perangkat lain terlebih dahulu (bisa sekali per 24 jam).";
+          $("lepas").hidden=false;
+        }
+      }
     }else{
       $("lead").textContent="Langganan Anda belum aktif atau sudah berakhir.";
       pesan.hidden=false; pesan.classList.add("err");
@@ -105,6 +117,15 @@ input:focus{outline:none;border-color:var(--accent);background:var(--surface);bo
       if(j.kontak){var a=$("beli");a.href=/^https?:/i.test(j.kontak)?j.kontak:"https://wa.me/"+String(j.kontak).replace(/\D/g,"");a.hidden=false}
     }
   }).catch(function(){$("lead").textContent="Tidak dapat memeriksa status. Periksa koneksi Anda."});
+  $("lepas").addEventListener("click",function(){
+    var b=this; b.disabled=true;
+    fetch("/api/akses",{method:"POST",credentials:"same-origin"}).then(function(r){return r.json().then(function(j){return {s:r.status,j:j}})}).then(function(o){
+      if(o.s===200){location.replace("/");return}
+      var p=$("pesan");p.hidden=false;p.classList.add("err");
+      p.textContent=o.j.error==="tunggu_24_jam"?"Perangkat lain baru saja dikeluarkan. Coba lagi setelah 24 jam, atau hubungi pengelola.":"Gagal memproses. Coba lagi.";
+      b.disabled=false;
+    }).catch(function(){b.disabled=false});
+  });
 })();
 </script>
 </body>

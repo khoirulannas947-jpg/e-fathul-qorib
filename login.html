@@ -196,6 +196,18 @@ input:focus{outline:none;border-color:var(--accent);background:var(--surface);bo
       } else {
         cred = await auth.signInWithEmailAndPassword(email, pass);
       }
+      // Email & sandi wajib diverifikasi dulu (agar langganan tidak bisa dipakai dengan email milik orang lain).
+      if (!cred.user.emailVerified) {
+        let kirim = true; const baru = mode === "daftar";
+        try { await cred.user.sendEmailVerification(); } catch (e2) { kirim = false; }
+        await A.signOut();
+        if (baru) $("#modeBtn").click();
+        say(baru
+          ? "Akun dibuat. Kami mengirim tautan verifikasi ke " + email + ". Buka email Anda, klik tautannya, lalu masuk kembali di sini."
+          : (kirim ? "Email Anda belum diverifikasi. Tautan verifikasi baru sudah dikirim ke " + email + " — klik tautannya lalu masuk kembali."
+                   : "Email Anda belum diverifikasi. Periksa kotak masuk/spam untuk tautan verifikasi, lalu masuk kembali."));
+        return;
+      }
       await afterFirebase(cred.user);
     } catch (e) {
       say(fbMsg(e), true);

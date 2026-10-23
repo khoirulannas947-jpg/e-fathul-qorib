@@ -36,3 +36,7 @@ curl -X POST https://DOMAIN/api/admin-akses -H "Authorization: Bearer $ADMIN_TOK
 ```
 
 Payment gateway nantinya cukup memanggil `berikanAkses(email, hari)` (di `akses-lib.js`) dari webhook, atau endpoint di atas.
+
+### Batas perangkat & verifikasi email
+- `MAKS_PERANGKAT` — jumlah perangkat maksimum per akun (mis. `2`). Kosong/0 = tanpa batas. Perangkat dikenali dari ID acak di cookie `efq_dev`; perangkat yang tidak dipakai 30 hari dilepas otomatis. Pengguna bisa mengeluarkan perangkat lain sendiri dari halaman `/langganan` (sekali per 24 jam); admin memakai `{"aksi":"reset-perangkat","email":"..."}`.
+- Pendaftaran/login email+sandi kini mewajibkan verifikasi email: tautan verifikasi dikirim otomatis, dan akun baru bisa masuk setelah tautan diklik. Login Google sudah otomatis terverifikasi.

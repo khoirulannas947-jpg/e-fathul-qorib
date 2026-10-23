@@ -93,3 +93,48 @@ export async function daftarAkses(maks = 1000) {
   const vals = await redis(keys.map((k) => ["GET", k]));
   return keys.map((k, i) => ({ email: k.slice(6), sampai: Number(vals[i] && vals[i].result) || 0 })).sort((a, b) => b.sampai - a.sampai);
 }
+
+// ---- Batas perangkat per akun (MAKS_PERANGKAT, 0/kosong = tanpa batas) ----
+// Perangkat dikenali dari cookie "efq_dev" (ID acak yang dibuat auth-client.js). Disimpan di Redis sebagai ZSET "dev:<email>" (skor = terakhir dipakai).
+// Perangkat yang tidak dipakai 30 hari dilepas otomatis.
+export const maksPerangkat = () => Math.max(0, Math.floor(Number(env("MAKS_PERANGKAT") || 0)) || 0);
+export const idPerangkatValid = (d) => /^[a-z0-9-]{16,64}$/i.test(String(d || ""));
+const devCache = new Map(); // "email|dev" -> { exp, val }
+
+export async function cekPerangkat(email, dev, daftar = true) {
+  const maks = maksPerangkat();
+  if (!maks) return { ok: true, maks: 0, jumlah: 0, terdaftar: true };
+  email = String(email || "").trim().toLowerCase();
+  if (!idPerangkatValid(dev)) return { ok: false, alasan: "tanpa_id", maks, jumlah: 0, terdaftar: false };
+  const now = Date.now(), ck = email + "|" + dev;
+  const hit = daftar && devCache.get(ck);
+  if (hit && hit.exp > now) return hit.val;
+  const k = "dev:" + email;
+  const out = await redis([["ZREMRANGEBYSCORE", k, "-inf", String(now - 30 * HARI)], ["ZSCORE", k, dev], ["ZCARD", k]]);
+  const ada = !!(out[1] && out[1].result != null);
+  const n = Number(out[2] && out[2].result) || 0;
+  let ok = ada || n < maks;
+  if (ok && daftar) await redis([["ZADD", k, String(now), dev], ["EXPIRE", k, 40 * 86400]]);
+  const val = { ok, maks, jumlah: ok && daftar && !ada ? n + 1 : n, terdaftar: ada || (ok && daftar) };
+  if (ok && daftar) devCache.set(ck, { exp: now + 5 * 60000, val });
+  return val;
+}
+// Lepas semua perangkat lain (kecuali `simpan`). Pengguna dibatasi 1x per 24 jam; admin (paksa=true) tanpa batas.
+export async function lepasPerangkat(email, simpan, paksa = false) {
+  email = String(email || "").trim().toLowerCase();
+  if (!paksa) {
+    const r = await redis([["SET", "devreset:" + email, "1", "NX", "EX", "86400"]]);
+    if (!(r && r[0] && r[0].result === "OK")) throw new Error("tunggu_24_jam");
+  }
+  const cmds = [["DEL", "dev:" + email]];
+  if (idPerangkatValid(simpan)) cmds.push(["ZADD", "dev:" + email, String(Date.now()), simpan], ["EXPIRE", "dev:" + email, 40 * 86400]);
+  await redis(cmds);
+  for (const k of [...devCache.keys()]) if (k.startsWith(email + "|")) devCache.delete(k);
+}
+export function cookieDev(header) {
+  for (const part of String(header || "").split(";")) {
+    const i = part.indexOf("=");
+    if (i > 0 && part.slice(0, i).trim() === "efq_dev") return part.slice(i + 1).trim();
+  }
+  return "";
+}

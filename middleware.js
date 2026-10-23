@@ -2,7 +2,7 @@
 // Sesi = cookie "fb_session" berisi Firebase ID token (JWT RS256, diperbarui oleh auth-client.js).
 // Verifikasi memakai kunci publik (JWKS) Google, jadi tidak ada kunci rahasia di sini.
 import { FIREBASE_PROJECT_ID } from "./auth-settings.js";
-import { aksesBerbayarAktif, cekAkses, isAdmin } from "./akses-lib.js";
+import { aksesBerbayarAktif, cekAkses, isAdmin, cekPerangkat, cookieDev } from "./akses-lib.js";
 
 export const config = {
   matcher: ["/((?!login|auth-config\\.js|auth-client\\.js|api/admin-akses|sw\\.js|manifest\\.webmanifest|icons/|\\.well-known/|favicon\\.ico|robots\\.txt).*)"],
@@ -122,6 +122,17 @@ export default async function middleware(request) {
           return new Response(JSON.stringify({ error: "langganan_habis" }), { status: 402, headers: { "content-type": "application/json", "cache-control": "no-store" } });
         }
         return new Response(null, { status: 302, headers: { location: new URL("/langganan", url).toString(), "cache-control": "no-store" } });
+      }
+      // Batas perangkat per akun (bila MAKS_PERANGKAT diisi).
+      let dv = { ok: true };
+      try { dv = await cekPerangkat(session.email, cookieDev(request.headers.get("cookie")), true); } catch (e) {
+        return new Response(JSON.stringify({ error: "layanan_sibuk" }), { status: 503, headers: { "content-type": "application/json", "cache-control": "no-store", "retry-after": "30" } });
+      }
+      if (!dv.ok) {
+        if (url.pathname.startsWith("/data/") || url.pathname.startsWith("/api/")) {
+          return new Response(JSON.stringify({ error: "perangkat_penuh" }), { status: 403, headers: { "content-type": "application/json", "cache-control": "no-store" } });
+        }
+        return new Response(null, { status: 302, headers: { location: new URL("/langganan?perangkat=1", url).toString(), "cache-control": "no-store" } });
       }
     }
   }
