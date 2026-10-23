@@ -70,9 +70,9 @@
 "q": "Takbir mursal artinya...",
 "c": "Takbir yang tidak dilakukan setelah shalat",
 "x": [
-"Takbir setelah shalat",
-"Takbir hanya di masjid",
-"Takbir pada malam Jumat"
+"Takbir yang hanya dilakukan setelah shalat fardhu",
+"Takbir yang hanya dilakukan di dalam masjid",
+"Takbir yang hanya dilakukan pada malam Jumat"
 ],
 "e": "Takbir mursal adalah yang tidak dilakukan setelah shalat; muqayyad setelah shalat.",
 "p": 5
@@ -81,9 +81,9 @@
 "q": "Takbir mursal Idul Fitri dimulai sejak kapan?",
 "c": "Sejak terbenam matahari pada malam Id",
 "x": [
-"Sejak fajar hari Id",
-"Sejak awal Ramadhan",
-"Sejak tengah malam Id"
+"Sejak fajar hari Id sampai imam masuk untuk shalat",
+"Sejak awal bulan Ramadhan sampai hari Id tiba",
+"Sejak tengah malam Id sampai imam masuk shalat"
 ],
 "e": "Takbir sunnah sejak terbenam matahari malam Id, yaitu Idul Fitri.",
 "p": 5
@@ -92,9 +92,9 @@
 "q": "Takbir muqayyad pada Idul Adha dilakukan setelah apa?",
 "c": "Setelah shalat-shalat fardhu dan juga sunnah serta jenazah",
 "x": [
-"Hanya setelah Shubuh",
-"Hanya setelah Jumat",
-"Hanya setelah shalat Id"
+"Hanya setelah shalat Shubuh pada hari Arafah",
+"Hanya setelah shalat Jumat pada hari tasyriq",
+"Hanya setelah shalat Id pada hari raya saja"
 ],
 "e": "Takbir muqayyad Idul Adha setelah shalat fardhu (ada' atau qadha), rawatib, sunnah mutlak, dan jenazah.",
 "p": 6
@@ -149,9 +149,9 @@
 "q": "Apa yang dilakukan imam setelah shalat gerhana?",
 "c": "Berkhutbah dua khutbah dan mendorong taubat serta sedekah",
 "x": [
-"Langsung pulang",
-"Berkhutbah satu khutbah tanpa nasihat",
-"Membaca doa istisqa'"
+"Langsung pulang tanpa berkhutbah karena shalat telah selesai",
+"Berkhutbah satu khutbah tanpa mendorong taubat dan sedekah",
+"Membaca doa istisqa' dan membalik selendangnya"
 ],
 "e": "Imam berkhutbah dua khutbah seperti Jumat, mendorong taubat, sedekah, memerdekakan budak.",
 "p": 4
@@ -184,9 +184,9 @@
 "q": "Kapan shalat istisqa' disunnahkan?",
 "c": "Ketika ada kebutuhan seperti terputusnya hujan atau mata air",
 "x": [
-"Setiap hari Jumat",
-"Setiap musim kemarau tanpa kebutuhan",
-"Hanya saat terjadi banjir"
+"Setiap hari Jumat setelah shalat Jumat selesai",
+"Setiap musim kemarau walaupun tanpa ada kebutuhan",
+"Hanya ketika terjadi banjir yang merusak rumah penduduk"
 ],
 "e": "Disunnahkan bagi mukim dan musafir ketika ada kebutuhan seperti terputusnya hujan atau mata air.",
 "p": 1
@@ -195,9 +195,9 @@
 "q": "Jika belum diberi hujan, bagaimana?",
 "c": "Shalat istisqa' diulang sampai Allah memberi hujan",
 "x": [
-"Cukup sekali saja",
-"Diganti shalat gerhana",
-"Diganti puasa tiga hari"
+"Cukup sekali saja, tidak perlu diulang lagi",
+"Diganti dengan shalat gerhana pada hari berikutnya",
+"Diganti dengan puasa tiga hari berturut-turut"
 ],
 "e": "Shalat istisqa' diulang kedua kalinya dan lebih jika belum diberi hujan.",
 "p": 1
@@ -206,9 +206,9 @@
 "q": "Apa yang diperintahkan imam kepada orang sebelum istisqa'?",
 "c": "Bertaubat, bersedekah, meninggalkan kezaliman, berdamai, dan puasa tiga hari",
 "x": [
-"Berpuasa sebulan penuh",
-"Berkumpul tanpa persiapan",
-"Membawa hewan kurban"
+"Berpuasa sebulan penuh dan bersedekah seluruh harta",
+"Berkumpul di lapangan tanpa persiapan apa pun",
+"Membawa hewan kurban dan memotongnya di lapangan"
 ],
 "e": "Imam memerintahkan taubat, sedekah, keluar dari kezaliman, berdamai, dan berpuasa tiga hari.",
 "p": 2
@@ -217,9 +217,9 @@
 "q": "Pada hari ke berapa mereka keluar untuk shalat istisqa'?",
 "c": "Hari keempat, dalam keadaan berpuasa",
 "x": [
-"Hari pertama",
-"Hari kedua",
-"Hari ketujuh"
+"Hari pertama setelah imam memerintahkan taubat",
+"Hari kedua setelah imam memerintahkan taubat",
+"Hari ketujuh setelah imam memerintahkan taubat"
 ],
 "e": "Setelah puasa tiga hari, imam keluar bersama mereka pada hari keempat.",
 "p": 3
@@ -228,9 +228,9 @@
 "q": "Bagaimana pakaian dan sikap saat keluar istisqa'?",
 "c": "Pakaian sehari-hari, merendah, khusyuk, tanpa wewangian dan hiasan",
 "x": [
-"Pakaian terbaik dengan wewangian",
-"Pakaian putih bersih penuh hiasan",
-"Pakaian bebas, sambil bercanda"
+"Pakaian terbaik dengan wewangian dan hiasan",
+"Pakaian putih bersih penuh hiasan dan perhiasan",
+"Pakaian bebas, sambil bercanda dan bergembira ria"
 ],
 "e": "Mereka keluar dengan pakaian kerja sehari-hari, merendah, memelas, tanpa wewangian dan hiasan.",
 "p": 3
@@ -250,9 +250,9 @@
 "q": "Pada khutbah istisqa', apa yang menggantikan takbir pembuka?",
 "c": "Istighfar, sembilan kali pada khutbah pertama dan tujuh kali pada kedua",
 "x": [
-"Tasbih tiga kali",
-"Tahlil tujuh kali",
-"Hamdalah sembilan kali"
+"Tasbih, tiga kali pada khutbah pertama dan tiga kali pada kedua",
+"Tahlil, tujuh kali pada khutbah pertama dan tujuh kali pada kedua",
+"Hamdalah, sembilan kali pada khutbah pertama saja"
 ],
 "e": "Istighfar menggantikan takbir pembuka khutbah Id.",
 "p": 5
@@ -261,9 +261,9 @@
 "q": "Apa yang dilakukan khatib dengan selendangnya?",
 "c": "Membalik selendang: kanan ke kiri, atas ke bawah",
 "x": [
-"Menanggalkan selendang",
-"Mengikatnya di leher",
-"Melepasnya dan memberikannya"
+"Menanggalkan selendangnya dan meletakkannya di mimbar",
+"Mengikat selendangnya di leher hingga khutbah selesai",
+"Melepas selendangnya dan memberikannya kepada makmum"
 ],
 "e": "Khatib membalik selendangnya, dan orang-orang melakukan hal yang sama.",
 "p": 6
@@ -272,9 +272,9 @@
 "q": "Ayat apa yang dibaca khatib dalam istisqa'?",
 "c": "QS. Nuh ayat 10-11 tentang memohon ampun agar diturunkan hujan",
 "x": [
-"QS. al-Ikhlas",
-"QS. al-Fatihah",
-"QS. at-Taubah ayat 60"
+"QS. al-Ikhlas yang dibaca berulang tiga kali",
+"QS. al-Fatihah yang dibaca bersama jamaah",
+"QS. at-Taubah ayat 60 tentang golongan penerima zakat"
 ],
 "e": "Khatib membaca 'Mohonlah ampun kepada Tuhanmu...' (QS. Nuh: 10–11).",
 "p": 7
@@ -285,9 +285,9 @@
 "q": "Mengapa shalat khauf disendirikan dalam satu fasal?",
 "c": "Karena ditoleransi hal-hal yang tidak ditoleransi dalam keadaan lain",
 "x": [
-"Karena hanya dilakukan sekali setahun",
-"Karena tidak ada hukumnya",
-"Karena sama persis dengan shalat biasa"
+"Karena hanya dilakukan sekali setahun saat perang besar",
+"Karena tidak ada hukum khusus yang mengaturnya dalam fiqih",
+"Karena sama persis dengan shalat biasa tanpa perbedaan apa pun"
 ],
 "e": "Dalam shalat fardhu ketika takut ditoleransi hal-hal yang tidak ditoleransi pada keadaan lain.",
 "p": 1
@@ -307,9 +307,9 @@
 "q": "Bentuk pertama shalat khauf terjadi saat...",
 "c": "Musuh berada di selain arah kiblat dan jumlahnya sedikit",
 "x": [
-"Musuh berada di arah kiblat",
-"Perang berkecamuk",
-"Tidak ada musuh"
+"Musuh berada di arah kiblat dan jumlahnya sangat banyak",
+"Perang sedang berkecamuk dan tidak ada waktu menyusun shaf",
+"Tidak ada musuh di sekitar tetapi pasukan tetap berjaga"
 ],
 "e": "Pertama: musuh di selain arah kiblat, jumlahnya sedikit, kaum muslimin banyak.",
 "p": 2
@@ -318,9 +318,9 @@
 "q": "Pada bentuk pertama, imam membagi pasukan menjadi...",
 "c": "Dua kelompok: satu menjaga musuh, satu shalat di belakangnya",
 "x": [
-"Tiga kelompok",
-"Satu kelompok saja",
-"Empat kelompok"
+"Tiga kelompok: satu menjaga, satu shalat, satu beristirahat",
+"Satu kelompok saja yang shalat bersama imam",
+"Empat kelompok yang shalat secara bergiliran bersama imam"
 ],
 "e": "Imam membagi dua kelompok: satu berdiri menghadap musuh, satu di belakang imam.",
 "p": 3
@@ -351,9 +351,9 @@
 "q": "Pada bentuk kedua, saat imam sujud apa yang dilakukan?",
 "c": "Satu shaf sujud bersama imam, shaf lain menjaga, lalu bergantian",
 "x": [
-"Semua shaf sujud sekaligus",
-"Semua shaf berdiri menjaga",
-"Tidak ada yang sujud"
+"Semua shaf sujud bersama imam pada waktu yang sama",
+"Semua shaf berdiri menjaga dan tidak ada yang sujud",
+"Tidak ada yang sujud sampai imam selesai ruku' berkali-kali"
 ],
 "e": "Satu shaf sujud bersama imam sementara shaf lain berdiri menjaga.",
 "p": 6
@@ -373,9 +373,9 @@
 "q": "Bentuk ketiga terjadi saat...",
 "c": "Sangat takut dan perang berkecamuk",
 "x": [
-"Musuh jauh",
-"Musuh tidak tampak",
-"Tidak ada perang"
+"Musuh masih jauh dan tidak tampak oleh pasukan",
+"Musuh tidak tampak tetapi diduga akan datang menyerang",
+"Tidak ada perang dan keadaan benar-benar aman terkendali"
 ],
 "e": "Ketiga: sangat takut dan perang berkecamuk, pasukan bercampur.",
 "p": 8
@@ -384,9 +384,9 @@
 "q": "Dalam bentuk ketiga, bagaimana boleh shalat?",
 "c": "Bagaimanapun mampu, berjalan atau berkendaraan, menghadap kiblat atau tidak",
 "x": [
-"Harus menghadap kiblat",
-"Harus berdiri tegak",
-"Wajib ditunda"
+"Harus menghadap kiblat dan berdiri tegak sepanjang shalat",
+"Harus berdiri tegak dengan ruku' dan sujud yang sempurna",
+"Wajib ditunda sampai perang selesai dan keadaan aman"
 ],
 "e": "Setiap orang shalat bagaimanapun mampu, menghadap kiblat atau tidak, dimaafkan gerakan banyak.",
 "p": 9
@@ -397,9 +397,9 @@
 "q": "Apa yang haram dipakai laki-laki tanpa darurat?",
 "c": "Sutra dan cincin emas",
 "x": [
-"Katun",
-"Kulit",
-"Wol"
+"Katun dan kain wol yang halus untuk shalat",
+"Kulit hewan yang telah disamak dan wol",
+"Wol tebal dan kain linen biasa untuk musim dingin"
 ],
 "e": "Haram atas laki-laki memakai sutra dan cincin emas dalam keadaan tidak terpaksa.",
 "p": 1
@@ -408,9 +408,9 @@
 "q": "Kapan laki-laki boleh memakai sutra?",
 "c": "Karena darurat seperti panas atau dingin yang membinasakan",
 "x": [
-"Kapan saja",
-"Saat shalat",
-"Saat bepergian"
+"Kapan saja ia suka, karena hanya sebagai perhiasan",
+"Hanya saat shalat dengan niat menutup aurat",
+"Hanya saat bepergian jauh tanpa ada darurat"
 ],
 "e": "Halal bagi laki-laki karena darurat seperti panas dan dingin yang membinasakan.",
 "p": 1
@@ -419,9 +419,9 @@
 "q": "Bagaimana hukum sutra bagi perempuan?",
 "c": "Halal dipakai dan dijadikan alas",
 "x": [
-"Haram",
-"Makruh",
-"Haram jika banyak"
+"Haram dipakai dan dijadikan alas sebagaimana laki-laki",
+"Makruh dipakai kecuali ketika hari raya saja",
+"Haram jika banyak, halal jika hanya sedikit"
 ],
 "e": "Halal bagi perempuan memakai sutra dan menjadikannya alas.",
 "p": 2
@@ -441,9 +441,9 @@
 "q": "Kain campuran sutra dan katun, kapan halal dipakai laki-laki?",
 "c": "Jika sutra tidak dominan, atau sama banyak",
 "x": [
-"Jika sutra dominan",
-"Tidak pernah halal",
-"Hanya jika katun sedikit"
+"Jika sutra lebih dominan daripada katun dan bahan lainnya",
+"Tidak pernah halal dengan alasan apa pun bagi laki-laki",
+"Hanya jika katun sedikit dan sutra yang paling banyak"
 ],
 "e": "Boleh selama ibrisam tidak dominan; jika sama, halal menurut pendapat paling sahih.",
 "p": 3
@@ -465,9 +465,9 @@
 "q": "Bagaimana hukum menshalati mayat kafir?",
 "c": "Haram, harbi maupun dzimmi",
 "x": [
-"Wajib",
-"Sunnah",
-"Makruh"
+"Wajib, harbi maupun dzimmi, sebagaimana muslim",
+"Sunnah, khusus bagi kafir dzimmi saja",
+"Makruh, tetapi tidak sampai haram bagi kerabatnya"
 ],
 "e": "Menshalati mayat kafir haram; memandikan boleh.",
 "p": 2
@@ -476,9 +476,9 @@
 "q": "Mayat yang dikafani dalam ihram, apa yang tidak ditutup?",
 "c": "Kepalanya (dan wajah perempuan ihram)",
 "x": [
-"Kakinya",
-"Tangannya",
-"Dadanya"
+"Kakinya dan kedua telapak kaki mayat itu",
+"Tangannya dan kedua telapak tangan mayat itu",
+"Dadanya dan perut mayat dalam kain kafan"
 ],
 "e": "Orang ihram, apabila dikafani, kepalanya tidak ditutup, demikian pula wajah perempuan ihram.",
 "p": 2
@@ -487,9 +487,9 @@
 "q": "Dua mayat yang tidak dimandikan dan tidak dishalati adalah...",
 "c": "Syahid dalam pertempuran melawan musyrik, dan janin keguguran yang tidak bersuara",
 "x": [
-"Anak kecil dan perempuan hamil",
-"Orang sakit dan orang tua",
-"Orang murtad dan orang gila"
+"Anak kecil dan perempuan hamil yang meninggal",
+"Orang sakit dan orang tua yang meninggal wajar",
+"Orang murtad dan orang gila yang meninggal"
 ],
 "e": "Pertama syahid dalam perang melawan musyrik; kedua janin keguguran yang tidak bersuara.",
 "p": 3
@@ -520,9 +520,9 @@
 "q": "Minimal memandikan mayat adalah...",
 "c": "Meratakan air ke seluruh badan satu kali",
 "x": [
-"Tiga kali basuhan",
-"Tujuh kali basuhan",
-"Hanya membasuh wajah"
+"Membasuhnya tiga kali pada seluruh badan",
+"Membasuhnya tujuh kali pada seluruh badan",
+"Hanya membasuh wajah dan kedua tangan mayat"
 ],
 "e": "Minimal meratakan air ke seluruh badannya sekali.",
 "p": 6
@@ -531,9 +531,9 @@
 "q": "Mayat dikafani dengan berapa lembar kain?",
 "c": "Tiga lembar putih, tanpa gamis dan serban",
 "x": [
-"Satu lembar",
-"Lima lembar wajib",
-"Dua lembar berwarna"
+"Satu lembar saja yang menutupi seluruh badan",
+"Lima lembar wajib, termasuk gamis dan serban",
+"Dua lembar berwarna yang menutupi seluruh badan"
 ],
 "e": "Kafan tiga lembar kain putih pembungkus, tanpa gamis dan serban.",
 "p": 7
@@ -542,9 +542,9 @@
 "q": "Berapa takbir dalam shalat jenazah?",
 "c": "Empat takbir termasuk takbiratul ihram",
 "x": [
-"Tiga takbir",
-"Lima takbir",
-"Dua takbir"
+"Tiga takbir termasuk takbiratul ihram",
+"Lima takbir termasuk takbiratul ihram",
+"Dua takbir termasuk takbiratul ihram"
 ],
 "e": "Empat takbir termasuk takbiratul ihram; lima kali tidak membatalkan.",
 "p": 9
@@ -553,9 +553,9 @@
 "q": "Apa yang dilakukan makmum jika imam bertakbir lima kali?",
 "c": "Tidak mengikutinya; salam atau menunggu imam salam",
 "x": [
-"Ikut bertakbir lima",
-"Shalat batal",
-"Menambah satu takbir"
+"Ikut bertakbir lima kali bersama imam sampai selesai",
+"Shalatnya batal karena menyalahi jumlah takbir yang wajib",
+"Menambah satu takbir setelah imam salam dari shalat"
 ],
 "e": "Jika imam bertakbir lima kali, makmum tidak mengikuti.",
 "p": 9
@@ -575,9 +575,9 @@
 "q": "Minimal doa untuk mayat adalah...",
 "c": "Ya Allah, ampunilah dia",
 "x": [
-"Allahu akbar",
-"Subhanallah",
-"Alhamdulillah"
+"Allahu akbar, sambil mengangkat kedua tangan",
+"Subhanallah, sambil menghadap kiblat",
+"Alhamdulillah, sambil mengangkat kedua tangan"
 ],
 "e": "Minimal doa: 'Allahummaghfir lahu'.",
 "p": 11
@@ -586,9 +586,9 @@
 "q": "Takbir keempat diikuti doa...",
 "c": "Agar tidak terhalang dari pahala dan tidak terkena fitnah sepeninggalnya, lalu salam",
 "x": [
-"Doa untuk mayat lagi",
-"Shalawat",
-"Doa iftitah"
+"Doa untuk mayat lagi dengan lafadz yang sama",
+"Shalawat atas Nabi dan keluarganya seperti tasyahhud",
+"Doa iftitah yang dibaca pada shalat fardhu biasa"
 ],
 "e": "Pada takbir keempat berdoa: 'Ya Allah, janganlah Engkau halangi kami dari pahalanya...', lalu salam.",
 "p": 15
@@ -608,9 +608,9 @@
 "q": "Apa yang dimaksud dengan syaq dalam penguburan?",
 "c": "Lubang di tengah kubur seperti parit yang ditutup atap",
 "x": [
-"Lubang di sisi kubur",
-"Penutup mayat",
-"Kain kafan"
+"Lubang di sisi kubur yang dibuat miring ke kiblat",
+"Penutup mayat yang terbuat dari batu dan tanah",
+"Kain kafan yang dipakai membungkus seluruh badan mayat"
 ],
 "e": "Syaq adalah lubang di tengah kubur seperti parit, kedua sisinya dibangun, diberi atap bata.",
 "p": 17
@@ -619,9 +619,9 @@
 "q": "Doa ketika memasukkan mayat ke lahad?",
 "c": "Dengan nama Allah dan di atas agama Rasulullah ﷺ",
 "x": [
-"Allahu akbar",
-"Subhanallah",
-"La ilaha illallah"
+"Allahu akbar, lalu mayat diturunkan ke dalam kubur",
+"Subhanallah, lalu mayat diturunkan ke dalam kubur",
+"La ilaha illallah, lalu mayat diturunkan ke dalam kubur"
 ],
 "e": "Orang yang memasukkan mengucapkan 'Bismillah wa 'ala millati Rasulillah'.",
 "p": 18
@@ -630,9 +630,9 @@
 "q": "Bagaimana posisi mayat di kubur?",
 "c": "Di atas lambung kanan menghadap kiblat",
 "x": [
-"Terlentang",
-"Di atas lambung kiri",
-"Telungkup"
+"Terlentang menghadap ke atas di dalam kubur",
+"Di atas lambung kiri menghadap kiblat",
+"Telungkup menghadap tanah di dalam kubur"
 ],
 "e": "Dibaringkan menghadap kiblat di atas lambung kanan.",
 "p": 19
@@ -652,9 +652,9 @@
 "q": "Menangisi mayat hukumnya?",
 "c": "Boleh tanpa meratap dan merobek pakaian",
 "x": [
-"Haram",
-"Wajib",
-"Sunnah"
+"Haram dilakukan walaupun tanpa suara dan tanpa meratap",
+"Wajib dilakukan sebagai tanda kasih sayang kepada mayat",
+"Sunnah dilakukan dengan meratap dan menepuk dada"
 ],
 "e": "Boleh menangis tanpa meratap dan merobek pakaian; meninggalkannya lebih utama.",
 "p": 21
