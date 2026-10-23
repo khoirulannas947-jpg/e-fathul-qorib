@@ -4,9 +4,9 @@
 "q": "Apa itu mukhabarah?",
 "c": "Pekerja menggarap tanah pemilik dengan imbalan sebagian hasil, benih dari pekerja",
 "x": [
-"Pekerja menggarap tanah dengan benih dari pemilik",
-"Pemilik menyewakan tanah dengan emas",
-"Pemilik menjual tanah dengan hasil"
+"Pekerja menggarap tanah pemilik dengan benih dari pemilik tanah",
+"Pemilik menyewakan tanah dengan emas dan perak yang diketahui",
+"Pemilik menjual tanah dengan hasil panen yang akan datang"
 ],
 "e": "Mukhabarah: pekerja bekerja di tanah pemilik dengan imbalan sebagian hasil, benihnya dari pekerja; muzara'ah benihnya dari pemilik.",
 "p": 1
@@ -15,9 +15,9 @@
 "q": "Apa itu muzara'ah?",
 "c": "Pekerja menggarap tanah dengan imbalan sebagian hasil, benih dari pemilik",
 "x": [
-"Benih dari pekerja",
-"Sewa tanah dengan emas",
-"Gadai tanah"
+"Pekerja menggarap tanah dengan benih dari pekerja sendiri",
+"Penyewaan tanah dengan emas atau perak yang diketahui",
+"Penggadaian tanah sebagai jaminan utang yang ada"
 ],
 "e": "Muzara'ah: pekerja bekerja di tanah dengan sebagian hasil, benihnya dari pemilik.",
 "p": 2
@@ -26,9 +26,9 @@
 "q": "Cara yang diperbolehkan untuk menggarapkan tanah adalah...",
 "c": "Menyewakan tanah dengan emas atau perak atau makanan yang diketahui",
 "x": [
-"Dengan sebagian hasil yang tidak diketahui",
-"Dengan imbalan hasil yang jauh",
-"Dengan janji tanpa kadar"
+"Dengan sebagian hasil yang tidak diketahui kadarnya",
+"Dengan imbalan hasil yang dipanen jauh di masa depan",
+"Dengan janji tanpa menyebut kadar yang diketahui"
 ],
 "e": "Jika menyewakan tanah dengan emas/perak atau makanan yang diketahui dalam tanggungan, itu sah.",
 "p": 2
@@ -39,9 +39,9 @@
 "q": "Apa itu tanah mati?",
 "c": "Tanah yang tidak ada pemiliknya dan tidak dimanfaatkan seorang pun",
 "x": [
-"Tanah yang tandus",
-"Tanah yang gersang",
-"Tanah milik negara"
+"Tanah yang tandus dan tidak ditumbuhi tanaman apa pun",
+"Tanah yang gersang dan tidak memiliki sumber air",
+"Tanah milik negara yang dikelola oleh imam"
 ],
 "e": "Tanah mati adalah tanah yang tidak ada pemiliknya dan tidak dimanfaatkan seorang pun.",
 "p": 1
@@ -50,9 +50,9 @@
 "q": "Siapa yang berhak menghidupkan tanah mati?",
 "c": "Muslim, di tanah yang bebas belum pernah dimiliki",
 "x": [
-"Hanya imam",
-"Hanya orang kaya",
-"Hanya penduduk setempat"
+"Hanya imam atau wakilnya yang boleh menghidupkannya",
+"Hanya orang kaya yang mampu mengelola tanah itu",
+"Hanya penduduk setempat yang berdekatan dengan tanah itu"
 ],
 "e": "Menghidupkan tanah mati boleh dengan dua syarat: pelakunya muslim dan tanah bebas belum pernah dimiliki muslim.",
 "p": 1
@@ -61,9 +61,9 @@
 "q": "Tanah yang dahulu digarap dan kini rusak, milik siapa?",
 "c": "Milik pemiliknya jika diketahui, muslim maupun dzimmi",
 "x": [
-"Milik imam",
-"Milik yang menghidupkan",
-"Milik penduduk"
+"Milik imam karena tanah itu telah ditinggalkan pemiliknya",
+"Milik orang yang menghidupkannya kembali setelah rusak",
+"Milik penduduk yang tinggal di sekitar tanah itu"
 ],
 "e": "Tanah yang dahulu digarap lalu rusak adalah milik pemiliknya jika diketahui.",
 "p": 3
@@ -72,9 +72,9 @@
 "q": "Cara menghidupkan tanah mati untuk tempat tinggal?",
 "c": "Memagari lahan dan membuat atap",
 "x": [
-"Menanam rumput",
-"Memberi tanda",
-"Menyiram air"
+"Menanam rumput di sekeliling lahan yang akan dihuni",
+"Memberi tanda batas pada lahan yang akan dihuni",
+"Menyiram lahan dengan air sampai subur dan lembap"
 ],
 "e": "Untuk tempat tinggal disyaratkan memagari lahan dengan bangunan dan memasang atap.",
 "p": 5
@@ -83,9 +83,9 @@
 "q": "Cara menghidupkan tanah mati untuk kandang hewan?",
 "c": "Cukup pemagaran yang lebih ringan, tanpa atap",
 "x": [
-"Dengan atap penuh",
-"Dengan taman",
-"Dengan irigasi"
+"Dengan atap penuh seperti pada rumah tempat tinggal",
+"Dengan taman yang ditanami pohon dan rumput",
+"Dengan irigasi yang mengalirkan air ke seluruh lahan"
 ],
 "e": "Untuk kandang cukup pemagaran lebih ringan dan tidak disyaratkan atap.",
 "p": 6
@@ -94,9 +94,9 @@
 "q": "Cara menghidupkan tanah mati sebagai ladang?",
 "c": "Mengumpulkan tanah di sekelilingnya, meratakannya, dan menyiapkan pengairan",
 "x": [
-"Menanam pohon",
-"Membuat rumah",
-"Menyewakan"
+"Menanam pohon di sekeliling lahan yang akan digarap",
+"Membuat rumah di tengah lahan yang akan digarap",
+"Menyewakannya kepada orang lain untuk digarap"
 ],
 "e": "Untuk ladang: mengumpulkan tanah di sekelilingnya, meratakan, dan mengatur air.",
 "p": 6
@@ -116,9 +116,9 @@
 "q": "Syarat pertama wajib memberikan air?",
 "c": "Air itu lebih dari kebutuhan pemiliknya",
 "x": [
-"Air itu terbatas",
-"Air itu mahal",
-"Air itu jauh"
+"Air itu terbatas jumlahnya untuk kebutuhan pemiliknya saja",
+"Air itu mahal harganya sehingga hanya sebagian yang membeli",
+"Air itu jauh dari tempat yang membutuhkan"
 ],
 "e": "Pertama: air lebih dari kebutuhan pemiliknya.",
 "p": 8
@@ -129,9 +129,9 @@
 "q": "Apa makna wakaf secara bahasa dan syara'?",
 "c": "Bahasa: menahan; syara': menahan harta tertentu yang bermanfaat dengan utuh bendanya dan memutus tasharruf atasnya",
 "x": [
-"Bahasa: memberi; syara': memberi harta",
-"Bahasa: menjual; syara': menjual harta",
-"Bahasa: meminjam; syara': meminjam harta"
+"Bahasa: memberi; syara': memberi harta kepada orang lain tanpa imbalan",
+"Bahasa: menjual; syara': menjual harta untuk kebaikan umum",
+"Bahasa: meminjam; syara': meminjam harta untuk dimanfaatkan sementara"
 ],
 "e": "Wakaf: menahan harta, manfaatnya disalurkan pada kebaikan, dengan memutus tasharruf.",
 "p": 1
@@ -151,9 +151,9 @@
 "q": "Syarat pertama wakaf?",
 "c": "Barang wakaf dapat dimanfaatkan dengan tetap utuh bendanya",
 "x": [
-"Barang habis dipakai",
-"Barang mudah rusak",
-"Barang dikonsumsi"
+"Barang itu habis dipakai ketika dimanfaatkan oleh penerimanya",
+"Barang itu mudah rusak dan tidak tahan lama",
+"Barang itu dikonsumsi sehingga bendanya hilang"
 ],
 "e": "Pertama: barang wakaf dapat dimanfaatkan dengan tetap utuh bendanya.",
 "p": 2
@@ -162,9 +162,9 @@
 "q": "Benda apa yang tidak sah diwakafkan?",
 "c": "Makanan dan tanaman harum yang tidak tetap bendanya",
 "x": [
-"Tanah",
-"Rumah",
-"Buku"
+"Tanah yang luas dan dapat dimanfaatkan terus-menerus",
+"Rumah yang dapat dihuni dan disewakan terus-menerus",
+"Buku yang dapat dibaca dan dimanfaatkan terus-menerus"
 ],
 "e": "Benda yang tidak tetap bendanya seperti makanan dan tanaman harum tidak sah diwakafkan.",
 "p": 3
@@ -173,9 +173,9 @@
 "q": "Syarat kedua wakaf?",
 "c": "Atas pangkal yang ada dan cabang yang tidak terputus",
 "x": [
-"Atas orang yang sudah meninggal",
-"Atas yang terputus awalnya",
-"Atas yang terputus akhirnya"
+"Atas orang yang sudah meninggal dunia sebelum akad",
+"Atas yang terputus awalnya seperti orang yang belum lahir",
+"Atas yang terputus akhirnya seperti maksiat"
 ],
 "e": "Kedua: wakaf atas pangkal yang ada dan cabang yang tidak terputus.",
 "p": 4
@@ -208,9 +208,9 @@
 "q": "Apa itu hibah secara syara'?",
 "c": "Memberi kepemilikan benda secara langsung tanpa batas waktu ketika hidup, tanpa imbalan",
 "x": [
-"Memberi kepemilikan setelah meninggal",
-"Meminjamkan benda sementara",
-"Menjual benda dengan harga murah"
+"Memberi kepemilikan benda setelah pemberi meninggal dunia",
+"Meminjamkan benda secara sementara untuk dimanfaatkan",
+"Menjual benda dengan harga yang jauh lebih murah"
 ],
 "e": "Hibah: memberi kepemilikan benda secara langsung, tanpa batas waktu, ketika hidup, tanpa imbalan.",
 "p": 1
@@ -241,9 +241,9 @@
 "q": "Hibah mengikat dengan apa?",
 "c": "Serah terima dengan izin pemberi",
 "x": [
-"Ijab saja",
-"Qabul saja",
-"Saksi saja"
+"Ijab saja dari pemberi tanpa adanya penerimaan",
+"Qabul saja dari penerima tanpa adanya serah terima",
+"Saksi saja yang menyaksikan ijab dan qabul"
 ],
 "e": "Hibah tidak mengikat kecuali dengan serah terima dengan izin pemberi.",
 "p": 4
@@ -252,9 +252,9 @@
 "q": "Siapa yang boleh menarik kembali hibah setelah diterima?",
 "c": "Orang tua dan kakek ke atas",
 "x": [
-"Siapa saja",
-"Saudara",
-"Tetangga"
+"Siapa saja yang memberi, termasuk kepada orang lain",
+"Saudara yang memberi kepada saudaranya yang sekandung",
+"Tetangga yang memberi kepada tetangganya yang dekat"
 ],
 "e": "Pemberi tidak boleh menarik kembali kecuali orang tua, walaupun ke atas.",
 "p": 5
@@ -265,9 +265,9 @@
 "q": "Apa itu luqathah?",
 "c": "Harta yang hilang dari pemiliknya karena jatuh atau lalai",
 "x": [
-"Harta yang dicuri",
-"Harta yang disembunyikan",
-"Harta yang diwakafkan"
+"Harta yang dicuri dari pemiliknya oleh pencuri",
+"Harta yang sengaja disembunyikan oleh pemiliknya",
+"Harta yang telah diwakafkan oleh pemiliknya"
 ],
 "e": "Luqathah adalah harta yang hilang dari pemiliknya karena jatuh, lalai, atau semisalnya.",
 "p": 1
@@ -287,9 +287,9 @@
 "q": "Apa yang wajib dikenali penemu segera setelah mengambil?",
 "c": "Enam perkara: wadah, 'ifash, tali, jenis, jumlah, dan timbangan",
 "x": [
-"Hanya jenis",
-"Hanya jumlah",
-"Hanya tempat"
+"Hanya jenisnya saja, tanpa memperhatikan lainnya",
+"Hanya jumlahnya saja, tanpa memperhatikan lainnya",
+"Hanya tempat ditemukannya saja, tanpa memperhatikan lainnya"
 ],
 "e": "Wajib mengenali enam perkara pada barang temuan segera setelah mengambilnya.",
 "p": 4
@@ -331,9 +331,9 @@
 "q": "Macam kedua: barang tidak tahan lama seperti makanan basah, pilihan penemu?",
 "c": "Memakannya dan menggantinya, atau menjualnya dan menjaga harganya",
 "x": [
-"Membuangnya",
-"Menyimpannya",
-"Memberikannya"
+"Membuangnya karena tidak bisa disimpan lama",
+"Menyimpannya sampai pemiliknya datang walaupun membusuk",
+"Memberikannya kepada fakir miskin tanpa menjaga nilainya"
 ],
 "e": "Penemu diberi pilihan antara memakannya dan mengganti, atau menjualnya dan menjaga harga.",
 "p": 11
@@ -342,9 +342,9 @@
 "q": "Hewan yang mampu bertahan sendiri dari binatang buas kecil (unta, kuda) di padang pasir?",
 "c": "Dibiarkan; haram memungutnya untuk dimiliki",
 "x": [
-"Dipungut",
-"Dimakan",
-"Dijual"
+"Boleh dipungut untuk dimiliki oleh penemunya",
+"Dimakan oleh penemunya karena sudah tidak bertuan",
+"Dijual oleh penemunya dan uangnya diambil sendiri"
 ],
 "e": "Ia membiarkannya, haram memungut untuk dimiliki; jika mengambil, ia menanggung.",
 "p": 14
@@ -355,9 +355,9 @@
 "q": "Siapakah yang dimaksud dengan laqith dalam bab ini?",
 "c": "Anak kecil yang dibuang dan tidak ada yang menanggungnya",
 "x": [
-"Anak yatim",
-"Anak orang kaya",
-"Anak yang hilang"
+"Anak yatim yang telah ditinggal mati ayahnya",
+"Anak orang kaya yang dititipkan kepada tetangga",
+"Anak yang hilang dan masih diketahui orang tuanya"
 ],
 "e": "Laqith adalah anak kecil yang dibuang dan tidak ada yang menanggungnya.",
 "p": 1
@@ -366,9 +366,9 @@
 "q": "Memungut anak pungut hukumnya?",
 "c": "Fardhu kifayah",
 "x": [
-"Sunnah",
-"Mubah",
-"Makruh"
+"Sunnah bagi yang mampu merawat dan mendidiknya",
+"Mubah, boleh dipungut dan boleh ditinggalkan",
+"Makruh karena menambah beban orang yang memungutnya"
 ],
 "e": "Jika sebagian orang telah memungutnya, gugurlah dosa yang lain.",
 "p": 2
@@ -377,9 +377,9 @@
 "q": "Jika ada harta bersama anak pungut, siapa yang memberi nafkah?",
 "c": "Hakim memberinya nafkah dari harta itu",
 "x": [
-"Pemungut dari hartanya",
-"Tetangga",
-"Orang tua"
+"Pemungut dari hartanya sendiri sebagai bentuk kebaikan",
+"Tetangga terdekat dari harta yang mereka kumpulkan",
+"Orang tua anak itu bila diketahui keberadaannya"
 ],
 "e": "Hakim memberinya nafkah dari harta itu; jika tidak ada, dari baitul mal.",
 "p": 3
@@ -390,9 +390,9 @@
 "q": "Apa makna wadi'ah?",
 "c": "Akad penitipan agar sesuatu dijaga",
 "x": [
-"Akad pinjam",
-"Akad sewa",
-"Akad jual"
+"Akad pinjam barang agar dimanfaatkan oleh peminjam",
+"Akad sewa barang agar dimanfaatkan oleh penyewa",
+"Akad jual barang agar dimiliki oleh pembeli"
 ],
 "e": "Wadi'ah adalah akad yang menuntut permintaan penjagaan.",
 "p": 1
@@ -401,9 +401,9 @@
 "q": "Hukum menerima titipan bagi yang mampu menjaga?",
 "c": "Sunnah, wajib bila tidak ada orang lain",
 "x": [
-"Haram",
-"Makruh",
-"Mubah"
+"Haram karena menimbulkan tanggungan bagi penerima titipan",
+"Makruh karena dikhawatirkan menimbulkan tanggungan",
+"Mubah, boleh diterima dan boleh ditolak dalam semua keadaan"
 ],
 "e": "Disunnahkan menerimanya bagi yang mampu; jika tidak ada orang lain, wajib.",
 "p": 2
