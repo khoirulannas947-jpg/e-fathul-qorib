@@ -13,7 +13,7 @@
 ],
 "u110":[
 {"q":"Siapa yang berhak atas salab?","c":"Pembunuh musuh yang mempertaruhkan dirinya dalam perang","x":["Semua pasukan","Imam","Orang yang melihat saja"],"e":"Pembunuh musuh diberi salabnya jika ia mempertaruhkan dirinya.","p":1},
-{"q":"Apa itu salab?","c":"Pakaian, senjata, dan kendaraan musuh yang terbunuh","x":["Seperlima ghanimah","Tawanan perang","Tebusan"],"e":"Salab adalah pakaian, sepatu, alat perang, kendaraan yang ia tunggangi dan semisalnya.","p":2},
+{"q":"Apakah yang dimaksud dengan salab dalam peperangan?","c":"Pakaian, senjata, dan kendaraan musuh yang terbunuh","x":["Seperlima ghanimah","Tawanan perang","Tebusan"],"e":"Salab adalah pakaian, sepatu, alat perang, kendaraan yang ia tunggangi dan semisalnya.","p":2},
 {"q":"Apa makna ghanimah?","c":"Harta dari kafir harbi dengan peperangan","x":["Harta tanpa perang","Harta orang muslim","Harta pajak"],"e":"Ghanimah adalah harta yang diperoleh dari kafir harbi dengan peperangan.","p":4},
 {"q":"Berapa bagian ghanimah yang diberikan kepada yang hadir perang?","c":"Empat perlima","x":["Seperlima","Setengah","Sepertiga"],"e":"Ghanimah dibagi lima: empat perlima untuk yang hadir pertempuran.","p":5},
 {"q":"Berapa bagian untuk penunggang kuda?","c":"Tiga bagian: dua untuk kuda dan satu untuk dirinya","x":["Satu bagian","Dua bagian","Lima bagian"],"e":"Penunggang kuda mendapat tiga bagian.","p":6},
@@ -27,7 +27,7 @@
 {"q":"Kepada siapa empat perlima fai' dibagikan?","c":"Prajurit yang tercatat dalam daftar tentara bergaji","x":["Orang miskin","Kerabat imam","Para pedagang"],"e":"Empat perlima diberikan kepada prajurit yang ditetapkan imam.","p":3}
 ],
 "u112":[
-{"q":"Apa jizyah?","c":"Pungutan yang ditetapkan atas ahli dzimmah","x":["Zakat bagi muslim","Pajak jual beli","Denda perang"],"e":"Jizyah adalah pungutan yang ditetapkan atas ahli dzimmah.","p":1},
+{"q":"Apakah yang dimaksud dengan jizyah menurut syara'?","c":"Pungutan yang ditetapkan atas ahli dzimmah","x":["Zakat bagi muslim","Pajak jual beli","Denda perang"],"e":"Jizyah adalah pungutan yang ditetapkan atas ahli dzimmah.","p":1},
 {"q":"Berapa syarat wajib jizyah?","c":"Lima","x":["Dua","Tiga","Tujuh"],"e":"Syarat wajib jizyah ada lima: baligh, berakal, merdeka, laki-laki, ahli kitab.","p":3},
 {"q":"Siapa yang tidak dikenakan jizyah?","c":"Anak kecil, perempuan, dan budak","x":["Laki-laki dewasa","Orang berakal","Ahli kitab merdeka"],"e":"Jizyah tidak atas anak kecil, orang gila, budak, perempuan, dan khuntsa.","p":4},
 {"q":"Siapa yang dikenai jizyah dari segi agama?","c":"Ahli kitab dan yang punya syubhat kitab","x":["Semua kafir","Hanya Majusi","Hanya penyembah berhala"],"e":"Jizyah diakadkan untuk ahli kitab atau yang memiliki syubhat kitab.","p":5},

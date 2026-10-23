@@ -1,0 +1,25 @@
+{
+"u117":[
+{"q":"Perlombaan sah dilakukan dengan hewan apa?","c":"Hewan tunggangan seperti kuda dan unta","x":["Hewan buas","Burung","Ikan"],"e":"Sah perlombaan dengan hewan tunggangan yang menjadi asal perlombaan: kuda, unta, dan semisalnya.","p":1},
+{"q":"Apa syarat sahnya munadhalah (lomba memanah)?","c":"Jarak dan sifat lomba diketahui","x":["Jarak tidak perlu diketahui","Tanpa hadiah","Harus di dalam masjid"],"e":"Munadhalah sah dengan anak panah apabila jarak dan sifat lomba diketahui.","p":2},
+{"q":"Jika salah satu peserta saja yang mengeluarkan hadiah dan ia menang, apa yang dilakukan?","c":"Ia mengambil kembali hadiahnya","x":["Hadiah hilang","Hadiah untuk imam","Hadiah dibagi dua"],"e":"Jika yang mengeluarkan hadiah menang, ia mengambil kembali hadiahnya.","p":4},
+{"q":"Jika keduanya mengeluarkan hadiah, apa syaratnya?","c":"Harus ada muhallil (pihak ketiga) yang setara dengan keduanya","x":["Boleh tanpa muhallil","Harus ada saksi","Harus ada imam"],"e":"Pengeluaran bersama tidak sah kecuali dengan muhallil.","p":5},
+{"q":"Jika muhallil menang, apa yang ia dapat?","c":"Ia mengambil hadiah yang dikeluarkan keduanya","x":["Tidak mendapat apa pun","Setengah hadiah","Dikembalikan"],"e":"Jika muhallil menang ia mengambil hadiah yang dikeluarkan keduanya; jika kalah, tidak ada kewajiban apa pun.","p":6}
+],
+"u118":[
+{"q":"Apa arti asal yamin secara bahasa?","c":"Tangan kanan","x":["Tangan kiri","Janji","Perjanjian"],"e":"Yamin asalnya tangan kanan, kemudian digunakan untuk sumpah.","p":1},
+{"q":"Sumpah tidak sah kecuali dengan siapa?","c":"Allah Ta'ala (Dzat atau nama-Nya)","x":["Rasulullah","Nenek moyang","Kitab suci"],"e":"Sumpah tidak sah kecuali dengan Allah Ta'ala, dengan Dzat-Nya atau nama-Nya yang khusus.","p":2},
+{"q":"Bagaimana hukum sumpah sia-sia (laghw)?","c":"Tidak ada kewajiban apa pun","x":["Wajib kafarat","Haram","Wajib puasa"],"e":"Dalam sumpah laghw tidak ada kewajiban apa pun.","p":4},
+{"q":"Orang bersumpah tidak akan melakukan sesuatu lalu menyuruh orang lain melakukannya. Apakah ia melanggar?","c":"Tidak melanggar sumpah","x":["Melanggar","Melanggar jika disengaja","Wajib kafarat"],"e":"Memerintahkan orang lain tidak melanggar sumpah, kecuali dalam hal seperti nikah.","p":5},
+{"q":"Jika bersumpah tidak memakai dua pakaian lalu memakai salah satu, apakah melanggar?","c":"Tidak melanggar","x":["Melanggar","Wajib kafarat","Wajib puasa"],"e":"Melakukan salah satu dari dua perkara tidak melanggar sumpah.","p":7},
+{"q":"Berapa pilihan kafarat sumpah?","c":"Tiga: memerdekakan budak, memberi makan, atau memberi pakaian","x":["Dua","Lima","Hanya puasa"],"e":"Kafarat sumpah memberi pilihan antara memerdekakan budak, memberi makan sepuluh miskin, atau memberi pakaian.","p":8},
+{"q":"Bagaimana memberi pakaian dalam kafarat sumpah?","c":"Masing-masing diberi sesuatu yang dinamakan pakaian","x":["Pakaian mahal","Tidak boleh bekas","Harus pakaian baru"],"e":"Tidak disyaratkan baru dan tidak disyaratkan cocok bagi penerima.","p":10}
+],
+"u119":[
+{"q":"Apa arti nadzar secara bahasa?","c":"Janji dengan kebaikan atau keburukan","x":["Sumpah","Hutang","Hibah"],"e":"Nadzar secara bahasa janji dengan kebaikan atau keburukan.","p":1},
+{"q":"Nadzar ada berapa macam?","c":"Dua: nadzar lajaj dan nadzar mujazah","x":["Satu","Tiga","Empat"],"e":"Nadzar ada dua: lajaj (dalam pertengkaran) dan mujazah (balasan).","p":2},
+{"q":"Apa contoh nadzar mujazah?","c":"Jika Allah menyembuhkan orang sakitku, maka aku puasa","x":["Aku tidak makan daging","Jika aku berbuat maka aku sedekah semua","Demi Allah aku tidak keluar"],"e":"Nadzar mujazah digantungkan pada nikmat, seperti kesembuhan orang sakit.","p":4},
+{"q":"Bagaimana nadzar dalam maksiat?","c":"Tidak sah","x":["Sah","Sah bila ringan","Sah dengan kafarat"],"e":"Tidak ada nadzar dalam maksiat.","p":6},
+{"q":"Apakah nadzar sah untuk meninggalkan yang mubah?","c":"Tidak mengikat","x":["Mengikat","Mengikat bila diucapkan","Wajib ditepati"],"e":"Nadzar tidak mengikat atas meninggalkan atau melakukan yang mubah.","p":8}
+]
+}
