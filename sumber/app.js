@@ -61,7 +61,7 @@ function loadKitab(kid){
       if(r.status===401&&window.EFQAuth)return EFQAuth.refresh().then(ok=>ok?get():r).then(r2=>{if(r2.status===401){EFQAuth.toLogin();throw new Error("login")}return r2});
       return r})
     .then(r=>{if(!r.ok)throw new Error(r.status);return r.json()})
-    .then(j=>{const arr=Array.isArray(j)?j:j.p;KD[kid]={paras:arr.map(parse),mm:(j&&j.mm)||{}};return KD[kid]})
+    .then(j=>{const arr=Array.isArray(j)?j:j.p;KD[kid]={paras:arr.map(parse),mm:(j&&j.mm)||{},qz:(j&&j.qz)||{}};return KD[kid]})
     .catch(e=>{delete LD[kid];throw e});
   return LD[kid];
 }

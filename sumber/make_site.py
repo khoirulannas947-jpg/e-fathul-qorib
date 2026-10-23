@@ -37,7 +37,7 @@ shutil.rmtree(f'{DST}/data',ignore_errors=True); shutil.copytree(f'{SRC}/out/dat
 k=subprocess.run(['python3','build_kamus.py',f'{SRC}/out/data',f'{DST}/data/kamus.json'],cwd=SRC,capture_output=True,text=True)
 print(k.stdout.strip() or k.stderr[-400:]); assert k.returncode==0
 s=f'{DST}/sumber'; shutil.rmtree(s,ignore_errors=True); os.makedirs(s)
-for d in ['data','mm','fitur']: shutil.copytree(f'{SRC}/{d}',f'{s}/{d}')
+for d in ['data','mm','fitur','kuis']: shutil.copytree(f'{SRC}/{d}',f'{s}/{d}')
 for f in ['babs.js','app.js','template.html','build.js','make_site.py','build_kamus.py','irab_auto.py']: shutil.copy(f'{SRC}/{f}',s)
 shutil.rmtree(os.path.dirname(SRC),ignore_errors=True)
 print('situs diperbarui')

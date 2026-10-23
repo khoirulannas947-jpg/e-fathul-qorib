@@ -92,8 +92,20 @@ const descs=(n,out)=>{(n.kids||[]).forEach(k=>{out.push(k);descs(k,out)});return
 const cut=(t,n)=>{t=(t||"").replace(/\s+/g," ").trim();if(t.length<=n)return t;const c=t.slice(0,n),i=c.lastIndexOf(" ");return (i>n*.6?c.slice(0,i):c)+"…"};
 const covers=(x,k)=>x.ref&&k>=x.ref[0]&&k<=x.ref[1];
 function buildKuis(babs,paras,n){
-  const T={t1:[],t2:[],t3:[],t4:[]};
+  const T={isi:[],t1:[],t2:[],t3:[],t4:[]};
   babs.forEach(b=>{
+    // Soal pemahaman isi kitab (bank soal tulisan tangan per bab, lihat sumber/kuis/)
+    const bank=KD[b.k]&&KD[b.k].qz&&KD[b.k].qz[b.id];
+    if(bank&&bank.length){
+      const ps0=babParas(b);
+      bank.forEach(q=>{
+        const opts=shuf([q.c,...q.x]).map(t=>({t,ar:""}));
+        const pp=ps0[q.p-1];
+        T.isi.push({type:"kuis",where:`${b.kt} · ${b.title}`,prompt:q.q,opts,ans:opts.findIndex(o=>o.t===q.c),
+          expl:`${esc(q.e)}`+(q.p?` <small class="q-src">(Paragraf ${q.p})</small>`:""),link:pp?{bab:b.id,pid:pp.id}:null});
+      });
+      return;
+    }
     const txt=KD[b.k]&&KD[b.k].mm[b.id];if(!txt)return;
     const ps=babParas(b),top=parseMM(txt),l1=top.filter(x=>okT(x.t));
     const where=`${b.kt} · ${b.title}`;
@@ -141,7 +153,7 @@ function buildKuis(babs,paras,n){
   const bank=new Map();
   paras.forEach(p=>p.words.forEach(w=>{if(ok4(w))bank.set(w.t.toLowerCase(),w.t)}));
   const bankArr=[...bank.values()];
-  if(bankArr.length>=8){
+  if(!T.isi.length&&bankArr.length>=8){
     const cand=[];
     paras.forEach(p=>p.words.forEach((w,wi)=>{if(ok4(w))cand.push({p,w,wi})}));
     shuf(cand).slice(0,Math.max(n*3,40)).forEach(({p,w,wi})=>{
@@ -155,7 +167,7 @@ function buildKuis(babs,paras,n){
     });
   }
   Object.values(T).forEach(shuf);
-  const wt={t1:.25,t2:.25,t3:.3,t4:.2},out=[];
+  const wt={isi:1,t1:.04,t2:.04,t3:.05,t4:.03},out=[];
   while(out.length<n){
     const ks=Object.keys(T).filter(k=>T[k].length);if(!ks.length)break;
     let r=Math.random()*ks.reduce((a,k)=>a+wt[k],0),ki=0;

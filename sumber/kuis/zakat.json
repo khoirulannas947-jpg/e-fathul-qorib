@@ -1,0 +1,792 @@
+{
+"u33": [
+{
+"q": "Zakat wajib pada berapa macam harta, menurut Fathul Qorib?",
+"c": "Lima: hewan ternak, emas dan perak, tanaman, buah-buahan, dan barang dagangan",
+"x": [
+"Tiga: emas, perak, dan hewan ternak saja yang dipelihara",
+"Empat: emas, perak, tanaman, dan rumah yang disewakan",
+"Enam: ternak, emas, perak, tanaman, buah, dan kuda pacuan"
+],
+"e": "Zakat wajib pada lima perkara: hewan ternak, atsman (emas dan perak), tanaman, buah-buahan, dan barang dagangan.",
+"p": 2
+},
+{
+"q": "Hewan ternak yang wajib dizakati hanya tiga jenis. Manakah yang termasuk?",
+"c": "Unta, sapi, dan kambing",
+"x": [
+"Unta, kuda, dan kambing",
+"Sapi, kuda, dan budak",
+"Kambing, rusa, dan unta"
+],
+"e": "Zakat wajib pada unta, sapi, dan kambing. Tidak wajib pada kuda, budak, dan hewan hasil peranakan antara kambing dan kijang.",
+"p": 3
+},
+{
+"q": "Berapa syarat wajib zakat hewan ternak, dan manakah yang termasuk syaratnya?",
+"c": "Enam syarat, di antaranya digembalakan di padang rumput yang bebas",
+"x": [
+"Lima syarat, di antaranya diberi pakan sepanjang tahun penuh",
+"Enam syarat, di antaranya hewan itu harus berjenis kelamin jantan",
+"Tiga syarat, yaitu Islam, merdeka, dan mencapai nishab saja"
+],
+"e": "Syaratnya enam: Islam, merdeka, kepemilikan sempurna, nishab, haul, dan digembalakan (merumput di padang rumput bebas).",
+"p": 4
+},
+{
+"q": "Bagaimana hukum zakat atas orang kafir asli?",
+"c": "Tidak wajib atasnya",
+"x": [
+"Wajib, sama seperti muslim",
+"Wajib hanya bila hartanya sangat banyak",
+"Wajib, tetapi tidak sah bila ia bayar"
+],
+"e": "Islam adalah syarat wajib zakat, maka tidak wajib atas kafir asli.",
+"p": 4
+},
+{
+"q": "Bagaimana hukum zakat bagi budak?",
+"c": "Tidak ada zakat atas budak, karena syaratnya merdeka",
+"x": [
+"Wajib, dan dibayarkan sendiri oleh budak",
+"Wajib, dan dibayarkan oleh tetangganya",
+"Wajib setengah dari kadar zakat orang merdeka"
+],
+"e": "Merdeka adalah syarat wajib zakat. Adapun budak sebagian (mubba'adh) wajib zakat atas harta yang dimiliki dengan bagian dirinya yang merdeka.",
+"p": 5
+},
+{
+"q": "Zakat ternak diwajibkan bila ternak merumput di padang rumput yang bebas. Jika ternak diberi pakan sebagian besar tahun, bagaimana hukumnya?",
+"c": "Tidak ada zakat padanya",
+"x": [
+"Tetap wajib zakat",
+"Wajib zakat setengahnya",
+"Wajib zakat dengan kadar dua kali lipat"
+],
+"e": "Jika ternak diberi pakan pada sebagian besar tahun, tidak ada zakat padanya, karena syarat digembalakan tidak terpenuhi.",
+"p": 6
+},
+{
+"q": "Apa yang dimaksud dengan tanaman yang wajib dizakati dalam bab ini?",
+"c": "Makanan pokok yang ditanam manusia dan dapat disimpan, seperti gandum",
+"x": [
+"Semua tumbuhan termasuk bumbu-bumbu seperti jintan dan ketumbar",
+"Tanaman hias yang dijual di pasar untuk memperoleh keuntungan",
+"Tanaman yang tumbuh sendiri karena terbawa air atau angin"
+],
+"e": "Yang dimaksud adalah makanan pokok seperti gandum, jelai, dan padi. Bumbu seperti jintan dan tanaman yang tumbuh sendiri tidak wajib dizakati.",
+"p": 8
+},
+{
+"q": "Berapa nishab tanaman yang bersih dari kulit?",
+"c": "Lima wasaq",
+"x": [
+"Satu wasaq",
+"Dua puluh wasaq",
+"Lima puluh wasaq"
+],
+"e": "Syarat ketiga zakat tanaman adalah mencapai nishab, yaitu lima wasaq yang bersih dari kulit.",
+"p": 9
+},
+{
+"q": "Buah-buahan apa yang wajib dizakati?",
+"c": "Kurma dan anggur (kurma kering dan kismis)",
+"x": [
+"Apel dan jeruk",
+"Pisang dan kurma",
+"Semua buah yang dapat dimakan"
+],
+"e": "Zakat buah-buahan wajib pada dua jenis saja: kurma dan anggur, yakni kurma kering dan kismis.",
+"p": 10
+}
+],
+"u34": [
+{
+"q": "Berapa awal nishab unta, dan apa zakatnya?",
+"c": "Lima ekor, zakatnya seekor kambing",
+"x": [
+"Sepuluh ekor, zakatnya seekor kambing",
+"Lima ekor, zakatnya seekor bintu makhadh",
+"Dua puluh lima ekor, zakatnya seekor kambing"
+],
+"e": "Awal nishab unta lima ekor dan zakatnya seekor kambing (domba jadza'ah atau kambing tsaniyyah).",
+"p": 1
+},
+{
+"q": "Berapa kambing yang wajib dizakatkan untuk sepuluh ekor unta?",
+"c": "Dua ekor kambing",
+"x": [
+"Satu ekor kambing",
+"Tiga ekor kambing",
+"Seekor bintu makhadh"
+],
+"e": "Pada lima ekor satu kambing, sepuluh ekor dua kambing, dan lima belas ekor tiga kambing.",
+"p": 2
+},
+{
+"q": "Pada jumlah berapa unta mulai wajib dikeluarkan bintu makhadh?",
+"c": "Dua puluh lima ekor",
+"x": [
+"Lima belas ekor",
+"Tiga puluh enam ekor",
+"Empat puluh enam ekor"
+],
+"e": "Pada dua puluh lima ekor wajib seekor bintu makhadh; pada tiga puluh enam bintu labun; pada empat puluh enam hiqqah.",
+"p": 2
+},
+{
+"q": "Berapa umur bintu labun?",
+"c": "Dua tahun dan masuk tahun ketiga",
+"x": [
+"Satu tahun dan masuk tahun kedua",
+"Tiga tahun dan masuk tahun keempat",
+"Empat tahun dan masuk tahun kelima"
+],
+"e": "Bintu makhadh berumur satu tahun, bintu labun dua tahun, hiqqah tiga tahun, dan jadza'ah empat tahun.",
+"p": 3
+},
+{
+"q": "Berapa umur hiqqah?",
+"c": "Tiga tahun dan masuk tahun keempat",
+"x": [
+"Satu tahun dan masuk tahun kedua",
+"Dua tahun dan masuk tahun ketiga",
+"Empat tahun dan masuk tahun kelima"
+],
+"e": "Hiqqah berumur tiga tahun dan masuk tahun keempat; jadza'ah empat tahun dan masuk tahun kelima.",
+"p": 3
+},
+{
+"q": "Setelah 121 ekor, zakat unta dihitung pada setiap kelipatan berapa?",
+"c": "Pada setiap empat puluh ekor satu bintu labun, dan pada setiap lima puluh ekor satu hiqqah",
+"x": [
+"Pada setiap sepuluh ekor satu kambing",
+"Pada setiap tiga puluh ekor satu tabi'",
+"Pada setiap seratus ekor satu jadza'ah"
+],
+"e": "Mulai 121 ekor, hitungannya tetap: setiap 40 ekor satu bintu labun dan setiap 50 ekor satu hiqqah.",
+"p": 4
+},
+{
+"q": "Berapa zakat untuk 150 ekor unta?",
+"c": "Tiga ekor hiqqah",
+"x": [
+"Dua hiqqah dan satu bintu labun",
+"Tiga bintu labun",
+"Empat ekor bintu labun"
+],
+"e": "Pada 140 ekor: dua hiqqah dan satu bintu labun; pada 150 ekor: tiga hiqqah.",
+"p": 4
+}
+],
+"u35": [
+{
+"q": "Berapa awal nishab sapi, dan apa zakatnya?",
+"c": "Tiga puluh ekor, zakatnya seekor tabi' yang berumur satu tahun",
+"x": [
+"Empat puluh ekor, zakatnya seekor tabi' yang berumur satu tahun",
+"Tiga puluh ekor, zakatnya seekor musinnah yang berumur dua tahun",
+"Dua puluh ekor, zakatnya seekor kambing yang berumur dua tahun"
+],
+"e": "Awal nishab sapi tiga puluh ekor, zakatnya seekor tabi' (satu tahun masuk tahun kedua).",
+"p": 1
+},
+{
+"q": "Mengapa sapi muda itu dinamakan tabi'?",
+"c": "Karena ia masih mengikuti induknya di tempat gembala",
+"x": [
+"Karena giginya sudah sempurna dan siap dipakai membajak",
+"Karena ia lahir pada musim hujan di padang gembala",
+"Karena ia dipakai untuk membajak sawah dan ladang"
+],
+"e": "Dinamakan tabi' karena masih mengikuti induknya di tempat gembala.",
+"p": 1
+},
+{
+"q": "Pada empat puluh ekor sapi, apa yang wajib dikeluarkan?",
+"c": "Seekor musinnah yang berumur dua tahun dan masuk tahun ketiga",
+"x": [
+"Seekor tabi' yang berumur satu tahun dan masuk tahun kedua",
+"Seekor hiqqah yang berumur tiga tahun dan masuk tahun keempat",
+"Dua ekor kambing yang berumur dua tahun"
+],
+"e": "Pada empat puluh ekor wajib seekor musinnah, yang dinamakan demikian karena giginya sudah sempurna.",
+"p": 2
+},
+{
+"q": "Berapa zakat untuk 120 ekor sapi?",
+"c": "Tiga musinnah atau empat tabi'",
+"x": [
+"Tiga tabi' saja",
+"Dua musinnah dan satu tabi'",
+"Enam ekor kambing"
+],
+"e": "Pada 120 ekor: tiga musinnah (3 × 40) atau empat tabi' (4 × 30).",
+"p": 2
+}
+],
+"u36": [
+{
+"q": "Berapa awal nishab kambing, dan apa zakatnya?",
+"c": "Empat puluh ekor, zakatnya seekor domba jadza'ah atau kambing tsaniyyah",
+"x": [
+"Tiga puluh ekor, zakatnya seekor kambing",
+"Empat puluh ekor, zakatnya dua ekor kambing",
+"Lima ekor, zakatnya seekor kambing"
+],
+"e": "Awal nishab kambing empat puluh ekor, zakatnya seekor jadza'ah (domba) atau tsaniyyah (kambing kacang).",
+"p": 1
+},
+{
+"q": "Berapa kambing yang wajib dikeluarkan untuk 121 ekor kambing?",
+"c": "Dua ekor",
+"x": [
+"Satu ekor",
+"Tiga ekor",
+"Empat ekor"
+],
+"e": "Pada 121 ekor dua kambing, pada 201 ekor tiga kambing, pada 400 ekor empat kambing.",
+"p": 2
+},
+{
+"q": "Berapa kambing zakat untuk 400 ekor kambing?",
+"c": "Empat ekor",
+"x": [
+"Dua ekor",
+"Tiga ekor",
+"Lima ekor"
+],
+"e": "Pada 400 ekor empat kambing, kemudian pada setiap seratus ekor seekor kambing.",
+"p": 2
+}
+],
+"u37": [
+{
+"q": "Apa hukum zakat bagi dua orang yang berserikat dalam ternak, menurut Fathul Qorib?",
+"c": "Keduanya berzakat seperti satu orang, bila memenuhi syarat percampuran",
+"x": [
+"Masing-masing berzakat sendiri sesuai jumlah ternak miliknya",
+"Tidak wajib zakat karena ternak itu dimiliki oleh dua orang",
+"Hanya pemilik ternak yang lebih banyak saja yang wajib berzakat"
+],
+"e": "Dua sekutu berzakat seperti zakat satu orang bila memenuhi tujuh syarat percampuran.",
+"p": 1
+},
+{
+"q": "Dua orang memiliki 80 kambing sama rata (masing-masing 40). Apa akibat percampuran itu?",
+"c": "Meringankan: keduanya cukup mengeluarkan seekor kambing",
+"x": [
+"Memberatkan: keduanya wajib mengeluarkan dua ekor kambing",
+"Tidak berpengaruh: masing-masing tetap mengeluarkan seekor kambing",
+"Keduanya terbebas dari kewajiban zakat kambing"
+],
+"e": "Jika keduanya memiliki 80 kambing sama rata, wajib atas keduanya seekor kambing; ini keringanan, sebab bila terpisah tiap orang wajib seekor.",
+"p": 1
+},
+{
+"q": "Dua orang memiliki masing-masing 20 kambing (total 40) yang dicampur. Apa yang terjadi?",
+"c": "Memberatkan: keduanya wajib mengeluarkan seekor kambing",
+"x": [
+"Meringankan: keduanya terbebas dari kewajiban zakat",
+"Tidak berpengaruh sama sekali terhadap kewajiban zakat",
+"Keduanya wajib mengeluarkan dua ekor kambing sekaligus"
+],
+"e": "Keduanya memiliki 40 kambing sama rata, maka wajib atas keduanya seekor kambing (pemberatan, karena bila terpisah tidak ada yang mencapai nishab).",
+"p": 1
+},
+{
+"q": "Salah satu syarat percampuran dua sekutu ternak adalah kandangnya satu. Apa arti kandang (muraah) di sini?",
+"c": "Tempat ternak bermalam di malam hari",
+"x": [
+"Tempat ternak berkumpul untuk berangkat merumput",
+"Tempat ternak minum",
+"Tempat susu diperah"
+],
+"e": "Kandang (muraah) adalah tempat bermalam ternak di malam hari, sedangkan masrah adalah tempat berkumpul untuk berangkat ke padang gembala.",
+"p": 3
+},
+{
+"q": "Apa yang dimaksud dengan masrah dalam syarat percampuran ternak?",
+"c": "Tempat ternak berkumpul untuk berangkat ke padang gembala",
+"x": [
+"Tempat ternak bermalam",
+"Wadah tempat susu diperah",
+"Tempat pejantan mengawini ternak"
+],
+"e": "Masrah adalah tempat ternak berkumpul untuk berangkat ke tempat gembala.",
+"p": 3
+},
+{
+"q": "Jika jenis ternak dua sekutu berbeda, misalnya domba dan kambing kacang, bagaimana soal pejantannya?",
+"c": "Boleh masing-masing memiliki pejantan untuk ternaknya",
+"x": [
+"Tetap harus satu pejantan agar percampurannya sah",
+"Tidak boleh bercampur sama sekali dalam satu kandang",
+"Pejantan harus milik penggembala yang mengurus ternak"
+],
+"e": "Syarat satu pejantan berlaku bila jenisnya sama; jika jenisnya berbeda boleh masing-masing memiliki pejantan.",
+"p": 4
+},
+{
+"q": "Menurut pendapat yang paling sahih, manakah yang tidak disyaratkan dalam percampuran ternak?",
+"c": "Pemerahnya satu",
+"x": [
+"Padang gembalanya satu",
+"Tempat minumnya satu",
+"Penggembalanya satu"
+],
+"e": "Pendapat paling sahih: tidak disyaratkan pemerahnya satu, demikian pula wadah dan tempat memerah.",
+"p": 5
+}
+],
+"u38": [
+{
+"q": "Berapa nishab emas?",
+"c": "Dua puluh mitsqal",
+"x": [
+"Seratus mitsqal",
+"Lima mitsqal",
+"Dua ratus mitsqal"
+],
+"e": "Nishab emas adalah dua puluh mitsqal dengan timbangan Mekah.",
+"p": 1
+},
+{
+"q": "Berapa kadar zakat emas dan perak?",
+"c": "Seperempat dari sepersepuluh (2,5%)",
+"x": [
+"Sepersepuluh (10%)",
+"Setengah dari sepersepuluh (5%)",
+"Seperlima (20%)"
+],
+"e": "Zakat emas dan perak seperempat dari sepersepuluh, yaitu 2,5%.",
+"p": 1
+},
+{
+"q": "Berapa zakat dari dua puluh mitsqal emas?",
+"c": "Setengah mitsqal",
+"x": [
+"Satu mitsqal",
+"Seperempat mitsqal",
+"Dua mitsqal"
+],
+"e": "Seperempat dari sepersepuluh dari 20 mitsqal adalah setengah mitsqal.",
+"p": 1
+},
+{
+"q": "Jika emas melebihi dua puluh mitsqal walaupun sedikit, bagaimana zakatnya?",
+"c": "Zakat dihitung sesuai hitungan kelebihannya",
+"x": [
+"Kelebihannya tidak dizakati sampai genap empat puluh mitsqal",
+"Zakat tetap setengah mitsqal",
+"Kelebihan itu menjadi sedekah sunnah"
+],
+"e": "Pada kelebihan dari nishab, zakat dihitung sesuai kadarnya, walaupun kelebihannya sedikit.",
+"p": 1
+},
+{
+"q": "Berapa nishab perak (wariq), dan berapa zakatnya?",
+"c": "Dua ratus dirham, zakatnya lima dirham",
+"x": [
+"Seratus dirham, zakatnya dua dirham",
+"Dua ratus dirham, zakatnya sepuluh dirham",
+"Dua puluh dirham, zakatnya setengah dirham"
+],
+"e": "Nishab perak dua ratus dirham dan zakatnya seperempat dari sepersepuluh, yaitu lima dirham.",
+"p": 2
+},
+{
+"q": "Bagaimana zakat emas atau perak yang bercampur dengan logam lain?",
+"c": "Tidak ada zakat sampai kadar murninya mencapai nishab",
+"x": [
+"Dizakati dari seluruh beratnya",
+"Tidak pernah wajib zakat",
+"Dizakati bila beratnya saja yang mencapai nishab"
+],
+"e": "Tidak ada zakat pada emas atau perak campuran sampai kadar murninya mencapai nishab.",
+"p": 2
+},
+{
+"q": "Bagaimana hukum zakat perhiasan emas yang mubah, dan bagaimana yang haram?",
+"c": "Perhiasan mubah tidak wajib zakat, perhiasan haram (seperti gelang bagi laki-laki) wajib zakat",
+"x": [
+"Semua perhiasan wajib zakat",
+"Semua perhiasan tidak wajib zakat",
+"Perhiasan mubah wajib, perhiasan haram tidak wajib"
+],
+"e": "Tidak wajib zakat pada perhiasan yang mubah. Perhiasan haram, misalnya gelang tangan dan kaki bagi laki-laki dan khuntsa, wajib dizakati.",
+"p": 3
+}
+],
+"u39": [
+{
+"q": "Berapa nishab tanaman dan buah-buahan?",
+"c": "Lima wasaq (1.600 rithl Irak)",
+"x": [
+"Sepuluh wasaq",
+"Satu wasaq",
+"Dua puluh wasaq"
+],
+"e": "Nishab tanaman dan buah-buahan adalah lima wasaq, yaitu 1.600 rithl ukuran Irak.",
+"p": 1
+},
+{
+"q": "Mengapa dinamakan wasaq?",
+"c": "Dari kata yang bermakna mengumpulkan, karena satu wasaq mengumpulkan beberapa sha'",
+"x": [
+"Karena ditimbang dengan batu",
+"Karena diambil dari nama tempat",
+"Karena dikumpulkan pada akhir tahun"
+],
+"e": "Wasaq berasal dari mashdar bermakna mengumpulkan, karena satu wasaq mengumpulkan beberapa sha'.",
+"p": 1
+},
+{
+"q": "Berapa zakat tanaman yang diairi dengan air hujan atau air sungai (tanpa biaya)?",
+"c": "Sepersepuluh (10%)",
+"x": [
+"Setengah dari sepersepuluh (5%)",
+"Tiga perempat dari sepersepuluh (7,5%)",
+"Seperlima (20%)"
+],
+"e": "Jika diairi dengan air langit atau saih, zakatnya sepersepuluh.",
+"p": 2
+},
+{
+"q": "Apa yang dimaksud dengan saih?",
+"c": "Air yang mengalir di atas tanah karena sungai dibendung sehingga mengairi tanah",
+"x": [
+"Air yang diangkat dengan kincir",
+"Air hujan yang disimpan dalam kolam",
+"Air sumur yang ditimba hewan"
+],
+"e": "Saih adalah air yang mengalir di atas tanah karena sungai dibendung sehingga air naik ke permukaan tanah dan mengairinya.",
+"p": 2
+},
+{
+"q": "Berapa zakat tanaman yang diairi dengan kincir atau disiram dengan bantuan hewan?",
+"c": "Setengah dari sepersepuluh (5%)",
+"x": [
+"Sepersepuluh (10%)",
+"Tiga perempat dari sepersepuluh (7,5%)",
+"Seperlima (20%)"
+],
+"e": "Jika diairi dengan kincir atau disiram dengan bantuan hewan, zakatnya setengah dari sepersepuluh.",
+"p": 3
+},
+{
+"q": "Tanaman diairi dengan air hujan dan kincir sama banyak. Berapa zakatnya?",
+"c": "Tiga perempat dari sepersepuluh (7,5%)",
+"x": [
+"Sepersepuluh (10%)",
+"Setengah dari sepersepuluh (5%)",
+"Seperempat dari sepersepuluh (2,5%)"
+],
+"e": "Jika diairi dengan air hujan dan kincir sama banyak, zakatnya tiga perempat dari sepersepuluh.",
+"p": 3
+}
+],
+"u40": [
+{
+"q": "Kapan barang dagangan dinilai untuk dizakati?",
+"c": "Pada akhir haul, dengan mata uang yang dipakai untuk membelinya",
+"x": [
+"Pada awal haul, dengan harga modal",
+"Setiap bulan dengan harga pasar",
+"Pada saat barang laku terjual"
+],
+"e": "Barang dagangan dinilai pada akhir haul dengan mata uang yang dipakai membelinya; bila nilainya mencapai nishab ia menzakatinya.",
+"p": 1
+},
+{
+"q": "Berapa zakat barang dagangan yang nilainya mencapai nishab?",
+"c": "Seperempat dari sepersepuluh (2,5%)",
+"x": [
+"Sepersepuluh (10%)",
+"Seperlima (20%)",
+"Setengah dari sepersepuluh (5%)"
+],
+"e": "Setelah nilai harta dagangan mencapai nishab, ia mengeluarkan seperempat dari sepersepuluh.",
+"p": 1
+},
+{
+"q": "Apa yang dimaksud dengan ma'adin dalam bab zakat tambang?",
+"c": "Tempat yang Allah ciptakan di dalamnya emas dan perak, di tanah bebas maupun tanah milik",
+"x": [
+"Harta terpendam peninggalan bangsa Arab sebelum Islam",
+"Barang yang diputar untuk memperoleh keuntungan dalam dagang",
+"Tempat penyimpanan zakat sebelum dibagikan kepada penerimanya"
+],
+"e": "Ma'adin jamak dari ma'din, yaitu tempat yang Allah ciptakan di dalamnya emas dan perak, baik di tanah tak bertuan maupun tanah milik.",
+"p": 2
+},
+{
+"q": "Zakat hasil tambang emas dan perak dikeluarkan kapan?",
+"c": "Seketika itu juga, bila mencapai nishab dan penggalinya ahli wajib zakat",
+"x": [
+"Setelah satu tahun penuh",
+"Setelah tiga tahun",
+"Tidak wajib dizakati"
+],
+"e": "Hasil tambang emas dan perak yang mencapai nishab dikeluarkan zakatnya seperempat dari sepersepuluh seketika itu.",
+"p": 2
+},
+{
+"q": "Apa yang dimaksud dengan rikaz?",
+"c": "Harta terpendam peninggalan masa jahiliyah",
+"x": [
+"Hasil tambang emas",
+"Harta temuan yang tidak diketahui pemiliknya sekarang",
+"Harta anak yatim"
+],
+"e": "Rikaz adalah harta terpendam masa jahiliyah, yaitu masa bangsa Arab sebelum Islam.",
+"p": 3
+},
+{
+"q": "Berapa zakat rikaz?",
+"c": "Seperlima (20%)",
+"x": [
+"Seperempat dari sepersepuluh (2,5%)",
+"Sepersepuluh (10%)",
+"Setengah dari sepersepuluh (5%)"
+],
+"e": "Zakat rikaz seperlima, dan menurut pendapat yang masyhur disalurkan kepada penerima zakat.",
+"p": 3
+}
+],
+"u41": [
+{
+"q": "Zakat fitrah disebut juga zakat apa, dan wajib dengan berapa perkara?",
+"c": "Zakat jiwa, dengan tiga perkara",
+"x": [
+"Zakat harta, dengan dua perkara",
+"Zakat jiwa, dengan lima perkara",
+"Zakat dagang, dengan tiga perkara"
+],
+"e": "Zakat fitri disebut juga zakat fithrah, yakni zakat jiwa, dan wajib dengan tiga perkara: Islam, terbenamnya matahari akhir Ramadhan, dan adanya kelebihan.",
+"p": 1
+},
+{
+"q": "Kapan waktu wajib zakat fitrah?",
+"c": "Saat terbenamnya matahari pada hari terakhir bulan Ramadhan",
+"x": [
+"Saat terbit fajar tanggal 1 Syawal",
+"Pada awal bulan Ramadhan",
+"Saat selesai shalat Idul Fitri"
+],
+"e": "Syarat kedua: terbenamnya matahari pada hari terakhir Ramadhan.",
+"p": 2
+},
+{
+"q": "Siapa yang tetap dikeluarkan fitrahnya menurut kitab ini?",
+"c": "Orang yang meninggal setelah matahari terbenam hari terakhir Ramadhan",
+"x": [
+"Bayi yang lahir setelah matahari terbenam",
+"Orang yang meninggal sebelum matahari terbenam",
+"Orang yang masuk Islam pada hari raya"
+],
+"e": "Zakat fitri dikeluarkan untuk orang yang meninggal setelah matahari terbenam, tidak untuk orang yang lahir setelahnya.",
+"p": 2
+},
+{
+"q": "Syarat ketiga zakat fitrah adalah adanya kelebihan. Kelebihan dari apa?",
+"c": "Dari makanannya dan makanan keluarganya pada hari raya, demikian pula malamnya",
+"x": [
+"Dari seluruh hartanya selama setahun",
+"Dari hutangnya",
+"Dari nafkah anak-anaknya selama sebulan"
+],
+"e": "Syarat ketiga adalah kelapangan harta dari makanannya dan makanan keluarganya pada hari raya Idul Fitri, demikian pula malamnya.",
+"p": 2
+},
+{
+"q": "Zakat fitrah seseorang dikeluarkan untuk dirinya dan siapa?",
+"c": "Orang yang wajib ia nafkahi dari kaum muslimin",
+"x": [
+"Semua tetangganya",
+"Semua orang yang tinggal serumah, muslim atau bukan",
+"Hanya anak-anaknya yang belum baligh"
+],
+"e": "Seseorang berzakat untuk dirinya dan orang yang wajib ia nafkahi dari kaum muslimin; istri atau kerabat yang kafir tidak wajib difitrahi.",
+"p": 3
+},
+{
+"q": "Berapa ukuran zakat fitrah per jiwa?",
+"c": "Satu sha' makanan pokok daerahnya",
+"x": [
+"Satu wasaq",
+"Setengah sha'",
+"Satu mudd"
+],
+"e": "Ia mengeluarkan satu sha' dari makanan pokok daerahnya.",
+"p": 3
+},
+{
+"q": "Seseorang hanya mampu mengeluarkan sebagian dari satu sha'. Apa hukumnya?",
+"c": "Wajib mengeluarkan sebagian yang mampu itu",
+"x": [
+"Gugur kewajibannya",
+"Wajib menunggu sampai mampu satu sha' penuh",
+"Wajib berutang agar genap satu sha'"
+],
+"e": "Barang siapa tidak mampu satu sha' tetapi mampu sebagiannya, wajib mengeluarkan sebagian itu.",
+"p": 4
+},
+{
+"q": "Jika di suatu daerah ada beberapa makanan pokok, mana yang dikeluarkan?",
+"c": "Yang dominan",
+"x": [
+"Yang paling mahal",
+"Yang paling murah",
+"Yang mana saja, tanpa ketentuan"
+],
+"e": "Jika ada beberapa makanan pokok yang salah satunya dominan, wajib mengeluarkan dari yang dominan.",
+"p": 4
+}
+],
+"u42": [
+{
+"q": "Berapa golongan penerima zakat, dan di surat apa disebutkan?",
+"c": "Delapan golongan, dalam QS. at-Taubah ayat 60",
+"x": [
+"Lima golongan, dalam QS. al-Baqarah",
+"Tujuh golongan, dalam QS. an-Nisa'",
+"Sepuluh golongan, dalam QS. al-Ma'idah"
+],
+"e": "Zakat diserahkan kepada delapan golongan yang disebut dalam QS. at-Taubah: 60.",
+"p": 1
+},
+{
+"q": "Siapakah fakir dalam bab zakat?",
+"c": "Orang yang tidak memiliki harta dan pekerjaan yang mencukupi sebagian besar kebutuhannya",
+"x": [
+"Orang yang punya harta berlimpah tetapi enggan bersedekah dan bekerja",
+"Orang yang berutang demi mendamaikan dua kelompok yang bertikai",
+"Orang yang mendapat penghasilan yang mencukupi sebagian besar kebutuhannya"
+],
+"e": "Fakir dalam zakat adalah orang yang tidak memiliki harta dan pekerjaan yang dapat mencukupi sebagian besar kebutuhannya.",
+"p": 2
+},
+{
+"q": "Siapakah miskin dalam bab zakat?",
+"c": "Orang yang memperoleh harta atau pekerjaan yang mengisi sebagian kecukupannya tetapi tidak mencukupi, misalnya butuh sepuluh dirham hanya punya tujuh",
+"x": [
+"Orang yang sama sekali tidak memiliki harta maupun pekerjaan apa pun",
+"Orang yang berpenghasilan cukup bahkan lebih untuk seluruh kebutuhannya",
+"Orang yang berutang untuk mendamaikan dua kelompok yang bertikai"
+],
+"e": "Miskin adalah orang yang mampu memperoleh harta atau pekerjaan yang masing-masing mengisi sebagian kecukupannya tetapi tidak mencukupinya.",
+"p": 2
+},
+{
+"q": "Siapakah amil zakat?",
+"c": "Orang yang ditugaskan imam mengambil zakat dan menyerahkannya kepada yang berhak",
+"x": [
+"Orang yang menyerahkan zakat hartanya sendiri kepada fakir miskin",
+"Orang yang meminta-minta zakat dari para pemilik harta",
+"Pemilik harta yang telah mencapai nishab dan haul"
+],
+"e": "Amil adalah orang yang ditugaskan imam untuk mengambil zakat dan menyerahkannya kepada yang berhak.",
+"p": 3
+},
+{
+"q": "Siapakah mu'allaf muslim yang diberi zakat?",
+"c": "Orang yang masuk Islam sedangkan niatnya dalam Islam masih lemah",
+"x": [
+"Orang kafir yang ingin masuk Islam dan belum bersyahadat",
+"Orang Islam yang imannya sudah kuat dan hartanya banyak",
+"Orang yang baru lahir dalam keluarga muslim yang kaya"
+],
+"e": "Salah satu macam mu'allaf adalah muslim yang masuk Islam dengan niat yang masih lemah; hatinya dilunakkan dengan zakat.",
+"p": 3
+},
+{
+"q": "Siapakah yang dimaksud ar-riqab yang diberi zakat?",
+"c": "Budak mukatab dengan akad kitabah yang sah",
+"x": [
+"Semua budak tanpa syarat apa pun, termasuk budak milik majikan",
+"Budak yang akad kitabahnya rusak dan tidak sah",
+"Majikan yang memiliki banyak budak dan hartanya cukup"
+],
+"e": "Ar-riqab adalah budak mukatab dengan akad kitabah yang sah; mukatab dengan kitabah rusak tidak diberi dari bagian ini.",
+"p": 4
+},
+{
+"q": "Gharim hanya diberi zakat dalam keadaan apa?",
+"c": "Ketika utangnya masih ada",
+"x": [
+"Setelah ia melunasi utangnya dari hartanya sendiri dengan lancar",
+"Walaupun utangnya sudah lunas dan ia sudah kaya kembali",
+"Bila ia tidak pernah berutang dan tidak memiliki tanggungan"
+],
+"e": "Gharim hanya diberi ketika utangnya masih ada; bila ia sudah membayarnya dari hartanya, ia tidak diberi dari bagian gharim.",
+"p": 5
+},
+{
+"q": "Siapakah sabilillah yang berhak menerima zakat?",
+"c": "Para pejuang sukarela yang tidak mendapat bagian dalam daftar tentara bergaji",
+"x": [
+"Tentara yang menerima gaji tetap dari daftar tentara negara",
+"Semua orang yang berangkat haji dari daerah zakat itu",
+"Para ulama dan penuntut ilmu yang tinggal di pesantren"
+],
+"e": "Sabilillah adalah para pejuang yang tidak mendapat bagian dalam daftar tentara bergaji, tetapi berjihad secara sukarela.",
+"p": 5
+},
+{
+"q": "Siapakah ibnu sabil yang diberi zakat, dan apa syaratnya?",
+"c": "Orang yang memulai perjalanan dari daerah zakat atau melewatinya, membutuhkan, dan perjalanannya bukan maksiat",
+"x": [
+"Orang yang bepergian untuk berwisata dan memiliki bekal yang cukup",
+"Orang yang melakukan perjalanan untuk tujuan maksiat",
+"Orang kaya yang kehabisan bekal tetapi hartanya ada di rumah"
+],
+"e": "Ibnu sabil memulai perjalanan dari daerah zakat atau melewatinya; disyaratkan ia membutuhkan dan perjalanannya bukan maksiat.",
+"p": 6
+},
+{
+"q": "Bila sebagian golongan penerima zakat tidak ada, bagaimana zakat disalurkan?",
+"c": "Disalurkan kepada golongan yang ada saja",
+"x": [
+"Ditahan sampai semua golongan penerima zakat itu ada kembali",
+"Diserahkan kembali kepada pemilik harta yang berzakat itu",
+"Dibuang karena tidak ada yang berhak menerimanya lagi"
+],
+"e": "Bila sebagian golongan tidak ada dan sebagian lain ada, zakat disalurkan kepada yang ada.",
+"p": 6
+},
+{
+"q": "Zakat harus diberikan kepada minimal berapa orang dari tiap golongan, kecuali amil?",
+"c": "Tiga orang",
+"x": [
+"Satu orang",
+"Dua orang",
+"Lima orang"
+],
+"e": "Tidak boleh dicukupkan pada kurang dari tiga orang dari setiap golongan, kecuali amil yang boleh satu orang bila kebutuhan sudah tercapai.",
+"p": 7
+},
+{
+"q": "Manakah yang termasuk lima golongan yang tidak boleh diberi zakat?",
+"c": "Orang kaya, budak, Bani Hasyim, Bani al-Muththalib, dan orang kafir",
+"x": [
+"Fakir, miskin, amil, budak, dan ibnu sabil yang membutuhkan",
+"Orang kaya, fakir, miskin, amil, dan gharim yang berutang",
+"Gharim, mu'allaf, budak mukatab, dan sabilillah yang berjuang"
+],
+"e": "Yang tidak boleh diberi zakat: orang kaya, budak, Bani Hasyim, Bani al-Muththalib, dan orang kafir.",
+"p": 8
+},
+{
+"q": "Bolehkah pemberi zakat memberikan zakat kepada orang yang wajib ia nafkahi dengan alasan fakir atau miskin?",
+"c": "Tidak boleh atas nama fakir dan miskin, tetapi boleh atas nama pejuang atau gharim",
+"x": [
+"Boleh, atas nama fakir dan miskin selama jumlahnya sedikit",
+"Tidak boleh dalam keadaan apa pun, termasuk atas nama gharim",
+"Boleh asalkan ia tidak membutuhkan hartanya lagi"
+],
+"e": "Orang yang wajib dinafkahi tidak boleh diberi zakat atas nama fakir dan miskin, tetapi boleh atas nama pejuang atau gharim, misalnya.",
+"p": 9
+}
+]
+}
