@@ -2,9 +2,10 @@
 // Sesi = cookie "fb_session" berisi Firebase ID token (JWT RS256, diperbarui oleh auth-client.js).
 // Verifikasi memakai kunci publik (JWKS) Google, jadi tidak ada kunci rahasia di sini.
 import { FIREBASE_PROJECT_ID } from "./auth-settings.js";
+import { aksesBerbayarAktif, cekAkses, isAdmin } from "./akses-lib.js";
 
 export const config = {
-  matcher: ["/((?!login|auth-config\\.js|auth-client\\.js|sw\\.js|manifest\\.webmanifest|icons/|\\.well-known/|favicon\\.ico|robots\\.txt).*)"],
+  matcher: ["/((?!login|auth-config\\.js|auth-client\\.js|api/admin-akses|sw\\.js|manifest\\.webmanifest|icons/|\\.well-known/|favicon\\.ico|robots\\.txt).*)"],
 };
 
 const FIREBASE_JWKS = "https://www.googleapis.com/service_accounts/v1/jwk/securetoken@system.gserviceaccount.com";
@@ -106,6 +107,23 @@ export default async function middleware(request) {
       });
     }
     return new Response(null, { status: 302, headers: { location: new URL("/login?denied=1", url).toString(), "cache-control": "no-store" } });
+  }
+  if (session && aksesBerbayarAktif() && !isAdmin(session)) {
+    // Mode berbayar: hanya langganan aktif yang boleh membuka kitab. Halaman /langganan dan /api/akses tetap terbuka agar pengguna bisa melihat status.
+    const bebas = url.pathname === "/langganan" || url.pathname === "/langganan.html" || url.pathname === "/api/akses";
+    if (!bebas) {
+      let st = null, galat = false;
+      try { st = session.verified ? await cekAkses(session.email) : { aktif: false }; } catch (e) { galat = true; }
+      if (galat) {
+        return new Response(JSON.stringify({ error: "layanan_sibuk" }), { status: 503, headers: { "content-type": "application/json", "cache-control": "no-store", "retry-after": "30" } });
+      }
+      if (!st.aktif) {
+        if (url.pathname.startsWith("/data/") || url.pathname.startsWith("/api/")) {
+          return new Response(JSON.stringify({ error: "langganan_habis" }), { status: 402, headers: { "content-type": "application/json", "cache-control": "no-store" } });
+        }
+        return new Response(null, { status: 302, headers: { location: new URL("/langganan", url).toString(), "cache-control": "no-store" } });
+      }
+    }
   }
   if (session) {
     // Lanjutkan ke file statis (setara next() dari @vercel/functions).
